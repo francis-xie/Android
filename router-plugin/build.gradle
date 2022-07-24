@@ -1,0 +1,14 @@
+apply plugin: 'groovy'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+dependencies {
+    implementation gradleApi()//gradle sdk
+    implementation localGroovy()//groovy sdk
+    implementation deps.android_gradle_plugin
+}
+
+apply from: rootProject.file('gradle/publish.gradle')
+//apply from: "../JitPackUpload.gradle"
+//apply from: "../localRepositoryUpload.gradle"

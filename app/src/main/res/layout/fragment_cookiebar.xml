@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="64dp">
+
+        <com.basic.face.widget.alpha.FACEAlphaButton
+            android:id="@+id/btn_top"
+            style="@style/Button.Primary.wrap"
+            android:layout_width="match_parent"
+            android:layout_margin="?attr/face_config_content_spacing_vertical"
+            android:text="Top cookie" />
+
+        <com.basic.face.widget.alpha.FACEAlphaButton
+            android:id="@+id/btn_bottom"
+            style="@style/Button.Primary.wrap"
+            android:layout_width="match_parent"
+            android:layout_margin="?attr/face_config_content_spacing_vertical"
+            android:text="Bottom cookie" />
+
+        <com.basic.face.widget.alpha.FACEAlphaButton
+            android:id="@+id/btn_top_with_icon"
+            style="@style/Button.Primary.wrap"
+            android:layout_width="match_parent"
+            android:layout_margin="?attr/face_config_content_spacing_vertical"
+            android:text="Top cookie with a icon" />
+
+        <com.basic.face.widget.alpha.FACEAlphaButton
+            android:id="@+id/btn_custom"
+            style="@style/Button.Primary.wrap"
+            android:layout_width="match_parent"
+            android:layout_margin="?attr/face_config_content_spacing_vertical"
+            android:text="A custom cookie" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.basic.face.widget.alpha.FACEAlphaTextView
+        android:id="@+id/expand_button"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:windowBackground"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="点击切换伸缩状态" />
+
+    <com.basic.face.widget.layout.ExpandableLayout
+        android:id="@+id/expandable_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:el_duration="1000"
+        app:el_expanded="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/app_color_theme_6"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:text="固定高度"
+            android:textColor="@color/face_config_color_white" />
+
+    </com.basic.face.widget.layout.ExpandableLayout>
+
+    <com.basic.face.widget.layout.ExpandableLayout
+        android:id="@+id/expandable_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:el_duration="1000"
+        app:el_expanded="true"
+        app:el_parallax="0.5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_color_theme_8"
+            android:gravity="center"
+            android:text="全填充"
+            android:textColor="@color/face_config_color_white" />
+
+    </com.basic.face.widget.layout.ExpandableLayout>
+
+
+</LinearLayout>

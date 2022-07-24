@@ -1,0 +1,12 @@
+{
+  "Code": 0,
+  "Msg": "",
+  "UpdateStatus": 1,
+  "VersionCode": 19,
+  "VersionName": "1.1.8",
+  "UploadTime": "2022-07-25 23:30:00",
+  "ModifyContent": "\r\n1、修复部分已知问题。\n2、优化了部分组件功能。\n3、新增更多使用演示。",
+  "DownloadUrl": "https://zhiqiang.oss-cn-shanghai.aliyuncs.com/apk/demo.apk",
+  "ApkSize": 13599,
+  "ApkMd5": "9DE61415BAF61E92C447FA9D6E748F22"
+}

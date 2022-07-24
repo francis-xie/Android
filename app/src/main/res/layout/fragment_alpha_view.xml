@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.basic.face.widget.alpha.FACEAlphaLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/face_config_color_gray_5"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <com.basic.face.widget.alpha.FACEAlphaImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/face_config_color_transparent"
+            android:src="@drawable/icon_avatar1" />
+
+        <com.basic.face.widget.alpha.FACEAlphaButton
+            style="@style/Button.Primary.wrap"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/face_config_color_blue_btn_normal"
+            android:text="点击确认" />
+
+    </com.basic.face.widget.alpha.FACEAlphaLinearLayout>
+
+    <com.basic.face.widget.alpha.FACEAlphaFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/face_config_color_red"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="30dp">
+
+        <com.basic.face.widget.alpha.FACEAlphaTextView
+            style="@style/TextStyle.Content"
+            android:layout_width="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="20dp"
+            android:text="点击确认"
+            android:textColor="@color/face_config_color_white" />
+
+
+    </com.basic.face.widget.alpha.FACEAlphaFrameLayout>
+
+    <com.basic.face.widget.alpha.FACEAlphaRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/face_config_color_light_blue"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="100dp"/>
+
+
+</LinearLayout>

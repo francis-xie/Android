@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:stretchColumns="1">
+
+        <TableRow android:gravity="center_vertical">
+
+            <TextView
+                style="@style/TextStyle.Explain"
+                android:text="饱和度" />
+
+            <SeekBar
+                android:id="@+id/sb_saturation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:max="255"
+                android:progress="128" />
+        </TableRow>
+
+        <TableRow android:gravity="center_vertical">
+
+            <TextView
+                style="@style/TextStyle.Explain"
+                android:text="亮度" />
+
+            <SeekBar
+                android:id="@+id/sb_brightness"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:max="255"
+                android:progress="128" />
+        </TableRow>
+
+        <TableRow android:gravity="center_vertical">
+
+            <TextView
+                style="@style/TextStyle.Explain"
+                android:text="对比度" />
+
+            <SeekBar
+                android:id="@+id/sb_contrast"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:max="255"
+                android:progress="128" />
+        </TableRow>
+
+    </TableLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

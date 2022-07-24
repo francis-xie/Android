@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="?attr/face_config_content_spacing_horizontal"
+    android:orientation="vertical">
+
+    <com.basic.face.widget.spinner.materialspinner.MaterialSpinner
+        style="@style/Material.SpinnerStyle"
+        android:layout_width="200dp"
+        android:layout_marginStart="20dp"
+        app:ms_entries="@array/sort_mode_entry"
+        app:ms_in_dialog="true"/>
+
+    <com.basic.face.widget.spinner.editspinner.EditSpinner
+        android:id="@+id/editSpinner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        app:es_entries="@array/sort_mode_entry"
+        app:es_hint="@string/lab_please_select"/>
+
+    <com.basic.face.widget.button.switchbutton.SwitchButton
+        style="@style/SwitchButtonStyle"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.basic.face.widget.edittext.ValidatorEditText
+        style="@style/EditText.Normal"
+        android:layout_width="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:singleLine="true"
+        app:vet_tipPosition="top"
+        app:vet_regexp="@string/regexp_number_only"
+        app:vet_errorMessage="@string/tip_number_only_error_message"
+        app:vet_showErrorIcon="false"/>
+
+    <com.basic.face.widget.progress.materialprogressbar.MaterialProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:indeterminate="true"
+        app:mpb_progressStyle="horizontal"
+        style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal" />
+
+</LinearLayout>

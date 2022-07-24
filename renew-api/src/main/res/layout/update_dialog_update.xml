@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?><FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            tools:srcCompat="@drawable/update_bg_app_top" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/update_bg_app_info"
+                android:orientation="vertical"
+                android:padding="@dimen/update_content_padding">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/update_title_text_color"
+                    android:textSize="@dimen/update_title_text_size"
+                    tools:text="是否升级到4.1.1版本？" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/update_common_padding"
+                    android:paddingBottom="@dimen/update_common_padding">
+
+                    <TextView
+                        android:id="@+id/tv_update_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="@dimen/update_content_line_spacing_extra_size"
+                        android:textColor="@color/update_content_text_color"
+                        android:textSize="@dimen/update_content_text_size"
+                        tools:text="1、xxxxxxxx\n2、ooooooooo" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="@dimen/update_button_min_height"
+                    android:text="@string/update_lab_update"
+                    android:textColor="@color/update_button_text_color"
+                    android:textSize="@dimen/update_button_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_ignore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="@dimen/update_button_min_height"
+                    android:text="@string/update_lab_ignore"
+                    android:textColor="@color/update_content_text_color"
+                    android:textSize="@dimen/update_button_text_size"
+                    android:visibility="gone" />
+
+                <com.basic.renew.widget.NumberProgressBar
+                    android:id="@+id/npb_progress"
+                    style="@style/Update_ProgressBar_Red"
+                    android:paddingTop="@dimen/update_common_padding"
+                    android:paddingBottom="@dimen/update_common_padding"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_background_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="@dimen/update_button_min_height_mini"
+                    android:text="@string/update_lab_background_update"
+                    android:textColor="@color/update_button_text_color"
+                    android:textSize="@dimen/update_button_text_size_mini"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/ll_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="@dimen/update_close_line_width"
+                android:layout_height="@dimen/update_close_line_height"
+                android:background="@color/update_close_line_color" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_close"
+                android:layout_width="@dimen/update_close_icon_size"
+                android:layout_height="@dimen/update_close_icon_size"
+                android:layout_marginTop="-2dp"
+                app:srcCompat="@drawable/update_icon_app_close" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

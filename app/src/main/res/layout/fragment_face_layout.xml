@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.basic.code.widget.ShadowAdjustLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.basic.face.widget.layout.FACELinearLayout
+            android:id="@id/layout_for_test"
+            android:layout_width="260dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@color/face_config_color_white"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:face_borderColor="?attr/face_config_color_separator_light"
+            app:face_outerNormalColor="?attr/face_config_color_background"
+            app:face_showBorderOnlyBeforeL="true">
+
+            <TextView
+                android:id="@+id/radius_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/alpha_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/elevation_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </com.basic.face.widget.layout.FACELinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:paddingStart="?attr/face_config_content_spacing_horizontal"
+            android:paddingEnd="?attr/face_config_content_spacing_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="radius" />
+
+                <SeekBar
+                    android:id="@+id/test_seekbar_radius"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:max="50"
+                    android:progress="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="alpha" />
+
+                <SeekBar
+                    android:id="@+id/test_seekbar_alpha"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:max="100"
+                    android:progress="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="elevation" />
+
+                <SeekBar
+                    android:id="@+id/test_seekbar_elevation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:max="100"
+                    android:progress="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="shadowColor(>= android 9)" />
+
+                <com.basic.face.widget.alpha.FACEAlphaButton
+                    android:id="@+id/shadow_color_red"
+                    style="@style/Button.Primary.wrap"
+                    android:layout_marginEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="4dp"
+                    android:text="#ff0000"
+                    android:textColor="#ff0000" />
+
+                <com.basic.face.widget.alpha.FACEAlphaButton
+                    android:id="@+id/shadow_color_blue"
+                    style="@style/Button.Primary.wrap"
+                    android:paddingStart="10dp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="4dp"
+                    android:text="#0000ff"
+                    android:textColor="#0000ff" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="配置取消一个边的圆角（阴影会丢失）" />
+
+            <RadioGroup
+                android:id="@+id/hide_radius_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/hide_radius_none"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="none"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/hide_radius_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:text="top"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/hide_radius_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:text="right"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/hide_radius_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:text="bottom"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/hide_radius_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:text="left"
+                    android:textSize="12sp" />
+            </RadioGroup>
+        </LinearLayout>
+    </com.basic.code.widget.ShadowAdjustLayout>
+
+
+</LinearLayout>

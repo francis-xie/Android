@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/app_color_theme_1"
+            android:text="水平居中时,设置宽=0时的效果"
+            android:textColor="@color/face_config_color_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/spacing_16"
+            android:background="@color/app_color_theme_2"
+            android:gravity="center"
+            android:text="设置70%的宽度，10%的高度"
+            android:textColor="@color/face_config_color_white"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text1"
+            app:layout_constraintWidth_percent="0.7" />
+
+
+        <!--    高度约束  W:H  -->
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="210dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/spacing_16"
+            android:background="@color/app_color_theme_3"
+            android:gravity="center"
+            android:text="高度约束：设置高度是宽度的1/3"
+            android:textColor="@color/face_config_color_white"
+            app:layout_constraintDimensionRatio="H,3:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text2" />
+
+        <!--    宽度约束  W:H  -->
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/spacing_16"
+            android:background="@color/app_color_theme_4"
+            android:gravity="center"
+            android:text="宽度约束：设置宽度是高度的3倍"
+            android:textColor="@color/face_config_color_white"
+            app:layout_constraintDimensionRatio="W,3:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text3" />
+
+        <!--    宽高比  W:H  -->
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/spacing_16"
+            android:background="@color/app_color_theme_5"
+            android:gravity="center"
+            android:text="设置等宽等高"
+            android:textColor="@color/face_config_color_white"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text4"
+            app:layout_constraintWidth_percent="0.3" />
+
+        <!--  0dp=强制约束，当然也可以使用app:layout_constrainedHeight="true"  -->
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/spacing_16"
+            android:background="@color/app_color_theme_6"
+            android:gravity="center"
+            android:text="强制约束最大宽度50dp,高度100dp"
+            android:textColor="@color/face_config_color_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintWidth_max="50dp"
+            app:layout_constraintHeight_max="100dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--标题栏-->
+    <include layout="@layout/face_include_titlebar" />
+
+
+    <com.basic.code.widget.ComplexNestedScrollingLayout
+        android:id="@+id/scrolling_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_tip_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.basic.face.widget.layout.FACELinearLayout
+                android:id="@+id/ll_tip1"
+                style="@style/FACELayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin8"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin8">
+
+                <TextView
+                    style="@style/TextStyle.Content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/margin8"
+                    android:text="当前网络异常，点击重试" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_action1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="@color/face_config_color_red"
+                    app:srcCompat="@drawable/update_icon_app_close" />
+
+            </com.basic.face.widget.layout.FACELinearLayout>
+
+            <com.basic.face.widget.layout.FACELinearLayout
+                android:id="@+id/ll_tip2"
+                style="@style/FACELayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin8"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin8">
+
+                <TextView
+                    style="@style/TextStyle.Content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/margin8"
+                    android:text="当前未登录，点击登录" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_action2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="@color/face_config_color_red"
+                    app:srcCompat="@drawable/update_icon_app_close" />
+
+            </com.basic.face.widget.layout.FACELinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_navigation_view"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/face_actionbar_height"
+            android:background="@color/face_config_color_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
+                style="@style/TabLayoutStyle"
+                android:layout_width="0dp"
+                android:layout_height="?attr/face_actionbar_height"
+                android:layout_weight="1"
+                android:alpha="0" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/TextStyle.Title"
+                android:text="@string/label_classify_display" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin8"
+                android:layout_marginEnd="@dimen/margin8"
+                android:padding="@dimen/margin8"
+                android:tint="@color/black"
+                app:srcCompat="@drawable/fab_add" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/fl_default_page"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+
+    </com.basic.code.widget.ComplexNestedScrollingLayout>
+
+</LinearLayout>

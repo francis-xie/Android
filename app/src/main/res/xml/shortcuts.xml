@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <shortcut
+        android:icon="@drawable/ic_action_setting"
+        android:shortcutId="shortcut_setting"
+        android:shortcutShortLabel="@string/shortcut_label_setting"
+        tools:targetApi="n_mr1">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.basic.code.activity.SettingsActivity"
+            android:targetPackage="com.basic.code" />
+    </shortcut>
+
+    <shortcut
+        android:icon="@drawable/ic_action_search"
+        android:shortcutId="shortcut_search"
+        android:shortcutShortLabel="@string/shortcut_label_search"
+        tools:targetApi="n_mr1">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.basic.code.activity.SearchComponentActivity"
+            android:targetPackage="com.basic.code" />
+    </shortcut>
+
+</shortcuts>

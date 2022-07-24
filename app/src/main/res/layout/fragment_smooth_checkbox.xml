@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/face_config_color_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_16"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.basic.face.widget.button.SmoothCheckBox
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp" />
+
+        <com.basic.face.widget.button.SmoothCheckBox
+            android:id="@+id/scb"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:paddingTop="10dp"
+            app:scb_color_checked="@color/app_color_theme_1" />
+
+        <com.basic.face.widget.button.SmoothCheckBox
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            app:scb_color_checked="@color/app_color_theme_2" />
+
+        <com.basic.face.widget.button.SmoothCheckBox
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:paddingBottom="10dp"
+            app:scb_color_checked="@color/app_color_theme_3" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

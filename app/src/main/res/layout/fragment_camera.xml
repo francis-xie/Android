@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_16"
+        android:orientation="horizontal">
+
+        <com.basic.face.widget.textview.supertextview.SuperButton
+            android:id="@+id/btn_camera"
+            style="@style/SuperButton.Primary.wrap"
+            android:text="简单相机" />
+
+        <com.basic.face.widget.textview.supertextview.SuperButton
+            android:id="@+id/btn_camera_complex"
+            style="@style/SuperButton.Primary.wrap"
+            android:layout_marginStart="@dimen/spacing_16"
+            android:text="复杂相机" />
+
+        <com.basic.face.widget.textview.supertextview.SuperButton
+            android:id="@+id/btn_camera_kit"
+            style="@style/SuperButton.Primary.wrap"
+            android:layout_marginStart="@dimen/spacing_16"
+            android:text="CameraKit" />
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_16"
+        android:layout_marginEnd="@dimen/spacing_16" />
+
+</LinearLayout>

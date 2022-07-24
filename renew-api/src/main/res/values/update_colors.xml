@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <color name="update_default_theme_color">#FFE94339</color>
+    <color name="update_default_bg_color">#FFFFFFFF</color>
+    <color name="update_close_line_color">#D8D8D8</color>
+    <color name="update_button_text_color">#FFFFFFFF</color>
+    <color name="update_title_text_color">#FF000000</color>
+    <color name="update_content_text_color">#FF666666</color>
+
+</resources>

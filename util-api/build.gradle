@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion build_versions.target_sdk
+    buildToolsVersion build_versions.build_tools
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion build_versions.target_sdk
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compileOnly deps.androidx.appcompat
+    compileOnly deps.rxjava2
+    compileOnly deps.rxandroid
+
+    //rxbinding的sdk
+    compileOnly deps.rxbinding
+}
+
+apply from: "../JitPackUpload.gradle"

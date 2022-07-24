@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/selection_item_height"
+    android:background="@color/face_config_color_white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/spacing_24dp">
+
+
+    <TextView
+        android:id="@+id/tv_subject_name"
+        style="@style/TextStyle.Content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="start"
+        tools:text="项目1" />
+
+    <RadioGroup
+        android:id="@+id/rg_select"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rb_select1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/spacing_16"
+            android:layout_weight="1" />
+
+
+        <RadioButton
+            android:id="@+id/rb_select2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/spacing_16"
+            android:layout_weight="1" />
+
+
+    </RadioGroup>
+
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexWrap="wrap">
+
+        <com.basic.face.widget.alpha.FACEAlphaButton
+            android:id="@+id/btn_js_no_param"
+            style="@style/Button.Primary.wrap"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="调用JS无参方法" />
+
+        <com.basic.face.widget.alpha.FACEAlphaButton
+            android:id="@+id/btn_js_one_param"
+            style="@style/Button.Primary.wrap"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="调用JS一个参数方法" />
+
+        <com.basic.face.widget.alpha.FACEAlphaButton
+            android:id="@+id/btn_js_more_param"
+            style="@style/Button.Primary.wrap"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="调用JS多个参方法" />
+
+        <com.basic.face.widget.alpha.FACEAlphaButton
+            android:id="@+id/btn_clear"
+            style="@style/Button.Primary.wrap"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="清空日志" />
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

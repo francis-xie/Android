@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.basic.refresh.layout.SmartRefreshLayout style="@style/PullDownStyle">
+
+        <androidx.core.widget.NestedScrollView style="@style/ScrollViewStyle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextStyle.Content"
+                    android:singleLine="false"
+                    android:gravity="start"
+                    android:text="@string/title_sponsor_explain" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_ali_pay"
+                    android:layout_width="166dp"
+                    android:layout_height="249dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="?attr/face_config_content_spacing_horizontal"
+                    android:src="@drawable/img_ali_pay" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_wei_xin_pay"
+                    android:layout_width="166dp"
+                    android:layout_height="225dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="?attr/face_config_content_spacing_horizontal"
+                    android:src="@drawable/img_wei_xin_pay" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </com.basic.refresh.layout.SmartRefreshLayout>
+
+
+
+</LinearLayout>

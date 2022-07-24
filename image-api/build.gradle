@@ -1,0 +1,29 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion build_versions.target_sdk
+    buildToolsVersion build_versions.build_tools
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion build_versions.target_sdk
+
+        vectorDrawables.useSupportLibrary = true
+
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+    resourcePrefix 'ucrop_'
+
+}
+
+dependencies {
+    implementation deps.androidx.appcompat
+    implementation deps.androidx.recyclerview
+    implementation deps.glide
+}
+
+apply from: '../JitPackUpload.gradle'
+

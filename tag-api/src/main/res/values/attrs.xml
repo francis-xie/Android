@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="JPTabBar">
+        <attr name="tab_normalColor" format="reference|color" />
+        <attr name="tab_selectColor" format="reference|color" />
+        <attr name="tab_selectBg" format="reference|color" />
+        <attr name="tab_textSize" format="dimension|reference" />
+        <attr name="tab_typeface" format="string" />
+        <attr name="tab_iconSize" format="dimension|reference" />
+        <attr name="tab_iconPadding" format="dimension|reference" />
+        <attr name="tab_iconFilter" format="boolean" />
+        <attr name="tab_margin" format="dimension|reference" />
+        <attr name="tab_animate" format="enum">
+            <enum name="Flip" value="0" />
+            <enum name="Rotate" value="1" />
+            <enum name="Scale" value="2" />
+            <enum name="Jump" value="3" />
+            <enum name="Scale2" value="4" />
+            <enum name="None" value="5" />
+        </attr>
+        <attr name="tab_pressAnimateEnable" format="boolean" />
+        <attr name="tab_pageAnimateEnable" format="boolean" />
+        <attr name="tab_gradientEnable" format="boolean" />
+        <attr name="tab_middleBottomDis" format="dimension|reference" />
+        <attr name="tab_middleView" format="reference" />
+        <attr name="tab_middleHMargin" format="dimension|reference" />
+        <attr name="tab_badgeColor" format="reference|color" />
+        <attr name="tab_badgePadding" format="dimension|reference" />
+        <attr name="tab_badgeTextSize" format="reference|dimension" />
+        <attr name="tab_badgeVerticalMargin" format="reference|dimension" />
+        <attr name="tab_badgeHorizontalMargin" format="reference|dimension" />
+    </declare-styleable>
+</resources>

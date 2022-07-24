@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="@dimen/spacing_16"
+        android:background="?android:windowBackground"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/expand_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?selectableItemBackgroundBorderless"
+            android:scaleType="center"
+            android:src="@drawable/ic_chevron_right_black_48dp"
+            android:tint="?attr/colorAccent" />
+
+        <com.basic.face.widget.layout.ExpandableLayout
+            android:id="@+id/expandable_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:el_duration="1000"
+            app:el_expanded="false">
+
+            <TextView
+                style="@style/TextStyle.Content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/app_color_theme_9"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="这里是内容"
+                android:textColor="@color/face_config_color_white" />
+
+        </com.basic.face.widget.layout.ExpandableLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

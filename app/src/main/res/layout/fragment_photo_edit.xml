@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.basic.face.widget.flowlayout.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <com.basic.face.widget.textview.supertextview.SuperButton
+            android:id="@+id/btn_select"
+            style="@style/SuperButton.Primary.wrap"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="选择图片" />
+
+        <com.basic.face.widget.textview.supertextview.SuperButton
+            android:id="@+id/btn_brush"
+            style="@style/SuperButton.Primary.wrap"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="画笔" />
+
+        <com.basic.face.widget.textview.supertextview.SuperButton
+            android:id="@+id/btn_text"
+            style="@style/SuperButton.Primary.wrap"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="文字" />
+
+        <com.basic.face.widget.textview.supertextview.SuperButton
+            android:id="@+id/btn_rubber"
+            style="@style/SuperButton.Primary.wrap"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="橡皮" />
+
+        <com.basic.face.widget.textview.supertextview.SuperButton
+            android:id="@+id/btn_filter"
+            style="@style/SuperButton.Primary.wrap"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="滤镜" />
+
+        <com.basic.face.widget.textview.supertextview.SuperButton
+            android:id="@+id/btn_save"
+            style="@style/SuperButton.Primary.wrap"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="保存" />
+
+    </com.basic.face.widget.flowlayout.FlowLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.basic.face.widget.imageview.edit.PhotoEditorView
+            android:id="@+id/photo_editor_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:photo_src="@drawable/img_beautiful_scenery" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.basic.face.widget.alpha.FACEAlphaImageView
+                android:id="@+id/iv_undo"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="#99000000"
+                android:padding="8dp"
+                app:srcCompat="@drawable/ic_undo" />
+
+            <com.basic.face.widget.alpha.FACEAlphaImageView
+                android:id="@+id/iv_redo"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="#99000000"
+                android:padding="8dp"
+                app:srcCompat="@drawable/ic_redo" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

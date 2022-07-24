@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Picture_WindowStyle">
+        <item name="android:windowEnterAnimation">@anim/pic_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/pic_fade_out</item>
+    </style>
+
+    <style name="Picture_DialogWindowStyle">
+        <item name="android:windowEnterAnimation">@anim/pic_modal_in</item>
+        <item name="android:windowExitAnimation">@anim/pic_modal_out</item>
+    </style>
+
+    <style name="Picture_Dialog_Audio_StyleAnim">
+        <item name="android:windowEnterAnimation">@anim/pic_a5</item>
+        <item name="android:windowExitAnimation">@anim/pic_a3</item>
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="PictureAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/picture_bar_grey</item>
+        <item name="colorPrimaryDark">@color/picture_bar_grey</item>
+        <item name="colorAccent">@color/picture_bar_grey</item>
+    </style>
+
+    <style name="PictureAlertDialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/picture_transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <style name="PictureThemeDialog" parent="@android:style/Theme.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@android:color/transparent</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+
+        <!-- 自己想要的背景 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <!--默认样式-->
+    <style name="picture.default.style" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!--标题栏背景色-->
+        <item name="colorPrimary">@color/picture_bar_grey</item>
+        <!--状态栏背景色-->
+        <item name="colorPrimaryDark">@color/picture_bar_grey</item>
+        <!--是否改变图片列表界面状态栏字体颜色为黑色-->
+        <item name="picture_statusFontColor">false</item>
+        <!--返回键图标-->
+        <item name="picture_leftBack_icon">@drawable/pic_ic_back</item>
+        <!--title图标文字的padding-->
+        <item name="picture_title_action_padding">10dp</item>
+        <!--标题下拉箭头-->
+        <item name="picture_arrow_down_icon">@drawable/pic_arrow_down</item>
+        <!--标题上拉箭头-->
+        <item name="picture_arrow_up_icon">@drawable/pic_arrow_up</item>
+        <!--标题文字颜色-->
+        <item name="picture_title_textColor">@color/picture_white</item>
+        <!--标题栏右边文字-->
+        <item name="picture_right_textColor">@color/picture_white</item>
+        <!--标题文字大小-->
+        <item name="picture_title_textSize">17sp</item>
+        <!--标题栏右边文字大小-->
+        <item name="picture_right_textSize">14sp</item>
+        <!--标题文字是否加粗-->
+        <item name="picture_title_text_bold">false</item>
+        <!--标题栏右边文字是否加粗-->
+        <item name="picture_right_text_bold">false</item>
+        <!--图片列表勾选样式-->
+        <item name="picture_checked_style">@drawable/pic_selector_checkbox</item>
+        <!--开启图片列表勾选数字模式-->
+        <item name="picture_style_checkNumMode">false</item>
+        <!--选择图片样式0/9-->
+        <item name="picture_style_numComplete">false</item>
+        <!--图片列表底部背景色-->
+        <item name="picture_bottom_bg">@color/picture_color_fa</item>
+        <!--图片列表预览文字颜色-->
+        <item name="picture_preview_textColor">@color/pic_list_text_color</item>
+        <!--图片列表已完成文字颜色-->
+        <item name="picture_complete_textColor">@color/pic_list_text_color</item>
+        <!--图片已选数量圆点背景色-->
+        <item name="picture_num_style">@drawable/pic_num_oval</item>
+        <!--预览界面标题文字颜色-->
+        <item name="picture_ac_preview_title_textColor">@color/picture_white</item>
+        <!--预览界面标题文字大小-->
+        <item name="picture_ac_preview_title_textSize">18sp</item>
+        <!--预览界面标题文字是否加粗-->
+        <item name="picture_ac_preview_title_text_bold">false</item>
+        <!--预览界面已完成文字颜色-->
+        <item name="picture_ac_preview_complete_textColor">@color/pic_preview_text_color</item>
+        <!--预览界面标题栏背景色-->
+        <item name="picture_ac_preview_title_bg">@color/picture_bar_grey</item>
+        <!--预览界面底部背景色-->
+        <item name="picture_ac_preview_bottom_bg">@color/picture_bar_grey_90</item>
+        <!--预览界面返回箭头-->
+        <item name="picture_preview_leftBack_icon">@drawable/pic_ic_back</item>
+        <!--裁剪页面标题背景色-->
+        <item name="picture_crop_toolbar_bg">@color/picture_bar_grey</item>
+        <!--裁剪页面状态栏颜色-->
+        <item name="picture_crop_status_color">@color/picture_bar_grey</item>
+        <!--裁剪页面标题文字颜色-->
+        <item name="picture_crop_title_color">@color/picture_white</item>
+        <!--相册文件夹列表选中图标-->
+        <item name="picture_folder_checked_dot">@drawable/pic_orange_oval</item>
+    </style>
+
+</resources>

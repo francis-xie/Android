@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.cameraview.CameraView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/camera_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:adjustViewBounds="true"
+    android:background="@android:color/black"
+    app:cv_aspectRatio="16:9">
+
+    <com.basic.face.widget.alpha.FACEAlphaImageView
+        android:id="@+id/iv_camera_close"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="35dp"
+        app:srcCompat="@drawable/ic_camera_close" />
+
+    <com.basic.face.widget.alpha.FACEAlphaImageView
+        android:id="@+id/iv_flash_light"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="24dp"
+        app:srcCompat="@drawable/ic_flash_auto" />
+
+    <com.basic.face.widget.alpha.FACEAlphaImageView
+        android:id="@+id/iv_take_photo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="30dp"
+        app:srcCompat="@drawable/ic_take_picture" />
+
+    <com.basic.face.widget.alpha.FACEAlphaImageView
+        android:id="@+id/iv_picture_select"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="26dp"
+        app:srcCompat="@drawable/ic_select_picture" />
+
+</com.google.android.cameraview.CameraView>

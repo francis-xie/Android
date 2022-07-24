@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.basic.face.widget.tabbar.EasyIndicator
+        android:id="@+id/easy_indicator1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:indicator_height="42dp"
+        app:indicator_line_height="2dp"
+        app:indicator_line_show="true"
+        app:indicator_textSize="14sp"
+        app:indicator_width="0dp" />
+
+    <com.basic.face.widget.tabbar.EasyIndicator
+        android:id="@+id/easy_indicator2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        app:indicator_background="@color/face_config_color_transparent"
+        app:indicator_height="42dp"
+        app:indicator_line_height="5dp"
+        app:indicator_line_res="@drawable/shape_indicator_line"
+        app:indicator_line_show="true"
+        app:indicator_line_width="30dp"
+        app:indicator_selected_color="#FF6100"
+        app:indicator_textSize="14sp"
+        app:indicator_vertical_line_color="@color/face_config_color_white"
+        app:indicator_vertical_line_h="20dp"
+        app:indicator_vertical_line_w="1.5dp"
+        app:indicator_width="300dp" />
+
+    <com.basic.face.widget.tabbar.EasyIndicator
+        android:id="@+id/easy_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:indicator_height="42dp"
+        app:indicator_line_height="3dp"
+        app:indicator_line_show="true"
+        app:indicator_textSize="14sp" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

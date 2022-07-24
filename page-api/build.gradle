@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'img-optimizer'
+
+android {
+    compileSdkVersion build_versions.target_sdk
+    buildToolsVersion build_versions.build_tools
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion build_versions.target_sdk
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation deps.androidx.appcompat
+    //butterKnife的sdk
+    implementation deps.butterknife.runtime
+    annotationProcessor deps.butterknife.compiler
+
+    api project(':page-annotation')
+    implementation deps.gson
+}
+
+apply from: '../JitPackUpload.gradle'
+

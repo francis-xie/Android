@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_loading"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <com.basic.face.widget.progress.loading.MiniLoadingView
+        android:id="@+id/progress"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="-16dp"
+        app:mlv_loading_view_color="@color/face_config_color_white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:gravity="center_vertical"
+        android:text="@string/connecting_text"
+        android:textColor="@color/face_config_color_white" />
+
+</LinearLayout>

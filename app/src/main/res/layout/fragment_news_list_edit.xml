@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.basic.refresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:srlEnableAutoLoadMore="true"
+        app:srlEnableLoadMore="true">
+
+        <com.basic.refresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            tools:listitem="@layout/adapter_news_edit_list_item" />
+
+        <com.basic.code.widget.MaterialFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.basic.refresh.layout.SmartRefreshLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/face_config_color_white"
+        android:paddingHorizontal="@dimen/config_margin_24dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.basic.face.widget.button.SmoothCheckBox
+                android:id="@+id/scb_select_all"
+                android:layout_width="@dimen/common_icon_size"
+                android:layout_height="@dimen/common_icon_size"
+                android:layout_gravity="center_vertical|start" />
+
+
+            <TextView
+                style="@style/TextStyle.Title"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/config_margin_8dp"
+                android:text="@string/lab_select_all" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            style="@style/Button.Primary.wrap"
+            android:layout_gravity="center_vertical|end"
+            android:text="@string/lab_submit" />
+
+    </FrameLayout>
+
+</LinearLayout>

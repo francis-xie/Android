@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="180dp"
+            android:layout_height="90dp"
+            android:background="?attr/colorAccent"
+            android:gravity="center"
+            android:text="这是目标控件"
+            android:textColor="@color/face_config_color_white"
+            android:textSize="?attr/face_config_size_content_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.basic.face.widget.alpha.FACEAlphaButton
+            android:id="@+id/btn_alpha"
+            style="@style/Button.Primary.wrap"
+            android:layout_width="0dp"
+            android:layout_margin="?attr/face_config_content_spacing_vertical"
+            android:layout_weight="1"
+            android:text="透明度" />
+
+        <com.basic.face.widget.alpha.FACEAlphaButton
+            android:id="@+id/btn_translation"
+            style="@style/Button.Primary.wrap"
+            android:layout_width="0dp"
+            android:layout_margin="?attr/face_config_content_spacing_vertical"
+            android:layout_weight="1"
+            android:text="平移" />
+
+        <com.basic.face.widget.alpha.FACEAlphaButton
+            android:id="@+id/btn_scale"
+            style="@style/Button.Primary.wrap"
+            android:layout_width="0dp"
+            android:layout_margin="?attr/face_config_content_spacing_vertical"
+            android:layout_weight="1"
+            android:text="缩放" />
+
+        <com.basic.face.widget.alpha.FACEAlphaButton
+            android:id="@+id/btn_rotation"
+            style="@style/Button.Primary.wrap"
+            android:layout_width="0dp"
+            android:layout_margin="?attr/face_config_content_spacing_vertical"
+            android:layout_weight="1"
+            android:text="旋转" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.basic.face.widget.alpha.FACEAlphaButton
+            android:id="@+id/btn_value_animator"
+            style="@style/Button.Primary.wrap"
+            android:layout_width="0dp"
+            android:layout_margin="?attr/face_config_content_spacing_vertical"
+            android:layout_weight="1"
+            android:text="值动画" />
+
+        <com.basic.face.widget.alpha.FACEAlphaButton
+            android:id="@+id/btn_type_evaluator"
+            style="@style/Button.Primary.wrap"
+            android:layout_width="0dp"
+            android:layout_margin="?attr/face_config_content_spacing_vertical"
+            android:layout_weight="1"
+            android:text="估值器" />
+
+
+        <com.basic.face.widget.alpha.FACEAlphaButton
+            android:id="@+id/btn_compose1"
+            style="@style/Button.Primary.wrap"
+            android:layout_width="0dp"
+            android:layout_margin="?attr/face_config_content_spacing_vertical"
+            android:layout_weight="1"
+            android:text="组合1" />
+
+        <com.basic.face.widget.alpha.FACEAlphaButton
+            android:id="@+id/btn_compose2"
+            style="@style/Button.Primary.wrap"
+            android:layout_width="0dp"
+            android:layout_margin="?attr/face_config_content_spacing_vertical"
+            android:layout_weight="1"
+            android:text="组合2" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

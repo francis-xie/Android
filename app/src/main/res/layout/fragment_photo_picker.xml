@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/face_config_color_white"
+    android:orientation="vertical">
+
+    <com.basic.face.widget.alpha.FACEAlphaButton
+        android:id="@+id/button"
+        style="@style/Button.Primary.wrap"
+        android:layout_marginTop="10dip"
+        android:text="@string/pick_photo" />
+
+    <com.basic.face.widget.alpha.FACEAlphaButton
+        android:id="@+id/button_no_camera"
+        style="@style/Button.Primary.wrap"
+        android:layout_marginTop="10dip"
+        android:text="@string/pick_photo_without_camera" />
+
+    <com.basic.face.widget.alpha.FACEAlphaButton
+        android:id="@+id/button_one_photo"
+        style="@style/Button.Primary.wrap"
+        android:layout_marginTop="10dip"
+        android:text="@string/pick_one_photo" />
+
+    <com.basic.face.widget.alpha.FACEAlphaButton
+        android:id="@+id/button_photo_gif"
+        style="@style/Button.Primary.wrap"
+        android:layout_marginTop="10dip"
+        android:text="@string/pick_photo_gif" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_marginTop="?attr/face_config_content_spacing_horizontal"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

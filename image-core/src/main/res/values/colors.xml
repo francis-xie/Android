@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="picture_bar_grey">#393a3e</color>
+    <color name="picture_black">#000000</color>
+    <color name="picture_white">#FFFFFF</color>
+    <color name="picture_blue">#7D7DFF</color>
+    <color name="picture_color_69">#999999</color>
+    <color name="picture_image_overlay_true">#80000000</color>
+    <color name="picture_image_overlay_false">#20000000</color>
+    <color name="picture_line_color">#EEEEEE</color>
+    <color name="picture_color_fa">#FAFAFA</color>
+    <color name="picture_tab_color_true">#FA632D</color>
+    <color name="picture_tab_color_false">#9b9b9b</color>
+    <color name="picture_color_f2">#F2F2F2</color>
+    <color name="picture_transparent">#00000000</color>
+    <color name="picture_transparent_white">#F0FFFFFF</color>
+    <color name="picture_transparent_db">#E0DBDBDB</color>
+    <color name="picture_color_53">#53575e</color>
+    <color name="picture_color_f0">#F0F0F0</color>
+    <color name="picture_bar_grey_90">#dd393a3e</color>
+    <color name="picture_color_4d">#4d4d4d</color>
+    <color name="picture_color_orange">#E0FF6100</color>
+</resources>

@@ -1,0 +1,21 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion build_versions.target_sdk
+    buildToolsVersion build_versions.build_tools
+
+    defaultConfig {
+        minSdkVersion 12
+        targetSdkVersion build_versions.target_sdk
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compileOnly deps.support.app_compat
+    compileOnly project(':refresh-layout')
+}
+
+apply from: '../JitPackUpload.gradle'

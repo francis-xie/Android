@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.basic.face.widget.layout.FACEFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    style="@style/FACELayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="4dp"
+    android:paddingStart="@dimen/activity_horizontal_margin"
+    android:paddingTop="3dp"
+    android:paddingEnd="@dimen/activity_horizontal_margin"
+    android:paddingBottom="8dp"
+    app:face_shadowElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.basic.face.widget.button.SmoothCheckBox
+            android:id="@+id/scb_select"
+            android:layout_width="@dimen/common_icon_size"
+            android:layout_height="@dimen/common_icon_size"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginEnd="@dimen/config_margin_16dp"
+            android:visibility="gone" />
+
+        <include layout="@layout/layout_news_card_item" />
+
+    </LinearLayout>
+
+</com.basic.face.widget.layout.FACEFrameLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.basic.face.widget.alpha.FACEAlphaButton
+        android:id="@+id/btn_add"
+        style="@style/Button.Primary.wrap"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="随机添加文字" />
+
+
+    <TextView
+        style="@style/TextStyle.Explain"
+        android:layout_marginTop="10dp"
+        android:text="在AutoFitLayout布局中:" />
+
+    <com.basic.face.widget.textview.autofit.AutoFitLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_in_auto_fit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="This is the test content:"
+            android:textSize="30sp" />
+
+    </com.basic.face.widget.textview.autofit.AutoFitLayout>
+
+    <TextView
+        style="@style/TextStyle.Explain"
+        android:layout_marginTop="10dp"
+        android:text="AutoFitTextView:" />
+
+    <com.basic.face.widget.textview.autofit.AutoFitTextView
+        android:id="@+id/aftv"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:text="This is the test content:"
+        android:textSize="30sp" />
+
+    <TextView
+        style="@style/TextStyle.Explain"
+        android:layout_marginTop="10dp"
+        android:text="普通TextView:" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:text="This is the test content:"
+        android:textSize="30sp" />
+
+</LinearLayout>

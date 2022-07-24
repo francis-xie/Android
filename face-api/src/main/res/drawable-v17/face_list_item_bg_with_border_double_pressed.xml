@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/face_config_color_separator_dark_phone" />
+    <item
+        android:bottom="@dimen/face_list_divider_height_phone"
+        android:drawable="@color/face_config_color_background_pressed"
+        android:top="@dimen/face_list_divider_height_phone" />
+</layer-list>
