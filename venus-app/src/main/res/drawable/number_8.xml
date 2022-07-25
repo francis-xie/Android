@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/user_face_drawable" android:drawable="@drawable/number_button1"
+        android:width="70dp"
+        android:height="45dp"/>
+  <item android:id="@+id/user_faceback_drawable" android:drawable="@drawable/k_8" android:gravity="center"
+        android:height="20dp"
+        android:width="15dp"/>
+</layer-list>

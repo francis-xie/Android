@@ -140,8 +140,8 @@ static def addRepos(RepositoryHandler handler) {
     handler.maven { url 'LocalRepository' }
     //handler.maven { url 'repo-local' }
     handler.google()
-    handler.jcenter()
     handler.mavenCentral()
+    handler.jcenter()
 }
 
 ext.addRepos = this.&addRepos

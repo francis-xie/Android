@@ -1,11 +1,8 @@
 apply plugin: 'com.github.dcendents.android-maven'
 
-// 指定group，com.github.<用户名>，这里我默认填写的是我的github账号，请换成你自己的。
-group='com.github.zhiqiang'
-
+// 指定group，com.github.<用户名>
+group='com.github.zhiqiang-h'
 //---------------------------------------------
-
-
 // 指定编码
 tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
@@ -39,7 +36,7 @@ javadoc {
         charSet 'UTF-8'
         author true
         version true
-        links "http://docs.oracle.com/javase/7/docs/api"
+        links "http://docs.oracle.com/javase/8/docs/api"
     }
 }
 

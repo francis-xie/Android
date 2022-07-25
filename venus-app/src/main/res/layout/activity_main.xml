@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="5pt">
+
+
+                <TextView
+                    android:id="@+id/tv_receipt"
+                    android:layout_width="120pt"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2pt"
+                    android:background="@drawable/gray_green_selector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingLeft="10pt"
+                    android:paddingTop="10pt"
+                    android:paddingBottom="10pt"
+                    android:text="@string/print_receipt"
+                    android:textColor="@color/colorTextGray"
+                    android:textSize="14pt" />
+
+                <TextView
+                    android:id="@+id/tv_label"
+                    android:layout_width="120pt"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2pt"
+                    android:background="@drawable/gray_green_selector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingLeft="10pt"
+                    android:paddingTop="10pt"
+                    android:paddingBottom="10pt"
+                    android:text="@string/label_print"
+                    android:textColor="@color/colorTextGray"
+                    android:textSize="14pt" />
+
+                <TextView
+                    android:id="@+id/tv_wifi"
+                    android:layout_width="120pt"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2pt"
+                    android:background="@drawable/gray_green_selector"
+                    android:clickable="true"
+                    android:drawablePadding="10pt"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:paddingStart="10pt"
+                    android:paddingTop="10pt"
+                    android:paddingBottom="10pt"
+                    android:text="@string/wifi_print"
+                    android:textColor="@color/colorTextGray"
+                    android:textSize="14pt" />
+
+                <TextView
+                    android:id="@+id/tv_barcode_scanner"
+                    android:layout_width="120pt"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2pt"
+                    android:background="@drawable/gray_green_selector"
+                    android:clickable="true"
+                    android:drawablePadding="10pt"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:paddingStart="10pt"
+                    android:paddingTop="10pt"
+                    android:paddingBottom="10pt"
+                    android:text="扫码枪"
+                    android:textColor="@color/colorTextGray"
+                    android:textSize="14pt" />
+                <TextView
+                    android:id="@+id/tv_no_sdk_print"
+                    android:layout_width="120pt"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2pt"
+                    android:background="@drawable/gray_green_selector"
+                    android:clickable="true"
+                    android:drawablePadding="10pt"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:paddingStart="10pt"
+                    android:paddingTop="10pt"
+                    android:paddingBottom="10pt"
+                    android:text="无sdk小票打印"
+                    android:textColor="@color/colorTextGray"
+                    android:textSize="14pt" />
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <FrameLayout
+            android:id="@+id/fg_content"
+            android:layout_width="0pt"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

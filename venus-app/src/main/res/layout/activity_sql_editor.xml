@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="com.emis.venus.activity.SQLEditorActivity">
+
+  <Button
+    android:id="@+id/btnExecuteUpdate"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:text="執行"
+    android:textColor="@android:color/black"
+    app:layout_constraintStart_toEndOf="@+id/btnExecuteQuery"
+    app:layout_constraintTop_toBottomOf="@+id/edtSQLContent"/>
+
+  <EditText
+    android:id="@+id/edtSQLContent"
+    android:layout_width="362dp"
+    android:layout_height="198dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="24dp"
+    android:background="@android:drawable/edit_text"
+    android:ems="10"
+    android:gravity="start|top"
+    android:inputType="textMultiLine"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="horizontal|vertical"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.416"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+  <Button
+    android:id="@+id/btnClear"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="8dp"
+    android:text="清空"
+    android:textColor="@android:color/black"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/edtSQLContent"/>
+
+  <Button
+    android:id="@+id/btnExecuteQuery"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:text="查詢"
+    android:textColor="@android:color/black"
+    app:layout_constraintStart_toEndOf="@+id/btnClear"
+    app:layout_constraintTop_toBottomOf="@+id/edtSQLContent"/>
+
+  <HorizontalScrollView
+    android:layout_width="0dp"
+    android:layout_height="308dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btnExecuteQuery">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="horizontal">
+
+      <TableLayout
+        android:id="@+id/tableLayoutQueryResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="669dp">
+
+        <TableRow
+          android:layout_width="match_parent"
+          android:layout_height="25dp">
+
+          <TableLayout
+            android:id="@+id/tableLayoutHeaderRow"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"/>
+        </TableRow>
+
+        <TableRow
+          android:layout_width="match_parent"
+          android:layout_height="100dp">
+
+          <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="669dp">
+
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+              <TableLayout
+                android:id="@+id/tableLayoutDataRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            </LinearLayout>
+          </ScrollView>
+        </TableRow>
+      </TableLayout>
+    </LinearLayout>
+  </HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

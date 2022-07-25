@@ -1,4 +1,6 @@
-apply plugin: 'maven'
+//apply plugin: 'maven'
+//==============================JitPack 上传插件配置=====================
+apply plugin: 'com.github.dcendents.android-maven'
 
 //加载本地maven私服配置（在工程根目录中的local.properties文件中进行配置）
 //group和version的定义会被使用，作为maven库坐标的一部分

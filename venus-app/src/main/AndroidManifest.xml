@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.emis.venus">
+
+  <!--http访问-->
+  <uses-permission android:name="android.permission.INTERNET"/> <!-- 网络权限 -->
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="com.android.permission.Launcher"/>
+
+  <uses-permission android:name="android.permission.VIBRATE"/> <!-- 震动权限 -->
+  <uses-permission android:name="android.permission.CAMERA"/> <!-- 摄像头权限 -->
+  <uses-permission android:name="android.permission.FLASHLIGHT"/>
+  <uses-permission android:name="android.permission.READ_CONTACTS"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> <!-- 内存卡权限 -->
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> <!-- 内存卡权限 -->
+  <!--<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />-->
+  <!--<uses-feature android:name="android.hardware.camera.autofocus" />--> <!-- 自动聚焦权限 -->
+  <uses-feature android:name="android.hardware.camera.any"/>
+  <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+  <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+  <uses-feature android:name="android.hardware.screen.landscape"/>
+  <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+
+  <!--wifi打印机权限-->
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+  <uses-permission android:name="android.permission.BLUETOOTH" />
+  <uses-permission android:name="android.hardware.usb.accessory" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <!--<uses-permission
+    android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+    tools:ignore="ProtectedPermissions" />-->
+  <uses-permission android:name="android.permission.GET_TASKS" />
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+  <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+  <!--<uses-permission
+    android:name="android.permission.WRITE_SETTINGS"
+    tools:ignore="ProtectedPermissions" />-->
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+  <uses-feature android:name="android.hardware.usb.host" />
+  <!--wifi打印机权限-->
+  <!--开机自启动权限  RECEIVE_BOOT_COMPLETED-->
+  <!--<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />-->
+
+<!--  android:name="com.freak.printtool.hardware.app.App"-->
+  <application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/Theme.VenusApp"
+    android:usesCleartextTraffic="true">
+
+    <!--<provider
+      android:authorities="com.emis.sunmi.launcher_update_check"
+      android:name="com.emis.app.common.UpdateAppProvider"
+      android:exported="true"
+    />-->
+
+    <!-- 每个为应用程序所定义的活动都需要在AndroidManifest.xml中声明 -->
+    <activity
+      android:name="com.emis.venus.activity.MainActivity"
+      android:label="收银台"
+      android:exported="true">
+      <!-- 过滤器标签 -->
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+
+    <activity
+      android:name="com.emis.venus.activity.LoginActivity"
+      android:label="登入"
+      android:parentActivityName="com.emis.venus.activity.LoginActivity">
+      <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value="com.emis.venus.activity.MainActivity"/>
+    </activity>
+
+    <activity
+      android:name="com.emis.venus.activity.SQLEditorActivity"
+      android:label="SQL"
+      android:parentActivityName="com.emis.venus.activity.SQLEditorActivity">
+      <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value="com.emis.venus.activity.MainActivity"/>
+    </activity>
+
+    <activity
+      android:name="com.emis.venus.activity.BillInActivity"
+      android:label="要货"
+      android:parentActivityName="com.emis.venus.activity.BillInActivity">
+      <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value="com.emis.venus.activity.MainActivity"/>
+    </activity>
+
+
+    <activity
+      android:name="com.emis.venus.activity.BillDetailsActivity"
+      android:label="商品入账"
+      android:parentActivityName="com.emis.venus.activity.MainActivity">
+      <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value="com.emis.venus.activity.MainActivity"/>
+    </activity>
+    <activity android:name="com.emis.venus.common.ScannerUtil"/>
+
+    <activity android:name="com.google.zxing.activity.CaptureActivity"
+              android:screenOrientation="sensorLandscape"
+              android:clearTaskOnLaunch="true"
+              android:stateNotNeeded="true"
+              android:theme="@style/CaptureTheme"
+              android:windowSoftInputMode="stateAlwaysHidden"
+              android:exported="false">
+      <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value="com.emis.venus.activity.BillDetailsActivity"/>
+    </activity>
+    <activity android:name="com.google.zxing.util.PreferencesActivity"
+              android:label="@string/preferences_name"
+              android:stateNotNeeded="true"/>
+    <activity android:name="com.google.zxing.share.ShareActivity"
+              android:stateNotNeeded="true"
+              android:screenOrientation="user"
+              android:exported="false">
+      <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value="com.emis.venus.activity.BillDetailsActivity"/>
+    </activity>
+
+    <!--打印-->
+    <!--<activity android:name="com.freak.printtool.hardware.module.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>-->
+    <activity android:name="com.freak.printtool.hardware.module.scanner.BarcodeScannerActivity" />
+    <activity
+      android:name="com.freak.printtool.hardware.module.label.UsbDeviceList"
+      android:screenOrientation="portrait"
+      android:theme="@android:style/Theme.Dialog" />
+
+    <!-- 开机启动 -->
+    <receiver
+      android:name="com.freak.printtool.service.BootCompleteReceiver"
+      android:enabled="true"
+      android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED" />
+      </intent-filter>
+    </receiver>
+    <!--wifi打印机配置-->
+    <service
+      android:name="com.gprinter.service.GpPrintService"
+      android:enabled="true"
+      android:exported="true"
+      android:label="GpPrintService">
+      <intent-filter>
+        <action android:name="com.gprinter.aidl.GpPrintService" />
+      </intent-filter>
+    </service>
+    <service android:name="com.gprinter.service.AllService" />
+
+    <activity android:name="com.freak.printtool.hardware.module.wifi.addprinter.AddPrinterActivity" />
+    <!--wifi打印机配置结束-->
+    <!--开机软件自启动配置  需要权限 RECEIVE_BOOT_COMPLETED-->
+    <receiver android:name="com.freak.printtool.hardware.module.wifi.printerutil.BroadCastReceiver">
+      <intent-filter>
+        <!-- 开机广播 -->
+        <action android:name="android.intent.action.BOOT_COMPLETED" />
+        <!-- 关机广播 -->
+        <!--<action android:name="android.intent.action.ACTION_SHUTDOWN"/>-->
+      </intent-filter>
+    </receiver>
+    <!--开机软件自启动配置结束-->
+  </application>
+</manifest>

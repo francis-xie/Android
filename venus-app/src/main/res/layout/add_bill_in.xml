@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/constraintlayout"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <TextView
+    android:id="@+id/txtBILL_S_NO"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="32dp"
+    android:text="要货门店"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+  <Spinner
+    android:id="@+id/spinnerBILL_S_NO"
+    android:layout_width="168dp"
+    android:layout_height="48dp"
+    android:layout_marginStart="8dp"
+    android:popupElevation="18dp"
+    android:spinnerMode="dialog"
+    app:layout_constraintBottom_toBottomOf="@+id/txtBILL_S_NO"
+    app:layout_constraintStart_toEndOf="@+id/txtBILL_S_NO"/>
+
+  <TextView
+    android:id="@+id/txtBILL_IN_PM"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:text="要货模板"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    app:layout_constraintEnd_toEndOf="@+id/txtBILL_S_NO"
+    app:layout_constraintStart_toStartOf="@+id/txtBILL_S_NO"
+    app:layout_constraintTop_toBottomOf="@+id/txtBILL_S_NO"/>
+
+  <Spinner
+    android:id="@+id/spinnerBILL_IN_PM"
+    android:layout_width="168dp"
+    android:layout_height="48dp"
+    android:layout_marginStart="8dp"
+    android:popupElevation="18dp"
+    android:spinnerMode="dialog"
+    app:layout_constraintBottom_toBottomOf="@+id/txtBILL_IN_PM"
+    app:layout_constraintStart_toEndOf="@+id/txtBILL_IN_PM"/>
+
+  <TextView
+    android:id="@+id/txtBILL_IN_DATE"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:text="要货日期"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    app:layout_constraintEnd_toStartOf="@+id/spinnerBILL_IN_PM"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/txtBILL_IN_PM"
+    app:layout_constraintTop_toBottomOf="@+id/txtBILL_IN_PM"/>
+
+  <EditText
+    android:id="@+id/edtBILL_IN_DATE"
+    android:layout_width="112dp"
+    android:layout_height="48dp"
+    android:layout_marginStart="8dp"
+    android:background="@drawable/sendout_date_frame"
+    android:clickable="false"
+    android:editable="false"
+    android:ems="10"
+    android:enabled="false"
+    android:focusableInTouchMode="false"
+    android:inputType="number"
+    android:textColor="@color/black"
+    app:layout_constraintBottom_toBottomOf="@+id/txtBILL_IN_DATE"
+    app:layout_constraintStart_toEndOf="@+id/txtBILL_IN_DATE"/>
+
+  <ImageButton
+    android:id="@+id/btnBILL_IN_DATE"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:layout_marginStart="8dp"
+    android:background="@drawable/calendar"
+    android:scaleType="fitCenter"
+    app:layout_constraintBottom_toBottomOf="@+id/edtBILL_IN_DATE"
+    app:layout_constraintStart_toEndOf="@+id/edtBILL_IN_DATE"/>
+
+  <TextView
+    android:id="@+id/txtBILL_IN_TV"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:text="出  货  仓"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    app:layout_constraintEnd_toEndOf="@+id/txtBILL_IN_DATE"
+    app:layout_constraintStart_toStartOf="@+id/txtBILL_IN_DATE"
+    app:layout_constraintTop_toBottomOf="@+id/txtBILL_IN_DATE"/>
+
+  <Spinner
+    android:id="@+id/spinnerBILL_IN_TV"
+    android:layout_width="168dp"
+    android:layout_height="48dp"
+    android:layout_marginStart="8dp"
+    android:popupElevation="18dp"
+    android:spinnerMode="dialog"
+    app:layout_constraintBottom_toBottomOf="@+id/txtBILL_IN_TV"
+    app:layout_constraintStart_toEndOf="@+id/txtBILL_IN_TV"/>
+
+  <TextView
+    android:id="@+id/txtBILL_IN_P_DATE"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:text="期望交货日期"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    app:layout_constraintEnd_toStartOf="@+id/spinnerBILL_IN_TV"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/txtBILL_IN_TV"
+    app:layout_constraintTop_toBottomOf="@+id/txtBILL_IN_TV"/>
+
+  <EditText
+    android:id="@+id/edtBILL_IN_P_DATE"
+    android:layout_width="112dp"
+    android:layout_height="48dp"
+    android:layout_marginStart="8dp"
+    android:background="@drawable/sendout_date_frame"
+    android:clickable="false"
+    android:editable="false"
+    android:ems="10"
+    android:enabled="false"
+    android:focusableInTouchMode="false"
+    android:inputType="number"
+    android:textColor="@color/black"
+    app:layout_constraintBottom_toBottomOf="@+id/txtBILL_IN_P_DATE"
+    app:layout_constraintStart_toEndOf="@+id/txtBILL_IN_P_DATE"/>
+
+  <ImageButton
+    android:id="@+id/btnBILL_IN_P_DATE"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:layout_marginStart="8dp"
+    android:background="@drawable/calendar"
+    android:scaleType="fitCenter"
+    app:layout_constraintBottom_toBottomOf="@+id/edtBILL_IN_P_DATE"
+    app:layout_constraintStart_toEndOf="@+id/edtBILL_IN_P_DATE"/>
+
+  <TextView
+    android:id="@+id/txtBILL_IN_P_TIME"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:text="期望交货时间"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    app:layout_constraintEnd_toStartOf="@+id/btnBILL_IN_P_DATE"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/txtBILL_IN_P_DATE"
+    app:layout_constraintTop_toBottomOf="@+id/txtBILL_IN_P_DATE"/>
+
+  <TextView
+    android:id="@+id/timeBILL_IN_P_TIME"
+    android:layout_width="168dp"
+    android:layout_height="48dp"
+    android:layout_marginStart="8dp"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    android:background="#ededed"
+    app:layout_constraintBottom_toBottomOf="@+id/txtBILL_IN_P_TIME"
+    app:layout_constraintStart_toEndOf="@+id/txtBILL_IN_P_TIME"/>
+
+  <TextView
+    android:id="@+id/txtBILL_IN_TYPE"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:text="单据类型"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    app:layout_constraintEnd_toEndOf="@+id/txtBILL_IN_P_TIME"
+    app:layout_constraintStart_toStartOf="@+id/txtBILL_IN_P_TIME"
+    app:layout_constraintTop_toBottomOf="@+id/txtBILL_IN_P_TIME"/>
+
+  <Spinner
+    android:id="@+id/spinnerBILL_IN_TYPE"
+    android:layout_width="168dp"
+    android:layout_height="48dp"
+    android:layout_marginStart="8dp"
+    android:popupElevation="18dp"
+    android:spinnerMode="dialog"
+    app:layout_constraintBottom_toBottomOf="@+id/txtBILL_IN_TYPE"
+    app:layout_constraintStart_toEndOf="@+id/txtBILL_IN_TYPE"/>
+
+  <TextView
+    android:id="@+id/txtBILL_IN_REMARK"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:text="备        注"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    app:layout_constraintEnd_toStartOf="@+id/spinnerBILL_IN_TYPE"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/txtBILL_IN_TYPE"
+    app:layout_constraintTop_toBottomOf="@+id/txtBILL_IN_TYPE"/>
+
+  <EditText
+    android:id="@+id/edBILL_IN_REMARK"
+    android:layout_width="168dp"
+    android:layout_height="144dp"
+    android:layout_marginStart="8dp"
+    android:clickable="false"
+    android:ems="10"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:hint="请输入备注"
+    android:gravity="start|top"
+    android:inputType="textMultiLine"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="horizontal|vertical"
+    android:textColor="@color/black"
+    app:layout_constraintBaseline_toBaselineOf="@+id/txtBILL_IN_REMARK"
+    app:layout_constraintStart_toEndOf="@+id/txtBILL_IN_REMARK"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

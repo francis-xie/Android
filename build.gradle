@@ -7,8 +7,10 @@ buildscript {
         classpath deps.android_gradle_plugin
         classpath deps.android_maven_gradle_plugin
 
-        classpath 'com.basic:aop-plugin:1.0.0'
-        classpath 'com.basic:router-plugin:1.0.0'
+        //classpath 'com.github.zhiqiang-h:aop-plugin:1.0.0'
+        //classpath 'com.github.zhiqiang-h:router-plugin:1.0.0'
+        classpath 'com.github.zhiqiang-h.AndroidGradle:router-plugin:1.0.0'
+        classpath 'com.github.zhiqiang-h.AndroidGradle:aop-plugin:1.0.0'
 
         classpath 'com.chenenyu:img-optimizer:1.2.0' // 图片压缩
         //滴滴的质量优化框架

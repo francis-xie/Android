@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/container"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/white"
+  tools:context="com.emis.venus.activity.LoginActivity"
+  tools:layout_editor_absoluteY="25dp">
+
+  <TextView
+    android:id="@+id/textView22"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="4dp"
+    android:text="机号:"
+    android:textColor="@color/black"
+    android:textSize="16sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/textView30"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:text="0001"
+    android:textColor="@color/black"
+    app:layout_constraintBottom_toBottomOf="@+id/textView22"
+    app:layout_constraintStart_toEndOf="@+id/textView22"
+    app:layout_constraintTop_toTopOf="@+id/textView22"/>
+
+  <TextView
+    android:id="@+id/textView31"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:text="編號"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    app:layout_constraintEnd_toStartOf="@+id/edtP_NO"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView22"/>
+
+  <EditText
+    android:id="@+id/edtP_NO"
+    android:layout_width="200dp"
+    android:layout_height="60dp"
+    android:background="@drawable/calculate_frame"
+    android:ems="10"
+    android:fontFamily="monospace"
+    android:gravity="right|center_vertical"
+    android:hint="商品编号"
+    android:inputType="text"
+    android:maxLength="13"
+    android:padding="10dp"
+    android:singleLine="true"
+    android:textColor="@color/black"
+    android:textSize="25sp"
+    android:textStyle="bold"
+    android:typeface="monospace"
+    app:layout_constraintBottom_toBottomOf="@+id/textView31"
+    app:layout_constraintEnd_toStartOf="@+id/btnScan"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toEndOf="@+id/textView31"
+    app:layout_constraintTop_toTopOf="@+id/textView31"/>
+
+  <ImageButton
+    android:id="@+id/btnScan"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:background="@drawable/scanning"
+    app:layout_constraintBottom_toBottomOf="@+id/edtP_NO"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toEndOf="@+id/edtP_NO"
+    app:layout_constraintTop_toTopOf="@+id/edtP_NO"/>
+
+  <ImageButton
+    android:id="@+id/btnClear"
+    android:layout_width="55dp"
+    android:layout_height="35dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/goods_button1"
+    android:foregroundGravity="center|fill"
+    android:paddingLeft="12dp"
+    android:paddingTop="3dp"
+    android:paddingRight="12dp"
+    android:paddingBottom="3dp"
+    android:scaleType="fitXY"
+    app:layout_constraintEnd_toStartOf="@+id/btnMinus"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/edtP_NO"
+    app:srcCompat="@drawable/goods_trash1"/>
+
+  <ImageButton
+    android:id="@+id/btnMinus"
+    android:layout_width="30dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/goods_minus_b"
+    app:layout_constraintBottom_toBottomOf="@+id/btnClear"
+    app:layout_constraintEnd_toStartOf="@+id/edtQty"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toEndOf="@+id/btnClear"
+    app:layout_constraintTop_toTopOf="@+id/btnClear"/>
+
+  <View
+    android:id="@+id/viewMinus"
+    android:layout_width="55dp"
+    android:layout_height="35dp"
+    app:layout_constraintBottom_toBottomOf="@+id/btnMinus"
+    app:layout_constraintEnd_toEndOf="@+id/btnMinus"
+    app:layout_constraintStart_toStartOf="@+id/btnMinus"
+    app:layout_constraintTop_toTopOf="@+id/btnMinus"/>
+
+  <EditText
+    android:id="@+id/edtQty"
+    android:layout_width="100dp"
+    android:layout_height="40dp"
+    android:background="@drawable/calculate_frame"
+    android:ems="10"
+    android:gravity="center_vertical|end"
+    android:inputType="number"
+    android:text="1"
+    android:textColor="@color/black"
+    app:layout_constraintBottom_toBottomOf="@+id/btnClear"
+    app:layout_constraintEnd_toStartOf="@+id/btnAdd"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toEndOf="@+id/btnMinus"
+    app:layout_constraintTop_toTopOf="@+id/btnClear"/>
+
+  <ImageButton
+    android:id="@+id/btnAdd"
+    android:layout_width="40dp"
+    android:layout_height="35dp"
+    android:background="@drawable/goods_plus_b"
+    app:layout_constraintBottom_toBottomOf="@+id/btnClear"
+    app:layout_constraintEnd_toStartOf="@+id/btnOK"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toEndOf="@+id/edtQty"
+    app:layout_constraintTop_toTopOf="@+id/btnClear"/>
+
+  <ImageButton
+    android:id="@+id/btnOK"
+    android:layout_width="55dp"
+    android:layout_height="35dp"
+    android:background="@drawable/goods_button1"
+    android:paddingLeft="12dp"
+    android:paddingTop="3dp"
+    android:paddingRight="12dp"
+    android:paddingBottom="3dp"
+    android:scaleType="fitXY"
+    app:layout_constraintBottom_toBottomOf="@+id/btnClear"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toEndOf="@+id/btnAdd"
+    app:layout_constraintTop_toTopOf="@+id/btnClear"
+    app:srcCompat="@drawable/goods_apply"/>
+
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline_hNumber"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.93"/>
+
+  <ScrollView
+    android:id="@+id/scrollHorizontalView"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="8dp"
+    app:layout_constraintBottom_toTopOf="@+id/keyboard"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/edtQty">
+
+    <TableLayout
+      android:id="@+id/tableLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    </TableLayout>
+  </ScrollView>
+
+  <Button
+    android:id="@+id/btnPay"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/below_button"
+    android:text="小计"
+    android:textColor="#FFFFFF"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"/>
+
+  <android.inputmethodservice.KeyboardView
+    android:id="@+id/keyboard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/keyboard_base"
+    android:foregroundGravity="center_horizontal"
+    android:keyBackground="@drawable/keyboard_button1"
+    android:paddingTop="10dp"
+    android:paddingBottom="5dp"
+    android:visibility="invisible"
+    app:layout_constraintBottom_toTopOf="@+id/btnPay"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

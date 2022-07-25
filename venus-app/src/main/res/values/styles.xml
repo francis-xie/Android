@@ -1,0 +1,73 @@
+<resources>
+
+  <!-- popup window 显示消失动画-->
+  <style name="PopWindowAnimStyle">
+    <item name="android:windowShowAnimation">@anim/dialog_enter</item>
+    <!-- 指定显示的动画xml  -->
+    <item name="android:windowHideAnimation">@anim/dialog_exit</item>
+    <!-- 指定消失的动画xml  -->
+  </style>
+
+  <!-- my loading dialog -->
+  <style name="MyDialogStyle">
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowFrame">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    <item name="android:backgroundDimEnabled">true</item>
+  </style>
+
+  <style name="Theme.TimePicker" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:editTextStyle">@style/Widget.AppCompat.EditText.Gray</item>
+  </style>
+
+  <style name="Widget.AppCompat.EditText.Gray">
+    <item name="android:textSize">18sp</item>
+    <item name="android:textColor">#b3b3b3</item>
+  </style>
+
+  <!-- ZXing -->
+  <style name="ResultButton" parent="@android:style/Widget.Holo.Button.Borderless.Small">
+    <item name="android:layout_width">0dip</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_weight">1</item>
+  </style>
+  <style name="ShareButton" parent="@android:style/Widget.Holo.Button.Borderless.Small">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <!--打印-->
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+  <!-- ToolBar菜单样式 -->
+  <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">s
+    <item name="actionMenuTextColor">@color/white</item> <!--  敲定颜色-->
+    <!--<item name="android:textSize">18sp</item> &lt;!&ndash;  搞掂字体大小&ndash;&gt;-->
+  </style>
+
+  <style name="dialog" parent="@android:style/Theme.Dialog">
+    <item name="android:windowFrame">@null</item>
+    <!--//Dialog的windowFrame框为无-->
+    <item name="android:windowIsFloating">true</item>
+    <!--//是否浮现在activity之上-->
+    <item name="android:windowIsTranslucent">true</item>
+    <!--//是否半透明-->
+    <item name="android:windowNoTitle">true</item>
+    <!--//是否显示title-->
+    <item name="android:background">@android:color/transparent</item>
+    <!--//设置dialog的背景-->
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:backgroundDimAmount">0.6</item>
+    <!--//就是用来控制灰度的值，当为1时，界面除了我们的dialog内容是高亮显示的，dialog以外的区域是黑色的，完全看不到其他内容-->
+    <item name="android:backgroundDimEnabled">true</item>
+  </style>
+</resources>

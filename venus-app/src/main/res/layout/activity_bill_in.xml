@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/container"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="com.emis.venus.activity.BillInActivity"
+  tools:layout_editor_absoluteY="25dp">
+
+  <View
+    android:id="@+id/viewTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:background="@drawable/date_frame"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+  <Button
+    android:id="@+id/btnIN_ED"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:text="编辑"
+    android:textColor="@color/white"
+    android:textSize="20sp"
+    app:layout_constraintBottom_toBottomOf="@+id/viewTitle"
+    app:layout_constraintStart_toStartOf="@+id/viewTitle"
+    app:layout_constraintTop_toTopOf="@+id/viewTitle"/>
+  <Button
+    android:id="@+id/btnIN_PP"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:text="提出"
+    android:textColor="@color/white"
+    android:textSize="20sp"
+    app:layout_constraintBottom_toBottomOf="@+id/viewTitle"
+    app:layout_constraintStart_toEndOf="@+id/btnIN_ED"
+    app:layout_constraintTop_toTopOf="@+id/viewTitle"/>
+  <Button
+    android:id="@+id/btnIN_QRY"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="20dp"
+    android:text="查询"
+    android:textColor="@color/white"
+    android:textSize="20sp"
+    android:onClick="btnBillQry"
+    app:layout_constraintBottom_toBottomOf="@+id/viewTitle"
+    app:layout_constraintEnd_toEndOf="@+id/viewTitle"
+    app:layout_constraintTop_toTopOf="@+id/viewTitle"/>
+
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline14"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.98"/>
+
+  <GridView
+    android:id="@+id/gridViewBill"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginTop="16dp"
+    android:gravity="center"
+    android:scrollbars="horizontal|vertical"
+    app:layout_constraintBottom_toTopOf="@+id/guideline14"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/viewTitle"/>
+
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline15"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.98"/>
+
+  <View
+    android:id="@+id/viewTitle2"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:background="@drawable/date_frame"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintBottom_toTopOf="@+id/guideline15"
+    app:layout_constraintTop_toBottomOf="@+id/gridViewBill"/>
+
+  <Button
+    android:id="@+id/btnIN_ADD"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:text="新增"
+    android:onClick="btnBillIn"
+    android:textColor="@color/white"
+    android:textSize="20sp"
+    app:layout_constraintBottom_toBottomOf="@+id/viewTitle2"
+    app:layout_constraintStart_toStartOf="@+id/viewTitle2"
+    app:layout_constraintTop_toTopOf="@+id/viewTitle2"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ZXing -->
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/menu_history_send"
+        android:title="@string/history_send"
+        android:icon="@android:drawable/ic_menu_share"
+        android:orderInCategory="1"
+        app:showAsAction="withText|ifRoom"/>
+  <item android:id="@+id/menu_history_clear_text"
+        android:title="@string/history_clear_text"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:orderInCategory="2"
+        app:showAsAction="withText|ifRoom"/>
+</menu>

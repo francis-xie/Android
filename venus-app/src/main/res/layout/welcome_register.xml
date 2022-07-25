@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/constraintlayout"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <EditText
+    android:id="@+id/edtOrgDomain"
+    android:layout_width="168dp"
+    android:layout_height="48dp"
+    android:layout_marginStart="8dp"
+    android:ems="10"
+    android:hint="客戶代碼"
+    android:inputType="textPersonName"
+    android:textColor="@color/black"
+    app:layout_constraintBaseline_toBaselineOf="@+id/txtOrgDomain"
+    app:layout_constraintStart_toEndOf="@+id/txtRegisterLocation"/>
+
+  <TextView
+    android:id="@+id/txtOrgDomain"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:drawableLeft="@drawable/ic_store_black_24dp"
+    android:text="客戶代碼"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    app:layout_constraintEnd_toEndOf="@+id/txtRegisterLocation"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="@+id/txtRegisterLocation"
+    app:layout_constraintTop_toBottomOf="@+id/txtRegisterLocation"/>
+
+  <EditText
+    android:id="@+id/edtRegisterCode"
+    android:layout_width="168dp"
+    android:layout_height="48dp"
+    android:layout_marginStart="8dp"
+    android:ems="10"
+    android:hint="授權碼"
+    android:inputType="textPersonName"
+    android:textColor="@color/black"
+    app:layout_constraintBaseline_toBaselineOf="@+id/txtRegisterCode"
+    app:layout_constraintStart_toEndOf="@+id/txtRegisterCode"/>
+
+  <TextView
+    android:id="@+id/txtRegisterCode"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:drawableLeft="@drawable/ic_store_black_24dp"
+    android:text="授權碼"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    app:layout_constraintEnd_toEndOf="@+id/txtOrgDomain"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="@+id/txtOrgDomain"
+    app:layout_constraintTop_toBottomOf="@+id/txtOrgDomain"/>
+
+  <EditText
+    android:id="@+id/edtRegisterLocation"
+    android:layout_width="168dp"
+    android:layout_height="48dp"
+    android:layout_marginStart="8dp"
+    android:ems="10"
+    android:hint="註冊網址"
+    android:inputType="textPersonName"
+    android:textColor="@color/black"
+    app:layout_constraintBaseline_toBaselineOf="@+id/txtRegisterLocation"
+    app:layout_constraintStart_toEndOf="@+id/txtRegisterLocation"/>
+
+  <TextView
+    android:id="@+id/txtRegisterLocation"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:drawableLeft="@drawable/ic_store_black_24dp"
+    android:text="註冊位置"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:layout_editor_absoluteY="66dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
