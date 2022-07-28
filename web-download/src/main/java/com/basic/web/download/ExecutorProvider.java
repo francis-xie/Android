@@ -33,7 +33,7 @@ public class ExecutorProvider implements Provider<Executor> {
 
         @Override
         public Thread newThread(Runnable r) {
-            Thread mThread = new Thread(group, r, "pool-agentweb-thread-" + mCount.getAndIncrement());
+            Thread mThread = new Thread(group, r, "pool-web-thread-" + mCount.getAndIncrement());
             if (mThread.isDaemon()) {
                 mThread.setDaemon(false);
             }

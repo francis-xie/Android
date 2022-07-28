@@ -9,13 +9,12 @@ import androidx.core.view.MotionEventCompat;
 import androidx.core.view.NestedScrollingChild;
 import androidx.core.view.NestedScrollingChildHelper;
 import androidx.core.view.ViewCompat;
-import com.basic.web.widget.AgentWebView;
 
 /**
  * 结合CoordinatorLayout可以与Toolbar联动的webview
  */
 
-public class NestedScrollAgentWebView extends AgentWebView implements NestedScrollingChild {
+public class NestedScrollWebViews extends WebViews implements NestedScrollingChild {
 
     private int mLastMotionY;
 
@@ -26,12 +25,12 @@ public class NestedScrollAgentWebView extends AgentWebView implements NestedScro
 
     private NestedScrollingChildHelper mChildHelper;
 
-    public NestedScrollAgentWebView(Context context) {
+    public NestedScrollWebViews(Context context) {
         super(context);
         init();
     }
 
-    public NestedScrollAgentWebView(Context context, AttributeSet attrs) {
+    public NestedScrollWebViews(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
     }

@@ -18,11 +18,11 @@ import android.widget.ImageView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.basic.web.core.Web;
 import com.google.android.flexbox.FlexDirection;
 import com.google.android.flexbox.FlexWrap;
 import com.google.android.flexbox.FlexboxLayoutManager;
 import com.google.android.flexbox.JustifyContent;
-import com.basic.web.core.AgentWeb;
 import com.basic.web.core.client.DefaultWebClient;
 import com.basic.image.PictureSelectionModel;
 import com.basic.image.PictureSelector;
@@ -34,7 +34,7 @@ import com.basic.face.widget.dialog.materialdialog.MaterialDialog;
 import com.basic.face.widget.imageview.preview.PreviewBuilder;
 import com.basic.code.R;
 import com.basic.code.activity.MainActivity;
-import com.basic.code.base.webview.AgentWebActivity;
+import com.basic.code.base.webview.WebActivity;
 import com.basic.code.base.webview.MiddlewareWebViewClient;
 import com.basic.code.fragment.components.imageview.preview.ImageViewInfo;
 import com.basic.code.utils.update.CustomUpdateFailureListener;
@@ -48,7 +48,7 @@ import com.basic.tools.file.FileUtils;
 
 import java.io.File;
 
-import static com.basic.code.base.webview.AgentWebFragment.KEY_URL;
+import static com.basic.code.base.webview.WebFragment.KEY_URL;
 
 /**
  * @author XUE
@@ -89,26 +89,26 @@ public final class Utils {
      * @param url
      */
     public static void goWeb(Context context, final String url) {
-        Intent intent = new Intent(context, AgentWebActivity.class);
+        Intent intent = new Intent(context, WebActivity.class);
         intent.putExtra(KEY_URL, url);
         context.startActivity(intent);
     }
 
     /**
-     * 创建AgentWeb
+     * 创建Web
      *
      * @param fragment
      * @param viewGroup
      * @param url
      * @return
      */
-    public static AgentWeb createAgentWeb(Fragment fragment, ViewGroup viewGroup, String url) {
-        return AgentWeb.with(fragment)
-                .setAgentWebParent(viewGroup, -1, new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT))
+    public static Web createWeb(Fragment fragment, ViewGroup viewGroup, String url) {
+        return Web.with(fragment)
+                .setWebParent(viewGroup, -1, new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT))
                 .useDefaultIndicator(-1, 3)
                 .useMiddlewareWebClient(new MiddlewareWebViewClient())
                 .setOpenOtherPageWays(DefaultWebClient.OpenOtherPageWays.ASK)
-                .createAgentWeb()
+                .createWeb()
                 .ready()
                 .go(url);
     }

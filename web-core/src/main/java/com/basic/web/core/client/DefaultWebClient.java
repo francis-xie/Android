@@ -23,10 +23,10 @@ import android.webkit.WebViewClient;
 import com.alipay.sdk.app.H5PayCallback;
 import com.alipay.sdk.app.PayTask;
 import com.alipay.sdk.util.H5PayResultModel;
-import com.basic.web.core.web.controller.AbsAgentWebUIController;
-import com.basic.web.core.web.AgentWebConfig;
+import com.basic.web.core.web.controller.AbsWebUIController;
+import com.basic.web.core.web.WebConfig;
 import com.basic.web.action.PermissionInterceptor;
-import com.basic.web.utils.AgentWebUtils;
+import com.basic.web.utils.WebUtils;
 import com.basic.web.utils.LogUtils;
 
 import java.lang.ref.WeakReference;
@@ -114,9 +114,9 @@ public class DefaultWebClient extends MiddlewareWebClientBase {
 	 */
 	private boolean mIsInterceptUnkownUrl = true;
 	/**
-	 * AbsAgentWebUIController
+	 * AbsWebUIController
 	 */
-	private WeakReference<AbsAgentWebUIController> mAgentWebUIController = null;
+	private WeakReference<AbsWebUIController> mWebUIController = null;
 	/**
 	 * WebView
 	 */
@@ -165,7 +165,7 @@ public class DefaultWebClient extends MiddlewareWebClientBase {
 		this.mWebViewClient = builder.mClient;
 		mWeakReference = new WeakReference<Activity>(builder.mActivity);
 		this.webClientHelper = builder.mWebClientHelper;
-		mAgentWebUIController = new WeakReference<AbsAgentWebUIController>(AgentWebUtils.getAgentWebUIControllerByWebView(builder.mWebView));
+		mWebUIController = new WeakReference<AbsWebUIController>(WebUtils.getWebUIControllerByWebView(builder.mWebView));
 		mIsInterceptUnkownUrl = builder.mIsInterceptUnkownScheme;
 
 		if (builder.mUrlHandleWays <= 0) {
@@ -179,7 +179,7 @@ public class DefaultWebClient extends MiddlewareWebClientBase {
 	public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
 		int tag = -1;
 
-		if (AgentWebUtils.isOverriedMethod(mWebViewClient, "shouldOverrideUrlLoading", ANDROID_WEBVIEWCLIENT_PATH + ".shouldOverrideUrlLoading", WebView.class, WebResourceRequest.class) && (((tag = 1) > 0) && super.shouldOverrideUrlLoading(view, request))) {
+		if (WebUtils.isOverriedMethod(mWebViewClient, "shouldOverrideUrlLoading", ANDROID_WEBVIEWCLIENT_PATH + ".shouldOverrideUrlLoading", WebView.class, WebResourceRequest.class) && (((tag = 1) > 0) && super.shouldOverrideUrlLoading(view, request))) {
 			return true;
 		}
 
@@ -248,8 +248,8 @@ public class DefaultWebClient extends MiddlewareWebClientBase {
 				return true;
 			// 咨询用户是否打开其他App
 			case ASK_USER_OPEN_OTHER_PAGE:
-				if (mAgentWebUIController.get() != null) {
-					mAgentWebUIController.get()
+				if (mWebUIController.get() != null) {
+					mWebUIController.get()
 							.onOpenPagePrompt(this.mWebView,
 									mWebView.getUrl(),
 									getCallback(url));
@@ -272,7 +272,7 @@ public class DefaultWebClient extends MiddlewareWebClientBase {
 
 		int tag = -1;
 
-		if (AgentWebUtils.isOverriedMethod(mWebViewClient, "shouldOverrideUrlLoading", ANDROID_WEBVIEWCLIENT_PATH + ".shouldOverrideUrlLoading", WebView.class, String.class) && (((tag = 1) > 0) && super.shouldOverrideUrlLoading(view, url))) {
+		if (WebUtils.isOverriedMethod(mWebViewClient, "shouldOverrideUrlLoading", ANDROID_WEBVIEWCLIENT_PATH + ".shouldOverrideUrlLoading", WebView.class, String.class) && (((tag = 1) > 0) && super.shouldOverrideUrlLoading(view, url))) {
 			return true;
 		}
 
@@ -404,7 +404,7 @@ public class DefaultWebClient extends MiddlewareWebClientBase {
 				public void onPayResult(final H5PayResultModel result) {
 					final String url = result.getReturnUrl();
 					if (!TextUtils.isEmpty(url)) {
-						AgentWebUtils.runInUiThread(new Runnable() {
+						WebUtils.runInUiThread(new Runnable() {
 							@Override
 							public void run() {
 								view.loadUrl(url);
@@ -418,7 +418,7 @@ public class DefaultWebClient extends MiddlewareWebClientBase {
 			}
 			return isIntercepted;
 		} catch (Throwable ignore) {
-			if (AgentWebConfig.DEBUG) {
+			if (WebConfig.DEBUG) {
 				ignore.printStackTrace();
 			}
 		}
@@ -440,7 +440,7 @@ public class DefaultWebClient extends MiddlewareWebClientBase {
 				intent.setData(Uri.parse(url));
 				mActivity.startActivity(intent);
 			} catch (ActivityNotFoundException ignored) {
-				if (AgentWebConfig.DEBUG) {
+				if (WebConfig.DEBUG) {
 					ignored.printStackTrace();
 				}
 			}
@@ -471,7 +471,7 @@ public class DefaultWebClient extends MiddlewareWebClientBase {
 	@Override
 	public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
 
-		if (AgentWebUtils.isOverriedMethod(mWebViewClient, "onReceivedError", ANDROID_WEBVIEWCLIENT_PATH + ".onReceivedError", WebView.class, int.class, String.class, String.class)) {
+		if (WebUtils.isOverriedMethod(mWebViewClient, "onReceivedError", ANDROID_WEBVIEWCLIENT_PATH + ".onReceivedError", WebView.class, int.class, String.class, String.class)) {
 			super.onReceivedError(view, errorCode, description, failingUrl);
 //            return;
 		}
@@ -483,7 +483,7 @@ public class DefaultWebClient extends MiddlewareWebClientBase {
 	@Override
 	public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
 
-		if (AgentWebUtils.isOverriedMethod(mWebViewClient, "onReceivedError", ANDROID_WEBVIEWCLIENT_PATH + ".onReceivedError", WebView.class, WebResourceRequest.class, WebResourceError.class)) {
+		if (WebUtils.isOverriedMethod(mWebViewClient, "onReceivedError", ANDROID_WEBVIEWCLIENT_PATH + ".onReceivedError", WebView.class, WebResourceRequest.class, WebResourceError.class)) {
 			super.onReceivedError(view, request, error);
 //            return;
 		}
@@ -500,9 +500,9 @@ public class DefaultWebClient extends MiddlewareWebClientBase {
 		// 下面逻辑判断开发者是否重写了 onMainFrameError 方法 ， 优先交给开发者处理
 		if (this.mWebViewClient != null && webClientHelper) {
 			Method mMethod = this.onMainFrameErrorMethod;
-			if (mMethod != null || (this.onMainFrameErrorMethod = mMethod = AgentWebUtils.isExistMethod(mWebViewClient, "onMainFrameError", AbsAgentWebUIController.class, WebView.class, int.class, String.class, String.class)) != null) {
+			if (mMethod != null || (this.onMainFrameErrorMethod = mMethod = WebUtils.isExistMethod(mWebViewClient, "onMainFrameError", AbsWebUIController.class, WebView.class, int.class, String.class, String.class)) != null) {
 				try {
-					mMethod.invoke(this.mWebViewClient, mAgentWebUIController.get(), view, errorCode, description, failingUrl);
+					mMethod.invoke(this.mWebViewClient, mWebUIController.get(), view, errorCode, description, failingUrl);
 				} catch (Throwable ignore) {
 					if (LogUtils.isDebug()) {
 						ignore.printStackTrace();
@@ -511,8 +511,8 @@ public class DefaultWebClient extends MiddlewareWebClientBase {
 				return;
 			}
 		}
-		if (mAgentWebUIController.get() != null) {
-			mAgentWebUIController.get().onMainFrameError(view, errorCode, description, failingUrl);
+		if (mWebUIController.get() != null) {
+			mWebUIController.get().onMainFrameError(view, errorCode, description, failingUrl);
 		}
 //        this.mWebView.setVisibility(View.GONE);
 	}
@@ -522,8 +522,8 @@ public class DefaultWebClient extends MiddlewareWebClientBase {
 	public void onPageFinished(WebView view, String url) {
 
 		if (!mErrorUrlsSet.contains(url) && mWaittingFinishSet.contains(url)) {
-			if (mAgentWebUIController.get() != null) {
-				mAgentWebUIController.get().onShowMainFrame();
+			if (mWebUIController.get() != null) {
+				mWebUIController.get().onShowMainFrame();
 			}
 		} else {
 			view.setVisibility(View.VISIBLE);
@@ -577,7 +577,7 @@ public class DefaultWebClient extends MiddlewareWebClientBase {
 	public void onScaleChanged(WebView view, float oldScale, float newScale) {
 
 
-		if (AgentWebUtils.isOverriedMethod(mWebViewClient, "onScaleChanged", ANDROID_WEBVIEWCLIENT_PATH + ".onScaleChanged", WebView.class, float.class, float.class)) {
+		if (WebUtils.isOverriedMethod(mWebViewClient, "onScaleChanged", ANDROID_WEBVIEWCLIENT_PATH + ".onScaleChanged", WebView.class, float.class, float.class)) {
 			super.onScaleChanged(view, oldScale, newScale);
 			return;
 		}

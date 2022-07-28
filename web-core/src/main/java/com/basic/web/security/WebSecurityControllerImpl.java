@@ -5,7 +5,7 @@ import android.os.Build;
 import android.webkit.WebView;
 
 import androidx.collection.ArrayMap;
-import com.basic.web.core.AgentWeb;
+import com.basic.web.core.Web;
 
 
 /**
@@ -15,9 +15,9 @@ public class WebSecurityControllerImpl implements WebSecurityController<WebSecur
 
     private WebView mWebView;
     private ArrayMap<String, Object> mMap;
-    private AgentWeb.SecurityType mSecurityType;
+    private Web.SecurityType mSecurityType;
 
-    public WebSecurityControllerImpl(WebView view, ArrayMap<String, Object> map, AgentWeb.SecurityType securityType) {
+    public WebSecurityControllerImpl(WebView view, ArrayMap<String, Object> map, Web.SecurityType securityType) {
         this.mWebView = view;
         this.mMap = map;
         this.mSecurityType = securityType;
@@ -29,7 +29,7 @@ public class WebSecurityControllerImpl implements WebSecurityController<WebSecur
             webSecurityCheckLogic.dealHoneyComb(mWebView);
         }
 
-        if (mMap != null && mSecurityType == AgentWeb.SecurityType.STRICT_CHECK && !mMap.isEmpty()) {
+        if (mMap != null && mSecurityType == Web.SecurityType.STRICT_CHECK && !mMap.isEmpty()) {
             webSecurityCheckLogic.dealJsInterface(mMap, mSecurityType);
         }
     }

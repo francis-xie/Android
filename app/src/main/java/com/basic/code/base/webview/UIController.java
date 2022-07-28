@@ -6,13 +6,13 @@ import android.os.Handler;
 import android.util.Log;
 import android.webkit.WebView;
 
-import com.basic.web.core.web.AgentWebUIControllerImplBase;
+import com.basic.web.core.web.WebUIControllerImplBase;
 
 /**
- * 如果你需要修改某一个AgentWeb 内部的某一个弹窗 ，请看下面的例子
+ * 如果你需要修改某一个Web 内部的某一个弹窗 ，请看下面的例子
  * 注意写法一定要参照 DefaultUIController 的写法 ，因为UI自由定制，但是回调的方式是固定的，并且一定要回调。
  */
-public class UIController extends AgentWebUIControllerImplBase {
+public class UIController extends WebUIControllerImplBase {
 
     public UIController(Activity activity) {
     }

@@ -16,7 +16,7 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.LinearInterpolator;
 
 import androidx.annotation.Nullable;
-import com.basic.web.utils.AgentWebUtils;
+import com.basic.web.utils.WebUtils;
 import com.basic.web.utils.LogUtils;
 
 /**
@@ -108,7 +108,7 @@ public class WebIndicator extends BaseIndicatorView implements BaseIndicatorSpec
         mPaint.setStrokeCap(Paint.Cap.SQUARE);
 
         mTargetWidth = context.getResources().getDisplayMetrics().widthPixels;
-        WEB_INDICATOR_DEFAULT_HEIGHT = AgentWebUtils.dp2px(context, 3);
+        WEB_INDICATOR_DEFAULT_HEIGHT = WebUtils.dp2px(context, 3);
 
     }
 

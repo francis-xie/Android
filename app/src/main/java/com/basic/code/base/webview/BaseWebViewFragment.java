@@ -3,7 +3,7 @@ package com.basic.code.base.webview;
 
 import android.view.KeyEvent;
 
-import com.basic.web.core.AgentWeb;
+import com.basic.web.core.Web;
 import com.basic.code.base.BaseFragment;
 
 /**
@@ -14,46 +14,46 @@ import com.basic.code.base.BaseFragment;
  */
 public abstract class BaseWebViewFragment extends BaseFragment {
 
-    protected AgentWeb mAgentWeb;
+    protected Web mWeb;
 
     @Override
     protected void initViews() {
-        mAgentWeb = createAgentWeb();
+        mWeb = createWeb();
     }
 
     /**
-     * 创建AgentWeb
+     * 创建Web
      *
-     * @return AgentWeb
+     * @return Web
      */
-    protected abstract AgentWeb createAgentWeb();
+    protected abstract Web createWeb();
 
     //===================生命周期管理===========================//
     @Override
     public void onResume() {
-        if (mAgentWeb != null) {
-            mAgentWeb.getWebLifeCycle().onResume();//恢复
+        if (mWeb != null) {
+            mWeb.getWebLifeCycle().onResume();//恢复
         }
         super.onResume();
     }
 
     @Override
     public void onPause() {
-        if (mAgentWeb != null) {
-            mAgentWeb.getWebLifeCycle().onPause(); //暂停应用内所有WebView ， 调用mWebView.resumeTimers();/mAgentWeb.getWebLifeCycle().onResume(); 恢复。
+        if (mWeb != null) {
+            mWeb.getWebLifeCycle().onPause(); //暂停应用内所有WebView ， 调用mWebView.resumeTimers();/mWeb.getWebLifeCycle().onResume(); 恢复。
         }
         super.onPause();
     }
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        return mAgentWeb != null && mAgentWeb.handleKeyEvent(keyCode, event);
+        return mWeb != null && mWeb.handleKeyEvent(keyCode, event);
     }
 
     @Override
     public void onDestroyView() {
-        if (mAgentWeb != null) {
-            mAgentWeb.destroy();
+        if (mWeb != null) {
+            mWeb.destroy();
         }
         super.onDestroyView();
     }

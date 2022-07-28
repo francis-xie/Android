@@ -26,19 +26,19 @@ import com.basic.web.core.client.WebListenerManager;
 import com.basic.web.core.event.EventHandlerImpl;
 import com.basic.web.core.event.EventInterceptor;
 import com.basic.web.core.event.IEventHandler;
-import com.basic.web.js.AgentWebJsInterfaceCompat;
+import com.basic.web.js.WebJsInterfaceCompat;
 import com.basic.web.core.url.IUrlLoader;
 import com.basic.web.core.url.UrlLoaderImpl;
-import com.basic.web.utils.AgentWebUtils;
+import com.basic.web.utils.WebUtils;
 import com.basic.web.utils.LogUtils;
 import com.basic.web.core.video.IVideo;
-import com.basic.web.core.web.AbsAgentWebSettings;
-import com.basic.web.core.web.AgentWebConfig;
-import com.basic.web.core.web.AgentWebSettingsImpl;
-import com.basic.web.core.web.AgentWebUIControllerImplBase;
+import com.basic.web.core.web.AbsWebSettings;
+import com.basic.web.core.web.WebConfig;
+import com.basic.web.core.web.WebSettingsImpl;
+import com.basic.web.core.web.WebUIControllerImplBase;
 import com.basic.web.core.web.HookManager;
-import com.basic.web.core.web.IAgentWebSettings;
-import com.basic.web.core.web.controller.AbsAgentWebUIController;
+import com.basic.web.core.web.IWebSettings;
+import com.basic.web.core.web.controller.AbsWebUIController;
 import com.basic.web.widget.IWebLayout;
 import com.basic.web.widget.indicator.BaseIndicatorView;
 import com.basic.web.widget.indicator.DefaultWebCreator;
@@ -64,11 +64,11 @@ import java.util.Map;
  
  * @since 2019/1/4 上午10:32
  */
-public final class AgentWeb {
+public final class Web {
 	/**
-	 * AgentWeb TAG
+	 * Web TAG
 	 */
-	private static final String TAG = AgentWeb.class.getSimpleName();
+	private static final String TAG = Web.class.getSimpleName();
 	/**
 	 * Activity
 	 */
@@ -84,11 +84,11 @@ public final class AgentWeb {
 	/**
 	 * 管理 WebSettings
 	 */
-	private IAgentWebSettings mAgentWebSettings;
+	private IWebSettings mWebSettings;
 	/**
-	 * AgentWeb
+	 * Web
 	 */
-	private AgentWeb mAgentWeb = null;
+	private Web mWeb = null;
 	/**
 	 * IndicatorController 控制Indicator
 	 */
@@ -146,9 +146,9 @@ public final class AgentWeb {
 	 */
 	private static final int FRAGMENT_TAG = 1;
 	/**
-	 * AgentWeb 默认注入对像
+	 * Web 默认注入对像
 	 */
-	private AgentWebJsInterfaceCompat mAgentWebJsInterfaceCompat = null;
+	private WebJsInterfaceCompat mWebJsInterfaceCompat = null;
 	/**
 	 * JsAccessEntrace 提供快速JS方法调用
 	 */
@@ -200,7 +200,7 @@ public final class AgentWeb {
 	private JsInterfaceHolder mJsInterfaceHolder = null;
 
 
-	private AgentWeb(AgentBuilder agentBuilder) {
+	private Web(AgentBuilder agentBuilder) {
 		TAG_TARGET = agentBuilder.mTag;
 		this.mActivity = agentBuilder.mActivity;
 		this.mViewGroup = agentBuilder.mViewGroup;
@@ -210,8 +210,8 @@ public final class AgentWeb {
 		mIndicatorController = agentBuilder.mIndicatorController;
 		this.mWebChromeClient = agentBuilder.mWebChromeClient;
 		this.mWebViewClient = agentBuilder.mWebViewClient;
-		mAgentWeb = this;
-		this.mAgentWebSettings = agentBuilder.mAgentWebSettings;
+		mWeb = this;
+		this.mWebSettings = agentBuilder.mWebSettings;
 
 		if (agentBuilder.mJavaObject != null && !agentBuilder.mJavaObject.isEmpty()) {
 			this.mJavaObjects.putAll((Map<? extends String, ?>) agentBuilder.mJavaObject);
@@ -223,12 +223,12 @@ public final class AgentWeb {
 		this.mIUrlLoader = new UrlLoaderImpl(mWebCreator.create().getWebView(), agentBuilder.mHttpHeaders);
 		if (this.mWebCreator.getWebParentLayout() instanceof WebParentLayout) {
 			WebParentLayout mWebParentLayout = (WebParentLayout) this.mWebCreator.getWebParentLayout();
-			mWebParentLayout.bindController(agentBuilder.mAgentWebUIController == null ? AgentWebUIControllerImplBase.build() : agentBuilder.mAgentWebUIController);
+			mWebParentLayout.bindController(agentBuilder.mWebUIController == null ? WebUIControllerImplBase.build() : agentBuilder.mWebUIController);
 			mWebParentLayout.setErrorLayoutRes(agentBuilder.mErrorLayout, agentBuilder.mReloadId);
 			mWebParentLayout.setErrorView(agentBuilder.mErrorView);
 		}
 		this.mWebLifeCycle = new DefaultWebLifeCycleImpl(mWebCreator.getWebView());
-		mWebSecurityController = new WebSecurityControllerImpl(mWebCreator.getWebView(), this.mAgentWeb.mJavaObjects, this.mSecurityType);
+		mWebSecurityController = new WebSecurityControllerImpl(mWebCreator.getWebView(), this.mWeb.mJavaObjects, this.mSecurityType);
 		this.mWebClientHelper = agentBuilder.mWebClientHelper;
 		this.mIsInterceptUnkownUrl = agentBuilder.mIsInterceptUnkownUrl;
 		if (agentBuilder.mOpenOtherPage != null) {
@@ -263,12 +263,12 @@ public final class AgentWeb {
 	}
 
 
-	public AgentWeb clearWebCache() {
+	public Web clearWebCache() {
 
 		if (this.getWebCreator().getWebView() != null) {
-			AgentWebUtils.clearWebViewAllCache(mActivity, this.getWebCreator().getWebView());
+			WebUtils.clearWebViewAllCache(mActivity, this.getWebCreator().getWebView());
 		} else {
-			AgentWebUtils.clearWebViewAllCache(mActivity);
+			WebUtils.clearWebViewAllCache(mActivity);
 		}
 		return this;
 	}
@@ -314,8 +314,8 @@ public final class AgentWeb {
 	}
 
 
-	public IAgentWebSettings getAgentWebSettings() {
-		return this.mAgentWebSettings;
+	public IWebSettings getWebSettings() {
+		return this.mWebSettings;
 	}
 
 	public IndicatorController getIndicatorController() {
@@ -334,28 +334,28 @@ public final class AgentWeb {
 		this.mWebLifeCycle.onDestroy();
 	}
 
-	public static class PreAgentWeb {
-		private AgentWeb mAgentWeb;
+	public static class PreWeb {
+		private Web mWeb;
 		private boolean isReady = false;
 
-		PreAgentWeb(AgentWeb agentWeb) {
-			this.mAgentWeb = agentWeb;
+		PreWeb(Web web) {
+			this.mWeb = web;
 		}
 
 
-		public PreAgentWeb ready() {
+		public PreWeb ready() {
 			if (!isReady) {
-				mAgentWeb.ready();
+				mWeb.ready();
 				isReady = true;
 			}
 			return this;
 		}
 
-		public AgentWeb go(@Nullable String url) {
+		public Web go(@Nullable String url) {
 			if (!isReady) {
 				ready();
 			}
-			return mAgentWeb.go(url);
+			return mWeb.go(url);
 		}
 
 
@@ -373,7 +373,7 @@ public final class AgentWeb {
 	}
 
 	private void doCompat() {
-		mJavaObjects.put("agentWeb", mAgentWebJsInterfaceCompat = new AgentWebJsInterfaceCompat(this, mActivity));
+		mJavaObjects.put("web", mWebJsInterfaceCompat = new WebJsInterfaceCompat(this, mActivity));
 	}
 
 	private WebCreator configWebCreator(BaseIndicatorView progressView, int index, ViewGroup.LayoutParams lp, int indicatorColor, int height_dp, WebView webView, IWebLayout webLayout) {
@@ -387,7 +387,7 @@ public final class AgentWeb {
 		}
 	}
 
-	private AgentWeb go(String url) {
+	private Web go(String url) {
 		this.getUrlLoader().loadUrl(url);
 		IndicatorController mIndicatorController = null;
 		if (!TextUtils.isEmpty(url) && (mIndicatorController = getIndicatorController()) != null && mIndicatorController.offerIndicator() != null) {
@@ -451,21 +451,21 @@ public final class AgentWeb {
 	}
 
 
-	private AgentWeb ready() {
+	private Web ready() {
 
-		AgentWebConfig.initCookiesManager(mActivity.getApplicationContext());
-		IAgentWebSettings mAgentWebSettings = this.mAgentWebSettings;
-		if (mAgentWebSettings == null) {
-			this.mAgentWebSettings = mAgentWebSettings = AgentWebSettingsImpl.getInstance();
+		WebConfig.initCookiesManager(mActivity.getApplicationContext());
+		IWebSettings mWebSettings = this.mWebSettings;
+		if (mWebSettings == null) {
+			this.mWebSettings = mWebSettings = WebSettingsImpl.getInstance();
 		}
 
-		if (mAgentWebSettings instanceof AbsAgentWebSettings) {
-			((AbsAgentWebSettings) mAgentWebSettings).bindAgentWeb(this);
+		if (mWebSettings instanceof AbsWebSettings) {
+			((AbsWebSettings) mWebSettings).bindWeb(this);
 		}
-		if (mWebListenerManager == null && mAgentWebSettings instanceof AbsAgentWebSettings) {
-			mWebListenerManager = (WebListenerManager) mAgentWebSettings;
+		if (mWebListenerManager == null && mWebSettings instanceof AbsWebSettings) {
+			mWebListenerManager = (WebListenerManager) mWebSettings;
 		}
-		mAgentWebSettings.toSetting(mWebCreator.getWebView());
+		mWebSettings.toSetting(mWebCreator.getWebView());
 		if (mJsInterfaceHolder == null) {
 			mJsInterfaceHolder = JsInterfaceHolderImpl.getJsInterfaceHolder(mWebCreator.getWebView(), this.mSecurityType);
 		}
@@ -533,7 +533,7 @@ public final class AgentWeb {
 		private WebViewClient mWebViewClient;
 		private WebChromeClient mWebChromeClient;
 		private int mIndicatorColor = -1;
-		private IAgentWebSettings mAgentWebSettings;
+		private IWebSettings mWebSettings;
 		private WebCreator mWebCreator;
 		private HttpHeaders mHttpHeaders = null;
 		private IEventHandler mIEventHandler;
@@ -544,7 +544,7 @@ public final class AgentWeb {
 		private boolean mWebClientHelper = true;
 		private IWebLayout mWebLayout = null;
 		private PermissionInterceptor mPermissionInterceptor = null;
-		private AbsAgentWebUIController mAgentWebUIController;
+		private AbsWebUIController mWebUIController;
 		private DefaultWebClient.OpenOtherPageWays mOpenOtherPage = null;
 		private boolean mIsInterceptUnkownUrl = false;
 		private MiddlewareWebClientBase mMiddlewareWebClientBaseHeader;
@@ -560,22 +560,22 @@ public final class AgentWeb {
 		public AgentBuilder(@NonNull Activity activity, @NonNull Fragment fragment) {
 			mActivity = activity;
 			mFragment = fragment;
-			mTag = AgentWeb.FRAGMENT_TAG;
+			mTag = Web.FRAGMENT_TAG;
 		}
 
 		public AgentBuilder(@NonNull Activity activity) {
 			mActivity = activity;
-			mTag = AgentWeb.ACTIVITY_TAG;
+			mTag = Web.ACTIVITY_TAG;
 		}
 
 
-		public IndicatorBuilder setAgentWebParent(@NonNull ViewGroup v, @NonNull ViewGroup.LayoutParams lp) {
+		public IndicatorBuilder setWebParent(@NonNull ViewGroup v, @NonNull ViewGroup.LayoutParams lp) {
 			this.mViewGroup = v;
 			this.mLayoutParams = lp;
 			return new IndicatorBuilder(this);
 		}
 
-		public IndicatorBuilder setAgentWebParent(@NonNull ViewGroup v, int index, @NonNull ViewGroup.LayoutParams lp) {
+		public IndicatorBuilder setWebParent(@NonNull ViewGroup v, int index, @NonNull ViewGroup.LayoutParams lp) {
 			this.mViewGroup = v;
 			this.mLayoutParams = lp;
 			this.mIndex = index;
@@ -583,11 +583,11 @@ public final class AgentWeb {
 		}
 
 
-		private PreAgentWeb buildAgentWeb() {
-			if (mTag == AgentWeb.FRAGMENT_TAG && this.mViewGroup == null) {
+		private PreWeb buildWeb() {
+			if (mTag == Web.FRAGMENT_TAG && this.mViewGroup == null) {
 				throw new NullPointerException("ViewGroup is null,Please check your parameters .");
 			}
-			return new PreAgentWeb(HookManager.hookAgentWeb(new AgentWeb(this), this));
+			return new PreWeb(HookManager.hookWeb(new Web(this), this));
 		}
 
 		private void addJavaObject(String key, Object o) {
@@ -720,13 +720,13 @@ public final class AgentWeb {
 			return this;
 		}
 
-		public CommonBuilder setAgentWebWebSettings(@Nullable IAgentWebSettings agentWebSettings) {
-			this.mAgentBuilder.mAgentWebSettings = agentWebSettings;
+		public CommonBuilder setWebWebSettings(@Nullable IWebSettings webSettings) {
+			this.mAgentBuilder.mWebSettings = webSettings;
 			return this;
 		}
 
-		public PreAgentWeb createAgentWeb() {
-			return this.mAgentBuilder.buildAgentWeb();
+		public PreWeb createWeb() {
+			return this.mAgentBuilder.buildWeb();
 		}
 
 
@@ -761,8 +761,8 @@ public final class AgentWeb {
 			return this;
 		}
 
-		public CommonBuilder setAgentWebUIController(@Nullable AgentWebUIControllerImplBase agentWebUIController) {
-			this.mAgentBuilder.mAgentWebUIController = agentWebUIController;
+		public CommonBuilder setWebUIController(@Nullable WebUIControllerImplBase webUIController) {
+			this.mAgentBuilder.mWebUIController = webUIController;
 			return this;
 		}
 

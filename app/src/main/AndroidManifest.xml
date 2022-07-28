@@ -90,7 +90,7 @@
             android:launchMode="singleTask" />
 
         <activity
-            android:name=".base.webview.AgentWebActivity"
+            android:name=".base.webview.WebActivity"
             android:configChanges="screenSize|keyboardHidden|orientation|keyboard"
             android:hardwareAccelerated="true"
             android:label="@string/app_browser_name"

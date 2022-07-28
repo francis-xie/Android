@@ -9,7 +9,7 @@ public class DownloadListenerAdapter implements DownloadListener, DownloadingLis
 
 
     @Override
-    public boolean onStart(String url, String userAgent, String contentDisposition, String mimetype, long contentLength, AgentWebDownloader.Extra extra) {
+    public boolean onStart(String url, String userAgent, String contentDisposition, String mimetype, long contentLength, WebDownloader.Extra extra) {
         return false;
     }
 

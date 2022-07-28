@@ -35,24 +35,24 @@ import java.util.Map;
 
 
 /**
- * AgentWebView
+ * WebView
  *
 
  * @since 2019/1/4 上午11:02
  */
-public class AgentWebView extends WebView {
-    private static final String TAG = AgentWebView.class.getSimpleName();
+public class WebViews extends WebView {
+    private static final String TAG = WebViews.class.getSimpleName();
     private Map<String, JsCallJava> mJsCallJavas;
     private Map<String, String> mInjectJavaScripts;
     private FixedOnReceivedTitle mFixedOnReceivedTitle;
     private boolean mIsInited;
     private Boolean mIsAccessibilityEnabledOriginal;
 
-    public AgentWebView(Context context) {
+    public WebViews(Context context) {
         this(context, null);
     }
 
-    public AgentWebView(Context context, AttributeSet attrs) {
+    public WebViews(Context context, AttributeSet attrs) {
         super(context, attrs);
         removeSearchBoxJavaBridge();
         mIsInited = true;
@@ -97,11 +97,11 @@ public class AgentWebView extends WebView {
 
     @Override
     public final void setWebChromeClient(WebChromeClient client) {
-        AgentWebChrome agentWebChrome = new AgentWebChrome(this);
-        agentWebChrome.setDelegate(client);
+        WebChrome webChrome = new WebChrome(this);
+        webChrome.setDelegate(client);
         mFixedOnReceivedTitle.setWebChromeClient(client);
-        super.setWebChromeClient(agentWebChrome);
-        setWebChromeClientSupport(agentWebChrome);
+        super.setWebChromeClient(webChrome);
+        setWebChromeClientSupport(webChrome);
     }
 
     protected final void setWebChromeClientSupport(WebChromeClient client) {
@@ -110,10 +110,10 @@ public class AgentWebView extends WebView {
 
     @Override
     public final void setWebViewClient(WebViewClient client) {
-        AgentWebClient agentWebClient = new AgentWebClient(this);
-        agentWebClient.setDelegate(client);
-        super.setWebViewClient(agentWebClient);
-        setWebViewClientSupport(agentWebClient);
+        WebClient webClient = new WebClient(this);
+        webClient.setDelegate(client);
+        super.setWebViewClient(webClient);
+        setWebViewClientSupport(webClient);
     }
 
     public final void setWebViewClientSupport(WebViewClient client) {
@@ -249,35 +249,35 @@ public class AgentWebView extends WebView {
     }
 
 
-    public static class AgentWebClient extends MiddlewareWebClientBase {
+    public static class WebClient extends MiddlewareWebClientBase {
 
-        private AgentWebView mAgentWebView;
+        private WebViews mWebViews;
 
-        private AgentWebClient(AgentWebView agentWebView) {
-            this.mAgentWebView = agentWebView;
+        private WebClient(WebViews webViews) {
+            this.mWebViews = webViews;
         }
 
 
         @Override
         public void onPageStarted(WebView view, String url, Bitmap favicon) {
             super.onPageStarted(view, url, favicon);
-            if (mAgentWebView.mJsCallJavas != null) {
-                mAgentWebView.injectJavaScript();
+            if (mWebViews.mJsCallJavas != null) {
+                mWebViews.injectJavaScript();
                 if (LogUtils.isDebug()) {
                     Log.d(TAG, "injectJavaScript, onPageStarted.url = " + view.getUrl());
                 }
             }
-            if (mAgentWebView.mInjectJavaScripts != null) {
-                mAgentWebView.injectExtraJavaScript();
+            if (mWebViews.mInjectJavaScripts != null) {
+                mWebViews.injectExtraJavaScript();
             }
-            mAgentWebView.mFixedOnReceivedTitle.onPageStarted();
-            mAgentWebView.fixedAccessibilityInjectorExceptionForOnPageFinished(url);
+            mWebViews.mFixedOnReceivedTitle.onPageStarted();
+            mWebViews.fixedAccessibilityInjectorExceptionForOnPageFinished(url);
         }
 
         @Override
         public void onPageFinished(WebView view, String url) {
             super.onPageFinished(view, url);
-            mAgentWebView.mFixedOnReceivedTitle.onPageFinished(view);
+            mWebViews.mFixedOnReceivedTitle.onPageFinished(view);
             if (LogUtils.isDebug()) {
                 Log.d(TAG, "onPageFinished.url = " + view.getUrl());
             }
@@ -286,30 +286,30 @@ public class AgentWebView extends WebView {
 
     }
 
-    public static class AgentWebChrome extends MiddlewareWebChromeBase {
+    public static class WebChrome extends MiddlewareWebChromeBase {
 
-        private AgentWebView mAgentWebView;
+        private WebViews mWebViews;
 
-        private AgentWebChrome(AgentWebView agentWebView) {
-            this.mAgentWebView = agentWebView;
+        private WebChrome(WebViews webViews) {
+            this.mWebViews = webViews;
         }
 
         @Override
         public void onReceivedTitle(WebView view, String title) {
-            this.mAgentWebView.mFixedOnReceivedTitle.onReceivedTitle();
+            this.mWebViews.mFixedOnReceivedTitle.onReceivedTitle();
             super.onReceivedTitle(view, title);
         }
 
         @Override
         public void onProgressChanged(WebView view, int newProgress) {
-            if (this.mAgentWebView.mJsCallJavas != null) {
-                this.mAgentWebView.injectJavaScript();
+            if (this.mWebViews.mJsCallJavas != null) {
+                this.mWebViews.injectJavaScript();
                 if (LogUtils.isDebug()) {
                     Log.d(TAG, "injectJavaScript, onProgressChanged.newProgress = " + newProgress + ", url = " + view.getUrl());
                 }
             }
-            if (this.mAgentWebView.mInjectJavaScripts != null) {
-                this.mAgentWebView.injectExtraJavaScript();
+            if (this.mWebViews.mInjectJavaScripts != null) {
+                this.mWebViews.injectExtraJavaScript();
             }
             super.onProgressChanged(view, newProgress);
 
@@ -318,11 +318,11 @@ public class AgentWebView extends WebView {
         @Override
         public boolean onJsPrompt(WebView view, String url, String message, String defaultValue, JsPromptResult result) {
             Log.i(TAG, "onJsPrompt:" + url + "  message:" + message + "  d:" + defaultValue + "  ");
-            if (this.mAgentWebView.mJsCallJavas != null && JsCallJava.isSafeWebViewCallMsg(message)) {
+            if (this.mWebViews.mJsCallJavas != null && JsCallJava.isSafeWebViewCallMsg(message)) {
                 JSONObject jsonObject = JsCallJava.getMsgJSONObject(message);
                 String interfacedName = JsCallJava.getInterfacedName(jsonObject);
                 if (interfacedName != null) {
-                    JsCallJava mJsCallJava = this.mAgentWebView.mJsCallJavas.get(interfacedName);
+                    JsCallJava mJsCallJava = this.mWebViews.mJsCallJavas.get(interfacedName);
                     if (mJsCallJava != null) {
                         result.confirm(mJsCallJava.call(view, jsonObject));
                     }

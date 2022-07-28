@@ -11,8 +11,8 @@ import android.os.SystemClock;
 import android.text.TextUtils;
 import android.util.SparseArray;
 
-import com.basic.web.core.web.AgentWebConfig;
-import com.basic.web.utils.AgentWebUtils;
+import com.basic.web.core.web.WebConfig;
+import com.basic.web.utils.WebUtils;
 import com.basic.web.utils.LogUtils;
 
 import java.io.BufferedInputStream;
@@ -39,7 +39,7 @@ import static java.net.HttpURLConnection.HTTP_UNAVAILABLE;
  
  * @date 2017/5/13
  */
-public class Downloader extends AsyncTask<Void, Integer, Integer> implements AgentWebDownloader<DownloadTask>, CancelDownloadRecipient {
+public class Downloader extends AsyncTask<Void, Integer, Integer> implements WebDownloader<DownloadTask>, CancelDownloadRecipient {
 
     /**
      * 下载参数
@@ -161,7 +161,7 @@ public class Downloader extends AsyncTask<Void, Integer, Integer> implements Age
 
     private boolean checkSpace() {
 
-        if (mDownloadTask.getLength() - mDownloadTask.getFile().length() > AgentWebUtils.getAvailableStorage()) {
+        if (mDownloadTask.getLength() - mDownloadTask.getFile().length() > WebUtils.getAvailableStorage()) {
             LogUtils.e(TAG, " 空间不足");
             return false;
         }
@@ -170,9 +170,9 @@ public class Downloader extends AsyncTask<Void, Integer, Integer> implements Age
 
     private boolean checkNet() {
         if (!mDownloadTask.isForce()) {
-            return AgentWebUtils.checkWifi(mDownloadTask.getContext());
+            return WebUtils.checkWifi(mDownloadTask.getContext());
         } else {
-            return AgentWebUtils.checkNetwork(mDownloadTask.getContext());
+            return WebUtils.checkNetwork(mDownloadTask.getContext());
         }
     }
 
@@ -283,14 +283,14 @@ public class Downloader extends AsyncTask<Void, Integer, Integer> implements Age
             return;
         }
         LogUtils.i(TAG, "save etag:" + etag);
-        SharedPreferences mSharedPreferences = mDownloadTask.getContext().getSharedPreferences(AgentWebConfig.AGENTWEB_NAME, Context.MODE_PRIVATE);
+        SharedPreferences mSharedPreferences = mDownloadTask.getContext().getSharedPreferences(WebConfig.WEB_NAME, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = mSharedPreferences.edit();
         editor.putString(mDownloadTask.getFile().getName(), etag);
         editor.apply();
     }
 
     private String getEtag() {
-        SharedPreferences mSharedPreferences = mDownloadTask.getContext().getSharedPreferences(AgentWebConfig.AGENTWEB_NAME, Context.MODE_PRIVATE);
+        SharedPreferences mSharedPreferences = mDownloadTask.getContext().getSharedPreferences(WebConfig.WEB_NAME, Context.MODE_PRIVATE);
         String mEtag = mSharedPreferences.getString(mDownloadTask.getFile().getName(), "-1");
         if (!TextUtils.isEmpty(mEtag) && !"-1".equals(mEtag)) {
             return mEtag;
@@ -308,7 +308,7 @@ public class Downloader extends AsyncTask<Void, Integer, Integer> implements Age
         httpURLConnection.setRequestProperty("Accept", "application/*");
         httpURLConnection.setRequestProperty("Accept-Encoding", "identity");
         httpURLConnection.setRequestProperty("Connection", "close");
-        httpURLConnection.setRequestProperty("Cookie", AgentWebConfig.getCookiesByUrl(url.toString()));
+        httpURLConnection.setRequestProperty("Cookie", WebConfig.getCookiesByUrl(url.toString()));
         Map<String, String> headers;
         if ((null != mDownloadTask.getExtraServiceImpl()) && null != (headers = mDownloadTask.getExtraServiceImpl().getHeaders()) &&
                 !headers.isEmpty()) {
@@ -407,7 +407,7 @@ public class Downloader extends AsyncTask<Void, Integer, Integer> implements Age
             if (!mDownloadTask.isAutoOpen()) {
                 return;
             }
-            Intent mIntent = AgentWebUtils.getCommonFileIntentCompat(mDownloadTask.getContext(), mDownloadTask.getFile());
+            Intent mIntent = WebUtils.getCommonFileIntentCompat(mDownloadTask.getContext(), mDownloadTask.getFile());
             if (null == mIntent) {
                 return;
             }
@@ -488,9 +488,9 @@ public class Downloader extends AsyncTask<Void, Integer, Integer> implements Age
             }
             return SUCCESSFUL;
         } finally {
-            AgentWebUtils.closeIO(out);
-            AgentWebUtils.closeIO(bis);
-            AgentWebUtils.closeIO(inputStream);
+            WebUtils.closeIO(out);
+            WebUtils.closeIO(bis);
+            WebUtils.closeIO(inputStream);
         }
 
     }
@@ -507,7 +507,7 @@ public class Downloader extends AsyncTask<Void, Integer, Integer> implements Age
     }
 
     @Override
-    public synchronized AgentWebDownloader.ExtraService shutdownNow() {
+    public synchronized WebDownloader.ExtraService shutdownNow() {
 
         if (getStatus() == Status.FINISHED) {
             LogUtils.e(TAG, "  Termination failed , becauce the downloader already dead !!! ");

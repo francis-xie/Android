@@ -4,8 +4,8 @@
 
     <application>
         <provider
-            android:name=".core.web.AgentWebFileProvider"
-            android:authorities="${applicationId}.AgentWebFileProvider"
+            android:name=".core.web.WebFileProvider"
+            android:authorities="${applicationId}.WebFileProvider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

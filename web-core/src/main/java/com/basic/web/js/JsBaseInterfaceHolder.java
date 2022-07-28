@@ -4,8 +4,8 @@ package com.basic.web.js;
 import android.os.Build;
 import android.webkit.JavascriptInterface;
 
-import com.basic.web.core.AgentWeb;
-import com.basic.web.core.web.AgentWebConfig;
+import com.basic.web.core.Web;
+import com.basic.web.core.web.WebConfig;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
@@ -17,9 +17,9 @@ import java.lang.reflect.Method;
  */
 public abstract class JsBaseInterfaceHolder implements JsInterfaceHolder {
 
-    private AgentWeb.SecurityType mSecurityType;
+    private Web.SecurityType mSecurityType;
 
-    protected JsBaseInterfaceHolder(AgentWeb.SecurityType securityType) {
+    protected JsBaseInterfaceHolder(Web.SecurityType securityType) {
         this.mSecurityType = securityType;
     }
 
@@ -29,7 +29,7 @@ public abstract class JsBaseInterfaceHolder implements JsInterfaceHolder {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN_MR1){
             return true;
         }
-        if (AgentWebConfig.WEBVIEW_TYPE == AgentWebConfig.WEBVIEW_AGENTWEB_SAFE_TYPE){
+        if (WebConfig.WEBVIEW_TYPE == WebConfig.WEBVIEW_WEB_SAFE_TYPE){
             return true;
         }
         boolean tag = false;
@@ -58,8 +58,8 @@ public abstract class JsBaseInterfaceHolder implements JsInterfaceHolder {
     }
 
     protected boolean checkSecurity() {
-        return mSecurityType != AgentWeb.SecurityType.STRICT_CHECK
-                ? true : AgentWebConfig.WEBVIEW_TYPE == AgentWebConfig.WEBVIEW_AGENTWEB_SAFE_TYPE
+        return mSecurityType != Web.SecurityType.STRICT_CHECK
+                ? true : WebConfig.WEBVIEW_TYPE == WebConfig.WEBVIEW_WEB_SAFE_TYPE
                 ? true : Build.VERSION.SDK_INT > Build.VERSION_CODES.JELLY_BEAN_MR1;
     }
 

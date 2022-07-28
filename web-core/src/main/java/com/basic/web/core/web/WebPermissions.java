@@ -10,7 +10,7 @@ import android.Manifest;
 
  * @since 2019/1/4 上午11:19
  */
-public class AgentWebPermissions {
+public class WebPermissions {
 
 
 	public static final String[] CAMERA;

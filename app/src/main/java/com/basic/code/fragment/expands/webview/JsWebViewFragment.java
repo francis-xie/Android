@@ -7,7 +7,7 @@ import android.view.View;
 import android.webkit.JavascriptInterface;
 import android.widget.FrameLayout;
 
-import com.basic.web.core.AgentWeb;
+import com.basic.web.core.Web;
 import com.basic.aop.annotation.SingleClick;
 import com.basic.page.annotation.Page;
 import com.basic.code.R;
@@ -36,11 +36,11 @@ public class JsWebViewFragment extends BaseWebViewFragment {
     }
 
     @Override
-    protected AgentWeb createAgentWeb() {
-        AgentWeb agentWeb = Utils.createAgentWeb(this, flContainer, "file:///android_asset/jsTest.html");
+    protected Web createWeb() {
+        Web web = Utils.createWeb(this, flContainer, "file:///android_asset/jsTest.html");
         //注入接口,供JS调用
-        agentWeb.getJsInterfaceHolder().addJavaObject("Android", new AndroidInterface());
-        return agentWeb;
+        web.getJsInterfaceHolder().addJavaObject("Android", new AndroidInterface());
+        return web;
     }
 
 
@@ -49,18 +49,18 @@ public class JsWebViewFragment extends BaseWebViewFragment {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn_js_no_param:
-                mAgentWeb.getJsAccessEntrace().quickCallJs("callByAndroidNoParam");
+                mWeb.getJsAccessEntrace().quickCallJs("callByAndroidNoParam");
                 break;
             case R.id.btn_js_one_param:
-                mAgentWeb.getJsAccessEntrace().quickCallJs("callByAndroidOneParam", "Hello ! Agentweb");
+                mWeb.getJsAccessEntrace().quickCallJs("callByAndroidOneParam", "Hello ! WEB");
                 break;
             case R.id.btn_js_more_param:
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-                    mAgentWeb.getJsAccessEntrace().quickCallJs("callByAndroidMoreParams", value -> Log.e("zhiqiang", "这里是调用JS方法的返回值:" + value), getJson(), "say！", " Hello! AgentWeb");
+                    mWeb.getJsAccessEntrace().quickCallJs("callByAndroidMoreParams", value -> Log.e("zhiqiang", "这里是调用JS方法的返回值:" + value), getJson(), "say！", " Hello! Web");
                 }
                 break;
             case R.id.btn_clear:
-                mAgentWeb.getJsAccessEntrace().quickCallJs("clearLog");
+                mWeb.getJsAccessEntrace().quickCallJs("clearLog");
                 break;
             default:
                 break;
@@ -72,7 +72,7 @@ public class JsWebViewFragment extends BaseWebViewFragment {
         try {
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("id", 1);
-            jsonObject.put("name", "AgentWeb");
+            jsonObject.put("name", "Web");
             jsonObject.put("age", 18);
             result = jsonObject.toString();
         } catch (Exception e) {

@@ -21,7 +21,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.snackbar.Snackbar;
 import com.basic.web.R;
-import com.basic.web.utils.AgentWebUtils;
+import com.basic.web.utils.WebUtils;
 import com.basic.web.utils.LogUtils;
 import com.basic.web.widget.WebParentLayout;
 
@@ -49,7 +49,7 @@ public class DefaultDesignUIController extends DefaultUIController {
             return;
         }
         try {
-            AgentWebUtils.show(view,
+            WebUtils.show(view,
                     message,
                     Snackbar.LENGTH_SHORT,
                     Color.WHITE,

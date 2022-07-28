@@ -17,13 +17,13 @@ import com.basic.web.widget.WebParentLayout;
  
  * @since 3.0.0
  */
-public abstract class AbsAgentWebUIController {
+public abstract class AbsWebUIController {
 
 	public static boolean HAS_DESIGN_LIB = false;
 	private Activity mActivity;
 	private WebParentLayout mWebParentLayout;
 	private volatile boolean mIsBindWebParent = false;
-	protected AbsAgentWebUIController mAgentWebUIControllerDelegate;
+	protected AbsWebUIController mWebUIControllerDelegate;
 	protected String TAG = this.getClass().getSimpleName();
 
 	static {
@@ -37,16 +37,16 @@ public abstract class AbsAgentWebUIController {
 	}
 
 
-	protected AbsAgentWebUIController create() {
+	protected AbsWebUIController create() {
 		return HAS_DESIGN_LIB ? new DefaultDesignUIController() : new DefaultUIController();
 	}
 
-	protected AbsAgentWebUIController getDelegate() {
-		AbsAgentWebUIController mAgentWebUIController = this.mAgentWebUIControllerDelegate;
-		if (mAgentWebUIController == null) {
-			this.mAgentWebUIControllerDelegate = mAgentWebUIController = create();
+	protected AbsWebUIController getDelegate() {
+		AbsWebUIController mWebUIController = this.mWebUIControllerDelegate;
+		if (mWebUIController == null) {
+			this.mWebUIControllerDelegate = mWebUIController = create();
 		}
-		return mAgentWebUIController;
+		return mWebUIController;
 	}
 
 	public final synchronized void bindWebParent(WebParentLayout webParentLayout, Activity activity) {

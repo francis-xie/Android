@@ -6,8 +6,8 @@ import android.webkit.DownloadListener;
 import android.webkit.WebView;
 
 import com.basic.web.action.PermissionInterceptor;
+import com.basic.web.core.Web;
 import com.basic.web.core.client.WebListenerManager;
-import com.basic.web.core.AgentWeb;
 import com.basic.web.utils.LogUtils;
 
 
@@ -15,12 +15,12 @@ import com.basic.web.utils.LogUtils;
  * @since 1.0.0
  
  */
-public class AgentWebSettingsImpl extends AbsAgentWebSettings {
-    private AgentWeb mAgentWeb;
+public class WebSettingsImpl extends AbsWebSettings {
+    private Web mWeb;
 
     @Override
-    protected void bindAgentWebSupport(AgentWeb agentWeb) {
-        this.mAgentWeb = agentWeb;
+    protected void bindWebSupport(Web web) {
+        this.mWeb = web;
     }
 
     @Override
@@ -35,7 +35,7 @@ public class AgentWebSettingsImpl extends AbsAgentWebSettings {
                             Class.forName("com.basic.web.download.DownloadingListener"),
                             PermissionInterceptor.class)
                             .invoke(mDefaultDownloadImpl$Extra, (Activity) webView.getContext()
-                                    , webView, null, null, mAgentWeb.getPermissionInterceptor());
+                                    , webView, null, null, mWeb.getPermissionInterceptor());
 
         } catch (Throwable ignore) {
             if (LogUtils.isDebug()) {

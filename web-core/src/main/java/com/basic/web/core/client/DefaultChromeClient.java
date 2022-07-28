@@ -20,13 +20,13 @@ import android.webkit.WebView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
-import com.basic.web.core.web.controller.AbsAgentWebUIController;
-import com.basic.web.core.web.AgentWebPermissions;
+import com.basic.web.core.web.controller.AbsWebUIController;
+import com.basic.web.core.web.WebPermissions;
 import com.basic.web.core.video.IVideo;
 import com.basic.web.action.Action;
 import com.basic.web.action.ActionActivity;
 import com.basic.web.action.PermissionInterceptor;
-import com.basic.web.utils.AgentWebUtils;
+import com.basic.web.utils.WebUtils;
 import com.basic.web.utils.LogUtils;
 import com.basic.web.widget.indicator.IndicatorController;
 
@@ -92,9 +92,9 @@ public class DefaultChromeClient extends MiddlewareWebChromeBase {
 	 */
 	public static final int FROM_CODE_INTENTION_LOCATION = FROM_CODE_INTENTION << 2;
 	/**
-	 * AbsAgentWebUIController
+	 * AbsWebUIController
 	 */
-	private WeakReference<AbsAgentWebUIController> mAgentWebUIController = null;
+	private WeakReference<AbsWebUIController> mWebUIController = null;
 	/**
 	 * IndicatorController 进度条控制器
 	 */
@@ -117,7 +117,7 @@ public class DefaultChromeClient extends MiddlewareWebChromeBase {
 		this.mIVideo = iVideo;
 		this.mPermissionInterceptor = permissionInterceptor;
 		this.mWebView = webView;
-		mAgentWebUIController = new WeakReference<AbsAgentWebUIController>(AgentWebUtils.getAgentWebUIControllerByWebView(webView));
+		mWebUIController = new WeakReference<AbsWebUIController>(WebUtils.getWebUIControllerByWebView(webView));
 	}
 
 
@@ -142,12 +142,12 @@ public class DefaultChromeClient extends MiddlewareWebChromeBase {
 	public boolean onJsAlert(WebView view, String url, String message, JsResult result) {
 
 
-		if (AgentWebUtils.isOverriedMethod(mWebChromeClient, "onJsAlert", "public boolean " + ANDROID_WEBCHROMECLIENT_PATH + ".onJsAlert", WebView.class, String.class, String.class, JsResult.class)) {
+		if (WebUtils.isOverriedMethod(mWebChromeClient, "onJsAlert", "public boolean " + ANDROID_WEBCHROMECLIENT_PATH + ".onJsAlert", WebView.class, String.class, String.class, JsResult.class)) {
 			return super.onJsAlert(view, url, message, result);
 		}
 
-		if (mAgentWebUIController.get() != null) {
-			mAgentWebUIController.get().onJsAlert(view, url, message);
+		if (mWebUIController.get() != null) {
+			mWebUIController.get().onJsAlert(view, url, message);
 		}
 
 		result.confirm();
@@ -170,7 +170,7 @@ public class DefaultChromeClient extends MiddlewareWebChromeBase {
 	@Override
 	public void onGeolocationPermissionsShowPrompt(String origin, GeolocationPermissions.Callback callback) {
 
-		if (AgentWebUtils.isOverriedMethod(mWebChromeClient, "onGeolocationPermissionsShowPrompt", "public void " + ANDROID_WEBCHROMECLIENT_PATH + ".onGeolocationPermissionsShowPrompt", String.class, GeolocationPermissions.Callback.class)) {
+		if (WebUtils.isOverriedMethod(mWebChromeClient, "onGeolocationPermissionsShowPrompt", "public void " + ANDROID_WEBCHROMECLIENT_PATH + ".onGeolocationPermissionsShowPrompt", String.class, GeolocationPermissions.Callback.class)) {
 			super.onGeolocationPermissionsShowPrompt(origin, callback);
 			return;
 		}
@@ -181,7 +181,7 @@ public class DefaultChromeClient extends MiddlewareWebChromeBase {
 	private void onGeolocationPermissionsShowPromptInternal(String origin, GeolocationPermissions.Callback callback) {
 
 		if (mPermissionInterceptor != null) {
-			if (mPermissionInterceptor.intercept(this.mWebView.getUrl(), AgentWebPermissions.LOCATION, "location")) {
+			if (mPermissionInterceptor.intercept(this.mWebView.getUrl(), WebPermissions.LOCATION, "location")) {
 				callback.invoke(origin, false, false);
 				return;
 			}
@@ -194,7 +194,7 @@ public class DefaultChromeClient extends MiddlewareWebChromeBase {
 		}
 
 		List<String> deniedPermissions = null;
-		if ((deniedPermissions = AgentWebUtils.getDeniedPermissions(mActivity, AgentWebPermissions.LOCATION)).isEmpty()) {
+		if ((deniedPermissions = WebUtils.getDeniedPermissions(mActivity, WebPermissions.LOCATION)).isEmpty()) {
 			LogUtils.i(TAG, "onGeolocationPermissionsShowPromptInternal:" + true);
 			callback.invoke(origin, true, false);
 		} else {
@@ -216,7 +216,7 @@ public class DefaultChromeClient extends MiddlewareWebChromeBase {
 
 
 			if (extras.getInt(KEY_FROM_INTENTION) == FROM_CODE_INTENTION_LOCATION) {
-				boolean hasPermission = AgentWebUtils.hasPermission(mActivityWeakReference.get(), permissions);
+				boolean hasPermission = WebUtils.hasPermission(mActivityWeakReference.get(), permissions);
 
 				if (mCallback != null) {
 					if (hasPermission) {
@@ -229,12 +229,12 @@ public class DefaultChromeClient extends MiddlewareWebChromeBase {
 					mOrigin = null;
 				}
 
-				if (!hasPermission && null != mAgentWebUIController.get()) {
-					mAgentWebUIController
+				if (!hasPermission && null != mWebUIController.get()) {
+					mWebUIController
 							.get()
 							.onPermissionsDeny(
-									AgentWebPermissions.LOCATION,
-									AgentWebPermissions.ACTION_LOCATION,
+									WebPermissions.LOCATION,
+									WebPermissions.ACTION_LOCATION,
 									"Location");
 				}
 			}
@@ -247,11 +247,11 @@ public class DefaultChromeClient extends MiddlewareWebChromeBase {
 
 
 		try {
-			if (AgentWebUtils.isOverriedMethod(mWebChromeClient, "onJsPrompt", "public boolean " + ANDROID_WEBCHROMECLIENT_PATH + ".onJsPrompt", WebView.class, String.class, String.class, String.class, JsPromptResult.class)) {
+			if (WebUtils.isOverriedMethod(mWebChromeClient, "onJsPrompt", "public boolean " + ANDROID_WEBCHROMECLIENT_PATH + ".onJsPrompt", WebView.class, String.class, String.class, String.class, JsPromptResult.class)) {
 				return super.onJsPrompt(view, url, message, defaultValue, result);
 			}
-			if (this.mAgentWebUIController.get() != null) {
-				this.mAgentWebUIController.get().onJsPrompt(mWebView, url, message, defaultValue, result);
+			if (this.mWebUIController.get() != null) {
+				this.mWebUIController.get().onJsPrompt(mWebView, url, message, defaultValue, result);
 			}
 		} catch (Exception e) {
 			if (LogUtils.isDebug()) {
@@ -265,12 +265,12 @@ public class DefaultChromeClient extends MiddlewareWebChromeBase {
 	@Override
 	public boolean onJsConfirm(WebView view, String url, String message, JsResult result) {
 
-		if (AgentWebUtils.isOverriedMethod(mWebChromeClient, "onJsConfirm", "public boolean " + ANDROID_WEBCHROMECLIENT_PATH + ".onJsConfirm", WebView.class, String.class, String.class, JsResult.class)) {
+		if (WebUtils.isOverriedMethod(mWebChromeClient, "onJsConfirm", "public boolean " + ANDROID_WEBCHROMECLIENT_PATH + ".onJsConfirm", WebView.class, String.class, String.class, JsResult.class)) {
 			return super.onJsConfirm(view, url, message, result);
 		}
 
-		if (mAgentWebUIController.get() != null) {
-			mAgentWebUIController.get().onJsConfirm(view, url, message, result);
+		if (mWebUIController.get() != null) {
+			mWebUIController.get().onJsConfirm(view, url, message, result);
 		}
 		return true;
 	}
@@ -280,7 +280,7 @@ public class DefaultChromeClient extends MiddlewareWebChromeBase {
 	public void onExceededDatabaseQuota(String url, String databaseIdentifier, long quota, long estimatedDatabaseSize, long totalQuota, WebStorage.QuotaUpdater quotaUpdater) {
 
 
-		if (AgentWebUtils.isOverriedMethod(mWebChromeClient, "onExceededDatabaseQuota", ANDROID_WEBCHROMECLIENT_PATH + ".onExceededDatabaseQuota", String.class, String.class, long.class, long.class, long.class, WebStorage.QuotaUpdater.class)) {
+		if (WebUtils.isOverriedMethod(mWebChromeClient, "onExceededDatabaseQuota", ANDROID_WEBCHROMECLIENT_PATH + ".onExceededDatabaseQuota", String.class, String.class, long.class, long.class, long.class, WebStorage.QuotaUpdater.class)) {
 
 			super.onExceededDatabaseQuota(url, databaseIdentifier, quota, estimatedDatabaseSize, totalQuota, quotaUpdater);
 			return;
@@ -292,7 +292,7 @@ public class DefaultChromeClient extends MiddlewareWebChromeBase {
 	public void onReachedMaxAppCacheSize(long requiredStorage, long quota, WebStorage.QuotaUpdater quotaUpdater) {
 
 
-		if (AgentWebUtils.isOverriedMethod(mWebChromeClient, "onReachedMaxAppCacheSize", ANDROID_WEBCHROMECLIENT_PATH + ".onReachedMaxAppCacheSize", long.class, long.class, WebStorage.QuotaUpdater.class)) {
+		if (WebUtils.isOverriedMethod(mWebChromeClient, "onReachedMaxAppCacheSize", ANDROID_WEBCHROMECLIENT_PATH + ".onReachedMaxAppCacheSize", long.class, long.class, WebStorage.QuotaUpdater.class)) {
 
 			super.onReachedMaxAppCacheSize(requiredStorage, quota, quotaUpdater);
 			return;
@@ -305,7 +305,7 @@ public class DefaultChromeClient extends MiddlewareWebChromeBase {
 	@Override
 	public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback, FileChooserParams fileChooserParams) {
 		LogUtils.i(TAG, "openFileChooser>=5.0");
-		if (AgentWebUtils.isOverriedMethod(mWebChromeClient, "onShowFileChooser", ANDROID_WEBCHROMECLIENT_PATH + ".onShowFileChooser", WebView.class, ValueCallback.class, FileChooserParams.class)) {
+		if (WebUtils.isOverriedMethod(mWebChromeClient, "onShowFileChooser", ANDROID_WEBCHROMECLIENT_PATH + ".onShowFileChooser", WebView.class, ValueCallback.class, FileChooserParams.class)) {
 
 			return super.onShowFileChooser(webView, filePathCallback, fileChooserParams);
 		}
@@ -323,7 +323,7 @@ public class DefaultChromeClient extends MiddlewareWebChromeBase {
 			return false;
 		}
 
-		return AgentWebUtils.showFileChooserCompat(mActivity,
+		return WebUtils.showFileChooserCompat(mActivity,
 				mWebView,
 				valueCallbacks,
 				fileChooserParams,
@@ -346,7 +346,7 @@ public class DefaultChromeClient extends MiddlewareWebChromeBase {
 	public void openFileChooser(ValueCallback<Uri> uploadFile, String acceptType, String capture) {
 	    /*believe me , i never want to do this */
 		LogUtils.i(TAG, "openFileChooser>=4.1");
-		if (AgentWebUtils.isOverriedMethod(mWebChromeClient, "openFileChooser", ANDROID_WEBCHROMECLIENT_PATH + ".openFileChooser", ValueCallback.class, String.class, String.class)) {
+		if (WebUtils.isOverriedMethod(mWebChromeClient, "openFileChooser", ANDROID_WEBCHROMECLIENT_PATH + ".openFileChooser", ValueCallback.class, String.class, String.class)) {
 			super.openFileChooser(uploadFile, acceptType, capture);
 			return;
 		}
@@ -356,7 +356,7 @@ public class DefaultChromeClient extends MiddlewareWebChromeBase {
 	//  Android < 3.0
 	@Override
 	public void openFileChooser(ValueCallback<Uri> valueCallback) {
-		if (AgentWebUtils.isOverriedMethod(mWebChromeClient, "openFileChooser", ANDROID_WEBCHROMECLIENT_PATH + ".openFileChooser", ValueCallback.class)) {
+		if (WebUtils.isOverriedMethod(mWebChromeClient, "openFileChooser", ANDROID_WEBCHROMECLIENT_PATH + ".openFileChooser", ValueCallback.class)) {
 			super.openFileChooser(valueCallback);
 			return;
 		}
@@ -369,7 +369,7 @@ public class DefaultChromeClient extends MiddlewareWebChromeBase {
 	public void openFileChooser(ValueCallback valueCallback, String acceptType) {
 		Log.i(TAG, "openFileChooser>3.0");
 
-		if (AgentWebUtils.isOverriedMethod(mWebChromeClient, "openFileChooser", ANDROID_WEBCHROMECLIENT_PATH + ".openFileChooser", ValueCallback.class, String.class)) {
+		if (WebUtils.isOverriedMethod(mWebChromeClient, "openFileChooser", ANDROID_WEBCHROMECLIENT_PATH + ".openFileChooser", ValueCallback.class, String.class)) {
 			super.openFileChooser(valueCallback, acceptType);
 			return;
 		}
@@ -385,7 +385,7 @@ public class DefaultChromeClient extends MiddlewareWebChromeBase {
 		}
 
 
-		AgentWebUtils.showFileChooserCompat(mActivity,
+		WebUtils.showFileChooserCompat(mActivity,
 				mWebView,
 				null,
 				null,
@@ -407,7 +407,7 @@ public class DefaultChromeClient extends MiddlewareWebChromeBase {
 
 	@Override
 	public void onShowCustomView(View view, CustomViewCallback callback) {
-		if (AgentWebUtils.isOverriedMethod(mWebChromeClient, "onShowCustomView", ANDROID_WEBCHROMECLIENT_PATH + ".onShowCustomView", View.class, CustomViewCallback.class)) {
+		if (WebUtils.isOverriedMethod(mWebChromeClient, "onShowCustomView", ANDROID_WEBCHROMECLIENT_PATH + ".onShowCustomView", View.class, CustomViewCallback.class)) {
 			super.onShowCustomView(view, callback);
 			return;
 		}
@@ -420,7 +420,7 @@ public class DefaultChromeClient extends MiddlewareWebChromeBase {
 
 	@Override
 	public void onHideCustomView() {
-		if (AgentWebUtils.isOverriedMethod(mWebChromeClient, "onHideCustomView", ANDROID_WEBCHROMECLIENT_PATH + ".onHideCustomView")) {
+		if (WebUtils.isOverriedMethod(mWebChromeClient, "onHideCustomView", ANDROID_WEBCHROMECLIENT_PATH + ".onHideCustomView")) {
 			super.onHideCustomView();
 			return;
 		}

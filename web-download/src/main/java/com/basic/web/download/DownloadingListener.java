@@ -18,7 +18,7 @@ public interface DownloadingListener {
      * @param length     文件的总大小
      * @param usedTime   耗时,单位ms
      *                   <p>
-     *                   注意该方法回调在子线程 ，线程名 AsyncTask #XX or AgentWeb # XX
+     *                   注意该方法回调在子线程 ，线程名 AsyncTask #XX or Web # XX
      */
     void onProgress(String url, long downloaded, long length, long usedTime);
 

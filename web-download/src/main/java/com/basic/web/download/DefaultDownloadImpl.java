@@ -14,11 +14,11 @@ import android.webkit.WebView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.basic.web.core.web.controller.AbsAgentWebUIController;
+import com.basic.web.core.web.controller.AbsWebUIController;
 import com.basic.web.action.Action;
 import com.basic.web.action.ActionActivity;
-import com.basic.web.core.web.AgentWebPermissions;
-import com.basic.web.utils.AgentWebUtils;
+import com.basic.web.core.web.WebPermissions;
+import com.basic.web.utils.WebUtils;
 import com.basic.web.utils.LogUtils;
 import com.basic.web.action.PermissionInterceptor;
 
@@ -81,9 +81,9 @@ public class DefaultDownloadImpl implements android.webkit.DownloadListener {
 	 */
 	private String mMimetype;
 	/**
-	 * AbsAgentWebUIController
+	 * AbsWebUIController
 	 */
-	private WeakReference<AbsAgentWebUIController> mAgentWebUIController;
+	private WeakReference<AbsWebUIController> mWebUIController;
 	/**
 	 * ExtraServiceImpl
 	 */
@@ -120,7 +120,7 @@ public class DefaultDownloadImpl implements android.webkit.DownloadListener {
 		this.mDownloadListener = extraServiceImpl.mDownloadListener;
 		this.mDownloadingListener = extraServiceImpl.mDownloadingListener;
 		this.mPermissionListener = extraServiceImpl.mPermissionInterceptor;
-		this.mAgentWebUIController = new WeakReference<AbsAgentWebUIController>(AgentWebUtils.getAgentWebUIControllerByWebView(extraServiceImpl.mWebView));
+		this.mWebUIController = new WeakReference<AbsWebUIController>(WebUtils.getWebUIControllerByWebView(extraServiceImpl.mWebView));
 	}
 
 
@@ -136,7 +136,7 @@ public class DefaultDownloadImpl implements android.webkit.DownloadListener {
 			return;
 		}
 		if (null != this.mPermissionListener) {
-			if (this.mPermissionListener.intercept(url, AgentWebPermissions.STORAGE, "download")) {
+			if (this.mPermissionListener.intercept(url, WebPermissions.STORAGE, "download")) {
 				return;
 			}
 		}
@@ -184,13 +184,13 @@ public class DefaultDownloadImpl implements android.webkit.DownloadListener {
 				if (checkNeedPermission().isEmpty()) {
 					preDownload();
 				} else {
-					if (null != mAgentWebUIController.get()) {
-						mAgentWebUIController
+					if (null != mWebUIController.get()) {
+						mWebUIController
 								.get()
 								.onPermissionsDeny(
 										checkNeedPermission().
 												toArray(new String[]{}),
-										AgentWebPermissions.ACTION_STORAGE, "Download");
+										WebPermissions.ACTION_STORAGE, "Download");
 					}
 					LogUtils.e(TAG, "储存权限获取失败~");
 				}
@@ -201,8 +201,8 @@ public class DefaultDownloadImpl implements android.webkit.DownloadListener {
 
 	private List<String> checkNeedPermission() {
 		List<String> deniedPermissions = new ArrayList<>();
-		if (!AgentWebUtils.hasPermission(mActivityWeakReference.get(), AgentWebPermissions.STORAGE)) {
-			deniedPermissions.addAll(Arrays.asList(AgentWebPermissions.STORAGE));
+		if (!WebUtils.hasPermission(mActivityWeakReference.get(), WebPermissions.STORAGE)) {
+			deniedPermissions.addAll(Arrays.asList(WebPermissions.STORAGE));
 		}
 		return deniedPermissions;
 	}
@@ -233,7 +233,7 @@ public class DefaultDownloadImpl implements android.webkit.DownloadListener {
 				return;
 			}
 
-			Intent mIntent = AgentWebUtils.getCommonFileIntentCompat(mContext, mFile);
+			Intent mIntent = WebUtils.getCommonFileIntentCompat(mContext, mFile);
 			try {
 //                mContext.getPackageManager().resolveActivity(mIntent)
 				if (null != mIntent) {
@@ -255,10 +255,10 @@ public class DefaultDownloadImpl implements android.webkit.DownloadListener {
 		// 该链接是否正在下载
 		if (ExecuteTasksMap.getInstance().contains(mUrl)
 				|| ExecuteTasksMap.getInstance().contains(mFile.getAbsolutePath())) {
-			if (null != mAgentWebUIController.get()) {
-				mAgentWebUIController.get().onShowMessage(
+			if (null != mWebUIController.get()) {
+				mWebUIController.get().onShowMessage(
 						mActivityWeakReference.get()
-								.getString(R.string.agentweb_download_task_has_been_exist),
+								.getString(R.string.web_download_task_has_been_exist),
 						TAG.concat("|preDownload"));
 			}
 			return;
@@ -267,7 +267,7 @@ public class DefaultDownloadImpl implements android.webkit.DownloadListener {
 
 		// 移动数据
 		if (!this.mCloneExtraServiceImpl.isForceDownload() &&
-				AgentWebUtils.checkNetworkType(mContext) > 1) {
+				WebUtils.checkNetworkType(mContext) > 1) {
 
 			showDialog(mFile);
 			return;
@@ -289,9 +289,9 @@ public class DefaultDownloadImpl implements android.webkit.DownloadListener {
 		if (null == (mActivity = mActivityWeakReference.get()) || mActivity.isFinishing()) {
 			return;
 		}
-		AbsAgentWebUIController mAgentWebUIController;
-		if (null != (mAgentWebUIController = this.mAgentWebUIController.get())) {
-			mAgentWebUIController.onForceDownloadAlert(mUrl, createCallback(file));
+		AbsWebUIController mWebUIController;
+		if (null != (mWebUIController = this.mWebUIController.get())) {
+			mWebUIController.onForceDownloadAlert(mUrl, createCallback(file));
 		}
 
 	}
@@ -311,9 +311,9 @@ public class DefaultDownloadImpl implements android.webkit.DownloadListener {
 		try {
 
 			ExecuteTasksMap.getInstance().addTask(mUrl, file.getAbsolutePath());
-			if (null != mAgentWebUIController.get()) {
-				mAgentWebUIController.get()
-						.onShowMessage(mActivityWeakReference.get().getString(R.string.agentweb_coming_soon_download) + ":" + file.getName(), TAG.concat("|performDownload"));
+			if (null != mWebUIController.get()) {
+				mWebUIController.get()
+						.onShowMessage(mActivityWeakReference.get().getString(R.string.web_coming_soon_download) + ":" + file.getName(), TAG.concat("|performDownload"));
 			}
 			DownloadTask mDownloadTask = new DownloadTask(NOTICATION_ID.incrementAndGet(),
 					this.mDownloadListenerAdapter,
@@ -348,12 +348,12 @@ public class DefaultDownloadImpl implements android.webkit.DownloadListener {
 				fileName = fileName.substring(fileName.length() - 64, fileName.length());
 			}
 			if (TextUtils.isEmpty(fileName)) {
-				fileName = AgentWebUtils.md5(url);
+				fileName = WebUtils.md5(url);
 			}
 			if (fileName.contains("\"")) {
 				fileName = fileName.replace("\"", "");
 			}
-			return AgentWebUtils.createFileByName(mContext, fileName, !this.mCloneExtraServiceImpl.isOpenBreakPointDownload());
+			return WebUtils.createFileByName(mContext, fileName, !this.mCloneExtraServiceImpl.isOpenBreakPointDownload());
 		} catch (Throwable e) {
 			if (LogUtils.isDebug()) {
 				LogUtils.i(TAG, "fileName:" + fileName);
@@ -498,7 +498,7 @@ public class DefaultDownloadImpl implements android.webkit.DownloadListener {
 				.create();
 	}
 
-	public static class ExtraServiceImpl extends AgentWebDownloader.ExtraService implements Cloneable, Serializable {
+	public static class ExtraServiceImpl extends WebDownloader.ExtraService implements Cloneable, Serializable {
 		private transient Activity mActivity;
 		private transient DownloadListener mDownloadListener;
 		private transient PermissionInterceptor mPermissionInterceptor;

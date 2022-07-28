@@ -17,7 +17,7 @@ import com.basic.code.R;
 import com.basic.code.base.BaseAppCompatActivity;
 import com.basic.code.utils.XToastUtils;
 
-import static com.basic.code.base.webview.AgentWebFragment.KEY_URL;
+import static com.basic.code.base.webview.WebFragment.KEY_URL;
 
 /**
  * 壳浏览器
@@ -25,7 +25,7 @@ import static com.basic.code.base.webview.AgentWebFragment.KEY_URL;
 
  * @since 2019/1/5 上午12:15
  */
-public class AgentWebActivity extends BaseAppCompatActivity {
+public class WebActivity extends BaseAppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -76,11 +76,11 @@ public class AgentWebActivity extends BaseAppCompatActivity {
     }
 
 
-    private AgentWebFragment mAgentWebFragment;
+    private WebFragment mWebFragment;
 
     private void openFragment(String url) {
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        ft.add(R.id.container_frame_layout, mAgentWebFragment = AgentWebFragment.getInstance(url));
+        ft.add(R.id.container_frame_layout, mWebFragment = WebFragment.getInstance(url));
         ft.commit();
 
     }
@@ -89,14 +89,14 @@ public class AgentWebActivity extends BaseAppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         //一定要保证 mAentWebFragemnt 回调
-//		mAgentWebFragment.onActivityResult(requestCode, resultCode, data);
+//		mWebFragment.onActivityResult(requestCode, resultCode, data);
     }
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        AgentWebFragment agentWebFragment = mAgentWebFragment;
-        if (agentWebFragment != null) {
-            if (((FragmentKeyDown) agentWebFragment).onFragmentKeyDown(keyCode, event)) {
+        WebFragment webFragment = mWebFragment;
+        if (webFragment != null) {
+            if (((FragmentKeyDown) webFragment).onFragmentKeyDown(keyCode, event)) {
                 return true;
             } else {
                 return super.onKeyDown(keyCode, event);

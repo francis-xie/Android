@@ -11,25 +11,25 @@ import android.webkit.ValueCallback;
 import android.webkit.WebView;
 
 import androidx.annotation.Nullable;
-import com.basic.web.utils.AgentWebUtils;
+import com.basic.web.utils.WebUtils;
 import com.basic.web.utils.LogUtils;
 
 import java.io.File;
 
-import static com.basic.web.utils.AgentWebUtils.getAgentWebFilePath;
+import static com.basic.web.utils.WebUtils.getWebFilePath;
 /**
  * @since 1.0.0
  
  */
-public class AgentWebConfig {
+public class WebConfig {
 
 
-	public static final String FILE_CACHE_PATH = "agentweb-cache";
-	static final String AGENTWEB_CACHE_PATCH = File.separator + "agentweb-cache";
+	public static final String FILE_CACHE_PATH = "web-cache";
+	static final String WEB_CACHE_PATCH = File.separator + "web-cache";
 	/**
 	 * 缓存路径
 	 */
-	public static String AGENTWEB_FILE_PATH;
+	public static String WEB_FILE_PATH;
 	/**
 	 * DEBUG 模式 ， 如果需要查看日志请设置为 true
 	 */
@@ -43,22 +43,22 @@ public class AgentWebConfig {
 	 */
 	public static final int WEBVIEW_DEFAULT_TYPE = 1;
 	/**
-	 * 使用 AgentWebView
+	 * 使用 WebView
 	 */
-	public static final int WEBVIEW_AGENTWEB_SAFE_TYPE = 2;
+	public static final int WEBVIEW_WEB_SAFE_TYPE = 2;
 	/**
 	 * 自定义 WebView
 	 */
 	public static final int WEBVIEW_CUSTOM_TYPE = 3;
 	public static int WEBVIEW_TYPE = WEBVIEW_DEFAULT_TYPE;
 	private static volatile boolean IS_INITIALIZED = false;
-	private static final String TAG = AgentWebConfig.class.getSimpleName();
+	private static final String TAG = WebConfig.class.getSimpleName();
 	/**
-	 * AgentWeb 的版本
+	 * Web 的版本
 	 */
-	public static final String AGENTWEB_VERSION = " agentweb/4.0.2 ";
+	public static final String WEB_VERSION = " web/4.0.2 ";
 
-	public static final String AGENTWEB_NAME="AgentWeb";
+	public static final String WEB_NAME="Web";
 	/**
 	 * 通过JS获取的文件大小， 这里限制最大为5MB ，太大会抛出 OutOfMemoryError
 	 */
@@ -140,15 +140,15 @@ public class AgentWebConfig {
 	 * @return WebView 的缓存路径
 	 */
 	public static String getCachePath(Context context) {
-		return context.getCacheDir().getAbsolutePath() + AGENTWEB_CACHE_PATCH;
+		return context.getCacheDir().getAbsolutePath() + WEB_CACHE_PATCH;
 	}
 
 	/**
 	 * @param context
-	 * @return AgentWeb 缓存路径
+	 * @return Web 缓存路径
 	 */
 	public static String getExternalCachePath(Context context) {
-		return getAgentWebFilePath(context);
+		return getWebFilePath(context);
 	}
 
 
@@ -176,11 +176,11 @@ public class AgentWebConfig {
 	public static synchronized void clearDiskCache(Context context) {
 		try {
 
-			AgentWebUtils.clearCacheFolder(new File(getCachePath(context)), 0);
+			WebUtils.clearCacheFolder(new File(getCachePath(context)), 0);
 			String path = getExternalCachePath(context);
 			if (!TextUtils.isEmpty(path)) {
 				File mFile = new File(path);
-				AgentWebUtils.clearCacheFolder(mFile, 0);
+				WebUtils.clearCacheFolder(mFile, 0);
 			}
 		} catch (Throwable throwable) {
 			if (LogUtils.isDebug()) {

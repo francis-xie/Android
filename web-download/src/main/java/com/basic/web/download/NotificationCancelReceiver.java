@@ -13,7 +13,7 @@ import com.basic.web.utils.LogUtils;
  */
 public class NotificationCancelReceiver extends BroadcastReceiver {
 
-	public static final String ACTION = "com.agentweb.cancelled";
+	public static final String ACTION = "com.web.cancelled";
 
 	public NotificationCancelReceiver() {
 	}

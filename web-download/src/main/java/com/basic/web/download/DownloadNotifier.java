@@ -13,7 +13,7 @@ import android.os.SystemClock;
 import android.text.TextUtils;
 
 import androidx.core.app.NotificationCompat;
-import com.basic.web.utils.AgentWebUtils;
+import com.basic.web.utils.WebUtils;
 import com.basic.web.utils.LogUtils;
 
 import java.io.File;
@@ -21,7 +21,7 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 
 import static android.content.Context.NOTIFICATION_SERVICE;
-import static com.basic.web.core.web.AgentWebConfig.AGENTWEB_VERSION;
+import static com.basic.web.core.web.WebConfig.WEB_VERSION;
 
 /**
  
@@ -53,9 +53,9 @@ public class DownloadNotifier {
 		try {
 			if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
 				mBuilder = new NotificationCompat.Builder(mContext,
-						mChannelId = mContext.getPackageName().concat(AGENTWEB_VERSION));
+						mChannelId = mContext.getPackageName().concat(WEB_VERSION));
 				NotificationChannel mNotificationChannel = new NotificationChannel(mChannelId,
-						AgentWebUtils.getApplicationName(context),
+						WebUtils.getApplicationName(context),
 						NotificationManager.IMPORTANCE_LOW);
 				NotificationManager mNotificationManager = (NotificationManager) mContext
 						.getSystemService(NOTIFICATION_SERVICE);
@@ -76,7 +76,7 @@ public class DownloadNotifier {
 
 	void initBuilder(DownloadTask downloadTask) {
 		String title = TextUtils.isEmpty(downloadTask.getFile().getName()) ?
-				mContext.getString(R.string.agentweb_file_download) :
+				mContext.getString(R.string.web_file_download) :
 				downloadTask.getFile().getName();
 
 		if (title.length() > 20) {
@@ -86,11 +86,11 @@ public class DownloadNotifier {
 		// 设置顶部状态栏的小图标
 		mBuilder.setSmallIcon(downloadTask.getDrawableRes());
 		// 在顶部状态栏中的提示信息
-		mBuilder.setTicker(mContext.getString(R.string.agentweb_trickter));
+		mBuilder.setTicker(mContext.getString(R.string.web_trickter));
 		// 设置通知中心的标题
 		mBuilder.setContentTitle(title);
 		// 设置通知中心中的内容
-		mBuilder.setContentText(mContext.getString(R.string.agentweb_coming_soon_download));
+		mBuilder.setContentText(mContext.getString(R.string.web_coming_soon_download));
 		mBuilder.setWhen(System.currentTimeMillis());
 		mBuilder.setAutoCancel(true);
 		mBuilder.setPriority(NotificationCompat.PRIORITY_LOW);
@@ -155,7 +155,7 @@ public class DownloadNotifier {
 			mBuilder.addAction(mAction);
 
 		}
-		mBuilder.setContentText(mContext.getString(R.string.agentweb_current_downloading_progress, (progress + "%")));
+		mBuilder.setContentText(mContext.getString(R.string.web_current_downloading_progress, (progress + "%")));
 		this.setProgress(100, progress, false);
 		sent();
 	}
@@ -184,7 +184,7 @@ public class DownloadNotifier {
 				ignore.printStackTrace();
 			}
 		}
-		Intent mIntent = AgentWebUtils.getCommonFileIntentCompat(mContext, mFile);
+		Intent mIntent = WebUtils.getCommonFileIntentCompat(mContext, mFile);
 		setDelecte(null);
 		if (null != mIntent) {
 			if (!(mContext instanceof Activity)) {
@@ -195,7 +195,7 @@ public class DownloadNotifier {
 							mNotificationId << 4, mIntent,
 							PendingIntent.FLAG_UPDATE_CURRENT);
 
-			mBuilder.setContentText(mContext.getString(R.string.agentweb_click_open));
+			mBuilder.setContentText(mContext.getString(R.string.web_click_open));
 			mBuilder.setProgress(100, 100, false);
 			mBuilder.setContentIntent(rightPendIntent);
 			sent();

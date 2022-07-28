@@ -2,7 +2,7 @@
 package com.basic.web.core.web;
 
 
-import com.basic.web.core.AgentWeb;
+import com.basic.web.core.Web;
 
 /**
  
@@ -11,8 +11,8 @@ import com.basic.web.core.AgentWeb;
 public class HookManager {
 
 
-    public static AgentWeb hookAgentWeb(AgentWeb agentWeb, AgentWeb.AgentBuilder agentBuilder) {
-        return agentWeb;
+    public static Web hookWeb(Web web, Web.AgentBuilder agentBuilder) {
+        return web;
     }
 
     public static boolean permissionHook(String url,String[]permissions){

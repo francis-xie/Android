@@ -5,7 +5,7 @@ import android.os.Build;
 import android.webkit.ValueCallback;
 import android.webkit.WebView;
 
-import com.basic.web.utils.AgentWebUtils;
+import com.basic.web.utils.WebUtils;
 
 /**
  
@@ -79,7 +79,7 @@ public abstract class BaseJsAccessEntrace implements JsAccessEntrace {
 
         for (int i = 0; i < params.length; i++) {
             String param = params[i];
-            if (!AgentWebUtils.isJson(param)) {
+            if (!WebUtils.isJson(param)) {
 
                 mStringBuilder.append("\"").append(param).append("\"");
             } else {

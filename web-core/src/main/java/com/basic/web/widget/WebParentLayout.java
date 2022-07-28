@@ -16,7 +16,7 @@ import androidx.annotation.IdRes;
 import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.basic.web.core.web.controller.AbsAgentWebUIController;
+import com.basic.web.core.web.controller.AbsWebUIController;
 import com.basic.web.utils.LogUtils;
 import com.basic.web.Provider;
 import com.basic.web.R;
@@ -26,8 +26,8 @@ import com.basic.web.R;
  * @date 2017/12/8
  * @since 3.0.0
  */
-public class WebParentLayout extends FrameLayout implements Provider<AbsAgentWebUIController> {
-	private AbsAgentWebUIController mAgentWebUIController = null;
+public class WebParentLayout extends FrameLayout implements Provider<AbsWebUIController> {
+	private AbsWebUIController mWebUIController = null;
 	private static final String TAG = WebParentLayout.class.getSimpleName();
 	@LayoutRes
 	private int mErrorLayoutRes;
@@ -51,12 +51,12 @@ public class WebParentLayout extends FrameLayout implements Provider<AbsAgentWeb
 		if (!(context instanceof Activity)) {
 			throw new IllegalArgumentException("WebParentLayout context must be activity or activity sub class .");
 		}
-		this.mErrorLayoutRes = R.layout.agentweb_error_page;
+		this.mErrorLayoutRes = R.layout.web_error_page;
 	}
 
-	public void bindController(AbsAgentWebUIController agentWebUIController) {
-		this.mAgentWebUIController = agentWebUIController;
-		this.mAgentWebUIController.bindWebParent(this, (Activity) getContext());
+	public void bindController(AbsWebUIController webUIController) {
+		this.mWebUIController = webUIController;
+		this.mWebUIController.bindWebParent(this, (Activity) getContext());
 	}
 
 	public void showPageMainFrameError() {
@@ -152,13 +152,13 @@ public class WebParentLayout extends FrameLayout implements Provider<AbsAgentWeb
 		}
 		this.mErrorLayoutRes = resLayout;
 		if (this.mErrorLayoutRes <= 0) {
-			this.mErrorLayoutRes = R.layout.agentweb_error_page;
+			this.mErrorLayoutRes = R.layout.web_error_page;
 		}
 	}
 
 	@Override
-	public AbsAgentWebUIController provide() {
-		return this.mAgentWebUIController;
+	public AbsWebUIController provide() {
+		return this.mWebUIController;
 	}
 
 

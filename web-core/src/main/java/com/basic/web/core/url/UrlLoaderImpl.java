@@ -5,7 +5,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.webkit.WebView;
 
-import com.basic.web.utils.AgentWebUtils;
+import com.basic.web.utils.WebUtils;
 
 import java.util.Map;
 
@@ -58,8 +58,8 @@ public class UrlLoaderImpl implements IUrlLoader {
 	@Override
 	public void loadUrl(final String url, final Map<String, String> headers) {
 
-		if (!AgentWebUtils.isUIThread()) {
-			AgentWebUtils.runInUiThread(new Runnable() {
+		if (!WebUtils.isUIThread()) {
+			WebUtils.runInUiThread(new Runnable() {
 				@Override
 				public void run() {
 					loadUrl(url, headers);
@@ -75,7 +75,7 @@ public class UrlLoaderImpl implements IUrlLoader {
 
 	@Override
 	public void reload() {
-		if (!AgentWebUtils.isUIThread()) {
+		if (!WebUtils.isUIThread()) {
 			mHandler.post(new Runnable() {
 				@Override
 				public void run() {
@@ -92,7 +92,7 @@ public class UrlLoaderImpl implements IUrlLoader {
 	@Override
 	public void loadData(final String data, final String mimeType, final String encoding) {
 
-		if (!AgentWebUtils.isUIThread()) {
+		if (!WebUtils.isUIThread()) {
 			mHandler.post(new Runnable() {
 				@Override
 				public void run() {
@@ -108,7 +108,7 @@ public class UrlLoaderImpl implements IUrlLoader {
 	@Override
 	public void stopLoading() {
 
-		if (!AgentWebUtils.isUIThread()) {
+		if (!WebUtils.isUIThread()) {
 			mHandler.post(new Runnable() {
 				@Override
 				public void run() {
@@ -124,7 +124,7 @@ public class UrlLoaderImpl implements IUrlLoader {
 	@Override
 	public void loadDataWithBaseURL(final String baseUrl, final String data, final String mimeType, final String encoding, final String historyUrl) {
 
-		if (!AgentWebUtils.isUIThread()) {
+		if (!WebUtils.isUIThread()) {
 			mHandler.post(new Runnable() {
 				@Override
 				public void run() {
@@ -140,7 +140,7 @@ public class UrlLoaderImpl implements IUrlLoader {
 	@Override
 	public void postUrl(final String url, final byte[] postData) {
 
-		if (!AgentWebUtils.isUIThread()) {
+		if (!WebUtils.isUIThread()) {
 			mHandler.post(new Runnable() {
 				@Override
 				public void run() {

@@ -18,12 +18,12 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 
 import androidx.annotation.NonNull;
-import com.basic.web.core.web.controller.AbsAgentWebUIController;
+import com.basic.web.core.web.controller.AbsWebUIController;
 import com.basic.web.action.Action;
 import com.basic.web.action.ActionActivity;
-import com.basic.web.core.web.AgentWebConfig;
-import com.basic.web.core.web.AgentWebPermissions;
-import com.basic.web.utils.AgentWebUtils;
+import com.basic.web.core.web.WebConfig;
+import com.basic.web.core.web.WebPermissions;
+import com.basic.web.utils.WebUtils;
 import com.basic.web.utils.LogUtils;
 import com.basic.web.action.PermissionInterceptor;
 
@@ -112,9 +112,9 @@ public class FileChooser {
 	 */
 	private int FROM_INTENTION_CODE = 21;
 	/**
-	 * 当前 AbsAgentWebUIController
+	 * 当前 AbsWebUIController
 	 */
-	private WeakReference<AbsAgentWebUIController> mAgentWebUIController = null;
+	private WeakReference<AbsWebUIController> mWebUIController = null;
 	/**
 	 * 选择文件类型
 	 */
@@ -140,15 +140,15 @@ public class FileChooser {
 		this.mWebView = builder.mWebView;
 		this.mPermissionInterceptor = builder.mPermissionInterceptor;
 		this.mAcceptType = builder.mAcceptType;
-		this.mAgentWebUIController = new WeakReference<AbsAgentWebUIController>(AgentWebUtils.getAgentWebUIControllerByWebView(this.mWebView));
+		this.mWebUIController = new WeakReference<AbsWebUIController>(WebUtils.getWebUIControllerByWebView(this.mWebView));
 		this.mJsChannelHandler$Callback = builder.mJsChannelCallback;
 
 	}
 
 
 	public void openFileChooser() {
-		if (!AgentWebUtils.isUIThread()) {
-			AgentWebUtils.runInUiThread(new Runnable() {
+		if (!WebUtils.isUIThread()) {
+			WebUtils.runInUiThread(new Runnable() {
 				@Override
 				public void run() {
 					openFileChooser();
@@ -163,10 +163,10 @@ public class FileChooser {
 	private void fileChooser() {
 
 		List<String> permission = null;
-		if (AgentWebUtils.getDeniedPermissions(mActivity, AgentWebPermissions.STORAGE).isEmpty()) {
+		if (WebUtils.getDeniedPermissions(mActivity, WebPermissions.STORAGE).isEmpty()) {
 			touchOffFileChooserAction();
 		} else {
-			Action mAction = Action.createPermissionsAction(AgentWebPermissions.STORAGE);
+			Action mAction = Action.createPermissionsAction(WebPermissions.STORAGE);
 			mAction.setFromIntention(FROM_INTENTION_CODE >> 2);
 			ActionActivity.setPermissionListener(mPermissionListener);
 			ActionActivity.start(mActivity, mAction);
@@ -246,13 +246,13 @@ public class FileChooser {
 			return;
 		}
 
-		LogUtils.i(TAG, "controller:" + this.mAgentWebUIController.get() + "   mAcceptType:" + mAcceptType);
-		if (this.mAgentWebUIController.get() != null) {
-			this.mAgentWebUIController
+		LogUtils.i(TAG, "controller:" + this.mWebUIController.get() + "   mAcceptType:" + mAcceptType);
+		if (this.mWebUIController.get() != null) {
+			this.mWebUIController
 					.get()
 					.onSelectItemsPrompt(this.mWebView, mWebView.getUrl(),
-							new String[]{mActivity.getString(R.string.agentweb_camera),
-									mActivity.getString(R.string.agentweb_file_chooser)}, getCallBack());
+							new String[]{mActivity.getString(R.string.web_camera),
+									mActivity.getString(R.string.web_file_chooser)}, getCallBack());
 			LogUtils.i(TAG, "open");
 		}
 
@@ -290,7 +290,7 @@ public class FileChooser {
 		}
 
 		if (mPermissionInterceptor != null) {
-			if (mPermissionInterceptor.intercept(FileChooser.this.mWebView.getUrl(), AgentWebPermissions.CAMERA, "camera")) {
+			if (mPermissionInterceptor.intercept(FileChooser.this.mWebView.getUrl(), WebPermissions.CAMERA, "camera")) {
 				cancel();
 				return;
 			}
@@ -315,11 +315,11 @@ public class FileChooser {
 
 		List<String> deniedPermissions = new ArrayList<>();
 
-		if (!AgentWebUtils.hasPermission(mActivity, AgentWebPermissions.CAMERA)) {
-			deniedPermissions.add(AgentWebPermissions.CAMERA[0]);
+		if (!WebUtils.hasPermission(mActivity, WebPermissions.CAMERA)) {
+			deniedPermissions.add(WebPermissions.CAMERA[0]);
 		}
-		if (!AgentWebUtils.hasPermission(mActivity, AgentWebPermissions.STORAGE)) {
-			deniedPermissions.addAll(Arrays.asList(AgentWebPermissions.STORAGE));
+		if (!WebUtils.hasPermission(mActivity, WebPermissions.STORAGE)) {
+			deniedPermissions.addAll(Arrays.asList(WebPermissions.STORAGE));
 		}
 		return deniedPermissions;
 	}
@@ -337,7 +337,7 @@ public class FileChooser {
 		public void onRequestPermissionsResult(@NonNull String[] permissions, @NonNull int[] grantResults, Bundle extras) {
 
 			boolean tag = true;
-			tag = AgentWebUtils.hasPermission(mActivity, Arrays.asList(permissions)) ? true : false;
+			tag = WebUtils.hasPermission(mActivity, Arrays.asList(permissions)) ? true : false;
 			permissionResult(tag, extras.getInt(KEY_FROM_INTENTION));
 
 		}
@@ -350,12 +350,12 @@ public class FileChooser {
 			} else {
 				cancel();
 
-				if (null != mAgentWebUIController.get()) {
-					mAgentWebUIController
+				if (null != mWebUIController.get()) {
+					mWebUIController
 							.get()
 							.onPermissionsDeny(
-									AgentWebPermissions.STORAGE,
-									AgentWebPermissions.ACTION_STORAGE,
+									WebPermissions.STORAGE,
+									WebPermissions.ACTION_STORAGE,
 									"Open file chooser");
 				}
 				LogUtils.i(TAG, "permission denied");
@@ -365,12 +365,12 @@ public class FileChooser {
 				openCameraAction();
 			} else {
 				cancel();
-				if (null != mAgentWebUIController.get()) {
-					mAgentWebUIController
+				if (null != mWebUIController.get()) {
+					mWebUIController
 							.get()
 							.onPermissionsDeny(
-									AgentWebPermissions.CAMERA,
-									AgentWebPermissions.ACTION_CAMERA,
+									WebPermissions.CAMERA,
+									WebPermissions.ACTION_CAMERA,
 									"Take photo");
 				}
 				LogUtils.i(TAG, "permission denied");
@@ -497,7 +497,7 @@ public class FileChooser {
 	private void convertFileAndCallback(final Uri[] uris) {
 
 		String[] paths = null;
-		if (uris == null || uris.length == 0 || (paths = AgentWebUtils.uriToPath(mActivity, uris)) == null || paths.length == 0) {
+		if (uris == null || uris.length == 0 || (paths = WebUtils.uriToPath(mActivity, uris)) == null || paths.length == 0) {
 			mJsChannelCallback.call(null);
 			return;
 		}
@@ -514,9 +514,9 @@ public class FileChooser {
 			sum += mFile.length();
 		}
 
-		if (sum > AgentWebConfig.MAX_FILE_LENGTH) {
-			if (mAgentWebUIController.get() != null) {
-				mAgentWebUIController.get().onShowMessage(mActivity.getString(R.string.agentweb_max_file_length_limit, (AgentWebConfig.MAX_FILE_LENGTH / 1024 / 1024) + ""), TAG.concat("|convertFileAndCallback"));
+		if (sum > WebConfig.MAX_FILE_LENGTH) {
+			if (mWebUIController.get() != null) {
+				mWebUIController.get().onShowMessage(mActivity.getString(R.string.web_max_file_length_limit, (WebConfig.MAX_FILE_LENGTH / 1024 / 1024) + ""), TAG.concat("|convertFileAndCallback"));
 			}
 			mJsChannelCallback.call(null);
 			return;
@@ -542,27 +542,27 @@ public class FileChooser {
 			return;
 		}
 
-		if (mAgentWebUIController.get() == null) {
+		if (mWebUIController.get() == null) {
 			mUriValueCallbacks.onReceiveValue(null);
 			return;
 		}
-		String[] paths = AgentWebUtils.uriToPath(mActivity, datas);
+		String[] paths = WebUtils.uriToPath(mActivity, datas);
 		if (paths == null || paths.length == 0) {
 			mUriValueCallbacks.onReceiveValue(null);
 			return;
 		}
 		final String path = paths[0];
-		mAgentWebUIController.get().onLoading(mActivity.getString(R.string.agentweb_loading));
-		AsyncTask.THREAD_POOL_EXECUTOR.execute(new WaitPhotoRunnable(path, new AboveLCallback(mUriValueCallbacks, datas, mAgentWebUIController)));
+		mWebUIController.get().onLoading(mActivity.getString(R.string.web_loading));
+		AsyncTask.THREAD_POOL_EXECUTOR.execute(new WaitPhotoRunnable(path, new AboveLCallback(mUriValueCallbacks, datas, mWebUIController)));
 
 	}
 
 	private static final class AboveLCallback implements Handler.Callback {
 		private ValueCallback<Uri[]> mValueCallback;
 		private Uri[] mUris;
-		private WeakReference<AbsAgentWebUIController> controller;
+		private WeakReference<AbsWebUIController> controller;
 
-		private AboveLCallback(ValueCallback<Uri[]> valueCallbacks, Uri[] uris, WeakReference<AbsAgentWebUIController> controller) {
+		private AboveLCallback(ValueCallback<Uri[]> valueCallbacks, Uri[] uris, WeakReference<AbsWebUIController> controller) {
 			this.mValueCallback = valueCallbacks;
 			this.mUris = uris;
 			this.controller = controller;
@@ -571,7 +571,7 @@ public class FileChooser {
 		@Override
 		public boolean handleMessage(final Message msg) {
 
-			AgentWebUtils.runInUiThread(new Runnable() {
+			WebUtils.runInUiThread(new Runnable() {
 				@Override
 				public void run() {
 					FileChooser.AboveLCallback.this.safeHandleMessage(msg);
@@ -716,8 +716,8 @@ public class FileChooser {
 				LogUtils.i(TAG, "throwwable");
 				e.printStackTrace();
 			} finally {
-				AgentWebUtils.closeIO(is);
-				AgentWebUtils.closeIO(os);
+				WebUtils.closeIO(is);
+				WebUtils.closeIO(os);
 				mCountDownLatch.countDown();
 			}
 
@@ -755,7 +755,7 @@ public class FileChooser {
 		private String[] paths;
 
 		private CovertFileThread(JsChannelCallback JsChannelCallback, String[] paths) {
-			super("agentweb-thread");
+			super("web-thread");
 			this.mJsChannelCallback = new WeakReference<JsChannelCallback>(JsChannelCallback);
 			this.paths = paths;
 		}

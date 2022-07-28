@@ -7,7 +7,7 @@ import android.webkit.JsPromptResult;
 import android.webkit.JsResult;
 import android.webkit.WebView;
 
-import com.basic.web.core.web.controller.AbsAgentWebUIController;
+import com.basic.web.core.web.controller.AbsWebUIController;
 import com.basic.web.widget.WebParentLayout;
 
 
@@ -16,10 +16,10 @@ import com.basic.web.widget.WebParentLayout;
  * @date 2017/12/6
  * @since 3.0.0
  */
-public class AgentWebUIControllerImplBase extends AbsAgentWebUIController {
+public class WebUIControllerImplBase extends AbsWebUIController {
 
-	public static AbsAgentWebUIController build() {
-		return new AgentWebUIControllerImplBase();
+	public static AbsWebUIController build() {
+		return new WebUIControllerImplBase();
 	}
 
 	@Override

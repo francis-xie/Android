@@ -5,6 +5,7 @@ import android.view.View;
 import android.webkit.JavascriptInterface;
 import android.widget.FrameLayout;
 
+import com.basic.web.core.Web;
 import com.github.abel533.echarts.Legend;
 import com.github.abel533.echarts.Title;
 import com.github.abel533.echarts.axis.CategoryAxis;
@@ -15,7 +16,6 @@ import com.github.abel533.echarts.json.GsonOption;
 import com.github.abel533.echarts.series.Bar;
 import com.github.abel533.echarts.series.Line;
 import com.github.abel533.echarts.series.Pie;
-import com.basic.web.core.AgentWeb;
 import com.basic.aop.annotation.SingleClick;
 import com.basic.page.annotation.Page;
 import com.basic.code.R;
@@ -43,12 +43,12 @@ public class EChartsAndroidFragment extends BaseWebViewFragment {
     }
 
     @Override
-    protected AgentWeb createAgentWeb() {
+    protected Web createWeb() {
         //目前Echarts-Java只支持3.x
-        AgentWeb agentWeb = Utils.createAgentWeb(this, flContainer, "file:///android_asset/chart/src/template.html");
+        Web web = Utils.createWeb(this, flContainer, "file:///android_asset/chart/src/template.html");
         //注入接口,供JS调用
-        agentWeb.getJsInterfaceHolder().addJavaObject("Android", mChartInterface = new ChartInterface());
-        return agentWeb;
+        web.getJsInterfaceHolder().addJavaObject("Android", mChartInterface = new ChartInterface());
+        return web;
     }
 
     @SingleClick
@@ -70,15 +70,15 @@ public class EChartsAndroidFragment extends BaseWebViewFragment {
     }
 
     private void initBarChart() {
-        mAgentWeb.getJsAccessEntrace().quickCallJs("loadChartView", "chart", mChartInterface.makeBarChartOptions());
+        mWeb.getJsAccessEntrace().quickCallJs("loadChartView", "chart", mChartInterface.makeBarChartOptions());
     }
 
     private void initLineChart() {
-        mAgentWeb.getJsAccessEntrace().quickCallJs("loadChartView", "chart", mChartInterface.makeLineChartOptions());
+        mWeb.getJsAccessEntrace().quickCallJs("loadChartView", "chart", mChartInterface.makeLineChartOptions());
     }
 
     private void initPieChart() {
-        mAgentWeb.getJsAccessEntrace().quickCallJs("loadChartView", "chart", mChartInterface.makePieChartOptions());
+        mWeb.getJsAccessEntrace().quickCallJs("loadChartView", "chart", mChartInterface.makePieChartOptions());
     }
 
 

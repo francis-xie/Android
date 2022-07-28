@@ -11,45 +11,45 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import com.basic.web.core.client.WebListenerManager;
-import com.basic.web.core.AgentWeb;
-import com.basic.web.utils.AgentWebUtils;
+import com.basic.web.core.Web;
+import com.basic.web.utils.WebUtils;
 import com.basic.web.utils.LogUtils;
 
 /**
  
- * @update 4.0.0 ,WebDefaultSettingsManager rename to AbsAgentWebSettings
+ * @update 4.0.0 ,WebDefaultSettingsManager rename to AbsWebSettings
  * @since 1.0.0
  */
 
-public abstract class AbsAgentWebSettings implements IAgentWebSettings, WebListenerManager {
+public abstract class AbsWebSettings implements IWebSettings, WebListenerManager {
 
 	private WebSettings mWebSettings;
-	private static final String TAG = AbsAgentWebSettings.class.getSimpleName();
+	private static final String TAG = AbsWebSettings.class.getSimpleName();
 	public static final String USERAGENT_UC = " UCBrowser/11.6.4.950 ";
 	public static final String USERAGENT_QQ_BROWSER = " MQQBrowser/8.0 ";
-	public static final String USERAGENT_AGENTWEB = AgentWebConfig.AGENTWEB_VERSION;
-	protected AgentWeb mAgentWeb;
+	public static final String USERAGENT_WEB = WebConfig.WEB_VERSION;
+	protected Web mWeb;
 
 
-	public static AbsAgentWebSettings getInstance() {
-		return new AgentWebSettingsImpl();
+	public static AbsWebSettings getInstance() {
+		return new WebSettingsImpl();
 	}
 
 
-	public AbsAgentWebSettings() {
+	public AbsWebSettings() {
 
 	}
 
-	public final void bindAgentWeb(AgentWeb agentWeb) {
-		this.mAgentWeb = agentWeb;
-		this.bindAgentWebSupport(agentWeb);
+	public final void bindWeb(Web web) {
+		this.mWeb = web;
+		this.bindWebSupport(web);
 
 	}
 
-	protected abstract void bindAgentWebSupport(AgentWeb agentWeb);
+	protected abstract void bindWebSupport(Web web);
 
 	@Override
-	public IAgentWebSettings toSetting(WebView webView) {
+	public IWebSettings toSetting(WebView webView) {
 		settings(webView);
 		return this;
 	}
@@ -62,7 +62,7 @@ public abstract class AbsAgentWebSettings implements IAgentWebSettings, WebListe
 		mWebSettings.setSupportZoom(true);
 		mWebSettings.setBuiltInZoomControls(false);
 		mWebSettings.setSavePassword(false);
-		if (AgentWebUtils.checkNetwork(webView.getContext())) {
+		if (WebUtils.checkNetwork(webView.getContext())) {
 			//根据cache-control获取数据。
 			mWebSettings.setCacheMode(WebSettings.LOAD_DEFAULT);
 		} else {
@@ -111,9 +111,9 @@ public abstract class AbsAgentWebSettings implements IAgentWebSettings, WebListe
 		mWebSettings.setMinimumFontSize(12);//设置 WebView 支持的最小字体大小，默认为 8
 		mWebSettings.setGeolocationEnabled(true);
 		//
-		String dir = AgentWebConfig.getCachePath(webView.getContext());
+		String dir = WebConfig.getCachePath(webView.getContext());
 
-		LogUtils.i(TAG, "dir:" + dir + "   appcache:" + AgentWebConfig.getCachePath(webView.getContext()));
+		LogUtils.i(TAG, "dir:" + dir + "   appcache:" + WebConfig.getCachePath(webView.getContext()));
 		//设置数据库路径  api19 已经废弃,这里只针对 webkit 起作用
 		mWebSettings.setGeolocationDatabasePath(dir);
 		mWebSettings.setDatabasePath(dir);
@@ -124,7 +124,7 @@ public abstract class AbsAgentWebSettings implements IAgentWebSettings, WebListe
 
 		mWebSettings.setUserAgentString(getWebSettings()
 				.getUserAgentString()
-				.concat(USERAGENT_AGENTWEB)
+				.concat(USERAGENT_WEB)
 				.concat(USERAGENT_UC)
 		);
 

@@ -11,7 +11,7 @@ import java.util.Map;
  
  * @date 2018/2/24
  */
-public interface AgentWebDownloader<T extends AgentWebDownloader.Extra> extends DownloadingService {
+public interface WebDownloader<T extends WebDownloader.Extra> extends DownloadingService {
 
 	void download(T t);
 

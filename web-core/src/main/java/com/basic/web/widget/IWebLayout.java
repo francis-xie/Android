@@ -21,7 +21,7 @@ public interface IWebLayout<T extends WebView, V extends ViewGroup> {
     V getLayout();
 
     /**
-     * @return 返回 WebView  或 WebView 的子View ，返回null AgentWeb 内部会创建适当 WebView
+     * @return 返回 WebView  或 WebView 的子View ，返回null Web 内部会创建适当 WebView
      */
     @Nullable
     T getWebView();

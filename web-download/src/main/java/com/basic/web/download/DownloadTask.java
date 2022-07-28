@@ -15,7 +15,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
  
  * @date 2017/5/13
  */
-public class DownloadTask extends AgentWebDownloader.Extra implements Serializable {
+public class DownloadTask extends WebDownloader.Extra implements Serializable {
 
 
 	private int mId;

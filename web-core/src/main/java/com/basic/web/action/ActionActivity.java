@@ -9,7 +9,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.basic.web.utils.AgentWebUtils;
+import com.basic.web.utils.WebUtils;
 import com.basic.web.utils.LogUtils;
 
 import java.io.File;
@@ -138,7 +138,7 @@ public final class ActionActivity extends Activity {
 
 
         List<String> permissions = action.getPermissions();
-        if (AgentWebUtils.isEmptyCollection(permissions)) {
+        if (WebUtils.isEmptyCollection(permissions)) {
             mPermissionListener = null;
             mRationaleListener = null;
             finish();
@@ -173,13 +173,13 @@ public final class ActionActivity extends Activity {
             if (mChooserListener == null) {
                 finish();
             }
-            File mFile = AgentWebUtils.createImageFile(this);
+            File mFile = WebUtils.createImageFile(this);
             if (mFile == null) {
                 mChooserListener.onChoiceResult(REQUEST_CODE, Activity.RESULT_CANCELED, null);
                 mChooserListener = null;
                 finish();
             }
-            Intent intent = AgentWebUtils.getIntentCaptureCompat(this, mFile);
+            Intent intent = WebUtils.getIntentCaptureCompat(this, mFile);
             // 指定开启系统相机的Action
             mUri = intent.getParcelableExtra(EXTRA_OUTPUT);
             this.startActivityForResult(intent, REQUEST_CODE);

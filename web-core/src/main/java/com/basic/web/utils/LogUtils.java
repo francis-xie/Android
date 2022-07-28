@@ -3,7 +3,7 @@ package com.basic.web.utils;
 
 import android.util.Log;
 
-import com.basic.web.core.web.AgentWebConfig;
+import com.basic.web.core.web.WebConfig;
 
 /**
  * 日志工具
@@ -13,10 +13,10 @@ import com.basic.web.core.web.AgentWebConfig;
  */
 public class LogUtils {
 
-    private static final String PREFIX = " agentweb - "; //
+    private static final String PREFIX = " web - "; //
 
     public static boolean isDebug() {
-        return AgentWebConfig.DEBUG;
+        return WebConfig.DEBUG;
     }
 
     public static void i(String tag, String message) {

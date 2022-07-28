@@ -12,12 +12,12 @@ import android.widget.FrameLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.basic.web.core.web.AgentWebConfig;
+import com.basic.web.core.web.WebConfig;
 import com.basic.web.widget.IWebLayout;
 import com.basic.web.R;
-import com.basic.web.utils.AgentWebUtils;
+import com.basic.web.utils.WebUtils;
 import com.basic.web.utils.LogUtils;
-import com.basic.web.widget.AgentWebView;
+import com.basic.web.widget.WebViews;
 import com.basic.web.widget.WebParentLayout;
 
 /**
@@ -175,9 +175,9 @@ public class DefaultWebCreator implements WebCreator {
         FrameLayout.LayoutParams mLayoutParams = new FrameLayout.LayoutParams(-1, -1);
         mFrameLayout.addView(target, mLayoutParams);
         mFrameLayout.bindWebView(this.mWebView);
-        LogUtils.i(TAG, "  instanceof  AgentWebView:" + (this.mWebView instanceof AgentWebView));
-        if (this.mWebView instanceof AgentWebView) {
-            AgentWebConfig.WEBVIEW_TYPE = AgentWebConfig.WEBVIEW_AGENTWEB_SAFE_TYPE;
+        LogUtils.i(TAG, "  instanceof  WebView:" + (this.mWebView instanceof WebViews));
+        if (this.mWebView instanceof WebViews) {
+            WebConfig.WEBVIEW_TYPE = WebConfig.WEBVIEW_WEB_SAFE_TYPE;
         }
         ViewStub mViewStub = new ViewStub(mActivity);
         mViewStub.setId(R.id.mainframe_error_viewsub_id);
@@ -186,7 +186,7 @@ public class DefaultWebCreator implements WebCreator {
             FrameLayout.LayoutParams lp = null;
             WebIndicator mWebIndicator = new WebIndicator(mActivity);
             if (mHeight > 0) {
-                lp = new FrameLayout.LayoutParams(-2, AgentWebUtils.dp2px(mActivity, mHeight));
+                lp = new FrameLayout.LayoutParams(-2, WebUtils.dp2px(mActivity, mHeight));
             } else {
                 lp = mWebIndicator.offerLayoutParams();
             }
@@ -213,7 +213,7 @@ public class DefaultWebCreator implements WebCreator {
             LogUtils.i(TAG, "add webview");
 
         } else {
-            AgentWebConfig.WEBVIEW_TYPE = AgentWebConfig.WEBVIEW_CUSTOM_TYPE;
+            WebConfig.WEBVIEW_TYPE = WebConfig.WEBVIEW_CUSTOM_TYPE;
         }
         this.mWebView = mWebView;
         return mIWebLayout.getLayout();
@@ -225,13 +225,13 @@ public class DefaultWebCreator implements WebCreator {
         WebView mWebView = null;
         if (this.mWebView != null) {
             mWebView = this.mWebView;
-            AgentWebConfig.WEBVIEW_TYPE = AgentWebConfig.WEBVIEW_CUSTOM_TYPE;
-        } else if (AgentWebConfig.IS_KITKAT_OR_BELOW_KITKAT) {
-            mWebView = new AgentWebView(mActivity);
-            AgentWebConfig.WEBVIEW_TYPE = AgentWebConfig.WEBVIEW_AGENTWEB_SAFE_TYPE;
+            WebConfig.WEBVIEW_TYPE = WebConfig.WEBVIEW_CUSTOM_TYPE;
+        } else if (WebConfig.IS_KITKAT_OR_BELOW_KITKAT) {
+            mWebView = new WebViews(mActivity);
+            WebConfig.WEBVIEW_TYPE = WebConfig.WEBVIEW_WEB_SAFE_TYPE;
         } else {
             mWebView = new WebView(mActivity);
-            AgentWebConfig.WEBVIEW_TYPE = AgentWebConfig.WEBVIEW_DEFAULT_TYPE;
+            WebConfig.WEBVIEW_TYPE = WebConfig.WEBVIEW_DEFAULT_TYPE;
         }
 
         return mWebView;

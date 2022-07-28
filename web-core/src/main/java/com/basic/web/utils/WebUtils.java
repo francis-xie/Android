@@ -45,8 +45,8 @@ import androidx.core.content.FileProvider;
 import androidx.core.os.EnvironmentCompat;
 import androidx.loader.content.CursorLoader;
 import com.google.android.material.snackbar.Snackbar;
-import com.basic.web.core.web.controller.AbsAgentWebUIController;
-import com.basic.web.core.web.AgentWebConfig;
+import com.basic.web.core.web.controller.AbsWebUIController;
+import com.basic.web.core.web.WebConfig;
 import com.basic.web.action.PermissionInterceptor;
 import com.basic.web.R;
 import com.basic.web.widget.WebParentLayout;
@@ -71,20 +71,20 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
-import static com.basic.web.core.web.AgentWebConfig.AGENTWEB_FILE_PATH;
-import static com.basic.web.core.web.AgentWebConfig.FILE_CACHE_PATH;
+import static com.basic.web.core.web.WebConfig.WEB_FILE_PATH;
+import static com.basic.web.core.web.WebConfig.FILE_CACHE_PATH;
 
 
 /**
  
  * @since 1.0.0
  */
-public class AgentWebUtils {
+public class WebUtils {
 
-    private static final String TAG = AgentWebUtils.class.getSimpleName();
+    private static final String TAG = WebUtils.class.getSimpleName();
     private static Handler mHandler = null;
 
-    private AgentWebUtils() {
+    private WebUtils() {
         throw new UnsupportedOperationException("u can't init me");
     }
 
@@ -123,9 +123,9 @@ public class AgentWebUtils {
 
     }
 
-    public static String getAgentWebFilePath(Context context) {
-        if (!TextUtils.isEmpty(AGENTWEB_FILE_PATH)) {
-            return AGENTWEB_FILE_PATH;
+    public static String getWebFilePath(Context context) {
+        if (!TextUtils.isEmpty(WEB_FILE_PATH)) {
+            return WEB_FILE_PATH;
         }
         String dir = getDiskExternalCacheDir(context);
         File mFile = new File(dir, FILE_CACHE_PATH);
@@ -137,14 +137,14 @@ public class AgentWebUtils {
             LogUtils.i(TAG, "create dir exception");
         }
         LogUtils.i(TAG, "path:" + mFile.getAbsolutePath() + "  path:" + mFile.getPath());
-        return AGENTWEB_FILE_PATH = mFile.getAbsolutePath();
+        return WEB_FILE_PATH = mFile.getAbsolutePath();
 
     }
 
 
     public static File createFileByName(Context context, String name, boolean cover) throws IOException {
 
-        String path = getAgentWebFilePath(context);
+        String path = getWebFilePath(context);
         if (TextUtils.isEmpty(path)) {
             return null;
         }
@@ -230,7 +230,7 @@ public class AgentWebUtils {
     }
 
     static Uri getUriFromFileForN(Context context, File file) {
-        Uri fileUri = FileProvider.getUriForFile(context, context.getPackageName() + ".AgentWebFileProvider", file);
+        Uri fileUri = FileProvider.getUriForFile(context, context.getPackageName() + ".WebFileProvider", file);
         return fileUri;
     }
 
@@ -414,9 +414,9 @@ public class AgentWebUtils {
 
     }
 
-    static void clearAgentWebCache(Context context) {
+    static void clearWebCache(Context context) {
         try {
-            clearCacheFolder(new File(getAgentWebFilePath(context)), 0);
+            clearCacheFolder(new File(getWebFilePath(context)), 0);
         } catch (Throwable throwable) {
             if (LogUtils.isDebug()) {
                 throwable.printStackTrace();
@@ -428,18 +428,18 @@ public class AgentWebUtils {
 
         try {
 
-            AgentWebConfig.removeAllCookies(null);
+            WebConfig.removeAllCookies(null);
             webView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
             context.deleteDatabase("webviewCache.db");
             context.deleteDatabase("webview.db");
             webView.clearCache(true);
             webView.clearHistory();
             webView.clearFormData();
-            clearCacheFolder(new File(AgentWebConfig.getCachePath(context)), 0);
+            clearCacheFolder(new File(WebConfig.getCachePath(context)), 0);
 
         } catch (Exception ignore) {
             //ignore.printStackTrace();
-            if (AgentWebConfig.DEBUG) {
+            if (WebConfig.DEBUG) {
                 ignore.printStackTrace();
             }
         }
@@ -608,11 +608,11 @@ public class AgentWebUtils {
 
             }
         } // MediaStore (and general)
-        else if (fileUri.getAuthority().equalsIgnoreCase(context.getPackageName() + ".AgentWebFileProvider")) {
+        else if (fileUri.getAuthority().equalsIgnoreCase(context.getPackageName() + ".WebFileProvider")) {
 
             String path = fileUri.getPath();
             int index = path.lastIndexOf("/");
-            return getAgentWebFilePath(context) + File.separator + path.substring(index + 1, path.length());
+            return getWebFilePath(context) + File.separator + path.substring(index + 1, path.length());
         } else if ("content".equalsIgnoreCase(fileUri.getScheme())) {
             // Return the remote address
             if (isGooglePhotosUri(fileUri)) {
@@ -755,9 +755,9 @@ public class AgentWebUtils {
             return;
         }
         WebParentLayout mWebParentLayout = (WebParentLayout) activity.findViewById(R.id.web_parent_layout_id);
-        AbsAgentWebUIController mAgentWebUIController = mWebParentLayout.provide();
-        if (mAgentWebUIController != null) {
-            mAgentWebUIController.onShowMessage(message, from);
+        AbsWebUIController mWebUIController = mWebParentLayout.provide();
+        if (mWebUIController != null) {
+            mWebUIController.onShowMessage(message, from);
         }
     }
 
@@ -805,7 +805,7 @@ public class AgentWebUtils {
     }
 
 
-    public static AbsAgentWebUIController getAgentWebUIControllerByWebView(WebView webView) {
+    public static AbsWebUIController getWebUIControllerByWebView(WebView webView) {
         WebParentLayout mWebParentLayout = getWebParentLayoutByWebView(webView);
         return mWebParentLayout.provide();
     }
@@ -831,7 +831,7 @@ public class AgentWebUtils {
             throw new IllegalStateException("please check webcreator's create method was be called ?");
         }
         mViewGroup = (ViewGroup) webView.getParent();
-        AbsAgentWebUIController mAgentWebUIController;
+        AbsWebUIController mWebUIController;
         while (mViewGroup != null) {
 
             LogUtils.i(TAG, "ViewGroup:" + mViewGroup);

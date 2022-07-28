@@ -3,7 +3,7 @@ package com.basic.web.js;
 
 import android.webkit.WebView;
 
-import com.basic.web.core.AgentWeb;
+import com.basic.web.core.Web;
 import com.basic.web.utils.LogUtils;
 
 import java.util.Map;
@@ -18,14 +18,14 @@ public class JsInterfaceHolderImpl extends JsBaseInterfaceHolder {
 
 	private static final String TAG = JsInterfaceHolderImpl.class.getSimpleName();
 	private WebView mWebView;
-	private AgentWeb.SecurityType mSecurityType;
+	private Web.SecurityType mSecurityType;
 
-	public static JsInterfaceHolderImpl getJsInterfaceHolder(WebView webView, AgentWeb.SecurityType securityType) {
+	public static JsInterfaceHolderImpl getJsInterfaceHolder(WebView webView, Web.SecurityType securityType) {
 		return new JsInterfaceHolderImpl(webView, securityType);
 	}
 
 
-	JsInterfaceHolderImpl(WebView webView, AgentWeb.SecurityType securityType) {
+	JsInterfaceHolderImpl(WebView webView, Web.SecurityType securityType) {
 		super(securityType);
 		this.mWebView = webView;
 		this.mSecurityType = securityType;

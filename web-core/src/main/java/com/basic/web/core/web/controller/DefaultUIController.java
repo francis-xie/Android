@@ -15,7 +15,7 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AlertDialog;
 import com.basic.web.R;
-import com.basic.web.utils.AgentWebUtils;
+import com.basic.web.utils.WebUtils;
 import com.basic.web.utils.LogUtils;
 import com.basic.web.widget.WebParentLayout;
 
@@ -25,7 +25,7 @@ import com.basic.web.widget.WebParentLayout;
 
  * @since 2019/1/4 上午10:54
  */
-public class DefaultUIController extends AbsAgentWebUIController {
+public class DefaultUIController extends AbsWebUIController {
 
 	private AlertDialog mAlertDialog;
 	protected AlertDialog mConfirmDialog;
@@ -40,7 +40,7 @@ public class DefaultUIController extends AbsAgentWebUIController {
 
 	@Override
 	public void onJsAlert(WebView view, String url, String message) {
-		AgentWebUtils.toastShowShort(view.getContext().getApplicationContext(), message);
+		WebUtils.toastShowShort(view.getContext().getApplicationContext(), message);
 	}
 
 
@@ -50,9 +50,9 @@ public class DefaultUIController extends AbsAgentWebUIController {
 		if (mAskOpenOtherAppDialog == null) {
 			mAskOpenOtherAppDialog = new AlertDialog
 					.Builder(mActivity)//
-					.setMessage(mResources.getString(R.string.agentweb_leave_app_and_go_other_page,
-							AgentWebUtils.getApplicationName(mActivity)))//
-					.setTitle(mResources.getString(R.string.agentweb_tips))
+					.setMessage(mResources.getString(R.string.web_leave_app_and_go_other_page,
+							WebUtils.getApplicationName(mActivity)))//
+					.setTitle(mResources.getString(R.string.web_tips))
 					.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
 						@Override
 						public void onClick(DialogInterface dialog, int which) {
@@ -61,7 +61,7 @@ public class DefaultUIController extends AbsAgentWebUIController {
 							}
 						}
 					})//
-					.setPositiveButton(mResources.getString(R.string.agentweb_leave), new DialogInterface.OnClickListener() {
+					.setPositiveButton(mResources.getString(R.string.web_leave), new DialogInterface.OnClickListener() {
 						@Override
 						public void onClick(DialogInterface dialog, int which) {
 							if (callback != null) {
@@ -98,9 +98,9 @@ public class DefaultUIController extends AbsAgentWebUIController {
 		}
 		AlertDialog dialog = null;
 		dialog = new AlertDialog.Builder(mActivity)
-				.setTitle(mResources.getString(R.string.agentweb_tips))
-				.setMessage(mResources.getString(R.string.agentweb_honeycomblow))
-				.setNegativeButton(mResources.getString(R.string.agentweb_download), new DialogInterface.OnClickListener() {
+				.setTitle(mResources.getString(R.string.web_tips))
+				.setMessage(mResources.getString(R.string.web_honeycomblow))
+				.setNegativeButton(mResources.getString(R.string.web_download), new DialogInterface.OnClickListener() {
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
 						if (dialog != null) {
@@ -111,7 +111,7 @@ public class DefaultUIController extends AbsAgentWebUIController {
 						}
 					}
 				})//
-				.setPositiveButton(mResources.getString(R.string.agentweb_cancel), new DialogInterface.OnClickListener() {
+				.setPositiveButton(mResources.getString(R.string.web_cancel), new DialogInterface.OnClickListener() {
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
 
@@ -287,12 +287,12 @@ public class DefaultUIController extends AbsAgentWebUIController {
 		if (!TextUtils.isEmpty(from) && from.contains("performDownload")) {
 			return;
 		}
-		AgentWebUtils.toastShowShort(mActivity.getApplicationContext(), message);
+		WebUtils.toastShowShort(mActivity.getApplicationContext(), message);
 	}
 
 	@Override
 	public void onPermissionsDeny(String[] permissions, String permissionType, String action) {
-//		AgentWebUtils.toastShowShort(mActivity.getApplicationContext(), "权限被冻结");
+//		WebUtils.toastShowShort(mActivity.getApplicationContext(), "权限被冻结");
 	}
 
 	private void toCancelJsresult(JsResult result) {

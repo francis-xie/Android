@@ -4,7 +4,7 @@ package com.basic.web.core.web.lifecycle;
 import android.os.Build;
 import android.webkit.WebView;
 
-import com.basic.web.utils.AgentWebUtils;
+import com.basic.web.utils.WebUtils;
 
 /**
  
@@ -49,7 +49,7 @@ public class DefaultWebLifeCycleImpl implements WebLifeCycle {
         if(this.mWebView!=null){
             this.mWebView.resumeTimers();
         }
-        AgentWebUtils.clearWebView(this.mWebView);
+        WebUtils.clearWebView(this.mWebView);
 
     }
 }

@@ -15,7 +15,7 @@ import com.basic.scan.util.QRCodeAnalyzeUtils;
 import com.basic.face.widget.dialog.bottomsheet.BottomSheet;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.base.webview.AgentWebActivity;
+import com.basic.code.base.webview.WebActivity;
 import com.basic.code.fragment.components.imageview.DrawablePreviewFragment;
 import com.basic.code.utils.XToastUtils;
 import com.basic.tools.app.PathUtils;
@@ -28,7 +28,7 @@ import java.io.File;
 
 import butterknife.BindView;
 
-import static com.basic.code.base.webview.AgentWebFragment.KEY_URL;
+import static com.basic.code.base.webview.WebFragment.KEY_URL;
 import static com.basic.code.fragment.components.imageview.DrawablePreviewFragment.DRAWABLE_ID;
 
 /**
@@ -158,7 +158,7 @@ public class QRCodeFragment extends BaseFragment implements View.OnClickListener
      * @param url
      */
     public void goWeb(final String url) {
-        Intent intent = new Intent(getContext(), AgentWebActivity.class);
+        Intent intent = new Intent(getContext(), WebActivity.class);
         intent.putExtra(KEY_URL, url);
         startActivity(intent);
     }

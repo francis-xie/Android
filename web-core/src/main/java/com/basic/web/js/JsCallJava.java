@@ -17,7 +17,7 @@ import java.util.HashMap;
 public class JsCallJava {
     private final static String TAG = "JsCallJava";
     private final static String RETURN_RESULT_FORMAT = "{\"CODE\": %d, \"result\": %s}";
-    private static final String MSG_PROMPT_HEADER = "AgentWeb:";
+    private static final String MSG_PROMPT_HEADER = "Web:";
     private static final String KEY_OBJ = "obj";
     private static final String KEY_METHOD = "method";
     private static final String KEY_TYPES = "types";

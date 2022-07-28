@@ -133,7 +133,7 @@ public class WebViewFragment extends BaseSimpleListFragment {
         titleBar.addAction(new TitleBar.TextAction("Github") {
             @Override
             public void performAction(View view) {
-                Utils.goWeb(getContext(), "https://github.com/Justson/AgentWeb");
+                Utils.goWeb(getContext(), "https://github.com/Justson/Web");
             }
         });
         return titleBar;

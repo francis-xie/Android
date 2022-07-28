@@ -6,8 +6,8 @@ import android.os.Handler;
 import android.os.Message;
 import android.webkit.JavascriptInterface;
 
-import com.basic.web.core.AgentWeb;
-import com.basic.web.utils.AgentWebUtils;
+import com.basic.web.core.Web;
+import com.basic.web.utils.WebUtils;
 import com.basic.web.utils.LogUtils;
 
 import java.lang.ref.WeakReference;
@@ -16,14 +16,14 @@ import java.lang.ref.WeakReference;
  
  * @since 1.0.0
  */
-public class AgentWebJsInterfaceCompat {
+public class WebJsInterfaceCompat {
 
-	private WeakReference<AgentWeb> mReference = null;
+	private WeakReference<Web> mReference = null;
 	private WeakReference<Activity> mActivityWeakReference = null;
 	private String TAG = this.getClass().getSimpleName();
 
-	public AgentWebJsInterfaceCompat(AgentWeb agentWeb, Activity activity) {
-		mReference = new WeakReference<AgentWeb>(agentWeb);
+	public WebJsInterfaceCompat(Web web, Activity activity) {
+		mReference = new WeakReference<Web>(web);
 		mActivityWeakReference = new WeakReference<Activity>(activity);
 	}
 
@@ -38,7 +38,7 @@ public class AgentWebJsInterfaceCompat {
 		LogUtils.i(TAG, acceptType + "  " + mActivityWeakReference.get() + "  " + mReference.get());
 		if (mActivityWeakReference.get() != null && mReference.get() != null) {
 
-			AgentWebUtils.showFileChooserCompat(mActivityWeakReference.get(),
+			WebUtils.showFileChooserCompat(mActivityWeakReference.get(),
 					mReference.get().getWebCreator().getWebView(),
 					null,
 					null,
