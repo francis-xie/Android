@@ -34,7 +34,7 @@ import java.util.List;
 import static com.basic.image.PictureVideoPlayActivity.KEY_VIDEO_PATH;
 
 /**
- * @author：luck
+ 
  * @data：2018/1/27 下午7:50
  * @描述:图片预览
  */

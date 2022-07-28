@@ -65,7 +65,7 @@ import io.reactivex.disposables.Disposable;
 import static com.basic.image.PictureVideoPlayActivity.KEY_VIDEO_PATH;
 
 /**
- * @author：luck
+ 
  * @data：2018/1/27 19:12
  * @描述: Media 选择页面
  */

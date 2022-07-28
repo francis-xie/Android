@@ -25,7 +25,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * author：luck
+ 
  * project：PictureSelector
  * package：com.luck.picture.adapter
  * email：893855882@qq.com

@@ -5,7 +5,7 @@ import android.os.Parcelable;
 import android.text.TextUtils;
 
 /**
- * author：luck
+ 
  * project：PictureSelector
  * package：com.basic.image.entity
  * describe：for PictureSelector media entity.

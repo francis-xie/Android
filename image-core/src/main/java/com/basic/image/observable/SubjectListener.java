@@ -2,7 +2,7 @@ package com.basic.image.observable;
 
 
 /**
- * author：luck
+ 
  * project：PictureSelector
  * package：com.basic.image.observable
  * email：893855882@qq.com

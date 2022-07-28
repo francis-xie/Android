@@ -1,7 +1,4 @@
-/**
- * Alipay.com Inc.
- * Copyright (c) 2004-2020 All Rights Reserved.
- */
+
 package com.alipay.easysdk.kernel;
 
 import com.alipay.easysdk.kernel.util.Signer;
@@ -10,10 +7,6 @@ import com.google.common.base.Strings;
 
 import java.util.Map;
 
-/**
- * @author zhongyu
- * @version : Context.java, v 0.1 2020年05月24日 10:41 上午 zhongyu Exp $
- */
 public class Context {
     /**
      * 客户端配置参数

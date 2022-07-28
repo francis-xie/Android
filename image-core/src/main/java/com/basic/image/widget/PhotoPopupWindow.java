@@ -17,7 +17,7 @@ import android.widget.TextView;
 import com.basic.image.R;
 
 /**
- * author：luck
+ 
  * project：PictureSelector
  * package：com.basic.image.widget
  * email：893855882@qq.com

@@ -1,7 +1,7 @@
 package com.basic.image.tools;
 
 /**
- * author：luck
+ 
  * project：PictureSelector
  * package：com.basic.image.widget
  * email：893855882@qq.com

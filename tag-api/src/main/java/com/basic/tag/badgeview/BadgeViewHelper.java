@@ -9,7 +9,7 @@ import android.view.View;
 import com.basic.tag.DensityUtils;
 
 /**
- * Author jpeng
+ 
  * Date: 16-11-16
  * E-mail:peng8350@gmail.com
  */

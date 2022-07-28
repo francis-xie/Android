@@ -58,7 +58,7 @@ import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 
 /**
- * author：luck
+ 
  * project：PictureSelector
  * package：com.luck.picture.ui
  * email：邮箱->893855882@qq.com

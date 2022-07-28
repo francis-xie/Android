@@ -19,7 +19,7 @@ import java.util.List;
 import static com.basic.image.PictureVideoPlayActivity.KEY_VIDEO_PATH;
 
 /**
- * author：luck
+ 
  * project：PictureSelector
  * package：com.basic.image
  * describe：for PictureSelector's media selection.

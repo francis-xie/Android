@@ -1,7 +1,4 @@
-/**
- * Alipay.com Inc.
- * Copyright (c) 2004-2020 All Rights Reserved.
- */
+
 package com.alipay.easysdk.factory;
 
 import com.alipay.easysdk.kernel.AlipayConstants;
@@ -12,10 +9,6 @@ import com.alipay.easysdk.kms.aliyun.AliyunKMSClient;
 import com.alipay.easysdk.kms.aliyun.AliyunKMSSigner;
 import com.basic.http.HttpModel;
 
-/**
- * @author junying
- * @version : MultipleFactory.java, v 0.1 2020年12月23日 2:14 下午 junying Exp $
- */
 public class MultipleFactory {
 
     public final String SDK_VERSION = "alipay-easysdk-java-2.2.2";

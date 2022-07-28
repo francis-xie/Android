@@ -3,7 +3,7 @@ package com.basic.tag.animate;
 import android.view.View;
 
 /**
- * Author jpeng
+ 
  * Date: 16-11-14
  * E-mail:peng8350@gmail.com
  */

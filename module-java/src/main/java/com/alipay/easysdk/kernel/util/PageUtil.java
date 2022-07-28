@@ -1,7 +1,4 @@
-/**
- * Alipay.com Inc.
- * Copyright (c) 2004-2020 All Rights Reserved.
- */
+
 package com.alipay.easysdk.kernel.util;
 
 import java.util.Map;
@@ -9,8 +6,6 @@ import java.util.Map.Entry;
 
 /**
  * 生成页面信息辅助类
- *
- * @author zhongyu
  * @version : PageUtil.java, v 0.1 2020年02月12日 3:11 下午 zhongyu Exp $
  */
 public class PageUtil {

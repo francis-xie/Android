@@ -5,7 +5,7 @@ import android.animation.ObjectAnimator;
 import android.view.View;
 
 /**
- * Author jpeng
+ 
  * Date: 17-9-3
  * E-mail:peng8350@gmail.com
  */

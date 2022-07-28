@@ -59,8 +59,6 @@ import io.github.inflationx.calligraphy3.HasTypeface;
 
 /**
  * Material Design 输入框
- *
- * @author XUE
  * @since 2019/3/20 16:47
  */
 @Keep

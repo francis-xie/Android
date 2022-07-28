@@ -44,7 +44,7 @@ import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
 
 /**
- * @author：luck
+ 
  * @data：2018/3/28 下午1:00
  * @描述: Activity基类
  */

@@ -1,7 +1,7 @@
 package com.basic.image.config;
 
 /**
- * author：luck
+ 
  * project：PictureSelector
  * package：com.basic.image.config
  * describe：PictureSelector Final Class

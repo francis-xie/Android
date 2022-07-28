@@ -1,6 +1,4 @@
-/**
- * Alipay.com Inc. Copyright (c) 2004-2020 All Rights Reserved.
- */
+
 package com.alipay.easysdk.kernel;
 
 import java.nio.charset.Charset;
@@ -8,8 +6,6 @@ import java.nio.charset.StandardCharsets;
 
 /**
  * 支付宝开放平台网关交互常用常量
- *
- * @author zhongyu
  * @version $Id: AlipayConstants.java, v 0.1 2020年01月02日 7:53 PM zhongyu Exp $
  */
 public final class AlipayConstants {

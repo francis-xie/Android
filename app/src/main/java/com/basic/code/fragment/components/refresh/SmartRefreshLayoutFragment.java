@@ -11,7 +11,6 @@ import com.basic.code.fragment.components.refresh.smartrefresh.RefreshStyleFragm
 import com.basic.code.utils.Utils;
 
 /**
- * @author XUE
  * @since 2019/4/1 9:47
  */
 @Page(name = "SmartRefreshLayout\nAndroid智能下拉刷新框架")

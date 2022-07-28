@@ -5,7 +5,7 @@ import android.view.View;
 import android.view.animation.AnticipateInterpolator;
 
 /**
- * Author jpeng
+ 
  * Date: 16-11-15
  * E-mail:peng8350@gmail.com
  * 实现旋转的动画类

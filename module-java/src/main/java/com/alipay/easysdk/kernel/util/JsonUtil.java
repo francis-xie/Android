@@ -1,7 +1,4 @@
-/**
- * Alipay.com Inc.
- * Copyright (c) 2004-2020 All Rights Reserved.
- */
+
 package com.alipay.easysdk.kernel.util;
 
 import com.basic.http.HttpModel;
@@ -13,8 +10,6 @@ import java.util.Map.Entry;
 
 /**
  * JSON工具类
- *
- * @author zhongyu
  * @version : JsonUtil.java, v 0.1 2020年02月18日 8:20 下午 zhongyu Exp $
  */
 public class JsonUtil {

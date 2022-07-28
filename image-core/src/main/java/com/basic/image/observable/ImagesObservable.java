@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * author：luck
+ 
  * project：PictureSelector
  * package：com.basic.image.observable
  * email：893855882@qq.com

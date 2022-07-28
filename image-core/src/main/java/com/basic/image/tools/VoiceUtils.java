@@ -8,7 +8,7 @@ import android.os.Handler;
 import com.basic.image.R;
 
 /**
- * author：luck
+ 
  * project：PictureSelector
  * package：com.basic.image.tool
  * email：893855882@qq.com

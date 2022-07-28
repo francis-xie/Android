@@ -15,8 +15,6 @@ import java.io.File;
 
 /**
  * 相机工具类
- *
- * @author XUE
  * @since 2019/3/28 13:54
  */
 public final class CameraUtils {

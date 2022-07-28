@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 /**
- * author：luck
+ 
  * project：PictureSelector
  * package：com.luck.picture.adapter
  * email：893855882@qq.com

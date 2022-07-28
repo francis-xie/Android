@@ -25,7 +25,7 @@ import java.util.Locale;
 
 
 /**
- * author：luck
+ 
  * project：LocalMediaLoader
  * package：com.luck.picture.ui
  * email：893855882@qq.com

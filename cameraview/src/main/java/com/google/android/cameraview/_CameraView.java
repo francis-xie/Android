@@ -4,7 +4,6 @@ import com.google.android.cameraview.strategy.ICameraStrategy;
 import com.google.android.cameraview.strategy.impl.DefaultCameraStrategy;
 
 /**
- * @author XUE
  * @since 2019/4/8 11:51
  */
 class _CameraView {

@@ -4,7 +4,7 @@ import android.content.Context;
 import androidx.annotation.NonNull;
 
 /**
- * Author jpeng
+ 
  * Date: 16-11-14
  * E-mail:peng8350@gmail.com
  * 密度工具类

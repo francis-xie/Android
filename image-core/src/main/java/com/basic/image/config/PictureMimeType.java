@@ -11,12 +11,11 @@ import com.basic.image.entity.LocalMedia;
 import java.io.File;
 
 /**
- * author：luck
+ 
  * project：PictureSelector
  * package：com.basic.image.config
  * email：893855882@qq.com
  * data：2017/5/24
- * @author luck
  */
 
 public final class PictureMimeType {

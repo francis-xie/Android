@@ -1,7 +1,4 @@
-/**
- * Alipay.com Inc.
- * Copyright (c) 2004-2020 All Rights Reserved.
- */
+
 package com.alipay.easysdk.kernel.util;
 
 import com.basic.http.HttpModel;
@@ -11,8 +8,6 @@ import java.lang.reflect.Field;
 
 /**
  * 响应检查工具类
- *
- * @author zhongyu
  * @version : ResponseChecker.java, v 0.1 2020年06月02日 10:42 上午 zhongyu Exp $
  */
 public class ResponseChecker {

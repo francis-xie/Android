@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * author：luck
+ 
  * project：PictureSelector
  * package：com.basic.image.config
  * email：893855882@qq.com

@@ -1,6 +1,4 @@
-/**
- * Alipay.com Inc. Copyright (c) 2004-2019 All Rights Reserved.
- */
+
 package com.alipay.easysdk.kernel.util;
 
 import com.alipay.easysdk.kernel.AlipayConstants;
@@ -23,8 +21,6 @@ import java.util.*;
 
 /**
  * SHA256WithRSA签名器
- *
- * @author zhongyu
  * @version $Id: Signer.java, v 0.1 2019年12月19日 9:10 PM zhongyu Exp $
  */
 public class Signer {

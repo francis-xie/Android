@@ -1,17 +1,10 @@
-/**
- * Alipay.com Inc.
- * Copyright (c) 2004-2020 All Rights Reserved.
- */
+
 package com.alipay.easysdk.kernel;
 
 import com.basic.http.NameInMap;
 import com.basic.http.HttpModel;
 import com.basic.http.Validation;
 
-/**
- * @author zhongyu
- * @version : Config.java, v 0.1 2020年05月22日 4:25 下午 zhongyu Exp $
- */
 public class Config extends HttpModel {
 
     /**

@@ -1,6 +1,4 @@
-/**
- * Alipay.com Inc. Copyright (c) 2004-2020 All Rights Reserved.
- */
+
 package com.alipay.easysdk.kernel;
 
 import com.alipay.easysdk.kernel.util.AntCertificationUtil;
@@ -11,8 +9,6 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 证书模式运行时环境
- *
- * @author zhongyu
  * @version $Id: CertEnvironment.java, v 0.1 2020年01月02日 5:21 PM zhongyu Exp $
  */
 public class CertEnvironment {

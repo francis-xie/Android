@@ -5,7 +5,7 @@ import android.animation.ObjectAnimator;
 import android.view.View;
 
 /**
- * Author jpeng
+ 
  * Date: 16-11-14
  * E-mail:peng8350@gmail.com
  * 实现图标缩放动画者

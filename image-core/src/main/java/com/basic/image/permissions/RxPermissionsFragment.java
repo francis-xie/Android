@@ -14,7 +14,7 @@ import java.util.Map;
 import io.reactivex.subjects.PublishSubject;
 
 /**
- * author：luck
+ 
  * project：PictureSelector
  * package：com.basic.image.permissions
  * email：893855882@qq.com

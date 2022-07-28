@@ -22,8 +22,6 @@ import java.lang.reflect.Field;
 
 /**
  * 主要的底部导航操作类,控制导航的行为(显示隐藏徽章等等)
- *
- * @author XUE
  * @since 2019/3/25 14:27
  */
 public class JPTabBar extends LinearLayout implements ViewPager.OnPageChangeListener, View.OnTouchListener {

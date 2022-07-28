@@ -2,14 +2,6 @@ package com.basic.tailor.model;
 
 import java.io.Serializable;
 
-/**
- * author：luck
- * project：PictureSelector
- * package：com.basic.tailor.model
- * email：893855882@qq.com
- * data：2017/5/30
- */
-
 public class CutInfo implements Serializable {
     private String path;
     private String cutPath;

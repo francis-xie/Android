@@ -1,7 +1,7 @@
 package com.basic.tag.animate;
 
 /**
- * Author jpeng
+ 
  * Date: 17-9-4
  * E-mail:peng8350@gmail.com
  */

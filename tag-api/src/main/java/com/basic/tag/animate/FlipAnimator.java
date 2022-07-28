@@ -5,7 +5,7 @@ import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 
 /**
- * Author jpeng
+ 
  * Date: 16-11-15
  * E-mail:peng8350@gmail.com
  * 实现翻转的动画类

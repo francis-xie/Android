@@ -1,7 +1,7 @@
 package com.basic.image.permissions;
 
 /**
- * author：luck
+ 
  * project：PictureSelector
  * package：com.basic.image.permissions
  * email：893855882@qq.com

@@ -7,7 +7,7 @@ import android.util.AttributeSet;
 import android.widget.RelativeLayout;
 
 /**
- * author：luck
+ 
  * project：SquareRelativeLayout
  * package：com.luck.picture.ui
  * email：893855882@qq.com

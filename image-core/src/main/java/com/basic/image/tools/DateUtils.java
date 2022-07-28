@@ -3,7 +3,7 @@ package com.basic.image.tools;
 import java.text.SimpleDateFormat;
 
 /**
- * author：luck
+ 
  * project：PictureSelector
  * package：com.basic.image.tool
  * email：893855882@qq.com

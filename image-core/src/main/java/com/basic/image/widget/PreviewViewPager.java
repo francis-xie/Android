@@ -7,7 +7,7 @@ import android.view.MotionEvent;
 import androidx.viewpager.widget.ViewPager;
 
 /**
- * author：luck
+ 
  * project：PreviewViewPager
  * package：com.luck.picture.ui
  * email：893855882@qq.com

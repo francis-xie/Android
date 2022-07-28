@@ -1,6 +1,4 @@
-/**
- * Alipay.com Inc. Copyright (c) 2004-2020 All Rights Reserved.
- */
+
 package com.alipay.easysdk.factory;
 
 import com.alipay.easysdk.kernel.AlipayConstants;
@@ -15,8 +13,6 @@ import com.basic.http.HttpModel;
  * 客户端工厂，用于快速配置和访问各种场景下的API Client
  *
  * 注：该Factory获取的Client不可储存重复使用，请每次均通过Factory完成调用
- *
- * @author zhongyu
  * @version $Id: Factory.java, v 0.1 2020年01月18日 11:26 AM zhongyu Exp $
  */
 public class Factory {

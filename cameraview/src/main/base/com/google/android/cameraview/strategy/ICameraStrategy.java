@@ -6,8 +6,6 @@ import java.util.SortedSet;
 
 /**
  * 照相机策略
- *
- * @author XUE
  * @since 2019/4/8 11:30
  */
 public interface ICameraStrategy {

@@ -21,7 +21,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author XUE
  * @since 2019/3/25 11:29
  */
 public class ImageSelectGridAdapter extends RecyclerView.Adapter<ImageSelectGridAdapter.ViewHolder> {
