@@ -28,7 +28,7 @@ import java.util.Locale;
  * <p/>
  * Builder class to ease Intent setup.
  */
-public class UCrop {
+public class Tailor {
 
     public static final int REQUEST_CROP = 69;
     public static final int RESULT_ERROR = 96;
@@ -59,11 +59,11 @@ public class UCrop {
      * @param source      Uri for image to crop
      * @param destination Uri for saving the cropped image
      */
-    public static UCrop of(@NonNull Uri source, @NonNull Uri destination) {
-        return new UCrop(source, destination);
+    public static Tailor of(@NonNull Uri source, @NonNull Uri destination) {
+        return new Tailor(source, destination);
     }
 
-    private UCrop(@NonNull Uri source, @NonNull Uri destination) {
+    private Tailor(@NonNull Uri source, @NonNull Uri destination) {
         mCropIntent = new Intent();
         mCropOptionsBundle = new Bundle();
         mCropOptionsBundle.putParcelable(EXTRA_INPUT_URI, source);
@@ -77,7 +77,7 @@ public class UCrop {
      * @param x aspect ratio X
      * @param y aspect ratio Y
      */
-    public UCrop withAspectRatio(float x, float y) {
+    public Tailor withAspectRatio(float x, float y) {
         mCropOptionsBundle.putFloat(EXTRA_ASPECT_RATIO_X, x);
         mCropOptionsBundle.putFloat(EXTRA_ASPECT_RATIO_Y, y);
         return this;
@@ -87,7 +87,7 @@ public class UCrop {
      * Set an aspect ratio for crop bounds that is evaluated from source image width and height.
      * User won't see the menu with other ratios options.
      */
-    public UCrop useSourceImageAspectRatio() {
+    public Tailor useSourceImageAspectRatio() {
         mCropOptionsBundle.putFloat(EXTRA_ASPECT_RATIO_X, 0);
         mCropOptionsBundle.putFloat(EXTRA_ASPECT_RATIO_Y, 0);
         return this;
@@ -99,13 +99,13 @@ public class UCrop {
      * @param width  max cropped image width
      * @param height max cropped image height
      */
-    public UCrop withMaxResultSize(@IntRange(from = 100) int width, @IntRange(from = 100) int height) {
+    public Tailor withMaxResultSize(@IntRange(from = 100) int width, @IntRange(from = 100) int height) {
         mCropOptionsBundle.putInt(EXTRA_MAX_SIZE_X, width);
         mCropOptionsBundle.putInt(EXTRA_MAX_SIZE_Y, height);
         return this;
     }
 
-    public UCrop withOptions(@NonNull Options options) {
+    public Tailor withOptions(@NonNull Options options) {
         mCropOptionsBundle.putAll(options.getOptionBundle());
         return this;
     }
@@ -169,12 +169,12 @@ public class UCrop {
     }
 
     /**
-     * Get Intent to start {@link UCropActivity}
+     * Get Intent to start {@link TailorActivity}
      *
-     * @return Intent for {@link UCropActivity}
+     * @return Intent for {@link TailorActivity}
      */
     public Intent getIntent(@NonNull Context context) {
-        mCropIntent.setClass(context, UCropActivity.class);
+        mCropIntent.setClass(context, TailorActivity.class);
         mCropIntent.putExtras(mCropOptionsBundle);
         return mCropIntent;
     }
@@ -259,14 +259,14 @@ public class UCrop {
 
         public static final String EXTRA_TOOL_BAR_COLOR = EXTRA_PREFIX + ".ToolbarColor";
         public static final String EXTRA_STATUS_BAR_COLOR = EXTRA_PREFIX + ".StatusBarColor";
-        public static final String EXTRA_UCROP_COLOR_WIDGET_ACTIVE = EXTRA_PREFIX + ".UcropColorWidgetActive";
+        public static final String EXTRA_TAILOR_COLOR_WIDGET_ACTIVE = EXTRA_PREFIX + ".TailorColorWidgetActive";
 
-        public static final String EXTRA_UCROP_WIDGET_COLOR_TOOLBAR = EXTRA_PREFIX + ".UcropToolbarWidgetColor";
-        public static final String EXTRA_UCROP_TITLE_TEXT_TOOLBAR = EXTRA_PREFIX + ".UcropToolbarTitleText";
-        public static final String EXTRA_UCROP_WIDGET_CANCEL_DRAWABLE = EXTRA_PREFIX + ".UcropToolbarCancelDrawable";
-        public static final String EXTRA_UCROP_WIDGET_CROP_DRAWABLE = EXTRA_PREFIX + ".UcropToolbarCropDrawable";
+        public static final String EXTRA_TAILOR_WIDGET_COLOR_TOOLBAR = EXTRA_PREFIX + ".TailorToolbarWidgetColor";
+        public static final String EXTRA_TAILOR_TITLE_TEXT_TOOLBAR = EXTRA_PREFIX + ".TailorToolbarTitleText";
+        public static final String EXTRA_TAILOR_WIDGET_CANCEL_DRAWABLE = EXTRA_PREFIX + ".TailorToolbarCancelDrawable";
+        public static final String EXTRA_TAILOR_WIDGET_CROP_DRAWABLE = EXTRA_PREFIX + ".TailorToolbarCropDrawable";
 
-        public static final String EXTRA_UCROP_LOGO_COLOR = EXTRA_PREFIX + ".UcropLogoColor";
+        public static final String EXTRA_TAILOR_LOGO_COLOR = EXTRA_PREFIX + ".TailorLogoColor";
 
         public static final String EXTRA_HIDE_BOTTOM_CONTROLS = EXTRA_PREFIX + ".HideBottomControls";
         public static final String EXTRA_FREE_STYLE_CROP = EXTRA_PREFIX + ".FreeStyleCrop";
@@ -278,7 +278,7 @@ public class UCrop {
         public static final String EXTRA_ASPECT_RATIO_SELECTED_BY_DEFAULT = EXTRA_PREFIX + ".AspectRatioSelectedByDefault";
         public static final String EXTRA_ASPECT_RATIO_OPTIONS = EXTRA_PREFIX + ".AspectRatioOptions";
 
-        public static final String EXTRA_UCROP_ROOT_VIEW_BACKGROUND_COLOR = EXTRA_PREFIX + ".UcropRootViewBackgroundColor";
+        public static final String EXTRA_TAILOR_ROOT_VIEW_BACKGROUND_COLOR = EXTRA_PREFIX + ".TailorRootViewBackgroundColor";
 
         public static final String EXTRA_ROTATE = EXTRA_PREFIX + ".rotate";
         public static final String EXTRA_SCALE = EXTRA_PREFIX + ".scale";
@@ -313,9 +313,9 @@ public class UCrop {
         /**
          * Choose what set of gestures will be enabled on each tab - if any.
          */
-        public void setAllowedGestures(@UCropActivity.GestureTypes int tabScale,
-                                       @UCropActivity.GestureTypes int tabRotate,
-                                       @UCropActivity.GestureTypes int tabAspectRatio) {
+        public void setAllowedGestures(@TailorActivity.GestureTypes int tabScale,
+                                       @TailorActivity.GestureTypes int tabRotate,
+                                       @TailorActivity.GestureTypes int tabAspectRatio) {
             mOptionBundle.putIntArray(EXTRA_ALLOWED_GESTURES, new int[]{tabScale, tabRotate, tabAspectRatio});
         }
 
@@ -449,42 +449,42 @@ public class UCrop {
          * @param color - desired resolved color of the active and selected widget (default is orange) and progress wheel middle line
          */
         public void setActiveWidgetColor(@ColorInt int color) {
-            mOptionBundle.putInt(EXTRA_UCROP_COLOR_WIDGET_ACTIVE, color);
+            mOptionBundle.putInt(EXTRA_TAILOR_COLOR_WIDGET_ACTIVE, color);
         }
 
         /**
          * @param color - desired resolved color of Toolbar text and buttons (default is darker orange)
          */
         public void setToolbarWidgetColor(@ColorInt int color) {
-            mOptionBundle.putInt(EXTRA_UCROP_WIDGET_COLOR_TOOLBAR, color);
+            mOptionBundle.putInt(EXTRA_TAILOR_WIDGET_COLOR_TOOLBAR, color);
         }
 
         /**
          * @param text - desired text for Toolbar title
          */
         public void setToolbarTitle(@Nullable String text) {
-            mOptionBundle.putString(EXTRA_UCROP_TITLE_TEXT_TOOLBAR, text);
+            mOptionBundle.putString(EXTRA_TAILOR_TITLE_TEXT_TOOLBAR, text);
         }
 
         /**
          * @param drawable - desired drawable for the Toolbar left cancel icon
          */
         public void setToolbarCancelDrawable(@DrawableRes int drawable) {
-            mOptionBundle.putInt(EXTRA_UCROP_WIDGET_CANCEL_DRAWABLE, drawable);
+            mOptionBundle.putInt(EXTRA_TAILOR_WIDGET_CANCEL_DRAWABLE, drawable);
         }
 
         /**
          * @param drawable - desired drawable for the Toolbar right crop icon
          */
         public void setToolbarCropDrawable(@DrawableRes int drawable) {
-            mOptionBundle.putInt(EXTRA_UCROP_WIDGET_CROP_DRAWABLE, drawable);
+            mOptionBundle.putInt(EXTRA_TAILOR_WIDGET_CROP_DRAWABLE, drawable);
         }
 
         /**
          * @param color - desired resolved color of logo fill (default is darker grey)
          */
         public void setLogoColor(@ColorInt int color) {
-            mOptionBundle.putInt(EXTRA_UCROP_LOGO_COLOR, color);
+            mOptionBundle.putInt(EXTRA_TAILOR_LOGO_COLOR, color);
         }
 
         /**
@@ -535,7 +535,7 @@ public class UCrop {
          * @param color - desired background color that should be applied to the root view
          */
         public void setRootViewBackgroundColor(@ColorInt int color) {
-            mOptionBundle.putInt(EXTRA_UCROP_ROOT_VIEW_BACKGROUND_COLOR, color);
+            mOptionBundle.putInt(EXTRA_TAILOR_ROOT_VIEW_BACKGROUND_COLOR, color);
         }
 
         /**

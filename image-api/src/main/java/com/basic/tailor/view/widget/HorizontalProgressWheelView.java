@@ -96,7 +96,7 @@ public class HorizontalProgressWheelView extends View {
         int linesCount = mCanvasClipBounds.width() / (mProgressLineWidth + mProgressLineMargin);
         float deltaX = (mTotalScrollDistance) % (float) (mProgressLineMargin + mProgressLineWidth);
 
-        mProgressLinePaint.setColor(getResources().getColor(R.color.ucrop_color_progress_wheel_line));
+        mProgressLinePaint.setColor(getResources().getColor(R.color.tailor_color_progress_wheel_line));
         for (int i = 0; i < linesCount; i++) {
             if (i < (linesCount / 4)) {
                 mProgressLinePaint.setAlpha((int) (255 * (i / (float) (linesCount / 4))));
@@ -127,11 +127,11 @@ public class HorizontalProgressWheelView extends View {
     }
 
     private void init() {
-        mMiddleLineColor = ContextCompat.getColor(getContext(), R.color.ucrop_color_progress_wheel_line);
+        mMiddleLineColor = ContextCompat.getColor(getContext(), R.color.tailor_color_progress_wheel_line);
 
-        mProgressLineWidth = getContext().getResources().getDimensionPixelSize(R.dimen.ucrop_width_horizontal_wheel_progress_line);
-        mProgressLineHeight = getContext().getResources().getDimensionPixelSize(R.dimen.ucrop_height_horizontal_wheel_progress_line);
-        mProgressLineMargin = getContext().getResources().getDimensionPixelSize(R.dimen.ucrop_margin_horizontal_wheel_progress_line);
+        mProgressLineWidth = getContext().getResources().getDimensionPixelSize(R.dimen.tailor_width_horizontal_wheel_progress_line);
+        mProgressLineHeight = getContext().getResources().getDimensionPixelSize(R.dimen.tailor_height_horizontal_wheel_progress_line);
+        mProgressLineMargin = getContext().getResources().getDimensionPixelSize(R.dimen.tailor_margin_horizontal_wheel_progress_line);
 
         mProgressLinePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mProgressLinePaint.setStyle(Paint.Style.STROKE);

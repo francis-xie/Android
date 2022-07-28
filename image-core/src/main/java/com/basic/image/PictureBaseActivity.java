@@ -30,8 +30,8 @@ import com.basic.image.tools.AttrsUtils;
 import com.basic.image.tools.DateUtils;
 import com.basic.image.tools.DoubleUtils;
 import com.basic.image.tools.PictureFileUtils;
-import com.basic.tailor.UCrop;
-import com.basic.tailor.UCropMulti;
+import com.basic.tailor.Tailor;
+import com.basic.tailor.TailorMulti;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -283,7 +283,7 @@ public class PictureBaseActivity extends FragmentActivity {
      * @param originalPath
      */
     protected void startCrop(String originalPath) {
-        UCrop.Options options = new UCrop.Options();
+        Tailor.Options options = new Tailor.Options();
         int toolbarColor = AttrsUtils.getTypeValueColor(this, R.attr.picture_crop_toolbar_bg);
         int statusColor = AttrsUtils.getTypeValueColor(this, R.attr.picture_crop_status_color);
         int titleColor = AttrsUtils.getTypeValueColor(this, R.attr.picture_crop_title_color);
@@ -302,7 +302,7 @@ public class PictureBaseActivity extends FragmentActivity {
         boolean isHttp = PictureMimeType.isHttp(originalPath);
         String imgType = PictureMimeType.getLastImgType(originalPath);
         Uri uri = isHttp ? Uri.parse(originalPath) : Uri.fromFile(new File(originalPath));
-        UCrop.of(uri, Uri.fromFile(new File(PictureFileUtils.getDiskCacheDir(this),
+        Tailor.of(uri, Uri.fromFile(new File(PictureFileUtils.getDiskCacheDir(this),
                 System.currentTimeMillis() + imgType)))
                 .withAspectRatio(config.aspect_ratio_x, config.aspect_ratio_y)
                 .withMaxResultSize(config.cropWidth, config.cropHeight)
@@ -316,7 +316,7 @@ public class PictureBaseActivity extends FragmentActivity {
      * @param list
      */
     protected void startCrop(ArrayList<String> list) {
-        UCropMulti.Options options = new UCropMulti.Options();
+        TailorMulti.Options options = new TailorMulti.Options();
         int toolbarColor = AttrsUtils.getTypeValueColor(this, R.attr.picture_crop_toolbar_bg);
         int statusColor = AttrsUtils.getTypeValueColor(this, R.attr.picture_crop_status_color);
         int titleColor = AttrsUtils.getTypeValueColor(this, R.attr.picture_crop_title_color);
@@ -337,7 +337,7 @@ public class PictureBaseActivity extends FragmentActivity {
         boolean isHttp = PictureMimeType.isHttp(path);
         String imgType = PictureMimeType.getLastImgType(path);
         Uri uri = isHttp ? Uri.parse(path) : Uri.fromFile(new File(path));
-        UCropMulti.of(uri, Uri.fromFile(new File(PictureFileUtils.getDiskCacheDir(this),
+        TailorMulti.of(uri, Uri.fromFile(new File(PictureFileUtils.getDiskCacheDir(this),
                 System.currentTimeMillis() + imgType)))
                 .withAspectRatio(config.aspect_ratio_x, config.aspect_ratio_y)
                 .withMaxResultSize(config.cropWidth, config.cropHeight)

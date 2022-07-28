@@ -1,5 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/ucrop_photobox"
+    android:id="@+id/tailor_photobox"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -7,7 +7,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/ucrop_color_toolbar"
+        android:background="@color/tailor_color_toolbar"
         android:minHeight="?attr/actionBarSize">
 
         <TextView
@@ -15,31 +15,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/ucrop_label_edit_photo"
-            android:textColor="@color/ucrop_color_toolbar_widget"
+            android:text="@string/tailor_label_edit_photo"
+            android:textColor="@color/tailor_color_toolbar_widget"
             android:textSize="18sp" />
 
     </androidx.appcompat.widget.Toolbar>
 
     <FrameLayout
-        android:id="@+id/ucrop_frame"
+        android:id="@+id/tailor_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/wrapper_controls"
         android:layout_below="@+id/toolbar"
-        android:background="@color/ucrop_color_default_crop_frame">
+        android:background="@color/tailor_color_default_crop_frame">
 
         <!--<ImageView-->
         <!--android:id="@+id/image_view_logo"-->
         <!--android:layout_width="200dp"-->
         <!--android:layout_height="200dp"-->
         <!--android:layout_gravity="center"-->
-        <!--app:srcCompat="@drawable/ucrop_vector_ic_crop"-->
-        <!--tools:background="@drawable/ucrop_vector_ic_crop"-->
+        <!--app:srcCompat="@drawable/tailor_vector_ic_crop"-->
+        <!--tools:background="@drawable/tailor_vector_ic_crop"-->
         <!--tools:ignore="MissingPrefix" />-->
 
-        <com.basic.tailor.view.UCropView
-            android:id="@+id/ucrop"
+        <com.basic.tailor.view.TailorView
+            android:id="@+id/tailor"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:alpha="0" />

@@ -5,9 +5,9 @@
     <FrameLayout
         android:id="@+id/wrapper_controls"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/ucrop_height_wrapper_controls"
+        android:layout_height="@dimen/tailor_height_wrapper_controls"
         android:layout_above="@+id/wrapper_states"
-        android:background="@color/ucrop_color_widget_background">
+        android:background="@color/tailor_color_widget_background">
 
         <LinearLayout
             android:id="@+id/layout_aspect_ratio"
@@ -18,60 +18,60 @@
 
         <include
             android:id="@+id/layout_rotate_wheel"
-            layout="@layout/ucrop_layout_rotate_wheel"/>
+            layout="@layout/tailor_layout_rotate_wheel"/>
 
         <include
             android:id="@+id/layout_scale_wheel"
-            layout="@layout/ucrop_layout_scale_wheel"/>
+            layout="@layout/tailor_layout_scale_wheel"/>
 
     </FrameLayout>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/ucrop_height_divider_shadow"
+        android:layout_height="@dimen/tailor_height_divider_shadow"
         android:layout_above="@+id/wrapper_states"
-        android:background="@drawable/ucrop_shadow_upside"/>
+        android:background="@drawable/tailor_shadow_upside"/>
 
     <LinearLayout
         android:id="@+id/wrapper_states"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/ucrop_height_wrapper_states"
+        android:layout_height="@dimen/tailor_height_wrapper_states"
         android:layout_alignParentBottom="true"
-        android:background="@color/ucrop_color_widget_background"
+        android:background="@color/tailor_color_widget_background"
         android:baselineAligned="false"
         android:gravity="center"
         android:orientation="horizontal">
 
         <FrameLayout
             android:id="@+id/state_scale"
-            style="@style/ucrop_WrapperIconState">
+            style="@style/tailor_WrapperIconState">
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/image_view_state_scale"
-                style="@style/ucrop_ImageViewWidgetIcon"
-                app:srcCompat="@drawable/ucrop_ic_scale"/>
+                style="@style/tailor_ImageViewWidgetIcon"
+                app:srcCompat="@drawable/tailor_ic_scale"/>
 
         </FrameLayout>
 
         <FrameLayout
             android:id="@+id/state_aspect_ratio"
-            style="@style/ucrop_WrapperIconState">
+            style="@style/tailor_WrapperIconState">
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/image_view_state_aspect_ratio"
-                style="@style/ucrop_ImageViewWidgetIcon"
-                app:srcCompat="@drawable/ucrop_ic_crop"/>
+                style="@style/tailor_ImageViewWidgetIcon"
+                app:srcCompat="@drawable/tailor_ic_crop"/>
 
         </FrameLayout>
 
         <FrameLayout
             android:id="@+id/state_rotate"
-            style="@style/ucrop_WrapperIconState">
+            style="@style/tailor_WrapperIconState">
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/image_view_state_rotate"
-                style="@style/ucrop_ImageViewWidgetIcon"
-                app:srcCompat="@drawable/ucrop_ic_rotate"/>
+                style="@style/tailor_ImageViewWidgetIcon"
+                app:srcCompat="@drawable/tailor_ic_rotate"/>
 
         </FrameLayout>
 

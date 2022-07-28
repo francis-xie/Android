@@ -2,7 +2,7 @@
 <set xmlns:android="http://schemas.android.com/apk/res/android">
 
     <objectAnimator
-        android:duration="@integer/ucrop_progress_loading_anim_time"
+        android:duration="@integer/tailor_progress_loading_anim_time"
         android:propertyName="trimPathEnd"
         android:repeatCount="-1"
         android:valueFrom="0"
@@ -10,7 +10,7 @@
         android:valueType="floatType"/>
 
     <objectAnimator
-        android:duration="@integer/ucrop_progress_loading_anim_time"
+        android:duration="@integer/tailor_progress_loading_anim_time"
         android:propertyName="strokeAlpha"
         android:repeatCount="-1"
         android:valueFrom="1"

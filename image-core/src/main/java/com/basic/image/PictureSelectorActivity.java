@@ -50,8 +50,8 @@ import com.basic.image.tools.StringUtils;
 import com.basic.image.tools.ToastManage;
 import com.basic.image.widget.FolderPopWindow;
 import com.basic.image.widget.PhotoPopupWindow;
-import com.basic.tailor.UCrop;
-import com.basic.tailor.UCropMulti;
+import com.basic.tailor.Tailor;
+import com.basic.tailor.TailorMulti;
 import com.basic.tailor.model.CutInfo;
 
 import java.io.File;
@@ -478,7 +478,7 @@ public class PictureSelectorActivity extends PictureBaseActivity implements View
             bundle.putSerializable(PictureConfig.EXTRA_SELECT_LIST, (Serializable) selectedImages);
             bundle.putBoolean(PictureConfig.EXTRA_BOTTOM_PREVIEW, true);
             startActivity(PicturePreviewActivity.class, bundle,
-                    config.selectionMode == PictureConfig.SINGLE ? UCrop.REQUEST_CROP : UCropMulti.REQUEST_MULTI_CROP);
+                    config.selectionMode == PictureConfig.SINGLE ? Tailor.REQUEST_CROP : TailorMulti.REQUEST_MULTI_CROP);
             overridePendingTransition(R.anim.pic_a5, 0);
         }
 
@@ -797,7 +797,7 @@ public class PictureSelectorActivity extends PictureBaseActivity implements View
                 bundle.putSerializable(PictureConfig.EXTRA_SELECT_LIST, (Serializable) selectedImages);
                 bundle.putInt(PictureConfig.EXTRA_POSITION, position);
                 startActivity(PicturePreviewActivity.class, bundle,
-                        config.selectionMode == PictureConfig.SINGLE ? UCrop.REQUEST_CROP : UCropMulti.REQUEST_MULTI_CROP);
+                        config.selectionMode == PictureConfig.SINGLE ? Tailor.REQUEST_CROP : TailorMulti.REQUEST_MULTI_CROP);
                 overridePendingTransition(R.anim.pic_a5, 0);
                 break;
             case PictureConfig.TYPE_VIDEO:
@@ -882,8 +882,8 @@ public class PictureSelectorActivity extends PictureBaseActivity implements View
             LocalMedia media;
             String imageType;
             switch (requestCode) {
-                case UCrop.REQUEST_CROP:
-                    Uri resultUri = UCrop.getOutput(data);
+                case Tailor.REQUEST_CROP:
+                    Uri resultUri = Tailor.getOutput(data);
                     String cutPath = resultUri.getPath();
                     if (adapter != null) {
                         // 取单张裁剪已选中图片的path作为原图
@@ -912,8 +912,8 @@ public class PictureSelectorActivity extends PictureBaseActivity implements View
                         handlerResult(medias);
                     }
                     break;
-                case UCropMulti.REQUEST_MULTI_CROP:
-                    List<CutInfo> mCuts = UCropMulti.getOutput(data);
+                case TailorMulti.REQUEST_MULTI_CROP:
+                    List<CutInfo> mCuts = TailorMulti.getOutput(data);
                     for (CutInfo c : mCuts) {
                         media = new LocalMedia();
                         imageType = PictureMimeType.createImageType(c.getPath());
@@ -1021,8 +1021,8 @@ public class PictureSelectorActivity extends PictureBaseActivity implements View
             if (config.camera) {
                 closeActivity();
             }
-        } else if (resultCode == UCrop.RESULT_ERROR) {
-            Throwable throwable = (Throwable) data.getSerializableExtra(UCrop.EXTRA_ERROR);
+        } else if (resultCode == Tailor.RESULT_ERROR) {
+            Throwable throwable = (Throwable) data.getSerializableExtra(Tailor.EXTRA_ERROR);
             ToastManage.s(mContext, throwable.getMessage());
         }
     }

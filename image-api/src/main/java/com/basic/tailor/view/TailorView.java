@@ -9,32 +9,32 @@ import android.view.LayoutInflater;
 import android.widget.FrameLayout;
 
 import com.basic.tailor.R;
-import com.basic.tailor.callback.CropBoundsChangeListener;
+import com.basic.tailor.callback.TailorBoundsChangeListener;
 import com.basic.tailor.callback.OverlayViewChangeListener;
 
-public class UCropView extends FrameLayout {
+public class TailorView extends FrameLayout {
 
-    private final GestureCropImageView mGestureCropImageView;
+    private final GestureTailorImageView mGestureCropImageView;
     private final OverlayView mViewOverlay;
 
-    public UCropView(Context context, AttributeSet attrs) {
+    public TailorView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public UCropView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public TailorView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
-        LayoutInflater.from(context).inflate(R.layout.ucrop_view, this, true);
-        mGestureCropImageView = (GestureCropImageView) findViewById(R.id.image_view_crop);
+        LayoutInflater.from(context).inflate(R.layout.tailor_view, this, true);
+        mGestureCropImageView = (GestureTailorImageView) findViewById(R.id.image_view_crop);
         mViewOverlay = (OverlayView) findViewById(R.id.view_overlay);
 
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.ucrop_UCropView);
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.tailor_TailorView);
         mViewOverlay.processStyledAttributes(a);
         mGestureCropImageView.processStyledAttributes(a);
         a.recycle();
 
 
-        mGestureCropImageView.setCropBoundsChangeListener(new CropBoundsChangeListener() {
+        mGestureCropImageView.setCropBoundsChangeListener(new TailorBoundsChangeListener() {
             @Override
             public void onCropAspectRatioChanged(float cropRatio) {
                 mViewOverlay.setTargetAspectRatio(cropRatio);
@@ -54,7 +54,7 @@ public class UCropView extends FrameLayout {
     }
 
     @NonNull
-    public GestureCropImageView getCropImageView() {
+    public GestureTailorImageView getCropImageView() {
         return mGestureCropImageView;
     }
 

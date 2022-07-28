@@ -13,8 +13,8 @@ import android.util.AttributeSet;
 
 import com.basic.tailor.R;
 import com.basic.tailor.callback.BitmapCropCallback;
-import com.basic.tailor.callback.CropBoundsChangeListener;
-import com.basic.tailor.model.CropParameters;
+import com.basic.tailor.callback.TailorBoundsChangeListener;
+import com.basic.tailor.model.TailorParameters;
 import com.basic.tailor.model.ImageState;
 import com.basic.tailor.task.BitmapCropTask;
 import com.basic.tailor.util.CubicEasing;
@@ -29,7 +29,7 @@ import java.util.Arrays;
  * This class adds crop feature, methods to draw crop guidelines, and keep image in correct state.
  * Also it extends parent class methods to add checks for scale; animating zoom in/out.
  */
-public class CropImageView extends TransformImageView {
+public class TailorImageView extends TransformImageView {
 
     public static final int DEFAULT_MAX_BITMAP_SIZE = 0;
     public static final int DEFAULT_IMAGE_TO_CROP_BOUNDS_ANIM_DURATION = 500;
@@ -44,7 +44,7 @@ public class CropImageView extends TransformImageView {
     private float mTargetAspectRatio;
     private float mMaxScaleMultiplier = DEFAULT_MAX_SCALE_MULTIPLIER;
 
-    private CropBoundsChangeListener mCropBoundsChangeListener;
+    private TailorBoundsChangeListener mCropBoundsChangeListener;
 
     private Runnable mWrapCropBoundsRunnable, mZoomImageToPositionRunnable = null;
 
@@ -52,15 +52,15 @@ public class CropImageView extends TransformImageView {
     private int mMaxResultImageSizeX = 0, mMaxResultImageSizeY = 0;
     private long mImageToWrapCropBoundsAnimDuration = DEFAULT_IMAGE_TO_CROP_BOUNDS_ANIM_DURATION;
 
-    public CropImageView(Context context) {
+    public TailorImageView(Context context) {
         this(context, null);
     }
 
-    public CropImageView(Context context, AttributeSet attrs) {
+    public TailorImageView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public CropImageView(Context context, AttributeSet attrs, int defStyle) {
+    public TailorImageView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }
 
@@ -77,12 +77,12 @@ public class CropImageView extends TransformImageView {
                 mCropRect, RectUtils.trapToRect(mCurrentImageCorners),
                 getCurrentScale(), getCurrentAngle());
 
-        final CropParameters cropParameters = new CropParameters(
+        final TailorParameters tailorParameters = new TailorParameters(
                 mMaxResultImageSizeX, mMaxResultImageSizeY,
                 compressFormat, compressQuality,
                 getImageInputPath(), getImageOutputPath(), getExifInfo());
 
-        new BitmapCropTask(getContext(), getViewBitmap(), imageState, cropParameters, cropCallback).execute();
+        new BitmapCropTask(getContext(), getViewBitmap(), imageState, tailorParameters, cropCallback).execute();
     }
 
     /**
@@ -146,11 +146,11 @@ public class CropImageView extends TransformImageView {
     }
 
     @Nullable
-    public CropBoundsChangeListener getCropBoundsChangeListener() {
+    public TailorBoundsChangeListener getCropBoundsChangeListener() {
         return mCropBoundsChangeListener;
     }
 
-    public void setCropBoundsChangeListener(@Nullable CropBoundsChangeListener cropBoundsChangeListener) {
+    public void setCropBoundsChangeListener(@Nullable TailorBoundsChangeListener cropBoundsChangeListener) {
         mCropBoundsChangeListener = cropBoundsChangeListener;
     }
 
@@ -309,7 +309,7 @@ public class CropImageView extends TransformImageView {
 
             if (animate) {
                 post(mWrapCropBoundsRunnable = new WrapCropBoundsRunnable(
-                        CropImageView.this, mImageToWrapCropBoundsAnimDuration, currentX, currentY, deltaX, deltaY,
+                        TailorImageView.this, mImageToWrapCropBoundsAnimDuration, currentX, currentY, deltaX, deltaY,
                         currentScale, deltaScale, willImageWrapCropBoundsAfterTranslate));
             } else {
                 postTranslate(deltaX, deltaY);
@@ -442,7 +442,7 @@ public class CropImageView extends TransformImageView {
         final float oldScale = getCurrentScale();
         final float deltaScale = scale - oldScale;
 
-        post(mZoomImageToPositionRunnable = new ZoomImageToPosition(CropImageView.this,
+        post(mZoomImageToPositionRunnable = new ZoomImageToPosition(TailorImageView.this,
                 durationMs, oldScale, deltaScale, centerX, centerY));
     }
 
@@ -499,8 +499,8 @@ public class CropImageView extends TransformImageView {
      */
     @SuppressWarnings("deprecation")
     protected void processStyledAttributes(@NonNull TypedArray a) {
-        float targetAspectRatioX = Math.abs(a.getFloat(R.styleable.ucrop_UCropView_ucrop_aspect_ratio_x, DEFAULT_ASPECT_RATIO));
-        float targetAspectRatioY = Math.abs(a.getFloat(R.styleable.ucrop_UCropView_ucrop_aspect_ratio_y, DEFAULT_ASPECT_RATIO));
+        float targetAspectRatioX = Math.abs(a.getFloat(R.styleable.tailor_TailorView_tailor_aspect_ratio_x, DEFAULT_ASPECT_RATIO));
+        float targetAspectRatioY = Math.abs(a.getFloat(R.styleable.tailor_TailorView_tailor_aspect_ratio_y, DEFAULT_ASPECT_RATIO));
 
         if (targetAspectRatioX == SOURCE_IMAGE_ASPECT_RATIO || targetAspectRatioY == SOURCE_IMAGE_ASPECT_RATIO) {
             mTargetAspectRatio = SOURCE_IMAGE_ASPECT_RATIO;
@@ -517,7 +517,7 @@ public class CropImageView extends TransformImageView {
      */
     private static class WrapCropBoundsRunnable implements Runnable {
 
-        private final WeakReference<CropImageView> mCropImageView;
+        private final WeakReference<TailorImageView> mCropImageView;
 
         private final long mDurationMs, mStartTime;
         private final float mOldX, mOldY;
@@ -526,14 +526,14 @@ public class CropImageView extends TransformImageView {
         private final float mDeltaScale;
         private final boolean mWillBeImageInBoundsAfterTranslate;
 
-        public WrapCropBoundsRunnable(CropImageView cropImageView,
+        public WrapCropBoundsRunnable(TailorImageView tailorImageView,
                                       long durationMs,
                                       float oldX, float oldY,
                                       float centerDiffX, float centerDiffY,
                                       float oldScale, float deltaScale,
                                       boolean willBeImageInBoundsAfterTranslate) {
 
-            mCropImageView = new WeakReference<>(cropImageView);
+            mCropImageView = new WeakReference<>(tailorImageView);
 
             mDurationMs = durationMs;
             mStartTime = System.currentTimeMillis();
@@ -548,8 +548,8 @@ public class CropImageView extends TransformImageView {
 
         @Override
         public void run() {
-            CropImageView cropImageView = mCropImageView.get();
-            if (cropImageView == null) {
+            TailorImageView tailorImageView = mCropImageView.get();
+            if (tailorImageView == null) {
                 return;
             }
 
@@ -561,12 +561,12 @@ public class CropImageView extends TransformImageView {
             float newScale = CubicEasing.easeInOut(currentMs, 0, mDeltaScale, mDurationMs);
 
             if (currentMs < mDurationMs) {
-                cropImageView.postTranslate(newX - (cropImageView.mCurrentImageCenter[0] - mOldX), newY - (cropImageView.mCurrentImageCenter[1] - mOldY));
+                tailorImageView.postTranslate(newX - (tailorImageView.mCurrentImageCenter[0] - mOldX), newY - (tailorImageView.mCurrentImageCenter[1] - mOldY));
                 if (!mWillBeImageInBoundsAfterTranslate) {
-                    cropImageView.zoomInImage(mOldScale + newScale, cropImageView.mCropRect.centerX(), cropImageView.mCropRect.centerY());
+                    tailorImageView.zoomInImage(mOldScale + newScale, tailorImageView.mCropRect.centerX(), tailorImageView.mCropRect.centerY());
                 }
-                if (!cropImageView.isImageWrapCropBounds()) {
-                    cropImageView.post(this);
+                if (!tailorImageView.isImageWrapCropBounds()) {
+                    tailorImageView.post(this);
                 }
             }
         }
@@ -580,7 +580,7 @@ public class CropImageView extends TransformImageView {
      */
     private static class ZoomImageToPosition implements Runnable {
 
-        private final WeakReference<CropImageView> mCropImageView;
+        private final WeakReference<TailorImageView> mCropImageView;
 
         private final long mDurationMs, mStartTime;
         private final float mOldScale;
@@ -588,12 +588,12 @@ public class CropImageView extends TransformImageView {
         private final float mDestX;
         private final float mDestY;
 
-        public ZoomImageToPosition(CropImageView cropImageView,
+        public ZoomImageToPosition(TailorImageView tailorImageView,
                                    long durationMs,
                                    float oldScale, float deltaScale,
                                    float destX, float destY) {
 
-            mCropImageView = new WeakReference<>(cropImageView);
+            mCropImageView = new WeakReference<>(tailorImageView);
 
             mStartTime = System.currentTimeMillis();
             mDurationMs = durationMs;
@@ -605,8 +605,8 @@ public class CropImageView extends TransformImageView {
 
         @Override
         public void run() {
-            CropImageView cropImageView = mCropImageView.get();
-            if (cropImageView == null) {
+            TailorImageView tailorImageView = mCropImageView.get();
+            if (tailorImageView == null) {
                 return;
             }
 
@@ -615,10 +615,10 @@ public class CropImageView extends TransformImageView {
             float newScale = CubicEasing.easeInOut(currentMs, 0, mDeltaScale, mDurationMs);
 
             if (currentMs < mDurationMs) {
-                cropImageView.zoomInImage(mOldScale + newScale, mDestX, mDestY);
-                cropImageView.post(this);
+                tailorImageView.zoomInImage(mOldScale + newScale, mDestX, mDestY);
+                tailorImageView.post(this);
             } else {
-                cropImageView.setImageToWrapCropBounds();
+                tailorImageView.setImageToWrapCropBounds();
             }
         }
 

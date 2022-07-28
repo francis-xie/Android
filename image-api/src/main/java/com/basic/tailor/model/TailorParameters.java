@@ -5,7 +5,7 @@ import android.graphics.Bitmap;
 /**
  * Created by Oleksii Shliama [https://github.com/shliama] on 6/21/16.
  */
-public class CropParameters {
+public class TailorParameters {
 
     private int mMaxResultImageSizeX, mMaxResultImageSizeY;
 
@@ -15,9 +15,9 @@ public class CropParameters {
     private ExifInfo mExifInfo;
 
 
-    public CropParameters(int maxResultImageSizeX, int maxResultImageSizeY,
-                          Bitmap.CompressFormat compressFormat, int compressQuality,
-                          String imageInputPath, String imageOutputPath, ExifInfo exifInfo) {
+    public TailorParameters(int maxResultImageSizeX, int maxResultImageSizeY,
+                            Bitmap.CompressFormat compressFormat, int compressQuality,
+                            String imageInputPath, String imageOutputPath, ExifInfo exifInfo) {
         mMaxResultImageSizeX = maxResultImageSizeX;
         mMaxResultImageSizeY = maxResultImageSizeY;
         mCompressFormat = compressFormat;

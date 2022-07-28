@@ -11,7 +11,7 @@ import com.basic.tailor.util.RotationGestureDetector;
 /**
  * Created by Oleksii Shliama (https://github.com/shliama).
  */
-public class GestureCropImageView extends CropImageView {
+public class GestureTailorImageView extends TailorImageView {
 
     private static final int DOUBLE_TAP_ZOOM_DURATION = 200;
 
@@ -24,15 +24,15 @@ public class GestureCropImageView extends CropImageView {
     private boolean mIsRotateEnabled = true, mIsScaleEnabled = true;
     private int mDoubleTapScaleSteps = 5;
 
-    public GestureCropImageView(Context context) {
+    public GestureTailorImageView(Context context) {
         super(context);
     }
 
-    public GestureCropImageView(Context context, AttributeSet attrs) {
+    public GestureTailorImageView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public GestureCropImageView(Context context, AttributeSet attrs, int defStyle) {
+    public GestureTailorImageView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }
 

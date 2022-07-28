@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="3dp"
-        app:srcCompat="@drawable/ucrop_oval_true" />
+        app:srcCompat="@drawable/tailor_oval_true" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_photo"
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_marginTop="4dp"
-        app:srcCompat="@drawable/ucrop_ic_delete_photo"
+        app:srcCompat="@drawable/tailor_ic_delete_photo"
         android:visibility="gone" />
 
 </RelativeLayout>

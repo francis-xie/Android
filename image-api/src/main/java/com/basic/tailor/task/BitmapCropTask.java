@@ -12,7 +12,7 @@ import androidx.annotation.Nullable;
 import android.util.Log;
 
 import com.basic.tailor.callback.BitmapCropCallback;
-import com.basic.tailor.model.CropParameters;
+import com.basic.tailor.model.TailorParameters;
 import com.basic.tailor.model.ExifInfo;
 import com.basic.tailor.model.ImageState;
 import com.basic.tailor.util.BitmapLoadUtils;
@@ -55,7 +55,7 @@ public class BitmapCropTask extends AsyncTask<Void, Void, Throwable> {
     private int mCroppedImageWidth, mCroppedImageHeight;
     private int cropOffsetX, cropOffsetY;
 
-    public BitmapCropTask(@NonNull Context context, @Nullable Bitmap viewBitmap, @NonNull ImageState imageState, @NonNull CropParameters cropParameters,
+    public BitmapCropTask(@NonNull Context context, @Nullable Bitmap viewBitmap, @NonNull ImageState imageState, @NonNull TailorParameters tailorParameters,
                           @Nullable BitmapCropCallback cropCallback) {
 
         mContext = new WeakReference<>(context);
@@ -66,15 +66,15 @@ public class BitmapCropTask extends AsyncTask<Void, Void, Throwable> {
 
         mCurrentScale = imageState.getCurrentScale();
         mCurrentAngle = imageState.getCurrentAngle();
-        mMaxResultImageSizeX = cropParameters.getMaxResultImageSizeX();
-        mMaxResultImageSizeY = cropParameters.getMaxResultImageSizeY();
+        mMaxResultImageSizeX = tailorParameters.getMaxResultImageSizeX();
+        mMaxResultImageSizeY = tailorParameters.getMaxResultImageSizeY();
 
-        mCompressFormat = cropParameters.getCompressFormat();
-        mCompressQuality = cropParameters.getCompressQuality();
+        mCompressFormat = tailorParameters.getCompressFormat();
+        mCompressQuality = tailorParameters.getCompressQuality();
 
-        mImageInputPath = cropParameters.getImageInputPath();
-        mImageOutputPath = cropParameters.getImageOutputPath();
-        mExifInfo = cropParameters.getExifInfo();
+        mImageInputPath = tailorParameters.getImageInputPath();
+        mImageOutputPath = tailorParameters.getImageOutputPath();
+        mExifInfo = tailorParameters.getExifInfo();
 
         mCropCallback = cropCallback;
     }

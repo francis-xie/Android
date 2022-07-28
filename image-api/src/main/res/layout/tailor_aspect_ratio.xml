@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout style="@style/ucrop_WrapperIconState">
+<FrameLayout style="@style/tailor_WrapperIconState">
 
     <com.basic.tailor.view.widget.AspectRatioTextView
-        style="@style/ucrop_TextViewCropAspectRatio"/>
+        style="@style/tailor_TextViewCropAspectRatio"/>
 
 </FrameLayout>

@@ -29,8 +29,8 @@ import com.basic.image.tools.ScreenUtils;
 import com.basic.image.tools.ToastManage;
 import com.basic.image.tools.VoiceUtils;
 import com.basic.image.widget.PreviewViewPager;
-import com.basic.tailor.UCrop;
-import com.basic.tailor.UCropMulti;
+import com.basic.tailor.Tailor;
+import com.basic.tailor.TailorMulti;
 import com.basic.tailor.model.CutInfo;
 
 import java.io.Serializable;
@@ -447,21 +447,21 @@ public class PicturePreviewActivity extends PictureBaseActivity implements
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode == RESULT_OK) {
             switch (requestCode) {
-                case UCropMulti.REQUEST_MULTI_CROP:
-                    List<CutInfo> list = UCropMulti.getOutput(data);
-                    setResult(RESULT_OK, new Intent().putExtra(UCropMulti.EXTRA_OUTPUT_URI_LIST,
+                case TailorMulti.REQUEST_MULTI_CROP:
+                    List<CutInfo> list = TailorMulti.getOutput(data);
+                    setResult(RESULT_OK, new Intent().putExtra(TailorMulti.EXTRA_OUTPUT_URI_LIST,
                             (Serializable) list));
                     finish();
                     break;
-                case UCrop.REQUEST_CROP:
+                case Tailor.REQUEST_CROP:
                     if (data != null) {
                         setResult(RESULT_OK, data);
                     }
                     finish();
                     break;
             }
-        } else if (resultCode == UCrop.RESULT_ERROR) {
-            Throwable throwable = (Throwable) data.getSerializableExtra(UCrop.EXTRA_ERROR);
+        } else if (resultCode == Tailor.RESULT_ERROR) {
+            Throwable throwable = (Throwable) data.getSerializableExtra(Tailor.EXTRA_ERROR);
             ToastManage.s(mContext,throwable.getMessage());
         }
     }

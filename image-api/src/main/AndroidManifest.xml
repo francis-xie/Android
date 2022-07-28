@@ -3,7 +3,7 @@
     package="com.basic.tailor">
 
     <application>
-        <activity android:name=".UCropActivity" />
+        <activity android:name=".TailorActivity" />
         <activity android:name=".PictureMultiCuttingActivity" />
     </application>
 

@@ -44,7 +44,7 @@ public class PicturePhotoGalleryAdapter extends RecyclerView.Adapter<PicturePhot
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int position) {
-        View view = mInflater.inflate(R.layout.ucrop_picture_gf_adapter_edit_list,
+        View view = mInflater.inflate(R.layout.tailor_picture_gf_adapter_edit_list,
                 parent, false);
         return new ViewHolder(view);
     }
@@ -58,13 +58,13 @@ public class PicturePhotoGalleryAdapter extends RecyclerView.Adapter<PicturePhot
         }
         if (photoInfo.isCut()) {
             holder.iv_dot.setVisibility(View.VISIBLE);
-            holder.iv_dot.setImageResource(R.drawable.ucrop_oval_true);
+            holder.iv_dot.setImageResource(R.drawable.tailor_oval_true);
         } else {
             holder.iv_dot.setVisibility(View.GONE);
         }
 
         RequestOptions options = new RequestOptions()
-                .placeholder(R.color.ucrop_color_grey)
+                .placeholder(R.color.tailor_color_grey)
                 .centerCrop()
                 .diskCacheStrategy(DiskCacheStrategy.ALL);
 
