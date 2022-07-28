@@ -53,7 +53,7 @@ import static javax.lang.model.element.Modifier.PUBLIC;
 /**
  * Process the annotation of {@link AutoWired}
  *
- * <p>自动生成依赖注入的辅助类 [ClassName]$$XRouter$$AutoWired </p>
+ * <p>自动生成依赖注入的辅助类 [ClassName]$$Router$$AutoWired </p>
  *
 
  * @since 2018/5/20 上午12:02
@@ -81,7 +81,7 @@ public class AutoWiredProcessor extends AbstractProcessor {
      */
     private Elements elements;
     private Map<TypeElement, List<Element>> parentAndChild = new HashMap<>();   // Contain field need autowired and his super class.
-    private static final ClassName XRouterClassName = ClassName.get("com.basic.router.launcher", "Router");
+    private static final ClassName RouterClassName = ClassName.get("com.basic.router.launcher", "Router");
     private static final ClassName XRLogClassName = ClassName.get("com.basic.router.logs", "XRLog");
 
     @Override
@@ -181,7 +181,7 @@ public class AutoWiredProcessor extends AbstractProcessor {
                         .addAnnotation(Override.class)
                         .addModifiers(PUBLIC)
                         .addParameter(objectParamSpec)
-                        .addStatement("serializationService = $T.getInstance().navigation($T.class)", XRouterClassName, ClassName.get(type_SerializationService))
+                        .addStatement("serializationService = $T.getInstance().navigation($T.class)", RouterClassName, ClassName.get(type_SerializationService))
                         .addStatement("$T substitute = ($T)target", ClassName.get(parent), ClassName.get(parent));
 
                 // 生成依赖注入方法的主体, 开始实现依赖注入的方法.
@@ -194,7 +194,7 @@ public class AutoWiredProcessor extends AbstractProcessor {
                             // Getter
                             injectMethodBuilder.addStatement(
                                     "substitute." + fieldName + " = $T.getInstance().navigation($T.class)",
-                                    XRouterClassName,
+                                    RouterClassName,
                                     ClassName.get(element.asType())
                             );
                         } else {     // 设置类服务provider的路径，使用路径寻找
@@ -202,7 +202,7 @@ public class AutoWiredProcessor extends AbstractProcessor {
                             injectMethodBuilder.addStatement(
                                     "substitute." + fieldName + " = ($T)$T.getInstance().build($S).navigation();",
                                     ClassName.get(element.asType()),
-                                    XRouterClassName,
+                                    RouterClassName,
                                     fieldConfig.name()
                             );
                         }
@@ -264,7 +264,7 @@ public class AutoWiredProcessor extends AbstractProcessor {
                 //添加依赖注入的方法
                 injectHelper.addMethod(injectMethodBuilder.build());
 
-                // 生成自动依赖注入的类文件[ClassName]$$XRouter$$AutoWired
+                // 生成自动依赖注入的类文件[ClassName]$$Router$$AutoWired
                 JavaFile.builder(packageName, injectHelper.build()).build().writeTo(filer);
 
                 logger.info(">>> " + parent.getSimpleName() + " has been processed, " + fileName + " has been generated. <<<");

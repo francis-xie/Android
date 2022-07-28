@@ -8,7 +8,7 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 
 import com.basic.router.launcher.Router;
-import com.basic.router.logs.XRLog;
+import com.basic.router.logs.RLog;
 import com.basic.router.thread.DefaultPoolExecutor;
 
 import java.io.File;
@@ -86,7 +86,7 @@ public final class ClassUtils {
                             }
                         }
                     } catch (Throwable ignore) {
-                        XRLog.e("Scan map file in dex files made error.", ignore);
+                        RLog.e("Scan map file in dex files made error.", ignore);
                     } finally {
                         if (null != dexfile) {
                             try {
@@ -100,7 +100,7 @@ public final class ClassUtils {
             });
         }
         parserCtl.await();
-        XRLog.d("Filter " + classNames.size() + " classes by packageName <" + packageName + ">");
+        RLog.d("Filter " + classNames.size() + " classes by packageName <" + packageName + ">");
         return classNames;
     }
 
@@ -157,7 +157,7 @@ public final class ClassUtils {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP && null != applicationInfo.splitSourceDirs) {
             // add the split apk, normally for InstantRun, and newest version.
             instantRunSourcePaths.addAll(Arrays.asList(applicationInfo.splitSourceDirs));
-            XRLog.d("Found InstantRun support");
+            RLog.d("Found InstantRun support");
         } else {
             try {
                 // This man is reflection from Google instant run sdk, he will tell me where the dex files go.
@@ -173,11 +173,11 @@ public final class ClassUtils {
                             instantRunSourcePaths.add(file.getAbsolutePath());
                         }
                     }
-                    XRLog.d("Found InstantRun support");
+                    RLog.d("Found InstantRun support");
                 }
 
             } catch (Exception e) {
-                XRLog.e("InstantRun support error, " + e.getMessage(), e);
+                RLog.e("InstantRun support error, " + e.getMessage(), e);
             }
         }
 
@@ -220,7 +220,7 @@ public final class ClassUtils {
 
         }
 
-        XRLog.i("VM with name " + vmName + (isMultidexCapable ? " has multidex support" : " does not have multidex support"));
+        RLog.i("VM with name " + vmName + (isMultidexCapable ? " has multidex support" : " does not have multidex support"));
         return isMultidexCapable;
     }
 

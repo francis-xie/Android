@@ -1,7 +1,7 @@
 
 package com.basic.router.thread;
 
-import com.basic.router.logs.XRLog;
+import com.basic.router.logs.RLog;
 import com.basic.router.utils.TextUtils;
 
 import java.util.concurrent.ArrayBlockingQueue;
@@ -55,7 +55,7 @@ public class DefaultPoolExecutor extends ThreadPoolExecutor {
         super(corePoolSize, maximumPoolSize, keepAliveTime, unit, workQueue, threadFactory, new RejectedExecutionHandler() {
             @Override
             public void rejectedExecution(Runnable r, ThreadPoolExecutor executor) {
-                XRLog.e("Task rejected, too many task!");
+                RLog.e("Task rejected, too many task!");
             }
         });
     }
@@ -81,7 +81,7 @@ public class DefaultPoolExecutor extends ThreadPoolExecutor {
             }
         }
         if (t != null) {
-            XRLog.w("Running task appeared exception! Thread [" + Thread.currentThread().getName() + "], because [" + t.getMessage() + "]\n" + TextUtils.formatStackTrace(t.getStackTrace()));
+            RLog.w("Running task appeared exception! Thread [" + Thread.currentThread().getName() + "], because [" + t.getMessage() + "]\n" + TextUtils.formatStackTrace(t.getStackTrace()));
         }
     }
 }

@@ -12,12 +12,12 @@ import com.basic.router.exception.InitException;
 import com.basic.router.facade.Postcard;
 import com.basic.router.facade.callback.NavigationCallback;
 import com.basic.router.logs.ILogger;
-import com.basic.router.logs.XRLog;
+import com.basic.router.logs.RLog;
 
 import java.util.concurrent.ThreadPoolExecutor;
 
 /**
- * XRouter对外统一的API
+ * Router对外统一的API
  *
 
  * @since 2018/5/17 上午1:10
@@ -34,25 +34,25 @@ public final class Router {
     }
 
     /**
-     * 初始化XRouter，必须先初始化
+     * 初始化Router，必须先初始化
      *
      * @param application
      */
     public static void init(Application application) {
         if (!hasInit) {
-            XRLog.i("Router init start.");
-            hasInit = _XRouter.init(application);
+            RLog.i("Router init start.");
+            hasInit = _Router.init(application);
 
             if (hasInit) {
-                _XRouter.afterInit();
+                _Router.afterInit();
             }
 
-            XRLog.i("Router init over.");
+            RLog.i("Router init over.");
         }
     }
 
     /**
-     * 获取XRouter的实例
+     * 获取Router的实例
      */
     public static Router getInstance() {
         if (!hasInit) {
@@ -73,7 +73,7 @@ public final class Router {
      * 打开调试模式
      */
     public static synchronized void openDebug() {
-        _XRouter.openDebug();
+        _Router.openDebug();
     }
 
     /**
@@ -82,14 +82,14 @@ public final class Router {
      * @return
      */
     public static boolean debuggable() {
-        return _XRouter.debuggable();
+        return _Router.debuggable();
     }
 
     /**
      * 打开日志
      */
     public static synchronized void openLog() {
-        _XRouter.openLog();
+        _Router.openLog();
     }
 
     /**
@@ -98,23 +98,23 @@ public final class Router {
      * @param tpe
      */
     public static synchronized void setExecutor(ThreadPoolExecutor tpe) {
-        _XRouter.setExecutor(tpe);
+        _Router.setExecutor(tpe);
     }
 
     /**
      * 销毁路由
      */
     public synchronized void destroy() {
-        _XRouter.destroy();
+        _Router.destroy();
         hasInit = false;
     }
 
     public static synchronized void monitorMode() {
-        _XRouter.monitorMode();
+        _Router.monitorMode();
     }
 
     public static boolean isMonitorMode() {
-        return _XRouter.isMonitorMode();
+        return _Router.isMonitorMode();
     }
 
     /**
@@ -123,14 +123,14 @@ public final class Router {
      * @param userLogger
      */
     public static void setLogger(ILogger userLogger) {
-        _XRouter.setLogger(userLogger);
+        _Router.setLogger(userLogger);
     }
 
     /**
      * 注入参数和服务
      */
     public void inject(@NonNull Object target) {
-        _XRouter.inject(target);
+        _Router.inject(target);
     }
 
     /**
@@ -139,7 +139,7 @@ public final class Router {
      * @param path Where you go.
      */
     public Postcard build(@NonNull String path) {
-        return _XRouter.getInstance().build(path);
+        return _Router.getInstance().build(path);
     }
 
     /**
@@ -150,7 +150,7 @@ public final class Router {
      */
     @Deprecated
     public Postcard build(String path, String group) {
-        return _XRouter.getInstance().build(path, group);
+        return _Router.getInstance().build(path, group);
     }
 
     /**
@@ -159,7 +159,7 @@ public final class Router {
      * @param url the path
      */
     public Postcard build(@NonNull Uri url) {
-        return _XRouter.getInstance().build(url);
+        return _Router.getInstance().build(url);
     }
 
     /**
@@ -170,7 +170,7 @@ public final class Router {
      * @return instance of service
      */
     public <T> T navigation(@NonNull Class<? extends T> service) {
-        return _XRouter.getInstance().navigation(service);
+        return _Router.getInstance().navigation(service);
     }
 
     /**
@@ -182,7 +182,7 @@ public final class Router {
      * @param callback    路由导航回调
      */
     public Object navigation(@NonNull Context context, @NonNull Postcard postcard, int requestCode, NavigationCallback callback) {
-        return _XRouter.getInstance().navigation(context, postcard, requestCode, callback);
+        return _Router.getInstance().navigation(context, postcard, requestCode, callback);
     }
 
     /**
@@ -194,7 +194,7 @@ public final class Router {
      * @param callback    路由导航回调
      */
     public Object navigation(@NonNull Fragment fragment, @NonNull Postcard postcard, int requestCode, NavigationCallback callback) {
-        return _XRouter.getInstance().navigation(fragment, postcard, requestCode, callback);
+        return _Router.getInstance().navigation(fragment, postcard, requestCode, callback);
     }
 
     /**
@@ -206,6 +206,6 @@ public final class Router {
      * @param callback    路由导航回调
      */
     public Object navigation(@NonNull androidx.fragment.app.Fragment fragment, @NonNull Postcard postcard, int requestCode, NavigationCallback callback) {
-        return _XRouter.getInstance().navigation(fragment, postcard, requestCode, callback);
+        return _Router.getInstance().navigation(fragment, postcard, requestCode, callback);
     }
 }

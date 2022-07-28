@@ -2,7 +2,7 @@
 package com.basic.router.utils;
 
 /**
- * XRouter的常量
+ * Router的常量
  *
  
  * @since 2018/5/17 下午11:44
@@ -25,8 +25,8 @@ public final class Consts {
     /**
      * 路由缓存
      */
-    public static final String XROUTER_SP_CACHE_KEY = "SP_XROUTER_CACHE";
-    public static final String XROUTER_SP_KEY_MAP = "SP_XROUTER_MAP";
+    public static final String ROUTER_SP_CACHE_KEY = "SP_ROUTER_CACHE";
+    public static final String ROUTER_SP_KEY_MAP = "SP_ROUTER_MAP";
     public static final String LAST_VERSION_NAME = "LAST_VERSION_NAME";
     public static final String LAST_VERSION_CODE = "LAST_VERSION_CODE";
 }

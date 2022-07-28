@@ -6,10 +6,10 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 
-import com.basic.router.logs.XRLog;
+import com.basic.router.logs.RLog;
 import static com.basic.router.utils.Consts.LAST_VERSION_CODE;
 import static com.basic.router.utils.Consts.LAST_VERSION_NAME;
-import static com.basic.router.utils.Consts.XROUTER_SP_CACHE_KEY;
+import static com.basic.router.utils.Consts.ROUTER_SP_CACHE_KEY;
 
 /**
  * Android package工具类
@@ -35,7 +35,7 @@ public final class PackageUtils {
             String versionName = packageInfo.versionName;
             int versionCode = packageInfo.versionCode;
 
-            SharedPreferences sp = context.getSharedPreferences(XROUTER_SP_CACHE_KEY, Context.MODE_PRIVATE);
+            SharedPreferences sp = context.getSharedPreferences(ROUTER_SP_CACHE_KEY, Context.MODE_PRIVATE);
             if (!versionName.equals(sp.getString(LAST_VERSION_NAME, null)) || versionCode != sp.getInt(LAST_VERSION_CODE, -1)) {
                 // new version
                 NEW_VERSION_NAME = versionName;
@@ -55,7 +55,7 @@ public final class PackageUtils {
      */
     public static void updateVersion(Context context) {
         if (!TextUtils.isEmpty(NEW_VERSION_NAME) && NEW_VERSION_CODE != 0) {
-            SharedPreferences sp = context.getSharedPreferences(XROUTER_SP_CACHE_KEY, Context.MODE_PRIVATE);
+            SharedPreferences sp = context.getSharedPreferences(ROUTER_SP_CACHE_KEY, Context.MODE_PRIVATE);
             sp.edit().putString(LAST_VERSION_NAME, NEW_VERSION_NAME).putInt(LAST_VERSION_CODE, NEW_VERSION_CODE).apply();
         }
     }
@@ -65,7 +65,7 @@ public final class PackageUtils {
         try {
             packageInfo = context.getPackageManager().getPackageInfo(context.getPackageName(), PackageManager.GET_CONFIGURATIONS);
         } catch (Exception ex) {
-            XRLog.e("Get package info error.", ex);
+            RLog.e("Get package info error.", ex);
         }
         return packageInfo;
     }

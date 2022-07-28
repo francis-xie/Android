@@ -7,17 +7,17 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 
 /**
- * XRouter的日志记录
+ * Router的日志记录
  *
 
  * @since 2018/5/17 上午1:13
  */
-public final class XRLog {
+public final class RLog {
 
     /**
      * Don't let anyone instantiate this class.
      */
-    private XRLog() {
+    private RLog() {
         throw new UnsupportedOperationException("Do not need instantiate!");
     }
 

@@ -33,7 +33,7 @@ import com.basic.router.facade.service.InterceptorService;
 import com.basic.router.facade.service.PathReplaceService;
 import com.basic.router.facade.template.IProvider;
 import com.basic.router.logs.ILogger;
-import com.basic.router.logs.XRLog;
+import com.basic.router.logs.RLog;
 import com.basic.router.thread.DefaultPoolExecutor;
 import com.basic.router.utils.Consts;
 import com.basic.router.utils.TextUtils;
@@ -46,10 +46,10 @@ import java.util.concurrent.ThreadPoolExecutor;
 
  * @since 2018/5/18 上午12:32
  */
-final class _XRouter {
+final class _Router {
     private volatile static boolean monitorMode = false;
     private volatile static boolean debuggable = false;
-    private volatile static _XRouter sInstance = null;
+    private volatile static _Router sInstance = null;
     private volatile static boolean hasInit = false;
     private volatile static ThreadPoolExecutor executor = DefaultPoolExecutor.getInstance();
     private static Handler mMainHandler = new Handler(Looper.getMainLooper());
@@ -57,13 +57,13 @@ final class _XRouter {
 
     private static InterceptorService interceptorService;
 
-    private _XRouter() {
+    private _Router() {
     }
 
     protected static synchronized boolean init(Application application) {
         mContext = application;
         LogisticsCenter.init(mContext, executor);
-        XRLog.i("Router init success!");
+        RLog.i("Router init success!");
         hasInit = true;
 
         // It's not a good idea.
@@ -80,20 +80,20 @@ final class _XRouter {
         if (debuggable()) {
             hasInit = false;
             LogisticsCenter.suspend();
-            XRLog.i("Router destroy success!");
+            RLog.i("Router destroy success!");
         } else {
-            XRLog.e("Destroy can be used in debug mode only!");
+            RLog.e("Destroy can be used in debug mode only!");
         }
     }
 
-    protected static _XRouter getInstance() {
+    protected static _Router getInstance() {
         if (!hasInit) {
-            throw new InitException("XRouterCore::Init::Invoke init(context) first!");
+            throw new InitException("RouterCore::Init::Invoke init(context) first!");
         } else {
             if (sInstance == null) {
-                synchronized (_XRouter.class) {
+                synchronized (_Router.class) {
                     if (sInstance == null) {
-                        sInstance = new _XRouter();
+                        sInstance = new _Router();
                     }
                 }
             }
@@ -103,12 +103,12 @@ final class _XRouter {
 
     static synchronized void openDebug() {
         debuggable = true;
-        XRLog.i("Router openDebug");
+        RLog.i("Router openDebug");
     }
 
     static synchronized void openLog() {
-        XRLog.debug(true);
-        XRLog.i("Router openLog");
+        RLog.debug(true);
+        RLog.i("Router openLog");
     }
 
     static synchronized void setExecutor(ThreadPoolExecutor tpe) {
@@ -117,7 +117,7 @@ final class _XRouter {
 
     static synchronized void monitorMode() {
         monitorMode = true;
-        XRLog.i("Router monitorMode on");
+        RLog.i("Router monitorMode on");
     }
 
     static boolean isMonitorMode() {
@@ -129,7 +129,7 @@ final class _XRouter {
     }
 
     static void setLogger(ILogger logger) {
-        XRLog.setLogger(logger);
+        RLog.setLogger(logger);
     }
 
     static void inject(Object target) {
@@ -208,7 +208,7 @@ final class _XRouter {
                 return defaultGroup;
             }
         } catch (Exception e) {
-            XRLog.w("Failed to extract default group! " + e.getMessage());
+            RLog.w("Failed to extract default group! " + e.getMessage());
             return null;
         }
     }
@@ -235,13 +235,13 @@ final class _XRouter {
             LogisticsCenter.completion(postcard);
             return (T) postcard.getProvider();
         } catch (NoRouteFoundException ex) {
-            XRLog.w(ex.getMessage());
+            RLog.w(ex.getMessage());
 
             if (debuggable() && !service.getName().contains(ROUTE_ROOT_SEIVICE)) { // Show friendly tips for user.
                 String tips = "There's no service matched!\n" +
                         " service name = [" + service.getName() + "]";
                 Toast.makeText(mContext, tips, Toast.LENGTH_LONG).show();
-                XRLog.i(tips);
+                RLog.i(tips);
             }
             return null;
         }
@@ -259,7 +259,7 @@ final class _XRouter {
         try {
             LogisticsCenter.completion(postcard);
         } catch (NoRouteFoundException ex) {
-            XRLog.e(ex);
+            RLog.e(ex);
 
             handleNoRouteException(postcard, callback, context);
 
@@ -292,7 +292,7 @@ final class _XRouter {
                     if (callback != null) {
                         callback.onInterrupt(postcard);
                     }
-                    XRLog.i("Navigation failed, termination by interceptor : " + exception.getMessage());
+                    RLog.i("Navigation failed, termination by interceptor : " + exception.getMessage());
                 }
             });
         } else {
@@ -366,7 +366,7 @@ final class _XRouter {
         try {
             LogisticsCenter.completion(postcard);
         } catch (NoRouteFoundException ex) {
-            XRLog.e(ex);
+            RLog.e(ex);
 
             handleNoRouteException(postcard, callback, fragment.getActivity());
 
@@ -399,7 +399,7 @@ final class _XRouter {
                     if (callback != null) {
                         callback.onInterrupt(postcard);
                     }
-                    XRLog.i("Navigation failed, termination by interceptor : " + exception.getMessage());
+                    RLog.i("Navigation failed, termination by interceptor : " + exception.getMessage());
                 }
             });
         } else {
@@ -476,7 +476,7 @@ final class _XRouter {
         try {
             LogisticsCenter.completion(postcard);
         } catch (NoRouteFoundException ex) {
-            XRLog.e(ex);
+            RLog.e(ex);
 
             handleNoRouteException(postcard, callback, fragment.getActivity());
 
@@ -509,7 +509,7 @@ final class _XRouter {
                     if (callback != null) {
                         callback.onInterrupt(postcard);
                     }
-                    XRLog.i("Navigation failed, termination by interceptor : " + exception.getMessage());
+                    RLog.i("Navigation failed, termination by interceptor : " + exception.getMessage());
                 }
             });
         } else {
@@ -613,7 +613,7 @@ final class _XRouter {
             }
             return instance;
         } catch (Exception ex) {
-            XRLog.e("Fetch fragment instance error, " + TextUtils.formatStackTrace(ex.getStackTrace()));
+            RLog.e("Fetch fragment instance error, " + TextUtils.formatStackTrace(ex.getStackTrace()));
         }
         return null;
     }
@@ -631,7 +631,7 @@ final class _XRouter {
                     " Path = [" + postcard.getPath() + "]\n" +
                     " Group = [" + postcard.getGroup() + "]";
             Toast.makeText(mContext, tips, Toast.LENGTH_LONG).show();
-            XRLog.i(tips);
+            RLog.i(tips);
         }
 
         if (callback != null) {

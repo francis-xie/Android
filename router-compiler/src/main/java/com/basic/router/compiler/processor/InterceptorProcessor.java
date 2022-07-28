@@ -49,7 +49,7 @@ import static javax.lang.model.element.Modifier.PUBLIC;
 
 /**
  * Process the annotation of {@link Interceptor}
- * <p>自动生成IInterceptor注册接口 XRouter$$Interceptors$$[moduleName] </p>
+ * <p>自动生成IInterceptor注册接口 Router$$Interceptors$$[moduleName] </p>
  *
 
  * @since 2018/5/20 上午12:15
@@ -214,7 +214,7 @@ public class InterceptorProcessor extends AbstractProcessor {
                     .addModifiers(PUBLIC)
                     .addParameter(IInterceptorParamSpec);
 
-            // 填充构建XRouter$$Interceptors$$信息，生成对应代码
+            // 填充构建Router$$Interceptors$$信息，生成对应代码
             if (interceptors != null && interceptors.size() > 0) {
                 // Build method body
                 for (Map.Entry<Integer, Element> entry : interceptors.entrySet()) {
@@ -222,7 +222,7 @@ public class InterceptorProcessor extends AbstractProcessor {
                 }
             }
 
-            // 生成XRouter$$Interceptors$$[moduleName] 拦截器组注册接口类
+            // 生成Router$$Interceptors$$[moduleName] 拦截器组注册接口类
             JavaFile.builder(PACKAGE_OF_GENERATE_FILE,
                     TypeSpec.classBuilder(NAME_OF_INTERCEPTOR + moduleName)
                             .addModifiers(PUBLIC)

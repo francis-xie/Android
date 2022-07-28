@@ -16,7 +16,7 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.CLASS)
 public @interface Interceptor {
     /**
-     * @return 拦截器的优先级, XRouter将按优先级高低依次执行拦截.
+     * @return 拦截器的优先级, Router将按优先级高低依次执行拦截.
      */
     int priority();
 

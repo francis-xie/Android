@@ -9,7 +9,7 @@ import com.basic.router.facade.Postcard;
 import com.basic.router.facade.callback.InterceptorCallback;
 import com.basic.router.facade.service.InterceptorService;
 import com.basic.router.facade.template.IInterceptor;
-import com.basic.router.logs.XRLog;
+import com.basic.router.logs.RLog;
 import com.basic.router.thread.CancelableCountDownLatch;
 import com.basic.router.utils.MapUtils;
 
@@ -131,7 +131,7 @@ public class InterceptorServiceImpl implements InterceptorService {
 
                     interceptorHasInit = true;
 
-                    XRLog.i("Router interceptors init over.");
+                    RLog.i("Router interceptors init over.");
 
                     synchronized (interceptorInitLock) {
                         interceptorInitLock.notifyAll();

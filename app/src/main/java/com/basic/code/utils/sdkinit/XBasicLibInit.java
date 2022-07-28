@@ -80,7 +80,7 @@ public final class XBasicLibInit {
     }
 
     /**
-     * 初始化XRouter路由
+     * 初始化Router路由
      *
      * @param application
      */

@@ -3,7 +3,7 @@ package com.basic.router.thread;
 
 import androidx.annotation.NonNull;
 
-import com.basic.router.logs.XRLog;
+import com.basic.router.logs.RLog;
 
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -31,7 +31,7 @@ public class DefaultThreadFactory implements ThreadFactory {
     @Override
     public Thread newThread(@NonNull Runnable runnable) {
         String threadName = namePrefix + threadNumber.getAndIncrement();
-        XRLog.i("Thread production, name is [" + threadName + "]");
+        RLog.i("Thread production, name is [" + threadName + "]");
         Thread thread = new Thread(group, runnable, threadName, 0);
         if (thread.isDaemon()) {   //设为非后台线程
             thread.setDaemon(false);
@@ -44,7 +44,7 @@ public class DefaultThreadFactory implements ThreadFactory {
         thread.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
             @Override
             public void uncaughtException(@NonNull Thread thread, @NonNull Throwable ex) {
-                XRLog.e("Running task appeared exception! Thread [" + thread.getName() + "], because [" + ex.getMessage() + "]", ex);
+                RLog.e("Running task appeared exception! Thread [" + thread.getName() + "], because [" + ex.getMessage() + "]", ex);
             }
         });
         return thread;
