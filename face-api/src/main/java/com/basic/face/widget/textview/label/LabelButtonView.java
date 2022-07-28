@@ -8,9 +8,6 @@ import androidx.appcompat.widget.AppCompatButton;
 
 /**
  * 标签按钮
- *
- 
- * @since 2018/12/3 上午12:14
  */
 public class LabelButtonView extends AppCompatButton {
 

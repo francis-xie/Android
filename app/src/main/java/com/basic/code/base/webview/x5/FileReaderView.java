@@ -23,9 +23,6 @@ import static com.tencent.smtt.sdk.TbsReaderView.KEY_TEMP_PATH;
 
 /**
  * 腾讯X5文件阅读器  文件打开核心类
- *
-
- * @since 2019-07-21 22:50
  */
 public class FileReaderView extends FrameLayout implements TbsReaderView.ReaderCallback {
 

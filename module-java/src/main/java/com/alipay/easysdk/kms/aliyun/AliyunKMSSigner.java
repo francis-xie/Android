@@ -6,9 +6,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * KMS签名器
- *
- * @author aliyunkms
- * @version $Id: AliyunKMSSigner.java, v 0.1 2020年05月08日 9:10 PM aliyunkms Exp $
  */
 public class AliyunKMSSigner extends Signer {
     private AliyunKMSClient client;

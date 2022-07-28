@@ -19,9 +19,6 @@ import static com.basic.aop.consts.PermissionConsts.STORAGE;
 
 /**
  * 预加载X5
- *
-
- * @since 2019-07-31 9:29
  */
 public class PreLoadX5Service extends IntentService {
 

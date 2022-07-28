@@ -5,9 +5,6 @@ import androidx.annotation.NonNull;
 
 /**
  * 非空检验
- *
-
- * @since 2019/5/14 10:27
  */
 public class NotAllowEmptyValidator extends METValidator {
 

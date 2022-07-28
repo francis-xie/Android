@@ -7,9 +7,6 @@ import com.basic.face.R;
 
 /**
  * 倒计时Button帮助类
- *
-
- * @since 2018/11/22 上午12:38
  */
 public class CountDownButtonHelper {
 
@@ -106,8 +103,6 @@ public class CountDownButtonHelper {
 
     /**
      * 计时时监听接口
-     *
-     * @author xx
      */
     public interface OnCountDownListener {
         /**

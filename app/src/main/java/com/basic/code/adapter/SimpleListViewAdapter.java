@@ -11,10 +11,6 @@ import com.basic.code.R;
 
 import java.util.Collection;
 
-/**
-
- * @since 2021/11/15 7:02 PM
- */
 public class SimpleListViewAdapter extends BaseListAdapter<String, RecyclerViewHolder> {
 
     public SimpleListViewAdapter(Context context) {

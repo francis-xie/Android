@@ -10,9 +10,6 @@ import java.util.concurrent.FutureTask;
 
 /**
  * 具有优先级排序的Future
- *
-
- * @since 2021/10/9 11:16 AM
  */
 public class DefaultPriorityFuture<V> extends FutureTask<V> implements IPriorityFuture<V> {
 

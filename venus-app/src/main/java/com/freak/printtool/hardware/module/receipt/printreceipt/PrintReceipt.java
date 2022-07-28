@@ -16,11 +16,7 @@ import java.io.IOException;
 
 /**
  * 小票打印类
- *
- * @author Freak
- * @date 2019/8/13.
  */
-
 public class PrintReceipt {
     /**
      * 打印的数据

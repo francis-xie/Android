@@ -16,9 +16,6 @@ import com.basic.face.widget.picker.widget.listener.OnOptionsSelectListener;
 
 /**
  * 条件选择器构建者
- *
-
- * @since 2019/1/1 下午8:19
  */
 public class OptionsPickerBuilder {
 

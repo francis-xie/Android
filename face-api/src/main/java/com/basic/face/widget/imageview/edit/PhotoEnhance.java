@@ -10,9 +10,6 @@ import com.basic.face.utils.DrawableUtils;
 
 /**
  * 图片增强处理
- *
-
- * @since 2019-10-21 11:32
  */
 public class PhotoEnhance {
     /**

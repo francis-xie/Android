@@ -40,8 +40,6 @@ import static com.basic.code.fragment.expands.camera.PictureCropActivity.REQUEST
 /**
  * 简单的相机拍照界面
  *
-
- * @since 2019-09-29 13:58
  */
 public class CameraActivity extends AppCompatActivity {
     public static final int REQUEST_CODE_OPEN_CAMERA = 1245;

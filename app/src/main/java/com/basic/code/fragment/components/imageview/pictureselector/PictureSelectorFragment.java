@@ -23,10 +23,6 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2018/12/5 下午11:51
- */
 @Page(name = "PictureSelector\n图片选择")
 public class PictureSelectorFragment extends BaseFragment implements ImageSelectGridAdapter.OnAddPicClickListener {
 

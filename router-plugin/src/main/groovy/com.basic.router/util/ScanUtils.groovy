@@ -14,9 +14,6 @@ import java.util.jar.JarFile
  * 扫描 com/basic/router/ 所有的class文件
  * <p>寻找到自动生成的路由注册接口：routers、interceptors、providers</p>
  * <p>接口包括：IRouteRoot、IInterceptorGroup、IProviderGroup</p>
- *
-
- * @since 2018/5/21 下午9:44
  */
 class ScanUtils {
 

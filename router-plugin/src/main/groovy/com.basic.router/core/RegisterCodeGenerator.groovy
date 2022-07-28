@@ -13,9 +13,6 @@ import java.util.zip.ZipEntry
 
 /**
  * 向 LogisticsCenter.class 的 loadRouterMap 中 注入路由注册的代码
- *
-
- * @since 2018/5/21 下午10:19
  */
 class RegisterCodeGenerator {
     ScanSetting extension

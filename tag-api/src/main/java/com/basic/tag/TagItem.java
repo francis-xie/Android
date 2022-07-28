@@ -21,9 +21,6 @@ import com.basic.tag.badgeview.DragDismissDelegate;
 
 /**
  * TabBarItem类
- *
- * @author XUE
- * @since 2019/3/25 17:18
  */
 public class TagItem extends BadgeRelativeLayout {
     //颜色渐变时间

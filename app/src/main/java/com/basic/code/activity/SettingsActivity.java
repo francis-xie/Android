@@ -21,9 +21,6 @@ import com.basic.code.utils.XToastUtils;
 
 /**
  * 设置页面
- *
- 
- * @since 2019-05-11 22:45
  */
 public class SettingsActivity extends AppCompatPreferenceActivity {
 

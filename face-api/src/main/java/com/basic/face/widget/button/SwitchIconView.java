@@ -28,9 +28,6 @@ import com.basic.face.utils.ThemeUtils;
 
 /**
  * 可切换图标的按钮
- *
-
- * @since 2020-01-05 23:03
  */
 public class SwitchIconView extends AppCompatImageView {
 

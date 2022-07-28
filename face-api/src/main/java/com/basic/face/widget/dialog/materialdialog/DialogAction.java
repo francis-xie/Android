@@ -1,9 +1,6 @@
 
 package com.basic.face.widget.dialog.materialdialog;
 
-/**
- * @author Aidan Follestad (afollestad)
- */
 public enum DialogAction {
     /**
      * 积极的，确定

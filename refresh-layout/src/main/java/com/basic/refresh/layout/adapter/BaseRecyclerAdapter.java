@@ -16,9 +16,6 @@ import java.util.List;
 
 /**
  * 基础 RecyclerAdapter
- *
-
- * @since 2018/12/6 下午3:04
  */
 public abstract class BaseRecyclerAdapter<T, V extends RecyclerView.ViewHolder> extends RecyclerView.Adapter<V> implements ListAdapter {
 

@@ -16,9 +16,6 @@ import java.util.List;
 
 /**
  * 通用的 RecyclerView Adapter。
- *
-
- * @since 2019/1/3 下午4:54
  */
 public class CommonRecyclerViewAdapter extends RecyclerView.Adapter<CommonRecyclerViewAdapter.ViewHolder> {
 

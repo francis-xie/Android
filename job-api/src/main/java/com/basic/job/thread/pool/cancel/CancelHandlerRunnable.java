@@ -10,9 +10,6 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * 可以取消的供Handler使用的Runnable
- *
-
- * @since 3/21/22 1:34 AM
  */
 public class CancelHandlerRunnable implements Runnable, ICancelable {
 

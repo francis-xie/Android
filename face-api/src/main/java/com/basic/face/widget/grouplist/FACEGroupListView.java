@@ -78,9 +78,6 @@ import java.lang.annotation.RetentionPolicy;
  *                 })
  *                 .addTo(groupListView);
  * </pre>
- *
-
- * @since 2019/1/3 上午10:24
  */
 public class FACEGroupListView extends LinearLayout {
 

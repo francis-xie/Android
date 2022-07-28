@@ -5,9 +5,6 @@ import java.util.Map;
 
 /**
  * 拦截器组
- *
-
- * @since 2018/5/17 上午12:12
  */
 public interface IInterceptorGroup {
     /**

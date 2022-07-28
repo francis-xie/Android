@@ -9,12 +9,6 @@ import com.freak.printtool.hardware.module.wifi.adapter.bean.PrinterSettingBean;
 
 import java.util.List;
 
-
-/**
- * @author Freak
- * @date 2019/8/13.
- */
-
 public class PrinterSettingAdapter extends BaseQuickAdapter<PrinterSettingBean, BaseViewHolder> {
     public PrinterSettingAdapter(int layoutResId, @Nullable List<PrinterSettingBean> data) {
         super(layoutResId, data);

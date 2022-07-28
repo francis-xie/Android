@@ -3,11 +3,6 @@ package com.basic.web.js;
 
 import android.webkit.ValueCallback;
 
-/**
- 
- * @date 2017/5/14
- * @since 1.0.0
- */
 public interface JsAccessEntrace extends QuickCallJs {
 
 

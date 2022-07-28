@@ -7,9 +7,6 @@ import android.content.DialogInterface;
 
 /**
  * 环形无进度条弹窗工具类
- *
-
- * @since 2018/9/30 下午4:02
  */
 public class CProgressDialogUtils {
 

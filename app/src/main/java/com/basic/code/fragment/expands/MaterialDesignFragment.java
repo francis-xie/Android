@@ -15,10 +15,6 @@ import java.util.List;
 
 import static com.basic.code.base.BaseActivity.KEY_SUPPORT_SLIDE_BACK;
 
-/**
-
- * @since 2019-05-07 23:30
- */
 @Page(name = "Material Design", extra = R.drawable.ic_expand_material_design)
 public class MaterialDesignFragment extends BaseSimpleListFragment {
     /**

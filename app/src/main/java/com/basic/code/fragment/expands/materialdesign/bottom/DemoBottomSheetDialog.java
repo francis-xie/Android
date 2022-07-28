@@ -30,9 +30,6 @@ import butterknife.Unbinder;
 
 /**
  * 底部弹窗
- *
-
- * @since 2021/3/28 1:30 PM
  */
 public class DemoBottomSheetDialog extends BottomSheetDialogFragment {
 

@@ -30,9 +30,6 @@ import java.util.Map;
 
 /**
  * 实现KMS的Client
- *
- * @author aliyunkms
- * @version $Id: AliyunKMSClient.java, v 0.1 2020年05月08日 10:53 PM aliyunkms Exp $
  */
 public class AliyunKMSClient extends AliyunRpcClient {
     //支付宝signType与KMS签名算法映射表

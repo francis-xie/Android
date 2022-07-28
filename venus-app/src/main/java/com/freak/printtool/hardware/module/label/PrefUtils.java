@@ -6,10 +6,6 @@ import android.text.format.Time;
 
 /**
  * SharePreference封装
- *
- * @author Freak
- * @date 2019/8/13.
- * 
  */
 public class PrefUtils {
 

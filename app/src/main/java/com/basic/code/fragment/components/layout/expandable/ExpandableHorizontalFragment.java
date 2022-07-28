@@ -11,10 +11,6 @@ import com.basic.code.base.BaseFragment;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
- 
- * @since 2019-11-22 14:42
- */
 @Page(name = "水平伸缩使用")
 public class ExpandableHorizontalFragment extends BaseFragment {
     @BindView(R.id.expandable_layout)

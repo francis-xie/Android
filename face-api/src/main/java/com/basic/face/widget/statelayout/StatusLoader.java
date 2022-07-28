@@ -14,9 +14,6 @@ import com.basic.face.logs.UILog;
 
 /**
  * 多状态布局加载者
- *
-
- * @since 2020/4/29 12:12 AM
  */
 public class StatusLoader {
     /**

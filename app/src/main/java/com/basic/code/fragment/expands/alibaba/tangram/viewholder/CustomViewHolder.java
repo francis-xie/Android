@@ -9,9 +9,6 @@ import com.tmall.wireless.tangram.structure.viewcreator.ViewHolderCreator;
 
 /**
  * 自定义ViewHolder
- *
-
- * @since 2020/4/10 12:37 AM
  */
 public class CustomViewHolder extends ViewHolderCreator.ViewHolder {
 

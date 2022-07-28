@@ -7,12 +7,6 @@ import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-/**
- * Text utils
- *
-
- * @since 2018/5/18 上午1:24
- */
 public final class TextUtils {
 
     private TextUtils() {

@@ -19,9 +19,6 @@ import java.util.Iterator;
 
 /**
  * usb端口测试
- *
- * @author Freak
- * @date 2019/8/13.
  */
 public class UsbAdmin {
 

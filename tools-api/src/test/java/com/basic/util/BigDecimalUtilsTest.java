@@ -9,10 +9,6 @@ import static com.basic.tools.common.BigDecimalUtils.formatMoney;
 import static com.basic.tools.common.BigDecimalUtils.splitAndFormatMoney;
 import static org.junit.Assert.assertEquals;
 
-/**
- 
- * @since 2018/6/27 下午2:54
- */
 public class BigDecimalUtilsTest {
     @Test
     public void addition_isCorrect() {

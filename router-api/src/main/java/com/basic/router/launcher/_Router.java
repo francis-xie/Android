@@ -42,9 +42,6 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * Router 核心功能
- *
-
- * @since 2018/5/18 上午12:32
  */
 final class _Router {
     private volatile static boolean monitorMode = false;

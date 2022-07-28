@@ -69,9 +69,6 @@ import java.util.Locale;
 
 /**
  * Material Design Dialog
- *
-
- * @since 2018/11/14 下午5:38
  */
 public class MaterialDialog extends DialogBase
         implements View.OnClickListener, DefaultRvAdapter.InternalListCallback {

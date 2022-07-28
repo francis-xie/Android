@@ -13,9 +13,6 @@ import com.basic.code.R;
 
 /**
  * 柱状图的数字指示器
- *
-
- * @since 2019/4/10 下午11:34
  */
 @SuppressLint("ViewConstructor")
 public class XYMarkerView extends MarkerView {

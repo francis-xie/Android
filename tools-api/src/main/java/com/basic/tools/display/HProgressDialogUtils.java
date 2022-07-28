@@ -7,9 +7,6 @@ import android.text.TextUtils;
 
 /**
  * 水平进度条弹窗工具类
- *
-
- * @since 2018/9/30 下午4:01
  */
 public class HProgressDialogUtils {
 

@@ -7,9 +7,6 @@ import com.basic.page.R;
 
 /**
  * 带ListView的基础fragment
- *
-
- * @since 2018/5/24 下午3:36
  */
 public abstract class PageListFragment extends PageFragment implements AdapterView.OnItemClickListener {
 

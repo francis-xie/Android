@@ -2,9 +2,6 @@ package com.basic.router.compiler.util;
 
 /**
  * 常量
- *
-
- * @since 2018/5/21 下午6:17
  */
 public class Consts {
     // Generate

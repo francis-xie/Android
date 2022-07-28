@@ -5,9 +5,6 @@ import androidx.annotation.NonNull;
 
 /**
  * 输入信息
- *
-
- * @since 2018/11/16 上午12:18
  */
 public class InputInfo {
 

@@ -15,10 +15,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import com.emis.venus.R;
 
-/**
- * @author Freak
- * @date 2019/8/14.
- */
 public class NoSdkPrintFragment extends Fragment implements View.OnClickListener {
     private TextView mNoSdkDeviceName;
     private TextView mNoSdkPrintState;

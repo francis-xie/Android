@@ -31,10 +31,6 @@ import butterknife.BindView;
 import static com.basic.code.base.webview.WebFragment.KEY_URL;
 import static com.basic.code.fragment.components.imageview.DrawablePreviewFragment.DRAWABLE_ID;
 
-/**
-
- * @since 2019/1/7 上午9:14
- */
 @Page(name = "扫码关注")
 public class QRCodeFragment extends BaseFragment implements View.OnClickListener, View.OnLongClickListener {
 

@@ -37,9 +37,6 @@ import static androidx.viewpager.widget.ViewPager.SCROLL_STATE_SETTLING;
 
 /**
  * 垂直方向上的TabLayout
- *
-
- * @since 2018/12/28 下午1:29
  */
 public class VerticalTabLayout extends ScrollView {
     private Context mContext;

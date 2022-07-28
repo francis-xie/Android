@@ -11,9 +11,6 @@ import com.basic.renew.service.OnFileDownloadListener;
 
 /**
  * 默认版本更新提示器代理
- *
-
- * @since 2020/6/9 12:19 AM
  */
 public class DefaultPrompterProxyImpl implements IPrompterProxy {
 

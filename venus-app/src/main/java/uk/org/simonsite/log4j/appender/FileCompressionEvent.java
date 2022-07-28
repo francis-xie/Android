@@ -21,10 +21,6 @@ import org.apache.log4j.spi.LoggingEvent;
 
 /**
  * This event is fired after a log backup file has been compressed.
- * 
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @version 1.0
  */
 public final class FileCompressionEvent extends LoggingEvent {
 

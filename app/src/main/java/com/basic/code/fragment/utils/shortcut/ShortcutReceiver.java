@@ -10,9 +10,6 @@ import com.basic.tools.common.logger.Logger;
 
 /**
  * 快捷方式创建接收广播
- *
-
- * @since 2021/10/6 4:43 PM
  */
 public class ShortcutReceiver extends BroadcastReceiver {
 

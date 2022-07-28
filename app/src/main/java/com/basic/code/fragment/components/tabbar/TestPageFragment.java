@@ -15,10 +15,6 @@ import android.widget.TextView;
 
 import com.basic.code.R;
 
-/**
-
- * @since 2018/12/26 下午2:17
- */
 public class TestPageFragment extends Fragment {
 
     String content;

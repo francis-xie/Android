@@ -19,9 +19,6 @@ import butterknife.BindView;
 
 /**
  * {@link FACEGroupListView} 的使用示例
- *
-
- * @since 2019/1/3 上午11:38
  */
 @Page(name = "FACEGroupListView\n通用的GroupListView，注意它不是ListView")
 public class GroupListViewFragment extends BaseFragment {

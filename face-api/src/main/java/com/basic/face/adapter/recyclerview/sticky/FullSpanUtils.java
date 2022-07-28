@@ -9,9 +9,6 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 /**
  * 设置粘顶布局所占的宽度
- *
-
- * @since 2020/5/2 11:14 AM
  */
 public final class FullSpanUtils {
 

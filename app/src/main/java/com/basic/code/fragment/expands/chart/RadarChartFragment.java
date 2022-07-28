@@ -25,10 +25,6 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019/4/10 上午12:08
- */
 @Page(name = "RadarChart\n雷达图")
 public class RadarChartFragment extends BaseChartFragment {
     @BindView(R.id.chart1)

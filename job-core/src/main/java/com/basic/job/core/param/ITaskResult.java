@@ -3,9 +3,6 @@ package com.basic.job.core.param;
 
 /**
  * 任务执行结果
- *
-
- * @since 2021/10/27 2:10 AM
  */
 public interface ITaskResult {
 

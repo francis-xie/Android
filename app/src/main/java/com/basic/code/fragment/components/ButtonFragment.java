@@ -17,9 +17,6 @@ import com.basic.code.fragment.components.button.SwitchIconViewFragment;
 
 /**
  * 按钮
- *
-
- * @since 2018/11/25 下午11:21
  */
 @Page(name = "按钮", extra = R.drawable.ic_widget_button)
 public class ButtonFragment extends ComponentContainerFragment {

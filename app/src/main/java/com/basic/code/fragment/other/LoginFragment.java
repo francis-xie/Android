@@ -36,9 +36,6 @@ import static com.basic.code.fragment.other.ServiceProtocolFragment.KEY_PROTOCOL
 
 /**
  * 登录页面
- *
-
- * @since 2019-11-17 22:15
  */
 @Page(anim = CoreAnim.none)
 public class LoginFragment extends BaseFragment {

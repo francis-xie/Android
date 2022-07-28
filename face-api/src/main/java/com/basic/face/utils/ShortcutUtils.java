@@ -15,9 +15,6 @@ import androidx.core.graphics.drawable.IconCompat;
 
 /**
  * Shortcut应用快捷方式创建工具类
- *
-
- * @since 2021/10/6 2:50 PM
  */
 public final class ShortcutUtils {
 

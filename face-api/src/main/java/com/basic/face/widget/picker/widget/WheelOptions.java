@@ -16,9 +16,6 @@ import io.github.inflationx.calligraphy3.HasTypeface;
 
 /**
  * 条件滚轮
- *
-
- * @since 2019/1/1 下午7:10
  */
 public class WheelOptions<T> implements HasTypeface {
     private View view;

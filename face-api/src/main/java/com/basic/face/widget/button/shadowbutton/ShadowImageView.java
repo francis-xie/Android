@@ -13,9 +13,6 @@ import com.basic.face.R;
 
 /**
  * 可设置阴影效果的ImageView
- *
- 
- * @since 2019/1/14 下午10:09
  */
 public class ShadowImageView extends AppCompatImageView {
 

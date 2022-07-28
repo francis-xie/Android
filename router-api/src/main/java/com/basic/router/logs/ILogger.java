@@ -3,9 +3,6 @@ package com.basic.router.logs;
 
 /**
  * 简易的日志记录接口
- *
-
- * @since 2018/5/17 上午1:12
  */
 public interface ILogger {
 

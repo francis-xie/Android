@@ -11,8 +11,6 @@ import java.lang.reflect.Method;
  * 1.如果调用的方法属于该对象的父类,那getDeclaredMethod就会抛异常NoSuchMethodException;
  * 2.如果我们有个方法里面包含基础数据类型（int、byte、boolean等等）,在反射getClass()获取参数类型的时候会发现int变成了Integer、boolean变成了Boolean包装类，在调用getDeclaredMethod获取方法对象的时候就会抛异常NoSuchMethodException;
  *
- * @author XUE
- * @since 2019/3/4 18:14
  */
 public class ReflectionUtils {
 

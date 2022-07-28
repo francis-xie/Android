@@ -8,9 +8,6 @@ import android.widget.ImageView;
 
 /**
  * 加载器接口
- *
- 
- * @since 2018/12/5 上午11:07
  */
 public interface IMediaLoader {
 

@@ -5,9 +5,6 @@ import android.view.View;
 
 /**
  * 图片编辑监听
- *
-
- * @since 2019-10-28 10:05
  */
 public interface OnPhotoEditorListener {
 

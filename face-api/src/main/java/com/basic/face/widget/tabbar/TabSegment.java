@@ -94,9 +94,6 @@ import java.util.List;
  * </code>
  * </li>
  * </ul>
- *
-
- * @since 2018/12/26 下午4:51
  */
 public class TabSegment extends HorizontalScrollView {
 

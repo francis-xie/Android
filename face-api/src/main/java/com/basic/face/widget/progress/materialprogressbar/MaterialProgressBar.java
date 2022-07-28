@@ -22,8 +22,6 @@ import com.basic.face.widget.progress.materialprogressbar.internal.DrawableCompa
 /**
  * A {@link ProgressBar} subclass that handles tasks related to backported progress drawable.
  *
-
- * @since 2019/1/14 下午10:06
  */
 public class MaterialProgressBar extends ProgressBar {
 

@@ -9,12 +9,6 @@ import android.util.Log;
 
 import com.freak.printtool.hardware.utils.ToastUtil;
 
-
-/**
- * @author Freak
- * @date 2019/8/13.
- */
-
 public class UsbDeviceConnectChangedReceiver extends BroadcastReceiver {
 
     /**

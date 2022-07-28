@@ -13,10 +13,6 @@ import com.basic.code.utils.Utils;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2020/4/25 1:09 AM
- */
 @Page(name = "StickyNestedScrollView\n粘顶嵌套滚动布局")
 public class StickyNestedScrollViewFragment extends BaseFragment {
 

@@ -4,10 +4,6 @@ import android.annotation.TargetApi;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
 
-/**
-
- * @since 2019/4/7 下午12:57
- */
 public class DrawableUtils {
 
     private DrawableUtils() {

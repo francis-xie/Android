@@ -17,10 +17,6 @@ import com.basic.code.base.BaseFragment;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2019-06-02 16:50
- */
 @Page(name = "FACELayout\n通用布局，支持快速阴影设置")
 public class FACELayoutFragment extends BaseFragment {
 

@@ -18,9 +18,6 @@ import java.util.Properties;
 
 /**
  * 定制厂商Rom（系统）识别工具类
- *
- 
- * @since 2018/8/3 上午10:00
  */
 public final class RomUtils {
 

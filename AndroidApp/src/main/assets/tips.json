@@ -1,0 +1,21 @@
+{
+  "Code": 0,
+  "Data": [
+    {
+      "title": "微信公众号",
+      "content": "<a href=\"https://\">获取更多资讯内容，欢迎微信搜索公众号:「」</a>"
+    },
+    {
+      "title": "关于作者",
+      "content": "点击关注作者，了解最新动态！<br /><a href=\"https://github.com/zhiqiang\"><font color=\"#800080\">Github</font></a>"
+    },
+    {
+      "title": "赞助作者",
+      "content": "你的打赏是我维护的动力，<a href=\"https://gitee.com/zhiqiang/Resource/blob/master/doc/sponsor.md\"><font color=\"#800080\">点击此处支持我吧！</font></a>"
+    },
+    {
+      "title": "QQ交流群",
+      "content": "<a href=\"https://qm.qq.com/cgi-bin/qm/qr?k=\">交流群</a>"
+    }
+  ]
+}

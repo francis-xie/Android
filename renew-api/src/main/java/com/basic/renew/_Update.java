@@ -34,9 +34,6 @@ import static com.basic.renew.entity.UpdateError.ERROR.INSTALL_FAILED;
 
 /**
  * 内部版本更新参数的获取
- *
-
- * @since 2018/7/10 下午4:27
  */
 public final class _Update {
 

@@ -23,11 +23,6 @@ import org.apache.log4j.helpers.OnlyOnceErrorHandler;
 import org.apache.log4j.spi.ErrorCode;
 import org.apache.log4j.spi.ErrorHandler;
 
-/**
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @version 1.3
- */
 public final class SimpleLoggingTaskExecutorService implements
     LoggingTaskExecutorService {
 

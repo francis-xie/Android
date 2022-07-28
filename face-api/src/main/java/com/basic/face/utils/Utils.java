@@ -38,9 +38,6 @@ import java.lang.reflect.InvocationTargetException;
 
 /**
  * 工具类（不建议外部调用)
- *
- 
- * @since 2018/11/26 下午5:07
  */
 public final class Utils {
 

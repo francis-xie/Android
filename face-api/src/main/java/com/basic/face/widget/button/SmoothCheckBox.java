@@ -22,9 +22,6 @@ import com.basic.face.utils.ThemeUtils;
 
 /**
  * 自带动画的checkbox
- *
-
- * @since 2020-01-06 9:55
  */
 public class SmoothCheckBox extends View implements Checkable {
     private static final String KEY_INSTANCE_STATE = "InstanceState";

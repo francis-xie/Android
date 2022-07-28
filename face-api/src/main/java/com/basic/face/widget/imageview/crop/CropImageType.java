@@ -4,9 +4,6 @@ package com.basic.face.widget.imageview.crop;
 
 /**
  * 图片裁剪类型
- *
-
- * @since 2019-10-15 11:32
  */
 public class CropImageType {
     /**

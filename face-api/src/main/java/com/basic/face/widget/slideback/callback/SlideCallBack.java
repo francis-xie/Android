@@ -3,9 +3,6 @@ package com.basic.face.widget.slideback.callback;
 
 /**
  * 侧滑事件监听（可监听是左滑还是右滑）
- *
-
- * @since 2019-08-30 9:32
  */
 public abstract class SlideCallBack implements SlideBackCallBack {
     private SlideBackCallBack mCallback;

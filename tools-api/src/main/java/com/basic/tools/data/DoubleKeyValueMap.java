@@ -7,9 +7,6 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 双键值对
- *
- 
- * @since 2018/6/27 下午5:12
  */
 public class DoubleKeyValueMap<K1, K2, V> {
 

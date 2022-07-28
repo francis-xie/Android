@@ -9,11 +9,6 @@ import com.basic.web.utils.LogUtils;
 import java.util.Map;
 import java.util.Set;
 
-/**
- 
- * @date 2017/5/13
- * @since 1.0.0
- */
 public class JsInterfaceHolderImpl extends JsBaseInterfaceHolder {
 
 	private static final String TAG = JsInterfaceHolderImpl.class.getSimpleName();

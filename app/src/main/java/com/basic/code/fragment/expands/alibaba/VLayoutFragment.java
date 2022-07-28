@@ -43,8 +43,6 @@ import butterknife.BindView;
  * 2.设置RecycledViews复用池大小（可选）
  * 3.设置DelegateAdapter
  *
-
- * @since 2020/3/19 11:26 PM
  */
 @Page(name = "VLayout\n多布局组件")
 public class VLayoutFragment extends BaseFragment {

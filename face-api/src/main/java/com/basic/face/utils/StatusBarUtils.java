@@ -27,9 +27,6 @@ import static android.os.Build.VERSION_CODES.KITKAT;
 
 /**
  * 状态栏工具
- *
- * @author XUE
- * @since 2019/3/22 10:50
  */
 public class StatusBarUtils {
 

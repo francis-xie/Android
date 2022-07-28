@@ -15,10 +15,6 @@ import com.basic.code.utils.XToastUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author XUE
- * @date 2017/9/10 23:04
- */
 @Page(name = "MaterialDialog\n对话框")
 public class MaterialDialogFragment extends BaseSimpleListFragment {
     private Thread thread;

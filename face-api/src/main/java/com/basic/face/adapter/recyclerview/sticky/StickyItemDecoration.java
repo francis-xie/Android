@@ -13,9 +13,6 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 /**
  * 粘性标签的实现Decoration
  * 通过mRecyclerView.addItemDecoration()实现粘性标签
- *
-
- * @since 2020/5/2 4:54 PM
  */
 public class StickyItemDecoration extends RecyclerView.ItemDecoration {
 

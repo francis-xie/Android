@@ -19,9 +19,6 @@ import com.basic.face.widget.dialog.strategy.InputInfo;
 
 /**
  * AlertDialog 策略
- *
-
- * @since 2018/11/15 上午12:24
  */
 public class AlertDialogStrategy implements IDialogStrategy {
 

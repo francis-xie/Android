@@ -4,9 +4,6 @@ import com.basic.cities.model.City;
 
 /**
  * 城市选择监听
- *
- 
- * @since 2018/12/30 下午6:46
  */
 public interface OnPickListener {
     /**

@@ -24,9 +24,6 @@ import static com.basic.scan.util.QRCodeProduceUtils.QRCODE_BITMAP_MAX_SIZE;
 
 /**
  * 二维码 Scan API
- *
-
- * @since 2019-05-18 17:39
  */
 public class Scan {
 

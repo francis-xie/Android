@@ -5,10 +5,6 @@ import com.basic.code.base.ComponentContainerFragment;
 import com.basic.code.fragment.expands.chart.line.BasicLineChartFragment;
 import com.basic.code.fragment.expands.chart.line.MultiLineChartFragment;
 
-/**
- 
- * @since 2019/4/9 下午11:52
- */
 @Page(name = "LineChart\n折线图")
 public class LineChartFragment extends ComponentContainerFragment {
 

@@ -25,12 +25,6 @@ import com.basic.web.utils.WebUtils;
 import com.basic.web.utils.LogUtils;
 import com.basic.web.widget.WebParentLayout;
 
-/**
- *
- *
-
- * @since 2019/1/4 上午10:53
- */
 public class DefaultDesignUIController extends DefaultUIController {
     private BottomSheetDialog mBottomSheetDialog;
     private static final int RECYCLER_VIEW_ID = 0x1001;

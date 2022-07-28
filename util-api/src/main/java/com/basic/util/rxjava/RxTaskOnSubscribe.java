@@ -6,9 +6,6 @@ import io.reactivex.FlowableOnSubscribe;
 
 /**
  * 在订阅时执行的回调
- *
-
- * @since 2018/6/10 下午9:28
  */
 public abstract class RxTaskOnSubscribe<T> implements FlowableOnSubscribe<T> {
     /**

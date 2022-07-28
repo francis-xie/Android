@@ -15,9 +15,6 @@ import java.util.List;
 
 /**
  * 陀螺仪实现图标旋转的工具类
- *
-
- * @since 2019-10-17 00:33
  */
 public final class RotateSensorHelper implements SensorEventListener {
 

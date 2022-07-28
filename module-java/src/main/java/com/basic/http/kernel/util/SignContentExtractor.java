@@ -8,9 +8,6 @@ import java.util.LinkedList;
  * 待验签原文提取器
  * <p>
  * 注：此处不可使用JSON反序列化工具进行提取，会破坏原有格式，对于签名而言差个空格都会验签不通过
- *
- * @author zhongyu
- * @version $Id: SignContentExtractor.java, v 0.1 2019年12月19日 9:07 PM zhongyu Exp $
  */
 public class SignContentExtractor {
     /**

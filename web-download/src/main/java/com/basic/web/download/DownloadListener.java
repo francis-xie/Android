@@ -1,12 +1,6 @@
 
 package com.basic.web.download;
 
-/**
- 
- * @date 2018/6/21
- * @update 4.0.0
- * @since 1.0.0
- */
 public interface DownloadListener {
 
 

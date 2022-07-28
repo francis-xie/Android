@@ -23,10 +23,6 @@ import uk.org.simonsite.log4j.helpers.FileHelper;
 /**
  * Responsible for rolling at a logging time boundary, as configured by a date
  * pattern.
- * 
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @version 2.8
  */
 final class TimeBasedRoller extends AbstractRoller implements FileRollable {
 

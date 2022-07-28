@@ -16,9 +16,6 @@ import com.basic.face.utils.Utils;
 
 /**
  * 标签控件
- *
-
- * @since 2018/12/2 下午11:59
  */
 public final class LabelViewHelper {
 

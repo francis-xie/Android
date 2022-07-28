@@ -2,9 +2,6 @@ package com.basic.util.rxjava.scheduler;
 
 /**
  * 线程类型
- *
-
- * @since 2018/6/12 下午11:29
  */
 public enum SchedulerType {
 

@@ -13,10 +13,6 @@ import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.net.SocketAddress;
 
-/**
- * @author Freak
- * @date 2019/8/14.
- */
 public class SocketPrint {
     //定义编码方式
     private static String encoding = null;

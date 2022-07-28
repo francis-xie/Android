@@ -6,10 +6,6 @@ import android.animation.ValueAnimator;
 import com.basic.face.widget.button.shinebutton.interpolator.Ease;
 import com.basic.face.widget.button.shinebutton.interpolator.EasingInterpolator;
 
-/**
-
- * @since 2020-01-06 11:55
- */
 public class ShineAnimator extends ValueAnimator {
 
     private static final float DEFAULT_MAX_VALUE = 1.5f;

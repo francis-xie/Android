@@ -24,9 +24,6 @@ import io.github.inflationx.calligraphy3.HasTypeface;
 
 /**
  * 条件选择器
- *
-
- * @since 2019/1/1 下午7:09
  */
 public class OptionsPickerView<T> extends BasePickerView implements View.OnClickListener, HasTypeface {
 

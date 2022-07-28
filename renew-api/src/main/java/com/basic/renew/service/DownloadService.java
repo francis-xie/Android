@@ -37,9 +37,6 @@ import static com.basic.renew.entity.UpdateError.ERROR.DOWNLOAD_FAILED;
 
 /**
  * APK下载服务
- *
-
- * @since 2018/7/5 上午11:15
  */
 public class DownloadService extends Service {
 
@@ -178,9 +175,6 @@ public class DownloadService extends Service {
 
     /**
      * DownloadBinder中定义了一些实用的方法
-     *
-
-     * @since 2021/1/24 1:59 AM
      */
     public class DownloadBinder extends Binder {
 

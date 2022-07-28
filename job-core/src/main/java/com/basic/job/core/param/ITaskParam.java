@@ -3,9 +3,6 @@ package com.basic.job.core.param;
 
 /**
  * 任务参数信息实现接口
- *
-
- * @since 2021/10/19 1:44 AM
  */
 public interface ITaskParam extends IDataStore {
 

@@ -5,9 +5,6 @@ import com.basic.router.facade.Postcard;
 
 /**
  * 执行navigation（导航）后的回调
- *
-
- * @since 2018/5/16 下午11:45
  */
 public interface NavigationCallback {
 

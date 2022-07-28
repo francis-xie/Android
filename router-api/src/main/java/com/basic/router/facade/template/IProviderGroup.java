@@ -8,9 +8,6 @@ import java.util.Map;
 
 /**
  * Provider的组
- *
-
- * @since 2018/5/17 上午12:10
  */
 public interface IProviderGroup {
     /**

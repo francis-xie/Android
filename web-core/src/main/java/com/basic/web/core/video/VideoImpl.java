@@ -21,9 +21,6 @@ import java.util.Set;
 
 /**
  * 视频播放
- *
-
- * @since 2019/1/4 上午10:41
  */
 public class VideoImpl implements IVideo, EventInterceptor {
 

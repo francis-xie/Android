@@ -3,8 +3,6 @@ package com.basic.code.fragment.components.tabbar.tablayout;
 
 /**
  * 页面枚举
-
- * @since 2018/12/26 下午2:23
  */
 public enum ContentPage {
 

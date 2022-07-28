@@ -21,10 +21,7 @@ import uk.org.simonsite.log4j.helpers.SynchronizedCountingQuietWriter;
 
 /**
  * Configuration properties used by the {@link TimeAndSizeRollingAppender}.
- * 
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @version 2.6
+ *
  */
 final class AppenderRollingProperties {
 

@@ -7,9 +7,6 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 拥有周期执行能力的内核实现接口
- *
-
- * @since 3/19/22 6:40 PM
  */
 public interface IScheduledExecutorCore extends IExecutorCore {
 

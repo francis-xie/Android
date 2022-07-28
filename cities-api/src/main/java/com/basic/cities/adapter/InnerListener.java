@@ -5,9 +5,6 @@ import com.basic.cities.model.City;
 
 /**
  * 列表的监听
- *
-
- * @since 2018/12/30 下午6:47
  */
 public interface InnerListener {
     /**

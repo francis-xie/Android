@@ -7,7 +7,6 @@ import java.util.SortedSet;
 
 /**
  * 默认相机策略
- * @since 2019/4/8 11:36
  */
 public class DefaultCameraStrategy implements ICameraStrategy {
     /**

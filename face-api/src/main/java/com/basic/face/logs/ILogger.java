@@ -3,9 +3,6 @@ package com.basic.face.logs;
 
 /**
  * 简易的日志记录接口
- *
-
- * @since 2019/1/14 下午10:15
  */
 public interface ILogger {
 

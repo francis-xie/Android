@@ -15,10 +15,6 @@ import android.util.AttributeSet;
 
 import androidx.appcompat.widget.AppCompatImageView;
 
-/**
- 
- * @since 2020-01-06 11:36
- */
 public abstract class PorterImageView extends AppCompatImageView {
 
     private static final PorterDuffXfermode PORTER_DUFF_XFERMODE = new PorterDuffXfermode(PorterDuff.Mode.DST_IN);

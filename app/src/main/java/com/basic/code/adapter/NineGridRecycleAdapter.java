@@ -29,9 +29,6 @@ import java.util.List;
 
 /**
  * 九宫格适配器
- *
-
- * @since 2018/12/9 下午11:51
  */
 public class NineGridRecycleAdapter extends XRecyclerAdapter<NineGridInfo, NineGridRecycleAdapter.NineGridHolder> {
 

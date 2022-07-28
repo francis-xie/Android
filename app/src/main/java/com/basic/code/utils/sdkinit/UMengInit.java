@@ -15,9 +15,6 @@ import com.basic.code.utils.SettingSPUtils;
 
 /**
  * UMeng 统计 SDK初始化
- *
-
- * @since 2019-06-18 15:49
  */
 public final class UMengInit {
 

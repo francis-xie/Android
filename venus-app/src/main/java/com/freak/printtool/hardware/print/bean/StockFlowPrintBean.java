@@ -5,11 +5,7 @@ import java.util.List;
 
 /**
  * 收货打印
- *
- * @author Freak
- * @date 2019/8/13.
  */
-
 public class StockFlowPrintBean implements PrintfBean {
     //门店名
     private String shopName;

@@ -12,9 +12,6 @@ import android.view.ViewGroup;
 import com.basic.face.utils.KeyboardUtils;
 import com.basic.face.widget.dialog.materialdialog.internal.MDRootLayout;
 
-/**
- * @author Aidan Follestad (afollestad)
- */
 class DialogBase extends Dialog implements DialogInterface.OnShowListener {
 
     protected MDRootLayout view;

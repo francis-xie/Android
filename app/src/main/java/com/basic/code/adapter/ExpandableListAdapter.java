@@ -19,9 +19,6 @@ import java.util.Collection;
 
 /**
  * 可伸缩布局适配器
- *
-
- * @since 2019-11-22 15:38
  */
 public class ExpandableListAdapter extends BaseRecyclerAdapter<String> {
 

@@ -8,9 +8,6 @@ import java.util.Date;
 
 /**
  * 需要滚动展示消息的实体
- *
-
- * @since 2019/1/14 下午10:04
  */
 public class DisplayEntity {
     private static final String TIME_PLACE_HOLDER = "$";

@@ -10,11 +10,6 @@ import com.basic.web.core.web.WebConfig;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 
-/**
- 
- * @date 2017/5/13
- * @since 1.0.0
- */
 public abstract class JsBaseInterfaceHolder implements JsInterfaceHolder {
 
     private Web.SecurityType mSecurityType;

@@ -11,9 +11,6 @@ import com.basic.face.widget.alpha.FACEAlphaFrameLayout;
 
 /**
  * 封装的FrameLayout，便于样式的修改
- *
-
- * @since 2019-06-01 20:04
  */
 public class FACEFrameLayout extends FACEAlphaFrameLayout implements IFACELayout {
     private FACELayoutHelper mLayoutHelper;

@@ -25,10 +25,6 @@ import uk.org.simonsite.log4j.helpers.FileHelper;
  * Responsible for periodically sampling the number of log files with a given
  * base filename and time-based extension, and for deleting the older files if
  * the file count limit is exceeded.
- * 
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @version 2.0
  */
 public final class DefaultLogFileScavenger extends AbstractLogFileScavenger {
 

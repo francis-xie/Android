@@ -6,8 +6,6 @@ import java.util.Map;
 /**
  * url加载接口
  *
-
- * @since 2019/1/4 上午10:45
  */
 public interface IUrlLoader {
 

@@ -9,10 +9,6 @@ import com.basic.code.fragment.utils.view.ViewAnimationFragment;
 import com.basic.code.fragment.utils.view.ViewCustomAnimationFragment;
 import com.basic.code.fragment.utils.view.ViewPaddingFragment;
 
-/**
-
- * @since 2019/1/3 下午2:01
- */
 @Page(name = "ViewUtils", extra = R.drawable.ic_util_view)
 public class ViewUtilsFragment extends ComponentContainerFragment {
     @Override

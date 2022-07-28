@@ -15,10 +15,6 @@ import butterknife.BindView;
 
 import static com.basic.code.fragment.components.imageview.DrawablePreviewFragment.DRAWABLE_ID;
 
-/**
-
- * @since 2019/1/7 下午2:09
- */
 @Page(name = "资源图片预览", params = {DRAWABLE_ID}, anim = CoreAnim.none)
 public class DrawablePreviewFragment extends BaseFragment {
 

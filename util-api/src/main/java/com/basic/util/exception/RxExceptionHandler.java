@@ -5,9 +5,6 @@ import androidx.annotation.NonNull;
 
 /**
  * 错误信息处理
- *
-
- * @since 2018/6/10 下午9:30
  */
 public final class RxExceptionHandler {
 

@@ -9,9 +9,6 @@ import java.util.Collection;
 
 /**
  * 通用的RecyclerView适配器
- *
- * @author XUE
- * @date 2017/9/10 18:30
  */
 public abstract class BaseRecyclerAdapter<T> extends XRecyclerAdapter<T, RecyclerViewHolder> {
 

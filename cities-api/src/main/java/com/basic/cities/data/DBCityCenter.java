@@ -26,9 +26,6 @@ import static com.basic.cities.data.DBConfig.TABLE_NAME;
 
 /**
  * 城市中心信息存储
- *
-
- * @since 2018/12/29 上午11:53
  */
 public class DBCityCenter implements ICityCenter {
 

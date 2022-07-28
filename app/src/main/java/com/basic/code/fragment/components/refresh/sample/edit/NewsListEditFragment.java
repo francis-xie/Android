@@ -23,10 +23,6 @@ import com.basic.code.utils.XToastUtils;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2021/7/7 2:12 AM
- */
 @Page(name = "列表长按编辑案例")
 public class NewsListEditFragment extends BaseFragment {
 

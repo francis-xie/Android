@@ -7,9 +7,6 @@ import java.util.Collection;
 
 /**
  * 简易DelegateAdapter适配器
- *
-
- * @since 2020/3/20 12:55 AM
  */
 public abstract class SimpleDelegateAdapter<T> extends BaseDelegateAdapter<T> {
 

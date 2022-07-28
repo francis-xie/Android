@@ -29,9 +29,6 @@ import java.util.concurrent.TimeUnit;
  * 核心线程池 -> 阻塞队列 -> 最大线程数(新建线程） -> RejectedExecutionHandler
  * <p>
  * 因此，该线程池起作用的主要是在阻塞队列这一层。
- *
-
- * @since 2021/10/9 2:28 AM
  */
 public class PriorityThreadPoolExecutor extends BaseThreadPoolExecutor {
 

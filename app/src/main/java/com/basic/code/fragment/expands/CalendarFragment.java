@@ -9,10 +9,6 @@ import com.basic.code.fragment.expands.calendar.DingDingCalendarFragment;
 import com.basic.code.fragment.expands.calendar.MaterialDesignCalendarFragment;
 import com.basic.code.fragment.expands.calendar.SimpleCalendarFragment;
 
-/**
- 
- * @since 2019-05-29 19:48
- */
 @Page(name = "日历", extra = R.drawable.ic_expand_calendar)
 public class CalendarFragment extends ComponentContainerFragment {
     /**

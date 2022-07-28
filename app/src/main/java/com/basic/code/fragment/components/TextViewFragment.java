@@ -13,9 +13,6 @@ import com.basic.code.fragment.components.textview.SuperTextViewFragment;
 
 /**
  * TextView
- *
- 
- * @since 2018/11/28 下午11:42
  */
 @Page(name = "文字", extra = R.drawable.ic_widget_textview)
 public class TextViewFragment extends ComponentContainerFragment {

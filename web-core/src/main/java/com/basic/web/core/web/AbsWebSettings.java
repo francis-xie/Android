@@ -16,11 +16,8 @@ import com.basic.web.utils.WebUtils;
 import com.basic.web.utils.LogUtils;
 
 /**
- 
- * @update 4.0.0 ,WebDefaultSettingsManager rename to AbsWebSettings
- * @since 1.0.0
+ * WebDefaultSettingsManager rename to AbsWebSettings
  */
-
 public abstract class AbsWebSettings implements IWebSettings, WebListenerManager {
 
 	private WebSettings mWebSettings;

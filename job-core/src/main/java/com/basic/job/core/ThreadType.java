@@ -3,9 +3,6 @@ package com.basic.job.core;
 
 /**
  * 线程执行类型
- *
-
- * @since 2021/10/27 2:01 AM
  */
 public enum ThreadType {
 

@@ -21,9 +21,6 @@ import com.basic.web.widget.WebParentLayout;
 
 /**
  * 默认UI控制器
- *
-
- * @since 2019/1/4 上午10:54
  */
 public class DefaultUIController extends AbsWebUIController {
 

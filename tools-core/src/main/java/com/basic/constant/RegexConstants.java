@@ -3,9 +3,6 @@ package com.basic.constant;
 
 /**
  * 正则表达式常量
- *
-
- * @since 2018/6/27 下午2:27
  */
 public final class RegexConstants {
 

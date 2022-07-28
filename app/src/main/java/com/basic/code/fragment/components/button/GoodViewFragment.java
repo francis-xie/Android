@@ -14,10 +14,6 @@ import com.basic.code.base.BaseFragment;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2020-01-05 20:14
- */
 @Page(name = "GoodView\n按钮点击漂浮效果")
 public class GoodViewFragment extends BaseFragment {
 

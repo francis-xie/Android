@@ -17,9 +17,6 @@ import static com.basic.renew.entity.UpdateError.ERROR.INSTALL_FAILED;
 
 /**
  * 默认的apk安装监听【自定义安装监听可继承该类，并重写相应的方法】
- *
-
- * @since 2018/7/1 下午11:58
  */
 public class DefaultInstallListener implements OnInstallListener {
 

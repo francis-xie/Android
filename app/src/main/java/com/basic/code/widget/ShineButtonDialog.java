@@ -8,10 +8,6 @@ import com.basic.face.widget.dialog.materialdialog.CustomMaterialDialog;
 import com.basic.face.widget.dialog.materialdialog.MaterialDialog;
 import com.basic.code.R;
 
-/**
-
- * @since 2020-01-06 23:39
- */
 public class ShineButtonDialog extends CustomMaterialDialog {
     ShineButton shineButton;
     ShineButton shineButton1;

@@ -5,9 +5,6 @@ import androidx.viewpager.widget.ViewPager;
 import android.view.View;
 /**
  * 向上旋转切换
- *
-
- * @since 2019/1/14 下午10:15
  */
 public class RotateUpTransformer implements ViewPager.PageTransformer {
 

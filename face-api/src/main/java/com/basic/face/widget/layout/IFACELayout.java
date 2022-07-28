@@ -11,9 +11,6 @@ import java.lang.annotation.RetentionPolicy;
 
 /**
  * 布局封装的接口
- *
-
- * @since 2019-06-01 19:29
  */
 public interface IFACELayout {
     int HIDE_RADIUS_SIDE_NONE = 0;

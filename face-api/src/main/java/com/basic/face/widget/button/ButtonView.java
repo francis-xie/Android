@@ -19,8 +19,6 @@ import com.basic.face.utils.SpanUtils;
 /**
  * ButtonView
  * 自定义按钮控件
- *
- * @author xx
  */
 public class ButtonView extends AppCompatTextView {
 

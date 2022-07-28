@@ -31,9 +31,6 @@ import io.github.inflationx.calligraphy3.HasTypeface;
 
 /**
  * 刻度尺控件
- *
- * @author XUE
- * @since 2019/4/2 16:33
  */
 public class RulerView extends View implements HasTypeface {
     /**

@@ -34,10 +34,6 @@ import okhttp3.Request;
 import static com.basic.aop.consts.PermissionConsts.STORAGE;
 import static com.basic.code.fragment.expands.webview.TbsWebFileReaderFragment.KEY_FILE_URI;
 
-/**
-
- * @since 2019-07-21 23:01
- */
 @Page(name = "腾讯X5文件浏览器", params = {KEY_FILE_URI})
 public class TbsWebFileReaderFragment extends BaseFragment {
 

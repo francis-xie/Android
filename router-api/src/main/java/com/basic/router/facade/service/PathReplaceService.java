@@ -7,9 +7,6 @@ import com.basic.router.facade.template.IProvider;
 
 /**
  * 路由路径重定向
- *
- 
- * @since 2018/5/17 上午1:01
  */
 public interface PathReplaceService extends IProvider {
 

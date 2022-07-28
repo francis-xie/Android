@@ -23,10 +23,6 @@ import java.util.List;
 
 import static com.basic.aop.consts.PermissionConsts.STORAGE;
 
-/**
-
- * @since 2019/1/5 上午12:39
- */
 @Page(name = "web浏览器", extra = R.drawable.ic_expand_web)
 public class WebViewFragment extends BaseSimpleListFragment {
 

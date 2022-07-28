@@ -5,8 +5,6 @@ import android.content.Context;
 
 /**
  * 悬浮权限申请提示
-
- * @since 2019-09-16 10:27
  */
 public interface IPermissionApplyPrompter {
 

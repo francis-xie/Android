@@ -35,10 +35,6 @@ import java.util.Random;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2018/12/7 上午12:45
- */
 @Page(name = "经典样式")
 public class RefreshClassicsStyleFragment extends BaseFragment implements SmartViewHolder.OnItemClickListener {
     @BindView(R.id.recyclerView)

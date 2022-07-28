@@ -15,10 +15,6 @@ import com.emis.venus.R;
 import com.emis.venus.activity.MainActivity;
 import com.freak.printtool.hardware.base.IActivityStatusBar;
 
-/**
- * @author Freak
- * @date 2019/8/13.
- */
 public class BarcodeScannerActivity extends AppCompatActivity implements IActivityStatusBar {
     /**
      * 扫码枪工具类

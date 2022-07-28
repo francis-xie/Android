@@ -27,9 +27,6 @@ import static com.freak.printtool.hardware.app.App.DESIGN_WIDTH;
 
 /**
  * 这是新页面，增加了测试打印机
- *
- * @author Freak
- * @date 2019/8/13.
  */
 public class MainActivity extends AppCompatActivity implements OnClickListener, IActivityStatusBar {
     /**

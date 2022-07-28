@@ -13,10 +13,6 @@ import com.basic.code.base.BaseFragment;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
- * @author XUE
- * @since 2019/3/29 11:07
- */
 @Page(name = "OptionsPickerView\n条件选择器--自定义选择条件")
 public class OptionsPickerViewFragment extends BaseFragment {
     @BindView(R.id.btn_sex_picker)

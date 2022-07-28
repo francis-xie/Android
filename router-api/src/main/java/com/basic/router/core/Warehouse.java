@@ -14,9 +14,6 @@ import java.util.Map;
 
 /**
  * 存放路由信息的仓库
- *
- 
- * @since 2018/5/16 下午11:40
  */
 class Warehouse {
     // Cache route and metas

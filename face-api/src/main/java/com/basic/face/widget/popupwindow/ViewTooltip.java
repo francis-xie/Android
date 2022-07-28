@@ -25,9 +25,6 @@ import com.basic.face.utils.ThemeUtils;
 
 /**
  * 控件提示弹出窗，可自定义弹出的位置，持续时间以及样式
- *
-
- * @since 2019/1/14 上午11:23
  */
 public class ViewTooltip {
 

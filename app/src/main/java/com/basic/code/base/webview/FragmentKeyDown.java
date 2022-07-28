@@ -3,12 +3,6 @@ package com.basic.code.base.webview;
 
 import android.view.KeyEvent;
 
-/**
- *
- *
-
- * @since 2019/1/4 下午11:32
- */
 public interface FragmentKeyDown {
 
     /**

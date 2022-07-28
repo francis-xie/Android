@@ -12,9 +12,6 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 拥有周期执行能力的内核实现
- *
-
- * @since 3/20/22 1:15 AM
  */
 public class ScheduledExecutorCore implements IScheduledExecutorCore {
 

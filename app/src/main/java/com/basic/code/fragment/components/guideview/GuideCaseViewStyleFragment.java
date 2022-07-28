@@ -16,9 +16,6 @@ import butterknife.OnClick;
 
 /**
  * 引导样式
- *
-
- * @since 2018/11/30 上午12:51
  */
 @Page(name = "GuideCaseView\n引导样式")
 public class GuideCaseViewStyleFragment extends BaseFragment {

@@ -20,10 +20,6 @@ import java.util.Date;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2019-05-29 22:49
- */
 @Page(name = "MaterialDesign风格日历")
 public class MaterialDesignCalendarFragment extends BaseFragment {
     @BindView(R.id.tv_title)

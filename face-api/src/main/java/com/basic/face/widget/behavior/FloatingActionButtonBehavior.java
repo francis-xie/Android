@@ -10,9 +10,6 @@ import android.view.View;
 
 /**
  * Behavior for Float Button
- *
-
- * @since 2019-05-10 01:12
  */
 public class FloatingActionButtonBehavior extends BaseBehavior {
 

@@ -8,9 +8,6 @@ import androidx.annotation.DrawableRes;
 
 /**
  * 版本更新提示器参数信息
- *
-
- * @since 2018/11/19 上午9:44
  */
 public class PromptEntity implements Parcelable {
 

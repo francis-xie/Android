@@ -13,9 +13,6 @@ import butterknife.BindView;
 
 /**
  * 导航栏使用
- *
-
- * @since 2018/11/14 下午3:10
  */
 @Page(name = "导航栏", extra = R.drawable.ic_widget_titlebar)
 public class TitleBarFragment extends BaseFragment {

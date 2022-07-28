@@ -7,9 +7,6 @@ import java.util.Date;
 
 /**
  * BCD编码工具类
- *
- * @author XUE
- * @since 2019/3/6 8:50
  */
 public final class BCDUtils {
 

@@ -22,10 +22,6 @@ import com.basic.code.utils.Utils;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019/4/7 上午10:58
- */
 @Page(name = "普通占位控件")
 public class CommonPlaceholderFragment extends BaseFragment {
     @BindView(R.id.recyclerView)

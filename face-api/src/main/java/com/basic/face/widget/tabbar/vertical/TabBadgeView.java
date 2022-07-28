@@ -10,9 +10,6 @@ import com.basic.face.widget.textview.badge.BadgeView;
 
 /**
  * 选项卡上的圆点小标记
- *
-
- * @since 2018/12/28 下午1:34
  */
 public class TabBadgeView extends BadgeView {
     private TabBadgeView(Context context) {

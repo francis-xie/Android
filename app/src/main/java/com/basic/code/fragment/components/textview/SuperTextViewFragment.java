@@ -9,9 +9,6 @@ import com.basic.code.fragment.components.textview.supertextview.SuperTextCommon
 
 /**
  * SuperTextView演示
- *
-
- * @since 2018/11/29 上午12:29
  */
 @Page(name = "可拓展的TextView")
 public class SuperTextViewFragment extends ComponentContainerFragment {

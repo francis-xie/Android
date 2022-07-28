@@ -22,10 +22,6 @@ import com.basic.code.utils.XToastUtils;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2018/12/26 下午5:40
- */
 @Page(name = "固定宽度，内容均分")
 public class TabSegmentFixModeFragment extends BaseFragment {
 

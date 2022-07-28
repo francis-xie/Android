@@ -20,9 +20,6 @@ import java.util.List;
 
 /**
  * 搜索结果选项列表适配器
- *
-
- * @since 2019/1/2 下午4:04
  */
 public class SearchAdapter extends BaseAdapter implements Filterable, AbstractSearchFilter.OnFilterResultListener {
 

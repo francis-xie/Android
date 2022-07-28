@@ -11,9 +11,6 @@ import io.reactivex.subjects.BehaviorSubject;
 
 /**
  * 用于添加到Activity中的Fragment，使得和activity的生命周期同步，从而间接绑定了activity的生命周期
- *
-
- * @since 2018/6/11 上午12:58
  */
 public class LifecycleFragment extends Fragment implements LifecycleManager {
     private final BehaviorSubject<ActivityLifecycle> mLifecycleSubject;

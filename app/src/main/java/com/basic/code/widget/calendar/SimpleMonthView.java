@@ -12,10 +12,6 @@ import com.haibin.calendarview.Calendar;
 import com.haibin.calendarview.MonthView;
 import com.basic.face.utils.DensityUtils;
 
-/**
- 
- * @since 2019-06-27 16:30
- */
 public class SimpleMonthView extends MonthView {
 
     private int mRadius;

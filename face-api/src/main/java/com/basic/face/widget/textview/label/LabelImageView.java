@@ -8,9 +8,6 @@ import androidx.appcompat.widget.AppCompatImageView;
 
 /**
  * 标签图片
- *
-
- * @since 2018/12/3 上午12:14
  */
 public class LabelImageView extends AppCompatImageView {
 

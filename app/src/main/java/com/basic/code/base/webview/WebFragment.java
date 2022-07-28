@@ -62,9 +62,6 @@ import java.util.HashMap;
 
 /**
  * 通用WebView页面
- *
-
- * @since 2019/1/4 下午11:13
  */
 public class WebFragment extends Fragment implements FragmentKeyDown {
     public static final String KEY_URL = "com.basic.code.base.webview.key_url";

@@ -11,9 +11,6 @@ import android.graphics.drawable.Drawable;
 
 /**
  * 工具类
- *
-
- * @since 2018/9/13 上午2:15
  */
 final class Utils {
 

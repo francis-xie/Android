@@ -30,10 +30,6 @@ import java.util.List;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2018/12/7 下午5:21
- */
 @Page(name = "RecycleView 图片预览")
 public class PreviewRecycleViewFragment extends BaseFragment {
 

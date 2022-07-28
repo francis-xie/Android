@@ -11,10 +11,6 @@ import com.basic.code.base.BaseFragment;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2020-01-04 23:51
- */
 @Page(name = "SeekBar\n滑块选择器，支持双向范围选择")
 public class SeekBarFragment extends BaseFragment {
 

@@ -4,9 +4,6 @@ package com.basic.face.widget.tabbar.vertical;
 
 /**
  * Tab适配器
- *
-
- * @since 2018/12/28 下午1:31
  */
 public interface TabAdapter {
     int getCount();

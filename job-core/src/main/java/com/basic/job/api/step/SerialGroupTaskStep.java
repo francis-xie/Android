@@ -13,9 +13,6 @@ import com.basic.job.utils.TaskUtils;
 
 /**
  * 串行任务组(不进行具体的任务）
- *
-
- * @since 2021/11/8 2:02 AM
  */
 public class SerialGroupTaskStep extends AbstractGroupTaskStep {
 

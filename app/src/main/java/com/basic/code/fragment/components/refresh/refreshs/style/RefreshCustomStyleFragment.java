@@ -20,10 +20,6 @@ import java.util.concurrent.TimeUnit;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019-07-22 23:40
- */
 @Page(name = "自定义下拉刷新样式")
 public class RefreshCustomStyleFragment extends BaseFragment {
 

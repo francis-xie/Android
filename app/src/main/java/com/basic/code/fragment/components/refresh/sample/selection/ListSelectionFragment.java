@@ -18,10 +18,6 @@ import java.util.List;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2020/9/2 8:55 PM
- */
 @Page(name = "列表选择案例")
 public class ListSelectionFragment extends BaseFragment {
 

@@ -5,9 +5,6 @@ import com.kunminx.linkage.bean.BaseGroupedItem;
 
 /**
  * 饿了么列表简单演示
- *
-
- * @since 2019-11-25 22:52
  */
 public class ElemeGroupedItem extends BaseGroupedItem<ElemeGroupedItem.ItemInfo> {
 

@@ -27,10 +27,6 @@ import static android.app.Activity.RESULT_OK;
 import static com.basic.aop.consts.PermissionConsts.STORAGE;
 import static com.basic.code.fragment.expands.ScanFragment.REQUEST_IMAGE;
 
-/**
-
- * @since 2019-10-21 11:55
- */
 @Page(name = "图片增强处理")
 public class ImageEnhanceFragment extends BaseFragment implements SeekBar.OnSeekBarChangeListener {
     @BindView(R.id.sb_saturation)

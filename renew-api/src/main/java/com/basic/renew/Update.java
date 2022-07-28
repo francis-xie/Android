@@ -31,9 +31,6 @@ import java.util.TreeMap;
 
 /**
  * 版本更新的入口
- *
-
- * @since 2018/6/29 下午7:47
  */
 public class Update {
 

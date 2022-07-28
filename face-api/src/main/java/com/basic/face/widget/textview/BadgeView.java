@@ -20,9 +20,6 @@ import androidx.appcompat.widget.AppCompatTextView;
 
 /**
  * 数字提示
- *
-
- * @since 2018/11/22 上午10:39
  */
 public class BadgeView extends AppCompatTextView {
 

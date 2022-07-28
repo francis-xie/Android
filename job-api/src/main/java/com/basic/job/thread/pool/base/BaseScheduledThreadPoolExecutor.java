@@ -19,9 +19,6 @@ import java.util.concurrent.ThreadFactory;
  * keepAliveTime：10L
  * unit：MILLISECONDS
  * workQueue：DelayedWorkQueue
- *
-
- * @since 3/19/22 4:49 PM
  */
 public class BaseScheduledThreadPoolExecutor extends ScheduledThreadPoolExecutor {
 

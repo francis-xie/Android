@@ -69,9 +69,6 @@ import static com.basic.code.base.webview.WebFragment.KEY_URL;
 
 /**
  * 使用PageFragment
- *
-
- * @since 2019-05-26 18:15
  */
 @Page(params = {KEY_URL})
 public class PageWebViewFragment extends BaseFragment {

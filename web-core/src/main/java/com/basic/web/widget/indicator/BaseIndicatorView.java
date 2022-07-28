@@ -9,9 +9,6 @@ import androidx.annotation.Nullable;
 
 /**
  * 基础进度条
- *
- 
- * @since 2019/1/4 上午11:00
  */
 public abstract class BaseIndicatorView extends FrameLayout implements BaseIndicatorSpec,LayoutParamsOffer {
     public BaseIndicatorView(Context context) {

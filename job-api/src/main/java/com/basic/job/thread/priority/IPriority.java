@@ -3,9 +3,6 @@ package com.basic.job.thread.priority;
 
 /**
  * 优先级排序接口
- *
-
- * @since 2021/10/9 2:32 AM
  */
 public interface IPriority {
 

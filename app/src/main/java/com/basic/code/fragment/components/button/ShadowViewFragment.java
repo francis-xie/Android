@@ -6,9 +6,6 @@ import com.basic.code.base.BaseFragment;
 
 /**
  * 可设置阴影效果的控件
- *
-
- * @since 2019/3/31 下午6:43
  */
 @Page(name = "ShadowView\n可设置阴影效果的控件")
 public class ShadowViewFragment extends BaseFragment {

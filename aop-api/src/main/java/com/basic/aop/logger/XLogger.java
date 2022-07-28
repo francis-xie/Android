@@ -9,10 +9,7 @@ import androidx.annotation.NonNull;
 import com.basic.aop.util.Strings;
 
 /**
- * XLogger日志记录
- *
-
- * @since 2020/10/25 3:33 PM
+ * Logger日志记录
  */
 public final class XLogger {
 

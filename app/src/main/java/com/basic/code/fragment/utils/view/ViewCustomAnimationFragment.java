@@ -16,10 +16,6 @@ import com.basic.code.base.BaseFragment;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
- 
- * @since 2020/4/2 12:43 AM
- */
 @Page(name = "控件自定义动画")
 public class ViewCustomAnimationFragment extends BaseFragment {
 

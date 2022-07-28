@@ -14,10 +14,6 @@ import com.basic.code.utils.XToastUtils;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2021/5/27 1:19 AM
- */
 @Page(name = "SignatureView\n电子签名工具")
 public class SignatureViewFragment extends BaseFragment {
 

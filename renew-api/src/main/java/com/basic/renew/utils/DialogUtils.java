@@ -18,9 +18,6 @@ import android.widget.EditText;
 
 /**
  * 弹窗工具类
- *
-
- * @since 2021/11/16 1:19 PM
  */
 public final class DialogUtils {
 

@@ -18,10 +18,6 @@ import com.basic.code.R;
 import java.util.Arrays;
 import java.util.List;
 
-/**
-
- * @since 2019-05-30 00:50
- */
 public class RecyclerViewBannerAdapter extends BaseRecyclerAdapter<String> {
 
     /**

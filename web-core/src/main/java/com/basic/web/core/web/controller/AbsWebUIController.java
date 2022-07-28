@@ -13,9 +13,6 @@ import com.basic.web.widget.WebParentLayout;
 
 /**
  * 该类统一控制了与用户交互的界面
- *
- 
- * @since 3.0.0
  */
 public abstract class AbsWebUIController {
 

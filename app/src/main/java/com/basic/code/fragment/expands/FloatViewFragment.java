@@ -15,10 +15,6 @@ import com.basic.code.utils.Utils;
 
 import java.util.List;
 
-/**
-
- * @since 2019/1/21 上午11:32
- */
 @Page(name = "悬浮窗", extra = R.drawable.ic_expand_floatview)
 public class FloatViewFragment extends BaseSimpleListFragment {
 

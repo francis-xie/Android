@@ -3,11 +3,6 @@ package com.basic.web.core.client;
 
 import android.webkit.WebChromeClient;
 
-/**
- 
- * @date 2017/12/16
- * @since 3.0.0
- */
 public class MiddlewareWebChromeBase extends WebChromeClientDelegate {
 
     private MiddlewareWebChromeBase mMiddlewareWebChromeBase;

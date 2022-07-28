@@ -14,9 +14,6 @@ import android.view.inputmethod.InputMethodManager;
 
 /**
  * 屏幕工具
- *
-
- * @since 2018/12/30 下午6:42
  */
 public class ScreenUtils {
 

@@ -19,9 +19,6 @@ import static android.provider.MediaStore.EXTRA_OUTPUT;
 
 /**
  * 壳activity,用于权限申请和文件选择等动作
- *
-
- * @since 2019/1/4 上午10:58
  */
 public final class ActionActivity extends Activity {
 

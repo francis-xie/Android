@@ -3,9 +3,6 @@ package com.basic.util.logs;
 
 /**
  * 简易的日志记录接口
- *
-
- * @since 2018/6/10 下午9:30
  */
 public interface ILogger {
 

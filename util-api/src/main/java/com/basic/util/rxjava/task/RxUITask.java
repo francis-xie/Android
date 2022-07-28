@@ -5,9 +5,6 @@ import com.basic.util.rxjava.impl.IRxUITask;
 
 /**
  * UI线程中操作的任务
- *
-
- * @since 2018/6/10 下午9:29
  */
 public abstract class RxUITask<T> implements IRxUITask<T> {
     /**

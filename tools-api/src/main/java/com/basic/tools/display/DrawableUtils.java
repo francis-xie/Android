@@ -10,9 +10,6 @@ import android.widget.TextView;
 
 /**
  * Drawable生成工具类
- *
-
- * @since 2018/7/2 下午3:06
  */
 public class DrawableUtils {
 

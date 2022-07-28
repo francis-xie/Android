@@ -2,9 +2,6 @@ package com.basic.face.widget.imageview.photoview.gestures;
 
 /**
  * 手势监听器
- *
-
- * @since 2018/12/5 上午10:51
  */
 public interface OnGestureListener {
 

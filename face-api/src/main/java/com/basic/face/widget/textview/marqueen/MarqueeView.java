@@ -14,9 +14,6 @@ import java.util.List;
 
 /**
  * 文字轮播控件【类似字幕、头条之类】
- *
-
- * @since 2019/1/14 下午10:03
  */
 public class MarqueeView extends ViewFlipper {
     /**

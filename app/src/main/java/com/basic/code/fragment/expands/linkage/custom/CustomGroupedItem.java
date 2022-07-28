@@ -5,9 +5,6 @@ import com.kunminx.linkage.bean.BaseGroupedItem;
 
 /**
  * 自定义组
- *
-
- * @since 2019-11-25 17:15
  */
 public class CustomGroupedItem extends BaseGroupedItem<CustomGroupedItem.ItemInfo> {
 

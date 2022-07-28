@@ -26,10 +26,6 @@ import butterknife.BindView;
 
 import static androidx.recyclerview.widget.RecyclerView.VERTICAL;
 
-/**
-
- * @since 2018/12/9 下午11:23
- */
 @Page(name = "NineGrid 九宫格预览")
 public class NineGridImageViewFragment extends BaseFragment {
 

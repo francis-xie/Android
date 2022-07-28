@@ -26,9 +26,6 @@ import com.basic.face.FACE;
 
 /**
  * 获取res中的资源
- *
-
- * @since 2018/12/18 上午12:14
  */
 public final class ResUtils {
 

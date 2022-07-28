@@ -44,9 +44,6 @@ import static androidx.recyclerview.widget.OrientationHelper.VERTICAL;
 
 /**
  * 组件工具类
- *
-
- * @since 2018/11/26 下午2:54
  */
 public final class WidgetUtils {
 

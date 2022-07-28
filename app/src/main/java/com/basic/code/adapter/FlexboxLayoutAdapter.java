@@ -12,10 +12,6 @@ import com.basic.code.R;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
-
- * @since 2019-11-23 01:32
- */
 public class FlexboxLayoutAdapter extends BaseRecyclerAdapter<String> {
 
     private boolean mIsMultiSelectMode;

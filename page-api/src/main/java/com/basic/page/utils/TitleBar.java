@@ -30,9 +30,6 @@ import java.util.LinkedList;
 
 /**
  * 标题栏
- *
-
- * @since 2019/1/14 下午10:08
  */
 public class TitleBar extends ViewGroup implements View.OnClickListener {
     private static final String STATUS_BAR_HEIGHT_RES_NAME = "status_bar_height";

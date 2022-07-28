@@ -19,9 +19,6 @@ import com.basic.code.R;
 
 /**
  * 演示NestedScrollingParent2的使用
- *
-
- * @since 2020/4/6 11:08 AM
  */
 public class StickyNavigationLayout extends LinearLayout implements NestedScrollingParent2 {
 

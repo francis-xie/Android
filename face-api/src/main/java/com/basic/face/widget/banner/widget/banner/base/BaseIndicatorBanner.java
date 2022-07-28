@@ -21,9 +21,6 @@ import java.util.List;
 
 /**
  * 轮播下方的引导器
- *
-
- * @since 2018/11/25 下午7:01
  */
 public abstract class BaseIndicatorBanner<E, T extends BaseIndicatorBanner<E, T>> extends BaseBanner<E, T> {
     public static final int STYLE_DRAWABLE_RESOURCE = 0;

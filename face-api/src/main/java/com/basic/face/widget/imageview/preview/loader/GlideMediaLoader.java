@@ -20,9 +20,6 @@ import com.basic.face.R;
 
 /**
  * Glide多媒体加载
- *
-
- * @since 2018/12/8 下午5:50
  */
 public class GlideMediaLoader implements IMediaLoader {
 

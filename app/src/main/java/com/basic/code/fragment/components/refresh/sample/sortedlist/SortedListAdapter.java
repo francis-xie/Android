@@ -21,9 +21,6 @@ import java.util.List;
 
 /**
  * 使用SortedList作为数据源的Adapter
- *
-
- * @since 2020/6/28 12:00 AM
  */
 public class SortedListAdapter extends RecyclerView.Adapter<RecyclerViewHolder> {
 

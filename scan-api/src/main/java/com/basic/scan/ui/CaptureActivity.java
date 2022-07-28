@@ -23,9 +23,6 @@ import com.basic.scan.util.QRCodeAnalyzeUtils;
 
 /**
  * 默认的二维码扫描Activity
- *
-
- * @since 2019/5/17 18:31
  */
 public class CaptureActivity extends AppCompatActivity {
 

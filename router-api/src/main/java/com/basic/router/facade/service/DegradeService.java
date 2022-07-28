@@ -8,9 +8,6 @@ import com.basic.router.facade.template.IProvider;
 
 /**
  * 路由降级服务
- *
-
- * @since 2018/5/17 上午12:59
  */
 public interface DegradeService extends IProvider {
 

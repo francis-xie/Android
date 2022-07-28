@@ -31,10 +31,6 @@ import androidx.annotation.StyleRes;
 import com.basic.face.R;
 import com.basic.face.FACE;
 
-/**
-
- * @since 2018/11/29 上午12:47
- */
 public class GuideCaseView extends FrameLayout implements ViewTreeObserver.OnGlobalLayoutListener {
 
     GuideCaseView(@NonNull Context context) {

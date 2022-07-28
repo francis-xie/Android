@@ -3,9 +3,6 @@ package com.basic.router.enums;
 
 /**
  * 路由的类型
- *
-
- * @since 2018/5/17 上午12:32
  */
 public enum RouteType {
     ACTIVITY(0, "android.app.Activity"),

@@ -8,8 +8,6 @@ import com.orhanobut.logger.PrettyFormatStrategy;
 
 /**
  *
- * @author Freak
- * @date 2019/8/12.
  * Log日志工具，封装logger
  */
 public class LogUtil {

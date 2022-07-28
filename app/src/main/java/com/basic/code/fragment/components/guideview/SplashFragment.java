@@ -13,9 +13,6 @@ import static com.basic.code.activity.SplashActivity.KEY_IS_DISPLAY;
 
 /**
  * 启动页演示
- *
-
- * @since 2018/11/30 上午12:56
  */
 @Page(name = "启动页")
 public class SplashFragment extends BaseSimpleListFragment {

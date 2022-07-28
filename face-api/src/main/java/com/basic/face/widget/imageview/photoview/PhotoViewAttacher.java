@@ -957,8 +957,6 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
     /**
      * Interface definition for a callback to be invoked when the internal Matrix has changed for
      * this View.
-     *
-     * @author Chris Banes
      */
     public interface OnMatrixChangedListener {
         /**
@@ -972,8 +970,6 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
 
     /**
      * Interface definition for callback to be invoked when attached ImageView scale changes
-     *
-     * @author Marek Sebera
      */
     public interface OnScaleChangeListener {
         /**
@@ -989,8 +985,6 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
     /**
      * Interface definition for a callback to be invoked when the Photo is tapped with a single
      * tap.
-     *
-     * @author Chris Banes
      */
     public interface OnPhotoTapListener {
 
@@ -1015,8 +1009,6 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
     /**
      * Interface definition for a callback to be invoked when the ImageView is tapped with a single
      * tap.
-     *
-     * @author Chris Banes
      */
     public interface OnViewTapListener {
 
@@ -1034,8 +1026,6 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
     /**
      * Interface definition for a callback to be invoked when the ImageView is fling with a single
      * touch
-     *
-     * @author tonyjs
      */
     public interface OnSingleFlingListener {
 

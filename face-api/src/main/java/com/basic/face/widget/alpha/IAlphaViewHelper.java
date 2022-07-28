@@ -4,9 +4,6 @@ import android.view.View;
 
 /**
  * 透明度辅助工具
- *
-
- * @since 2018/11/30 下午1:42
  */
 public interface IAlphaViewHelper {
 

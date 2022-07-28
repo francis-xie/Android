@@ -16,9 +16,6 @@ import java.util.List;
 
 /**
  * 启动引导页
- *
-
- * @since 2018/11/27 下午4:49
  */
 public abstract class BaseGuideActivity extends AppCompatActivity {
     @Override

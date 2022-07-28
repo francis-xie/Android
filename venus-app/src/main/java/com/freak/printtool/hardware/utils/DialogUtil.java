@@ -7,13 +7,6 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import com.freak.printtool.hardware.dialog.ToastDialogFragment;
 
-
-/**
- *
- * @author Administrator
- * @date 2018/12/17
- */
-
 public class DialogUtil {
     /**
      * 温馨提示弹窗

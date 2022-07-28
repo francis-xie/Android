@@ -5,9 +5,6 @@ import android.app.Application;
 
 /**
  * 腾讯X5 SDK初始化
- *
-
- * @since 2019-07-21 22:56
  */
 public final class TbsInit {
 

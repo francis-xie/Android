@@ -3,9 +3,6 @@ package com.basic.router.utils;
 
 /**
  * Router的常量
- *
- 
- * @since 2018/5/17 下午11:44
  */
 public final class Consts {
     public static final String SDK_NAME = "Router";

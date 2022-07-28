@@ -4,9 +4,6 @@ import androidx.annotation.NonNull;
 
 /**
  * 复合字幕条目对象
- *
- 
- * @since 2019/1/14 下午10:08
  */
 public class ComplexItemEntity {
 

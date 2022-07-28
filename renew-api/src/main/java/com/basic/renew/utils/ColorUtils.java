@@ -11,9 +11,6 @@ import java.util.Random;
 
 /**
  * 颜色工具类
- *
-
- * @since 2018/7/2 下午3:12
  */
 public final class ColorUtils {
 

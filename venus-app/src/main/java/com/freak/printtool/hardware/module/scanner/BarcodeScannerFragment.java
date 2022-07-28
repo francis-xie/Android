@@ -16,10 +16,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import com.emis.venus.R;
 
-/**
- * @author Freak
- * @date 2019/8/13.
- */
 public class BarcodeScannerFragment extends Fragment {
     private TextView text_view_scan;
     private EditText edt;

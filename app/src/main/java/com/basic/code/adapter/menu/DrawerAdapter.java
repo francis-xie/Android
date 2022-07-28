@@ -13,9 +13,6 @@ import java.util.Map;
 
 /**
  * 侧滑栏的列表适配器
- *
-
- * @since 2019/1/6 上午12:28
  */
 public class DrawerAdapter extends RecyclerView.Adapter<DrawerAdapter.ViewHolder> {
 

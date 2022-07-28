@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
-    <declare-styleable name="CameraView">
+    <declare-styleable name="CameraSee">
         <!--
-          Set this to true if you want the CameraView to adjust its bounds to preserve the aspect
+          Set this to true if you want the CameraSee to adjust its bounds to preserve the aspect
           ratio of its camera preview.
         -->
         <attr name="android:adjustViewBounds"/>

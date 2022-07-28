@@ -54,9 +54,6 @@ import static javax.lang.model.element.Modifier.PUBLIC;
  * Process the annotation of {@link AutoWired}
  *
  * <p>自动生成依赖注入的辅助类 [ClassName]$$Router$$AutoWired </p>
- *
-
- * @since 2018/5/20 上午12:02
  */
 @AutoService(Processor.class)
 @SupportedOptions(KEY_MODULE_NAME)

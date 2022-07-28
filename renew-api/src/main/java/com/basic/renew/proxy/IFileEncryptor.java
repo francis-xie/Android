@@ -4,9 +4,6 @@ import java.io.File;
 
 /**
  * 文件加密器，用于文件有效性校验
- *
-
- * @since 2019-09-06 14:15
  */
 public interface IFileEncryptor {
 

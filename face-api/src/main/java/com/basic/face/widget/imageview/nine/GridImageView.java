@@ -11,9 +11,6 @@ import androidx.appcompat.widget.AppCompatImageView;
 
 /**
  * 九宫图图片
- *
-
- * @since 2018/12/9 下午10:37
  */
 public class GridImageView extends AppCompatImageView {
 

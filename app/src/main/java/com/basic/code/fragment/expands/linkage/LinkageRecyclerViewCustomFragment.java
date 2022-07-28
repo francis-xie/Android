@@ -21,10 +21,6 @@ import com.basic.code.fragment.expands.linkage.custom.CustomLinkageSecondaryAdap
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019-11-25 16:52
- */
 @Page(name = "双列表自定义样式")
 public class LinkageRecyclerViewCustomFragment extends BaseFragment implements CustomLinkagePrimaryAdapterConfig.OnPrimaryItemClickListener, CustomLinkageSecondaryAdapterConfig.OnSecondaryItemClickListener {
 

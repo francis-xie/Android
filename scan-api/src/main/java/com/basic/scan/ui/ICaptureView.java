@@ -8,9 +8,6 @@ import com.google.zxing.Result;
 
 /**
  * 二维码扫描界面实现接口
- *
-
- * @since 2019/1/16 下午11:57
  */
 public interface ICaptureView {
 

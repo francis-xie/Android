@@ -1,10 +1,5 @@
 package com.freak.printtool.hardware.base;
 
-/**
- * @author Freak
- * @date 2019/8/13.
- */
-
 public interface IActivityStatusBar {
 
     /**

@@ -28,10 +28,6 @@ import com.basic.code.R;
 
 import java.io.Serializable;
 
-/**
-
- * @since 2018/5/25 下午3:44
- */
 public abstract class BaseFragment extends PageFragment {
 
     /**

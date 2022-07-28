@@ -10,11 +10,7 @@ package com.freak.printtool.hardware.print.bean;
 
 /**
  * 增加自定义编码
- *
- * @author Freak
- * @date 2019/8/13.
  */
-
 public class ProductLabelBean {
     //商品id
     private String productId;

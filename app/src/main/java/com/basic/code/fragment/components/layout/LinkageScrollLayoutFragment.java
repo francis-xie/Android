@@ -19,10 +19,6 @@ import com.basic.code.utils.XToastUtils;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2020/3/11 7:32 PM
- */
 @Page(name = "LinkageScrollLayout\n内联布局")
 public class LinkageScrollLayoutFragment extends BaseFragment {
 

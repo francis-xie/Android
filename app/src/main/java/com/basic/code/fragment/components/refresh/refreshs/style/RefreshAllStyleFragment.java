@@ -24,10 +24,6 @@ import java.util.Arrays;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2018/12/7 下午2:32
- */
 @Page(name = "样式大全")
 public class RefreshAllStyleFragment extends BaseFragment implements SmartViewHolder.OnItemClickListener {
 

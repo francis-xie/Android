@@ -1,10 +1,6 @@
 
 package com.basic.face.widget.behavior;
 
-/**
-
- * @since 2019-05-10 01:03
- */
 public interface AnimateHelper {
     /**
      * 显示

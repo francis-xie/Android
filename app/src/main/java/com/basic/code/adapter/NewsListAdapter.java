@@ -11,10 +11,6 @@ import com.basic.code.utils.PlaceholderHelper;
 
 import me.samlss.broccoli.Broccoli;
 
-/**
-
- * @since 2019/4/7 下午12:06
- */
 public class NewsListAdapter extends BroccoliRecyclerAdapter<NewInfo> {
     /**
      * 是否是加载占位

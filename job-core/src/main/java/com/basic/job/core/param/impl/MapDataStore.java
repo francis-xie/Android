@@ -10,9 +10,6 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 默认数据存储仓库， 使用ConcurrentHashMap实现
- *
-
- * @since 2021/11/13 4:09 PM
  */
 public class MapDataStore implements IDataStore {
 

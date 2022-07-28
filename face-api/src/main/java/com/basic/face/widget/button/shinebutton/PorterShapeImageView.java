@@ -15,9 +15,6 @@ import com.basic.face.utils.ResUtils;
 
 /**
  * 图标资源控件
- *
-
- * @since 2020-01-06 20:42
  */
 public class PorterShapeImageView extends PorterImageView {
 

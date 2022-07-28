@@ -40,9 +40,6 @@ import java.util.List;
 /**
  * 页面跳转都通过PageActivity 嵌套Fragment来实现,动态替换fragment只需要指定相应的参数。 避免Activity 需要再manifest中注册的问题。
  * 1.管理应用中所有PageActivity 实例。 2.管理PageActivity 实例和fragment的跳转
- *
-
- * @since 2018/5/24 下午3:36
  */
 public class PageActivity extends AppCompatActivity implements CoreSwitcher {
     /**

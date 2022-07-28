@@ -29,8 +29,6 @@ import java.util.Locale;
  * 2、void postBindView(BaseCell cell);
  * 3、void postUnBindView(BaseCell cell);
  *
-
- * @since 2020/4/9 12:30 AM
  */
 public class CustomInterfaceView extends LinearLayout implements ITangramViewLifeCycle {
     private ImageView mImageView;

@@ -9,9 +9,6 @@ import java.util.List;
 
 /**
  *  启动引导页
- *
-
- * @since 2018/11/28 上午12:52
  */
 public class UserGuideActivity extends BaseGuideActivity {
     @Override

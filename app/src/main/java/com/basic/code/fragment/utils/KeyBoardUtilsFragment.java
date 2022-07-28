@@ -18,10 +18,6 @@ import com.basic.code.utils.XToastUtils;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2020/12/15 12:29 AM
- */
 @Page(name = "KeyBoardUtils", extra = R.drawable.ic_util_keyboard)
 public class KeyBoardUtilsFragment extends BaseFragment implements KeyboardUtils.SoftKeyboardToggleListener {
 

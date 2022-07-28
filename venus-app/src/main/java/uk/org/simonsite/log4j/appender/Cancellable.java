@@ -13,11 +13,6 @@
  */
 package uk.org.simonsite.log4j.appender;
 
-/**
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @version 1.0
- */
 interface Cancellable {
   
   boolean cancel(boolean mayInterruptIfRunning);

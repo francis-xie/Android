@@ -12,10 +12,6 @@ import com.basic.code.base.BaseFragment;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019-11-22 15:33
- */
 @Page(name = "在RecycleView中使用")
 public class ExpandableRecycleViewFragment extends BaseFragment {
     @BindView(R.id.recycler_view)

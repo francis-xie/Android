@@ -25,10 +25,6 @@ import butterknife.BindView;
 import static com.basic.code.adapter.swipe.SwipeDragTouchListAdapter.TYPE_GRID;
 import static com.basic.code.adapter.swipe.SwipeDragTouchListAdapter.TYPE_LIST;
 
-/**
-
- * @since 2019/4/6 上午11:59
- */
 @Page(name ="SwipeItemMove\n侧滑删除和拖拽")
 public class SwipeDragMoveFragment extends BaseFragment {
 

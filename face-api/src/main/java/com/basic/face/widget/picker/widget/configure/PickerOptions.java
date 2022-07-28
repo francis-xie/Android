@@ -18,9 +18,6 @@ import java.util.Calendar;
 
 /**
  * Picker配置类
- *
-
- * @since 2019/1/1 下午6:57
  */
 public class PickerOptions {
 

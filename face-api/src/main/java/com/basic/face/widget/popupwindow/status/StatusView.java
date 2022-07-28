@@ -19,9 +19,6 @@ import com.basic.face.R;
 
 /**
  * 状态控件
- *
-
- * @since 2018/12/27 下午5:35
  */
 public class StatusView extends FrameLayout {
 

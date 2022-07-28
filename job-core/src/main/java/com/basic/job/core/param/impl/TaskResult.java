@@ -9,9 +9,6 @@ import com.basic.job.logger.TaskLogger;
 
 /**
  * 任务执行结果
- *
-
- * @since 2021/10/27 2:11 AM
  */
 public class TaskResult extends TaskParam implements ITaskResult {
 

@@ -7,12 +7,6 @@ import android.view.inputmethod.InputConnection;
 
 import androidx.appcompat.widget.AppCompatEditText;
 
-/**
- *
- *
- * @author XUE
- * @since 2019/5/7 11:12
- */
 public class PwdEditText extends AppCompatEditText {
     private TInputConnection mInputConnection;
 

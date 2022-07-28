@@ -10,9 +10,6 @@ import org.reactivestreams.Subscription;
 
 /**
  * 实现带有进度加载的订阅【进度条加载者实现接口】
- *
-
- * @since 2018/6/10 下午9:27
  */
 public abstract class ProgressLoadingSubscriber<T> extends BaseSubscriber<T> implements OnProgressCancelListener {
     /**

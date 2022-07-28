@@ -14,10 +14,6 @@ import com.basic.code.utils.XToastUtils;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2019/1/3 下午2:39
- */
 @Page(name = "控件Padding")
 public class ViewPaddingFragment extends BaseFragment {
     @BindView(R.id.iv_1)

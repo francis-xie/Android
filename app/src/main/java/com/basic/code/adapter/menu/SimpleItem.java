@@ -12,9 +12,6 @@ import com.basic.code.R;
 
 /**
  * 简单的图片加文字的列表项
- *
-
- * @since 2019/1/6 上午12:29
  */
 public class SimpleItem extends DrawerItem<SimpleItem.ViewHolder> {
 

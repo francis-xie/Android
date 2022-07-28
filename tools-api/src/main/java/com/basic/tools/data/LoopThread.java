@@ -2,9 +2,6 @@ package com.basic.tools.data;
 
 /**
  * 循环线程
- *
-
- * @since 2018/11/26 上午10:13
  */
 public abstract class LoopThread extends Thread {
 

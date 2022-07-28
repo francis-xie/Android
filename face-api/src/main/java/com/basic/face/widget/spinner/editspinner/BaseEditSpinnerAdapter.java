@@ -10,9 +10,6 @@ import java.util.List;
 
 /**
  * 基础可输入下拉框
- *
- 
- * @since 2018/11/26 下午2:16
  */
 public abstract class BaseEditSpinnerAdapter<T> extends BaseAdapter {
 

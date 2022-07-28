@@ -10,9 +10,6 @@ import com.basic.renew.R;
 
 /**
  * 更新错误
- *
-
- * @since 2018/6/29 下午9:01
  */
 public class UpdateError extends Throwable {
 

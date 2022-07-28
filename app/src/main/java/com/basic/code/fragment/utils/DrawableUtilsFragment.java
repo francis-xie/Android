@@ -28,9 +28,6 @@ import butterknife.OnClick;
 
 /**
  * {@link DrawableUtils} 的使用示例。
- *
-
- * @since 2019/1/3 下午3:50
  */
 @Page(name = "DrawableUtils", extra = R.drawable.ic_util_drawable)
 public class DrawableUtilsFragment extends BaseFragment {

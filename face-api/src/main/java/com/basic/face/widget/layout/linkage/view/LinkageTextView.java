@@ -13,9 +13,6 @@ import com.basic.face.widget.layout.linkage.LinkageScrollHandlerAdapter;
 
 /**
  * 置于联动容器的TextView
- *
-
- * @since 2020/3/11 7:10 PM
  */
 public class LinkageTextView extends AppCompatTextView implements ILinkageScroll {
 

@@ -19,9 +19,6 @@ import com.basic.face.utils.DensityUtils;
 
 /**
  * 可自定义分割线样式
- *
- * @author XUE
- * @date 2017/9/10 15:24
  */
 public class GridDividerItemDecoration extends RecyclerView.ItemDecoration {
     private static final int[] ATTRS = new int[]{

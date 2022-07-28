@@ -20,9 +20,6 @@ import java.util.List;
 
 /**
  * 标签打印模版
- *
- * @author Freak
- * @date 2019/8/13.
  */
 public class PrintLabel {
 

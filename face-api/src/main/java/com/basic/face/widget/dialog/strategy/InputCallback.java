@@ -6,9 +6,6 @@ import androidx.annotation.NonNull;
 
 /**
  * 输入内容回调
- *
-
- * @since 2018/11/16 上午12:15
  */
 public interface InputCallback {
 

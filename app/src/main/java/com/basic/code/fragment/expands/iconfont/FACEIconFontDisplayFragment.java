@@ -13,10 +13,6 @@ import com.basic.code.widget.iconfont.FACEIconFont;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019-10-13 18:55
- */
 @Page(name = "FACEIconFont展示")
 public class FACEIconFontDisplayFragment extends BaseFragment {
 

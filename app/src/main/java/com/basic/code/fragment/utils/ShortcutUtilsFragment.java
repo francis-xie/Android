@@ -20,9 +20,6 @@ import butterknife.BindView;
 
 /**
  * 快捷方式创建工具类
- *
-
- * @since 2021/10/6 3:33 PM
  */
 @Page(name = "ShortcutUtils", extra = R.drawable.ic_util_shortcut)
 public class ShortcutUtilsFragment extends BaseFragment {

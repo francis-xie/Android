@@ -3,11 +3,6 @@ package com.basic.web.core.client;
 
 import android.webkit.WebViewClient;
 
-/**
- 
- * @date 2017/12/15
- * @since 3.0.0
- */
 public class MiddlewareWebClientBase extends WebViewClientDelegate {
     private MiddlewareWebClientBase mMiddleWrareWebClientBase;
     private static String TAG = MiddlewareWebClientBase.class.getSimpleName();

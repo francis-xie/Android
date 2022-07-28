@@ -26,9 +26,6 @@ import java.util.Set;
 
 /**
  * 权限相关工具类
- *
-
- * @since 2019-08-14 00:05
  */
 public final class PermissionUtils {
 

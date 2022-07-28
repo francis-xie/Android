@@ -2,9 +2,6 @@ package com.basic.face.widget.spinner.editspinner;
 
 /**
  * 监听输入并过滤
- *
-
- * @since 2019/1/14 下午10:14
  */
 public interface EditSpinnerFilter {
     /**

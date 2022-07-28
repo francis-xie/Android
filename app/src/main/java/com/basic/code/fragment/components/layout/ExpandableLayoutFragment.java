@@ -7,10 +7,6 @@ import com.basic.code.fragment.components.layout.expandable.ExpandableHorizontal
 import com.basic.code.fragment.components.layout.expandable.ExpandableRecycleViewFragment;
 import com.basic.code.fragment.components.layout.expandable.ExpandableSimpleFragment;
 
-/**
-
- * @since 2019-11-22 14:18
- */
 @Page(name = "可伸缩布局\n可水平、垂直伸缩")
 public class ExpandableLayoutFragment extends ComponentContainerFragment {
     /**

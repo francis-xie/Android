@@ -29,10 +29,6 @@ import butterknife.OnClick;
 
 import static androidx.recyclerview.widget.OrientationHelper.VERTICAL;
 
-/**
-
- * @since 2020/5/2 6:34 PM
- */
 @Page(name = "通过监听RecyclerView滚动来实现粘顶效果")
 public class StickyCustomFragment extends BaseFragment {
 

@@ -6,9 +6,6 @@ import com.basic.util.rxjava.impl.IRxUITask;
 
 /**
  * 通用的Rx异步执行任务，在io线程中进行数据处理，在ui线程中刷新ui
- *
-
- * @since 2018/6/10 下午9:28
  */
 public abstract class RxAsyncTask<T, R> implements IRxIOTask<T, R>, IRxUITask<R> {
 

@@ -14,9 +14,6 @@ import com.basic.code.utils.task.MainInitTask;
 
 /**
  * 应用初始化
- *
-
- * @since 2018/11/7 下午1:12
  */
 @DataBase(name = "FACE", type = DataBaseType.INTERNAL)
 public class MyApp extends Application {

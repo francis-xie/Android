@@ -30,9 +30,6 @@ import okhttp3.Call;
 
 /**
  * 小贴士弹窗
- *
-
- * @since 2019-08-22 17:02
  */
 public class GuideTipsDialog extends BaseDialog implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
 

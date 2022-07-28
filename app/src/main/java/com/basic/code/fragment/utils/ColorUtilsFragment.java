@@ -14,10 +14,6 @@ import com.basic.code.base.BaseFragment;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2018/12/27 下午3:11
- */
 @Page(name = "ColorUtils", extra = R.drawable.ic_util_color)
 public class ColorUtilsFragment extends BaseFragment {
 

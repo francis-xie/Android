@@ -20,10 +20,6 @@ import com.basic.tools.common.CollectionUtils;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019-05-10 00:17
- */
 @Page(name = "BottomNavigationView Behavior")
 public class BottomNavigationViewBehaviorFragment extends BaseFragment implements ViewPager.OnPageChangeListener, BottomNavigationView.OnNavigationItemSelectedListener {
     @BindView(R.id.toolbar)

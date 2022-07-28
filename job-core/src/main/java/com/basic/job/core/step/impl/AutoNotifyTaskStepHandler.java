@@ -10,9 +10,6 @@ import com.basic.job.core.step.ITaskStepHandler;
 
 /**
  * 自动通知任务执行结果处理者
- *
-
- * @since 2021/11/2 1:48 AM
  */
 public class AutoNotifyTaskStepHandler implements ITaskStepHandler {
     @Override

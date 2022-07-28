@@ -15,9 +15,6 @@ import com.basic.tools.display.ScreenUtils;
 
 /**
  * 颜色选择器
- *
- 
- * @since 2018/12/28 上午10:15
  */
 public class SelectorColorDialog extends CustomMaterialDialog {
 

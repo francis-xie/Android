@@ -4,10 +4,7 @@ import java.util.ArrayList;
 
 /**
  * 网络订单打印bean类
- * @author Freak
- * @date 2019/8/13.
  */
-
 public class WebOrderPrintBean implements PrintfBean {
     //门店名
     private String shopName;

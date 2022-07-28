@@ -7,9 +7,6 @@ import com.basic.job.thread.priority.IPriorityStrategy;
 /**
  * 默认的优先级比较策略
  * 优先级值大的放前面，当优先值一样的，序号小的放前面
- *
-
- * @since 2021/10/9 3:05 PM
  */
 public class DefaultPriorityStrategy implements IPriorityStrategy {
     @Override

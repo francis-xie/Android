@@ -16,9 +16,6 @@ import com.basic.tools.Util;
 
 /**
  * MetaData工具类
- *
-
- * @since 2018/6/27 下午2:33
  */
 public final class MetaDataUtils {
 

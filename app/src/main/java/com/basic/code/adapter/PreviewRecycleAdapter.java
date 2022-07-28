@@ -13,9 +13,6 @@ import com.basic.code.fragment.components.imageview.preview.ImageViewInfo;
 
 /**
  * 图片预览的适配器
- *
-
- * @since 2018/12/7 下午5:40
  */
 public class PreviewRecycleAdapter extends BaseRecyclerAdapter<ImageViewInfo> {
 

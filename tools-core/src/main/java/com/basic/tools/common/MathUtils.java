@@ -6,9 +6,6 @@ import java.util.regex.Pattern;
 
 /**
  * 数学工具类
- *
-
- * @since 2020/6/8 12:23 AM
  */
 public final class MathUtils {
 

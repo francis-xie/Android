@@ -15,10 +15,6 @@ import com.basic.tools.common.logger.Logger;
 
 import java.util.List;
 
-/**
- * @author XUE
- * @since 2019/5/9 10:41
- */
 public class NewsCardViewListAdapter extends BaseRecyclerAdapter<NewInfo> {
 
     @Override

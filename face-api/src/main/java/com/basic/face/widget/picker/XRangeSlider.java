@@ -27,9 +27,6 @@ import java.util.Set;
 
 /**
  * 双向滑块选择器
- *
-
- * @since 2020-01-04 18:34
  */
 public class XRangeSlider extends View {
 

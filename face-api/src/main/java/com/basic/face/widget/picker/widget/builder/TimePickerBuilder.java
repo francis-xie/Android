@@ -17,9 +17,6 @@ import java.util.Calendar;
 
 /**
  * 时间选择器构建者
- *
-
- * @since 2019/1/1 下午8:20
  */
 public class TimePickerBuilder {
 

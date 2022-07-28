@@ -7,9 +7,6 @@ import android.view.ViewGroup;
 
 /**
  * 空白列表项
- *
-
- * @since 2019/1/6 上午12:30
  */
 public class SpaceItem extends DrawerItem<SpaceItem.ViewHolder> {
 

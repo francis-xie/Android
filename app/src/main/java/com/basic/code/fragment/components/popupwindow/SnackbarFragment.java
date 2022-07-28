@@ -16,10 +16,6 @@ import com.basic.code.utils.XToastUtils;
 
 import butterknife.OnClick;
 
-/**
-
- * @since 2018/12/18 上午12:31
- */
 @Page(name = "Snackbar\n使用详解")
 public class SnackbarFragment extends BaseFragment {
 

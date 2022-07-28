@@ -219,9 +219,6 @@ public final class ShellUtils {
      * result</li>
      * <li>{@link CommandResult#errorMsg} means error message of command result</li>
      * </ul>
-     *
-     * @author <a href="http://www.trinea.cn" target="_blank">Trinea</a>
-     *         2013-5-16
      */
     public static class CommandResult {
 

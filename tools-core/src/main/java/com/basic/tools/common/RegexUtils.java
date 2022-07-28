@@ -11,9 +11,6 @@ import java.util.regex.Pattern;
 
 /**
  * 正则表达式工具类
- *
-
- * @since 2018/6/27 下午2:26
  */
 public final class RegexUtils {
 

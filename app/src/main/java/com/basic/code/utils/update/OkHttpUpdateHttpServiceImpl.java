@@ -19,9 +19,6 @@ import okhttp3.Request;
 
 /**
  * 使用okhttp
- *
-
- * @since 2018/7/10 下午4:04
  */
 public class OkHttpUpdateHttpServiceImpl implements IUpdateHttpService {
 

@@ -26,10 +26,6 @@ import java.util.List;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019-11-28 15:24
- */
 @Page(name = "DropDownMenu\n下拉选择菜单")
 public class DropDownMenuFragment extends BaseFragment {
 

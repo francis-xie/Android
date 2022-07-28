@@ -27,10 +27,6 @@ import java.util.List;
 import butterknife.BindView;
 import io.reactivex.functions.Function;
 
-/**
-
- * @since 2020/6/21 11:45 PM
- */
 @Page(name = "DiffUtil 局部刷新")
 public class DiffUtilRefreshFragment extends BaseFragment {
 

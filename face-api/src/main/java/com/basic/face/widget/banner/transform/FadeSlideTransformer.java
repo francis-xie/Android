@@ -6,9 +6,6 @@ import android.view.View;
 
 /**
  * 侧滑逐渐消失切换
- *
-
- * @since 2019/1/14 下午10:10
  */
 public class FadeSlideTransformer implements ViewPager.PageTransformer {
     @Override

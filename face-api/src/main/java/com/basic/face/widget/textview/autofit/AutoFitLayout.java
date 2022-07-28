@@ -16,9 +16,6 @@ import java.util.WeakHashMap;
 
 /**
  * 能自动将子类中的TextView自适应大小
- *
-
- * @since 2019-05-14 22:38
  */
 public class AutoFitLayout extends FrameLayout {
 

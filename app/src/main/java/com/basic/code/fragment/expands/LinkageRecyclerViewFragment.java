@@ -12,10 +12,6 @@ import com.basic.code.fragment.expands.linkage.LinkageRecyclerViewElemeFragment;
 import com.basic.code.fragment.expands.linkage.LinkageRecyclerViewSimpleFragment;
 import com.basic.code.utils.Utils;
 
-/**
-
- * @since 2019-11-25 11:24
- */
 @Page(name = "双列表联动", extra = R.drawable.ic_expand_linkage_list)
 public class LinkageRecyclerViewFragment extends ComponentContainerFragment {
     /**

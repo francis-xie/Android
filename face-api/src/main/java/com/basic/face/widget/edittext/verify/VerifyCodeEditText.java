@@ -27,9 +27,6 @@ import com.basic.face.utils.ResUtils;
 
 /**
  * 验证码输入框
- *
- * @author XUE
- * @since 2019/5/7 11:22
  */
 public class VerifyCodeEditText extends FrameLayout {
 

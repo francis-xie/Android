@@ -17,11 +17,6 @@ import java.io.File;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @version 5.3
- */
 final class BackupSuffixHelper {
 
   private Pattern pattern = null;

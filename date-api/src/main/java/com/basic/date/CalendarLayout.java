@@ -17,10 +17,6 @@ import androidx.core.view.VelocityTrackerCompat;
 import androidx.core.view.ViewCompat;
 import androidx.core.widget.ScrollerCompat;
 
-/**
-
- * @since 2019/5/28 14:08
- */
 public class CalendarLayout extends FrameLayout {
 
     private View mView1;

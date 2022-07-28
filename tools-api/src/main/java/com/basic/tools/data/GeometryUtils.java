@@ -5,9 +5,6 @@ import android.graphics.PointF;
 
 /**
  * 几何图形工具
- *
-
- * @since 2018/6/27 下午5:22
  */
 public final class GeometryUtils {
 

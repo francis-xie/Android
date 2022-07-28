@@ -25,9 +25,6 @@ import com.basic.face.utils.ViewUtils;
 
 /**
  * 自定义下拉刷新头
- *
-
- * @since 2019-07-22 23:50
  */
 public class CustomRefreshHeader extends LinearLayout implements RefreshHeader {
 

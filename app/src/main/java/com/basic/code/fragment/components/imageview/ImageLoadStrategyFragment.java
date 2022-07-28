@@ -15,10 +15,6 @@ import com.basic.code.base.BaseFragment;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019-11-09 16:20
- */
 @Page(name = "图片加载策略")
 public class ImageLoadStrategyFragment extends BaseFragment {
 

@@ -8,9 +8,6 @@ import androidx.appcompat.widget.AppCompatTextView;
 
 /**
  * 标签文字
- *
-
- * @since 2018/12/3 上午12:18
  */
 public class LabelTextView extends AppCompatTextView {
 

@@ -17,9 +17,6 @@ import me.samlss.broccoli.Broccoli;
 
 /**
  * 使用Broccoli占位的基础适配器
- *
- * @author XUE
- * @since 2019/4/8 16:33
  */
 public abstract class BroccoliRecyclerAdapter<T> extends BaseRecyclerAdapter<T> {
 

@@ -30,10 +30,6 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2019-12-02 23:32
- */
 @Page(name = "组件搜索")
 public class SearchComponentFragment extends BaseFragment implements RecyclerViewHolder.OnItemClickListener<SearchRecord> {
 

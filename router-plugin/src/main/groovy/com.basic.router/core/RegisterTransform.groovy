@@ -12,9 +12,6 @@ import org.gradle.api.Project
 
 /**
  * 自动注册路由的插件（核心功能就是在 LogisticsCenter 的 loadRouterMap中动态插入注册路由的代码）
- *
-
- * @since 2018/5/21 下午6:17
  */
 class RegisterTransform extends Transform {
 

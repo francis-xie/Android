@@ -10,9 +10,6 @@ import java.util.Map;
 
 /**
  * 任务参数信息[数据+任务路径]
- *
-
- * @since 2021/10/26 1:36 AM
  */
 public class TaskParam implements ITaskParam {
 

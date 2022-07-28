@@ -23,10 +23,6 @@ import static android.app.Activity.RESULT_OK;
 import static com.basic.code.fragment.expands.camera.CameraActivity.REQUEST_CODE_OPEN_CAMERA;
 import static com.basic.code.fragment.expands.camera.PictureCropActivity.KEY_PICTURE_PATH;
 
-/**
- 
- * @since 2019-10-16 10:25
- */
 @Page(name = "照相机", extra = R.drawable.ic_expand_camera)
 public class CameraFragment extends BaseFragment {
 

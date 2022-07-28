@@ -16,8 +16,6 @@ import java.lang.reflect.InvocationTargetException;
  * <li> {@link NoSuchFieldException}</li>
  * <li> {@link SecurityException}</li>
  * </ul>
- *
- * @author Lukas Eder
  */
 public class ReflectException extends RuntimeException {
 

@@ -16,9 +16,6 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 /**
  * 悬浮按钮的行为
- *
- * @author XUE
- * @since 2019/5/9 9:20
  */
 public class FabBehavior extends FloatingActionButton.Behavior {
 

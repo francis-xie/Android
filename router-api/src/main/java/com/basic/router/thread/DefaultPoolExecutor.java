@@ -16,9 +16,6 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 默认线程池
- *
-
- * @since 2018/5/18 上午12:05
  */
 public class DefaultPoolExecutor extends ThreadPoolExecutor {
     /**
@@ -62,9 +59,6 @@ public class DefaultPoolExecutor extends ThreadPoolExecutor {
 
     /**
      * 线程执行结束，检查是否存在异常
-     *
-
-     * @since 2018/5/18 上午12:09
      */
     @Override
     protected void afterExecute(Runnable r, Throwable t) {

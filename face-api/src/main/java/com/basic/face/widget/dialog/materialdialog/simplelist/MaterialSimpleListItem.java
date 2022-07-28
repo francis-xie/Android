@@ -18,9 +18,6 @@ import android.util.TypedValue;
 import com.basic.face.R;
 import com.basic.face.utils.ThemeUtils;
 
-/**
- * @author Aidan Follestad (afollestad)
- */
 public class MaterialSimpleListItem {
 
     private final Builder builder;

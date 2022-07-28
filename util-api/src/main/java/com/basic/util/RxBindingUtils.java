@@ -22,9 +22,6 @@ import io.reactivex.functions.Consumer;
 
 /**
  * RxBinding工具
- *
-
- * @since 2018/6/10 下午9:26
  */
 public final class RxBindingUtils {
 

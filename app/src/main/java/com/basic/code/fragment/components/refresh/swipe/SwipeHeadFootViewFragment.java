@@ -14,10 +14,6 @@ import com.yanzhenjie.recyclerview.SwipeRecyclerView;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019/4/6 下午6:12
- */
 @Page(name = "动态添加Head、FootView")
 public class SwipeHeadFootViewFragment extends BaseFragment {
 

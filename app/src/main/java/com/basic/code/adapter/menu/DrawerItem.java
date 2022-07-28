@@ -5,9 +5,6 @@ import android.view.ViewGroup;
 
 /**
  * 侧滑栏的列表项
- *
-
- * @since 2019/1/6 上午12:28
  */
 public abstract class DrawerItem<T extends DrawerAdapter.ViewHolder> {
 

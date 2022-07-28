@@ -15,9 +15,6 @@ import java.util.List;
 
 /**
  * Smart RecyclerAdapter
- *
-
- * @since 2018/12/6 下午3:04
  */
 public abstract class SmartRecyclerAdapter<T> extends RecyclerView.Adapter<SmartViewHolder> implements ListAdapter {
 

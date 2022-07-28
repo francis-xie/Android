@@ -37,9 +37,6 @@ import java.util.List;
 
 /**
  * 演示数据
- *
-
- * @since 2018/11/23 下午5:52
  */
 public class DemoDataProvider {
 
@@ -452,7 +449,7 @@ public class DemoDataProvider {
                 .setDetailUrl("https://juejin.im/post/5b480b79e51d45190905ef44")
                 .setImageUrl("https://user-gold-cdn.xitu.io/2018/7/13/16492d9b7877dc21?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"));
 
-        list.add(new NewInfo("Android/HTTP", "XHttp2 一个功能强悍的网络请求库，使用RxJava2 + Retrofit2 + OKHttp进行组装")
+        list.add(new NewInfo("Android/HTTP", "Http 一个功能强悍的网络请求库，使用RxJava2 + Retrofit2 + OKHttp进行组装")
                 .setSummary("一个功能强悍的网络请求库，使用RxJava2 + Retrofit2 + OKHttp组合进行封装。还不赶紧点击使用说明文档，体验一下吧！")
                 .setDetailUrl("https://juejin.im/post/5b6b9b49e51d4576b828978d")
                 .setImageUrl("https://user-gold-cdn.xitu.io/2018/8/9/1651c568a7e30e02?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"));
@@ -490,7 +487,7 @@ public class DemoDataProvider {
                 .setImageUrl("https://user-gold-cdn.xitu.io/2018/7/13/16492d9b7877dc21?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"));
 
 
-        list.add(new NewInfo("Android/HTTP", "XHttp2 一个功能强悍的网络请求库，使用RxJava2 + Retrofit2 + OKHttp进行组装")
+        list.add(new NewInfo("Android/HTTP", "Http 一个功能强悍的网络请求库，使用RxJava2 + Retrofit2 + OKHttp进行组装")
                 .setSummary("一个功能强悍的网络请求库，使用RxJava2 + Retrofit2 + OKHttp组合进行封装。还不赶紧点击使用说明文档，体验一下吧！")
                 .setDetailUrl("https://juejin.im/post/5b6b9b49e51d4576b828978d")
                 .setImageUrl("https://user-gold-cdn.xitu.io/2018/8/9/1651c568a7e30e02?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"));

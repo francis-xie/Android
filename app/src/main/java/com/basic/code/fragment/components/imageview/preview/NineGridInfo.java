@@ -8,9 +8,6 @@ import java.util.List;
 
 /**
  * 九宫格信息
- *
-
- * @since 2018/12/9 下午11:57
  */
 public class NineGridInfo {
 

@@ -24,9 +24,6 @@ import static com.basic.face.widget.popupwindow.bar.Cookie.DEFAULT_COOKIE_DURATI
  *      .show();
  * </pre>
  * <p>
- *
-
- * @since 2018/12/19 上午9:30
  */
 public final class CookieBar {
 

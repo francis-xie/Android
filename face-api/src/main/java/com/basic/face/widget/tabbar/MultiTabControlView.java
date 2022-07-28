@@ -38,9 +38,6 @@ import static android.os.Build.VERSION_CODES.JELLY_BEAN;
 
 /**
  * 多选Tab（CheckBox实现）
- *
-
- * @since 2019/1/2 下午11:25
  */
 public class MultiTabControlView extends LinearLayout implements HasTypeface {
 

@@ -26,9 +26,6 @@ import com.basic.face.R;
 
 /**
  * 提供为图片添加圆角、边框、剪裁到圆形或其他形状等功能。
- *
-
- * @since 2018/12/1 下午11:59
  */
 public class RadiusImageView extends AppCompatImageView {
     private static final int DEFAULT_BORDER_COLOR = Color.GRAY;

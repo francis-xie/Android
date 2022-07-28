@@ -20,9 +20,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * 抽象任务组(不进行具体的任务）
- *
-
- * @since 2/1/22 11:27 PM
  */
 public abstract class AbstractGroupTaskStep extends AbstractTaskStep implements ITaskStepLifecycle, IGroupTaskStep {
 

@@ -22,10 +22,6 @@ import butterknife.BindView;
 
 import static com.google.android.material.tabs.TabLayout.MODE_FIXED;
 
-/**
-
- * @since 2019/5/17 8:57
- */
 @Page(name = "复杂详情页联动")
 public class ComplexDetailsPageFragment extends BaseFragment {
 

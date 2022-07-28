@@ -22,9 +22,6 @@ import java.util.Hashtable;
 
 /**
  * 解码处理（解码的核心）
- *
-
- * @since 2019/1/17 上午12:01
  */
 final class DecodeHandler extends Handler {
 

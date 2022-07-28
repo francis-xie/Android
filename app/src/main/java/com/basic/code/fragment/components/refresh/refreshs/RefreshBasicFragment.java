@@ -11,10 +11,7 @@ import com.basic.code.R;
 import com.basic.code.adapter.SimpleRecyclerAdapter;
 import com.basic.code.base.BaseFragment;
 import com.basic.code.utils.XToastUtils;
-/**
- 
- * @since 2018/12/6 下午5:57
- */
+
 @Page(name = "下拉刷新基础用法\n上拉加载、下拉刷新、自动刷新和点击事件")
 public class RefreshBasicFragment extends BaseFragment {
 

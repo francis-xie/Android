@@ -17,9 +17,6 @@ import com.basic.renew.R;
 
 /**
  * 数字进度条
- *
-
- * @since 2018/7/2 上午11:23
  */
 public class NumberProgressBar extends View {
 

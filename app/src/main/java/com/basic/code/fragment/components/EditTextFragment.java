@@ -10,9 +10,6 @@ import com.basic.code.fragment.components.edittext.VerifyCodeEditTextFragment;
 
 /**
  * 输入框组件
- *
-
- * @since 2018/11/26 下午5:48
  */
 @Page(name = "输入框", extra = R.drawable.ic_widget_edittext)
 public class EditTextFragment extends ComponentContainerFragment {

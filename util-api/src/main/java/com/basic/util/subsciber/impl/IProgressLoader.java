@@ -3,9 +3,6 @@ package com.basic.util.subsciber.impl;
 
 /**
  * 进度条加载者实现接口
- *
-
- * @since 2018/6/10 下午9:27
  */
 public interface IProgressLoader {
     /**

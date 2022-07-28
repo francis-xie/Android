@@ -7,9 +7,6 @@ import com.basic.web.core.web.WebConfig;
 
 /**
  * 日志工具
- *
-
- * @since 2019/1/4 上午11:17
  */
 public class LogUtils {
 

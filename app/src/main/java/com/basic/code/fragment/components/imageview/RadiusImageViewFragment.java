@@ -14,11 +14,6 @@ import com.basic.code.base.BaseFragment;
 
 import butterknife.BindView;
 
-
-/**
-
- * @since 2018/12/2 上午12:17
- */
 @Page(name = "RadiusImageView\n圆角图片")
 public class RadiusImageViewFragment extends BaseFragment {
 

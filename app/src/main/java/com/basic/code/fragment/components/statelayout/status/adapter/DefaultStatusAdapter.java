@@ -7,9 +7,6 @@ import com.basic.face.widget.statelayout.StatusLoader;
 
 /**
  * 默认状态适配器
- *
-
- * @since 2020/4/29 12:59 AM
  */
 public class DefaultStatusAdapter implements StatusLoader.Adapter {
 

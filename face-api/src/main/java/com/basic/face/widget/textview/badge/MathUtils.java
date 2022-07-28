@@ -4,12 +4,7 @@ package com.basic.face.widget.textview.badge;
 import android.graphics.PointF;
 
 import java.util.List;
-/**
- *
- *
 
- * @since 2018/12/28 上午9:10
- */
 public class MathUtils {
 
     private MathUtils() {

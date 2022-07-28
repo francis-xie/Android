@@ -14,9 +14,6 @@ import java.util.List;
 
 /**
  * 演示如何增加HeadView和FootView
- *
-
- * @since 2019/3/31 下午11:45
  */
 public class RefreshHeadViewAdapter extends BaseRecyclerAdapter<String> {
 

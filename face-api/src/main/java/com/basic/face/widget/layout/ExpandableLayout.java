@@ -24,9 +24,6 @@ import static com.basic.face.widget.layout.ExpandableLayout.State.EXPANDING;
 
 /**
  * 可伸缩的布局
- *
-
- * @since 2019-11-22 13:41
  */
 public class ExpandableLayout extends FrameLayout {
 

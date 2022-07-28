@@ -26,10 +26,6 @@ import butterknife.OnClick;
 
 import static com.google.android.material.tabs.TabLayout.MODE_SCROLLABLE;
 
-/**
-
- * @since 2020/4/21 1:11 AM
- */
 @Page(name = "TabLayout+FragmentAdapter的缓存问题")
 public class TabLayoutCacheFragment extends BaseFragment implements TabLayout.OnTabSelectedListener {
 

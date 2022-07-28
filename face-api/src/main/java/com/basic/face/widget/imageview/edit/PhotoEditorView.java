@@ -24,9 +24,6 @@ import com.basic.face.R;
  *
  * This ViewGroup will have the {@link BrushDrawingView} to draw paint on it with {@link ImageView}
  * which our source image
- *
-
- * @since 2019-10-28 10:29
  */
 public class PhotoEditorView extends RelativeLayout {
 

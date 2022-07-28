@@ -1,11 +1,5 @@
 package com.freak.printtool.hardware.print.bean;
 
-
-/**
- * @author Freak
- * @date 2019/8/13.
- */
-
 public class MemberRechargePrintBean implements PrintfBean{
     private String shopName;//门店
     private String sn;//单据

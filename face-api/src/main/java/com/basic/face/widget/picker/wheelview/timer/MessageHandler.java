@@ -8,9 +8,6 @@ import com.basic.face.widget.picker.wheelview.WheelView;
 
 /**
  * Handler 消息类
- *
-
- * @since 2019/1/1 下午5:08
  */
 public final class MessageHandler extends Handler {
     public static final int WHAT_INVALIDATE_LOOP_VIEW = 1000;

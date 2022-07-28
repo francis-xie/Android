@@ -35,9 +35,6 @@ import static com.basic.face.widget.imageview.preview.ui.BasePhotoFragment.KEY_S
 
 /**
  * 图片预览页面
- *
-
- * @since 2018/12/5 上午11:42
  */
 public class PreviewActivity extends AppCompatActivity {
     public static final String KEY_IMAGE_PATHS = "com.basic.face.widget.preview.KEY_IMAGE_PATHS";

@@ -74,11 +74,6 @@ import java.util.Map;
 import static com.basic.web.core.web.WebConfig.WEB_FILE_PATH;
 import static com.basic.web.core.web.WebConfig.FILE_CACHE_PATH;
 
-
-/**
- 
- * @since 1.0.0
- */
 public class WebUtils {
 
     private static final String TAG = WebUtils.class.getSimpleName();

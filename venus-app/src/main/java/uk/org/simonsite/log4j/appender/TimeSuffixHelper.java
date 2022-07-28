@@ -23,10 +23,7 @@ import org.apache.log4j.helpers.LogLog;
 /**
  * Responsible for encapsulating time-oriented operations on log filenames or
  * partial log filenames via the concatenation methods.
- * 
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @version 2.4
+ *
  */
 final class TimeSuffixHelper {
 

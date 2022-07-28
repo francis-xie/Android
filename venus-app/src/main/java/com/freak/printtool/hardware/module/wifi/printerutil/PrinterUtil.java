@@ -29,11 +29,6 @@ import java.util.Map;
 import java.util.Stack;
 import java.util.Vector;
 
-/**
- * @author Freak
- * @date 2019/8/13.
- */
-
 public class PrinterUtil {
     private PrinterServiceConnection conn;
     private BroadCastReceiver mBroadcastReceiver;

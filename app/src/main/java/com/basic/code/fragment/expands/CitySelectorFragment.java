@@ -33,10 +33,6 @@ import butterknife.OnClick;
 
 import static com.basic.aop.consts.PermissionConsts.LOCATION;
 
-/**
-
- * @since 2018/12/30 下午11:34
- */
 @Page(name = "城市选择", extra = R.drawable.ic_expand_location)
 public class CitySelectorFragment extends BaseFragment implements CompoundButton.OnCheckedChangeListener {
 
@@ -76,7 +72,7 @@ public class CitySelectorFragment extends BaseFragment implements CompoundButton
     @Override
     protected void initArgs() {
         super.initArgs();
-        mTheme = R.style.DefaultCityPickerTheme;
+        mTheme = R.style.DefaultCitySelectorTheme;
         btnStyle.setText("默认主题");
         getActivity().setTheme(mTheme);
     }
@@ -100,10 +96,10 @@ public class CitySelectorFragment extends BaseFragment implements CompoundButton
             case R.id.btn_style:
                 if (btnStyle.getText().toString().startsWith("自定义")) {
                     btnStyle.setText("默认主题");
-                    mTheme = R.style.DefaultCityPickerTheme;
+                    mTheme = R.style.DefaultCitySelectorTheme;
                 } else if (btnStyle.getText().toString().startsWith("默认")) {
                     btnStyle.setText("自定义主题");
-                    mTheme = R.style.CustomCityPickerTheme;
+                    mTheme = R.style.CustomCitySelectorTheme;
                 }
                 getActivity().setTheme(mTheme);
                 break;
@@ -174,7 +170,7 @@ public class CitySelectorFragment extends BaseFragment implements CompoundButton
                 }
                 break;
             case R.id.cb_anim:
-                mAnim = isChecked ? R.style.CustomAnim : R.style.CityPickerAnimation;
+                mAnim = isChecked ? R.style.CustomAnim : R.style.CitySelectorAnimation;
                 break;
             case R.id.cb_enable_anim:
                 mEnableAnimation = isChecked;

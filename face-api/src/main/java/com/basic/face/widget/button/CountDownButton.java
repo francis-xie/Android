@@ -15,9 +15,6 @@ import java.util.Locale;
 
 /**
  * 倒计时按钮
- *
-
- * @since 2019/1/14 下午10:10
  */
 public class CountDownButton extends AppCompatButton {
 

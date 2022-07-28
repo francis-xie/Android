@@ -27,9 +27,6 @@ import static com.basic.face.widget.shadow.ShadowDrawable.Builder.DEFAULT_SHADOW
 
 /**
  * 可以方便地生成圆角矩形/圆形的阴影
- *
- * @author XUE
- * @since 2019/3/30 15:31
  */
 public class ShadowDrawable extends Drawable {
 

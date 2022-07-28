@@ -7,9 +7,6 @@ import java.util.List;
 
 /**
  * 九宫图长按
- *
-
- * @since 2018/12/9 下午10:38
  */
 public interface ItemImageLongClickListener<T> {
     /**

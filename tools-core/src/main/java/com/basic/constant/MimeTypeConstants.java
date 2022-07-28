@@ -3,9 +3,6 @@ package com.basic.constant;
 
 /**
  * 文件类型
- *
-
- * @since 2020/5/15 1:00 AM
  */
 public final class MimeTypeConstants {
 

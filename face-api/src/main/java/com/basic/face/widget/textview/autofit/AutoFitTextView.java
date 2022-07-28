@@ -9,9 +9,6 @@ import androidx.appcompat.widget.AppCompatTextView;
 
 /**
  * 能够自适应字体大小的TextView
- *
-
- * @since 2019-05-14 22:51
  */
 public class AutoFitTextView extends AppCompatTextView implements AutoFitHelper.OnTextSizeChangeListener {
 

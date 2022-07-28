@@ -23,7 +23,6 @@ import java.util.List;
  * displayed on Google's guidelines site:
  * https://www.google.com/design/spec/components/dialogs.html#dialogs-simple-dialogs
  *
- * @author Aidan Follestad (afollestad)
  */
 public class MaterialSimpleListAdapter
         extends RecyclerView.Adapter<MaterialSimpleListAdapter.SimpleListVH> implements MDAdapter {

@@ -3,9 +3,6 @@ package com.basic.job.thread.priority;
 
 /**
  * 优先级策略实现接口
- *
-
- * @since 2021/10/9 12:15 PM
  */
 public interface IPriorityStrategy {
 

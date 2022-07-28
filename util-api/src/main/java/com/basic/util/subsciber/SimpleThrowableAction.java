@@ -8,9 +8,6 @@ import io.reactivex.functions.Consumer;
 
 /**
  * 简单的出错处理（把错误打印出来）
- *
-
- * @since 2018/6/10 下午9:26
  */
 public final class SimpleThrowableAction implements Consumer<Throwable> {
 

@@ -16,10 +16,6 @@ import com.basic.code.base.BaseFragment;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
- 
- * @since 2020-01-09 13:38
- */
 @Page(name = "ConstraintSet实现切换动画")
 public class ConstraintLayoutConstraintSetFragment extends BaseFragment {
     private boolean mShowBigImage = false;

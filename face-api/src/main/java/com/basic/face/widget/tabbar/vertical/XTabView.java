@@ -21,9 +21,6 @@ import com.basic.face.widget.textview.badge.BadgeView;
 
 /**
  * 选项卡
- *
-
- * @since 2018/12/28 下午1:33
  */
 public class XTabView extends TabView {
 

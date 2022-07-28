@@ -2,8 +2,6 @@ package com.freak.printtool.hardware.utils;
 
 /**
  * 线程池工厂类
- * @author Freak
- * @date 2019/8/13.
  */
 public class ThreadPoolProxyFactory {
 

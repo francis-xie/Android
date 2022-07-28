@@ -7,9 +7,6 @@ import com.basic.job.core.param.ITaskResult;
 
 /**
  * 任务步骤的生命周期管理
- *
-
- * @since 1/30/22 4:51 PM
  */
 public interface ITaskStepLifecycle {
 

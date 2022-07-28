@@ -35,9 +35,6 @@ import static com.basic.aop.consts.PermissionConsts.STORAGE;
 
 /**
  * 二维码扫描
- *
-
- * @since 2018/12/29 下午12:37
  */
 @Page(name = "二维码", extra = R.drawable.ic_expand_qrcode)
 public class ScanFragment extends BaseSimpleListFragment {

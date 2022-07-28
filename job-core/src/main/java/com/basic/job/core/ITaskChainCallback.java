@@ -7,9 +7,6 @@ import com.basic.job.core.param.ITaskResult;
 
 /**
  * 任务链执行回调
- *
-
- * @since 2021/10/18 10:32 PM
  */
 public interface ITaskChainCallback {
 

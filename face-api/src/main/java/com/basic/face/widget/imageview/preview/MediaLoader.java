@@ -13,9 +13,6 @@ import com.basic.face.widget.imageview.preview.loader.ISimpleTarget;
 
 /**
  * 图片加载管理器
- *
-
- * @since 2018/12/5 上午11:27
  */
 public class MediaLoader implements IMediaLoader{
 

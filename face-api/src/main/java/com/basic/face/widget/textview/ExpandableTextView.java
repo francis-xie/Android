@@ -29,9 +29,6 @@ import com.basic.face.utils.ResUtils;
 
 /**
  * 可伸缩折叠的TextView
- *
- 
- * @since 2019/1/14 下午10:05
  */
 public class ExpandableTextView extends LinearLayout implements View.OnClickListener {
 

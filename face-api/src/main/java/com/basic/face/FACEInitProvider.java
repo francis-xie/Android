@@ -14,9 +14,6 @@ import com.basic.face.utils.Utils;
 
 /**
  * FACE自动初始化
- *
-
- * @since 2020/12/31 1:21 AM
  */
 public final class FACEInitProvider extends ContentProvider {
     @Override

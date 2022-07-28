@@ -27,9 +27,6 @@ import java.util.List;
 
 /**
  * UltraViewPager适配器
- *
-
- * @since 2020/4/7 12:19 AM
  */
 public class UltraPagerAdapter extends PagerAdapter {
 

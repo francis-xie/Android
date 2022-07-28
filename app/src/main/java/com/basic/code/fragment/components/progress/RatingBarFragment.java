@@ -14,10 +14,6 @@ import com.basic.code.utils.XToastUtils;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2019/3/26 下午11:24
- */
 @Page(name = "RatingBar\n星级评分控件")
 public class RatingBarFragment extends BaseFragment {
     @BindView(R.id.rating_bar)

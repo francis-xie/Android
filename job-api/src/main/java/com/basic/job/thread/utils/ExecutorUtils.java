@@ -8,9 +8,6 @@ import java.util.concurrent.ExecutorService;
 
 /**
  * 线程池工具
- *
-
- * @since 1/21/22 2:11 AM
  */
 public final class ExecutorUtils {
 

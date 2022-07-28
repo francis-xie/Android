@@ -15,9 +15,6 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * Task的执行者
- *
-
- * @since 2021/10/9 2:30 AM
  */
 public class TaskExecutor implements IPriorityExecutorCore, ICategoryExecutorCore, IScheduledExecutorCore {
 

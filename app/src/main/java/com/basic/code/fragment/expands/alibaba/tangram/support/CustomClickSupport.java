@@ -10,9 +10,6 @@ import com.basic.code.utils.XToastUtils;
 
 /**
  * 自定义点击事件
- *
-
- * @since 2020/4/7 1:18 AM
  */
 public class CustomClickSupport extends SimpleClickSupport {
 

@@ -8,9 +8,6 @@ import androidx.annotation.NonNull;
 
 /**
  * Router的日志记录
- *
-
- * @since 2018/5/17 上午1:13
  */
 public final class RLog {
 

@@ -13,10 +13,6 @@ import com.kunminx.linkage.bean.BaseGroupedItem;
 import com.kunminx.linkage.contract.ILinkageSecondaryAdapterConfig;
 import com.basic.code.R;
 
-/**
-
- * @since 2019-11-25 17:17
- */
 public class CustomLinkageSecondaryAdapterConfig implements ILinkageSecondaryAdapterConfig<CustomGroupedItem.ItemInfo> {
 
     private OnSecondaryItemClickListener mItemClickListener;

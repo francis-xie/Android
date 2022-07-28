@@ -20,10 +20,6 @@ import com.yanzhenjie.recyclerview.SwipeRecyclerView;
 
 import butterknife.BindView;
 
-/**
- * @author XUE
- * @since 2019/4/1 11:21
- */
 @Page(name = "SwipeMenuItem\nItem侧滑菜单")
 public class SwipeMenuItemFragment extends BaseFragment {
     @BindView(R.id.refresh_layout)

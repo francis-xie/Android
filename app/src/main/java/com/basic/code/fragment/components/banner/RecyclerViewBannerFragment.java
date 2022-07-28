@@ -11,10 +11,6 @@ import com.basic.code.utils.XToastUtils;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019-05-30 00:40
- */
 @Page(name = "使用RecyclerView实现的Banner")
 public class RecyclerViewBannerFragment extends BaseFragment implements BannerLayout.OnBannerItemClickListener {
 

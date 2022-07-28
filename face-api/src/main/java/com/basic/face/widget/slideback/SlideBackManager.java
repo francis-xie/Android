@@ -22,9 +22,6 @@ import static com.basic.face.widget.slideback.SlideBack.EDGE_RIGHT;
 
 /**
  * SlideBack管理器
- *
- 
- * @since 2019-08-30 9:31
  */
 public class SlideBackManager implements OnSlideUpdateListener {
     private SlideBackIconView mSlideBackIconViewLeft;

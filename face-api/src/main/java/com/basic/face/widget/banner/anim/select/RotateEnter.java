@@ -5,12 +5,6 @@ import android.view.View;
 
 import com.basic.face.widget.banner.anim.BaseAnimator;
 
-/**
- *
- *
-
- * @since 2018/11/25 下午6:51
- */
 public class RotateEnter extends BaseAnimator {
     public RotateEnter() {
         this.mDuration = 200;

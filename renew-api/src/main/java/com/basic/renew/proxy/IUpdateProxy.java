@@ -12,9 +12,6 @@ import com.basic.renew.service.OnFileDownloadListener;
 
 /**
  * 版本更新代理
- *
-
- * @since 2018/7/1 下午9:45
  */
 public interface IUpdateProxy {
 

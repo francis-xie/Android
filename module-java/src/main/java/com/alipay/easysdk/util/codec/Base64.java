@@ -11,7 +11,6 @@ import java.io.UnsupportedEncodingException;
  * Borenstein.</p>
  * @version $Id: Base64.java,v 1.20 2004/05/24 00:21:24 ggregory Exp $
  * @see <a href="http://www.ietf.org/rfc/rfc2045.txt">RFC 2045</a>
- * @since 1.0-dev
  */
 public class Base64 implements BinaryEncoder, BinaryDecoder {
 

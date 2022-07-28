@@ -5,9 +5,6 @@ import android.content.Context;
 
 /**
  * 对外提供接口的基类接口
- *
-
- * @since 2018/5/16 下午11:51
  */
 public interface IProvider {
 

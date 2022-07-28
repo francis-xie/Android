@@ -18,10 +18,6 @@ import com.basic.tools.common.StringUtils;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019-11-23 01:23
- */
 @Page(name = "FlexboxLayoutManager + RecyclerView\n流标签")
 public class FlexboxLayoutFragment extends BaseFragment {
 

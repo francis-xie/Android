@@ -2,9 +2,6 @@ package com.basic.face;
 
 /**
  * 常量
- *
-
- * @since 2018/11/22 下午5:24
  */
 public final class UIConsts {
 

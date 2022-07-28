@@ -8,13 +8,6 @@ import java.util.List;
 
 import static com.basic.date.CalendarUtils.getDayOfWeek;
 
-
-/**
- *
- *
-
- * @since 2019/5/28 14:28
- */
 public final class CalendarFactory {
 
     private static HashMap<String, List<CalendarDate>> mCache = new HashMap<>();

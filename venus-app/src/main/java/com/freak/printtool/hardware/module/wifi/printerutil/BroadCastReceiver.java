@@ -8,11 +8,6 @@ import com.freak.printtool.hardware.utils.LogUtil;
 import com.freak.printtool.hardware.utils.ToastUtil;
 import com.gprinter.command.GpCom;
 
-/**
- * @author Freak
- * @date 2019/8/13.
- */
-
 public class BroadCastReceiver extends BroadcastReceiver {
     private static final int REQUEST_PRINT_RECEIPT = 0xfc;
 

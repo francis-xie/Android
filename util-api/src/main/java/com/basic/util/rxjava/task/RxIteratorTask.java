@@ -8,9 +8,6 @@ import com.basic.util.rxjava.impl.IRxUITask;
 
 /**
  * 通用的遍历数组或者集合的异步任务，在io线程中进行数据处理，在ui线程中刷新ui
- *
-
- * @since 2018/6/10 下午9:29
  */
 public abstract class RxIteratorTask<T, R> implements IRxIOTask<T, R>, IRxUITask<R> {
 

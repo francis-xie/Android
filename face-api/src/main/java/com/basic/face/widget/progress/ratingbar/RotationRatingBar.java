@@ -10,12 +10,6 @@ import androidx.annotation.Nullable;
 
 import com.basic.face.R;
 
-/**
- *
- *
-
- * @since 2019-06-06 00:48
- */
 public class RotationRatingBar extends AnimationRatingBar {
 
     // Control animation speed

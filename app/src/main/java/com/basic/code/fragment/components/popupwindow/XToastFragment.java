@@ -10,10 +10,6 @@ import com.basic.code.utils.XToastUtils;
 
 import java.util.List;
 
-/**
- * @author XUE
- * @since 2019/3/26 10:06
- */
 @Page(name = "XToast\n多重样式的Toast显示")
 public class XToastFragment extends BaseSimpleListFragment {
 

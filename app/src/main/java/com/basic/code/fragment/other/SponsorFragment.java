@@ -34,9 +34,6 @@ import static com.basic.code.fragment.components.imageview.DrawablePreviewFragme
 
 /**
  * 赞助页面
- *
- 
- * @since 2020-02-19 13:49
  */
 @Page(name = "赞助项目")
 public class SponsorFragment extends BaseFragment implements View.OnClickListener, View.OnLongClickListener {

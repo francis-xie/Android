@@ -8,10 +8,6 @@ import com.basic.face.adapter.recyclerview.RecyclerViewHolder;
 import com.basic.code.R;
 import com.basic.code.base.db.entity.SearchRecord;
 
-/**
-
- * @since 2019-12-04 23:21
- */
 public class SearchRecordTagAdapter extends BaseRecyclerAdapter<SearchRecord> {
 
     @Override

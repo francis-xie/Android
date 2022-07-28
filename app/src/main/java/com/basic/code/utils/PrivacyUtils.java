@@ -20,9 +20,6 @@ import com.basic.tools.Util;
 
 /**
  * 隐私政策工具类
- *
-
- * @since 2020-02-23 23:33
  */
 public final class PrivacyUtils {
 

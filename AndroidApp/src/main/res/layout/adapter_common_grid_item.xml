@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><com.basic.face.widget.alpha.FACEAlphaLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 android:id="@+id/ll_container"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="80dp"
+                                                 android:gravity="center"
+                                                 android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.basic.face.widget.imageview.RadiusImageView
+            android:id="@+id/riv_item"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            tools:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/TextStyle.Title"
+            android:layout_gravity="center"
+            android:textColor="@color/face_config_color_white"
+            tools:text="菜" />
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/tv_sub_title"
+        style="@style/TextStyle.Explain"
+        android:layout_marginTop="5dp"
+        tools:text="菜单1" />
+
+
+</com.basic.face.widget.alpha.FACEAlphaLinearLayout>

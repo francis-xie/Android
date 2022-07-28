@@ -8,9 +8,6 @@ import com.j256.ormlite.table.DatabaseTable;
 
 /**
  * 搜索记录
- *
-
- * @since 2019-12-04 22:57
  */
 @DatabaseTable(tableName = "search_record")
 public class SearchRecord {

@@ -19,9 +19,6 @@ import com.basic.face.R;
 
 /**
  * 指示器控件
- *
- 
- * @since 2018/12/5 上午11:22
  */
 public class BezierBannerView extends View implements ViewPager.OnPageChangeListener {
     //选中画笔

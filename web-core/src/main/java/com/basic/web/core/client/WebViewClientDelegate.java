@@ -16,9 +16,6 @@ import android.webkit.WebViewClient;
 
 /**
  * WebViewClient代理
- *
-
- * @since 2019/1/4 上午10:51
  */
 public class WebViewClientDelegate extends WebViewClient {
 

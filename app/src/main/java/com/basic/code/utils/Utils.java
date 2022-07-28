@@ -50,10 +50,6 @@ import java.io.File;
 
 import static com.basic.code.base.webview.WebFragment.KEY_URL;
 
-/**
- * @author XUE
- * @since 2019/4/1 11:25
- */
 public final class Utils {
 
     public final static String UPDATE_URL = "https://gitee.com/zhiqiang/FACE/raw/master/jsonapi/update_api.json";

@@ -25,9 +25,6 @@ import com.basic.face.widget.imageview.photoview.PhotoView;
 
 /**
  * 可支持缩放的图片控件
- *
-
- * @since 2018/12/5 上午11:11
  */
 public class SmoothImageView extends PhotoView {
 

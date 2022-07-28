@@ -5,9 +5,6 @@ import com.basic.job.thread.priority.IPriority;
 
 /**
  * 优先级【先比较优先级，再比较序号】
- *
-
- * @since 2021/10/9 11:29 AM
  */
 public class Priority implements IPriority {
 

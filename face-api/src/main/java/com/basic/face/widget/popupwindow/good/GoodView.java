@@ -19,9 +19,6 @@ import com.basic.face.utils.ResUtils;
 
 /**
  * 点赞效果
- *
-
- * @since 2020-01-05 19:49
  */
 public class GoodView extends PopupWindow implements IGoodView {
 

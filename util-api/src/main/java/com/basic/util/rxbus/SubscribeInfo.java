@@ -7,9 +7,6 @@ import io.reactivex.disposables.Disposable;
 
 /**
  * 订阅信息
- *
-
- * @since 2018/3/3 下午11:43
  */
 public final class SubscribeInfo<T> {
     /**

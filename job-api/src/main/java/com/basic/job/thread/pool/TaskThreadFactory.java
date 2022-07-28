@@ -13,9 +13,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * 自定义线程创建工厂
- *
-
- * @since 2021/10/9 4:01 PM
  */
 public class TaskThreadFactory implements ThreadFactory {
 

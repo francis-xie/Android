@@ -7,9 +7,6 @@ import android.view.View;
 
 /**
  * 标记
- *
-
- * @since 2018/12/28 上午9:05
  */
 public interface Badge {
 

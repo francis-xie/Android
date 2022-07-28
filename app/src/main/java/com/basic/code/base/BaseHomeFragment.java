@@ -29,9 +29,6 @@ import butterknife.BindView;
 
 /**
  * 基础主页面
- *
-
- * @since 2018/12/29 上午11:18
  */
 public abstract class BaseHomeFragment extends BaseFragment implements RecyclerViewHolder.OnItemClickListener<PageInfo> {
 

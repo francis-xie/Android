@@ -6,9 +6,6 @@ import android.Manifest;
 
 /**
  * 需要申请的权限
- *
-
- * @since 2019/1/4 上午11:19
  */
 public class WebPermissions {
 

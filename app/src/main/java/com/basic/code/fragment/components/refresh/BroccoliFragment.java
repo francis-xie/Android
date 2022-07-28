@@ -9,10 +9,6 @@ import com.basic.code.fragment.components.refresh.broccoli.AnimationPlaceholderF
 import com.basic.code.fragment.components.refresh.broccoli.CommonPlaceholderFragment;
 import com.basic.code.utils.Utils;
 
-/**
-
- * @since 2019/4/6 下午11:23
- */
 @Page(name = "Broccoli\n预加载占位控件")
 public class BroccoliFragment extends ComponentContainerFragment {
     /**

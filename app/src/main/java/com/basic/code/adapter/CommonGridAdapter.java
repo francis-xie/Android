@@ -12,9 +12,6 @@ import com.basic.code.R;
 
 /**
  * 普通九宫格
- *
-
- * @since 2020/3/11 8:33 PM
  */
 public class CommonGridAdapter extends BaseRecyclerAdapter<AdapterItem> {
 

@@ -7,10 +7,6 @@ import static com.basic.tools.data.ArrayUtils.indexOf;
 import static com.basic.tools.data.ArrayUtils.lastIndexOf;
 import static org.junit.Assert.assertEquals;
 
-/**
-
- * @since 2018/6/27 下午6:24
- */
 public class ArrayUtilsTest {
     @Test
     public void addition_isCorrect() {

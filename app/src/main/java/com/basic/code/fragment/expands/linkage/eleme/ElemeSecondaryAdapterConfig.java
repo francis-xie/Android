@@ -17,9 +17,6 @@ import com.basic.code.R;
 
 /**
  * 饿了么列表适配器
- *
- 
- * @since 2019-11-25 22:54
  */
 public class ElemeSecondaryAdapterConfig implements ILinkageSecondaryAdapterConfig<ElemeGroupedItem.ItemInfo> {
 

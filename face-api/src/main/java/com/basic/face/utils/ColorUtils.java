@@ -9,9 +9,6 @@ import java.util.Random;
 
 /**
  * 颜色辅助工具
- *
-
- * @since 2018/12/27 下午3:00
  */
 public final class ColorUtils {
 

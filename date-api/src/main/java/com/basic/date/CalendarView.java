@@ -11,10 +11,6 @@ import androidx.annotation.Nullable;
 import java.util.Date;
 import java.util.List;
 
-/**
-
- * @since 2019/5/28 14:31
- */
 public class CalendarView extends ViewGroup {
     private int mSelectPosition = -1;
 

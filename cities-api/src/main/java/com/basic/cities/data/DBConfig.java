@@ -2,9 +2,6 @@ package com.basic.cities.data;
 
 /**
  * 数据库配置中心
- *
-
- * @since 2018/12/30 下午10:02
  */
 public class DBConfig {
     public static final String DB_NAME = "china_cities.db";

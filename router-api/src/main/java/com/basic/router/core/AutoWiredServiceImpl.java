@@ -16,9 +16,6 @@ import static com.basic.router.utils.Consts.SUFFIX_AUTOWIRED;
 
 /**
  * 全局自动注入属性服务
- *
-
- * @since 2018/5/19 下午9:13
  */
 @Router(path = ROUTE_SERVICE_AUTOWIRED)
 public class AutoWiredServiceImpl implements AutoWiredService {

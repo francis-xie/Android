@@ -9,7 +9,6 @@ import com.emis.venus.R;
 
 /**
  * 显示Toast的对话框
- * @author Administrator
  */
 public class ToastDialogFragment extends DialogFragment implements View.OnClickListener {
 

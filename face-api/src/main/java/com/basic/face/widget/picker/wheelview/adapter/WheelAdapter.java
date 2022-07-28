@@ -3,9 +3,6 @@ package com.basic.face.widget.picker.wheelview.adapter;
 
 /**
  * 滚轮适配器
- *
-
- * @since 2019/1/1 下午5:05
  */
 public interface WheelAdapter<T> {
 	/**

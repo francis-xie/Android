@@ -7,9 +7,6 @@ import com.emis.venus.activity.MainActivity;
 
 /**
  * 开机启动广播
- *
- * @author Freak
- * @date 2019/8/13.
  */
 public class BootCompleteReceiver extends BroadcastReceiver {
 

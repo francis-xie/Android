@@ -15,9 +15,6 @@ import com.basic.face.widget.dialog.strategy.InputInfo;
 
 /**
  * MaterialDialog 策略
- *
- 
- * @since 2018/11/14 下午11:46
  */
 public class MaterialDialogStrategy implements IDialogStrategy {
 

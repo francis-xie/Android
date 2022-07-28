@@ -6,12 +6,6 @@ import androidx.viewpager.widget.ViewPager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
-/**
- *
- *
-
- * @since 2018/12/5 上午11:11
- */
 public class PhotoViewPager extends ViewPager {
 
     public PhotoViewPager(Context context) {

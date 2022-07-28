@@ -68,9 +68,6 @@ import static javax.lang.model.element.Modifier.PUBLIC;
  * <p>自动生成路由组注册接口 Router$$Group$$[groupName] </p>
  * <p>自动生成根路由注册接口 Router$$Root$$[moduleName] </p>
  * <p>自动生成IProvider注册接口 Router$$Providers$$[moduleName] </p>
- *
-
- * @since 2018/5/20 上午12:19
  */
 @AutoService(Processor.class)
 @SupportedOptions(KEY_MODULE_NAME)

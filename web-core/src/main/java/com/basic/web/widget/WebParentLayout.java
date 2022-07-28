@@ -21,11 +21,6 @@ import com.basic.web.utils.LogUtils;
 import com.basic.web.Provider;
 import com.basic.web.R;
 
-/**
- 
- * @date 2017/12/8
- * @since 3.0.0
- */
 public class WebParentLayout extends FrameLayout implements Provider<AbsWebUIController> {
 	private AbsWebUIController mWebUIController = null;
 	private static final String TAG = WebParentLayout.class.getSimpleName();

@@ -28,10 +28,6 @@ import butterknife.OnClick;
 
 import static com.google.android.material.tabs.TabLayout.MODE_SCROLLABLE;
 
-/**
-
- * @since 2020/5/21 1:19 AM
- */
 @Page(name = "TabLayout+ViewPager2动态加载")
 public class TabLayoutViewPager2Fragment extends BaseFragment implements TabLayout.OnTabSelectedListener {
 

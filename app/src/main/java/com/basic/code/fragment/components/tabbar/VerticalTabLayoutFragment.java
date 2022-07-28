@@ -28,10 +28,6 @@ import java.util.List;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2018/12/28 下午2:03
- */
 @Page(name = "VerticalTabLayout\n垂直的TabLayout")
 public class VerticalTabLayoutFragment extends BaseFragment {
 

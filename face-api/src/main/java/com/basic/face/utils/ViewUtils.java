@@ -56,9 +56,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * 控件工具类
- *
-
- * @since 2019/1/3 上午10:05
  */
 public final class ViewUtils {
 

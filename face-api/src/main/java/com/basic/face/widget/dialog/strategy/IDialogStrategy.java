@@ -9,9 +9,6 @@ import androidx.annotation.DrawableRes;
 
 /**
  * 对话框的策略
- *
-
- * @since 2018/11/14 下午11:24
  */
 public interface IDialogStrategy {
 

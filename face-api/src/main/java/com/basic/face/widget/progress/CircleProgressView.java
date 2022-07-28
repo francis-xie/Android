@@ -35,10 +35,6 @@ import com.basic.face.utils.ThemeUtils;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/**
-
- * @since 2019-05-12 12:34
- */
 public class CircleProgressView extends View {
 
     @Retention(RetentionPolicy.SOURCE)

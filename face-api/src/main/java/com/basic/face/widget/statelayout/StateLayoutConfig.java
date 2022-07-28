@@ -10,9 +10,6 @@ import com.basic.face.utils.ResUtils;
 
 /**
  * 多状态布局的配置信息
- *
-
- * @since 2018/11/26 上午12:12
  */
 public class StateLayoutConfig {
     private static final boolean DEFAULT_ANIM_ENABLED = true;

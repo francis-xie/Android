@@ -7,9 +7,6 @@ import java.io.File;
 
 /**
  * 文件路径常量
- *
-
- * @since 2020/6/6 1:51 AM
  */
 public final class PathConstants {
 

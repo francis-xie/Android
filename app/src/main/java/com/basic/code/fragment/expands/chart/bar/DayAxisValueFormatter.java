@@ -5,9 +5,6 @@ import com.github.mikephil.charting.formatter.ValueFormatter;
 
 /**
  * 日期格式
- *
-
- * @since 2019/4/10 下午11:24
  */
 public class DayAxisValueFormatter extends ValueFormatter {
 

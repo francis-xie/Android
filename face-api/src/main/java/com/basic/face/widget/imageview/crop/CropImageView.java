@@ -25,9 +25,6 @@ import com.basic.face.utils.DrawableUtils;
 
 /**
  * 自定义图片裁剪控件
- *
- 
- * @since 2019-10-15 11:53
  */
 public class CropImageView extends FrameLayout {
 
@@ -529,7 +526,6 @@ public class CropImageView extends FrameLayout {
      * @param type 翻转类型
      *             CropImageType.REVERSE_TYPE.UP_DOWN
      *             CropImageType.REVERSE_TYPE.LEFT_RIGHT
-     * @author jarlen
      */
     public void reverseImage(CropImageType.REVERSE_TYPE type) {
         if (mBitmap == null) {

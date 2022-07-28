@@ -20,9 +20,6 @@ import com.basic.code.R;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @since 2019/3/25 11:29
- */
 public class ImageSelectGridAdapter extends RecyclerView.Adapter<ImageSelectGridAdapter.ViewHolder> {
     public static final int TYPE_CAMERA = 1;
     public static final int TYPE_PICTURE = 2;

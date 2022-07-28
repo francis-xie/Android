@@ -6,5 +6,5 @@
     <public name="cv_autoFocus" type="attr"/>
     <public name="cv_flash" type="attr"/>
 
-    <public name="Widget.CameraView" type="style"/>
+    <public name="Widget.CameraSee" type="style"/>
 </resources>

@@ -9,10 +9,6 @@ import com.basic.code.base.BaseHomeFragment;
 
 import java.util.List;
 
-/**
-
- * @since 2018/12/27 上午10:09
- */
 @Page(name = "工具", anim = CoreAnim.none)
 public class UtilitiesFragment extends BaseHomeFragment {
 

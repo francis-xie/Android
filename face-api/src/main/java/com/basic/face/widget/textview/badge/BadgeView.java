@@ -33,9 +33,6 @@ import java.util.List;
 
 /**
  * 标记控件，可显示数量和文字的控件
- *
-
- * @since 2018/12/28 上午9:08
  */
 public class BadgeView extends View implements Badge {
     public static final int DEFAULT_COLOR_BACKGROUND = 0xFFE84E40;

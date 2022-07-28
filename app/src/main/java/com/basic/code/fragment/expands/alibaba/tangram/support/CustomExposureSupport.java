@@ -11,15 +11,7 @@ import com.tmall.wireless.tangram.structure.BaseCell;
 import com.tmall.wireless.tangram.support.ExposureSupport;
 
 /**
- * @author SunQiang
- * @since 2019-04-22
- */
-
-/**
  * 自定义曝光事件
- *
-
- * @since 2020/4/10 1:13 AM
  */
 public class CustomExposureSupport extends ExposureSupport {
 

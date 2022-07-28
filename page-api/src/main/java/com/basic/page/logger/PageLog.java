@@ -7,9 +7,6 @@ import android.util.Log;
 
 /**
  * Logger日志记录
- *
-
- * @since 2018/5/24 下午3:46
  */
 public final class PageLog {
 

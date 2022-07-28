@@ -19,9 +19,6 @@ import java.util.Objects;
 
 /**
  * 只是简单演示服务，没做保活
- *
-
- * @since 2019/1/21 下午12:03
  */
 public class AppMonitorService extends Service {
 

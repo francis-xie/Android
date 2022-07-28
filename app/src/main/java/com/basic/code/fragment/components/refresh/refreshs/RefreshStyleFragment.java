@@ -8,10 +8,6 @@ import com.basic.code.fragment.components.refresh.refreshs.style.RefreshClassics
 import com.basic.code.fragment.components.refresh.refreshs.style.RefreshCustomStyleFragment;
 import com.basic.code.fragment.components.refresh.refreshs.style.RefreshMaterialStyleFragment;
 
-/**
-
- * @since 2018/12/7 上午12:44
- */
 @Page(name = "下拉刷新样式\n包含10多种下拉样式")
 public class RefreshStyleFragment extends ComponentContainerFragment {
     /**

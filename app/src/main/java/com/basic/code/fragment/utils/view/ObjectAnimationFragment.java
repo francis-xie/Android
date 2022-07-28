@@ -27,9 +27,6 @@ import butterknife.OnClick;
  * TypeEvaluator 估值器
  * AnimatorSet 动画集合
  * Interpolator 差值器(已经预先定义好的估值器)
- *
-
- * @since 2019-11-30 17:29
  */
 @Page(name = "属性动画")
 public class ObjectAnimationFragment extends BaseFragment {

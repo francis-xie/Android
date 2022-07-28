@@ -19,9 +19,6 @@ import java.util.List;
 
 /**
  * 热门城市列表适配器
- *
-
- * @since 2018/12/30 下午6:48
  */
 public class GridListAdapter extends RecyclerView.Adapter<GridListAdapter.GridViewHolder>{
     public static final int SPAN_COUNT = 3;

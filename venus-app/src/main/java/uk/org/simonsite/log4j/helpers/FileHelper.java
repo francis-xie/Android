@@ -26,11 +26,6 @@ import java.util.zip.ZipEntry;
 
 import org.apache.log4j.helpers.LogLog;
 
-/**
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @version 3.9
- */
 public final class FileHelper {
 
   private static final FileHelper INSTANCE = new FileHelper();

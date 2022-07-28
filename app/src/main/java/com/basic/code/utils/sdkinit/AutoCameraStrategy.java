@@ -8,9 +8,6 @@ import java.util.SortedSet;
 
 /**
  * 自适应
- *
- * @author XUE
- * @since 2019/4/8 12:32
  */
 public class AutoCameraStrategy implements ICameraStrategy {
 

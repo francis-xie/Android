@@ -363,8 +363,6 @@ public class WaveSwipeHeader extends InternalAbstract implements RefreshHeader {
     /**
      * Custom view has progress drawable.
      * Some features of MaterialProgressDrawable are decorated.
-     *
-     * @author jmatsu
      */
     protected class ProgressAnimationImageView extends ImageView {
 

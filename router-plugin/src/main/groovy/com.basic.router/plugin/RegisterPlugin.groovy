@@ -11,9 +11,6 @@ import org.gradle.api.Project
 
 /**
  * 自动注册路由表的插件
- *
- 
- * @since 2018/5/17 上午12:39
  */
 public class RegisterPlugin implements Plugin<Project> {
 

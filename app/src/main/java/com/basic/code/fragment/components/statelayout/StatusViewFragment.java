@@ -13,10 +13,6 @@ import com.basic.code.utils.XToastUtils;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2018/12/27 下午6:14
- */
 @Page(name = "StatusView\n状态提示")
 public class StatusViewFragment extends BaseFragment {
 

@@ -5,9 +5,6 @@ import java.util.concurrent.CountDownLatch;
 
 /**
  * 可取消的计数线程锁【多线程并发锁】
- *
-
- * @since 2018/5/18 上午12:18
  */
 public class CancelableCountDownLatch extends CountDownLatch {
     /**

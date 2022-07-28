@@ -9,9 +9,6 @@ import java.lang.annotation.Target;
 /**
  * 磁盘缓存代理注解，通过aop切片的方式在编译期间织入源代码中
  * <p>功能：缓存某方法的返回值，下次执行该方法时，直接从缓存里获取。</p>
- *
-
- * @since 2020/10/25 5:08 PM
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)

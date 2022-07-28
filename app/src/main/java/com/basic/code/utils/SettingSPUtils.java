@@ -7,9 +7,6 @@ import com.basic.tools.data.BaseSPUtil;
 
 /**
  * SharedPreferences管理工具基类
- *
-
- * @since 2018/11/27 下午5:16
  */
 public class SettingSPUtils extends BaseSPUtil {
 

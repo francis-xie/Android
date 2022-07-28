@@ -4,9 +4,6 @@ import io.reactivex.Observable;
 
 /**
  * 生命周期管理者，绑定生命周期
- *
-
- * @since 2018/6/11 上午12:49
  */
 public interface LifecycleManager {
 

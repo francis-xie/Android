@@ -21,10 +21,6 @@ import com.basic.code.fragment.expands.linkage.eleme.ElemeSecondaryAdapterConfig
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019-11-25 23:20
- */
 @Page(name = "仿饿了么双列表联动菜单")
 public class LinkageRecyclerViewElemeFragment extends BaseFragment implements CustomLinkagePrimaryAdapterConfig.OnPrimaryItemClickListener, ElemeSecondaryAdapterConfig.OnSecondaryItemClickListener {
 

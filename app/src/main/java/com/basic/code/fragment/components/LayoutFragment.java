@@ -10,10 +10,6 @@ import com.basic.code.fragment.components.layout.GroupListViewFragment;
 import com.basic.code.fragment.components.layout.LinkageScrollLayoutFragment;
 import com.basic.code.fragment.components.layout.FACELayoutFragment;
 
-/**
-
- * @since 2019-06-02 16:46
- */
 @Page(name = "通用布局", extra = R.drawable.ic_widget_layout)
 public class LayoutFragment extends ComponentContainerFragment {
     /**

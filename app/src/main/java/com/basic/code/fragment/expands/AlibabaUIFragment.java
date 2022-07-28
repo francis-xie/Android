@@ -8,10 +8,6 @@ import com.basic.code.fragment.expands.alibaba.TangramAndroidFragment;
 import com.basic.code.fragment.expands.alibaba.UltraViewPagerFragment;
 import com.basic.code.fragment.expands.alibaba.VLayoutFragment;
 
-/**
-
- * @since 2020/3/19 11:24 PM
- */
 @Page(name = "alibaba UIKit", extra = R.drawable.ic_expand_alibaba)
 public class AlibabaUIFragment extends ComponentContainerFragment {
     @Override

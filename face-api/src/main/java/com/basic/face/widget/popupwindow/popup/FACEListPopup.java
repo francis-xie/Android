@@ -17,9 +17,6 @@ import com.basic.face.widget.FACEWrapContentListView;
 
 /**
  * 继承自 {@link FACEPopup}，在 {@link FACEPopup} 的基础上，支持显示一个列表。
- *
-
- * @since 2019/1/14 下午10:10
  */
 public class FACEListPopup<T extends FACEListPopup> extends FACEPopup {
     protected ListView mListView;

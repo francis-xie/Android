@@ -14,9 +14,6 @@ import java.util.Map;
 
 /**
  * 主副标题显示适配器
- *
-
- * @since 2018/12/19 上午12:19
  */
 public class SimpleAdapter extends BaseListAdapter<Map<String, String>, SimpleAdapter.ViewHolder> {
 

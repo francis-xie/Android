@@ -20,9 +20,6 @@ import butterknife.Unbinder;
 
 /**
  * 字体图标容器Activity
- *
- * @author XUE
- * @since 2019/3/22 11:21
  */
 public class IconFontActivity extends PageActivity {
 

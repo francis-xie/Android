@@ -11,9 +11,6 @@ import java.util.Collection;
 
 /**
  * 通用的DelegateAdapter适配器
- *
-
- * @since 2020/3/20 12:44 AM
  */
 public abstract class BaseDelegateAdapter<T> extends XDelegateAdapter<T, RecyclerViewHolder> {
 

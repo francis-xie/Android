@@ -33,10 +33,6 @@ import java.util.List;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019/4/11 下午11:32
- */
 @Page(name = "BasicPieChart\n基础饼图，详细API")
 public class BasicPieChartFragment extends BaseChartFragment implements OnChartValueSelectedListener {
 

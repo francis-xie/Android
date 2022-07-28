@@ -8,7 +8,6 @@ import android.graphics.drawable.RippleDrawable;
 import android.os.Build;
 import androidx.annotation.ColorInt;
 
-/** @author Aidan Follestad (afollestad) */
 @TargetApi(Build.VERSION_CODES.LOLLIPOP)
 public class RippleHelper {
 

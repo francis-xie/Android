@@ -10,12 +10,6 @@ import android.webkit.WebView;
 import com.basic.web.core.web.controller.AbsWebUIController;
 import com.basic.web.widget.WebParentLayout;
 
-
-/**
- 
- * @date 2017/12/6
- * @since 3.0.0
- */
 public class WebUIControllerImplBase extends AbsWebUIController {
 
 	public static AbsWebUIController build() {

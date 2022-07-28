@@ -14,10 +14,6 @@ import java.text.SimpleDateFormat;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2020/12/10 1:09 AM
- */
 @Page(name = "LoggerTextView\n日志打印工具")
 public class LoggerTextViewFragment extends BaseFragment {
 

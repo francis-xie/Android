@@ -2,9 +2,6 @@ package com.basic.face.widget.banner.widget.banner;
 
 /**
  * 图片轮播条目
- *
-
- * @since 2018/11/25 下午7:01
  */
 public class BannerItem {
     public String imgUrl;

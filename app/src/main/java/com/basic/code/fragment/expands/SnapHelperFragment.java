@@ -21,9 +21,6 @@ import butterknife.BindView;
 
 /**
  * 使用 {@link SnapHelper} 实现 {@link RecyclerView} 按页滚动。
- *
-
- * @since 2019/1/3 下午4:49
  */
 @Page(name = "SnapHelper使用", extra = R.drawable.ic_expand_snap_helper)
 public class SnapHelperFragment extends BaseFragment {

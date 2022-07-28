@@ -21,9 +21,6 @@ import java.util.regex.Pattern;
 
 /**
  * 设备类型工具类
- *
- * @author XUE
- * @since 2019/3/22 10:56
  */
 @SuppressLint("PrivateApi")
 public class DeviceUtils {

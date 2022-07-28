@@ -16,9 +16,6 @@ import com.basic.face.R;
 
 /**
  * 视频播放界面
- *
- 
- * @since 2018/12/5 上午11:49
  */
 public class VideoPlayerActivity extends AppCompatActivity {
 

@@ -41,8 +41,6 @@ import static com.basic.router.utils.Consts.ROUTER_SP_KEY_MAP;
 /**
  * 路由中心，存放并操作所有的路由信息
  * <p>实质是操作{@link Warehouse}路由信息仓库的中心，类似物流中心和物流仓库的关系</p>
- 
- * @since 2018/5/17 下午11:22
  */
 public class LogisticsCenter {
 
@@ -91,8 +89,6 @@ public class LogisticsCenter {
     /**
      * 供router-plugin注册路由信息的方法
      * @param routeRoot {@link IRouteRoot} implementation class in the package: com.basic.router.routers
-     
-     * @since 2018/5/17 下午11:30
      */
     private static void registerRouteRoot(IRouteRoot routeRoot) {
         markRegisteredByPlugin();
@@ -103,8 +99,6 @@ public class LogisticsCenter {
     /**
      * 供router-plugin注册拦截器的方法
      * @param interceptorGroup {@link IInterceptorGroup} implementation class in the package: com.basic.router.routers
-     
-     * @since 2018/5/17 下午11:35
      */
     private static void registerInterceptor(IInterceptorGroup interceptorGroup) {
         markRegisteredByPlugin();
@@ -116,8 +110,6 @@ public class LogisticsCenter {
     /**
      * 供router-plugin注册服务提供者的方法
      * @param providerGroup {@link IProviderGroup} implementation class in the package: com.basic.router.routers
-     
-     * @since 2018/5/17 下午11:38
      */
     private static void registerProvider(IProviderGroup providerGroup) {
         markRegisteredByPlugin();

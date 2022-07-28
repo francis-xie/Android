@@ -29,9 +29,6 @@ import com.basic.face.widget.picker.widget.utils.PickerViewAnimateUtils;
 
 /**
  * 精仿iOSPickerViewController控件
- *
-
- * @since 2019/1/1 下午6:58
  */
 public class BasePickerView {
 

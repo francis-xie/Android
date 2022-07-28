@@ -13,10 +13,6 @@ import com.basic.code.base.BaseFragment;
 
 import butterknife.BindView;
 
-/**
- 
- * @since 2020-01-09 11:22
- */
 @Page(name = "分组Group使用")
 public class ConstraintLayoutGroupFragment extends BaseFragment implements CompoundButton.OnCheckedChangeListener {
     @BindView(R.id.sb_group)

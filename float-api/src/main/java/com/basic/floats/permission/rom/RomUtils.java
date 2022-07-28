@@ -8,12 +8,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-/**
- * Description:
- *
- * @author zhaozp
- * @since 2016-05-23
- */
 public class RomUtils {
     private static final String TAG = "RomUtils";
 

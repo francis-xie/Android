@@ -8,9 +8,6 @@ import com.basic.renew.entity.UpdateEntity;
 
 /**
  * 版本更新提示器
- *
-
- * @since 2018/6/29 下午8:35
  */
 public interface IUpdatePrompter {
 

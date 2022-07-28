@@ -14,9 +14,6 @@ import androidx.annotation.Nullable;
 
 /**
  * 边缘返回的图标View
- *
- 
- * @since 2019-08-30 9:29
  */
 public class SlideBackIconView extends View {
     private Path bgPath, arrowPath; // 路径对象

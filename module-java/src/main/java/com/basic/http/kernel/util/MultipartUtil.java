@@ -7,9 +7,6 @@ import java.io.File;
 
 /**
  * HTTP multipart/form-data格式相关工具类
- *
- * @author zhongyu
- * @version : MulitpartUtil.java, v 0.1 2020年02月08日 11:26 上午 zhongyu Exp $
  */
 public class MultipartUtil {
     /**

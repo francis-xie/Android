@@ -3,9 +3,6 @@ package com.basic.renew.logs;
 
 /**
  * 简易的日志接口
- *
-
- * @since 2018/6/29 下午7:57
  */
 public interface ILogger {
 

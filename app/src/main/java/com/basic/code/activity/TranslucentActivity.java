@@ -16,9 +16,6 @@ import butterknife.ButterKnife;
 
 /**
  * 沉浸式状态栏
- *
-
- * @since 2019/4/9 上午12:00
  */
 public class TranslucentActivity extends AppCompatActivity {
 

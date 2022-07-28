@@ -26,9 +26,6 @@ import io.reactivex.schedulers.Schedulers;
 
 /**
  * 线程切换
- *
-
- * @since 2018/6/12 下午11:25
  */
 public class SchedulerTransformer<T> implements ObservableTransformer<T, T>, FlowableTransformer<T, T>, SingleTransformer<T, T>, MaybeTransformer<T, T>, CompletableTransformer {
 

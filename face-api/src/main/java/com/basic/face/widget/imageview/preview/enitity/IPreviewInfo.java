@@ -7,9 +7,6 @@ import androidx.annotation.Nullable;
 
 /**
  * 图片预览接口
- *
-
- * @since 2018/12/5 上午11:04
  */
 public interface IPreviewInfo extends Parcelable {
     /**

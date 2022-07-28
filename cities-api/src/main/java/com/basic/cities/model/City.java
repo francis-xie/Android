@@ -7,9 +7,6 @@ import java.util.regex.Pattern;
 
 /**
  * 城市信息
- *
-
- * @since 2018/12/30 下午6:26
  */
 public class City {
     private String name;

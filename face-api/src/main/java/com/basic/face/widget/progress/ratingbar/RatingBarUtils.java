@@ -8,9 +8,6 @@ import java.util.Locale;
 
 /**
  * 工具类
- *
- 
- * @since 2019/3/26 下午10:52
  */
 final class RatingBarUtils {
 

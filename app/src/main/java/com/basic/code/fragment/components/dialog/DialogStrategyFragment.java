@@ -16,10 +16,6 @@ import com.basic.code.utils.XToastUtils;
 
 import java.util.List;
 
-/**
-
- * @since 2018/11/15 上午12:14
- */
 @Page(name = "Dialog构建策略")
 public class DialogStrategyFragment extends BaseSimpleListFragment {
     /**

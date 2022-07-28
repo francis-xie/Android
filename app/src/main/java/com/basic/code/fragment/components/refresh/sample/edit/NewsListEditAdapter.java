@@ -26,10 +26,6 @@ import java.util.List;
 
 import me.samlss.broccoli.Broccoli;
 
-/**
-
- * @since 2019/4/7 下午12:06
- */
 public class NewsListEditAdapter extends BroccoliRecyclerAdapter<NewInfo> {
 
     private static final String KEY_SELECT_STATUS = "key_select_status";

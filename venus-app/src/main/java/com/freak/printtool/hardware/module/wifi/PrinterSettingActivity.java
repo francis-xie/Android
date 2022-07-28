@@ -41,9 +41,6 @@ import static com.freak.printtool.hardware.module.wifi.addprinter.AddPrinterActi
 
 /**
  * 打印机设置
- *
- * @author Freak
- * @date 2019/8/13.
  */
 public class PrinterSettingActivity extends AppCompatActivity implements IActivityStatusBar, View.OnClickListener {
     private LinearLayout mLlPrinterOnOrOff, mLlPrinterListVisibleOrGone, mLlHandAddPrinter, mLlPrinterTest;

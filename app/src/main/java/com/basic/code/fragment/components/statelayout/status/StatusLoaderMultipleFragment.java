@@ -14,10 +14,6 @@ import com.basic.code.fragment.components.statelayout.status.adapter.DefaultStat
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
- 
- * @since 2020/4/29 12:34 AM
- */
 @Page(name = "StatusLoader多状态组件使用")
 public class StatusLoaderMultipleFragment extends BaseStatusLoaderFragment {
 

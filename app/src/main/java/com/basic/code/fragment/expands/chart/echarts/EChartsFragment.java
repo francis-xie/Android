@@ -11,10 +11,6 @@ import com.basic.code.utils.Utils;
 
 import java.util.List;
 
-/**
-
- * @since 2019/5/27 10:38
- */
 @Page(name = "ECharts\n非常丰富的web图表组件")
 public class EChartsFragment extends BaseSimpleListFragment {
 

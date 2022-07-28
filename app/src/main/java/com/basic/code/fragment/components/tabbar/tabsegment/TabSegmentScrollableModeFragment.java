@@ -25,10 +25,6 @@ import java.util.Map;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2018/12/26 下午11:46
- */
 @Page(name = "内容自适应，超过父容器则滚动")
 public class TabSegmentScrollableModeFragment extends BaseFragment {
 

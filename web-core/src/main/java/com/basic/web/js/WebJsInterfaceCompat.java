@@ -12,10 +12,6 @@ import com.basic.web.utils.LogUtils;
 
 import java.lang.ref.WeakReference;
 
-/**
- 
- * @since 1.0.0
- */
 public class WebJsInterfaceCompat {
 
 	private WeakReference<Web> mReference = null;

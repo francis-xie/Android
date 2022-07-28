@@ -19,10 +19,6 @@ import java.util.List;
 
 import butterknife.OnClick;
 
-/**
-
- * @since 2019/1/1 下午10:46
- */
 @Page(name = "OptionsPicker\n条件选择器--省市区三级联动")
 public class AddressPickerFragment extends BaseFragment {
 

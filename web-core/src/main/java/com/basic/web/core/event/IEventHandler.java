@@ -6,8 +6,6 @@ import android.view.KeyEvent;
 /**
  * 事件处理
  *
-
- * @since 2019/1/4 上午11:23
  */
 public interface IEventHandler {
 

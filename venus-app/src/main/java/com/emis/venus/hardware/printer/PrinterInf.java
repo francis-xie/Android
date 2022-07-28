@@ -4,8 +4,6 @@ import java.util.List;
 
 /**
  * 打印机打印接口
- *
- * @author Viva
  */
 public interface PrinterInf {
 

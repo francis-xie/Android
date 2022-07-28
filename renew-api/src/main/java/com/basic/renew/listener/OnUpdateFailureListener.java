@@ -6,9 +6,6 @@ import com.basic.renew.entity.UpdateError;
 
 /**
  * 更新失败监听
- *
-
- * @since 2018/7/1 下午7:43
  */
 public interface OnUpdateFailureListener {
     /**

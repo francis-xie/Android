@@ -395,7 +395,7 @@
     <string name="shortcut_label_search">搜索</string>
     <string name="guide_key_sliding_root_navigation">guide_key_sliding_root_navigation</string>
 
-    <string name="camera_permission_confirmation">This app demonstrates the usage of CameraView. In order to do that, it needs permission to access camera.</string>
+    <string name="camera_permission_confirmation">This app demonstrates the usage of CameraSee. In order to do that, it needs permission to access camera.</string>
     <string name="camera_permission_not_granted">Camera app cannot do anything without camera permission.</string>
     <string name="picture_taken">Picture taken</string>
     <string name="aspect_ratio">Aspect ratio</string>

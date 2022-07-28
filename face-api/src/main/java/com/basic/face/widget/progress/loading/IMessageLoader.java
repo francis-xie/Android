@@ -3,9 +3,6 @@ package com.basic.face.widget.progress.loading;
 
 /**
  * 消息loading加载者
- *
-
- * @since 2019/1/11 下午3:58
  */
 public interface IMessageLoader {
 

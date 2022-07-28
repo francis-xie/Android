@@ -17,9 +17,6 @@ import java.util.List;
 
 /**
  * 城市列表头字母的修饰器
- *
-
- * @since 2018/12/30 下午10:12
  */
 public class SectionItemDecoration extends RecyclerView.ItemDecoration {
     private List<City> mData;

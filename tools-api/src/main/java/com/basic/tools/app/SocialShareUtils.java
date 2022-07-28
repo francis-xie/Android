@@ -18,9 +18,6 @@ import java.util.List;
 
 /**
  * 社会化分享工具类
- *
-
- * @since 2018/5/18 上午10:51
  */
 public final class SocialShareUtils {
 

@@ -32,8 +32,6 @@ import static com.wonderkiln.camerakit.CameraKit.Constants.FLASH_ON;
 /**
  * CameraKit 相机工具
  *
-
- * @since 2020-02-13 10:47
  */
 @Page(name = "CameraKit")
 public class CameraKitFragment extends BaseFragment {

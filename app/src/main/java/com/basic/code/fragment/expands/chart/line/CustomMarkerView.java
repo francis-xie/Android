@@ -15,8 +15,6 @@ import com.basic.code.R;
 
 /**
  * Custom implementation of the MarkerView.
- *
- * @author Philipp Jahoda
  */
 @SuppressLint("ViewConstructor")
 public class CustomMarkerView extends MarkerView {

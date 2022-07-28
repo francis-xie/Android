@@ -14,10 +14,6 @@ import java.util.LinkedList;
 
 import static com.basic.date.CalendarFactory.getMonthOfDayList;
 
-/**
-
- * @since 2019/5/28 14:18
- */
 public class CalendarDateView extends ViewPager implements CalendarTopView {
     private final static int DEFAULT_MAX_ROW_COUNT = 6;
 

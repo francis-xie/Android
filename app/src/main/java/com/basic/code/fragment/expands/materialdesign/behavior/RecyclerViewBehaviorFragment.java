@@ -19,10 +19,6 @@ import com.yanzhenjie.recyclerview.SwipeRecyclerView;
 
 import butterknife.BindView;
 
-/**
- * @author XUE
- * @since 2019/5/9 9:08
- */
 @Page(name = "RecyclerView + CardView\n常见的列表展示组合")
 public class RecyclerViewBehaviorFragment extends BaseFragment {
     @BindView(R.id.toolbar_recycler_view)

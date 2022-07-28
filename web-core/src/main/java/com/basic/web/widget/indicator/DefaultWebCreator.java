@@ -20,10 +20,6 @@ import com.basic.web.utils.LogUtils;
 import com.basic.web.widget.WebViews;
 import com.basic.web.widget.WebParentLayout;
 
-/**
- 
- * @since 1.0.0
- */
 public class DefaultWebCreator implements WebCreator {
 
     private Activity mActivity;

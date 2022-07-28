@@ -6,12 +6,6 @@ import com.github.mikephil.charting.formatter.ValueFormatter;
 
 import java.text.DecimalFormat;
 
-/**
- *
- *
-
- * @since 2019/4/10 下午11:34
- */
 public class MoneyValueFormatter extends ValueFormatter {
 
     private final DecimalFormat mFormat;

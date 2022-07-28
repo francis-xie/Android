@@ -9,10 +9,6 @@ import com.basic.code.R;
 
 import java.util.List;
 
-/**
- * @author XUE
- * @date 2017/9/10 15:28
- */
 public class WidgetItemAdapter extends BaseRecyclerAdapter<PageInfo> {
 
     public WidgetItemAdapter(List<PageInfo> list) {

@@ -22,9 +22,6 @@ import com.basic.face.widget.progress.materialprogressbar.MaterialProgressBar;
 
 /**
  * 状态布局，可根据模板自定义状态布局
- *
-
- * @since 2020/4/30 12:16 AM
  */
 public class StatefulLayout extends LinearLayout {
 

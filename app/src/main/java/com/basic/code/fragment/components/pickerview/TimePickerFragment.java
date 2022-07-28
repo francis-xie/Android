@@ -24,10 +24,6 @@ import java.util.Calendar;
 
 import butterknife.OnClick;
 
-/**
-
- * @since 2019/1/1 下午8:38
- */
 @Page(name = "TimePicker\n时间选择器")
 public class TimePickerFragment extends BaseFragment {
 

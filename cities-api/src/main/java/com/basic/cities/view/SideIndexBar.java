@@ -18,9 +18,6 @@ import java.util.List;
 
 /**
  * 索引条
- *
- 
- * @since 2018/12/29 上午11:57
  */
 public class SideIndexBar extends View {
     private static final String[] DEFAULT_INDEX_ITEMS = {"定位", "热门", "A", "B", "C", "D", "E", "F", "G", "H",

@@ -13,9 +13,6 @@ import com.basic.face.utils.Utils;
 
 /**
  * 用作通用列表 {@link FACEGroupListView} 里每个 {@link FACEGroupListView.Section} 的头部或尾部，也可单独使用。
- *
-
- * @since 2019/1/3 上午10:48
  */
 public class FACEGroupListSectionHeaderFooterView extends LinearLayout {
 

@@ -8,9 +8,6 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * 记录日志的拒绝策略
- *
-
- * @since 2021/12/16 2:02 AM
  */
 public class TaskRecordPolicy implements RejectedExecutionHandler {
 

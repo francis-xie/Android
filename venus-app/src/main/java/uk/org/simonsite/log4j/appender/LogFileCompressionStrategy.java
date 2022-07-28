@@ -24,10 +24,6 @@ import uk.org.simonsite.log4j.helpers.FileHelper;
  * Responsible for providing compression strategy instances (via factory
  * methods), implementing template methods used by specific strategies, and the
  * creation of compressed backup files.
- * 
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @version 1.6
  */
 abstract class LogFileCompressionStrategy {
 

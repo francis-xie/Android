@@ -9,9 +9,6 @@ import static com.basic.aop.consts.PermissionConsts.STORAGE;
 
 /**
  * 基础图表
- *
-
- * @since 2019/4/13 下午7:02
  */
 public abstract class BaseChartFragment extends BaseFragment {
 

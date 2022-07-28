@@ -10,9 +10,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * 线程池工厂类
- *
-
- * @since 2018/5/18 上午12:11
  */
 public class DefaultThreadFactory implements ThreadFactory {
     private static final AtomicInteger poolNumber = new AtomicInteger(1);

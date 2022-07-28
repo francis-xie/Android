@@ -5,9 +5,6 @@ import org.gradle.api.Project
 
 /**
  * 日志记录
- *
-
- * @since 2018/5/17 上午12:53
  */
 class Logger {
     static org.gradle.api.logging.Logger logger

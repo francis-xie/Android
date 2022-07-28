@@ -22,8 +22,6 @@ import java.util.List;
 /**
  * 小票机<br>
  * 从emisprop中取参数
- *
- * @author Viva
  */
 public class VenusPrinter extends VenusWindowsPrinter implements PrinterInf {
 

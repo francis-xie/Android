@@ -21,9 +21,6 @@ import static com.basic.router.utils.Consts.TAG;
 
 /**
  * 拦截器服务的实现类，实现全局路由拦截服务
- *
-
- * @since 2018/5/19 下午7:14
  */
 @Router(path = ROUTE_SERVICE_INTERCEPTORS)
 public class InterceptorServiceImpl implements InterceptorService {

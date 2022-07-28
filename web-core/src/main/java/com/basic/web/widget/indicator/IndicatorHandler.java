@@ -6,9 +6,6 @@ import android.webkit.WebView;
 
 /**
  * 进度条控制器的默认实现
- *
-
- * @since 2019/1/4 上午10:45
  */
 public class IndicatorHandler implements IndicatorController {
 	private BaseIndicatorSpec mBaseIndicatorSpec;

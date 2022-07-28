@@ -35,10 +35,6 @@ import static android.app.Activity.RESULT_OK;
 import static com.basic.aop.consts.PermissionConsts.STORAGE;
 import static com.basic.code.fragment.expands.ScanFragment.REQUEST_IMAGE;
 
-/**
-
- * @since 2019-10-28 10:56
- */
 @Page(name = "图片编辑\n画笔、橡皮檫、文字、滤镜、保存")
 public class PhotoEditFragment extends BaseFragment implements OnPhotoEditorListener {
 

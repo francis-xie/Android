@@ -14,9 +14,6 @@ import java.util.List;
 
 /**
  * 图片预览实体类
- *
-
- * @since 2018/12/7 下午5:34
  */
 public class ImageViewInfo implements IPreviewInfo {
 

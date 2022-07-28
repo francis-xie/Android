@@ -13,9 +13,6 @@ import io.reactivex.subjects.Subject;
 
 /**
  * RxBus事件通知工具
- *
-
- * @since 2018/3/1 上午10:30
  */
 public final class RxBus {
 

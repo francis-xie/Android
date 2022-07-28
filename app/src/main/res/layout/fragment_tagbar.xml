@@ -22,7 +22,7 @@
             android:background="#F9F9F9"
             android:layout_gravity="bottom"
             app:tab_animate="Scale"
-            app:tab_middleView="@layout/layout_jptabbar_middle_view" />
+            app:tab_middleView="@layout/layout_tagbar_middle_view" />
 
     </FrameLayout>
 

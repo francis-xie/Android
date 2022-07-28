@@ -143,7 +143,7 @@
 -keep interface com.j256.**
 -keepclassmembers interface com.j256.** { *; }
 
-#XHttp2
+#Http
 -keep class com.basic.http.model.** { *; }
 -keep class com.basic.http.cache.model.** { *; }
 -keep class com.basic.http.cache.stategy.**{*;}
@@ -219,10 +219,10 @@
 # update
 -keep class com.basic.renew.entity.** { *; }
 
-# xvideo
+# video
 -keep class com.basic.video.jniinterface.** { *; }
 
-# xipc
+# ipc
 -keep @com.basic.ipc.annotation.* class * {*;}
 -keep class * {
     @com.basic.ipc.annotation.* <fields>;

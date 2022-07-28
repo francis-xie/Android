@@ -7,9 +7,6 @@ import java.lang.annotation.RetentionPolicy;
 
 /**
  * 定位状态
- *
-
- * @since 2018/12/30 下午6:28
  */
 public class LocateState {
     public static final int LOCATING    = 123;

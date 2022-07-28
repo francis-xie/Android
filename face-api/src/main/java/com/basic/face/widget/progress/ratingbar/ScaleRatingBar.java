@@ -12,9 +12,6 @@ import com.basic.face.R;
 
 /**
  * 缩放动画的星级评分控件
- *
-
- * @since 2019/3/26 下午10:51
  */
 public class ScaleRatingBar extends AnimationRatingBar {
 

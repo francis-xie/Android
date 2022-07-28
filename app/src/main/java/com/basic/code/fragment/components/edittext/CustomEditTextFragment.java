@@ -4,10 +4,6 @@ import com.basic.page.annotation.Page;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
 
-/**
- * @author XUE
- * @date 2017/9/11 11:28
- */
 @Page(name = "自定义输入框")
 public class CustomEditTextFragment extends BaseFragment {
     @Override

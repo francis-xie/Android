@@ -11,10 +11,6 @@ import com.basic.code.base.BaseFragment;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2020-01-05 23:47
- */
 @Page(name = "SwitchIconView\n可切换图标的按钮")
 public class SwitchIconViewFragment extends BaseFragment {
 

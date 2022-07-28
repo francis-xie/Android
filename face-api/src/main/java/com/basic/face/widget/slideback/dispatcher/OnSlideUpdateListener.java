@@ -3,9 +3,6 @@ package com.basic.face.widget.slideback.dispatcher;
 
 /**
  * 侧滑更新监听事件
- *
-
- * @since 2019-08-30 15:50
  */
 public interface OnSlideUpdateListener {
 

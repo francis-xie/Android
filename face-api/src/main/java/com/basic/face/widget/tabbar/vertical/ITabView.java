@@ -9,11 +9,6 @@ import android.view.View;
 import com.basic.face.widget.textview.badge.Badge;
 import com.basic.face.widget.textview.badge.BadgeView;
 
-/**
- * @author chqiu
- * Email:qstumn@163.com
- */
-
 public interface ITabView {
 
     ITabView setBadge(TabBadge badge);

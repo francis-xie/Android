@@ -14,10 +14,6 @@ import com.basic.tools.common.StringUtils;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2019/4/2 下午10:30
- */
 @Page(name = "RulerView\n支持选择身高、体重、视力的尺子")
 public class RulerViewFragment extends BaseFragment {
 

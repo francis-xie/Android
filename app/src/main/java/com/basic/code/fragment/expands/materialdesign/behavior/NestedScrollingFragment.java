@@ -24,10 +24,6 @@ import butterknife.BindView;
 
 import static com.google.android.material.tabs.TabLayout.MODE_FIXED;
 
-/**
-
- * @since 2020/4/6 10:29 AM
- */
 @Page(name = "NestedScrolling机制实现嵌套滑动")
 public class NestedScrollingFragment extends BaseFragment {
 

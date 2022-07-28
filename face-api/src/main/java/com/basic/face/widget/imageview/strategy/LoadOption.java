@@ -7,9 +7,6 @@ import androidx.annotation.NonNull;
 
 /**
  * 加载选项
- *
-
- * @since 2019-11-09 11:12
  */
 public class LoadOption {
 

@@ -11,10 +11,6 @@ import com.basic.code.base.BaseFragment;
 
 import butterknife.BindView;
 
-/**
- * @author XUE
- * @date 2017/9/29 11:09
- */
 @Page(name = "MaterialEditText\nMaterial Design风格的输入框")
 public class MaterialEditTextFragment extends BaseFragment {
 

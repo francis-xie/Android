@@ -17,9 +17,6 @@ import androidx.core.view.ViewCompat;
 /**
  * 业务方可能不会直接提供RecyclerView
  * 而是会在RecyclerView外面包一层FrameLayout做一些类似吸顶的逻辑
- *
-
- * @since 2020/3/11 7:18 PM
  */
 public class NestedFrameLayout extends FrameLayout implements NestedScrollingParent, NestedScrollingChild {
 

@@ -13,9 +13,6 @@ import java.util.Locale;
 
 /**
  * 语言工具类
- *
-
- * @since 2020/6/7 11:27 PM
  */
 public final class LanguageUtils {
 

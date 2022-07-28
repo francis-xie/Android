@@ -50,9 +50,6 @@ import static javax.lang.model.element.Modifier.PUBLIC;
 /**
  * Process the annotation of {@link Interceptor}
  * <p>自动生成IInterceptor注册接口 Router$$Interceptors$$[moduleName] </p>
- *
-
- * @since 2018/5/20 上午12:15
  */
 @AutoService(Processor.class)
 @SupportedOptions(KEY_MODULE_NAME)

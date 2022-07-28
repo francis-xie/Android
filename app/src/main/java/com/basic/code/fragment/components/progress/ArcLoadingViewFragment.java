@@ -16,12 +16,6 @@ import com.basic.code.base.BaseFragment;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
- *
- *
- 
- * @since 2018/11/26 下午1:37
- */
 @Page(name = "ARCLoadingView\n圆弧加载控件")
 public class ArcLoadingViewFragment extends BaseFragment {
 

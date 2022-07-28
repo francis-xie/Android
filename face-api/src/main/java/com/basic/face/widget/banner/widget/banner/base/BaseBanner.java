@@ -39,9 +39,6 @@ import io.github.inflationx.calligraphy3.HasTypeface;
 
 /**
  * 轮播条
- *
-
- * @since 2018/11/25 下午7:18
  */
 public abstract class BaseBanner<E, T extends BaseBanner<E, T>> extends RelativeLayout implements HasTypeface {
     /**

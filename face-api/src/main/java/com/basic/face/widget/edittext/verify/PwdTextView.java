@@ -9,9 +9,6 @@ import android.util.AttributeSet;
 
 /**
  * 可显示文字或密码
- *
- * @author XUE
- * @since 2019/5/7 11:21
  */
 public class PwdTextView extends AppCompatTextView {
 

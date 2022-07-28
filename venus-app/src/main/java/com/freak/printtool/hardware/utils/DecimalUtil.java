@@ -7,9 +7,6 @@ import java.math.RoundingMode;
 
 /**
  * 这是进行BigDecimal的四则运算
- *
- * @author Freak
- * @date 2019/8/13.
  */
 public class DecimalUtil {
 

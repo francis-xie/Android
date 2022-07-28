@@ -6,10 +6,6 @@ import com.basic.code.base.ComponentContainerFragment;
 import com.basic.code.fragment.components.imageview.preview.NineGridImageViewFragment;
 import com.basic.code.fragment.components.imageview.preview.PreviewRecycleViewFragment;
 
-/**
-
- * @since 2018/12/8 下午5:26
- */
 @Page(name = "图片预览")
 public class PreviewFragment extends ComponentContainerFragment {
     /**

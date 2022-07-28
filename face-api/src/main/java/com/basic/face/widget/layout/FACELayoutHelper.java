@@ -26,9 +26,6 @@ import java.lang.ref.WeakReference;
 
 /**
  * 布局辅助工具
- *
-
- * @since 2019-06-01 19:30
  */
 public class FACELayoutHelper implements IFACELayout {
     private Context mContext;

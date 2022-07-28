@@ -8,9 +8,6 @@ import androidx.annotation.NonNull;
 
 /**
  * TaskLogger日志记录
- *
-
- * @since 2021/10/9 4:31 PM
  */
 public final class TaskLogger {
 

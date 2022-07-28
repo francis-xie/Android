@@ -22,9 +22,6 @@ import com.basic.aop.util.Strings;
 
 /**
  * AOP
- *
-
- * @since 2019-08-14 00:06
  */
 public final class AOP {
 

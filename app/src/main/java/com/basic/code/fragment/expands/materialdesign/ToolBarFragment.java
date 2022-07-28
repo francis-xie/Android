@@ -20,10 +20,6 @@ import com.basic.tools.display.DensityUtils;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2019-05-08 00:13
- */
 @Page(name = "ToolBar使用")
 public class ToolBarFragment extends BaseFragment {
     @BindView(R.id.tool_bar1)

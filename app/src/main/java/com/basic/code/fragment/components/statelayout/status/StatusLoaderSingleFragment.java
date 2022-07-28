@@ -14,10 +14,6 @@ import com.basic.code.fragment.components.statelayout.status.adapter.SingleViewA
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2020/4/29 11:54 PM
- */
 @Page(name = "StatusLoader组件复用")
 public class StatusLoaderSingleFragment extends BaseStatusLoaderFragment {
 

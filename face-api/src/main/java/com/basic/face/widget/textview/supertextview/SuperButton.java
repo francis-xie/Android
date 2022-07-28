@@ -16,9 +16,6 @@ import com.basic.face.widget.alpha.FACEAlphaViewHelper;
 
 /**
  * 超级按钮  实现shape所有的属性
- *
-
- * @since 2019/1/14 下午10:10
  */
 public class SuperButton extends AppCompatButton {
 

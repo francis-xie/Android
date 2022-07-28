@@ -32,9 +32,6 @@ import java.lang.CharSequence;
 
 /**
  * Snackbar工具类
- *
-
- * @since 2018/12/18 下午5:58
  */
 public class SnackbarUtils {
 

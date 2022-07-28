@@ -10,9 +10,6 @@ import java.util.Map;
 
 /**
  * 自定义滤镜效果
- *
-
- * @since 2019-10-28 9:55
  */
 public class CustomEffect {
 

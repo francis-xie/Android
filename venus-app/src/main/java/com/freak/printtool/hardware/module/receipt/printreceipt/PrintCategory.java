@@ -9,12 +9,6 @@ import com.google.zxing.common.BitMatrix;
 
 import java.util.Hashtable;
 
-/**
- *
- * @author Freak
- * @date 2019/8/13.
- */
-
 public class PrintCategory {
     /**
      * 生成条码、二维码

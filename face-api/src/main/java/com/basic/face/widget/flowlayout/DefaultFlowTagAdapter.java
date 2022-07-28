@@ -8,9 +8,6 @@ import com.basic.face.R;
 
 /**
  * 默认流标签布局适配器
- *
-
- * @since 2019/1/14 下午10:00
  */
 public class DefaultFlowTagAdapter extends BaseTagAdapter<String, TextView> {
 

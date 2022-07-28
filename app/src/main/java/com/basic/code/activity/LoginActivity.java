@@ -12,9 +12,6 @@ import com.basic.tools.display.Colors;
 
 /**
  * 登录页面
- *
-
- * @since 2019-11-17 22:21
  */
 public class LoginActivity extends BaseActivity {
 

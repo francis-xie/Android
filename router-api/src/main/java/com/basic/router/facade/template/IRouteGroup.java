@@ -7,9 +7,6 @@ import java.util.Map;
 
 /**
  * 路由的组元素
- *
-
- * @since 2018/5/16 下午11:59
  */
 public interface IRouteGroup {
     /**

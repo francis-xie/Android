@@ -15,9 +15,6 @@ import java.util.concurrent.CountDownLatch;
 
 /**
  * 解码线程
- *
-
- * @since 2019/1/17 上午12:03
  */
 final class DecodeThread extends Thread {
 

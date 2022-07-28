@@ -18,10 +18,6 @@ import com.yanzhenjie.recyclerview.SwipeRecyclerView;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019/4/6 下午6:57
- */
 @Page(name = "下拉刷新和加载更多\n拓展SwipeRefreshLayout的功能")
 public class SwipeRefreshFragment extends BaseFragment {
 

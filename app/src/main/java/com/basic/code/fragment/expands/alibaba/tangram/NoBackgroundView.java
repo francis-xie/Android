@@ -20,8 +20,6 @@ import java.util.Locale;
 /**
  * 不设置背景的自定义View
  *
-
- * @since 2020/4/9 1:08 AM
  */
 public class NoBackgroundView extends LinearLayout implements ITangramViewLifeCycle {
 

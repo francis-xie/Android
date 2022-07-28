@@ -12,10 +12,6 @@ import androidx.customview.widget.ViewDragHelper;
 import com.basic.face.widget.layout.FACEFrameLayout;
 import com.basic.code.R;
 
-/**
- 
- * @since 2019-06-02 17:12
- */
 public class ShadowAdjustLayout extends FACEFrameLayout {
 
     private ViewDragHelper mViewDragHelper;

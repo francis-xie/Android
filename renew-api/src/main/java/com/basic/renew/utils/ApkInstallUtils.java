@@ -22,9 +22,6 @@ import static com.basic.renew.entity.UpdateError.ERROR.INSTALL_FAILED;
 
 /**
  * APK安装工具类
- *
- 
- * @since 2018/7/2 上午1:18
  */
 public final class ApkInstallUtils {
     private static final int APP_INSTALL_AUTO = 0;

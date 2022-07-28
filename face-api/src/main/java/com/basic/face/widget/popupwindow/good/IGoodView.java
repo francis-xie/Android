@@ -9,9 +9,6 @@ import androidx.annotation.DrawableRes;
 
 /**
  * 点赞
- *
-
- * @since 2020-01-05 20:04
  */
 public interface IGoodView {
 

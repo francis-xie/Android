@@ -21,9 +21,6 @@ import static com.basic.code.base.webview.WebFragment.KEY_URL;
 
 /**
  * 壳浏览器
- *
-
- * @since 2019/1/5 上午12:15
  */
 public class WebActivity extends BaseAppCompatActivity {
 

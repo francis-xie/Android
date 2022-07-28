@@ -11,9 +11,6 @@ import java.util.Random;
 
 /**
  * 时间的工具类
- *
- * @author Freak
- * @date 2019/8/13.
  */
 public class DateUtil {
 
@@ -124,7 +121,6 @@ public class DateUtil {
      * @throws
      * @Title: compareDate
      * @Description: 日期比较，如果s>=e 返回true 否则返回false
-     * @author luguosui
      */
     public static boolean compareDate(String s, String e) {
         if (fomatDate(s) == null || fomatDate(e) == null) {
@@ -265,7 +261,6 @@ public class DateUtil {
      * @param beginDateStr
      * @param endDateStr
      * @return long
-     * @author Administrator
      */
     public static long getDaySub(String beginDateStr, String endDateStr) {
         long day = 0;

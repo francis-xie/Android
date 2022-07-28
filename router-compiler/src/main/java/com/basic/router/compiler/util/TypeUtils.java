@@ -20,9 +20,6 @@ import static com.basic.router.compiler.util.Consts.STRING;
 
 /**
  * 获取真实的java类型工具
- *
- 
- * @since 2018/5/20 上午12:11
  */
 public class TypeUtils {
 

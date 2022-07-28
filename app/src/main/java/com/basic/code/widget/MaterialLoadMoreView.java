@@ -9,9 +9,6 @@ import com.yanzhenjie.recyclerview.SwipeRecyclerView;
 
 /**
  * 简单的Material Design风格的加载进度条
- *
- * @author XUE
- * @since 2019/5/9 9:37
  */
 public class MaterialLoadMoreView extends ProgressBar implements SwipeRecyclerView.LoadMoreView {
 

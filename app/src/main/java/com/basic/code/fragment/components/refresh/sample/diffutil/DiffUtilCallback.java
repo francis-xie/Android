@@ -13,9 +13,6 @@ import java.util.List;
 
 /**
  * 使用DiffUtil进行局部刷新
- *
-
- * @since 2020/6/22 12:07 AM
  */
 public class DiffUtilCallback extends DiffUtil.Callback {
 

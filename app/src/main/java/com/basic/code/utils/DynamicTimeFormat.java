@@ -11,9 +11,6 @@ import java.util.Locale;
 
 /**
  * 动态时间格式化
- *
-
- * @since 2018/12/7 上午1:01
  */
 public class DynamicTimeFormat extends SimpleDateFormat {
 

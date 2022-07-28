@@ -12,9 +12,6 @@ import com.basic.cities.R;
 
 /**
  * 列表分割线
- *
- 
- * @since 2018/12/30 下午6:29
  */
 public class DividerItemDecoration extends RecyclerView.ItemDecoration {
     private float dividerHeight;

@@ -46,11 +46,7 @@ import java.util.List;
 
 /**
  * 标签打印机
- *
- * @author Freak
- * @date 2019/8/13.
  */
-
 public class LabelPrinterFragment extends Fragment implements View.OnClickListener {
 
     public static final int CONNECT_DEVICE = 1;

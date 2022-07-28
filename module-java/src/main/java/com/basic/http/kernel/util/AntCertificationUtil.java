@@ -21,9 +21,6 @@ import java.util.*;
 
 /**
  * 证书文件可信校验
- *
- * @author junying.wjy
- * @version $Id: AntCertificationUtil.java, v 0.1 2019-07-29 下午04:46 junying.wjy Exp $
  */
 public class AntCertificationUtil {
     private static final Logger LOGGER = LoggerFactory.getLogger(AntCertificationUtil.class);

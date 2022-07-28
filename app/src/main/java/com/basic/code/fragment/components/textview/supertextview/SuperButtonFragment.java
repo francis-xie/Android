@@ -9,9 +9,6 @@ import com.basic.code.base.BaseFragment;
 
 /**
  * 超级按钮  实现shape所有的属性
- *
-
- * @since 2018/11/29 上午12:09
  */
 @Page(name = "SuperButton")
 public class SuperButtonFragment extends BaseFragment {

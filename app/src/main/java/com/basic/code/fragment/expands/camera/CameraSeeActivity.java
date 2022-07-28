@@ -49,8 +49,6 @@ import static com.basic.code.fragment.expands.camera.PictureCropActivity.REQUEST
 /**
  * 功能齐全的相机拍摄页面
  *
-
- * @since 2019-10-17 9:17
  */
 public class CameraSeeActivity extends AppCompatActivity implements
         ActivityCompat.OnRequestPermissionsResultCallback,

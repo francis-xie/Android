@@ -18,10 +18,6 @@ import java.util.List;
 import static com.basic.code.fragment.expands.materialdesign.constraintlayout.ConstraintLayoutContainerFragment.KEY_LAYOUT_ID;
 import static com.basic.code.fragment.expands.materialdesign.constraintlayout.ConstraintLayoutContainerFragment.KEY_TITLE;
 
-/**
-
- * @since 2020-01-08 9:34
- */
 @Page(name = "ConstraintLayout\n约束布局")
 public class ConstraintLayoutFragment extends BaseSimpleListFragment {
 

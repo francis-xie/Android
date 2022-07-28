@@ -10,9 +10,6 @@ import com.basic.code.fragment.components.refresh.refreshs.RefreshStatusLayoutFr
 import com.basic.code.fragment.components.refresh.refreshs.RefreshStyleFragment;
 import com.basic.code.utils.Utils;
 
-/**
- * @since 2019/4/1 9:47
- */
 @Page(name = "RefreshLayouts\nAndroid智能下拉刷新框架")
 public class RefreshLayoutsFragment extends ComponentContainerFragment {
     /**

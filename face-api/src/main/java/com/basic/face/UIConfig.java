@@ -7,9 +7,6 @@ import com.basic.face.widget.statelayout.StateLayoutConfig;
 
 /**
  * UI动态配置
- *
-
- * @since 2018/11/26 上午12:03
  */
 public class UIConfig {
 

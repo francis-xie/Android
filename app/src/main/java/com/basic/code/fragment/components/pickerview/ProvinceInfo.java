@@ -8,9 +8,6 @@ import java.util.List;
 
 /**
  * 省市区三级联动
- *
-
- * @since 2019/1/1 下午10:59
  */
 public class ProvinceInfo implements IPickerViewItem {
 

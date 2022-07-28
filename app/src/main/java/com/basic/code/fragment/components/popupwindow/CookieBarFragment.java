@@ -12,10 +12,6 @@ import com.basic.code.utils.XToastUtils;
 
 import butterknife.OnClick;
 
-/**
-
- * @since 2018/12/19 上午10:06
- */
 @Page(name = "CookieBar\n顶部和底部信息显示条")
 public class CookieBarFragment extends BaseFragment {
 

@@ -36,10 +36,6 @@ import java.util.EventListener;
  * {@link FileRollEvent}s are processed on either an application thread or, if
  * {@link TimeAndSizeRollingAppender#getDateRollEnforced()} is <tt>true</tt>, on
  * the {@link TimeBasedRollEnforcer} thread.
- * 
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @version 2.1
  */
 public interface FileRollEventListener extends EventListener {
 

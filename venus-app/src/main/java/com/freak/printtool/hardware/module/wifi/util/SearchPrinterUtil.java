@@ -13,11 +13,6 @@ import java.net.Socket;
 import java.net.SocketAddress;
 import java.net.UnknownHostException;
 
-/**
- * @author Freak
- * @date 2019/8/13.
- */
-
 public class SearchPrinterUtil {
 
     private Socket mSocket = null;

@@ -5,9 +5,6 @@ import java.math.BigDecimal;
 
 /**
  * 资金运算工具类
- *
-
- * @since 2018/6/27 下午2:50
  */
 public final class BigDecimalUtils {
 

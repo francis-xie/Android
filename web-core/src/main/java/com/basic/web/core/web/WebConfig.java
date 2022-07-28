@@ -17,10 +17,7 @@ import com.basic.web.utils.LogUtils;
 import java.io.File;
 
 import static com.basic.web.utils.WebUtils.getWebFilePath;
-/**
- * @since 1.0.0
- 
- */
+
 public class WebConfig {
 
 

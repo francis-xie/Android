@@ -19,10 +19,6 @@ import static com.basic.face.utils.ViewUtils.Direction.BOTTOM_TO_TOP;
 import static com.basic.face.utils.ViewUtils.Direction.LEFT_TO_RIGHT;
 import static com.basic.face.utils.ViewUtils.Direction.TOP_TO_BOTTOM;
 
-/**
-
- * @since 2019/1/3 下午2:07
- */
 @Page(name = "控件动画")
 public class ViewAnimationFragment extends BaseFragment {
 

@@ -22,10 +22,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
-/**
-
- * @since 2020/4/21 12:24 AM
- */
 public class SimpleTabFragment extends Fragment {
     private static final String TAG = "SimpleTabFragment";
 

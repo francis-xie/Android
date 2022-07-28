@@ -23,10 +23,6 @@ import com.basic.code.utils.XToastUtils;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2020/5/2 10:59 AM
- */
 @Page(name = "StickyItemDecoration\n通过装饰实现粘顶效果")
 public class StickyItemDecorationFragment extends BaseFragment {
 

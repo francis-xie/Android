@@ -10,9 +10,6 @@ import com.basic.util.subsciber.impl.OnProgressCancelListener;
 
 /**
  * 默认进度加载
- *
-
- * @since 2018/6/10 下午9:27
  */
 public class ProgressDialogLoader implements IProgressLoader {
     /**

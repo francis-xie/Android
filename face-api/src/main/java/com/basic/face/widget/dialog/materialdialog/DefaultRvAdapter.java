@@ -24,9 +24,6 @@ import com.basic.face.R;
 import com.basic.face.utils.ThemeUtils;
 import com.basic.face.widget.dialog.materialdialog.internal.MDTintHelper;
 
-/**
- * @author Aidan Follestad (afollestad)
- */
 class DefaultRvAdapter extends RecyclerView.Adapter<DefaultRvAdapter.DefaultVH> {
 
     private final MaterialDialog dialog;

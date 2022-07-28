@@ -21,9 +21,6 @@ import com.basic.web.utils.LogUtils;
 
 /**
  * 默认进度条
- *
-
- * @since 2019/1/4 上午10:49
  */
 public class WebIndicator extends BaseIndicatorView implements BaseIndicatorSpec {
 

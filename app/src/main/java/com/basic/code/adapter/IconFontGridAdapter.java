@@ -10,10 +10,6 @@ import com.basic.face.adapter.recyclerview.RecyclerViewHolder;
 import com.basic.code.R;
 import com.basic.code.widget.iconfont.FACEIconFont;
 
-/**
-
- * @since 2019-10-13 19:30
- */
 public class IconFontGridAdapter extends BaseRecyclerAdapter<FACEIconFont.Icon> {
 
     public IconFontGridAdapter(FACEIconFont.Icon[] data) {

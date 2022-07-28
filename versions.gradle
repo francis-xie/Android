@@ -27,6 +27,7 @@ versions.butterknife = "10.1.0"
 versions.runner = "1.0.2"
 versions.gson = "2.8.5"
 versions.okhttp3 = "3.12.12"
+versions.leakcanary = "2.6"
 
 def deps = [:]
 
@@ -74,6 +75,7 @@ deps.rxandroid = "io.reactivex.rxjava2:rxandroid:$versions.rxandroid"
 deps.rxbinding = "com.jakewharton.rxbinding2:rxbinding:$versions.rxbinding"
 deps.gson = "com.google.code.gson:gson:$versions.gson"
 deps.okhttp3 = "com.squareup.okhttp3:okhttp:$versions.okhttp3"
+deps.leakcanary = "com.squareup.leakcanary:leakcanary-android:$versions.leakcanary"
 
 def booster = [:]
 booster.gradle_plugin = "com.didiglobal.booster:booster-gradle-plugin:$versions.booster"

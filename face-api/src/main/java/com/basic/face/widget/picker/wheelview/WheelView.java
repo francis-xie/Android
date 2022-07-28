@@ -38,9 +38,6 @@ import io.github.inflationx.calligraphy3.HasTypeface;
 
 /**
  * 3D滚轮控件
- *
-
- * @since 2019/1/1 下午5:12
  */
 public class WheelView extends View implements HasTypeface {
 

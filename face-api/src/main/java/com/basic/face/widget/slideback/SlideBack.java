@@ -13,9 +13,6 @@ import java.util.WeakHashMap;
 
 /**
  * SlideBack使用类
- *
- 
- * @since 2019-08-30 9:30
  */
 public class SlideBack {
     // 使用WeakHashMap防止内存泄漏

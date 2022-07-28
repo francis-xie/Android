@@ -9,9 +9,6 @@ import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * 优先级工具类
- *
-
- * @since 2021/10/9 12:08 PM
  */
 public final class PriorityUtils {
 

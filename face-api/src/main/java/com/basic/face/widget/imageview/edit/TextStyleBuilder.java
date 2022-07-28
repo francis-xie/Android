@@ -14,9 +14,6 @@ import java.util.Map;
 
 /**
  * 文字编辑
- *
-
- * @since 2019-10-28 10:28
  */
 public class TextStyleBuilder {
 

@@ -10,12 +10,6 @@ import com.basic.code.base.BaseFragment;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
- *
- *
-
- * @since 2018/11/26 下午5:39
- */
 @Page(name = "统一的输入框样式")
 public class EditTextStyleFragment extends BaseFragment {
 

@@ -6,9 +6,6 @@ import com.google.zxing.LuminanceSource;
 
 /**
  * 自定义解析Bitmap LuminanceSource
- *
-
- * @since 2019/1/17 上午12:21
  */
 public class BitmapLuminanceSource extends LuminanceSource {
 

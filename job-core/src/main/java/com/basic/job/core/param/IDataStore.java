@@ -5,9 +5,6 @@ import java.util.Map;
 
 /**
  * 数据存储仓库接口
- *
-
- * @since 2021/11/13 4:08 PM
  */
 public interface IDataStore {
 

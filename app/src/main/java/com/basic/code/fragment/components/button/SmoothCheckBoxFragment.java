@@ -9,10 +9,6 @@ import com.basic.code.utils.XToastUtils;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2020-01-06 10:05
- */
 @Page(name = "SmoothCheckBox\n自带切换动画的CheckBox")
 public class SmoothCheckBoxFragment extends BaseFragment implements SmoothCheckBox.OnCheckedChangeListener {
     @BindView(R.id.scb)

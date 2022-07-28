@@ -34,9 +34,6 @@ import java.util.List;
 
 /**
  * 打印小票机
- *
- * @author Freak
- * @date 2019/8/13.
  */
 public class ReceiptPrinterFragment extends Fragment implements OnClickListener {
 

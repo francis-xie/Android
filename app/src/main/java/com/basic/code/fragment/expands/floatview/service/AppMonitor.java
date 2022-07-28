@@ -12,9 +12,6 @@ import java.util.List;
 
 /**
  * 应用监听（使用 https://github.com/jaredrummler/AndroidProcesses )
- *
-
- * @since 2019/1/21 下午12:06
  */
 public class AppMonitor extends Thread {
 

@@ -11,9 +11,6 @@ import java.util.Collection;
 
 /**
  * 基于simple_list_item_2简单的适配器
- *
- * @author XUE
- * @since 2019/4/1 11:04
  */
 public class SimpleRecyclerAdapter extends BaseRecyclerAdapter<String> {
 

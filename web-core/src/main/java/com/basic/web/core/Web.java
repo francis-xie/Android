@@ -60,9 +60,6 @@ import java.util.Map;
 
 /**
  * web核心api
- *
- 
- * @since 2019/1/4 上午10:32
  */
 public final class Web {
 	/**

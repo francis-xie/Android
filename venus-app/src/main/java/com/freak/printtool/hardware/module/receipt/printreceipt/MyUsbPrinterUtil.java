@@ -32,11 +32,7 @@ import static com.freak.printtool.hardware.module.receipt.ReceiptPrinterFragment
 
 /**
  * 这是小票打印机工具类
- *
- * @author Freak
- * @date 2019/8/13.
  */
-
 public class MyUsbPrinterUtil {
     private static final String TAG = "UsbPrinter";
     private final Context mContext;

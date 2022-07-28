@@ -33,10 +33,6 @@ import java.util.List;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019/4/13 下午6:46
- */
 @Page(name = "BasicLineChart\n基础折线图，详细API")
 public class BasicLineChartFragment extends BaseChartFragment implements OnChartValueSelectedListener {
 

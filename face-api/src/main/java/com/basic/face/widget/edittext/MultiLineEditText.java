@@ -27,9 +27,6 @@ import static com.basic.face.utils.DensityUtils.sp2px;
  * 1个中文算1个
  * 2个英文算1个
  * 另外：如：只有一个英文时也算1个
- *
- * @author XUE
- * @since 2019/3/22 13:46
  */
 public class MultiLineEditText extends LinearLayout {
     private EditText mEtInput;

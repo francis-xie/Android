@@ -13,9 +13,6 @@ import static com.basic.face.widget.statelayout.StatusLoader.STATUS_LOADING;
 
 /**
  * 基础StatusLoader页
- *
-
- * @since 2020/4/29 11:57 PM
  */
 public abstract class BaseStatusLoaderFragment extends BaseFragment {
 

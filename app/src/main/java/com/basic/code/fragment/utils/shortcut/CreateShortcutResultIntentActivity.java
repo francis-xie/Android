@@ -9,10 +9,6 @@ import com.basic.code.base.BaseActivity;
 import com.basic.code.fragment.utils.ShortcutUtilsFragment;
 import com.basic.code.utils.Utils;
 
-/**
-
- * @since 2021/10/7 7:00 PM
- */
 public class CreateShortcutResultIntentActivity extends BaseActivity {
 
     @Override

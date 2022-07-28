@@ -24,9 +24,6 @@ import static com.basic.renew.entity.UpdateError.ERROR.CHECK_UPDATING;
 
 /**
  * 默认版本更新检查者
- *
-
- * @since 2018/7/2 下午10:21
  */
 public class DefaultUpdateChecker implements IUpdateChecker {
 

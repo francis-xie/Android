@@ -17,9 +17,6 @@ import static com.basic.code.fragment.components.banner.UserGuideFragment.POSITI
 
 /**
  * 可使用Applink打开:https://zhiqiang.club/page/transfer?pageName=UserGuide&position=2
- *
- 
- * @since 2019-07-06 10:21
  */
 @Page(name = "UserGuide", params = {POSITION})
 public class UserGuideFragment extends BaseFragment {

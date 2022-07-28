@@ -12,9 +12,6 @@ import me.samlss.broccoli.PlaceholderParameter;
 
 /**
  * 占位控件
- *
- 
- * @since 2019/4/7 下午1:02
  */
 public class PlaceholderHelper {
 

@@ -21,9 +21,6 @@ import java.util.Map;
 
 /**
  * FACE字体图标库，是使用 <a href="https://www.iconfont.cn/"> 平台自动生成的
- *
-
- * @since 2019-10-13 16:29
  */
 public class FACEIconFont implements ITypeface {
 

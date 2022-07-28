@@ -10,9 +10,6 @@ import java.util.List;
 
 /**
  * 流布局基础适配器
- *
-
- * @since 2019/1/14 下午10:12
  */
 public abstract class BaseTagAdapter<T, H> extends BaseListAdapter<T, H> implements FlowTagLayout.OnInitSelectedPosition {
     /**

@@ -16,10 +16,6 @@ import com.basic.code.utils.XToastUtils;
 
 import butterknife.OnClick;
 
-/**
-
- * @since 2018/12/27 下午2:49
- */
 @Page(name = "SnackBarUtils", extra = R.drawable.ic_util_snackbar)
 public class SnackBarUtilsFragment extends BaseFragment {
 

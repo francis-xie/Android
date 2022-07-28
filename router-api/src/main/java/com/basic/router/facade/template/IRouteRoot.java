@@ -5,9 +5,6 @@ import java.util.Map;
 
 /**
  * 路由的根元素
- *
-
- * @since 2018/5/16 下午11:58
  */
 public interface IRouteRoot {
 

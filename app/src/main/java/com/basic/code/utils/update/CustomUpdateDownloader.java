@@ -10,9 +10,6 @@ import com.basic.renew.service.OnFileDownloadListener;
 
 /**
  * 重写DefaultUpdateDownloader，在取消下载时，弹出提示
- *
-
- * @since 2019-06-14 23:47
  */
 public class CustomUpdateDownloader extends DefaultUpdateDownloader {
 

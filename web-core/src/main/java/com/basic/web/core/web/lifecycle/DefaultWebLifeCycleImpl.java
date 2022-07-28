@@ -6,11 +6,6 @@ import android.webkit.WebView;
 
 import com.basic.web.utils.WebUtils;
 
-/**
- 
- * @date 2017/6/3
- * @since 2.0.0
- */
 public class DefaultWebLifeCycleImpl implements WebLifeCycle {
     private WebView mWebView;
 

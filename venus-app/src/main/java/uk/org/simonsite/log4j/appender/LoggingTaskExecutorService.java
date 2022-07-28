@@ -31,10 +31,6 @@ import org.apache.log4j.spi.ErrorHandler;
  * <p>
  * This documentation has been shamelessly plagiarised from Doug Lea's excellent
  * concurrency library.
- * 
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @version 1.1
  */
 public interface LoggingTaskExecutorService {
   

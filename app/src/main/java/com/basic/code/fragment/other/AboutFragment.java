@@ -17,10 +17,6 @@ import java.util.Locale;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019/1/6 下午12:11
- */
 @Page(name = "关于")
 public class AboutFragment extends BaseFragment {
 

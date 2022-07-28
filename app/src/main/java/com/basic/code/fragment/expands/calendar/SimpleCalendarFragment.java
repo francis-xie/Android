@@ -30,10 +30,6 @@ import java.util.Map;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019-06-28 11:23
- */
 @Page(name = "简单的日历控件\n支持自定义样式")
 public class SimpleCalendarFragment extends BaseFragment implements CalendarView.OnCalendarSelectListener {
 

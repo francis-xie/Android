@@ -15,10 +15,6 @@ import butterknife.OnClick;
 import static com.basic.face.widget.layout.ExpandableLayout.State.COLLAPSED;
 import static com.basic.face.widget.layout.ExpandableLayout.State.EXPANDED;
 
-/**
-
- * @since 2019-11-22 14:21
- */
 @Page(name = "可伸缩布局简单使用")
 public class ExpandableSimpleFragment extends BaseFragment {
 

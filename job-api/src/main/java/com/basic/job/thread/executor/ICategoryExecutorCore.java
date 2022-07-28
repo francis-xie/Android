@@ -5,9 +5,6 @@ import com.basic.job.thread.pool.cancel.ICancelable;
 
 /**
  * 拥有不同类别的执行者内核实现接口
- *
-
- * @since 1/27/22 12:50 AM
  */
 public interface ICategoryExecutorCore extends IExecutorCore {
 

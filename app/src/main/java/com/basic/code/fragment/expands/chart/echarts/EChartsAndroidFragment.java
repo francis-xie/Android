@@ -25,10 +25,6 @@ import com.basic.code.utils.Utils;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2019/5/28 8:48
- */
 @Page(name = "ECharts\nAndroid原生调用")
 public class EChartsAndroidFragment extends BaseWebViewFragment {
 

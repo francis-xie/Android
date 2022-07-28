@@ -17,9 +17,6 @@ import com.basic.face.utils.DensityUtils;
 
 /**
  * 最后一个列表项的分割线不画，可自定义分割线的样式
- *
-
- * @since 2019-08-11 18:54
  */
 public class DividerItemDecoration extends RecyclerView.ItemDecoration {
     /**

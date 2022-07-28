@@ -20,9 +20,6 @@ import com.basic.renew.utils.UpdateUtils;
 
 /**
  * 默认版本更新下载器
- *
- 
- * @since 2018/7/5 下午5:06
  */
 public class DefaultUpdateDownloader implements IUpdateDownloader {
 

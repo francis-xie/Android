@@ -37,9 +37,6 @@ import java.util.TreeMap;
 
 /**
  * 版本更新管理者
- *
-
- * @since 2018/7/1 下午9:49
  */
 public class UpdateManager implements IUpdateProxy {
     /**

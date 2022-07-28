@@ -11,10 +11,6 @@ import com.basic.code.R;
 import com.basic.code.adapter.entity.NewInfo;
 import com.basic.code.adapter.entity.StickyItem;
 
-/**
-
- * @since 2020/4/25 1:23 AM
- */
 public class StickyListAdapter extends BaseRecyclerAdapter<StickyItem> {
 
     /**

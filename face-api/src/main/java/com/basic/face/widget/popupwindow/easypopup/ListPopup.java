@@ -14,9 +14,6 @@ import com.basic.face.widget.FACEWrapContentListView;
 
 /**
  * 带条目的弹出框
- *
-
- * @since 2019/1/14 下午10:02
  */
 public class ListPopup extends BaseCustomPopup {
     /**

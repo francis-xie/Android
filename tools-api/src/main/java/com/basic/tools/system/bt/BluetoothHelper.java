@@ -81,8 +81,6 @@ public class BluetoothHelper {
 
     /**
      * 蓝牙广播接收器【接收绑定状态变化、发现新设备、扫描结束的广播】
-     *
-     * @author xx
      */
     private class BlueToothReceiver extends BroadcastReceiver {
         @Override
@@ -445,8 +443,6 @@ public class BluetoothHelper {
      **/
     /**
      * 蓝牙设备监听器
-     *
-     * @author xx
      */
     public interface OnBluetoothDeviceListener extends OnSearchDeviceListener {
         /**
@@ -467,8 +463,6 @@ public class BluetoothHelper {
 
     /**
      * 设备扫描的监听
-     *
-     * @author xx
      */
     public interface OnSearchDeviceListener {
 

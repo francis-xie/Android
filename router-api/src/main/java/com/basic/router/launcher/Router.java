@@ -18,9 +18,6 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * Router对外统一的API
- *
-
- * @since 2018/5/17 上午1:10
  */
 public final class Router {
     // Key of raw uri

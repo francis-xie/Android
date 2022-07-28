@@ -15,10 +15,6 @@ import com.basic.code.widget.iconfont.IconFontActivity;
 
 import java.util.List;
 
-/**
-
- * @since 2019-10-13 16:59
- */
 @Page(name = "字体图标库", extra = R.drawable.ic_expand_iconfont)
 public class IconFontFragment extends BaseSimpleListFragment {
 

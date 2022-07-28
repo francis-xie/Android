@@ -3,9 +3,6 @@ package com.basic.router.util
 
 /**
  * 扫描注册配置
- *
-
- * @since 2018/5/17 上午12:39
  */
 class ScanSetting {
     static final String PLUGIN_NAME = "com.basic.router"

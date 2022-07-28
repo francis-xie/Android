@@ -12,12 +12,6 @@ import android.util.Log;
 
 import java.lang.reflect.Method;
 
-/**
- * Description:
- *
- * @author Shawn_Dut
- * @since 2018-02-01
- */
 public class OppoUtils {
 
     private static final String TAG = "OppoUtils";

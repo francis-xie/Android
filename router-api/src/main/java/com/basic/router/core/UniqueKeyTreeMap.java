@@ -5,9 +5,6 @@ import java.util.TreeMap;
 
 /**
  * 存放唯一KEY的TreeMap
- *
-
- * @since 2018/5/16 下午11:41
  */
 public class UniqueKeyTreeMap<K, V> extends TreeMap<K, V> {
     private String tipText;

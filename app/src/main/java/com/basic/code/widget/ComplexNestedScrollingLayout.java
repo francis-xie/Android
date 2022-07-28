@@ -15,9 +15,6 @@ import com.basic.code.R;
 
 /**
  * 复杂嵌套滚动的演示案例
- *
-
- * @since 2020/4/13 12:10 AM
  */
 public class ComplexNestedScrollingLayout extends LinearLayout implements NestedScrollingParent2 {
 

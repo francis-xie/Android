@@ -7,10 +7,6 @@ import com.basic.code.fragment.components.imageview.edit.ImageCropFragment;
 import com.basic.code.fragment.components.imageview.edit.ImageEnhanceFragment;
 import com.basic.code.fragment.components.imageview.edit.PhotoEditFragment;
 
-/**
-
- * @since 2019-10-21 15:53
- */
 @Page(name = "图片编辑")
 public class ImageEditFragment extends ComponentContainerFragment {
 

@@ -13,12 +13,6 @@ import com.basic.dbms.logs.DBLog;
 import java.sql.SQLException;
 import java.util.List;
 
-/**
- *
- *
-
- * @since 2019-07-09 17:02
- */
 public class InternalDataBase implements IDatabase {
     /**
      * 数据库创建

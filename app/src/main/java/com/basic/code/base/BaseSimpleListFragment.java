@@ -27,10 +27,6 @@ import com.basic.code.R;
 
 import java.io.Serializable;
 
-/**
- 
- * @since 2018/12/29 下午12:41
- */
 public abstract class BaseSimpleListFragment extends PageSimpleListFragment {
 
     @Override

@@ -8,9 +8,6 @@ import android.view.View;
 
 /**
  * 可设置阴影的按钮
- *
- * @author XUE
- * @since 2019/3/30 16:15
  */
 public class ShadowButton extends AppCompatButton {
 

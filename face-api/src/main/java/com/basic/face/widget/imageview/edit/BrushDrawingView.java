@@ -24,9 +24,6 @@ import java.util.Stack;
 
 /**
  * 画板，自定义绘图视图，用于在用户触摸事件上进行绘图
- *
-
- * @since 2019-10-28 9:52
  */
 public class BrushDrawingView extends View {
 

@@ -3,10 +3,6 @@ package com.basic.code.fragment.components.refresh.sample.selection;
 
 import com.basic.tools.common.StringUtils;
 
-/**
-
- * @since 2020/9/2 9:34 PM
- */
 public class SelectionItem {
 
     public String subjectTitle;

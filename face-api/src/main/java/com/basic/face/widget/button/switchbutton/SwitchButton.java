@@ -35,9 +35,6 @@ import com.basic.face.utils.ResUtils;
 
 /**
  * switch切换按钮
- *
-
- * @since 2019/1/14 上午11:23
  */
 public class SwitchButton extends CompoundButton {
     public static final float DEFAULT_THUMB_RANGE_RATIO = 1.8f;

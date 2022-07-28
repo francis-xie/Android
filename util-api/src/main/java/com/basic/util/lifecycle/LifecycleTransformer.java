@@ -28,9 +28,6 @@ import static com.basic.util.lifecycle.ActivityLifecycle.onStop;
 
 /**
  * 生命周期转化器
- *
- 
- * @since 2018/6/11 上午12:50
  */
 public class LifecycleTransformer<T> implements ObservableTransformer<T, T>, FlowableTransformer<T, T>, SingleTransformer<T, T>, MaybeTransformer<T, T>, CompletableTransformer {
     private Observable<?> mObservable;

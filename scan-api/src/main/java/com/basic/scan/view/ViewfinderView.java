@@ -22,9 +22,6 @@ import java.util.HashSet;
 
 /**
  * 自定义组件实现,扫描功能
- *
- 
- * @since 2019/5/17 17:54
  */
 public final class ViewfinderView extends View {
 

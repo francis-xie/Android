@@ -27,9 +27,6 @@ import java.util.List;
 
 /**
  * 城市列表适配器
- *
-
- * @since 2018/12/30 下午6:47
  */
 public class CityListAdapter extends RecyclerView.Adapter<CityListAdapter.BaseViewHolder> {
     private static final int VIEW_TYPE_LOCATION = 10;

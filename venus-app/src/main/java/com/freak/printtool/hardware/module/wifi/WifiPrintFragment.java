@@ -39,10 +39,6 @@ import java.util.concurrent.Executors;
 import static com.freak.printtool.hardware.module.wifi.addprinter.AddPrinterActivity.ADD_PRINTER_REQUEST_CODE;
 import static com.freak.printtool.hardware.module.wifi.addprinter.AddPrinterActivity.ADD_PRINTER_RESULT_CODE;
 
-/**
- * @author Freak
- * @date 2019/8/13.
- */
 public class WifiPrintFragment extends Fragment implements View.OnClickListener {
     private RelativeLayout wifi_print_connect, wifi_hand_add_printer, wifi_test, wifi_no_sdk_print_test, wifi_off_print;
     private RecyclerView wifi_printer_recycle;

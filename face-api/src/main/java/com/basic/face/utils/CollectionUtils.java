@@ -8,9 +8,6 @@ import java.util.List;
 
 /**
  * 集合工具类
- *
-
- * @since 2020/8/25 11:58 PM
  */
 public final class CollectionUtils {
 

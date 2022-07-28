@@ -23,9 +23,6 @@ import java.util.Map;
 
 /**
  * SHA256WithRSA签名器
- *
- * @author zhongyu
- * @version $Id: Signer.java, v 0.1 2019年12月19日 9:10 PM zhongyu Exp $
  */
 public class Signer {
     private static final Logger LOGGER = LoggerFactory.getLogger(Signer.class);

@@ -1,10 +1,6 @@
 
 package com.basic.code.adapter.entity;
 
-/**
-
- * @since 2020/4/25 1:25 AM
- */
 public class StickyItem {
 
     /**

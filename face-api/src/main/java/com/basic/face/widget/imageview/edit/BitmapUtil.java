@@ -12,9 +12,6 @@ import javax.microedition.khronos.opengles.GL10;
 
 /**
  * 图片工具类
- *
-
- * @since 2019-10-28 9:52
  */
 class BitmapUtil {
     /**

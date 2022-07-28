@@ -11,9 +11,6 @@ import java.util.List;
 
 /**
  * 动作
- *
-
- * @since 2019/1/4 上午11:20
  */
 public class Action implements Parcelable {
 

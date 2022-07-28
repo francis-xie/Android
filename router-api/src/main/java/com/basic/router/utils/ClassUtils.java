@@ -28,9 +28,6 @@ import dalvik.system.DexFile;
 
 /**
  * 扫描class文件的工具类
- *
-
- * @since 2018/5/18 上午12:29
  */
 public final class ClassUtils {
     private static final String EXTRACTED_NAME_EXT = ".classes";

@@ -26,10 +26,6 @@ import org.apache.log4j.spi.LoggingEvent;
  * and a new file already opened for logging. This event is capable of both
  * self-dispatch to the underlying source appender, and the dispatch of other
  * custom logging event objects.
- * 
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @version 2.8
  */
 public final class FileRollEvent extends LoggingEvent {
 

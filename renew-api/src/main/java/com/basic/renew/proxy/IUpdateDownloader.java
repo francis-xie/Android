@@ -9,9 +9,6 @@ import com.basic.renew.service.OnFileDownloadListener;
 
 /**
  * 版本更新下载器
- *
-
- * @since 2018/6/29 下午8:31
  */
 public interface IUpdateDownloader {
 

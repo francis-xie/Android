@@ -15,9 +15,6 @@ import java.text.DecimalFormat;
 
 /**
  * 标识雷达图上各点的数字控件
- *
-
- * @since 2019/4/10 上午12:18
  */
 @SuppressLint("ViewConstructor")
 public class RadarMarkerView extends MarkerView {

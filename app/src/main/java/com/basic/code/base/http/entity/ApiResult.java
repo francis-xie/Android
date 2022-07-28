@@ -7,9 +7,6 @@ import com.google.gson.annotations.SerializedName;
 
 /**
  * 提供的默认的标注返回api
- *
-
- * @since 2018/5/22 下午4:22
  */
 @Keep
 public class ApiResult<T> {

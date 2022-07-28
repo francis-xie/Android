@@ -1,10 +1,6 @@
 
 package com.basic.code.fragment.components.tabbar.tabsegment;
 
-/**
-
- * @since 2018/12/26 下午11:49
- */
 public enum MultiPage {
 
     新闻(0),

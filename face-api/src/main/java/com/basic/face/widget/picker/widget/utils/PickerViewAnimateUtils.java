@@ -7,9 +7,6 @@ import com.basic.face.R;
 
 /**
  * 选择器动画
- *
-
- * @since 2019/1/1 下午7:00
  */
 public class PickerViewAnimateUtils {
 

@@ -21,9 +21,6 @@ import com.basic.face.utils.ThemeUtils;
 
 /**
  * 自定义加载布局
- *
-
- * @since 2019/1/11 下午3:58
  */
 public class LoadingViewLayout extends LinearLayout implements IMessageLoader {
 

@@ -9,9 +9,6 @@ import com.basic.code.R;
 
 /**
  * 连接状态
- *
-
- * @since 2018/12/27 下午5:58
  */
 public class ConnectionStatusView extends StatusView {
 

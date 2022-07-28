@@ -29,10 +29,6 @@ import java.util.EventListener;
  * <p>
  * {@link FileCompressionEvent}s are processed on the {@link LogFileCompressorTask}
  * thread.
- * 
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @version 1.0
  */
 public interface FileCompressionEventListener extends EventListener {
 

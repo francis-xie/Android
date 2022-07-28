@@ -9,13 +9,6 @@ import androidx.annotation.Nullable;
 
 import java.util.UUID;
 
-
-/**
- *
- *
- 
- * @since 2019/3/26 下午10:50
- */
 public class AnimationRatingBar extends RatingBar {
 
     protected Handler mHandler;

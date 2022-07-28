@@ -13,9 +13,6 @@ import com.basic.face.R;
 import com.basic.face.utils.ThemeUtils;
 import com.basic.face.widget.dialog.materialdialog.GravityEnum;
 
-/**
- * @author Kevin Barry (teslacoil) 4/02/2015
- */
 @SuppressLint("AppCompatCustomView")
 public class MDButton extends TextView {
 

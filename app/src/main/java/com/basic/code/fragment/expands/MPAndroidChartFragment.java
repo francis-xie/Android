@@ -13,10 +13,6 @@ import com.basic.code.fragment.expands.chart.RadarChartFragment;
 import com.basic.code.fragment.expands.chart.echarts.EChartsFragment;
 import com.basic.code.utils.Utils;
 
-/**
-
- * @since 2019/4/9 下午11:50
- */
 @Page(name = "图表", extra = R.drawable.ic_expand_chart)
 public class MPAndroidChartFragment extends ComponentContainerFragment {
     /**

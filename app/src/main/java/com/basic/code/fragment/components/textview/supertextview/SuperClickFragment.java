@@ -13,12 +13,6 @@ import com.basic.code.utils.XToastUtils;
 
 import butterknife.BindView;
 
-/**
- *
- *
-
- * @since 2020/5/13 8:32 PM
- */
 @Page(name = "SuperTextView点击事件")
 public class SuperClickFragment extends BaseFragment {
     @BindView(R.id.super_tv)

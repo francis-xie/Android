@@ -6,9 +6,6 @@ import com.basic.router.facade.callback.InterceptorCallback;
 
 /**
  * 路由拦截器，在路由导航时可注入一些自定义逻辑
- *
-
- * @since 2018/5/17 上午12:13
  */
 public interface IInterceptor extends IProvider {
 

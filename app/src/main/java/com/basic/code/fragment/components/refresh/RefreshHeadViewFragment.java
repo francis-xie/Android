@@ -15,10 +15,6 @@ import java.util.Collection;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019/3/31 下午11:36
- */
 @Page(name = "增加HeadView和FootView\n嵌套轮播组件")
 public class RefreshHeadViewFragment extends BaseFragment {
 

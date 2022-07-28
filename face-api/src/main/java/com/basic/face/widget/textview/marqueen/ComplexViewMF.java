@@ -9,9 +9,6 @@ import com.basic.face.R;
 
 /**
  * 复合字幕
- *
-
- * @since 2019/1/14 下午10:13
  */
 public class ComplexViewMF extends MarqueeFactory<RelativeLayout, ComplexItemEntity> {
     private LayoutInflater inflater;

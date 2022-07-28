@@ -13,9 +13,6 @@ import com.basic.face.widget.alpha.FACEAlphaLinearLayout;
 
 /**
  * BottomSheet 的ItemView
- *
-
- * @since 2018/11/30 下午1:58
  */
 public class BottomSheetItemView extends FACEAlphaLinearLayout {
 

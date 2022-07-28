@@ -20,9 +20,6 @@ import org.json.JSONObject;
  * 2.bindView
  * 2.unbindView(可选)
  * 2.isValid(可选)
- *
-
- * @since 2020/4/9 12:53 AM
  */
 public class CustomCell extends BaseCell<CustomCellView> {
     private String imageUrl;

@@ -19,10 +19,6 @@ import java.util.Date;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019-05-29 19:53
- */
 @Page(name = "叮叮日历")
 public class DingDingCalendarFragment extends BaseFragment {
     @BindView(R.id.tv_title)

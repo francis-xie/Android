@@ -8,9 +8,6 @@ import androidx.annotation.NonNull;
 
 /**
  * 图片保存设置
- *
-
- * @since 2019-10-28 10:26
  */
 public class SaveSettings {
     private boolean isTransparencyEnabled;

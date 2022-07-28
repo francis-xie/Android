@@ -6,9 +6,6 @@ import android.graphics.Path;
 
 /**
  * 画笔路线
- *
-
- * @since 2019-10-28 10:03
  */
 class LinePath {
     private final Paint mDrawPaint;

@@ -11,9 +11,6 @@ import com.basic.code.utils.Utils;
 
 /**
  * 组件搜索页面
- *
-
- * @since 2020/4/1 1:26 AM
  */
 public class SearchComponentActivity extends BaseActivity {
 

@@ -17,9 +17,6 @@ import butterknife.BindView;
 
 /**
  * 服务协议【本地加载】
- *
- 
- * @since 2021/5/18 1:35 AM
  */
 @Page
 public class ServiceProtocolFragment extends BaseFragment {

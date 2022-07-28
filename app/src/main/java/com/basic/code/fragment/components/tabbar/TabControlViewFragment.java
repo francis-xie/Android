@@ -11,12 +11,6 @@ import com.basic.code.utils.XToastUtils;
 
 import butterknife.BindView;
 
-/**
- *
- *
-
- * @since 2019/1/3 上午12:41
- */
 @Page(name = "TabControlView\n选项卡控制滑块")
 public class TabControlViewFragment extends BaseFragment {
     @BindView(R.id.tcv_select)

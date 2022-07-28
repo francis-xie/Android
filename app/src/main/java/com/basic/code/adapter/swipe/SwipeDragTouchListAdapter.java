@@ -15,9 +15,6 @@ import java.util.List;
 
 /**
  * 拖拽适配器
- *
-
- * @since 2019/4/6 下午12:18
  */
 public class SwipeDragTouchListAdapter extends BaseRecyclerAdapter<String> {
 

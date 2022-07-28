@@ -27,7 +27,7 @@ import com.basic.face.widget.dialog.materialdialog.GravityEnum;
 import com.basic.face.widget.dialog.materialdialog.StackingBehavior;
 
 /**
- * @author Kevin Barry (teslacoil) 4/02/2015 This is the top level view for all MaterialDialogs It
+ * This is the top level view for all MaterialDialogs It
  *         handles the layout of: titleFrame (md_layout_stub_titleframe) content (text, custom view, listview,
  *         etc) buttonDefault... (either stacked or horizontal)
  */

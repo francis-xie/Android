@@ -20,10 +20,6 @@ import com.basic.code.utils.XToastUtils;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2020/11/8 10:34 PM
- */
 @Page(name = "腾讯X5浏览器")
 public class TBSX5Fragment extends BaseFragment {
 

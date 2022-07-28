@@ -7,9 +7,6 @@ import java.util.Map;
 
 /**
  * 版本更新检查器
- *
- 
- * @since 2018/6/29 下午8:29
  */
 public interface IUpdateChecker {
 

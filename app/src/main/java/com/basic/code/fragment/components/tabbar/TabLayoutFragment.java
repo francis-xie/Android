@@ -7,10 +7,6 @@ import com.basic.code.fragment.components.tabbar.tablayout.TabLayoutCacheFragmen
 import com.basic.code.fragment.components.tabbar.tablayout.TabLayoutSimpleFragment;
 import com.basic.code.fragment.components.tabbar.tablayout.TabLayoutViewPager2Fragment;
 
-/**
-
- * @since 2018/12/27 上午11:45
- */
 @Page(name = "TabLayout\nMaterial Design 组件")
 public class TabLayoutFragment extends ComponentContainerFragment {
 

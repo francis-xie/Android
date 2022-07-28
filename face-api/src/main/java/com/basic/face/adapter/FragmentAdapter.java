@@ -13,9 +13,6 @@ import java.util.List;
 
 /**
  * Fragment的适配器,详情参考{@link FragmentPagerAdapter}
- *
-
- * @since 2018/12/26 下午2:11
  */
 public class FragmentAdapter<T extends Fragment> extends FragmentPagerAdapter {
 

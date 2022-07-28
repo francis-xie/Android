@@ -29,10 +29,6 @@ import uk.org.simonsite.log4j.helpers.FileHelper;
 /**
  * Responsible for compressing log files using a given compression algorithm,
  * adding checksums if specified.
- * 
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @version 1.1
  */
 final class LogFileCompressorTask implements Runnable, FileRollEventListener {
 

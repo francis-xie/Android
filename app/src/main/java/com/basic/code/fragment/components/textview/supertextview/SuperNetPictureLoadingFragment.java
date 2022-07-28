@@ -16,12 +16,6 @@ import com.basic.code.base.BaseFragment;
 
 import butterknife.BindView;
 
-/**
- *
- *
-
- * @since 2018/11/29 上午12:09
- */
 @Page(name = "带网络图片的SuperTextView")
 public class SuperNetPictureLoadingFragment extends BaseFragment {
     @BindView(R.id.super_tv1)

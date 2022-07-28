@@ -17,9 +17,6 @@ import com.basic.face.widget.FACEWrapContentExpandableListView;
 
 /**
  * 继承自 {@link FACEPopup}，在 {@link FACEPopup} 的基础上，支持显示一个可伸缩的列表。
- *
-
- * @since 2019-11-09 18:05
  */
 public class FACEExpandableListPopup<T extends FACEExpandableListPopup> extends FACEPopup {
 

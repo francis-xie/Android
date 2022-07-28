@@ -6,9 +6,6 @@ import com.basic.renew.listener.IUpdateParseCallback;
 
 /**
  * 版本更新解析器[异步解析和同步解析方法只需要实现一个就行了，当isAsyncParser为true时需要实现异步解析方法，否则实现同步解析方法]
- *
-
- * @since 2018/6/29 下午8:30
  */
 public interface IUpdateParser {
 

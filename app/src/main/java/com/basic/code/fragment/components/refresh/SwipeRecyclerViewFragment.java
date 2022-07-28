@@ -11,10 +11,6 @@ import com.basic.code.fragment.components.refresh.swipe.SwipeMenuItemFragment;
 import com.basic.code.fragment.components.refresh.swipe.SwipeRefreshFragment;
 import com.basic.code.utils.Utils;
 
-/**
- * @author XUE
- * @since 2019/4/1 11:00
- */
 @Page(name = "SwipeRecyclerView\n基于RecyclerView封装, 支持Item侧滑菜单、Item滑动删除、Item长按拖拽、添加HeaderView/FooterView、加载更多、Item点击监听等功能")
 public class SwipeRecyclerViewFragment extends ComponentContainerFragment {
     /**

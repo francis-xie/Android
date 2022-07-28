@@ -13,9 +13,6 @@ import com.basic.renew.proxy.IUpdateHttpService;
 
 /**
  * 版本更新信息实体
- *
-
- * @since 2018/6/29 下午9:33
  */
 public class UpdateEntity implements Parcelable {
     //===========是否可以升级=============//

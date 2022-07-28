@@ -13,9 +13,6 @@ import butterknife.OnClick;
 
 /**
  * 引导页队列显示
- *
-
- * @since 2018/11/30 上午12:30
  */
 @Page(name = "GuideCaseQueue\n引导队列")
 public class GuideCaseViewQueueFragment extends BaseFragment {

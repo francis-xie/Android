@@ -23,10 +23,6 @@ import com.basic.code.fragment.expands.materialdesign.bottom.DemoBottomSheetDial
 import java.util.Collections;
 import java.util.List;
 
-/**
-
- * @since 2019-05-11 21:49
- */
 @Page(name = "BottomSheetDialog")
 public class BottomSheetDialogFragment extends BaseSimpleListFragment {
     /**

@@ -31,8 +31,6 @@ import java.util.Locale;
  * 2、void postBindView(BaseCell cell);
  * 3、void postUnBindView(BaseCell cell);
  *
-
- * @since 2020/4/7 1:16 AM
  */
 public class CustomAnnotationView extends LinearLayout {
     private ImageView mImageView;

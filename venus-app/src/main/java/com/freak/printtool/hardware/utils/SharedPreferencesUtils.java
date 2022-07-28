@@ -3,12 +3,6 @@ package com.freak.printtool.hardware.utils;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-/**
- *
- * @author Administrator
- * @date 2018/4/11
- */
-
 public class SharedPreferencesUtils {
 
     public static final String USER_NAME = "USER_NAME";

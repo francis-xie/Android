@@ -23,9 +23,6 @@ import java.lang.reflect.Method;
 
 /**
  * 悬浮窗权限申请
- *
-
- * @since 2018/10/17 上午10:46
  */
 public class FloatWindowPermission {
     private static final String TAG = "FloatWindowPermission";

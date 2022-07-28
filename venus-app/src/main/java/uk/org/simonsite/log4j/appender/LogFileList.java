@@ -26,10 +26,6 @@ import uk.org.simonsite.log4j.helpers.FileHelper;
  * Responsible for listing, sorting, and filtering log file lists.
  * <p>
  * This class is not thread-safe.
- * 
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @version 3.6
  */
 final class LogFileList extends AbstractList implements List {
 

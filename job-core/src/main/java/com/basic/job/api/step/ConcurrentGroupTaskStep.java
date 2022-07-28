@@ -13,9 +13,6 @@ import com.basic.job.utils.TaskUtils;
 
 /**
  * 并行任务组(不进行具体的任务）
- *
-
- * @since 2021/11/8 2:04 AM
  */
 public class ConcurrentGroupTaskStep extends AbstractGroupTaskStep {
 

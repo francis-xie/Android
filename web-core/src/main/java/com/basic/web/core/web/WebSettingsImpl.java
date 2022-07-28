@@ -10,11 +10,6 @@ import com.basic.web.core.Web;
 import com.basic.web.core.client.WebListenerManager;
 import com.basic.web.utils.LogUtils;
 
-
-/**
- * @since 1.0.0
- 
- */
 public class WebSettingsImpl extends AbsWebSettings {
     private Web mWeb;
 

@@ -8,17 +8,17 @@
         <item name="colorAccent">@color/cp_colorAccent</item>
     </style>
 
-    <style name="CityPickerStyle" parent="AlertDialog.AppCompat">
+    <style name="CitySelectorStyle" parent="AlertDialog.AppCompat">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:backgroundDimEnabled">false</item>
     </style>
 
-    <style name="CityPickerAnimation" parent="@android:style/Animation">
+    <style name="CitySelectorAnimation" parent="@android:style/Animation">
         <item name="android:windowEnterAnimation">@anim/cp_push_bottom_in</item>
         <item name="android:windowExitAnimation">@anim/cp_push_bottom_out</item>
     </style>
 
-    <style name="CityPickerTheme" parent="AppTheme">
+    <style name="CitySelectorTheme" parent="AppTheme">
         <item name="cpCancelTextSize">@dimen/cp_cancel_text_size</item>
         <item name="cpCancelTextColor">@color/cp_color_gray</item>
 

@@ -3,9 +3,6 @@ package com.basic.face.widget.imageview.edit;
 
 /**
  * 滤镜
- *
-
- * @since 2019-10-28 10:26
  */
 public enum PhotoFilter {
     NONE,

@@ -16,9 +16,6 @@ import static com.basic.aop.consts.PermissionConsts.LOCATION;
 
 /**
  * 定位服务
- *
-
- * @since 2019/3/31 下午5:52
  */
 public class LocationService {
 

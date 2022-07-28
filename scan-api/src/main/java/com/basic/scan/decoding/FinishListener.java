@@ -6,9 +6,6 @@ import android.content.DialogInterface;
 
 /**
  * 简单的界面结束的监听
- *
-
- * @since 2019/1/17 上午12:04
  */
 public final class FinishListener
         implements DialogInterface.OnClickListener, DialogInterface.OnCancelListener, Runnable {

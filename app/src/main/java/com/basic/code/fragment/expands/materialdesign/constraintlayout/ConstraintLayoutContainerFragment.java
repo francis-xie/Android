@@ -18,10 +18,6 @@ import com.basic.code.base.BaseFragment;
 import static com.basic.code.fragment.expands.materialdesign.constraintlayout.ConstraintLayoutContainerFragment.KEY_LAYOUT_ID;
 import static com.basic.code.fragment.expands.materialdesign.constraintlayout.ConstraintLayoutContainerFragment.KEY_TITLE;
 
-/**
- 
- * @since 2020-01-08 10:19
- */
 @Page(params = {KEY_TITLE, KEY_LAYOUT_ID})
 public class ConstraintLayoutContainerFragment extends BaseFragment {
     public static final String KEY_TITLE = "key_title";

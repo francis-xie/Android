@@ -19,9 +19,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * 自识别的Holder
- *
-
- * @since 2018/8/2 上午11:43
  */
 public class SmartViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener {
 

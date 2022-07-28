@@ -9,9 +9,6 @@ import com.basic.job.core.param.ITaskResult;
 
 /**
  * 自动销毁任务链的任务链执行回调
- *
-
- * @since 2/10/22 10:26 PM
  */
 public class AutoDestroyTaskChainCallback implements ITaskChainCallback {
 

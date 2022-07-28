@@ -11,9 +11,6 @@ import com.basic.face.widget.textview.badge.Badge;
 
 /**
  * 抽象的tab选项卡
- *
-
- * @since 2018/12/28 下午1:32
  */
 public abstract class TabView extends FrameLayout implements Checkable, ITabView {
 

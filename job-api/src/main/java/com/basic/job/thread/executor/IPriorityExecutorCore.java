@@ -5,9 +5,6 @@ import com.basic.job.thread.pool.cancel.ICancelable;
 
 /**
  * 拥有优先级控制的执行者内核实现接口
- *
-
- * @since 2021/11/10 1:04 AM
  */
 public interface IPriorityExecutorCore extends IExecutorCore {
 

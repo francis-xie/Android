@@ -15,9 +15,6 @@ import java.lang.reflect.Field;
 
 /**
  * RxLifecycle，自动绑定到Activity的生命周期中，自动进行订阅的注销
- *
-
- * @since 2018/6/11 上午1:07
  */
 public final class RxLifecycle {
 

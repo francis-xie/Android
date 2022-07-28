@@ -7,9 +7,6 @@ import com.basic.router.facade.template.IProvider;
 
 /**
  * 拦截服务
- *
-
- * @since 2018/5/17 上午1:00
  */
 public interface InterceptorService extends IProvider {
 

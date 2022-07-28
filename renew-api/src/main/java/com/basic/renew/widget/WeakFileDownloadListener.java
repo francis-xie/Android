@@ -10,9 +10,6 @@ import java.lang.ref.WeakReference;
 
 /**
  * 弱引用文件下载监听, 解决内存泄漏问题
- *
-
- * @since 2020/11/15 10:58 PM
  */
 public class WeakFileDownloadListener implements OnFileDownloadListener {
 

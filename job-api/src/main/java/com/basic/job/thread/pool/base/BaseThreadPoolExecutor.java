@@ -30,9 +30,6 @@ import java.util.concurrent.TimeUnit;
  * 1.ArrayBlockingQueue、LinkedBlockingQueue是有界阻塞队列。如果直接使用LinkedBlockingQueue的默认构造函数（默认大小是Integer.MAX_VALUE）可视为无界阻塞队列。
  * 2.PriorityBlockingQueue是无界阻塞队列。
  * 3.SynchronousQueue是无缓冲队列，一般设置这个的时候maximumPoolSize需要设置为Integer.MAX_VALUE
- *
-
- * @since 2021/12/16 2:05 AM
  */
 public class BaseThreadPoolExecutor extends ThreadPoolExecutor {
 

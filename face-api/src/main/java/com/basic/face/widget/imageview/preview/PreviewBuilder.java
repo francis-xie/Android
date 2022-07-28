@@ -31,9 +31,6 @@ import static com.basic.face.widget.imageview.preview.ui.PreviewActivity.KEY_TYP
 
 /**
  * 构建者
- *
-
- * @since 2018/12/5 上午11:46
  */
 public final class PreviewBuilder {
     private Activity mContext;

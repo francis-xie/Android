@@ -5,9 +5,6 @@ import java.io.File;
 
 /**
  * 下载服务下载监听
- *
-
- * @since 2018/7/10 上午10:05
  */
 public interface OnFileDownloadListener {
 

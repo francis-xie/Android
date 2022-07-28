@@ -9,9 +9,6 @@ import java.io.File;
 
 /**
  * 默认的文件加密计算使用的是MD5加密
- *
-
- * @since 2019-09-06 14:21
  */
 public class DefaultFileEncryptor implements IFileEncryptor {
     /**

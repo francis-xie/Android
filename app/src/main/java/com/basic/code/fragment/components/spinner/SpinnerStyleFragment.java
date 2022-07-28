@@ -29,10 +29,6 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2018/11/26 下午3:17
- */
 @Page(name = "统一的下拉框样式")
 public class SpinnerStyleFragment extends BaseFragment {
     @BindView(R.id.spinner_system_fit_offset)

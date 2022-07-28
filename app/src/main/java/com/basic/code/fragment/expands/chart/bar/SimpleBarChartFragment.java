@@ -16,10 +16,6 @@ import java.util.List;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019/4/11 下午10:59
- */
 @Page(name = "SimpleBarChart\n默认的柱状图样式")
 public class SimpleBarChartFragment extends BaseChartFragment {
 

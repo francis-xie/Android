@@ -11,9 +11,6 @@ import com.basic.tools.common.StringUtils;
 
 /**
  * Token管理工具
- *
-
- * @since 2019-11-17 22:37
  */
 public final class TokenUtils {
 

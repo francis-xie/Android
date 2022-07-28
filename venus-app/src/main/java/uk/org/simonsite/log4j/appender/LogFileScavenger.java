@@ -19,11 +19,6 @@ import java.io.InterruptedIOException;
  * Responsible for periodically sampling the number of log files with a given
  * base filename and time-based extension, and for deleting the older files if
  * the scavenger's conditions are met.
- * 
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @author <a href="mailto:berndq AT gmx DOT net">Bernd</a>
- * @version 2.2
  */
 interface LogFileScavenger {
 

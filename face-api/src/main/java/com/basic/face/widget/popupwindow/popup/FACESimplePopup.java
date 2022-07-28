@@ -11,9 +11,6 @@ import java.util.List;
 
 /**
  * 简单的弹窗
- *
-
- * @since 2019/1/14 下午10:07
  */
 public class FACESimplePopup<T extends FACESimplePopup> extends FACEListPopup {
 

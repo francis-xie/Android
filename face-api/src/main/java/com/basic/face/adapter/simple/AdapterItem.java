@@ -9,9 +9,6 @@ import com.basic.face.utils.ResUtils;
 
 /**
  * 简易的适配项
- *
-
- * @since 2019/1/14 下午10:13
  */
 public class AdapterItem {
 

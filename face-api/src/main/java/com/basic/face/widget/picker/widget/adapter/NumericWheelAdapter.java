@@ -6,9 +6,6 @@ import com.basic.face.widget.picker.wheelview.adapter.WheelAdapter;
 
 /**
  * 数字滚轮适配器
- *
-
- * @since 2019/1/1 下午6:37
  */
 public class NumericWheelAdapter implements WheelAdapter {
 	

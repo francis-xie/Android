@@ -19,9 +19,6 @@ import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 /**
  * 基础容器Activity
- *
- * @author XUE
- * @since 2019/3/22 11:21
  */
 public class BaseActivity extends PageActivity {
 

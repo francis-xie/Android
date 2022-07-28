@@ -304,8 +304,8 @@ public class AppPageConfig {
       + "饼图", "com.basic.code.fragment.expands.chart.PieChartFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
     mPages.add(new PageInfo("RadarChart\n"
       + "雷达图", "com.basic.code.fragment.expands.chart.RadarChartFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
-    mExpands.add(new PageInfo("城市选择", "com.basic.code.fragment.expands.CityPickerFragment", "{\"\":\"\"}", CoreAnim.slide, 2131230902));
-    mPages.add(new PageInfo("城市选择", "com.basic.code.fragment.expands.CityPickerFragment", "{\"\":\"\"}", CoreAnim.slide, 2131230902));
+    mExpands.add(new PageInfo("城市选择", "com.basic.code.fragment.expands.CitySelectorFragment", "{\"\":\"\"}", CoreAnim.slide, 2131230902));
+    mPages.add(new PageInfo("城市选择", "com.basic.code.fragment.expands.CitySelectorFragment", "{\"\":\"\"}", CoreAnim.slide, 2131230902));
     mExpands.add(new PageInfo("悬浮窗", "com.basic.code.fragment.expands.FloatViewFragment", "{\"\":\"\"}", CoreAnim.slide, 2131230899));
     mPages.add(new PageInfo("悬浮窗", "com.basic.code.fragment.expands.FloatViewFragment", "{\"\":\"\"}", CoreAnim.slide, 2131230899));
     mPages.add(new PageInfo("字体图标库的用法展示", "com.basic.code.fragment.expands.iconfont.SimpleIconFontFragment", "{\"\":\"\"}", CoreAnim.slide, -1));

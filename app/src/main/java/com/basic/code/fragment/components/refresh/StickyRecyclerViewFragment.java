@@ -7,10 +7,6 @@ import com.basic.code.fragment.components.refresh.sticky.StickyCustomFragment;
 import com.basic.code.fragment.components.refresh.sticky.StickyItemDecorationFragment;
 import com.basic.code.fragment.components.refresh.sticky.StickyNestedScrollViewFragment;
 
-/**
-
- * @since 2020/5/2 10:52 AM
- */
 @Page(name = "Sticky列表粘顶效果")
 public class StickyRecyclerViewFragment extends ComponentContainerFragment {
 

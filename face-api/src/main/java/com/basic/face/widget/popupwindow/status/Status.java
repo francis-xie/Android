@@ -3,9 +3,6 @@ package com.basic.face.widget.popupwindow.status;
 
 /**
  * 状态枚举
- *
-
- * @since 2018/12/27 下午5:34
  */
 public enum Status {
     /**

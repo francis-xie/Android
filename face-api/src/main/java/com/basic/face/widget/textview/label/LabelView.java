@@ -22,9 +22,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * 标签控件
- *
-
- * @since 2018/12/3 上午12:14
  */
 public class LabelView extends AppCompatTextView {
 

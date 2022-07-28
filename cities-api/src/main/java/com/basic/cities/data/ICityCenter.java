@@ -6,9 +6,6 @@ import java.util.List;
 
 /**
  * 城市中心信息存储
- *
-
- * @since 2018/12/30 下午9:47
  */
 public interface ICityCenter {
 

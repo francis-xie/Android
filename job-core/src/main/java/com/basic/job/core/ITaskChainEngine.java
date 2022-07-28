@@ -11,9 +11,6 @@ import com.basic.job.thread.pool.cancel.ICanceller;
 
 /**
  * 任务链执行引擎实现接口
- *
-
- * @since 2021/10/19 1:43 AM
  */
 public interface ITaskChainEngine extends ITaskStepLifecycle, IGroupTaskStep, ICanceller {
 

@@ -9,10 +9,7 @@ import com.basic.face.FACE;
 import com.basic.face.widget.toast.XToast;
 
 /**
- * xtoast 工具类
- *
-
- * @since 2019-06-30 19:04
+ * toast 工具类
  */
 public final class XToastUtils {
 

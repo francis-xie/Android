@@ -51,9 +51,6 @@ import butterknife.BindView;
 
 /**
  * 项目主页面
- *
-
- * @since 2018/11/13 下午5:20
  */
 public class MainActivity extends BaseActivity implements DrawerAdapter.OnItemSelectedListener, ClickUtils.OnClick2ExitListener {
     private static final int POS_COMPONENTS = 0;

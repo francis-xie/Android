@@ -6,12 +6,6 @@ import android.os.Looper;
 import android.webkit.ValueCallback;
 import android.webkit.WebView;
 
-
-/**
- 
- * @date 2017/6/3
- * @since 1.0.0
- */
 public class JsAccessEntraceImpl extends BaseJsAccessEntrace {
 
     private WebView mWebView;

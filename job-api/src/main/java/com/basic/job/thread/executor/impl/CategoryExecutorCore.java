@@ -27,9 +27,6 @@ import java.util.concurrent.SynchronousQueue;
  * <p>
  * 线程组: 核心线程数和最大线程为2～4之间，30s keepTime，LinkedBlockingQueue（128），线程优先级5
  * io: 核心线程数和最大线程为(2*CPU数+1)，30s keepTime，LinkedBlockingQueue（128），线程优先级5
- *
-
- * @since 1/26/22 2:33 AM
  */
 public class CategoryExecutorCore implements ICategoryExecutorCore {
 

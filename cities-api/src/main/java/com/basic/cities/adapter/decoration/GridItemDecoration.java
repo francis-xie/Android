@@ -6,9 +6,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * Grid 分割线
- *
- 
- * @since 2018/12/30 下午6:29
  */
 public class GridItemDecoration extends RecyclerView.ItemDecoration{
     private int mSpanCount;

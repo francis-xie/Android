@@ -14,10 +14,6 @@ import com.basic.code.base.BaseFragment;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019-11-25 11:36
- */
 @Page(name = "双列表简单使用")
 public class LinkageRecyclerViewSimpleFragment extends BaseFragment {
     @BindView(R.id.linkage)

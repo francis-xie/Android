@@ -17,10 +17,6 @@ import butterknife.BindView;
 
 import static com.google.android.material.tabs.TabLayout.MODE_FIXED;
 
-/**
- * @author XUE
- * @since 2019/5/9 11:43
- */
 @Page(name = "TabLayout + ViewPager + AppBarLayout")
 public class TabLayoutBehaviorFragment extends BaseFragment {
 

@@ -20,9 +20,6 @@ import com.basic.face.utils.Utils;
 
 /**
  * 旋转加载动画控件
- *
-
- * @since 2019/1/11 下午3:58
  */
 public class RotateLoadingView extends View {
 

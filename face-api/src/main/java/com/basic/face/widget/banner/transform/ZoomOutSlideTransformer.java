@@ -7,9 +7,6 @@ import androidx.viewpager.widget.ViewPager;
 
 /**
  * 侧滑缩小切换
- *
-
- * @since 2019/1/14 下午10:13
  */
 public class ZoomOutSlideTransformer implements ViewPager.PageTransformer {
 

@@ -11,11 +11,7 @@ import com.freak.printtool.hardware.utils.ToastUtil;
 
 /**
  * 网络状态改变监听
- *
- * @author Freak
- * @date 2019/8/13.
  */
-
 public class NetworkConnectChangedReceiver extends BroadcastReceiver {
     private boolean isWifiConnected = false;
     private boolean isEthernetConnected = false;

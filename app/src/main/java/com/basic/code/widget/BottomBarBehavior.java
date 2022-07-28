@@ -9,12 +9,6 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import android.util.AttributeSet;
 import android.view.View;
 
-/**
- *
- *
-
- * @since 2019-05-11 18:15
- */
 public class BottomBarBehavior extends CoordinatorLayout.Behavior<View> {
 
     public BottomBarBehavior(Context context, AttributeSet attrs) {

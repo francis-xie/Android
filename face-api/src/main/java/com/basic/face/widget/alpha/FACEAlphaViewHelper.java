@@ -11,9 +11,6 @@ import java.lang.ref.WeakReference;
 
 /**
  * 透明度辅助工具
- *
-
- * @since 2018/11/30 下午1:21
  */
 public class FACEAlphaViewHelper implements IAlphaViewHelper {
 

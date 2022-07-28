@@ -5,9 +5,6 @@ import java.util.Collection;
 
 /**
  * 取消者订阅池
- *
-
- * @since 2/7/22 1:03 PM
  */
 public interface ICancellerPool {
 

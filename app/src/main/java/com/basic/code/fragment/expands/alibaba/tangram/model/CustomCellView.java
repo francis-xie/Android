@@ -18,8 +18,6 @@ import com.basic.tools.display.DensityUtils;
 /**
  * 使用自定义model方式的自定义View
  *
-
- * @since 2020/4/9 12:48 AM
  */
 public class CustomCellView extends LinearLayout {
     private ImageView mImageView;

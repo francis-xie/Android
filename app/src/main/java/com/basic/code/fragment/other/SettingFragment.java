@@ -15,10 +15,6 @@ import com.basic.tools.app.AppUtils;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019-09-17 17:51
- */
 @Page(name = "设置")
 public class SettingFragment extends BaseFragment {
     @BindView(R.id.stv_switch_custom_theme)

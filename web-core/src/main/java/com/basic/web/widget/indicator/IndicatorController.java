@@ -5,9 +5,6 @@ import android.webkit.WebView;
 
 /**
  * 进度条控制器
- *
-
- * @since 2019/1/4 上午10:46
  */
 public interface IndicatorController {
 

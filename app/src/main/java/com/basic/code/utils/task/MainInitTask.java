@@ -17,9 +17,6 @@ import com.basic.code.widget.iconfont.FACEIconFont;
 
 /**
  * 主要初始化任务，放在第一位执行
- *
-
- * @since 2/17/22 12:43 AM
  */
 public class MainInitTask extends SimpleTaskStep {
 

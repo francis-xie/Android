@@ -33,9 +33,6 @@ import butterknife.Unbinder;
 
 /**
  * 全局基类BaseFragment
- *
-
- * @since 2018/5/24 下午3:49
  */
 public abstract class PageFragment extends Fragment {
     /**

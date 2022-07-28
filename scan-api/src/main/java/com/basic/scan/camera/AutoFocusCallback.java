@@ -10,9 +10,6 @@ import com.basic.scan.logs.QCLog;
 
 /**
  * 自动聚焦的回掉
- *
-
- * @since 2019-05-18 17:23
  */
 public final class AutoFocusCallback implements Camera.AutoFocusCallback {
 

@@ -8,9 +8,6 @@ import com.basic.renew.service.OnFileDownloadListener;
 
 /**
  * 版本更新提示器代理
- *
-
- * @since 2020/6/9 12:16 AM
  */
 public interface IPrompterProxy {
 

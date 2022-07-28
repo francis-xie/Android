@@ -3,9 +3,6 @@ package com.basic.job.logger;
 
 /**
  * 日志记录接口
- *
- 
- * @since 2021/10/9 4:33 PM
  */
 public interface ILogger {
 

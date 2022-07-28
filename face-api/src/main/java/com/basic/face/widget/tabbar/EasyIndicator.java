@@ -33,9 +33,6 @@ import io.github.inflationx.calligraphy3.HasTypeface;
 
 /**
  * 简单的索引器
- *
- 
- * @since 2018/12/20 上午12:32
  */
 public class EasyIndicator extends LinearLayout implements View.OnClickListener, ViewPager.OnPageChangeListener, HasTypeface {
     private LinearLayout mIndicatorContainer;
@@ -365,9 +362,6 @@ public class EasyIndicator extends LinearLayout implements View.OnClickListener,
 
     /**
      * 选项卡点击监听
-     *
-     
-     * @since 2021/3/14 3:38 PM
      */
     public interface OnTabClickListener {
         /**

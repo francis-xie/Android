@@ -39,9 +39,6 @@ import java.util.List;
 
 /**
  * 自定义下拉框，使用AppCompatTextView + PopupWindow组合实现
- *
-
- * @since 2018/12/7 下午4:24
  */
 public class MaterialSpinner extends AppCompatTextView {
 

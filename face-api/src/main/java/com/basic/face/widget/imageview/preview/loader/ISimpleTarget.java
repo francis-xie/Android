@@ -7,9 +7,6 @@ import androidx.annotation.Nullable;
 
 /**
  * 图片加载回调状态接口
- *
-
- * @since 2018/12/5 上午11:08
  */
 public interface ISimpleTarget {
    /**

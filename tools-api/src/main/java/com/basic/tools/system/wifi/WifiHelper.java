@@ -117,8 +117,6 @@ public final class WifiHelper {
 
     /**
      * 连接指定WIFI网络的线程
-     *
-     * @author xx
      */
     private class WifiConnectRunnable implements Runnable {
         /**

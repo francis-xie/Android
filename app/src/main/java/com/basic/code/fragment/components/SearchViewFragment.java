@@ -21,10 +21,6 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2019/1/2 下午4:49
- */
 @Page(name = "搜索框", extra = R.drawable.ic_widget_search)
 public class SearchViewFragment extends BaseFragment {
     @BindView(R.id.search_view)

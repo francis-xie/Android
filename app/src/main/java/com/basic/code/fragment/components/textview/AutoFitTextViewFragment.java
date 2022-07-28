@@ -12,10 +12,6 @@ import com.basic.tools.common.RandomUtils;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2019-05-14 23:22
- */
 @Page(name = "AutoFitTextView\n自适应字体大小的文字")
 public class AutoFitTextViewFragment extends BaseFragment {
     @BindView(R.id.tv_in_auto_fit)

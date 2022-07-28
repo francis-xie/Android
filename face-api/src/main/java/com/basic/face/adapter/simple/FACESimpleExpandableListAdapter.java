@@ -21,9 +21,6 @@ import java.util.List;
 
 /**
  * 简易的可伸缩列表适配器
- *
-
- * @since 2019-11-11 14:01
  */
 public class FACESimpleExpandableListAdapter extends BaseExpandableListAdapter {
     /**

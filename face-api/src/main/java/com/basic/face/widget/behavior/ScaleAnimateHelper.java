@@ -6,9 +6,6 @@ import android.view.View;
 
 /**
  * 缩放动画
- *
-
- * @since 2019-05-10 01:07
  */
 public class ScaleAnimateHelper implements AnimateHelper {
 

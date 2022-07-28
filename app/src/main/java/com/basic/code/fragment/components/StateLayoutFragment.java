@@ -10,9 +10,6 @@ import com.basic.code.fragment.components.statelayout.StatusViewFragment;
 
 /**
  * 状态切换
- *
-
- * @since 2018/11/26 上午12:27
  */
 @Page(name = "状态切换", extra = R.drawable.ic_widget_statelayout)
 public class StateLayoutFragment extends ComponentContainerFragment {

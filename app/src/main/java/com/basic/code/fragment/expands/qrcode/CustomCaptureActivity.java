@@ -24,9 +24,6 @@ import static com.basic.code.base.webview.WebViewInterceptDialog.APP_LINK_HOST;
 
 /**
  * 自定义二维码扫描界面
- *
-
- * @since 2019/5/30 10:43
  */
 public class CustomCaptureActivity extends CaptureActivity implements View.OnClickListener {
     /**

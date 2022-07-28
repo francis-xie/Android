@@ -23,10 +23,6 @@ import static android.app.Activity.RESULT_OK;
 import static com.basic.aop.consts.PermissionConsts.STORAGE;
 import static com.basic.code.fragment.expands.ScanFragment.REQUEST_IMAGE;
 
-/**
-
- * @since 2019-10-19 17:29
- */
 @Page(name = "图片裁剪")
 public class ImageCropFragment extends BaseFragment {
 

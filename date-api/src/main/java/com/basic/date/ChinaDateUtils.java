@@ -12,9 +12,6 @@ import static android.media.CamcorderProfile.get;
 
 /**
  * 农历工具
- *
-
- * @since 2019/5/28 15:06
  */
 public final class ChinaDateUtils {
 

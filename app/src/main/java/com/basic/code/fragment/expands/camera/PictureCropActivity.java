@@ -29,8 +29,6 @@ import butterknife.Unbinder;
 /**
  * 图片裁剪页面
  *
-
- * @since 2019-09-29 16:33
  */
 public class PictureCropActivity extends AppCompatActivity {
 

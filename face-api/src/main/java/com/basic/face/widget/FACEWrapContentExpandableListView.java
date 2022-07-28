@@ -8,10 +8,6 @@ import android.widget.ExpandableListView;
 
 import com.basic.face.R;
 
-/**
-
- * @since 2019-11-11 11:27
- */
 public class FACEWrapContentExpandableListView extends ExpandableListView {
 
     private int mMaxHeight = Integer.MAX_VALUE >> 2;

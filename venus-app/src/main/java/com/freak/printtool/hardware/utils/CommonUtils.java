@@ -11,11 +11,6 @@ import java.text.DecimalFormat;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * @author Freak
- * @date 2019/8/13.
- */
-
 public class CommonUtils {
 
 

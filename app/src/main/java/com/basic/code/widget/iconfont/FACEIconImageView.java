@@ -18,9 +18,6 @@ import static androidx.annotation.Dimension.DP;
 
 /**
  * 好好玩字体库图标
- *
-
- * @since 2019-10-10 10:37
  */
 public class FACEIconImageView extends AppCompatImageView {
 

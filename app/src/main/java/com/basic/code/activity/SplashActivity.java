@@ -11,9 +11,6 @@ import com.basic.tools.app.ActivityUtils;
 
 /**
  * 渐近式启动页
- *
-
- * @since 2018/11/27 下午5:24
  */
 public class SplashActivity extends BaseSplashActivity {
 

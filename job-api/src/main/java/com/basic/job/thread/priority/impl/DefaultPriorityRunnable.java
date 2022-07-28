@@ -7,9 +7,6 @@ import com.basic.job.thread.utils.PriorityUtils;
 
 /**
  * 具有优先级排序的Runnable
- *
-
- * @since 2021/10/9 11:32 AM
  */
 public class DefaultPriorityRunnable implements IPriorityRunnable {
     /**

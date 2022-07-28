@@ -16,9 +16,6 @@ import java.util.List;
 
 /**
  * 九宫图
- *
-
- * @since 2018/12/9 下午10:38
  */
 public class NineGridImageView<T> extends ViewGroup {
     public final static int STYLE_GRID = 0;     // 宫格布局

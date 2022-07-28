@@ -12,10 +12,6 @@ import com.basic.code.base.BaseFragment;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
- 
- * @since 2018/12/3 上午12:54
- */
 @Page(name = "LabelView\n标签")
 public class LabelViewFragment extends BaseFragment {
 

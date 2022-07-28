@@ -7,9 +7,6 @@ import java.util.List;
 
 /**
  * 简单的数组滚轮适配器
- *
-
- * @since 2019/1/1 下午6:34
  */
 public class ArrayWheelAdapter<T> implements WheelAdapter {
 

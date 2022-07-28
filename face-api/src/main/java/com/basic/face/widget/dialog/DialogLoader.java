@@ -14,9 +14,6 @@ import com.basic.face.widget.dialog.strategy.impl.MaterialDialogStrategy;
 
 /**
  * 对话框加载者
- *
-
- * @since 2018/11/15 上午12:16
  */
 public class DialogLoader implements IDialogStrategy {
 

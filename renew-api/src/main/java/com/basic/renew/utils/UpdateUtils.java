@@ -39,9 +39,6 @@ import static com.basic.renew.entity.UpdateError.ERROR.CHECK_PARSE;
 
 /**
  * 更新工具类
- *
-
- * @since 2018/7/2 下午3:24
  */
 public final class UpdateUtils {
 

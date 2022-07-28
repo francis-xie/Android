@@ -8,10 +8,6 @@ import com.basic.code.base.ComponentContainerFragment;
 import com.basic.code.fragment.components.refresh.RefreshLayoutsFragment;
 import com.basic.code.fragment.components.refresh.sample.SampleListFragment;
 
-/**
-
- * @since 2018/12/6 下午6:09
- */
 @Page(name = "列表刷新", extra = R.drawable.ic_widget_refresh)
 public class RefreshLayoutFragment extends ComponentContainerFragment {
     /**

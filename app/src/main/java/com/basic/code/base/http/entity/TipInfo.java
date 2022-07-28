@@ -3,10 +3,6 @@ package com.basic.code.base.http.entity;
 
 import androidx.annotation.Keep;
 
-/**
- 
- * @since 2019-08-28 15:35
- */
 @Keep
 public class TipInfo {
     /**

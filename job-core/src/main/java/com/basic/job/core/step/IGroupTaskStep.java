@@ -5,9 +5,6 @@ import java.util.List;
 
 /**
  * 组任务步骤
- *
-
- * @since 1/30/22 6:18 PM
  */
 public interface IGroupTaskStep {
 

@@ -11,8 +11,6 @@ import com.basic.renew.utils.UpdateUtils;
 
 /**
  * Update 版本更新 SDK 初始化
-
- * @since 2019-06-18 15:51
  */
 public final class UpdateInit {
 

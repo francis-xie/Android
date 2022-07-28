@@ -14,9 +14,6 @@ import android.view.ViewGroup;
 
 /**
  * 基础Behavior
- *
-
- * @since 2019-05-10 01:04
  */
 abstract public class BaseBehavior extends CoordinatorLayout.Behavior<View> {
 

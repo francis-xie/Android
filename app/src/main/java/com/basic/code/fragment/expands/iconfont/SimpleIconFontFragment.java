@@ -17,10 +17,6 @@ import com.basic.code.widget.iconfont.FACEIconImageView;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019-10-13 17:07
- */
 @Page(name = "字体图标库的用法展示")
 public class SimpleIconFontFragment extends BaseFragment {
 

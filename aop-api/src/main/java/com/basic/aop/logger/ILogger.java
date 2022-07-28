@@ -3,9 +3,6 @@ package com.basic.aop.logger;
 
 /**
  * 日志记录接口
- *
-
- * @since 2020/10/25 3:34 PM
  */
 public interface ILogger {
 

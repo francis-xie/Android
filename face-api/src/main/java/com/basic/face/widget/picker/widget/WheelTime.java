@@ -20,9 +20,6 @@ import java.util.List;
 
 /**
  * 时间滚轮
- *
-
- * @since 2019/1/1 下午7:14
  */
 public class WheelTime {
 

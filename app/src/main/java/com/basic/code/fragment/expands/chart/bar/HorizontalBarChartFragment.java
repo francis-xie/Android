@@ -17,10 +17,6 @@ import java.util.List;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019/4/11 下午11:15
- */
 @Page(name = "HorizontalBarChart\n水平横向柱状图")
 public class HorizontalBarChartFragment extends BaseChartFragment {
 

@@ -18,10 +18,7 @@ import com.basic.tools.Util;
 import com.basic.tools.common.StringUtils;
 
 /**
- * X系列基础库的初始化
- *
-
- * @since 2019-07-06 9:24
+ * 系列基础库的初始化
  */
 public final class XBasicLibInit {
 
@@ -107,12 +104,12 @@ public final class XBasicLibInit {
     }
 
 //    /**
-//     * 初始化video的存放路径[xvideo项目太大，去除]
+//     * 初始化video的存放路径[video项目太大，去除]
 //     */
 //    public static void initVideo() {
-//        XVideo.setVideoCachePath(PathUtils.getExtDcimPath() + "/xvideo/");
+//        Video.setVideoCachePath(PathUtils.getExtDcimPath() + "/video/");
 //        // 初始化拍摄
-//        XVideo.initialize(false, null);
+//        Video.initialize(false, null);
 //    }
 
 

@@ -30,10 +30,6 @@ import java.util.List;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019/4/10 下午11:03
- */
 @Page(name = "BasicBarChart\n基础的柱状图，详细API")
 public class BasicBarChartFragment extends BaseChartFragment implements OnChartValueSelectedListener {
 

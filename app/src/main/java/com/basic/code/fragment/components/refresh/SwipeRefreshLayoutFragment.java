@@ -14,10 +14,6 @@ import com.basic.code.base.BaseFragment;
 
 import butterknife.BindView;
 
-/**
- * @author XUE
- * @since 2019/4/1 9:59
- */
 @Page(name = "SwipeRefreshLayout\n谷歌官方下拉刷新控件")
 public class SwipeRefreshLayoutFragment extends BaseFragment {
 

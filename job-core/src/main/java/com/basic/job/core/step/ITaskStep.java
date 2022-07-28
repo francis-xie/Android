@@ -10,9 +10,6 @@ import com.basic.job.thread.pool.cancel.ICancelable;
 
 /**
  * 任务步骤
- *
-
- * @since 2021/10/18 9:11 PM
  */
 public interface ITaskStep extends Runnable, ICancelable, ITaskStepController {
 

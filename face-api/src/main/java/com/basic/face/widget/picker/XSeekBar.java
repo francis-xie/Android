@@ -27,9 +27,6 @@ import java.util.Set;
 
 /**
  * 滑块选择器
- *
-
- * @since 2020-01-04 18:30
  */
 public class XSeekBar extends View {
 

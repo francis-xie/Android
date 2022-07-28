@@ -16,10 +16,6 @@ import androidx.recyclerview.widget.LinearSmoothScroller;
 import androidx.recyclerview.widget.OrientationHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
-/**
-
- * @since 2019/5/29 10:51
- */
 public class OverFlyingLayoutManager extends RecyclerView.LayoutManager implements RecyclerView.SmoothScroller.ScrollVectorProvider {
     private float minScale = 0.75f;//两侧图片缩放比
     private float angle = 8f;//翻转角度

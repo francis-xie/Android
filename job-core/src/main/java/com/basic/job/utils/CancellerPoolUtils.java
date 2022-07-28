@@ -9,9 +9,6 @@ import java.util.Collection;
 
 /**
  * 取消者订阅池工具类
- *
- 
- * @since 2/7/22 1:17 PM
  */
 public final class CancellerPoolUtils {
 

@@ -5,9 +5,6 @@ import org.aspectj.lang.ProceedingJoinPoint;
 
 /**
  * 缓存Key的生成器
- *
- 
- * @since 2019/4/7 下午3:54
  */
 public interface ICacheKeyCreator {
     /**

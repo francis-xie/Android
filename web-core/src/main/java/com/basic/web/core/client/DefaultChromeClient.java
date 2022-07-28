@@ -36,11 +36,6 @@ import java.util.List;
 
 import static com.basic.web.action.ActionActivity.KEY_FROM_INTENTION;
 
-
-/**
- 
- * @since 1.0.0
- */
 public class DefaultChromeClient extends MiddlewareWebChromeBase {
 
 	/**

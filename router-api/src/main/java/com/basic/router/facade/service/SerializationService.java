@@ -7,9 +7,6 @@ import java.lang.reflect.Type;
 
 /**
  * 序列化服务
- *
-
- * @since 2018/5/17 上午1:04
  */
 public interface SerializationService extends IProvider {
 

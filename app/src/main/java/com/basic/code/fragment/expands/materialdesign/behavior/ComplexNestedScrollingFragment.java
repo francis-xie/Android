@@ -37,10 +37,6 @@ import butterknife.OnClick;
 
 import static com.google.android.material.tabs.TabLayout.MODE_SCROLLABLE;
 
-/**
-
- * @since 2020/4/12 7:37 PM
- */
 @Page(name = "复杂嵌套滑动")
 public class ComplexNestedScrollingFragment extends BaseFragment implements TabLayout.OnTabSelectedListener {
 

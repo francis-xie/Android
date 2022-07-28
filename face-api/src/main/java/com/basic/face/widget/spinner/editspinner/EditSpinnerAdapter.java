@@ -20,9 +20,6 @@ import java.util.List;
 
 /**
  * 可编辑Spinner的适配器(默认可选项）
- *
-
- * @since 2019/1/14 下午10:10
  */
 public class EditSpinnerAdapter<T> extends BaseEditSpinnerAdapter<T> implements EditSpinnerFilter {
 

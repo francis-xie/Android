@@ -16,10 +16,6 @@ import com.basic.tools.app.ActivityUtils;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019/4/8 下午11:32
- */
 @Page(name = "StatusBarUtils", extra = R.drawable.ic_util_status_bar)
 public class StatusBarUtilsFragment extends BaseFragment {
 

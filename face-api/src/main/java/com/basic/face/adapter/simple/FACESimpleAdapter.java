@@ -13,9 +13,6 @@ import java.util.List;
 
 /**
  * 简单的适配器
- *
-
- * @since 2019/1/14 下午10:07
  */
 public class FACESimpleAdapter extends BaseListAdapter<AdapterItem, ViewHolder> {
 

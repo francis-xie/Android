@@ -6,9 +6,6 @@ import android.view.View;
 
 /**
  * 裁剪窗口四个边角的枚举
- *
-
- * @since 2019-10-15 11:19
  */
 public enum Edge {
 

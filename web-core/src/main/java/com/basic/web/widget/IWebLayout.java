@@ -8,9 +8,6 @@ import androidx.annotation.Nullable;
 
 /**
  * 填充Web的布局容器实现接口
- *
-
- * @since 2019/1/4 上午10:44
  */
 public interface IWebLayout<T extends WebView, V extends ViewGroup> {
 

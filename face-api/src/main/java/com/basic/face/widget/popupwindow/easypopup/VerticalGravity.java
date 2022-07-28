@@ -7,9 +7,6 @@ import java.lang.annotation.RetentionPolicy;
 
 /**
  * 垂直布局方式
- *
-
- * @since 2019/1/14 下午10:05
  */
 @IntDef({
         VerticalGravity.CENTER,

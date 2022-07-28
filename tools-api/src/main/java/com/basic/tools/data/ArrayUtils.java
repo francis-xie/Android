@@ -8,9 +8,6 @@ import java.nio.charset.Charset;
 
 /**
  * ArrayUtil,一些基于byte数组的操作方法集
- *
-
- * @since 2018/6/27 下午5:30
  */
 public final class ArrayUtils {
 

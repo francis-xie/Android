@@ -6,9 +6,6 @@ import android.widget.RelativeLayout;
 
 /**
  * 在 pressed 和 disabled 时改变 View 的透明度
- *
-
- * @since 2018/11/30 下午1:12
  */
 public class FACEAlphaRelativeLayout extends RelativeLayout {
 

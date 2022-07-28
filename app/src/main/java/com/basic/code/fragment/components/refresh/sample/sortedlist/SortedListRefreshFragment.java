@@ -20,10 +20,6 @@ import com.yanzhenjie.recyclerview.SwipeRecyclerView;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2020/6/28 12:11 AM
- */
 @Page(name = "SortedList 自动数据排序刷新")
 public class SortedListRefreshFragment extends BaseFragment {
 

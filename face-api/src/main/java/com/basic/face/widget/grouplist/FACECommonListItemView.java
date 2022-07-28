@@ -42,9 +42,6 @@ import java.lang.annotation.RetentionPolicy;
  * <li>通过 {@link #setAccessoryType(int)} 设置右侧 View 的类型, 可选的类型见 {@link FACECommonListItemAccessoryType},
  * 也可以在 xml 中使用 {@link R.styleable#FACECommonListItemView_face_accessory_type} 设置。</li>
  * </ul>
- *
- 
- * @since 2019/1/3 上午10:52
  */
 public class FACECommonListItemView extends RelativeLayout {
 

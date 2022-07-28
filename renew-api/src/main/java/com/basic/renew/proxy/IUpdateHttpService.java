@@ -8,9 +8,6 @@ import java.util.Map;
 
 /**
  * 版本更新网络请求服务API
- *
-
- * @since 2018/6/29 下午8:44
  */
 public interface IUpdateHttpService {
 

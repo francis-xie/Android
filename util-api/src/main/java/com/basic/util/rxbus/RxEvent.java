@@ -6,9 +6,6 @@ import java.util.Objects;
 
 /**
  * 万能的事件对象
- *
-
- * @since 2018/3/26 下午11:01
  */
 public class RxEvent {
 

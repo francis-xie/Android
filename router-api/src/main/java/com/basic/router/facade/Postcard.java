@@ -29,9 +29,6 @@ import java.util.ArrayList;
 
 /**
  * 路由路标的容器，存放了路由信息、数据内容、切换动画等
- *
-
- * @since 2018/5/17 上午1:07
  */
 public final class Postcard extends RouteInfo {
     /**

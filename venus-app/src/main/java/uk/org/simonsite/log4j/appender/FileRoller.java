@@ -26,10 +26,6 @@ import uk.org.simonsite.log4j.helpers.FileHelper;
 
 /**
  * Has responsibility only for performing the actual file roll.
- * 
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @version 1.1
  */
 final class FileRoller implements FileRollEventSource {
 

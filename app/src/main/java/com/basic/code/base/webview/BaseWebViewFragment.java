@@ -8,9 +8,6 @@ import com.basic.code.base.BaseFragment;
 
 /**
  * 基础web
- *
-
- * @since 2019/5/28 10:22
  */
 public abstract class BaseWebViewFragment extends BaseFragment {
 

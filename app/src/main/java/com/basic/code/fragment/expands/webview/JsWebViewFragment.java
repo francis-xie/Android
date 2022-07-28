@@ -20,10 +20,6 @@ import org.json.JSONObject;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2019-05-26 18:13
- */
 @Page(name = "简单的JS通信")
 public class JsWebViewFragment extends BaseWebViewFragment {
 

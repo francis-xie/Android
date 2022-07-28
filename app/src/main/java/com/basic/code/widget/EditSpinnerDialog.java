@@ -12,9 +12,6 @@ import com.basic.tools.common.StringUtils;
 
 /**
  * 可编辑下拉框弹窗
- *
-
- * @since 2019/1/14 下午10:01
  */
 public class EditSpinnerDialog {
 

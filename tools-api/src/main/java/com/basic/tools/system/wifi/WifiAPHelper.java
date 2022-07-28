@@ -269,8 +269,6 @@ public class WifiAPHelper {
 
     /**
      * 热点状态改变的事件监听
-     *
-     * @author xx
      */
     public interface OnWifiAPStatusChangedListener {
 

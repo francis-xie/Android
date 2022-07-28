@@ -11,9 +11,6 @@ import com.basic.face.widget.alpha.FACEAlphaRelativeLayout;
 
 /**
  * 封装的RelativeLayout，便于样式的修改
- *
-
- * @since 2019-06-02 02:23
  */
 public class FACERelativeLayout extends FACEAlphaRelativeLayout implements IFACELayout {
     private FACELayoutHelper mLayoutHelper;

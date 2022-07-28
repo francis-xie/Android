@@ -35,13 +35,13 @@
         <item name="colorPrimaryDark">#299EE3</item>
     </style>
 
-    <!--CityPicker-->
+    <!--CitySelector-->
     <style name="CustomAnim">
         <item name="android:windowEnterAnimation">@anim/custom_push_down_in</item>
         <item name="android:windowExitAnimation">@anim/custom_push_up_out</item>
     </style>
 
-    <style name="DefaultCityPickerTheme" parent="FACETheme.Phone">
+    <style name="DefaultCitySelectorTheme" parent="FACETheme.Phone">
         <item name="cpCancelTextSize">@dimen/cp_cancel_text_size</item>
         <item name="cpCancelTextColor">@color/cp_color_gray</item>
 
@@ -83,7 +83,7 @@
     </style>
 
 
-    <style name="CustomCityPickerTheme" parent="FACETheme.Phone">
+    <style name="CustomCitySelectorTheme" parent="FACETheme.Phone">
         <item name="cpCancelTextColor">@color/color_green</item>
         <item name="cpSearchCursorDrawable">@color/color_green</item>
         <item name="cpIndexBarNormalTextColor">@color/color_green</item>

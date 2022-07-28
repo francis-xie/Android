@@ -22,9 +22,6 @@ import java.util.Vector;
 
 /**
  * 扫描界面处理者
- *
-
- * @since 2019/1/17 上午12:09
  */
 public final class CaptureViewHandler extends Handler {
 

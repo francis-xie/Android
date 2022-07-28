@@ -16,10 +16,6 @@ import java.util.List;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019/4/14 下午1:03
- */
 @Page(name = "MultiLineChart\n多组数据的折线图")
 public class MultiLineChartFragment extends BaseChartFragment {
 

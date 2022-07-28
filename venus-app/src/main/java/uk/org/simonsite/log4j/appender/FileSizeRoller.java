@@ -22,10 +22,6 @@ import uk.org.simonsite.log4j.helpers.FileHelper;
 /**
  * Responsible for deciding whether a file roll should take place based upon
  * file size limits, and for performing a file roll if necessary.
- * 
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @version 2.3
  */
 final class FileSizeRoller extends AbstractRoller implements FileRollable {
 

@@ -44,9 +44,6 @@ import static com.basic.renew.widget.UpdateDialogFragment.REQUEST_CODE_REQUEST_P
 
 /**
  * 版本更新提示器【AppCompatActivity实现】
- *
-
- * @since 2020/6/8 10:47 PM
  */
 public class UpdateDialogActivity extends AppCompatActivity implements View.OnClickListener, IDownloadEventHandler {
 

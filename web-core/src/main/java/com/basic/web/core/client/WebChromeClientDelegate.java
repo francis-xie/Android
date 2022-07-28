@@ -23,8 +23,6 @@ import java.lang.reflect.Method;
 
 /**
  * @update WebChromeClientWrapper rename to WebChromeClientDelegate
- 
- * @since 1.0.0
  */
 public class WebChromeClientDelegate extends WebChromeClient {
     private WebChromeClient mDelegate;

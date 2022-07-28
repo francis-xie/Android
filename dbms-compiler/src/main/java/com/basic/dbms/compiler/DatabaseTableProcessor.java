@@ -37,9 +37,6 @@ import javax.lang.model.util.Types;
 
 /**
  * 数据库表自动生成器
- *
-
- * @since 2019/3/14 下午10:37
  */
 @AutoService(Processor.class)
 public class DatabaseTableProcessor extends AbstractProcessor {

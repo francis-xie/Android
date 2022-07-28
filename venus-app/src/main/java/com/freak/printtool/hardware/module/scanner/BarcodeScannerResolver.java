@@ -22,9 +22,6 @@ import android.view.KeyEvent;
 
 /**
  * 这是扫码的工具类
- *
- * @author Freak
- * @date 2019/8/13.
  */
 public class BarcodeScannerResolver {
 

@@ -19,9 +19,6 @@ import static com.basic.face.widget.statelayout.StatusLoader.STATUS_LOAD_SUCCESS
 
 /**
  * 默认状态布局
- *
-
- * @since 2020/4/29 1:12 AM
  */
 @SuppressLint("ViewConstructor")
 public class DefaultStatusView extends LinearLayout implements View.OnClickListener {

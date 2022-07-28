@@ -29,9 +29,6 @@ import java.util.List;
 
 /**
  * 下拉选择菜单
- *
-
- * @since 2019-11-28 12:26
  */
 public class DropDownMenu extends LinearLayout {
     /**

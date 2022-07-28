@@ -20,10 +20,6 @@ import com.basic.tools.display.ScreenUtils;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2020/4/7 12:13 AM
- */
 @Page(name = "UltraViewPager\n阿里巴巴轮播控件")
 public class UltraViewPagerFragment extends BaseFragment {
 

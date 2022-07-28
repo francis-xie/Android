@@ -13,9 +13,6 @@ import java.util.regex.Pattern;
 
 /**
  * 编码管理
- *
-
- * @since 2019/1/17 上午12:11
  */
 public class DecodeFormatManager {
 

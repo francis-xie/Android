@@ -15,9 +15,6 @@ import io.reactivex.schedulers.Schedulers;
 
 /**
  * 线程调度工具
- *
-
- * @since 2018/6/10 下午9:28
  */
 public final class RxSchedulerUtils {
 

@@ -49,9 +49,7 @@ import uk.org.simonsite.log4j.helpers.FileHelper;
  * will have deleted all it's log files (which is likely not what should
  * happen!) and only then the disk may fill further so that the scavengers with
  * the lower <tt>MinFreeDiskSpace</tt> will start deleting logs.
- * 
- * @author <a href="mailto:berndq AT gmx DOT net">Bernd</a>
- * @version 2.0
+ *
  */
 public final class AbsoluteMinFreeDiskSpaceLogFileScavenger extends
     AbstractLogFileScavenger {

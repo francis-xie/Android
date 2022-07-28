@@ -16,9 +16,6 @@ import butterknife.OnClick;
 
 /**
  * 自定义状态布局
- *
-
- * @since 2018/11/26 上午12:25
  */
 @Page(name = "MultipleStatusView\n自定义布局")
 public class MultipleStatusViewFragment extends BaseFragment {

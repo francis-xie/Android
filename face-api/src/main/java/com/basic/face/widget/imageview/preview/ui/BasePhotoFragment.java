@@ -28,9 +28,6 @@ import com.basic.face.widget.progress.materialprogressbar.MaterialProgressBar;
 
 /**
  * 图片预览单个图片的fragment
- *
-
- * @since 2018/12/5 上午11:24
  */
 public class BasePhotoFragment extends Fragment {
     private static final String GIF = ".gif";

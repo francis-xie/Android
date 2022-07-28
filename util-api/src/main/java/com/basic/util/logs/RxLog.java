@@ -8,9 +8,6 @@ import androidx.annotation.NonNull;
 
 /**
  * RxLog日志记录
- *
-
- * @since 2018/3/9 上午12:29
  */
 public final class RxLog {
 

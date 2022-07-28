@@ -22,10 +22,6 @@ import java.util.Map;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019/4/14 下午8:07
- */
 @Page(name = "TagBar\n一个可以显示中心按钮的TabBar")
 public class TagBarFragment extends BaseFragment implements OnTabSelectListener {
 
@@ -85,7 +81,7 @@ public class TagBarFragment extends BaseFragment implements OnTabSelectListener 
      */
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_jptabbar;
+        return R.layout.fragment_tagbar;
     }
 
     /**

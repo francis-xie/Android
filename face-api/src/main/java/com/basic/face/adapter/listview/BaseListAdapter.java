@@ -9,10 +9,6 @@ import java.util.Collection;
 
 /**
  * 简单的集合列表适配器
- *
- * @param <T>
- * @param <H>
- * @author XUE
  */
 public abstract class BaseListAdapter<T, H> extends XListAdapter<T> {
 

@@ -5,9 +5,6 @@ import com.basic.renew.proxy.IUpdateParser;
 
 /**
  * 默认是使用同步解析器，因此异步解析方法不需要实现
- *
-
- * @since 2020-02-15 17:56
  */
 public abstract class AbstractUpdateParser implements IUpdateParser {
 

@@ -14,10 +14,6 @@ import com.basic.code.base.BaseFragment;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2019-05-12 18:54
- */
 @Page(name = "漂亮的进度条")
 public class BeautifulProgressBarFragment extends BaseFragment implements HorizontalProgressView.HorizontalProgressUpdateListener, CircleProgressView.CircleProgressUpdateListener {
     @BindView(R.id.progressView_circle_small)

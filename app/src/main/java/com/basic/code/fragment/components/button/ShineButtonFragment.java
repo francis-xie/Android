@@ -14,10 +14,6 @@ import com.basic.code.widget.ShineButtonDialog;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2020-01-06 17:24
- */
 @Page(name = "ShineButton\n增强效果的按钮，自带闪烁的特效")
 public class ShineButtonFragment extends BaseFragment implements ShineButton.OnCheckedChangeListener {
     @BindView(R.id.shine_button_1)

@@ -36,9 +36,6 @@ import java.util.Map;
 
 /**
  * WebView
- *
-
- * @since 2019/1/4 上午11:02
  */
 public class WebViews extends WebView {
     private static final String TAG = WebViews.class.getSimpleName();

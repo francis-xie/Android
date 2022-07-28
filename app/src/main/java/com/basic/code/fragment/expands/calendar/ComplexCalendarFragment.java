@@ -26,10 +26,6 @@ import java.util.Map;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2019-06-28 12:40
- */
 @Page(name = "复杂的日历控件\n支持多种表现形式")
 public class ComplexCalendarFragment extends BaseFragment implements CalendarView.OnCalendarSelectListener,
         CalendarView.OnYearChangeListener {

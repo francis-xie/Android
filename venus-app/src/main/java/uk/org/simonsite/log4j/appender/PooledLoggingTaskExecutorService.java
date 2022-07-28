@@ -19,11 +19,6 @@ import java.util.List;
 import org.apache.log4j.Appender;
 import org.apache.log4j.spi.ErrorHandler;
 
-/**
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @version 1.3
- */
 public final class PooledLoggingTaskExecutorService implements
     LoggingTaskExecutorService {
 

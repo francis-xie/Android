@@ -118,8 +118,6 @@ public final class BLEHelper {
 
     /**
      * 低功耗蓝牙扫描倒计时
-     *
-     * @author XUE
      */
     private class BLESearchCountDownTimer extends CountDownTimer {
 
@@ -355,8 +353,6 @@ public final class BLEHelper {
      **/
     /**
      * 设备扫描的监听
-     *
-     * @author xx
      */
     public interface OnSearchDeviceListener {
 

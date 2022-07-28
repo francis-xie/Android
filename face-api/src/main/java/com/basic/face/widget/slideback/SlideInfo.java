@@ -5,9 +5,6 @@ import androidx.annotation.NonNull;
 
 /**
  * 侧滑信息
- *
- 
- * @since 2019-08-30 11:13
  */
 public class SlideInfo {
 

@@ -11,9 +11,6 @@ import java.io.File;
 
 /**
  * 安装监听
- *
-
- * @since 2018/6/29 下午4:14
  */
 public interface OnInstallListener {
 

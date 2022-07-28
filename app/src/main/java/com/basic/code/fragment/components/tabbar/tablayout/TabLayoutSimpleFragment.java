@@ -16,10 +16,6 @@ import butterknife.BindView;
 
 import static com.google.android.material.tabs.TabLayout.MODE_SCROLLABLE;
 
-/**
-
- * @since 2020/4/21 12:19 AM
- */
 @Page(name = "TabLayout简单使用")
 public class TabLayoutSimpleFragment extends BaseFragment implements TabLayout.OnTabSelectedListener {
     @BindView(R.id.tab1)

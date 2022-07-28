@@ -13,9 +13,6 @@ import org.json.JSONObject;
 
 /**
  * 默认版本更新解析器【使用JSONObject进行解析，减少第三方的依赖】
- *
-
- * @since 2018/7/5 下午4:36
  */
 public class DefaultUpdateParser extends AbstractUpdateParser {
 

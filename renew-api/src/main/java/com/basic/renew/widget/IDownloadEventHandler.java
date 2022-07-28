@@ -5,9 +5,6 @@ import java.io.File;
 
 /**
  * 下载事件处理者
- *
-
- * @since 2020/12/23 10:47 PM
  */
 public interface IDownloadEventHandler {
 

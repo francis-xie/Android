@@ -6,9 +6,6 @@ import android.util.Log;
 
 /**
  * 框架日志记录
- *
-
- * @since 2018/11/14 上午11:59
  */
 public final class UILog {
 

@@ -9,9 +9,6 @@ import java.util.concurrent.Callable;
 
 /**
  * 具有优先级排序的Callable
- *
-
- * @since 2021/10/9 11:35 AM
  */
 public class DefaultPriorityCallable<V> implements IPriorityCallable<V> {
     /**

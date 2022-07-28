@@ -6,10 +6,6 @@ import com.basic.code.fragment.expands.chart.bar.BasicBarChartFragment;
 import com.basic.code.fragment.expands.chart.bar.SimpleBarChartFragment;
 import com.basic.code.fragment.expands.chart.bar.HorizontalBarChartFragment;
 
-/**
-
- * @since 2019/4/10 上午12:00
- */
 @Page(name = "BarChart\n柱状图")
 public class BarChartFragment extends ComponentContainerFragment {
     /**

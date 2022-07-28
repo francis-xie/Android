@@ -7,11 +7,6 @@ import android.webkit.WebView;
 
 import com.basic.web.utils.WebUtils;
 
-/**
- 
- * @date 2017/5/26
- * @since 1.0.0
- */
 public abstract class BaseJsAccessEntrace implements JsAccessEntrace {
 
     private WebView mWebView;

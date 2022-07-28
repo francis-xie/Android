@@ -15,9 +15,6 @@ import android.util.AttributeSet;
 
 /**
  * ImageView with focus area animation
- *
-
- * @since 2018/11/29 上午12:48
  */
 class GuideImageView extends AppCompatImageView {
 

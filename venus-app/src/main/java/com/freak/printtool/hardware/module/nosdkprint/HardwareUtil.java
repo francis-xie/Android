@@ -20,11 +20,7 @@ import java.io.UnsupportedEncodingException;
 
 /**
  * 调用硬件工具类
- *
- * @author Freak
- * @date 2019/8/13.
  */
-
 public class HardwareUtil {
 
     public static final byte[] PRINTF_CUT = {0x0a, 0x0a, 0x1d, 0x56, 0x01};

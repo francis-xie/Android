@@ -1,11 +1,5 @@
 package com.freak.printtool.hardware.module.wifi.adapter.bean;
 
-/**
- *
- * @author Freak
- * @date 2019/8/13.
- */
-
 public class PrinterSettingBean {
     private String ip;
     private boolean isSelect;

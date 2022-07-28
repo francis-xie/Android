@@ -26,10 +26,6 @@ import java.util.List;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019/4/13 下午5:57
- */
 @Page(name = "HalfPieChart\n半个饼图")
 public class HalfPieChartFragment extends BaseChartFragment {
 

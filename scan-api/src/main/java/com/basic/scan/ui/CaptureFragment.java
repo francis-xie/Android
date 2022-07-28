@@ -41,9 +41,6 @@ import static android.Manifest.permission_group.CAMERA;
 
 /**
  * 自定义实现的扫描Fragment
- *
-
- * @since 2019/1/16 下午10:51
  */
 public class CaptureFragment extends Fragment implements ICaptureView, SurfaceHolder.Callback {
 

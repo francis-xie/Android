@@ -13,9 +13,6 @@ import static com.basic.router.utils.Consts.ROUTER_SP_CACHE_KEY;
 
 /**
  * Android package工具类
- *
-
- * @since 2018/5/17 下午11:49
  */
 public final class PackageUtils {
     private static String NEW_VERSION_NAME;

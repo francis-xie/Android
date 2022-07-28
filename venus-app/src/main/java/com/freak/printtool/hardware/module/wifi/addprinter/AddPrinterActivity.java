@@ -29,9 +29,6 @@ import java.util.regex.Pattern;
 
 /**
  * 打印机手动添加
- *
- * @author Freak
- * @date 2019/8/13.
  */
 public class AddPrinterActivity extends AppCompatActivity implements IActivityStatusBar, View.OnClickListener {
     private TextView mTextViewIpCommit;

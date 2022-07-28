@@ -1,10 +1,5 @@
 package com.freak.printtool.hardware.app;
 
-/**
- * @author Freak
- * @date 2019/8/13.
- */
-
 public class Constants {
     public static final String WHETHER_PRINT = "whether_print";
     public static String DEVICE_NAME = "deviceName";

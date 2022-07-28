@@ -12,9 +12,6 @@ import java.util.Locale;
 
 /**
  * 自定义ViewHolder的model
- *
-
- * @since 2020/4/10 12:39 AM
  */
 public class CustomHolderCell extends BaseCell<TextView> {
 

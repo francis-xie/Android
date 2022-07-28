@@ -13,9 +13,6 @@ import io.reactivex.observers.DisposableObserver;
 
 /**
  * 基础订阅者
- *
-
- * @since 2018/6/10 下午9:27
  */
 public abstract class BaseSubscriber<T> extends DisposableObserver<T> {
 

@@ -18,9 +18,6 @@ import com.basic.code.utils.sdkinit.UMengInit;
 /**
  * 异步初始化任务
  * 放一些优先级不是很高的、耗时的初始化任务
- *
-
- * @since 2/17/22 12:26 AM
  */
 public class AsyncInitTask extends SimpleTaskStep {
 

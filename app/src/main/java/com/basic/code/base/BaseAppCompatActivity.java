@@ -13,9 +13,6 @@ import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 /**
  * 基础AppCompatActivity
- *
-
- * @since 2019-09-18 01:12
  */
 public class BaseAppCompatActivity extends AppCompatActivity {
 

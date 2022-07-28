@@ -11,9 +11,6 @@ import java.util.List;
 
 /**
  * 选项卡的Fragment管理
- *
-
- * @since 2018/12/28 下午1:36
  */
 public class TabFragmentManager {
     private FragmentManager mManager;

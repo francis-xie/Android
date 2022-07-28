@@ -25,10 +25,6 @@ import org.apache.log4j.helpers.LogLog;
  * dependent upon the specification of the JDK's
  * {@link java.text.SimpleDateFormat} class, whose pattern letters are used to
  * select the rolling strategy.
- * 
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @version 3.1
  * @see java.text.SimpleDateFormat
  */
 abstract class TimeBasedRollStrategy {

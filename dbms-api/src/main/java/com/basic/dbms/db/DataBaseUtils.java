@@ -8,9 +8,6 @@ import java.util.List;
 
 /**
  * 数据库工具类
- *
-
- * @since 2019/3/14 下午11:22
  */
 public final class DataBaseUtils {
 

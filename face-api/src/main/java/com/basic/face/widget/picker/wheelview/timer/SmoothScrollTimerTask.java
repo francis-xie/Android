@@ -7,9 +7,6 @@ import java.util.TimerTask;
 
 /**
  * 平滑滚动的实现
- *
-
- * @since 2019/1/1 下午5:09
  */
 public final class SmoothScrollTimerTask extends TimerTask {
 

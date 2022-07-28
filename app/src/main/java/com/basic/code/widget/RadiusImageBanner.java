@@ -10,9 +10,6 @@ import com.basic.code.R;
 
 /**
  * 带圆角的图片轮播
- *
-
- * @since 2019/1/14 下午10:07
  */
 public class RadiusImageBanner extends BaseImageBanner<RadiusImageBanner> {
 

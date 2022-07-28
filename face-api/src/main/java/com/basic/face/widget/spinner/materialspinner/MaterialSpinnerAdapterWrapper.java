@@ -8,9 +8,6 @@ import java.util.List;
 
 /**
  * Spinner适配器代理
- *
-
- * @since 2019/1/14 下午10:16
  */
 final class MaterialSpinnerAdapterWrapper extends MaterialSpinnerBaseAdapter {
 

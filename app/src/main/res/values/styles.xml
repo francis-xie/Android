@@ -42,8 +42,8 @@
         <item name="face_config_splash_company_logo">@drawable/ic_splash_company_logo_basic</item>
     </style>
 
-    <!--XVideo-->
-    <style name="XVideoNoBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!--Video-->
+    <style name="VideoNoBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>

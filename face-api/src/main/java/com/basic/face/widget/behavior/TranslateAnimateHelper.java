@@ -7,9 +7,6 @@ import android.view.View;
 
 /**
  * 平移动画
- *
-
- * @since 2019-05-10 01:06
  */
 public class TranslateAnimateHelper implements AnimateHelper {
     public View mTarget;

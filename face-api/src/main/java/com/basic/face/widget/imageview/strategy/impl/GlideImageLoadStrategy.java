@@ -25,9 +25,6 @@ import com.basic.face.widget.imageview.strategy.LoadOption;
 
 /**
  * Glide图片加载策略
- *
-
- * @since 2019-07-26 00:20
  */
 public class GlideImageLoadStrategy implements IImageLoadStrategy {
 

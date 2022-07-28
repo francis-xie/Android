@@ -5,9 +5,6 @@ import android.util.Log;
 
 /**
  * 自定义错误
- *
-
- * @since 2018/6/10 下午9:29
  */
 public class RxException extends Exception {
     /**

@@ -92,7 +92,7 @@ dependencies {
     implementation deps.androidx.multidex
     implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
 
-    //下拉刷新、CityPicker、FACE框架需要
+    //下拉刷新、CitySelector、FACE框架需要
 //    implementation deps.androidx.appcompat
 //    implementation deps.androidx.recyclerview
 //    implementation deps.androidx.design
@@ -165,7 +165,7 @@ dependencies {
 
     // Scan二维码扫描
     implementation project(':scan-api')
-    // CityPicker
+    // CitySelector
     implementation project(':cities-api')
     // Floats悬浮窗口
     implementation project(':float-api')

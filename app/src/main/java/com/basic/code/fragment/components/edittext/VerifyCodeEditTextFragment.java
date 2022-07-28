@@ -9,10 +9,6 @@ import com.basic.code.utils.XToastUtils;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
- * @author XUE
- * @since 2019/5/7 13:34
- */
 @Page(name = "VerifyCodeEditText\n用于手机验证码或者支付密码的输入框")
 public class VerifyCodeEditTextFragment extends BaseFragment implements VerifyCodeEditText.OnInputListener {
 

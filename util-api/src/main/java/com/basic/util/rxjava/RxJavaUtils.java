@@ -26,9 +26,6 @@ import io.reactivex.schedulers.Schedulers;
 
 /**
  * RxJava工具
- *
-
- * @since 2018/6/10 下午9:28
  */
 public final class RxJavaUtils {
 

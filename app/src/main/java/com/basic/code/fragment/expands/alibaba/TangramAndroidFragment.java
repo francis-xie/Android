@@ -48,9 +48,6 @@ import butterknife.BindView;
  * 8.设置悬浮类型布局的偏移（可选）
  * 9.设置卡片预加载的偏移量（可选）
  * 10.加载数据并传递给 engine
- *
-
- * @since 2020/4/6 11:41 PM
  */
 @Page(name = "Tangram-Android\n动态化多布局组件")
 public class TangramAndroidFragment extends BaseFragment {

@@ -17,10 +17,6 @@ import com.basic.code.base.BaseFragment;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
-
- * @since 2020-01-09 11:36
- */
 @Page(name = "占位符Placeholder使用")
 public class ConstraintLayoutPlaceholderFragment extends BaseFragment {
     @BindView(R.id.constraint_layout)

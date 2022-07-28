@@ -18,10 +18,6 @@ package uk.org.simonsite.log4j.appender;
  * performing the actual file roll. Subclasses have responsibility for deciding
  * whether a roll is required, and for computing the time used to perform the
  * roll.
- * 
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @version 2.0
  */
 abstract class AbstractRoller implements FileRollable {
 

@@ -35,9 +35,6 @@ import static com.basic.code.adapter.SimpleAdapter.KEY_TITLE;
 
 /**
  * 解决输入法内存泄漏, 修改列表样式为主副标题显示
- *
-
- * @since 2018/11/22 上午11:26
  */
 public abstract class ComponentContainerFragment extends PageContainerListFragment {
 

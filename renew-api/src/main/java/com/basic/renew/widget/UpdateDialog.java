@@ -36,9 +36,6 @@ import static com.basic.renew.widget.UpdateDialogFragment.REQUEST_CODE_REQUEST_P
 
 /**
  * 版本更新弹窗
- *
-
- * @since 2018/7/24 上午9:29
  */
 public class UpdateDialog extends BaseDialog implements View.OnClickListener, IDownloadEventHandler {
 

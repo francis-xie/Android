@@ -14,9 +14,6 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 默认的定时线程池
- *
-
- * @since 3/19/22 5:41 PM
  */
 public class DefaultScheduledThreadPoolExecutor extends BaseScheduledThreadPoolExecutor {
 
@@ -86,9 +83,6 @@ public class DefaultScheduledThreadPoolExecutor extends BaseScheduledThreadPoolE
 
     /**
      * 默认ScheduledFuture
-     *
-
-     * @since 3/19/22 5:52 PM
      */
     public static class DefaultScheduledFuture<V> extends FutureTask<V> implements IScheduledFuture<V> {
 

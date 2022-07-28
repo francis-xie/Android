@@ -1,9 +1,3 @@
-/**
- * @file XListViewHeader.java
- * @create Apr 18, 2012 5:22:27 PM
- * @author Maxwin
- * @description XListView's header
- */
 package com.basic.refresh.header;
 
 import android.animation.Animator;

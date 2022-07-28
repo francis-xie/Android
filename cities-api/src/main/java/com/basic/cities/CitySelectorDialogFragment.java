@@ -45,9 +45,6 @@ import java.util.List;
 
 /**
  * 城市选择的弹窗页面
- *
-
- * @since 2018/12/30 下午6:42
  */
 public class CitySelectorDialogFragment extends DialogFragment implements TextWatcher,
         View.OnClickListener, SideIndexBar.OnIndexTouchedChangedListener, InnerListener, OnLocationListener {
@@ -74,7 +71,7 @@ public class CitySelectorDialogFragment extends DialogFragment implements TextWa
     private int width;
 
     private boolean enableAnim = false;
-    private int mAnimStyle = R.style.CityPickerAnimation;
+    private int mAnimStyle = R.style.CitySelectorAnimation;
     private LocatedCity mLocatedCity;
     private int locateState;
     private OnPickListener mOnPickListener;
@@ -96,7 +93,7 @@ public class CitySelectorDialogFragment extends DialogFragment implements TextWa
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setStyle(STYLE_NORMAL, R.style.CityPickerStyle);
+        setStyle(STYLE_NORMAL, R.style.CitySelectorStyle);
     }
 
     public void setLocatedCity(LocatedCity location) {

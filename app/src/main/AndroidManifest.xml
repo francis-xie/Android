@@ -162,7 +162,7 @@
             android:theme="@style/AppTheme.Camera"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".fragment.expands.camera.CameraViewActivity"
+            android:name=".fragment.expands.camera.CameraSeeActivity"
             android:theme="@style/AppTheme.Camera"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity

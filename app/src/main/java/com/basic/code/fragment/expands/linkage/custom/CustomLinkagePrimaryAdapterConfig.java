@@ -15,9 +15,6 @@ import com.basic.code.R;
 
 /**
  * 自定义主菜单适配器
- *
-
- * @since 2019-11-25 17:17
  */
 public class CustomLinkagePrimaryAdapterConfig implements ILinkagePrimaryAdapterConfig {
 

@@ -8,9 +8,6 @@ import androidx.annotation.IdRes;
 
 /**
  * 基础抽象的弹窗，可继承后自定义弹窗
- *
-
- * @since 2018/11/16 上午12:51
  */
 public abstract class CustomMaterialDialog {
 

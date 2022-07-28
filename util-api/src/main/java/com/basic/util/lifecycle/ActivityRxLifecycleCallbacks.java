@@ -6,9 +6,6 @@ import android.os.Bundle;
 
 /**
  * 应用的生命周期
- *
-
- * @since 2018/6/11 上午1:09
  */
 final class ActivityRxLifecycleCallbacks implements Application.ActivityLifecycleCallbacks {
     @Override

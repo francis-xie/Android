@@ -27,10 +27,6 @@ import com.basic.tools.common.CollectionUtils;
 
 import butterknife.BindView;
 
-/**
- 
- * @since 2019-05-11 16:19
- */
 @Page(name = "DrawerLayout + NavigationView\n常见主页布局")
 public class DrawerLayoutFragment extends BaseFragment implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener, ViewPager.OnPageChangeListener, BottomNavigationView.OnNavigationItemSelectedListener {
     @BindView(R.id.toolbar)

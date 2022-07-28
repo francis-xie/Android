@@ -12,9 +12,6 @@ import com.basic.face.widget.imageview.ImageLoader;
 
 /**
  * 简单的引导页
- *
-
- * @since 2018/12/6 下午4:32
  */
 public class SimpleGuideBanner extends BaseIndicatorBanner<Object, SimpleGuideBanner> {
 

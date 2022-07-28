@@ -8,9 +8,6 @@ import android.view.ViewGroup;
 
 /**
  * 绘制分割线工具类
- *
-
- * @since 2020/5/2 11:06 AM
  */
 public final class DividerUtils {
 

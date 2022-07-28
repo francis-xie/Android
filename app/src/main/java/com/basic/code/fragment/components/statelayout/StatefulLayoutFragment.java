@@ -14,9 +14,6 @@ import butterknife.OnClick;
 
 /**
  * 有现成的模版使用
- *
-
- * @since 2018/11/26 上午12:25
  */
 @Page(name = "StatefulLayout\n定制模版")
 public class StatefulLayoutFragment extends BaseFragment {

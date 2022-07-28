@@ -6,9 +6,6 @@ import com.basic.renew.listener.OnUpdateFailureListener;
 
 /**
  * 自定义版本更新提示
- *
-
- * @since 2019/4/15 上午12:01
  */
 public class CustomUpdateFailureListener implements OnUpdateFailureListener {
 

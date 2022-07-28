@@ -9,10 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
-/**
-
- * @since 2020/5/21 1:27 AM
- */
 public class FragmentStateViewPager2Adapter extends FragmentStateAdapter {
 
     private List<Fragment> mFragmentList = new ArrayList<>();

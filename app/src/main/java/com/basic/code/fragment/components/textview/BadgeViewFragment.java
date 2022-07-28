@@ -28,10 +28,6 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
- 
- * @since 2018/12/28 上午9:24
- */
 @Page(name = "BadgeView\n小红点标记")
 public class BadgeViewFragment extends BaseFragment implements CompoundButton.OnCheckedChangeListener {
 

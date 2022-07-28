@@ -4,10 +4,6 @@ package com.basic.web.core.web;
 
 import com.basic.web.core.Web;
 
-/**
- 
- * @since 1.0.0
- */
 public class HookManager {
 
 

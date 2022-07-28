@@ -16,10 +16,6 @@ import com.basic.code.fragment.components.tabbar.TestPageFragment;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
-
- * @since 2018/12/26 下午3:38
- */
 public class EasyIndicatorActivity extends BaseAppCompatActivity {
     EasyIndicator mEasyIndicator;
     ViewPager mViewPager;

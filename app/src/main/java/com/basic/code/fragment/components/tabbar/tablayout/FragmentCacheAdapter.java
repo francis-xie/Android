@@ -10,10 +10,6 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
-
- * @since 2020/4/21 1:27 AM
- */
 public class FragmentCacheAdapter extends FragmentStatePagerAdapter {
 
     private List<Fragment> mFragmentList = new ArrayList<>();

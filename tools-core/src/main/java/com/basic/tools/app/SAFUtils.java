@@ -33,9 +33,6 @@ import static com.basic.constant.MimeTypeConstants.WEBP;
 
 /**
  * SAF（Storage Access Framework）使用工具类
- *
-
- * @since 2020/5/14 12:30 AM
  */
 public final class SAFUtils {
 

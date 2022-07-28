@@ -8,9 +8,6 @@ import com.basic.face.widget.banner.widget.banner.base.BaseImageBanner;
 
 /**
  * 简单的图片轮播
- *
-
- * @since 2019/1/14 下午10:07
  */
 public class SimpleImageBanner extends BaseImageBanner<SimpleImageBanner> {
 

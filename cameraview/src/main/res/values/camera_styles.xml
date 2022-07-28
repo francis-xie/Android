@@ -2,7 +2,7 @@
 
 <resources>
 
-    <style name="Widget.CameraView" parent="android:Widget">
+    <style name="Widget.CameraSee" parent="android:Widget">
         <item name="android:adjustViewBounds">false</item>
         <item name="cv_facing">back</item>
         <item name="cv_aspectRatio">4:3</item>

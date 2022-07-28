@@ -18,10 +18,6 @@ import com.basic.code.utils.Utils;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019/4/7 下午3:10
- */
 @Page(name = "动画占位控件")
 public class AnimationPlaceholderFragment extends BaseFragment {
 

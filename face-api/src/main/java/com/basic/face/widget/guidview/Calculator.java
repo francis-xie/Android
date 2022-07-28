@@ -7,9 +7,6 @@ import android.view.View;
 
 /**
  * Geometric calculations for position, size and radius
- *
-
- * @since 2019/1/14 下午10:07
  */
 class Calculator {
 

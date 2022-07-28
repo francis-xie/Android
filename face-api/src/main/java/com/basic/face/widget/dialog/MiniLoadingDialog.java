@@ -15,9 +15,6 @@ import com.basic.face.widget.progress.loading.MiniLoadingView;
 
 /**
  * 迷你loading加载
- *
- * @author XUE
- * @since 2019/4/9 14:16
  */
 public class MiniLoadingDialog extends BaseDialog implements IMessageLoader {
 

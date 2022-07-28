@@ -25,10 +25,6 @@ import java.util.Arrays;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2018/12/7 上午1:43
- */
 @Page(name = "Material Design风格")
 public class RefreshMaterialStyleFragment extends BaseFragment implements SmartViewHolder.OnItemClickListener{
 

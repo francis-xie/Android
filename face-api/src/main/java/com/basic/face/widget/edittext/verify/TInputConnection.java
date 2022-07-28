@@ -6,9 +6,6 @@ import android.view.inputmethod.InputConnectionWrapper;
 
 /**
  * 输入法拦截
- *
- * @author XUE
- * @since 2019/5/7 11:21
  */
 public class TInputConnection extends InputConnectionWrapper {
 

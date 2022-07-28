@@ -10,10 +10,6 @@ import com.basic.code.fragment.expands.materialdesign.behavior.RecyclerViewBehav
 import com.basic.code.fragment.expands.materialdesign.behavior.TabLayoutBehaviorFragment;
 import com.basic.code.fragment.expands.materialdesign.behavior.ToolbarBehaviorFragment;
 
-/**
- * @author XUE
- * @since 2019/5/9 9:11
- */
 @Page(name = "Behavior\n手势行为")
 public class BehaviorFragment extends ComponentContainerFragment {
     @Override

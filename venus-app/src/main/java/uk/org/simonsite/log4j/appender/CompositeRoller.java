@@ -20,10 +20,6 @@ import org.apache.log4j.spi.LoggingEvent;
  * time-based roller. The startup roller takes precedence, followed by the
  * time-based roller, with the file-size roller being evaluated last in the
  * chain.
- * 
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @version 3.0
  */
 final class CompositeRoller implements FileRollable {
 

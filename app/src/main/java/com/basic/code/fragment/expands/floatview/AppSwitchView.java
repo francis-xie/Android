@@ -16,9 +16,6 @@ import java.util.List;
 
 /**
  * 应用切换悬浮窗
- *
-
- * @since 2019/1/21 上午11:53
  */
 public class AppSwitchView extends FloatView {
     /**

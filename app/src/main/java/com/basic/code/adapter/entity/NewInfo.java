@@ -6,9 +6,6 @@ import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * 新闻信息
- *
-
- * @since 2019/4/7 下午12:07
  */
 public class NewInfo implements Cloneable {
 

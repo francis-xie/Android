@@ -18,10 +18,6 @@ import com.yanzhenjie.recyclerview.SwipeRecyclerView;
 
 import butterknife.BindView;
 
-/**
- * @author XUE
- * @since 2019/5/9 11:54
- */
 public class SimpleListFragment extends BaseFragment {
 
     private static final String KEY_IS_SPECIAL = "key_is_special";

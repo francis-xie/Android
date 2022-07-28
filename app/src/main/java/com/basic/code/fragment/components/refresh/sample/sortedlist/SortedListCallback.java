@@ -17,9 +17,6 @@ import static com.basic.code.fragment.components.refresh.sample.diffutil.DiffUti
 
 /**
  * 配合SortedList使用
- *
-
- * @since 2020/6/28 12:18 AM
  */
 public class SortedListCallback extends SortedListAdapterCallback<NewInfo> {
 

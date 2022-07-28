@@ -21,9 +21,6 @@ import com.basic.face.utils.WidgetUtils;
  * 基类Dialog
  * 1.触摸Dialog屏幕以外的区域，dialog消失同时隐藏键盘
  * 2.可以同步系统控制器显示状态
- *
- 
- * @since 2018/12/6 下午3:29
  */
 public class BaseDialog extends AppCompatDialog {
 

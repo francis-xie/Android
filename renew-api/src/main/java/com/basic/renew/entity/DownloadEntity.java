@@ -10,9 +10,6 @@ import java.io.File;
 
 /**
  * 下载信息实体
- *
-
- * @since 2018/7/9 上午11:41
  */
 public class DownloadEntity implements Parcelable {
     /**

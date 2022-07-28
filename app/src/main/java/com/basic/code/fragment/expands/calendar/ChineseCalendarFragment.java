@@ -18,10 +18,6 @@ import java.util.Date;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019-05-29 23:12
- */
 @Page(name = "农历日历")
 public class ChineseCalendarFragment extends BaseFragment {
     @BindView(R.id.tv_title)

@@ -13,9 +13,6 @@ import java.util.List;
 
 /**
  * 简单的可伸缩弹窗
- *
-
- * @since 2019-11-11 16:31
  */
 public class FACESimpleExpandablePopup<T extends FACESimpleExpandablePopup> extends FACEExpandableListPopup {
 

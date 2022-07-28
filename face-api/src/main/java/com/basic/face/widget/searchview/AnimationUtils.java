@@ -13,9 +13,6 @@ import android.view.ViewAnimationUtils;
 
 /**
  * 动画工具类
- *
-
- * @since 2019/1/2 下午3:59
  */
 class AnimationUtils {
 

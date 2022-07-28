@@ -8,10 +8,6 @@ import com.basic.code.utils.XToastUtils;
 
 import java.util.List;
 
-/**
- 
- * @since 2018/11/30 下午3:18
- */
 @Page(name = "BottomSheetDialog\n底部弹出窗")
 public class BottomSheetFragment extends BaseSimpleListFragment {
     /**

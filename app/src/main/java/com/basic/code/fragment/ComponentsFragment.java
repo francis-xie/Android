@@ -10,9 +10,6 @@ import java.util.List;
 
 /**
  * 组件的主要界面
- *
-
- * @since 2018/11/14 下午2:22
  */
 @Page(name = "组件", anim = CoreAnim.none)
 public class ComponentsFragment extends BaseHomeFragment {

@@ -12,8 +12,6 @@ import com.basic.face.utils.Utils;
 
 /**
  * 基类PopupWindow
- * @author xx
- * @Date 2017-1-18 上午11:10:05
  */
 public class PopWindow extends PopupWindow {
 	private int mPopupWidth;

@@ -46,9 +46,6 @@ import static com.basic.renew.entity.UpdateError.ERROR.PROMPT_UNKNOWN;
 
 /**
  * 版本更新提示器【DialogFragment实现】
- *
-
- * @since 2018/7/2 上午11:40
  */
 public class UpdateDialogFragment extends DialogFragment implements View.OnClickListener, IDownloadEventHandler {
     public final static String KEY_UPDATE_ENTITY = "key_update_entity";

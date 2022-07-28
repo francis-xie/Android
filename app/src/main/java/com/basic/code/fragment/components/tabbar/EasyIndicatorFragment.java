@@ -25,10 +25,6 @@ import java.util.Map;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2018/12/26 下午1:57
- */
 @Page(name = "EasyIndicator\n简单的指示器")
 public class EasyIndicatorFragment extends BaseFragment {
 

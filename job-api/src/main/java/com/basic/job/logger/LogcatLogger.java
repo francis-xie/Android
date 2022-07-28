@@ -10,9 +10,6 @@ import java.io.StringWriter;
 
 /**
  * 默认Logcat日志记录
- *
- 
- * @since 2021/10/9 4:29 PM
  */
 public class LogcatLogger implements ILogger {
 

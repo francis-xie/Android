@@ -6,9 +6,6 @@ import com.basic.tools.common.logger.Logger;
 
 /**
  * ANR看门狗监听器初始化
- *
-
- * @since 2020-02-18 15:08
  */
 public final class ANRWatchDogInit {
 

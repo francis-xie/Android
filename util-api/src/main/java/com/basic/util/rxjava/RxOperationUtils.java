@@ -8,9 +8,6 @@ import io.reactivex.ObservableTransformer;
 
 /**
  * Rx常用操作符集合 【使用compose操作符】
- *
-
- * @since 2018/6/10 下午7:08
  */
 public final class RxOperationUtils {
 

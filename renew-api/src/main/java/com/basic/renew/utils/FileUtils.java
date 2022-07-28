@@ -27,9 +27,6 @@ import java.io.InputStream;
 
 /**
  * 文件操作工具类
- *
-
- * @since 2020/6/6 11:52 AM
  */
 public final class FileUtils {
 

@@ -112,9 +112,6 @@ import com.freak.printtool.hardware.app.App;
 
 /**
  * 自定义toast格式
- *
- * @author Freak
- * @date 2019/8/13.
  */
 public class ToastUtil {
 

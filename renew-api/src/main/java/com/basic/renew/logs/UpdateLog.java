@@ -7,9 +7,6 @@ import android.util.Log;
 
 /**
  * 版本更新日志打印
- *
-
- * @since 2018/6/29 下午7:58
  */
 public final class UpdateLog {
 

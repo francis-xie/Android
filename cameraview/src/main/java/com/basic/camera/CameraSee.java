@@ -112,12 +112,12 @@ public class CameraSee extends FrameLayout {
             mImpl = new Camera2Api23(mCallbacks, preview, context);
         }
         // Attributes
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CameraView, defStyleAttr, R.style.Widget_CameraView);
-        mAdjustViewBounds = a.getBoolean(R.styleable.CameraView_android_adjustViewBounds, false);
-        mAspectRatioString = a.getString(R.styleable.CameraView_cv_aspectRatio);
-        setFacing(a.getInt(R.styleable.CameraView_cv_facing, FACING_BACK));
-        setAutoFocus(a.getBoolean(R.styleable.CameraView_cv_autoFocus, true));
-        setFlash(a.getInt(R.styleable.CameraView_cv_flash, Constants.FLASH_AUTO));
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CameraSee, defStyleAttr, R.style.Widget_CameraSee);
+        mAdjustViewBounds = a.getBoolean(R.styleable.CameraSee_android_adjustViewBounds, false);
+        mAspectRatioString = a.getString(R.styleable.CameraSee_cv_aspectRatio);
+        setFacing(a.getInt(R.styleable.CameraSee_cv_facing, FACING_BACK));
+        setAutoFocus(a.getBoolean(R.styleable.CameraSee_cv_autoFocus, true));
+        setFlash(a.getInt(R.styleable.CameraSee_cv_flash, Constants.FLASH_AUTO));
         a.recycle();
         // Display orientation detector
         mDisplayOrientationDetector = new DisplayOrientationDetector(context) {
@@ -303,7 +303,7 @@ public class CameraSee extends FrameLayout {
     }
 
     /**
-     * @param adjustViewBounds {@code true} if you want the CameraView to adjust its bounds to
+     * @param adjustViewBounds {@code true} if you want the CameraSee to adjust its bounds to
      *                         preserve the aspect ratio of camera.
      * @see #getAdjustViewBounds()
      */
@@ -315,7 +315,7 @@ public class CameraSee extends FrameLayout {
     }
 
     /**
-     * @return True when this CameraView is adjusting its bounds to preserve the aspect ratio of
+     * @return True when this CameraSee is adjusting its bounds to preserve the aspect ratio of
      * camera.
      * @see #setAdjustViewBounds(boolean)
      */

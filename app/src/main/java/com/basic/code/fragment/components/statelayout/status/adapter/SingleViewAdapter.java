@@ -16,9 +16,6 @@ import static com.basic.face.widget.statelayout.StatusLoader.STATUS_LOAD_SUCCESS
 
 /**
  * 复用组件
- *
-
- * @since 2020/4/30 12:09 AM
  */
 public class SingleViewAdapter implements StatusLoader.Adapter {
 

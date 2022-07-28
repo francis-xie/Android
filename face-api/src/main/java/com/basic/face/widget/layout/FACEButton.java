@@ -11,9 +11,6 @@ import com.basic.face.widget.alpha.FACEAlphaButton;
 
 /**
  * 封装的button，便于样式的修改
- *
-
- * @since 2019-06-01 20:01
  */
 public class FACEButton extends FACEAlphaButton implements IFACELayout {
     private FACELayoutHelper mLayoutHelper;

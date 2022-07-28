@@ -11,9 +11,6 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 定时关闭界面（默认5分钟）
- *
-
- * @since 2019/1/17 上午12:06
  */
 public final class InactivityTimer {
 

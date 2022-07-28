@@ -17,9 +17,6 @@ import com.basic.face.utils.DensityUtils;
 
 /**
  * 用于显示 Loading 的 {@link View}，支持颜色和大小的设置。
- *
-
- * @since 2018/12/1 下午11:24
  */
 public class MiniLoadingView extends View {
 

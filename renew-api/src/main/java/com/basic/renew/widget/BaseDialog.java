@@ -18,9 +18,6 @@ import com.basic.renew.utils.DialogUtils;
 /**
  * 基类Dialog
  * 触摸Dialog屏幕以外的区域，dialog消失同时隐藏键盘
- *
-
- * @since 2018/7/24 上午9:34
  */
 public abstract class BaseDialog extends Dialog {
 

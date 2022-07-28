@@ -19,9 +19,6 @@ import com.basic.renew.widget.UpdateDialogFragment;
 
 /**
  * 默认的更新提示器
- *
-
- * @since 2018/7/2 下午4:05
  */
 public class DefaultUpdatePrompter implements IUpdatePrompter {
 

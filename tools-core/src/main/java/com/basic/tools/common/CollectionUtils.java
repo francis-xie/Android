@@ -16,9 +16,6 @@ import java.util.List;
 
 /**
  * 集合工具类{@link Collection}
- *
-
- * @since 2018/6/28 上午1:00
  */
 public final class CollectionUtils {
 

@@ -29,12 +29,6 @@ import org.apache.log4j.helpers.LogLog;
 
 import uk.org.simonsite.log4j.helpers.FileHelper;
 
-/**
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @author <a href="mailto:axvpast AT gmail DOG com">Oleksiy Pastukhov</a>
- * @version 2.1
- */
 final class GzipFileCompressionStrategy extends LogFileCompressionStrategy {
 
   private static final int DEFLATER_BUFFER_SIZE = 131071;

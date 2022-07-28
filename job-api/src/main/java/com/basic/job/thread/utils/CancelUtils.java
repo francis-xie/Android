@@ -7,9 +7,6 @@ import java.util.Collection;
 
 /**
  * 取消任务工具类
- *
-
- * @since 3/20/22 2:34 AM
  */
 public final class CancelUtils {
 

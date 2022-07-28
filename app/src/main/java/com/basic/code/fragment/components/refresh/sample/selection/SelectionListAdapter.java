@@ -12,10 +12,6 @@ import com.basic.code.R;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
-
- * @since 2020/9/2 9:33 PM
- */
 public class SelectionListAdapter extends BaseRecyclerAdapter<SelectionItem> {
 
     private static final int SELECTION_GROUP = 0;

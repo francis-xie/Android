@@ -19,9 +19,6 @@ import java.util.Locale;
 
 /**
  * 相机拍照工具类
- *
- * @author XUE
- * @since 2019/3/30 11:58
  */
 public final class CameraUtils {
 

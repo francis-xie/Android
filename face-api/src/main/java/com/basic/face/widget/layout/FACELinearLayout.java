@@ -11,9 +11,6 @@ import com.basic.face.widget.alpha.FACEAlphaLinearLayout;
 
 /**
  * 封装的LinearLayout，便于样式的修改
- *
-
- * @since 2019-06-02 02:26
  */
 public class FACELinearLayout extends FACEAlphaLinearLayout implements IFACELayout {
     private FACELayoutHelper mLayoutHelper;

@@ -6,9 +6,6 @@ import com.basic.router.facade.Postcard;
 
 /**
  * 拦截器的回调
- *
-
- * @since 2018/5/16 下午11:43
  */
 public interface InterceptorCallback {
 

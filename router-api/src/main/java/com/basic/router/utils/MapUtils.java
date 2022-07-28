@@ -5,9 +5,6 @@ import java.util.Map;
 
 /**
  * Map工具类
- *
-
- * @since 2018/5/18 上午1:23
  */
 public final class MapUtils {
 
@@ -22,7 +19,6 @@ public final class MapUtils {
      *
      * @param map  the map to check, may be null
      * @return true if non-null and non-empty
-     * @since 3.2
      */
     public static boolean isNotEmpty(final Map<?,?> map) {
         return !isEmpty(map);
@@ -35,7 +31,6 @@ public final class MapUtils {
      *
      * @param map  the map to check, may be null
      * @return true if empty or null
-     * @since 3.2
      */
     public static boolean isEmpty(final Map<?,?> map) {
         return map == null || map.isEmpty();

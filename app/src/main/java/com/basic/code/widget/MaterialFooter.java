@@ -18,9 +18,6 @@ import com.basic.refresh.layout.util.DensityUtil;
 
 /**
  * 自定义上拉加载
- *
-
- * @since 2019-08-03 11:14
  */
 public class MaterialFooter extends ProgressBar implements RefreshFooter {
 

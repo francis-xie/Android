@@ -3,9 +3,6 @@ package com.basic.camera;
 import com.basic.camera.strategy.ICameraStrategy;
 import com.basic.camera.strategy.impl.DefaultCameraStrategy;
 
-/**
- * @since 2019/4/8 11:51
- */
 class _CameraSee {
 
     /**

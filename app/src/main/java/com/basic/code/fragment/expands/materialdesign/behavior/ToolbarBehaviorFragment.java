@@ -16,10 +16,6 @@ import com.basic.tools.display.Colors;
 
 import butterknife.BindView;
 
-/**
-
- * @since 2019-05-08 23:15
- */
 @Page(name = "CoordinatorLayout + AppBarLayout\n详情页常用组合")
 public class ToolbarBehaviorFragment extends BaseFragment {
     @BindView(R.id.appbar_layout_toolbar)

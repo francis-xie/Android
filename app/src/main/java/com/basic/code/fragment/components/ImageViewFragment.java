@@ -10,10 +10,6 @@ import com.basic.code.fragment.components.imageview.RadiusImageViewFragment;
 import com.basic.code.fragment.components.imageview.SignatureViewFragment;
 import com.basic.code.fragment.components.imageview.pictureselector.PictureSelectorFragment;
 
-/**
-
- * @since 2018/12/2 上午12:21
- */
 @Page(name = "图片", extra = R.drawable.ic_widget_imageview)
 public class ImageViewFragment extends ComponentContainerFragment {
     /**

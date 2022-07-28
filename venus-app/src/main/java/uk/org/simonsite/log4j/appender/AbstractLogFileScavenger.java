@@ -20,12 +20,6 @@ import java.io.InterruptedIOException;
 import org.apache.log4j.helpers.LogLog;
 import org.apache.log4j.spi.ErrorCode;
 
-/**
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @author <a href="mailto:berndq AT gmx DOT net">Bernd</a>
- * @version 2.0
- */
 abstract class AbstractLogFileScavenger implements LogFileScavenger,
     Runnable {
 

@@ -20,9 +20,6 @@ import android.widget.ImageView;
  * <p>
  * <p>需添加权限
  * {@code <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />}</p>
- *
-
- * @since 2018/9/13 上午2:19
  */
 public abstract class FloatView implements OnTouchListener {
 
@@ -428,8 +425,6 @@ public abstract class FloatView implements OnTouchListener {
 
     /**
      * 悬浮框移动监听
-     *
-     * @author xx
      */
     public interface OnFloatViewMoveListener {
         /**
@@ -442,8 +437,6 @@ public abstract class FloatView implements OnTouchListener {
 
     /**
      * 控件位置类型
-     *
-     * @author xx
      */
     public enum PositionType {
         LEFT, RIGHT, TOP, BOTTOM
@@ -451,9 +444,6 @@ public abstract class FloatView implements OnTouchListener {
 
     /**
      * 悬浮控件的位置信息
-     *
-
-     * @since 2018/9/13 上午2:22
      */
     public final class Location {
         /**

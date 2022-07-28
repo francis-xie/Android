@@ -303,10 +303,6 @@ import uk.org.simonsite.log4j.helpers.SynchronizedCountingQuietWriter;
  * value=&quot;%-5p %-23d{ISO8601} [%t] %x: %c{1} - %m%n&quot;/&gt;<br/>
  * &nbsp;&nbsp;&lt;/layout&gt;<br/>
  * &lt;/appender&gt;
- * 
- * @author <a href="mailto:simon_park_mail AT yahoo DOT co DOT uk">Simon
- *         Park</a>
- * @version 4.7
  * @see org.apache.log4j.DailyRollingFileAppender
  */
 public final class TimeAndSizeRollingAppender extends FileAppender implements

@@ -9,9 +9,6 @@ import android.webkit.WebView;
  * 视屏状态进行了处理 ， 如果当前状态为 视频状态
  * 则先退出视频。
  *
- 
- * @date 2017/6/3
- * @since 2.0.0
  */
 public class EventHandlerImpl implements IEventHandler {
 	private WebView mWebView;

@@ -17,9 +17,6 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 拥有优先级控制，使用PriorityThreadPoolExecutor实现的线程执行内核，通过阻塞队列(PriorityBlockingQueue)来实现优先级的控制。
- *
-
- * @since 2021/11/10 1:17 AM
  */
 public class PriorityExecutorCore implements IPriorityExecutorCore, IExecutorCore {
 
