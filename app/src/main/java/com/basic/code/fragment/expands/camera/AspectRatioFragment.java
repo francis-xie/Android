@@ -14,7 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 
-import com.google.android.cameraview.AspectRatio;
+import com.basic.camera.AspectRatio;
 
 import java.util.Arrays;
 import java.util.Set;

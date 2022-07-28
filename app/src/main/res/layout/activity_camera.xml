@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.cameraview.CameraView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.basic.camera.CameraSee xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/camera_view"
     android:layout_width="match_parent"
@@ -42,4 +42,4 @@
         android:layout_marginBottom="26dp"
         app:srcCompat="@drawable/ic_select_picture" />
 
-</com.google.android.cameraview.CameraView>
+</com.basic.camera.CameraSee>

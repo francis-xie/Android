@@ -5,7 +5,7 @@ import android.app.Application;
 
 import androidx.annotation.NonNull;
 
-import com.google.android.cameraview.CameraView;
+import com.basic.camera.CameraSee;
 import com.basic.image.tools.PictureFileUtils;
 import com.basic.job.api.step.SimpleTaskStep;
 import com.basic.job.core.ThreadType;
@@ -48,7 +48,7 @@ public class AsyncInitTask extends SimpleTaskStep {
         // 图片路径
         PictureFileUtils.setAppName("face");
         // 照相机
-        CameraView.setICameraStrategy(new AutoCameraStrategy(1920 * 1080));
+        CameraSee.setICameraStrategy(new AutoCameraStrategy(1920 * 1080));
     }
 
     @Override

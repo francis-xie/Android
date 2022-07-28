@@ -112,7 +112,7 @@
     </activity>
     <activity android:name="com.emis.venus.common.ScannerUtil"/>
 
-    <activity android:name="com.google.zxing.activity.CaptureActivity"
+    <activity android:name="com.basic.zxing.activity.CaptureActivity"
               android:screenOrientation="sensorLandscape"
               android:clearTaskOnLaunch="true"
               android:stateNotNeeded="true"
@@ -123,10 +123,10 @@
         android:name="android.support.PARENT_ACTIVITY"
         android:value="com.emis.venus.activity.BillDetailsActivity"/>
     </activity>
-    <activity android:name="com.google.zxing.util.PreferencesActivity"
+    <activity android:name="com.basic.zxing.util.PreferencesActivity"
               android:label="@string/preferences_name"
               android:stateNotNeeded="true"/>
-    <activity android:name="com.google.zxing.share.ShareActivity"
+    <activity android:name="com.basic.zxing.share.ShareActivity"
               android:stateNotNeeded="true"
               android:screenOrientation="user"
               android:exported="false">

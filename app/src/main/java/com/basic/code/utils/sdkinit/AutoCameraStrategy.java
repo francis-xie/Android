@@ -1,8 +1,8 @@
 
 package com.basic.code.utils.sdkinit;
 
-import com.google.android.cameraview.Size;
-import com.google.android.cameraview.strategy.ICameraStrategy;
+import com.basic.camera.Size;
+import com.basic.camera.strategy.ICameraStrategy;
 
 import java.util.SortedSet;
 

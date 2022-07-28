@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import com.google.android.cameraview.CameraView;
+import com.basic.camera.CameraSee;
 import com.basic.image.PictureSelector;
 import com.basic.image.config.PictureConfig;
 import com.basic.image.entity.LocalMedia;
@@ -31,6 +31,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.Unbinder;
+import com.wonderkiln.camerakit.CameraView;
 
 import static com.basic.aop.consts.PermissionConsts.CAMERA;
 import static com.basic.aop.consts.PermissionConsts.STORAGE;
@@ -46,9 +47,9 @@ public class CameraActivity extends AppCompatActivity {
     public static final int REQUEST_CODE_OPEN_CAMERA = 1245;
 
     private static final int[] FLASH_OPTIONS = {
-            CameraView.FLASH_AUTO,
-            CameraView.FLASH_OFF,
-            CameraView.FLASH_ON,
+      CameraSee.FLASH_AUTO,
+      CameraSee.FLASH_OFF,
+      CameraSee.FLASH_ON,
     };
 
     private static final int[] FLASH_ICONS = {
@@ -68,7 +69,7 @@ public class CameraActivity extends AppCompatActivity {
     @BindView(R.id.iv_picture_select)
     FACEAlphaImageView ivPictureSelect;
     @BindView(R.id.camera_view)
-    CameraView mCameraView;
+    CameraSee mCameraSee;
 
     private Unbinder mUnbinder;
 
@@ -101,8 +102,8 @@ public class CameraActivity extends AppCompatActivity {
         setContentView(R.layout.activity_camera);
         mUnbinder = ButterKnife.bind(this);
 
-        if (mCameraView != null) {
-            mCameraView.addCallback(mCallback);
+        if (mCameraSee != null) {
+            mCameraSee.addCallback(mCallback);
         }
 
         List<View> views = new ArrayList<>();
@@ -120,15 +121,15 @@ public class CameraActivity extends AppCompatActivity {
                 finish();
                 break;
             case R.id.iv_flash_light:
-                if (mCameraView != null) {
+                if (mCameraSee != null) {
                     mCurrentFlash = (mCurrentFlash + 1) % FLASH_OPTIONS.length;
                     ivFlashLight.setImageResource(FLASH_ICONS[mCurrentFlash]);
-                    mCameraView.setFlash(FLASH_OPTIONS[mCurrentFlash]);
+                    mCameraSee.setFlash(FLASH_OPTIONS[mCurrentFlash]);
                 }
                 break;
             case R.id.iv_take_photo:
-                if (mCameraView != null) {
-                    mCameraView.takePicture();
+                if (mCameraSee != null) {
+                    mCameraSee.takePicture();
                 }
                 break;
             case R.id.iv_picture_select:
@@ -147,17 +148,17 @@ public class CameraActivity extends AppCompatActivity {
     /**
      * 拍照的回调
      */
-    private CameraView.Callback mCallback = new CameraView.Callback() {
+    private CameraSee.Callback mCallback = new CameraSee.Callback() {
         @Override
-        public void onCameraOpened(CameraView cameraView) {
+        public void onCameraOpened(CameraSee cameraSee) {
         }
 
         @Override
-        public void onCameraClosed(CameraView cameraView) {
+        public void onCameraClosed(CameraSee cameraSee) {
         }
 
         @Override
-        public void onPictureTaken(final CameraView cameraView, final byte[] data) {
+        public void onPictureTaken(final CameraSee cameraSee, final byte[] data) {
             handlePictureTaken(data);
         }
     };
@@ -201,8 +202,8 @@ public class CameraActivity extends AppCompatActivity {
 
     @Safe
     private void startCamera() {
-        if (mCameraView != null) {
-            mCameraView.start();
+        if (mCameraSee != null) {
+            mCameraSee.start();
         }
     }
 
@@ -216,8 +217,8 @@ public class CameraActivity extends AppCompatActivity {
 
     @Safe
     private void stopCamera() {
-        if (mCameraView != null) {
-            mCameraView.stop();
+        if (mCameraSee != null) {
+            mCameraSee.stop();
         }
     }
 

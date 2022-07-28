@@ -30,7 +30,7 @@ import com.emis.venus.util.KeyboardUtil;
 import com.emis.venus.util.emisAndroidUtil;
 import com.emis.venus.util.emisUtil;
 import com.google.gson.Gson;
-import com.google.zxing.activity.CaptureActivity;
+import com.basic.zxing.activity.CaptureActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;

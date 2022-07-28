@@ -14,7 +14,7 @@ import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
 import com.basic.code.fragment.expands.camera.CameraActivity;
 import com.basic.code.fragment.expands.camera.CameraKitFragment;
-import com.basic.code.fragment.expands.camera.CameraViewActivity;
+import com.basic.code.fragment.expands.camera.CameraSeeActivity;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -51,7 +51,7 @@ public class CameraFragment extends BaseFragment {
                 CameraActivity.open(this);
                 break;
             case R.id.btn_camera_complex:
-                CameraViewActivity.open(this);
+                CameraSeeActivity.open(this);
                 break;
             case R.id.btn_camera_kit:
                 openNewPage(CameraKitFragment.class);
