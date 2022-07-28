@@ -1,12 +1,12 @@
 
-package com.basic.code.fragment.components.refresh.smartrefresh;
+package com.basic.code.fragment.components.refresh.refreshs;
 
 import com.basic.page.annotation.Page;
 import com.basic.code.base.ComponentContainerFragment;
-import com.basic.code.fragment.components.refresh.smartrefresh.style.RefreshAllStyleFragment;
-import com.basic.code.fragment.components.refresh.smartrefresh.style.RefreshClassicsStyleFragment;
-import com.basic.code.fragment.components.refresh.smartrefresh.style.RefreshCustomStyleFragment;
-import com.basic.code.fragment.components.refresh.smartrefresh.style.RefreshMaterialStyleFragment;
+import com.basic.code.fragment.components.refresh.refreshs.style.RefreshAllStyleFragment;
+import com.basic.code.fragment.components.refresh.refreshs.style.RefreshClassicsStyleFragment;
+import com.basic.code.fragment.components.refresh.refreshs.style.RefreshCustomStyleFragment;
+import com.basic.code.fragment.components.refresh.refreshs.style.RefreshMaterialStyleFragment;
 
 /**
 

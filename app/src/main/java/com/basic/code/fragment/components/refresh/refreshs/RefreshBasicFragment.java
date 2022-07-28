@@ -1,5 +1,5 @@
 
-package com.basic.code.fragment.components.refresh.smartrefresh;
+package com.basic.code.fragment.components.refresh.refreshs;
 
 import androidx.recyclerview.widget.RecyclerView;
 

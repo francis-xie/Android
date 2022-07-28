@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.basic.refresh.layout.SmartRefreshLayout style="@style/PullDownStyle">
+    <com.basic.refresh.layout.RefreshLayouts style="@style/PullDownStyle">
 
         <androidx.core.widget.NestedScrollView style="@style/ScrollViewStyle">
 
@@ -68,6 +68,6 @@
 
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
-    </com.basic.refresh.layout.SmartRefreshLayout>
+    </com.basic.refresh.layout.RefreshLayouts>
 
 </LinearLayout>

@@ -2,7 +2,7 @@ package com.basic.code.fragment.components.refresh;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.basic.refresh.layout.SmartRefreshLayout;
+import com.basic.refresh.layout.RefreshLayouts;
 import com.basic.page.annotation.Page;
 import com.basic.face.utils.WidgetUtils;
 import com.basic.code.DemoDataProvider;
@@ -25,7 +25,7 @@ public class RefreshHeadViewFragment extends BaseFragment {
     @BindView(R.id.recyclerView)
     RecyclerView recyclerView;
     @BindView(R.id.refreshLayout)
-    SmartRefreshLayout refreshLayout;
+    RefreshLayouts refreshLayout;
 
     RefreshHeadViewAdapter mAdapter;
     /**

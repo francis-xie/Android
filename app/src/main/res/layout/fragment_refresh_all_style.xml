@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.basic.refresh.layout.SmartRefreshLayout
+    <com.basic.refresh.layout.RefreshLayouts
         android:id="@+id/refreshLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -16,6 +16,6 @@
             android:overScrollMode="never"
             tools:listitem="@android:layout/simple_list_item_2" />
 
-    </com.basic.refresh.layout.SmartRefreshLayout>
+    </com.basic.refresh.layout.RefreshLayouts>
 
 </LinearLayout>

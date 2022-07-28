@@ -3,7 +3,7 @@ package com.basic.code.fragment.components.refresh.broccoli;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.basic.refresh.layout.SmartRefreshLayout;
+import com.basic.refresh.layout.RefreshLayouts;
 import com.basic.refresh.layout.api.RefreshLayout;
 import com.basic.refresh.layout.listener.OnRefreshLoadMoreListener;
 import com.basic.page.annotation.Page;
@@ -28,7 +28,7 @@ public class AnimationPlaceholderFragment extends BaseFragment {
     @BindView(R.id.recyclerView)
     RecyclerView recyclerView;
     @BindView(R.id.refreshLayout)
-    SmartRefreshLayout refreshLayout;
+    RefreshLayouts refreshLayout;
 
     private NewsListAdapter mNewsListAdapter;
     /**

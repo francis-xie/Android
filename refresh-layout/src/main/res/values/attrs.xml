@@ -27,7 +27,7 @@
         <enum name="MatchLayout" value="4"/><!--填满布局-->
     </attr>
 
-    <declare-styleable name="SmartRefreshLayout">
+    <declare-styleable name="RefreshLayouts">
         <attr name="srlPrimaryColor"/>
         <attr name="srlAccentColor"/>
         <attr name="srlReboundDuration" format="integer"/>
@@ -65,7 +65,7 @@
         <attr name="srlFixedFooterViewId" format="reference"/>
     </declare-styleable>
 
-    <declare-styleable name="SmartRefreshLayout_Layout">
+    <declare-styleable name="RefreshLayouts_Layout">
         <attr name="layout_srlSpinnerStyle"/>
         <attr name="layout_srlBackgroundColor" format="color"/>
     </declare-styleable>

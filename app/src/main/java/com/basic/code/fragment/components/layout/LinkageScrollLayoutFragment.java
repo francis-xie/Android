@@ -3,7 +3,7 @@ package com.basic.code.fragment.components.layout;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.basic.refresh.layout.SmartRefreshLayout;
+import com.basic.refresh.layout.RefreshLayouts;
 import com.basic.page.annotation.Page;
 import com.basic.face.utils.WidgetUtils;
 import com.basic.face.widget.banner.widget.banner.SimpleImageBanner;
@@ -33,7 +33,7 @@ public class LinkageScrollLayoutFragment extends BaseFragment {
     @BindView(R.id.lsl_container)
     LinkageScrollLayout lslContainer;
     @BindView(R.id.refreshLayout)
-    SmartRefreshLayout refreshLayout;
+    RefreshLayouts refreshLayout;
     @BindView(R.id.recycler_head)
     RecyclerView recyclerHead;
 

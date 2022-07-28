@@ -1,5 +1,5 @@
 
-package com.basic.code.fragment.components.refresh.smartrefresh.style;
+package com.basic.code.fragment.components.refresh.refreshs.style;
 
 import android.content.Context;
 import android.view.View;
@@ -8,7 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.StringRes;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.basic.refresh.layout.SmartRefreshLayout;
+import com.basic.refresh.layout.RefreshLayouts;
 import com.basic.refresh.layout.adapter.SmartViewHolder;
 import com.basic.refresh.layout.api.RefreshHeader;
 import com.basic.refresh.layout.constant.RefreshState;
@@ -34,7 +34,7 @@ public class RefreshAllStyleFragment extends BaseFragment implements SmartViewHo
     @BindView(R.id.recyclerView)
     RecyclerView mRecyclerView;
     @BindView(R.id.refreshLayout)
-    SmartRefreshLayout mRefreshLayout;
+    RefreshLayouts mRefreshLayout;
 
     /**
      * 点击

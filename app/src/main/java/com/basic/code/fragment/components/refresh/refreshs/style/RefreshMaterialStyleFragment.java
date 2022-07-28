@@ -1,5 +1,5 @@
 
-package com.basic.code.fragment.components.refresh.smartrefresh.style;
+package com.basic.code.fragment.components.refresh.refreshs.style;
 
 import android.os.Build;
 import android.view.View;
@@ -10,7 +10,7 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.basic.refresh.header.MaterialHeader;
-import com.basic.refresh.layout.SmartRefreshLayout;
+import com.basic.refresh.layout.RefreshLayouts;
 import com.basic.refresh.layout.adapter.SmartViewHolder;
 import com.basic.refresh.layout.constant.RefreshState;
 import com.basic.page.annotation.Page;
@@ -34,7 +34,7 @@ public class RefreshMaterialStyleFragment extends BaseFragment implements SmartV
 
     private TitleBar mTitleBar;
     @BindView(R.id.refreshLayout)
-    SmartRefreshLayout mRefreshLayout;
+    RefreshLayouts mRefreshLayout;
     private MaterialHeader mMaterialHeader;
 
     /**

@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.basic.refresh.layout.SmartRefreshLayout;
+import com.basic.refresh.layout.RefreshLayouts;
 import com.basic.aop.annotation.SingleClick;
 import com.basic.page.annotation.Page;
 import com.basic.face.utils.ViewUtils;
@@ -32,7 +32,7 @@ public class NewsListEditFragment extends BaseFragment {
 
 
     @BindView(R.id.refreshLayout)
-    SmartRefreshLayout refreshLayout;
+    RefreshLayouts refreshLayout;
     @BindView(R.id.recyclerView)
     RecyclerView recyclerView;
 

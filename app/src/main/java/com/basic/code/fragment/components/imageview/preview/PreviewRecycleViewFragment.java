@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.basic.refresh.layout.SmartRefreshLayout;
+import com.basic.refresh.layout.RefreshLayouts;
 import com.basic.refresh.layout.api.RefreshLayout;
 import com.basic.refresh.layout.listener.OnRefreshLoadMoreListener;
 import com.basic.aop.annotation.SingleClick;
@@ -40,7 +40,7 @@ public class PreviewRecycleViewFragment extends BaseFragment {
     @BindView(R.id.recyclerView)
     RecyclerView mRecyclerView;
     @BindView(R.id.refreshLayout)
-    SmartRefreshLayout mRefreshLayout;
+    RefreshLayouts mRefreshLayout;
 
     private GridLayoutManager mGridLayoutManager;
 

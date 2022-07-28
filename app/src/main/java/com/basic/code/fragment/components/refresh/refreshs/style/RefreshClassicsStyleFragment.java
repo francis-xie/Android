@@ -1,5 +1,5 @@
 
-package com.basic.code.fragment.components.refresh.smartrefresh.style;
+package com.basic.code.fragment.components.refresh.refreshs.style;
 
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
@@ -12,7 +12,7 @@ import androidx.annotation.StringRes;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.basic.refresh.layout.SmartRefreshLayout;
+import com.basic.refresh.layout.RefreshLayouts;
 import com.basic.refresh.layout.adapter.SmartViewHolder;
 import com.basic.refresh.layout.constant.RefreshState;
 import com.basic.refresh.layout.constant.SpinnerStyle;
@@ -44,7 +44,7 @@ public class RefreshClassicsStyleFragment extends BaseFragment implements SmartV
     @BindView(R.id.recyclerView)
     RecyclerView mRecyclerView;
     @BindView(R.id.refreshLayout)
-    SmartRefreshLayout mRefreshLayout;
+    RefreshLayouts mRefreshLayout;
 
     private ClassicsHeader mClassicsHeader;
     private Drawable mDrawableProgress;

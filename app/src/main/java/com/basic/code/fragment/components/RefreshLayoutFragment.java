@@ -1,15 +1,11 @@
 
 package com.basic.code.fragment.components;
 
+import com.basic.code.fragment.components.refresh.*;
 import com.basic.page.annotation.Page;
 import com.basic.code.R;
 import com.basic.code.base.ComponentContainerFragment;
-import com.basic.code.fragment.components.refresh.BroccoliFragment;
-import com.basic.code.fragment.components.refresh.RefreshHeadViewFragment;
-import com.basic.code.fragment.components.refresh.SmartRefreshLayoutFragment;
-import com.basic.code.fragment.components.refresh.StickyRecyclerViewFragment;
-import com.basic.code.fragment.components.refresh.SwipeRecyclerViewFragment;
-import com.basic.code.fragment.components.refresh.SwipeRefreshLayoutFragment;
+import com.basic.code.fragment.components.refresh.RefreshLayoutsFragment;
 import com.basic.code.fragment.components.refresh.sample.SampleListFragment;
 
 /**
@@ -26,7 +22,7 @@ public class RefreshLayoutFragment extends ComponentContainerFragment {
     @Override
     protected Class[] getPagesClasses() {
         return new Class[]{
-                SmartRefreshLayoutFragment.class,
+                RefreshLayoutsFragment.class,
                 SwipeRecyclerViewFragment.class,
                 SwipeRefreshLayoutFragment.class,
                 RefreshHeadViewFragment.class,

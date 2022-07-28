@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
 
-    <com.basic.refresh.layout.SmartRefreshLayout
+    <com.basic.refresh.layout.RefreshLayouts
         android:id="@+id/refreshLayout"
         app:srlAccentColor="@android:color/white"
         app:srlEnableHeaderTranslationContent="false"
@@ -32,5 +32,5 @@
             android:layout_height="wrap_content"
             android:scaleY="-1"/>
 
-    </com.basic.refresh.layout.SmartRefreshLayout>
+    </com.basic.refresh.layout.RefreshLayouts>
 </LinearLayout>

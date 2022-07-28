@@ -9,8 +9,8 @@ import android.webkit.WebView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.basic.refresh.layout.RefreshLayouts;
 import com.basic.web.widget.IWebLayout;
-import com.basic.refresh.layout.SmartRefreshLayout;
 import com.basic.code.R;
 
 /**
@@ -21,18 +21,18 @@ import com.basic.code.R;
  */
 public class WebLayout implements IWebLayout {
 
-    private final SmartRefreshLayout mSmartRefreshLayout;
+    private final RefreshLayouts mRefreshLayouts;
     private WebView mWebView;
 
     public WebLayout(Activity activity) {
-        mSmartRefreshLayout = (SmartRefreshLayout) LayoutInflater.from(activity).inflate(R.layout.fragment_pulldown_web, null);
-        mWebView = mSmartRefreshLayout.findViewById(R.id.webView);
+        mRefreshLayouts = (RefreshLayouts) LayoutInflater.from(activity).inflate(R.layout.fragment_pulldown_web, null);
+        mWebView = mRefreshLayouts.findViewById(R.id.webView);
     }
 
     @NonNull
     @Override
     public ViewGroup getLayout() {
-        return mSmartRefreshLayout;
+        return mRefreshLayouts;
     }
 
     @Nullable

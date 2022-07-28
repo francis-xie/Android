@@ -1,10 +1,10 @@
 
-package com.basic.code.fragment.components.refresh.smartrefresh.style;
+package com.basic.code.fragment.components.refresh.refreshs.style;
 
 import androidx.annotation.MainThread;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.basic.refresh.layout.SmartRefreshLayout;
+import com.basic.refresh.layout.RefreshLayouts;
 import com.basic.util.rxjava.DisposablePool;
 import com.basic.util.rxjava.RxJavaUtils;
 import com.basic.page.annotation.Page;
@@ -30,7 +30,7 @@ public class RefreshCustomStyleFragment extends BaseFragment {
     @BindView(R.id.recyclerView)
     RecyclerView mRecyclerView;
     @BindView(R.id.refreshLayout)
-    SmartRefreshLayout mRefreshLayout;
+    RefreshLayouts mRefreshLayout;
 
     private SimpleRecyclerAdapter mAdapter;
 

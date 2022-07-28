@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.basic.refresh.layout.SmartRefreshLayout
+    <com.basic.refresh.layout.RefreshLayouts
         android:id="@+id/refreshLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -36,6 +36,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-    </com.basic.refresh.layout.SmartRefreshLayout>
+    </com.basic.refresh.layout.RefreshLayouts>
 
 </LinearLayout>

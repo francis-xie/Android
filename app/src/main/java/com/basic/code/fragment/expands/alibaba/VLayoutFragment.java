@@ -14,7 +14,7 @@ import com.alibaba.android.vlayout.layout.GridLayoutHelper;
 import com.alibaba.android.vlayout.layout.LinearLayoutHelper;
 import com.alibaba.android.vlayout.layout.ScrollFixLayoutHelper;
 import com.alibaba.android.vlayout.layout.StickyLayoutHelper;
-import com.basic.refresh.layout.SmartRefreshLayout;
+import com.basic.refresh.layout.RefreshLayouts;
 import com.basic.page.annotation.Page;
 import com.basic.face.adapter.recyclerview.RecyclerViewHolder;
 import com.basic.face.adapter.simple.AdapterItem;
@@ -52,7 +52,7 @@ public class VLayoutFragment extends BaseFragment {
     @BindView(R.id.recyclerView)
     RecyclerView recyclerView;
     @BindView(R.id.refreshLayout)
-    SmartRefreshLayout refreshLayout;
+    RefreshLayouts refreshLayout;
 
     private SimpleDelegateAdapter<NewInfo> mNewsAdapter;
 

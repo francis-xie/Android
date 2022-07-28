@@ -1,9 +1,9 @@
 
-package com.basic.code.fragment.components.refresh.smartrefresh;
+package com.basic.code.fragment.components.refresh.refreshs;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.basic.refresh.layout.SmartRefreshLayout;
+import com.basic.refresh.layout.RefreshLayouts;
 import com.basic.page.annotation.Page;
 import com.basic.face.utils.ViewUtils;
 import com.basic.face.utils.WidgetUtils;
@@ -27,7 +27,7 @@ public class RefreshStatusLayoutFragment extends BaseFragment {
     @BindView(R.id.ll_stateful)
     StatefulLayout mLlStateful;
     @BindView(R.id.refreshLayout)
-    SmartRefreshLayout mRefreshLayout;
+    RefreshLayouts mRefreshLayout;
     private SimpleRecyclerAdapter mAdapter;
 
     /**

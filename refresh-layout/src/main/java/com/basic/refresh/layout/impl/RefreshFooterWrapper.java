@@ -33,8 +33,8 @@ public class RefreshFooterWrapper extends InternalAbstract implements RefreshFoo
 //            ((RefreshInternal) mWrapperView).onInitialized(proxy, height, maxDragHeight);
 //        } else {
 //            ViewGroup.LayoutParams params = mWrapperView.getLayoutParams();
-//            if (params instanceof SmartRefreshLayout.LayoutParams) {
-//                kernel.requestDrawBackgroundForFooter(((SmartRefreshLayout.LayoutParams) params).backgroundColor);
+//            if (params instanceof RefreshLayouts.LayoutParams) {
+//                kernel.requestDrawBackgroundForFooter(((RefreshLayouts.LayoutParams) params).backgroundColor);
 //            }
 //        }
 //    }

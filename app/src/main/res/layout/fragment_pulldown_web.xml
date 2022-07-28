@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.basic.refresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/refreshLayout"
-    style="@style/PullDownStyle">
+<com.basic.refresh.layout.RefreshLayouts xmlns:android="http://schemas.android.com/apk/res/android"
+                                         android:id="@+id/refreshLayout"
+                                         style="@style/PullDownStyle">
 
     <com.basic.code.base.webview.LollipopFixedWebView
         android:id="@+id/webView"
@@ -11,5 +11,5 @@
         android:overScrollMode="never"
         android:visibility="visible" />
 
-</com.basic.refresh.layout.SmartRefreshLayout>
+</com.basic.refresh.layout.RefreshLayouts>
 

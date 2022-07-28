@@ -169,17 +169,17 @@ public class AppPageConfig {
     mPages.add(new PageInfo("列表选择案例", "com.basic.code.fragment.components.refresh.sample.selection.ListSelectionFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
     mPages.add(new PageInfo("SortedList 自动数据排序刷新", "com.basic.code.fragment.components.refresh.sample.sortedlist.SortedListRefreshFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
     mPages.add(new PageInfo("下拉刷新基础用法\n"
-      + "上拉加载、下拉刷新、自动刷新和点击事件", "com.basic.code.fragment.components.refresh.smartrefresh.RefreshBasicFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
+      + "上拉加载、下拉刷新、自动刷新和点击事件", "com.basic.code.fragment.components.refresh.refreshs.RefreshBasicFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
     mPages.add(new PageInfo("刷新状态布局\n"
-      + "自动切换状态，包含出错、无网络、暂无数据等", "com.basic.code.fragment.components.refresh.smartrefresh.RefreshStatusLayoutFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
+      + "自动切换状态，包含出错、无网络、暂无数据等", "com.basic.code.fragment.components.refresh.refreshs.RefreshStatusLayoutFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
     mPages.add(new PageInfo("下拉刷新样式\n"
-      + "包含10多种下拉样式", "com.basic.code.fragment.components.refresh.smartrefresh.RefreshStyleFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
-    mPages.add(new PageInfo("样式大全", "com.basic.code.fragment.components.refresh.smartrefresh.style.RefreshAllStyleFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
-    mPages.add(new PageInfo("经典样式", "com.basic.code.fragment.components.refresh.smartrefresh.style.RefreshClassicsStyleFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
-    mPages.add(new PageInfo("自定义下拉刷新样式", "com.basic.code.fragment.components.refresh.smartrefresh.style.RefreshCustomStyleFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
-    mPages.add(new PageInfo("Material Design风格", "com.basic.code.fragment.components.refresh.smartrefresh.style.RefreshMaterialStyleFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
-    mPages.add(new PageInfo("SmartRefreshLayout\n"
-      + "Android智能下拉刷新框架", "com.basic.code.fragment.components.refresh.SmartRefreshLayoutFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
+      + "包含10多种下拉样式", "com.basic.code.fragment.components.refresh.refreshs.RefreshStyleFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
+    mPages.add(new PageInfo("样式大全", "com.basic.code.fragment.components.refresh.refreshs.style.RefreshAllStyleFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
+    mPages.add(new PageInfo("经典样式", "com.basic.code.fragment.components.refresh.refreshs.style.RefreshClassicsStyleFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
+    mPages.add(new PageInfo("自定义下拉刷新样式", "com.basic.code.fragment.components.refresh.refreshs.style.RefreshCustomStyleFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
+    mPages.add(new PageInfo("Material Design风格", "com.basic.code.fragment.components.refresh.refreshs.style.RefreshMaterialStyleFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
+    mPages.add(new PageInfo("RefreshLayouts\n"
+      + "Android智能下拉刷新框架", "com.basic.code.fragment.components.refresh.RefreshLayoutsFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
     mPages.add(new PageInfo("通过监听RecyclerView滚动来实现粘顶效果", "com.basic.code.fragment.components.refresh.sticky.StickyCustomFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
     mPages.add(new PageInfo("StickyItemDecoration\n"
       + "通过装饰实现粘顶效果", "com.basic.code.fragment.components.refresh.sticky.StickyItemDecorationFragment", "{\"\":\"\"}", CoreAnim.slide, -1));

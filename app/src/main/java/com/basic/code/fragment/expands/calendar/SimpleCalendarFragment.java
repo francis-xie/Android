@@ -9,10 +9,10 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.basic.refresh.layout.RefreshLayouts;
 import com.haibin.calendarview.Calendar;
 import com.haibin.calendarview.CalendarLayout;
 import com.haibin.calendarview.CalendarView;
-import com.basic.refresh.layout.SmartRefreshLayout;
 import com.basic.refresh.layout.api.RefreshLayout;
 import com.basic.refresh.layout.listener.OnRefreshLoadMoreListener;
 import com.basic.aop.annotation.SingleClick;
@@ -38,7 +38,7 @@ import butterknife.BindView;
 public class SimpleCalendarFragment extends BaseFragment implements CalendarView.OnCalendarSelectListener {
 
     @BindView(R.id.refreshLayout)
-    SmartRefreshLayout refreshLayout;
+    RefreshLayouts refreshLayout;
     @BindView(R.id.calendarView)
     CalendarView calendarView;
     @BindView(R.id.recycler_view)

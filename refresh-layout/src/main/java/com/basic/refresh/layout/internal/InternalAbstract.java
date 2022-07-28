@@ -9,7 +9,7 @@ import android.widget.RelativeLayout;
 import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.basic.refresh.layout.SmartRefreshLayout;
+import com.basic.refresh.layout.RefreshLayouts;
 import com.basic.refresh.layout.api.RefreshFooter;
 import com.basic.refresh.layout.api.RefreshHeader;
 import com.basic.refresh.layout.api.RefreshInternal;
@@ -91,8 +91,8 @@ public abstract class InternalAbstract extends RelativeLayout implements Refresh
         }
         if (mWrappedView != null) {
             ViewGroup.LayoutParams params = mWrappedView.getLayoutParams();
-            if (params instanceof SmartRefreshLayout.LayoutParams) {
-                mSpinnerStyle = ((SmartRefreshLayout.LayoutParams) params).spinnerStyle;
+            if (params instanceof RefreshLayouts.LayoutParams) {
+                mSpinnerStyle = ((RefreshLayouts.LayoutParams) params).spinnerStyle;
                 if (mSpinnerStyle != null) {
                     return mSpinnerStyle;
                 }
@@ -112,8 +112,8 @@ public abstract class InternalAbstract extends RelativeLayout implements Refresh
             mWrappedInternal.onInitialized(kernel, height, maxDragHeight);
         } else if (mWrappedView != null) {
             ViewGroup.LayoutParams params = mWrappedView.getLayoutParams();
-            if (params instanceof SmartRefreshLayout.LayoutParams) {
-                kernel.requestDrawBackgroundFor(this, ((SmartRefreshLayout.LayoutParams) params).backgroundColor);
+            if (params instanceof RefreshLayouts.LayoutParams) {
+                kernel.requestDrawBackgroundFor(this, ((RefreshLayouts.LayoutParams) params).backgroundColor);
             }
         }
     }
