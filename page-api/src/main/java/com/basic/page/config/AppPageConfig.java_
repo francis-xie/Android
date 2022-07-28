@@ -220,8 +220,8 @@ public class AppPageConfig {
     mPages.add(new PageInfo("状态切换", "com.basic.code.fragment.components.StateLayoutFragment", "{\"\":\"\"}", CoreAnim.slide, 2131230992));
     mPages.add(new PageInfo("EasyIndicator\n"
       + "简单的指示器", "com.basic.code.fragment.components.tabbar.EasyIndicatorFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
-    mPages.add(new PageInfo("JPTabBar\n"
-      + "一个可以显示中心按钮的TabBar", "com.basic.code.fragment.components.tabbar.JPTabBarFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
+    mPages.add(new PageInfo("TagBar\n"
+      + "一个可以显示中心按钮的TabBar", "com.basic.code.fragment.components.tabbar.TagBarFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
     mPages.add(new PageInfo("TabControlView\n"
       + "选项卡控制滑块", "com.basic.code.fragment.components.tabbar.TabControlViewFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
     mPages.add(new PageInfo("TabLayout+FragmentAdapter的缓存问题", "com.basic.code.fragment.components.tabbar.tablayout.TabLayoutCacheFragment", "{\"\":\"\"}", CoreAnim.slide, -1));

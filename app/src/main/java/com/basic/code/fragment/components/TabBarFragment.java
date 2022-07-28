@@ -1,15 +1,11 @@
 
 package com.basic.code.fragment.components;
 
+import com.basic.code.fragment.components.tabbar.*;
 import com.basic.page.annotation.Page;
 import com.basic.code.R;
 import com.basic.code.base.ComponentContainerFragment;
-import com.basic.code.fragment.components.tabbar.EasyIndicatorFragment;
-import com.basic.code.fragment.components.tabbar.JPTabBarFragment;
-import com.basic.code.fragment.components.tabbar.TabControlViewFragment;
-import com.basic.code.fragment.components.tabbar.TabLayoutFragment;
-import com.basic.code.fragment.components.tabbar.TabSegmentFragment;
-import com.basic.code.fragment.components.tabbar.VerticalTabLayoutFragment;
+import com.basic.code.fragment.components.tabbar.TagBarFragment;
 
 /**
  
@@ -26,7 +22,7 @@ public class TabBarFragment extends ComponentContainerFragment {
                 TabLayoutFragment.class,
                 VerticalTabLayoutFragment.class,
                 TabControlViewFragment.class,
-                JPTabBarFragment.class
+                TagBarFragment.class
         };
     }
 }

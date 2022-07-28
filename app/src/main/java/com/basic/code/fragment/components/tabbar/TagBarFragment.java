@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import com.basic.tag.JPTabBar;
+import com.basic.tag.TagBar;
 import com.basic.tag.OnTabSelectListener;
 import com.basic.page.annotation.Page;
 import com.basic.face.FACE;
@@ -26,13 +26,13 @@ import butterknife.BindView;
 
  * @since 2019/4/14 下午8:07
  */
-@Page(name = "JPTabBar\n一个可以显示中心按钮的TabBar")
-public class JPTabBarFragment extends BaseFragment implements OnTabSelectListener {
+@Page(name = "TagBar\n一个可以显示中心按钮的TabBar")
+public class TagBarFragment extends BaseFragment implements OnTabSelectListener {
 
     @BindView(R.id.view_pager)
     ViewPager mViewPager;
     @BindView(R.id.tabbar)
-    JPTabBar mTabbar;
+    TagBar mTabbar;
 
     private int[] mTitles = {R.string.tab1, R.string.tab2, R.string.tab3, R.string.tab4};
     private int[] mSelectIcons = {R.drawable.nav_01_pre, R.drawable.nav_02_pre, R.drawable.nav_04_pre, R.drawable.nav_05_pre};

@@ -15,7 +15,7 @@
             android:layout_height="match_parent"
             android:layout_marginBottom="45dp" />
 
-        <com.basic.tag.JPTabBar
+        <com.basic.tag.TagBar
             android:id="@+id/tabbar"
             android:layout_width="match_parent"
             android:layout_height="45dp"

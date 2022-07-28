@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="JPTabBar">
+    <declare-styleable name="TagBar">
         <attr name="tab_normalColor" format="reference|color" />
         <attr name="tab_selectColor" format="reference|color" />
         <attr name="tab_selectBg" format="reference|color" />

@@ -25,7 +25,7 @@ import com.basic.tag.badgeview.DragDismissDelegate;
  * @author XUE
  * @since 2019/3/25 17:18
  */
-public class JPTabItem extends BadgeRelativeLayout {
+public class TagItem extends BadgeRelativeLayout {
     //颜色渐变时间
     private static final int FILTER_DURATION = 10;
     private Context mContext;
@@ -77,7 +77,7 @@ public class JPTabItem extends BadgeRelativeLayout {
     // 徽章被用户拖出去的回调事件
     private BadgeDismissListener mDismissListener;
 
-    public JPTabItem(Context context) {
+    public TagItem(Context context) {
         super(context);
     }
 
@@ -461,8 +461,8 @@ public class JPTabItem extends BadgeRelativeLayout {
             return this;
         }
 
-        JPTabItem build() {
-            JPTabItem item = new JPTabItem(context);
+        TagItem build() {
+            TagItem item = new TagItem(context);
             item.mTextSize = textSize;
             item.mIconPadding = iconPadding;
             item.mTitle = title;
