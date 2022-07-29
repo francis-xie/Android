@@ -9,9 +9,6 @@ import java.io.UnsupportedEncodingException;
  * <p>This class implements section <cite>6.8. Base64 Content-Transfer-Encoding</cite>
  * from RFC 2045 <cite>Multipurpose Internet Mail Extensions (MIME) Part One: Format of Internet Message Bodies</cite> by Freed and
  * Borenstein.</p>
- * @version $Id: Base64.java,v 1.20 2004/05/24 00:21:24 ggregory Exp $
- * @see <a href="http://www.ietf.org/rfc/rfc2045.txt">RFC 2045</a>
- * @since 1.0-dev
  */
 public class Base64 implements BinaryEncoder, BinaryDecoder {
 

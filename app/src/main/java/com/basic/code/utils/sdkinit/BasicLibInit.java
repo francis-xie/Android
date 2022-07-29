@@ -11,7 +11,6 @@ import com.basic.router.launcher.Router;
 import com.basic.code.MyApp;
 import com.basic.code.base.BaseActivity;
 import com.basic.code.base.db.InternalDataBase;
-import com.basic.code.utils.LocationService;
 import com.basic.code.utils.TokenUtils;
 import com.basic.code.utils.XToastUtils;
 import com.basic.tools.Util;
@@ -20,9 +19,9 @@ import com.basic.tools.common.StringUtils;
 /**
  * 系列基础库的初始化
  */
-public final class XBasicLibInit {
+public final class BasicLibInit {
 
-    private XBasicLibInit() {
+    private BasicLibInit() {
         throw new UnsupportedOperationException("u can't instantiate me...");
     }
 
@@ -30,11 +29,23 @@ public final class XBasicLibInit {
      * 初始化基础库
      */
     public static void init(Application application) {
+        initLog(application);
         initUtils(application);
         initPage(application);
         initAOP(application);
         initRouter(application);
         initDB(application);
+    }
+
+    /**
+     * 初始化工具类
+     *
+     * @param application 应用上下文
+     */
+    private static void initLog(Application application) {
+        /*XLog.init(application);
+        Util.debug(MyApp.isDebug());
+        TokenUtils.init(application);*/
     }
 
     /**

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="log_default_colorPrimaryDark">#299EE3</color>
+    <color name="log_default_Toolbar">#299EE3</color>
+    <color name="log_default_ToolbarText">#ffffff</color>
+    <color name="log_default_ToolbarShareText">#ffffff</color>
+    <color name="log_default_ContentBackground">#ffffff</color>
+    <color name="log_default_LabText">#cbcbcb</color>
+    <color name="log_default_DescText">#333333</color>
+
+    <color name="log_light_colorPrimaryDark">#af0839</color>
+    <color name="log_light_Toolbar">#e71e62</color>
+    <color name="log_light_ToolbarText">#ffffff</color>
+    <color name="log_light_ToolbarShareText">#ffffff</color>
+    <color name="log_light_ContentBackground">#ffffff</color>
+    <color name="log_light_LabText">#cbcbcb</color>
+    <color name="log_light_DescText">#e71e62</color>
+
+    <color name="log_dark_colorPrimaryDark">#465a64</color>
+    <color name="log_dark_Toolbar">#617d8a</color>
+    <color name="log_dark_ToolbarText">#ffffff</color>
+    <color name="log_dark_ToolbarShareText">#ffffff</color>
+    <color name="log_dark_ContentBackground">#ffffff</color>
+    <color name="log_dark_LabText">#000000</color>
+    <color name="log_dark_DescText">#617d8a</color>
+
+</resources>

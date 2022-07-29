@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:ignore="ResourceName">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="?attr/log_crash_toolbar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/log_crash_title"
+            android:textColor="?attr/log_crash_toolbar_text"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="13dp"
+            android:text="@string/log_crash_share"
+            android:textColor="?attr/log_crash_toolbar_share_text"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/log_crash_content_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/log_crash_crash_info"
+                android:textColor="?attr/log_crash_lab_text"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/log_crash_desc_text"
+                android:textSize="17sp"
+                tools:text="TextView" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#efefef" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/log_crash_packet_name"
+                    android:textColor="?attr/log_crash_lab_text"
+                    android:textSize="@dimen/log_crash_text_item_size" />
+
+                <TextView
+                    android:id="@+id/tv_packageName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="?attr/log_crash_desc_text"
+                    android:textSize="@dimen/log_crash_text_item_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/log_crash_class_name"
+                    android:textColor="?attr/log_crash_lab_text"
+                    android:textSize="@dimen/log_crash_text_item_size" />
+
+                <TextView
+                    android:id="@+id/tv_className"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="?attr/log_crash_desc_text"
+                    android:textSize="@dimen/log_crash_text_item_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/log_crash_method_name"
+                    android:textColor="?attr/log_crash_lab_text"
+                    android:textSize="@dimen/log_crash_text_item_size" />
+
+                <TextView
+                    android:id="@+id/tv_methodName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="?attr/log_crash_desc_text"
+                    android:textSize="@dimen/log_crash_text_item_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/log_crash_line_number"
+                    android:textColor="?attr/log_crash_lab_text"
+                    android:textSize="@dimen/log_crash_text_item_size" />
+
+                <TextView
+                    android:id="@+id/tv_lineNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="?attr/log_crash_desc_text"
+                    android:textSize="@dimen/log_crash_text_item_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/log_crash_exception_type"
+                    android:textColor="?attr/log_crash_lab_text"
+                    android:textSize="@dimen/log_crash_text_item_size" />
+
+                <TextView
+                    android:id="@+id/tv_exceptionType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="?attr/log_crash_desc_text"
+                    android:textSize="@dimen/log_crash_text_item_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/log_crash_time"
+                    android:textColor="?attr/log_crash_lab_text"
+                    android:textSize="@dimen/log_crash_text_item_size" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="?attr/log_crash_desc_text"
+                    android:textSize="@dimen/log_crash_text_item_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#efefef" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/log_crash_model"
+                    android:textColor="?attr/log_crash_lab_text"
+                    android:textSize="@dimen/log_crash_text_item_size" />
+
+                <TextView
+                    android:id="@+id/tv_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="?attr/log_crash_desc_text"
+                    android:textSize="@dimen/log_crash_text_item_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/log_crash_brand"
+                    android:textColor="?attr/log_crash_lab_text"
+                    android:textSize="@dimen/log_crash_text_item_size" />
+
+                <TextView
+                    android:id="@+id/tv_brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="?attr/log_crash_desc_text"
+                    android:textSize="@dimen/log_crash_text_item_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/log_crash_version"
+                    android:textColor="?attr/log_crash_lab_text"
+                    android:textSize="@dimen/log_crash_text_item_size" />
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="?attr/log_crash_desc_text"
+                    android:textSize="@dimen/log_crash_text_item_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#efefef" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/log_crash_all_info"
+                android:textColor="?attr/log_crash_lab_text"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_fullException"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/log_crash_desc_text"
+                android:textSize="@dimen/log_crash_text_item_size" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

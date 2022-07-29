@@ -11,9 +11,8 @@ import com.basic.job.core.ThreadType;
 import com.basic.face.FACE;
 import com.basic.code.MyApp;
 import com.basic.code.utils.SettingSPUtils;
-import com.basic.code.utils.sdkinit.XBasicLibInit;
+import com.basic.code.utils.sdkinit.BasicLibInit;
 import com.basic.code.utils.sdkinit.UpdateInit;
-import com.basic.code.widget.iconfont.FACEIconFont;
 
 /**
  * 主要初始化任务，放在第一位执行
@@ -34,7 +33,7 @@ public class MainInitTask extends SimpleTaskStep {
     @Override
     public void doTask() throws Exception {
         // 初始化基础库
-        XBasicLibInit.init(mApplication);
+        BasicLibInit.init(mApplication);
         // 初始化UI框架
         initUi();
         // Update版本更新

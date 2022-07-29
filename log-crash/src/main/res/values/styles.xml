@@ -1,0 +1,36 @@
+<resources>
+
+    <style name="CrashTheme.Default" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/log_default_colorPrimaryDark</item>
+        <item name="log_crash_toolbar">@color/log_default_Toolbar</item>
+        <item name="log_crash_toolbar_text">@color/log_default_ToolbarText</item>
+        <item name="log_crash_toolbar_share_text">@color/log_default_ToolbarShareText</item>
+        <item name="log_crash_content_background">@color/log_default_ContentBackground</item>
+        <item name="log_crash_lab_text">@color/log_default_LabText</item>
+        <item name="log_crash_desc_text">@color/log_default_DescText</item>
+    </style>
+
+    <style name="CrashTheme.Light" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/log_light_colorPrimaryDark</item>
+        <item name="log_crash_toolbar">@color/log_light_Toolbar</item>
+        <item name="log_crash_toolbar_text">@color/log_light_ToolbarText</item>
+        <item name="log_crash_toolbar_share_text">@color/log_light_ToolbarShareText</item>
+        <item name="log_crash_content_background">@color/log_light_ContentBackground</item>
+        <item name="log_crash_lab_text">@color/log_light_LabText</item>
+        <item name="log_crash_desc_text">@color/log_light_DescText</item>
+    </style>
+
+    <style name="CrashTheme.Dark" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/log_dark_colorPrimaryDark</item>
+        <item name="log_crash_toolbar">@color/log_dark_Toolbar</item>
+        <item name="log_crash_toolbar_text">@color/log_dark_ToolbarText</item>
+        <item name="log_crash_toolbar_share_text">@color/log_dark_ToolbarShareText</item>
+        <item name="log_crash_content_background">@color/log_dark_ContentBackground</item>
+        <item name="log_crash_lab_text">@color/log_dark_LabText</item>
+        <item name="log_crash_desc_text">@color/log_dark_DescText</item>
+    </style>
+
+</resources>

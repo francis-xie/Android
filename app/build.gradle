@@ -104,7 +104,6 @@ dependencies {
 
     // FACE框架
     implementation project(':face-api')
-
     // 工具类
     implementation project(':tools-core')
     implementation project(':tools-api')
@@ -116,6 +115,9 @@ dependencies {
     // Page页面框架
     implementation project(':page-api')
     annotationProcessor project(':app-compiler')
+    // log
+    implementation project(':log-core')
+    implementation project(':log-crash')
     // ButterKnife
     implementation deps.butterknife.runtime
     annotationProcessor deps.butterknife.compiler
