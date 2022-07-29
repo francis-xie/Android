@@ -1,7 +1,6 @@
-/**
- * Shared file between builds so that they can all use the same dependencies and
- * maven repositories.
- **/
+import java.util.regex.Matcher
+import java.util.regex.Pattern
+
 ext.deps = [:]
 def versions = [:]
 versions.android_gradle_plugin = "4.1.1"
@@ -24,7 +23,7 @@ versions.hamcrest = "1.3"
 versions.rxandroid = "2.1.1"
 versions.rxbinding = "2.2.0"
 versions.butterknife = "10.1.0"
-versions.runner = "1.0.2"
+versions.runner = "1.2.0"
 versions.gson = "2.8.5"
 versions.okhttp3 = "3.12.12"
 versions.leakcanary = "2.6"
@@ -48,34 +47,6 @@ androidx.recyclerview = "androidx.recyclerview:recyclerview:$versions.recyclervi
 androidx.design = "com.google.android.material:material:$versions.material"
 androidx.multidex = 'androidx.multidex:multidex:2.0.1'
 deps.androidx = androidx
-
-def butterknife = [:]
-butterknife.runtime = "com.jakewharton:butterknife:$versions.butterknife"
-butterknife.compiler = "com.jakewharton:butterknife-compiler:$versions.butterknife"
-
-deps.butterknife = butterknife
-
-def espresso = [:]
-espresso.core = "androidx.test.espresso:espresso-core:$versions.espresso"
-espresso.contrib = "androidx.test.espresso:espresso-contrib:$versions.espresso"
-espresso.intents = "androidx.test.espresso:espresso-intents:$versions.espresso"
-deps.espresso = espresso
-
-deps.android_gradle_plugin = "com.android.tools.build:gradle:$versions.android_gradle_plugin"
-deps.android_maven_gradle_plugin = "com.github.dcendents:android-maven-gradle-plugin:$versions.android_maven_gradle_plugin"
-deps.gradle_bintray_plugin = "com.jfrog.bintray.gradle:gradle-bintray-plugin:$versions.gradle_bintray_plugin"
-deps.glide = "com.github.bumptech.glide:glide:$versions.glide"
-deps.constraint_layout = "com.android.support.constraint:constraint-layout:$versions.constraint_layout"
-deps.junit = "junit:junit:$versions.junit"
-deps.runner = 'androidx.test:runner:1.1.0'
-deps.rxjava2 = "io.reactivex.rxjava2:rxjava:$versions.rxjava2"
-deps.rx_android = "io.reactivex.rxjava2:rxandroid:$versions.rx_android"
-deps.hamcrest = "org.hamcrest:hamcrest-all:$versions.hamcrest"
-deps.rxandroid = "io.reactivex.rxjava2:rxandroid:$versions.rxandroid"
-deps.rxbinding = "com.jakewharton.rxbinding2:rxbinding:$versions.rxbinding"
-deps.gson = "com.google.code.gson:gson:$versions.gson"
-deps.okhttp3 = "com.squareup.okhttp3:okhttp:$versions.okhttp3"
-deps.leakcanary = "com.squareup.leakcanary:leakcanary-android:$versions.leakcanary"
 
 def booster = [:]
 booster.gradle_plugin = "com.didiglobal.booster:booster-gradle-plugin:$versions.booster"
@@ -109,6 +80,34 @@ booster.transform_toast = "com.didiglobal.booster:booster-transform-toast:$versi
 booster.transform_activity_thread = "com.didiglobal.booster:booster-transform-activity-thread:$versions.booster"
 deps.booster = booster
 
+def butterknife = [:]
+butterknife.runtime = "com.jakewharton:butterknife:$versions.butterknife"
+butterknife.compiler = "com.jakewharton:butterknife-compiler:$versions.butterknife"
+
+deps.butterknife = butterknife
+
+def espresso = [:]
+espresso.core = "androidx.test.espresso:espresso-core:$versions.espresso"
+espresso.contrib = "androidx.test.espresso:espresso-contrib:$versions.espresso"
+espresso.intents = "androidx.test.espresso:espresso-intents:$versions.espresso"
+deps.espresso = espresso
+
+deps.android_gradle_plugin = "com.android.tools.build:gradle:$versions.android_gradle_plugin"
+deps.android_maven_gradle_plugin = "com.github.dcendents:android-maven-gradle-plugin:$versions.android_maven_gradle_plugin"
+deps.gradle_bintray_plugin = "com.jfrog.bintray.gradle:gradle-bintray-plugin:$versions.gradle_bintray_plugin"
+deps.glide = "com.github.bumptech.glide:glide:$versions.glide"
+deps.constraint_layout = "androidx.constraint:constraint-layout:$versions.constraint_layout"
+deps.junit = "junit:junit:$versions.junit"
+deps.runner = "androidx.test:runner:$versions.runner"
+deps.rxjava2 = "io.reactivex.rxjava2:rxjava:$versions.rxjava2"
+deps.rx_android = "io.reactivex.rxjava2:rxandroid:$versions.rx_android"
+deps.hamcrest = "org.hamcrest:hamcrest-all:$versions.hamcrest"
+deps.rxandroid = "io.reactivex.rxjava2:rxandroid:$versions.rxandroid"
+deps.rxbinding = "com.jakewharton.rxbinding2:rxbinding:$versions.rxbinding"
+deps.gson = "com.google.code.gson:gson:$versions.gson"
+deps.okhttp3 = "com.squareup.okhttp3:okhttp:$versions.okhttp3"
+deps.leakcanary = "com.squareup.leakcanary:leakcanary-android:$versions.leakcanary"
+
 ext.deps = deps
 
 def build_versions = [:]
@@ -119,11 +118,39 @@ ext.build_versions = build_versions
 
 def app_release = [:]
 app_release.storeFile = "../keystores/android.keystore"
-app_release.storePassword = "zhiqiang"
+app_release.storePassword = "987654123"
 app_release.keyAlias = "android.keystore"
-app_release.keyPassword = "zhiqiang"
+app_release.keyPassword = "987654123"
 
 ext.app_release = app_release
+
+/**
+ * @return 是否为release
+ */
+def isRelease() {
+    Gradle gradle = getGradle()
+    String tskReqStr = gradle.getStartParameter().getTaskRequests().toString()
+
+    Pattern pattern
+    if (tskReqStr.contains("assemble")) {
+        println tskReqStr
+        pattern = Pattern.compile("assemble(\\w*)(Release|Debug)")
+    } else {
+        pattern = Pattern.compile("generate(\\w*)(Release|Debug)")
+    }
+    Matcher matcher = pattern.matcher(tskReqStr)
+
+    if (matcher.find()) {
+        String task = matcher.group(0).toLowerCase()
+        println("[BuildType] Current task: " + task)
+        return task.contains("release")
+    } else {
+        println "[BuildType] NO MATCH FOUND"
+        return true
+    }
+}
+
+ext.isRelease = this.&isRelease
 
 //默认添加代码仓库路径
 static def addRepos(RepositoryHandler handler) {
@@ -140,7 +167,6 @@ static def addRepos(RepositoryHandler handler) {
     handler.maven { url 'https://oss.sonatype.org/content/repositories/public' }
     //Add the Local repository
     handler.maven { url 'LocalRepository' }
-    //handler.maven { url 'repo-local' }
     handler.google()
     handler.mavenCentral()
     handler.jcenter()
@@ -148,3 +174,14 @@ static def addRepos(RepositoryHandler handler) {
 
 ext.addRepos = this.&addRepos
 
+
+//自动添加AOP和Router插件
+project.buildscript.configurations.each { configuration ->
+    def dependencies = getProject().dependencies
+    if (configuration.name == "classpath") {
+        //AOP插件
+        configuration.dependencies.add(dependencies.create("com.github.zhiqiang-h.AndroidGradle:aop-plugin:1.0.0"))
+        //Router插件
+        configuration.dependencies.add(dependencies.create("com.github.zhiqiang-h.AndroidGradle:router-plugin:1.0.0"))
+    }
+}
