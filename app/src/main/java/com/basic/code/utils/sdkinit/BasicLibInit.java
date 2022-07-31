@@ -6,6 +6,10 @@ import android.app.Application;
 import com.basic.aop.AOP;
 import com.basic.dbms.FACEDataBaseRepository;
 import com.basic.dbms.logs.DBLog;
+import com.basic.log.Log;
+import com.basic.log.annotation.LogLevel;
+import com.basic.log.logger.LoggerFactory;
+import com.basic.log.strategy.log.DiskLogStrategy;
 import com.basic.page.PageConfig;
 import com.basic.router.launcher.Router;
 import com.basic.code.MyApp;
@@ -43,9 +47,20 @@ public final class BasicLibInit {
      * @param application 应用上下文
      */
     private static void initLog(Application application) {
-        /*XLog.init(application);
-        Util.debug(MyApp.isDebug());
-        TokenUtils.init(application);*/
+        Log.init(application);
+
+        DiskLogStrategy diskLogStrategy = LoggerFactory.getDiskLogStrategy(
+          "logs", //日志存储的目录名（相对路径）
+          "log",  //生成日志的前缀名
+          LogLevel.ERROR, LogLevel.DEBUG //日志记录的等级
+        );
+
+        //构建磁盘打印
+        LoggerFactory.getSimpleDiskLogger(
+          "DiskLogger", //Log的标示名
+          diskLogStrategy, //磁盘打印的策略
+          0  //方法的偏移（默认是0，可根据自己的需要设定）
+        );
     }
 
     /**

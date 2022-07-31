@@ -221,6 +221,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name="com.basic.log.crash.ui.CrashActivity" />
+        <receiver android:name="com.basic.log.crash.StartAppReceiver"/>
     </application>
 
 </manifest>
