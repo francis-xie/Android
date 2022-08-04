@@ -10,7 +10,7 @@ import com.basic.face.utils.WidgetUtils;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
 import com.basic.code.fragment.components.tabbar.tabsegment.MultiPage;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import butterknife.BindView;
 
@@ -56,7 +56,7 @@ public class TabLayoutSimpleFragment extends BaseFragment implements TabLayout.O
 
     @Override
     public void onTabSelected(TabLayout.Tab tab) {
-        XToastUtils.toast("选中了:" + tab.getText());
+        ToastUtils.toast("选中了:" + tab.getText());
     }
 
     @Override

@@ -10,7 +10,7 @@ import com.basic.face.widget.dialog.materialdialog.simplelist.MaterialSimpleList
 import com.basic.face.widget.dialog.materialdialog.simplelist.MaterialSimpleListItem;
 import com.basic.code.R;
 import com.basic.code.base.BaseSimpleListFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -139,11 +139,11 @@ public class MaterialDialogFragment extends BaseSimpleListFragment {
                         getString(R.string.hint_please_input_password),
                         "",
                         false,
-                        ((dialog, input) -> XToastUtils.toast(input.toString())))
+                        ((dialog, input) -> ToastUtils.toast(input.toString())))
                 .inputRange(3, 5)
                 .positiveText(R.string.lab_continue)
                 .negativeText(R.string.lab_change)
-                .onPositive((dialog, which) -> XToastUtils.toast("你输入了:" + dialog.getInputEditText().getText().toString()))
+                .onPositive((dialog, which) -> ToastUtils.toast("你输入了:" + dialog.getInputEditText().getText().toString()))
                 .cancelable(false)
                 .show();
     }
@@ -155,7 +155,7 @@ public class MaterialDialogFragment extends BaseSimpleListFragment {
         new MaterialDialog.Builder(getContext())
                 .title(R.string.tip_options)
                 .items(R.array.menu_values)
-                .itemsCallback((dialog, itemView, position, text) -> XToastUtils.toast(position + ": " + text))
+                .itemsCallback((dialog, itemView, position, text) -> ToastUtils.toast(position + ": " + text))
                 .show();
     }
 
@@ -169,7 +169,7 @@ public class MaterialDialogFragment extends BaseSimpleListFragment {
                 .itemsCallbackSingleChoice(
                         0,
                         (dialog, itemView, which, text) -> {
-                            XToastUtils.toast(which + ": " + text);
+                            ToastUtils.toast(which + ": " + text);
                             return true;
                         })
                 .positiveText(R.string.lab_choice)
@@ -191,7 +191,7 @@ public class MaterialDialogFragment extends BaseSimpleListFragment {
                             for (int i = 0; i < which.length; i ++){
                                 sb.append(which[i]).append(":").append(text[i]).append("\n");
                             }
-                            XToastUtils.toast(sb.toString());
+                            ToastUtils.toast(sb.toString());
                             return true;
                         })
                 .positiveText(R.string.lab_choice)
@@ -284,7 +284,7 @@ public class MaterialDialogFragment extends BaseSimpleListFragment {
                 .iconPaddingDp(8)
                 .build());
         final MaterialSimpleListAdapter adapter = new MaterialSimpleListAdapter(list)
-                .setOnItemClickListener((dialog, index, item) -> XToastUtils.toast(item.getContent().toString()));
+                .setOnItemClickListener((dialog, index, item) -> ToastUtils.toast(item.getContent().toString()));
         new MaterialDialog.Builder(getContext()).adapter(adapter, null).show();
     }
 

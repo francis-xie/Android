@@ -18,7 +18,7 @@ import com.basic.face.widget.actionbar.TitleBar;
 import com.basic.face.widget.tabbar.TabSegment;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -130,22 +130,22 @@ public class TabSegmentScrollableModeFragment extends BaseFragment {
         mTabSegment.addOnTabSelectedListener(new TabSegment.OnTabSelectedListener() {
             @Override
             public void onTabSelected(int index) {
-                XToastUtils.toast("select " + pages[index]);
+                ToastUtils.toast("select " + pages[index]);
             }
 
             @Override
             public void onTabUnselected(int index) {
-                XToastUtils.toast("unSelect " + pages[index]);
+                ToastUtils.toast("unSelect " + pages[index]);
             }
 
             @Override
             public void onTabReselected(int index) {
-                XToastUtils.toast("reSelect " + pages[index]);
+                ToastUtils.toast("reSelect " + pages[index]);
             }
 
             @Override
             public void onDoubleTap(int index) {
-                XToastUtils.toast("double tap " + pages[index]);
+                ToastUtils.toast("double tap " + pages[index]);
             }
         });
     }

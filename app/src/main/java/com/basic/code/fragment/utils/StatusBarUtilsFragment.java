@@ -11,7 +11,7 @@ import com.basic.face.widget.grouplist.FACEGroupListView;
 import com.basic.code.R;
 import com.basic.code.activity.TranslucentActivity;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.tools.app.ActivityUtils;
 
 import butterknife.BindView;
@@ -52,12 +52,12 @@ public class StatusBarUtilsFragment extends BaseFragment {
 
         FACEGroupListView.newSection(getContext())
                 .setDescription("不同机型下状态栏高度可能略有差异，并不是固定值，可以通过这个方法获取实际高度")
-                .addItemView(groupListView.createItemView("获取状态栏的实际高度"), v -> XToastUtils.toast("状态栏的实际高度：" + StatusBarUtils.getStatusBarHeight(getContext())))
+                .addItemView(groupListView.createItemView("获取状态栏的实际高度"), v -> ToastUtils.toast("状态栏的实际高度：" + StatusBarUtils.getStatusBarHeight(getContext())))
                 .addTo(groupListView);
 
 
         FACEGroupListView.newSection(getContext())
-                .addItemView(groupListView.createItemView("获取底部导航条的实际高度"), v -> XToastUtils.toast("导航条的高度：" + StatusBarUtils.getNavigationBarHeight(getContext())))
+                .addItemView(groupListView.createItemView("获取底部导航条的实际高度"), v -> ToastUtils.toast("导航条的高度：" + StatusBarUtils.getNavigationBarHeight(getContext())))
                 .addItemView(groupListView.createItemView("设置底部导航条的颜色"), v -> StatusBarUtils.setNavigationBarColor(getActivity(), ColorUtils.getRandomColor()))
                 .addTo(groupListView);
 

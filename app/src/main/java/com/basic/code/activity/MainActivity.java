@@ -36,7 +36,7 @@ import com.basic.code.fragment.other.SettingFragment;
 import com.basic.code.utils.SettingSPUtils;
 import com.basic.code.utils.TokenUtils;
 import com.basic.code.utils.Utils;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.code.widget.GuideTipsDialog;
 import com.basic.tools.common.ClickUtils;
 import com.basic.tools.system.DeviceUtils;
@@ -309,7 +309,7 @@ public class MainActivity extends BaseActivity implements DrawerAdapter.OnItemSe
      */
     @Override
     public void onRetry() {
-        XToastUtils.toast("再按一次退出程序");
+        ToastUtils.toast("再按一次退出程序");
     }
 
     /**

@@ -20,7 +20,7 @@ import com.basic.face.widget.spinner.materialspinner.MaterialSpinner;
 import com.basic.face.widget.textview.supertextview.SuperButton;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.code.widget.EditSpinnerDialog;
 
 import java.util.ArrayList;
@@ -82,7 +82,7 @@ public class SpinnerStyleFragment extends BaseFragment {
         mMaterialSpinnerCustom.setItems(list);
         mMaterialSpinnerCustom.setSelectedItem(list.get(1));
 
-        mMaterialSpinnerOne.setOnNoMoreChoiceListener(spinner -> XToastUtils.toast("没有更多的选项！"));
+        mMaterialSpinnerOne.setOnNoMoreChoiceListener(spinner -> ToastUtils.toast("没有更多的选项！"));
 
         //注意自定义实体，需要重写对象的toString方法
         mEditSpinner1.setAdapter(new EditSpinnerAdapter<>(list)

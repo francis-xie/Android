@@ -33,7 +33,7 @@ import com.basic.aop.annotation.Safe;
 import com.basic.aop.annotation.SingleClick;
 import com.basic.code.R;
 import com.basic.code.utils.Utils;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.tools.common.StringUtils;
 
 import java.util.Set;
@@ -139,7 +139,7 @@ public class CameraSeeActivity extends AppCompatActivity implements
                     throw new RuntimeException("Error on requesting camera permission.");
                 }
                 if (grantResults[0] != PackageManager.PERMISSION_GRANTED) {
-                    XToastUtils.toast(R.string.camera_permission_not_granted);
+                    ToastUtils.toast(R.string.camera_permission_not_granted);
                 }
                 // No need to start camera here; it is handled by onResume
                 break;
@@ -180,7 +180,7 @@ public class CameraSeeActivity extends AppCompatActivity implements
                         mCameraSee.setFacing(facing == CameraSee.FACING_FRONT ? CameraSee.FACING_BACK : CameraSee.FACING_FRONT);
                     }
                 } else {
-                    XToastUtils.error("当前设备不支持切换摄像头！");
+                    ToastUtils.error("当前设备不支持切换摄像头！");
                 }
                 return true;
             default:
@@ -192,7 +192,7 @@ public class CameraSeeActivity extends AppCompatActivity implements
     @Override
     public void onAspectRatioSelected(@NonNull AspectRatio ratio) {
         if (mCameraSee != null) {
-            XToastUtils.toast(ratio.toString());
+            ToastUtils.toast(ratio.toString());
             mCameraSee.setAspectRatio(ratio);
         }
     }
@@ -223,7 +223,7 @@ public class CameraSeeActivity extends AppCompatActivity implements
         if (!StringUtils.isEmpty(picPath)) {
             PictureCropActivity.open(this, true, picPath);
         } else {
-            XToastUtils.error("图片保存失败！");
+            ToastUtils.error("图片保存失败！");
         }
     }
 
@@ -319,7 +319,7 @@ public class CameraSeeActivity extends AppCompatActivity implements
                                         permissions, args.getInt(ARG_REQUEST_CODE));
                             })
                     .setNegativeButton(android.R.string.cancel,
-                            (dialog, which) -> XToastUtils.toast(args.getInt(ARG_NOT_GRANTED_MESSAGE)))
+                            (dialog, which) -> ToastUtils.toast(args.getInt(ARG_NOT_GRANTED_MESSAGE)))
                     .create();
         }
 

@@ -13,7 +13,7 @@ import com.basic.code.R;
 import com.basic.code.adapter.FlexboxLayoutAdapter;
 import com.basic.code.base.BaseFragment;
 import com.basic.code.utils.Utils;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.tools.common.StringUtils;
 
 import butterknife.BindView;
@@ -78,23 +78,23 @@ public class FlexboxLayoutFragment extends BaseFragment {
 
     @Override
     protected void initListeners() {
-        mAdapter1.setOnItemClickListener((itemView, item, position) -> XToastUtils.toast("点击了：" + item));
+        mAdapter1.setOnItemClickListener((itemView, item, position) -> ToastUtils.toast("点击了：" + item));
 
         mAdapter2.setOnItemClickListener((itemView, item, position) -> {
             if (mAdapter2.select(position)) {
-                XToastUtils.toast("选中的内容：" + mAdapter2.getSelectContent());
+                ToastUtils.toast("选中的内容：" + mAdapter2.getSelectContent());
             }
         });
 
         mAdapter3.setOnItemClickListener((itemView, item, position) -> {
             if (mAdapter3.select(position)) {
-                XToastUtils.toast("选中的内容：" + mAdapter3.getSelectContent());
+                ToastUtils.toast("选中的内容：" + mAdapter3.getSelectContent());
             }
         });
 
         mAdapter4.setOnItemClickListener((itemView, item, position) -> {
             mAdapter4.select(position);
-            XToastUtils.toast("选中的内容：" + StringUtils.listToString(mAdapter4.getMultiContent(), ","));
+            ToastUtils.toast("选中的内容：" + StringUtils.listToString(mAdapter4.getMultiContent(), ","));
         });
     }
 }

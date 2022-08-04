@@ -9,7 +9,7 @@ import com.basic.page.annotation.Page;
 import com.basic.face.utils.ViewUtils;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -80,13 +80,13 @@ public class ViewPaddingFragment extends BaseFragment {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.iv_1:
-                XToastUtils.toast("点击图片1");
+                ToastUtils.toast("点击图片1");
                 break;
             case R.id.iv_2:
-                XToastUtils.toast("点击图片2");
+                ToastUtils.toast("点击图片2");
                 break;
             case R.id.iv_3:
-                XToastUtils.toast("点击图片3");
+                ToastUtils.toast("点击图片3");
                 break;
             default:
                 break;

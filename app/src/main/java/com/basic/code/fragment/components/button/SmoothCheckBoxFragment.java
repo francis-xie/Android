@@ -5,7 +5,7 @@ import com.basic.page.annotation.Page;
 import com.basic.face.widget.button.SmoothCheckBox;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import butterknife.BindView;
 
@@ -31,6 +31,6 @@ public class SmoothCheckBoxFragment extends BaseFragment implements SmoothCheckB
 
     @Override
     public void onCheckedChanged(SmoothCheckBox checkBox, boolean isChecked) {
-        XToastUtils.toast("isChecked：" + isChecked);
+        ToastUtils.toast("isChecked：" + isChecked);
     }
 }

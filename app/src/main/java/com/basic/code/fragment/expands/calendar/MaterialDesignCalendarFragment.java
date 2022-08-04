@@ -13,7 +13,7 @@ import com.basic.face.utils.DensityUtils;
 import com.basic.face.utils.ThemeUtils;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import java.util.Date;
 
@@ -67,7 +67,7 @@ public class MaterialDesignCalendarFragment extends BaseFragment {
             return convertView;
         });
 
-        calendarDateView.setOnCalendarSelectedListener((view, postion, calendarDate) -> XToastUtils.toast("选中:" + calendarDate.formatDate()));
+        calendarDateView.setOnCalendarSelectedListener((view, postion, calendarDate) -> ToastUtils.toast("选中:" + calendarDate.formatDate()));
 
         calendarDateView.setOnTodaySelectStatusChangedListener((todayView, isSelected) -> {
             TextView view = todayView.findViewById(R.id.tv_text);

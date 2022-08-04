@@ -18,8 +18,8 @@ import com.basic.router.launcher.Router;
 import com.basic.face.widget.actionbar.TitleBar;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.base.webview.x5.FileReaderView;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.base.web.x5.FileReaderView;
+import com.basic.code.utils.ToastUtils;
 import com.basic.tools.app.IntentUtils;
 import com.basic.tools.file.FileUtils;
 import com.zhy.http.okhttp.OkHttpUtils;
@@ -79,7 +79,7 @@ public class TbsWebFileReaderFragment extends BaseFragment {
      */
     private void shareFile(Uri uri) {
         if (uri == null) {
-            XToastUtils.toast("文件加载失败！");
+            ToastUtils.toast("文件加载失败！");
             return;
         }
 
@@ -118,7 +118,7 @@ public class TbsWebFileReaderFragment extends BaseFragment {
                 fileReaderView.show(fileUri);
             }
         } else {
-            XToastUtils.toast("文件路径无效！");
+            ToastUtils.toast("文件路径无效！");
             popToBack();
         }
     }

@@ -14,7 +14,7 @@ import com.basic.face.widget.textview.marqueen.MarqueeView;
 import com.basic.face.widget.textview.marqueen.SimpleNoticeMF;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -53,11 +53,11 @@ public class MarqueeViewFragment extends BaseFragment {
         MarqueeFactory<TextView, String> marqueeFactory1 = new SimpleNoticeMF(getContext());
         marqueeView1.setMarqueeFactory(marqueeFactory1);
         marqueeView1.startFlipping();
-        marqueeFactory1.setOnItemClickListener((view, holder) -> XToastUtils.toast(holder.getData()));
+        marqueeFactory1.setOnItemClickListener((view, holder) -> ToastUtils.toast(holder.getData()));
         marqueeFactory1.setData(datas);
 
         MarqueeFactory<TextView, String> marqueeFactory2 = new SimpleNoticeMF(getContext());
-        marqueeFactory2.setOnItemClickListener((view, holder) -> XToastUtils.toast(holder.getData()));
+        marqueeFactory2.setOnItemClickListener((view, holder) -> ToastUtils.toast(holder.getData()));
         marqueeFactory2.setData(datas);
         marqueeView2.setMarqueeFactory(marqueeFactory2);
         marqueeView2.setAnimDuration(15000);
@@ -65,7 +65,7 @@ public class MarqueeViewFragment extends BaseFragment {
         marqueeView2.startFlipping();
 
         MarqueeFactory<TextView, String> marqueeFactory3 = new SimpleNoticeMF(getContext());
-        marqueeFactory3.setOnItemClickListener((view, holder) -> XToastUtils.toast(holder.getData()));
+        marqueeFactory3.setOnItemClickListener((view, holder) -> ToastUtils.toast(holder.getData()));
         marqueeFactory3.setData(datas);
         marqueeView3.setMarqueeFactory(marqueeFactory3);
         marqueeView3.setAnimInAndOut(R.anim.marquee_left_in, R.anim.marquee_right_out);
@@ -74,7 +74,7 @@ public class MarqueeViewFragment extends BaseFragment {
         marqueeView3.startFlipping();
 
         MarqueeFactory<TextView, String> marqueeFactory4 = new SimpleNoticeMF(getContext());
-        marqueeFactory4.setOnItemClickListener((view, holder) -> XToastUtils.toast(holder.getData()));
+        marqueeFactory4.setOnItemClickListener((view, holder) -> ToastUtils.toast(holder.getData()));
         marqueeFactory4.setData(datas);
         marqueeView4.setAnimInAndOut(R.anim.marquee_top_in, R.anim.marquee_bottom_out);
         marqueeView4.setMarqueeFactory(marqueeFactory4);
@@ -85,7 +85,7 @@ public class MarqueeViewFragment extends BaseFragment {
             complexDatas.add(new ComplexItemEntity("标题 " + i, "副标题 " + i, "时间 " + i));
         }
         MarqueeFactory<RelativeLayout, ComplexItemEntity> marqueeFactory5 = new ComplexViewMF(getContext());
-        marqueeFactory5.setOnItemClickListener((view, holder) -> XToastUtils.toast(holder.getData().toString()));
+        marqueeFactory5.setOnItemClickListener((view, holder) -> ToastUtils.toast(holder.getData().toString()));
         marqueeFactory5.setData(complexDatas);
         marqueeView5.setAnimInAndOut(R.anim.marquee_top_in, R.anim.marquee_bottom_out);
         marqueeView5.setMarqueeFactory(marqueeFactory5);
@@ -97,14 +97,14 @@ public class MarqueeViewFragment extends BaseFragment {
                 if ("离离原上草，一岁一枯荣。".equals(displayMsg.toString())) {
                     return null;
                 } else {
-                    XToastUtils.toast("开始滚动：" + displayMsg.toString());
+                    ToastUtils.toast("开始滚动：" + displayMsg.toString());
                     return displayMsg;
                 }
             }
 
             @Override
             public List<DisplayEntity> onMarqueeFinished(List<DisplayEntity> displayDatas) {
-                XToastUtils.toast("一轮滚动完毕！");
+                ToastUtils.toast("一轮滚动完毕！");
                 return displayDatas;
             }
         });

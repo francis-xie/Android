@@ -13,7 +13,7 @@ import com.basic.code.R;
 import com.basic.code.adapter.NewsCardViewListAdapter;
 import com.basic.code.base.BaseFragment;
 import com.basic.code.utils.Utils;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.code.widget.MaterialLoadMoreView;
 import com.yanzhenjie.recyclerview.SwipeRecyclerView;
 
@@ -55,7 +55,7 @@ public class RecyclerViewBehaviorFragment extends BaseFragment {
     @Override
     protected void initListeners() {
         toolbar.setNavigationOnClickListener(v -> popToBack());
-        fab.setOnClickListener(v -> XToastUtils.toast("新建"));
+        fab.setOnClickListener(v -> ToastUtils.toast("新建"));
         mAdapter.setOnItemClickListener((itemView, item, position) -> Utils.goWeb(getContext(), item.getDetailUrl()));
         // 刷新监听。
         swipeRefreshLayout.setOnRefreshListener(mRefreshListener);

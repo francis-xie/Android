@@ -4,7 +4,7 @@ import com.basic.page.annotation.Page;
 import com.basic.face.widget.dialog.bottomsheet.BottomSheet;
 import com.basic.code.R;
 import com.basic.code.base.BaseSimpleListFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import java.util.List;
 
@@ -52,7 +52,7 @@ public class BottomSheetFragment extends BaseSimpleListFragment {
                 .setIsCenter(true)
                 .setOnSheetItemClickListener((dialog, itemView, position, tag) -> {
                     dialog.dismiss();
-                    XToastUtils.toast("Item " + (position + 1));
+                    ToastUtils.toast("Item " + (position + 1));
                 })
                 .build()
                 .show();
@@ -74,7 +74,7 @@ public class BottomSheetFragment extends BaseSimpleListFragment {
                 .setOnSheetItemClickListener((dialog, itemView) -> {
                     dialog.dismiss();
                     int tag = (int) itemView.getTag();
-                    XToastUtils.toast("tag:" + tag + ", content:" + itemView.toString());
+                    ToastUtils.toast("tag:" + tag + ", content:" + itemView.toString());
                 }).build().show();
 
 

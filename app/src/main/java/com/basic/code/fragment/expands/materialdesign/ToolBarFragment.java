@@ -13,8 +13,7 @@ import com.basic.face.utils.ViewUtils;
 import com.basic.face.widget.popupwindow.popup.FACESimplePopup;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
-import com.basic.tools.common.StringUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.tools.display.DensityUtils;
 
 import butterknife.BindView;
@@ -116,10 +115,10 @@ public class ToolBarFragment extends BaseFragment {
     }
 
 
-    private View.OnClickListener onClickListener = v -> XToastUtils.toast("点击了NavigationIcon");
+    private View.OnClickListener onClickListener = v -> ToastUtils.toast("点击了NavigationIcon");
 
     Toolbar.OnMenuItemClickListener menuItemClickListener = item -> {
-        XToastUtils.toast("点击了:" + item.getTitle());
+        ToastUtils.toast("点击了:" + item.getTitle());
         if (item.getItemId() == R.id.item_setting) {
             //点击设置
         }

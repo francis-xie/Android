@@ -7,7 +7,7 @@ import com.basic.page.annotation.Page;
 import com.basic.face.widget.layout.ExpandableLayout;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -42,9 +42,9 @@ public class ExpandableSimpleFragment extends BaseFragment {
 
         expandableLayout2.setOnExpansionChangedListener((expansion, state) -> {
             if (state == COLLAPSED) {
-                XToastUtils.toast("已收起");
+                ToastUtils.toast("已收起");
             } else if (state == EXPANDED) {
-                XToastUtils.toast("已展开");
+                ToastUtils.toast("已展开");
             }
         });
     }

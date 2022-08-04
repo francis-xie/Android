@@ -6,7 +6,7 @@ import android.os.Bundle;
 import com.basic.router.annotation.AutoWired;
 import com.basic.router.annotation.Router;
 import com.basic.code.utils.Utils;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.tools.common.StringUtils;
 
 /**
@@ -26,11 +26,11 @@ public class PageTransferActivity extends BaseActivity {
 
         if (!StringUtils.isEmpty(pageName)) {
             if (openPage(pageName, getIntent().getExtras()) == null) {
-                XToastUtils.toast("页面未找到！");
+                ToastUtils.toast("页面未找到！");
                 finish();
             }
         } else {
-            XToastUtils.toast("页面未找到！");
+            ToastUtils.toast("页面未找到！");
             finish();
         }
     }

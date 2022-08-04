@@ -9,7 +9,7 @@ import com.basic.face.adapter.recyclerview.RecyclerViewHolder;
 import com.basic.face.widget.imageview.IconImageView;
 import com.basic.face.widget.imageview.preview.loader.GlideMediaLoader;
 import com.basic.code.R;
-import com.basic.code.fragment.components.imageview.preview.ImageViewInfo;
+import com.basic.code.fragment.components.image.preview.ImageViewInfo;
 
 /**
  * 图片预览的适配器

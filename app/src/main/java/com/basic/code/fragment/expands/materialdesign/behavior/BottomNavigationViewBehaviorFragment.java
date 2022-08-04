@@ -15,7 +15,7 @@ import com.basic.face.utils.ViewUtils;
 import com.basic.face.widget.actionbar.TitleBar;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.tools.common.CollectionUtils;
 
 import butterknife.BindView;
@@ -70,7 +70,7 @@ public class BottomNavigationViewBehaviorFragment extends BaseFragment implement
     protected void initListeners() {
         viewPager.addOnPageChangeListener(this);
         bottomNavigation.setOnNavigationItemSelectedListener(this);
-        fab.setOnClickListener(v -> XToastUtils.toast("新建"));
+        fab.setOnClickListener(v -> ToastUtils.toast("新建"));
     }
 
     @Override

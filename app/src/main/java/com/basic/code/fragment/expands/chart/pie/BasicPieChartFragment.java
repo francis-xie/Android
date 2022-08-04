@@ -26,7 +26,7 @@ import com.basic.face.widget.actionbar.TitleBar;
 import com.basic.face.widget.dialog.bottomsheet.BottomSheet;
 import com.basic.code.R;
 import com.basic.code.fragment.expands.chart.BaseChartFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -194,7 +194,7 @@ public class BasicPieChartFragment extends BaseChartFragment implements OnChartV
 
     @Override
     public void onValueSelected(Entry e, Highlight h) {
-        XToastUtils.toast("选中了,  x轴值:" + e.getX() + ", y轴值:" + e.getY());
+        ToastUtils.toast("选中了,  x轴值:" + e.getX() + ", y轴值:" + e.getY());
 
     }
 

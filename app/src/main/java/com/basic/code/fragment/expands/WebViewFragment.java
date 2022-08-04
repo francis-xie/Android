@@ -11,7 +11,7 @@ import com.basic.page.annotation.Page;
 import com.basic.face.widget.actionbar.TitleBar;
 import com.basic.code.R;
 import com.basic.code.base.BaseSimpleListFragment;
-import com.basic.code.base.webview.PageWebViewFragment;
+import com.basic.code.base.web.PageWebViewFragment;
 import com.basic.code.fragment.expands.webview.JsWebViewFragment;
 import com.basic.code.fragment.expands.webview.TBSX5Fragment;
 import com.basic.code.fragment.expands.webview.TbsWebFileReaderFragment;

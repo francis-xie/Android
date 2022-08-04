@@ -21,7 +21,7 @@ import com.basic.face.widget.alpha.FACEAlphaImageView;
 import com.basic.code.R;
 import com.basic.code.utils.RotateSensorHelper;
 import com.basic.code.utils.Utils;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.tools.common.StringUtils;
 
 import java.util.ArrayList;
@@ -31,7 +31,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.Unbinder;
-import com.wonderkiln.camerakit.CameraView;
 
 import static com.basic.aop.consts.PermissionConsts.CAMERA;
 import static com.basic.aop.consts.PermissionConsts.STORAGE;
@@ -167,7 +166,7 @@ public class CameraActivity extends AppCompatActivity {
         if (!StringUtils.isEmpty(picPath)) {
             PictureCropActivity.open(this, true, picPath);
         } else {
-            XToastUtils.error("图片保存失败！");
+            ToastUtils.error("图片保存失败！");
         }
     }
 

@@ -8,7 +8,7 @@ import com.basic.face.widget.button.roundbutton.RoundButton;
 import com.basic.face.widget.textview.supertextview.SuperButton;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -50,7 +50,7 @@ public class ButtonStyleFragment extends BaseFragment {
             @Override
             public void onFinished() {
                 mBtCountDown3.setText("点击重试");
-                XToastUtils.toast("时间到！");
+                ToastUtils.toast("时间到！");
             }
         });
     }

@@ -18,7 +18,7 @@ import com.basic.code.adapter.StickyListAdapter;
 import com.basic.code.adapter.entity.StickyItem;
 import com.basic.code.base.BaseFragment;
 import com.basic.code.utils.Utils;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -82,7 +82,7 @@ public class StickyItemDecorationFragment extends BaseFragment {
     @SingleClick
     @OnClick(R.id.tv_action)
     public void onViewClicked(View view) {
-        XToastUtils.toast("点击更多");
+        ToastUtils.toast("点击更多");
     }
 
 

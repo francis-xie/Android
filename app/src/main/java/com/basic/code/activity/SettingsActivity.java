@@ -17,7 +17,7 @@ import androidx.appcompat.app.ActionBar;
 import com.basic.code.R;
 import com.basic.code.base.AppCompatPreferenceActivity;
 import com.basic.code.utils.Utils;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 /**
  * 设置页面
@@ -96,7 +96,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
 
         Preference pref = findPreference("clear_cache");
         pref.setOnPreferenceClickListener(preference -> {
-            XToastUtils.toast(R.string.pref_on_preference_click);
+            ToastUtils.toast(R.string.pref_on_preference_click);
             return false;
         });
 

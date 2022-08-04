@@ -255,7 +255,7 @@
     @com.basic.ipc.annotation.* <methods>;
 }
 
--keep public class com.basic.code.fragment.components.pickerview.**{*;}
+-keep public class com.basic.code.fragment.components.picker.**{*;}
 -keep public class com.basic.code.fragment.expands.linkage.eleme.**{*;}
 
 # web

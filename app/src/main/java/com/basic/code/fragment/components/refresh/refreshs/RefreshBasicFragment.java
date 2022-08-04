@@ -10,7 +10,7 @@ import com.basic.code.DemoDataProvider;
 import com.basic.code.R;
 import com.basic.code.adapter.SimpleRecyclerAdapter;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 @Page(name = "下拉刷新基础用法\n上拉加载、下拉刷新、自动刷新和点击事件")
 public class RefreshBasicFragment extends BaseFragment {
@@ -43,7 +43,7 @@ public class RefreshBasicFragment extends BaseFragment {
         // 上拉加载
         refreshLayout.setOnLoadMoreListener(refreshLayout1 -> refreshLayout1.getLayout().postDelayed(() -> {
             if (mAdapter.getItemCount() > 30) {
-                XToastUtils.toast("数据全部加载完毕");
+                ToastUtils.toast("数据全部加载完毕");
                 refreshLayout1.finishLoadMoreWithNoMoreData();//将不会再次触发加载更多事件
             } else {
                 mAdapter.loadMore(DemoDataProvider.getDemoData());
@@ -54,9 +54,9 @@ public class RefreshBasicFragment extends BaseFragment {
         // 触发自动刷新
         refreshLayout.autoRefresh();
         // item 点击测试
-        mAdapter.setOnItemClickListener((itemView, item, position) -> XToastUtils.toast("点击:" + position));
+        mAdapter.setOnItemClickListener((itemView, item, position) -> ToastUtils.toast("点击:" + position));
 
-        mAdapter.setOnItemLongClickListener((itemView, item, position) -> XToastUtils.toast("长按:" + position));
+        mAdapter.setOnItemLongClickListener((itemView, item, position) -> ToastUtils.toast("长按:" + position));
 
 //        // 点击测试
 //        RefreshFooter footer = refreshLayout.getRefreshFooter();

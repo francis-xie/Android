@@ -3,12 +3,12 @@ package com.basic.code.fragment.components;
 import com.basic.page.annotation.Page;
 import com.basic.code.R;
 import com.basic.code.base.ComponentContainerFragment;
-import com.basic.code.fragment.components.imageview.ImageEditFragment;
-import com.basic.code.fragment.components.imageview.ImageLoadStrategyFragment;
-import com.basic.code.fragment.components.imageview.PreviewFragment;
-import com.basic.code.fragment.components.imageview.RadiusImageViewFragment;
-import com.basic.code.fragment.components.imageview.SignatureViewFragment;
-import com.basic.code.fragment.components.imageview.pictureselector.PictureSelectorFragment;
+import com.basic.code.fragment.components.image.ImageEditFragment;
+import com.basic.code.fragment.components.image.ImageLoadStrategyFragment;
+import com.basic.code.fragment.components.image.PreviewFragment;
+import com.basic.code.fragment.components.image.RadiusImageViewFragment;
+import com.basic.code.fragment.components.image.SignatureViewFragment;
+import com.basic.code.fragment.components.image.pictureselector.PictureSelectorFragment;
 
 @Page(name = "图片", extra = R.drawable.ic_widget_imageview)
 public class ImageViewFragment extends ComponentContainerFragment {

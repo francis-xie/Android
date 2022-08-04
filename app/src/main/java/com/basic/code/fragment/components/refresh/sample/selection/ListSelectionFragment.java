@@ -11,7 +11,7 @@ import com.basic.face.utils.WidgetUtils;
 import com.basic.face.widget.actionbar.TitleBar;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,7 +49,7 @@ public class ListSelectionFragment extends BaseFragment {
                             .append(":")
                             .append(getSelectionName(item.selection));
                 }
-                XToastUtils.toast(sb.toString());
+                ToastUtils.toast(sb.toString());
             }
         });
         return titleBar;

@@ -19,7 +19,7 @@ import com.github.abel533.echarts.series.Pie;
 import com.basic.aop.annotation.SingleClick;
 import com.basic.page.annotation.Page;
 import com.basic.code.R;
-import com.basic.code.base.webview.BaseWebViewFragment;
+import com.basic.code.base.web.BaseWebViewFragment;
 import com.basic.code.utils.Utils;
 
 import butterknife.BindView;

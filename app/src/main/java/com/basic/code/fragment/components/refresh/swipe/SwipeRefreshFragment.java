@@ -12,7 +12,7 @@ import com.basic.code.DemoDataProvider;
 import com.basic.code.R;
 import com.basic.code.adapter.SimpleRecyclerAdapter;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.code.widget.MaterialLoadMoreView;
 import com.yanzhenjie.recyclerview.SwipeRecyclerView;
 
@@ -57,7 +57,7 @@ public class SwipeRefreshFragment extends BaseFragment {
 
         banner = headerView.findViewById(R.id.sib_simple_usage);
         banner.setSource(DemoDataProvider.getBannerList())
-                .setOnItemClickListener((view, item, position) -> XToastUtils.toast("headBanner position--->" + position)).startScroll();
+                .setOnItemClickListener((view, item, position) -> ToastUtils.toast("headBanner position--->" + position)).startScroll();
         recyclerView.addHeaderView(headerView);
 
         recyclerView.setAdapter(mAdapter = new SimpleRecyclerAdapter());

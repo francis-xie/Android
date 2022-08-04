@@ -15,7 +15,7 @@ import com.basic.face.utils.ViewUtils;
 import com.basic.face.widget.actionbar.TitleBar;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.tools.display.Colors;
 
 import butterknife.BindView;
@@ -76,7 +76,7 @@ public class ComplexDetailsPageFragment extends BaseFragment {
 
     @Override
     protected void initListeners() {
-        fabScrolling.setOnClickListener(v -> XToastUtils.toast("新建"));
+        fabScrolling.setOnClickListener(v -> ToastUtils.toast("新建"));
         appbarLayout.addOnOffsetChangedListener((appBarLayout, verticalOffset) -> {
             if (Math.abs(verticalOffset) >= appBarLayout.getTotalScrollRange()) {
                 StatusBarUtils.setStatusBarDarkMode(getActivity());

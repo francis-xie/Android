@@ -23,7 +23,7 @@ import com.basic.code.fragment.expands.qrcode.CustomCaptureActivity;
 import com.basic.code.fragment.expands.qrcode.CustomCaptureFragment;
 import com.basic.code.fragment.expands.qrcode.QRCodeProduceFragment;
 import com.basic.code.utils.Utils;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.tools.app.IntentUtils;
 import com.basic.tools.app.PathUtils;
 
@@ -169,12 +169,12 @@ public class ScanFragment extends BaseSimpleListFragment {
         Scan.analyzeQRCode(PathUtils.getFilePathByUri(getContext(), uri), new QRCodeAnalyzeUtils.AnalyzeCallback() {
             @Override
             public void onAnalyzeSuccess(Bitmap mBitmap, String result) {
-                XToastUtils.toast("解析结果:" + result, Toast.LENGTH_LONG);
+                ToastUtils.toast("解析结果:" + result, Toast.LENGTH_LONG);
             }
 
             @Override
             public void onAnalyzeFailed() {
-                XToastUtils.toast("解析二维码失败", Toast.LENGTH_LONG);
+                ToastUtils.toast("解析二维码失败", Toast.LENGTH_LONG);
             }
         });
     }
@@ -191,9 +191,9 @@ public class ScanFragment extends BaseSimpleListFragment {
             if (bundle != null) {
                 if (bundle.getInt(Scan.RESULT_TYPE) == Scan.RESULT_SUCCESS) {
                     String result = bundle.getString(Scan.RESULT_DATA);
-                    XToastUtils.toast("解析结果:" + result, Toast.LENGTH_LONG);
+                    ToastUtils.toast("解析结果:" + result, Toast.LENGTH_LONG);
                 } else if (bundle.getInt(Scan.RESULT_TYPE) == Scan.RESULT_FAILED) {
-                    XToastUtils.toast("解析二维码失败", Toast.LENGTH_LONG);
+                    ToastUtils.toast("解析二维码失败", Toast.LENGTH_LONG);
                 }
             }
         }
@@ -201,7 +201,7 @@ public class ScanFragment extends BaseSimpleListFragment {
 
     @Permission(CAMERA)
     private void initPermission() {
-        XToastUtils.toast("相机权限已获取！");
+        ToastUtils.toast("相机权限已获取！");
         Scan.setAutoFocusInterval(800);
     }
 

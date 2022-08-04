@@ -15,7 +15,7 @@ import com.basic.code.R;
 import com.basic.code.adapter.UltraPagerAdapter;
 import com.basic.code.base.BaseFragment;
 import com.basic.code.utils.Utils;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.tools.display.ScreenUtils;
 
 import butterknife.BindView;
@@ -52,7 +52,7 @@ public class UltraViewPagerFragment extends BaseFragment {
         ultraViewPager.setInfiniteLoop(true);
         ultraViewPager.setAutoScroll(2000);
 
-        adapter.setOnItemClickListener((itemView, item, position) -> XToastUtils.toast("position--->" + position));
+        adapter.setOnItemClickListener((itemView, item, position) -> ToastUtils.toast("position--->" + position));
     }
 
     @Override

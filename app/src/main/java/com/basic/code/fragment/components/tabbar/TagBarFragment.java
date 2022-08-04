@@ -15,7 +15,7 @@ import com.basic.page.annotation.Page;
 import com.basic.face.FACE;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -102,7 +102,7 @@ public class TagBarFragment extends BaseFragment implements OnTabSelectListener 
         mTabbar.setContainer(mViewPager);
 
         if (mTabbar.getMiddleView() != null) {
-            mTabbar.getMiddleView().setOnClickListener(v -> XToastUtils.toast("中间点击"));
+            mTabbar.getMiddleView().setOnClickListener(v -> ToastUtils.toast("中间点击"));
         }
 
         mTabbar.showBadge(2, "", true);
@@ -123,7 +123,7 @@ public class TagBarFragment extends BaseFragment implements OnTabSelectListener 
         if (index == 2) {
             mTabbar.hideBadge(2);
         }
-        XToastUtils.toast("点击了" + getString(mTitles[index]));
+        ToastUtils.toast("点击了" + getString(mTitles[index]));
     }
 
     /**

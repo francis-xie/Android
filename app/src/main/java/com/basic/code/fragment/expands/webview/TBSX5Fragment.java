@@ -16,7 +16,7 @@ import com.basic.router.annotation.AutoWired;
 import com.basic.router.launcher.Router;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import butterknife.BindView;
 
@@ -68,7 +68,7 @@ public class TBSX5Fragment extends BaseFragment {
 
             @Override
             public void onReceivedError(WebView var1, int var2, String var3, String var4) {
-                XToastUtils.error("网页加载失败");
+                ToastUtils.error("网页加载失败");
             }
         });
         //进度条

@@ -19,7 +19,7 @@ import com.basic.face.widget.tabbar.vertical.TabView;
 import com.basic.face.widget.textview.badge.Badge;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.tools.Util;
 
 import java.util.ArrayList;
@@ -67,17 +67,17 @@ public class VerticalTabLayoutFragment extends BaseFragment {
         tabLayout0.addOnTabSelectedListener(new VerticalTabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabView tab, int position) {
-                XToastUtils.toast("选中 " + tab.getTitle().getContent());
+                ToastUtils.toast("选中 " + tab.getTitle().getContent());
             }
 
             @Override
             public void onTabUnselected(final TabView tab, int position) {
-                Util.getMainHandler().postDelayed(() -> XToastUtils.toast("选择取消 " + tab.getTitle().getContent()), 500);
+                Util.getMainHandler().postDelayed(() -> ToastUtils.toast("选择取消 " + tab.getTitle().getContent()), 500);
             }
 
             @Override
             public void onTabReselected(TabView tab, int position) {
-                XToastUtils.toast("重复选择 " + tab.getTitle().getContent());
+                ToastUtils.toast("重复选择 " + tab.getTitle().getContent());
             }
         });
     }

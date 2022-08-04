@@ -6,7 +6,7 @@ import com.basic.page.annotation.Page;
 import com.basic.face.widget.toast.XToast;
 import com.basic.code.R;
 import com.basic.code.base.BaseSimpleListFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import java.util.List;
 
@@ -46,19 +46,19 @@ public class XToastFragment extends BaseSimpleListFragment {
     protected void onItemClick(int position) {
         switch (position) {
             case 0:
-                XToastUtils.error(R.string.error_message);
+                ToastUtils.error(R.string.error_message);
                 break;
             case 1:
-                XToastUtils.success(R.string.success_message);
+                ToastUtils.success(R.string.success_message);
                 break;
             case 2:
-                XToastUtils.info(R.string.info_message);
+                ToastUtils.info(R.string.info_message);
                 break;
             case 3:
-                XToastUtils.warning(R.string.warning_message);
+                ToastUtils.warning(R.string.warning_message);
                 break;
             case 4:
-                XToastUtils.toast(R.string.normal_message_without_icon);
+                ToastUtils.toast(R.string.normal_message_without_icon);
                 break;
             default:
                 break;

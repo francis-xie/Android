@@ -7,7 +7,7 @@ import android.view.View;
 
 import com.basic.face.widget.statelayout.StatusLoader;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import static com.basic.face.widget.statelayout.StatusLoader.STATUS_LOADING;
 
@@ -56,7 +56,7 @@ public abstract class BaseStatusLoaderFragment extends BaseFragment {
      * 重试
      */
     protected void onLoadRetry(View view) {
-        XToastUtils.toast("点击重试");
+        ToastUtils.toast("点击重试");
         showLoading();
     }
 

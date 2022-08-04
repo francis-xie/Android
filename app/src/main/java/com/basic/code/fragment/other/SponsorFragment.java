@@ -18,8 +18,8 @@ import com.basic.scan.util.QRCodeAnalyzeUtils;
 import com.basic.face.widget.dialog.bottomsheet.BottomSheet;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.fragment.components.imageview.DrawablePreviewFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.fragment.components.image.DrawablePreviewFragment;
+import com.basic.code.utils.ToastUtils;
 import com.basic.tools.app.PathUtils;
 import com.basic.tools.app.SocialShareUtils;
 import com.basic.tools.display.ImageUtils;
@@ -30,7 +30,7 @@ import java.io.File;
 
 import butterknife.BindView;
 
-import static com.basic.code.fragment.components.imageview.DrawablePreviewFragment.DRAWABLE_ID;
+import static com.basic.code.fragment.components.image.DrawablePreviewFragment.DRAWABLE_ID;
 
 /**
  * 赞助页面
@@ -110,14 +110,14 @@ public class SponsorFragment extends BaseFragment implements View.OnClickListene
                             if (result) {
                                 SocialShareUtils.sharePicture(getActivity(), PathUtils.getUriForFile(FileUtils.getFileByPath(imgPath)));
                             } else {
-                                XToastUtils.toast("图片发送失败!");
+                                ToastUtils.toast("图片发送失败!");
                             }
                             break;
                         case 1:
                             if (result) {
-                                XToastUtils.toast("图片保存成功:" + imgPath);
+                                ToastUtils.toast("图片保存成功:" + imgPath);
                             } else {
-                                XToastUtils.toast("图片保存失败!");
+                                ToastUtils.toast("图片保存失败!");
                             }
                             break;
                         case 2:
@@ -132,11 +132,11 @@ public class SponsorFragment extends BaseFragment implements View.OnClickListene
 
                                     @Override
                                     public void onAnalyzeFailed() {
-                                        XToastUtils.toast("解析二维码失败！");
+                                        ToastUtils.toast("解析二维码失败！");
                                     }
                                 });
                             } else {
-                                XToastUtils.toast("二维码识别失败!");
+                                ToastUtils.toast("二维码识别失败!");
                             }
                             break;
                         default:

@@ -12,7 +12,7 @@ import com.basic.code.DemoDataProvider;
 import com.basic.code.R;
 import com.basic.code.adapter.SimpleRecyclerAdapter;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.yanzhenjie.recyclerview.OnItemMenuClickListener;
 import com.yanzhenjie.recyclerview.SwipeMenuCreator;
 import com.yanzhenjie.recyclerview.SwipeMenuItem;
@@ -110,9 +110,9 @@ public class SwipeMenuItemFragment extends BaseFragment {
         int menuPosition = menuBridge.getPosition(); // 菜单在RecyclerView的Item中的Position。
 
         if (direction == SwipeRecyclerView.RIGHT_DIRECTION) {
-            XToastUtils.toast("list第" + position + "; 右侧菜单第" + menuPosition);
+            ToastUtils.toast("list第" + position + "; 右侧菜单第" + menuPosition);
         } else if (direction == SwipeRecyclerView.LEFT_DIRECTION) {
-            XToastUtils.toast("list第" + position + "; 左侧菜单第" + menuPosition);
+            ToastUtils.toast("list第" + position + "; 左侧菜单第" + menuPosition);
         }
     };
 

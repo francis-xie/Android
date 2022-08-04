@@ -8,7 +8,7 @@ import com.basic.face.widget.popupwindow.status.Status;
 import com.basic.face.widget.popupwindow.status.StatusView;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -27,17 +27,17 @@ public class StatusViewFragment extends BaseFragment {
     @Override
     protected void initViews() {
         mStatusView.setOnErrorClickListener(v -> {
-            XToastUtils.toast("点击错误状态视图");
+            ToastUtils.toast("点击错误状态视图");
             mStatusView.dismiss();
         });
 
         mStatusView.setOnLoadingClickListener(v -> {
-            XToastUtils.toast("点击正在加载状态视图");
+            ToastUtils.toast("点击正在加载状态视图");
             mStatusView.dismiss();
         });
 
         mStatusView.setOnCustomClickListener(v -> {
-            XToastUtils.toast("点击自定义状态视图");
+            ToastUtils.toast("点击自定义状态视图");
             mStatusView.dismiss();
         });
     }

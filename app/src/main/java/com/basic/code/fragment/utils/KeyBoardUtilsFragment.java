@@ -13,7 +13,7 @@ import com.basic.face.utils.StatusBarUtils;
 import com.basic.face.widget.button.switchbutton.SwitchButton;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -62,7 +62,7 @@ public class KeyBoardUtilsFragment extends BaseFragment implements KeyboardUtils
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn_get_status:
-                XToastUtils.toast("键盘显示状态:" + KeyboardUtils.isSoftInputShow(getActivity()));
+                ToastUtils.toast("键盘显示状态:" + KeyboardUtils.isSoftInputShow(getActivity()));
                 break;
             case R.id.btn_switch_screen:
                 if (isFullScreen) {

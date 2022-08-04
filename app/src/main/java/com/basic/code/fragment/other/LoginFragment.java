@@ -23,7 +23,7 @@ import com.basic.code.base.BaseFragment;
 import com.basic.code.utils.PrivacyUtils;
 import com.basic.code.utils.SettingSPUtils;
 import com.basic.code.utils.TokenUtils;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.code.utils.sdkinit.UMengInit;
 import com.basic.tools.app.ActivityUtils;
 import com.basic.tools.common.RandomUtils;
@@ -108,10 +108,10 @@ public class LoginFragment extends BaseFragment {
                 }
                 break;
             case R.id.tv_other_login:
-                XToastUtils.info("其他登录方式");
+                ToastUtils.info("其他登录方式");
                 break;
             case R.id.tv_forget_password:
-                XToastUtils.info("忘记密码");
+                ToastUtils.info("忘记密码");
                 break;
             case R.id.tv_user_protocol:
                 openPage(ServiceProtocolFragment.class, KEY_PROTOCOL_TITLE, ResUtils.getString(R.string.title_user_protocol));
@@ -129,7 +129,7 @@ public class LoginFragment extends BaseFragment {
      */
     private void getVerifyCode(String phoneNumber) {
         // TODO: 2019-11-18 这里只是界面演示而已
-        XToastUtils.warning("只是演示，验证码请随便输");
+        ToastUtils.warning("只是演示，验证码请随便输");
         mCountDownHelper.start();
     }
 

@@ -7,7 +7,7 @@ import com.basic.page.annotation.Page;
 import com.basic.face.widget.actionbar.TitleBar;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import butterknife.BindView;
 
@@ -31,18 +31,18 @@ public class TitleBarFragment extends BaseFragment {
 
     @Override
     protected void initViews() {
-        mTitleBar.setLeftClickListener(view -> XToastUtils.toast("点击返回")).setCenterClickListener(v -> XToastUtils.toast("点击标题")).addAction(new TitleBar.ImageAction(R.drawable.ic_add_white_24dp) {
+        mTitleBar.setLeftClickListener(view -> ToastUtils.toast("点击返回")).setCenterClickListener(v -> ToastUtils.toast("点击标题")).addAction(new TitleBar.ImageAction(R.drawable.ic_add_white_24dp) {
             @Override
             public void performAction(View view) {
-                XToastUtils.toast("点击更多！");
+                ToastUtils.toast("点击更多！");
             }
         });
 
-        mTitleBar1.setLeftClickListener(v -> XToastUtils.toast("点击返回"))
+        mTitleBar1.setLeftClickListener(v -> ToastUtils.toast("点击返回"))
                 .addAction(new TitleBar.TextAction("更多") {
                     @Override
                     public void performAction(View view) {
-                        XToastUtils.toast("点击更多！");
+                        ToastUtils.toast("点击更多！");
                     }
                 });
 
@@ -51,7 +51,7 @@ public class TitleBarFragment extends BaseFragment {
                 .addAction(new TitleBar.ImageAction(R.drawable.ic_navigation_more) {
                     @Override
                     public void performAction(View view) {
-                        XToastUtils.toast("点击菜单！");
+                        ToastUtils.toast("点击菜单！");
                     }
                 });
     }

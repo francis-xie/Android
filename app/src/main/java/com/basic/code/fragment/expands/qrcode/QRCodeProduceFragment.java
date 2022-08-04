@@ -24,7 +24,7 @@ import com.basic.scan.Scan;
 import com.basic.scan.util.QRCodeProduceUtils;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.tools.app.IntentUtils;
 import com.basic.tools.app.PathUtils;
 import com.basic.tools.common.StringUtils;
@@ -142,7 +142,7 @@ public class QRCodeProduceFragment extends BaseFragment {
                 break;
             case R.id.btn_create_no_logo:
                 if (StringUtils.isSpace(mEtInput.getEditableText().toString())) {
-                    XToastUtils.warning("请输入二维码内容!");
+                    ToastUtils.warning("请输入二维码内容!");
                     return;
                 }
 
@@ -151,7 +151,7 @@ public class QRCodeProduceFragment extends BaseFragment {
                 break;
             case R.id.btn_create_with_logo:
                 if (StringUtils.isSpace(mEtInput.getEditableText().toString())) {
-                    XToastUtils.toast("请输入二维码内容!");
+                    ToastUtils.toast("请输入二维码内容!");
                     return;
                 }
 
@@ -164,11 +164,11 @@ public class QRCodeProduceFragment extends BaseFragment {
                 break;
             case R.id.btn_remove_background_image:
                 backgroundImage = null;
-                XToastUtils.toast("背景图片已被去除！");
+                ToastUtils.toast("背景图片已被去除！");
                 break;
             case R.id.btn_create:
                 if (StringUtils.isSpace(mEtInput.getEditableText().toString())) {
-                    XToastUtils.warning("请输入二维码内容!");
+                    ToastUtils.warning("请输入二维码内容!");
                     return;
                 }
 
@@ -188,10 +188,10 @@ public class QRCodeProduceFragment extends BaseFragment {
             try {
                 Uri imageUri = data.getData();
                 backgroundImage = BitmapFactory.decodeFile(PathUtils.getFilePathByUri(getContext(), imageUri));
-                XToastUtils.toast("成功添加背景图片！");
+                ToastUtils.toast("成功添加背景图片！");
             } catch (Exception e) {
                 e.printStackTrace();
-                XToastUtils.error("添加背景图片失败！");
+                ToastUtils.error("添加背景图片失败！");
             }
         }
     }
@@ -201,9 +201,9 @@ public class QRCodeProduceFragment extends BaseFragment {
     private void saveQRCode() {
         if (isQRCodeCreated) {
             boolean result = ImageUtils.save(ImageUtils.view2Bitmap(mIvQrcode), FileUtils.getDiskCacheDir() + File.separator + "Scan_" + DateUtils.getNowMills() + ".png", Bitmap.CompressFormat.PNG);
-            XToastUtils.toast("二维码保存" + (result ? "成功" : "失败") + "!");
+            ToastUtils.toast("二维码保存" + (result ? "成功" : "失败") + "!");
         } else {
-            XToastUtils.toast("请先生成二维码!");
+            ToastUtils.toast("请先生成二维码!");
         }
     }
 
@@ -250,7 +250,7 @@ public class QRCodeProduceFragment extends BaseFragment {
                 builder.setColorLight(Color.parseColor(mEtColorLight.getText().toString()));
             } catch (Exception e) {
                 e.printStackTrace();
-                XToastUtils.error("色值填写出错!");
+                ToastUtils.error("色值填写出错!");
             }
         }
         if (mEtBinarizeThreshold.getText().length() != 0) {

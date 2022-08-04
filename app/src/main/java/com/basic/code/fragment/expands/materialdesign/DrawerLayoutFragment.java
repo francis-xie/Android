@@ -22,7 +22,7 @@ import com.basic.face.widget.actionbar.TitleBar;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
 import com.basic.code.fragment.expands.materialdesign.behavior.SimpleListFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.tools.common.CollectionUtils;
 
 import butterknife.BindView;
@@ -59,7 +59,7 @@ public class DrawerLayoutFragment extends BaseFragment implements NavigationView
         toolbar.setTitle("资讯");
         toolbar.inflateMenu(R.menu.menu_setting);
         toolbar.setOnMenuItemClickListener(item -> {
-            XToastUtils.toast("点击了:" + item.getTitle());
+            ToastUtils.toast("点击了:" + item.getTitle());
             return true;
         });
         return null;
@@ -97,7 +97,7 @@ public class DrawerLayoutFragment extends BaseFragment implements NavigationView
         toggle.syncState();
 
         navView.setNavigationItemSelectedListener(menuItem -> {
-            XToastUtils.toast("点击了:" + menuItem.getTitle());
+            ToastUtils.toast("点击了:" + menuItem.getTitle());
             return true;
         });
         fab.setOnClickListener(this);
@@ -112,10 +112,10 @@ public class DrawerLayoutFragment extends BaseFragment implements NavigationView
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.nav_header:
-                XToastUtils.toast("点击头部！");
+                ToastUtils.toast("点击头部！");
                 break;
             case R.id.fab:
-                XToastUtils.toast("新建");
+                ToastUtils.toast("新建");
                 break;
             default:
                 break;

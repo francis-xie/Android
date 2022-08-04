@@ -12,7 +12,7 @@ import com.basic.face.widget.dialog.strategy.impl.AlertDialogStrategy;
 import com.basic.face.widget.dialog.strategy.impl.MaterialDialogStrategy;
 import com.basic.code.R;
 import com.basic.code.base.BaseSimpleListFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import java.util.List;
 
@@ -63,12 +63,12 @@ public class DialogStrategyFragment extends BaseSimpleListFragment {
                         getString(R.string.tip_bluetooth_permission),
                         getString(R.string.lab_yes),
                         (dialog, which) -> {
-                            XToastUtils.toast("同意打开蓝牙！");
+                            ToastUtils.toast("同意打开蓝牙！");
                             dialog.dismiss();
                         },
                         getString(R.string.lab_no),
                         (dialog, which) -> {
-                            XToastUtils.toast("不同意打开蓝牙！");
+                            ToastUtils.toast("不同意打开蓝牙！");
                             dialog.dismiss();
                         }
                 );
@@ -83,13 +83,13 @@ public class DialogStrategyFragment extends BaseSimpleListFragment {
                                 | InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD
                                 | InputType.TYPE_TEXT_FLAG_CAP_WORDS,
                                 getString(R.string.hint_please_input_password)),
-                        (dialog, input) -> XToastUtils.toast(input.toString()),
+                        (dialog, input) -> ToastUtils.toast(input.toString()),
                         getString(R.string.lab_continue),
                         (dialog, which) -> {
                             KeyboardUtils.hideSoftInput(dialog);
                             dialog.dismiss();
                             if (dialog instanceof MaterialDialog) {
-                                XToastUtils.toast("你输入了:" + ((MaterialDialog) dialog).getInputEditText().getText().toString());
+                                ToastUtils.toast("你输入了:" + ((MaterialDialog) dialog).getInputEditText().getText().toString());
                             }
                         },
                         getString(R.string.lab_change),
@@ -102,7 +102,7 @@ public class DialogStrategyFragment extends BaseSimpleListFragment {
                 DialogLoader.getInstance().showContextMenuDialog(getContext(),
                         getString(R.string.tip_options),
                         R.array.menu_values,
-                        (dialog, which) -> XToastUtils.toast("选择了第" + (which + 1) + "个"));
+                        (dialog, which) -> ToastUtils.toast("选择了第" + (which + 1) + "个"));
                 break;
             case 6:
                 DialogLoader.getInstance().showSingleChoiceDialog(
@@ -110,7 +110,7 @@ public class DialogStrategyFragment extends BaseSimpleListFragment {
                         getString(R.string.tip_router_setting),
                         R.array.router_choice_entry,
                         0,
-                        (dialog, which) -> XToastUtils.toast("选择了第" + (which + 1) + "个"),
+                        (dialog, which) -> ToastUtils.toast("选择了第" + (which + 1) + "个"),
                         getString(R.string.lab_yes),
                         getString(R.string.lab_no));
                 break;

@@ -18,7 +18,7 @@ import com.basic.code.R;
 import com.basic.code.activity.EasyIndicatorActivity;
 import com.basic.code.base.BaseFragment;
 import com.basic.code.fragment.components.tabbar.tablayout.ContentPage;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -109,7 +109,7 @@ public class EasyIndicatorFragment extends BaseFragment {
 
     private void initIndicatorNoViewPager() {
         mEasyIndicator1.setTabTitles(ContentPage.getPageNames());
-        mEasyIndicator1.setOnTabClickListener((title, position) -> XToastUtils.toast("点击了" + title));
+        mEasyIndicator1.setOnTabClickListener((title, position) -> ToastUtils.toast("点击了" + title));
 
 
         mEasyIndicator2.setTabTitles(ContentPage.getPageNames());

@@ -8,7 +8,7 @@ import com.basic.page.annotation.Page;
 import com.basic.face.widget.button.shinebutton.ShineButton;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.code.widget.ShineButtonDialog;
 
 import butterknife.BindView;
@@ -41,6 +41,6 @@ public class ShineButtonFragment extends BaseFragment implements ShineButton.OnC
 
     @Override
     public void onCheckedChanged(ShineButton shineButton, boolean isChecked) {
-        XToastUtils.toast("checked:" + isChecked);
+        ToastUtils.toast("checked:" + isChecked);
     }
 }

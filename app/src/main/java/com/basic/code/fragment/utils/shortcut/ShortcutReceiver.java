@@ -5,7 +5,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.tools.common.logger.Logger;
 
 /**
@@ -18,6 +18,6 @@ public class ShortcutReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         Logger.dTag(TAG, "onReceive:" + intent.getAction());
-        XToastUtils.toast("开始创建快捷方式");
+        ToastUtils.toast("开始创建快捷方式");
     }
 }

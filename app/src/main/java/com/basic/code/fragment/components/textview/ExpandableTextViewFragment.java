@@ -4,7 +4,7 @@ import com.basic.page.annotation.Page;
 import com.basic.face.widget.textview.ExpandableTextView;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import butterknife.BindView;
 
@@ -24,7 +24,7 @@ public class ExpandableTextViewFragment extends BaseFragment {
     @Override
     protected void initViews() {
         mExpandableTextView.setText(getString(R.string.etv_content_demo1));
-        mExpandableTextView.setOnExpandStateChangeListener((textView, isExpanded) -> XToastUtils.toast(isExpanded ? "Expanded" : "Collapsed"));
+        mExpandableTextView.setOnExpandStateChangeListener((textView, isExpanded) -> ToastUtils.toast(isExpanded ? "Expanded" : "Collapsed"));
 
     }
 

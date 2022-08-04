@@ -16,7 +16,7 @@ import com.basic.scan.ui.CaptureActivity;
 import com.basic.scan.ui.CaptureFragment;
 import com.basic.scan.util.QRCodeAnalyzeUtils;
 import com.basic.code.R;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import butterknife.OnClick;
 
@@ -105,7 +105,7 @@ public class CustomCaptureFragment extends PageFragment {
             Scan.switchFlashLight(mIsOpen);
         } catch (RuntimeException e) {
             e.printStackTrace();
-            XToastUtils.error("设备不支持闪光灯!");
+            ToastUtils.error("设备不支持闪光灯!");
         }
     }
 

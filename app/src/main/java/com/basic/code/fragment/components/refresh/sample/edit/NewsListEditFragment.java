@@ -18,7 +18,7 @@ import com.basic.code.DemoDataProvider;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
 import com.basic.code.utils.Utils;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -113,7 +113,7 @@ public class NewsListEditFragment extends BaseFragment {
     @SingleClick
     @OnClick(R.id.btn_submit)
     public void onViewClicked(View view) {
-        XToastUtils.toast("选中了" + mAdapter.getSelectedIndexList().size() + "个选项！");
+        ToastUtils.toast("选中了" + mAdapter.getSelectedIndexList().size() + "个选项！");
 
     }
 }

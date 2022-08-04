@@ -7,7 +7,7 @@ import com.basic.code.DemoDataProvider;
 import com.basic.code.R;
 import com.basic.code.adapter.RecyclerViewBannerAdapter;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import butterknife.BindView;
 
@@ -47,12 +47,12 @@ public class RecyclerViewBannerFragment extends BaseFragment implements BannerLa
         mAdapterHorizontal.setOnBannerItemClickListener(this);
         mAdapterVertical.setOnBannerItemClickListener(this);
 
-        blHorizontal.setOnIndicatorIndexChangedListener(position -> XToastUtils.toast("轮播到第" + (position + 1) + "个"));
+        blHorizontal.setOnIndicatorIndexChangedListener(position -> ToastUtils.toast("轮播到第" + (position + 1) + "个"));
     }
 
     @Override
     public void onItemClick(int position) {
-        XToastUtils.toast("点击了第" + (position + 1) + "个");
+        ToastUtils.toast("点击了第" + (position + 1) + "个");
     }
 
 }

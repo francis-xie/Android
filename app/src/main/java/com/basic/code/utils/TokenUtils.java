@@ -55,12 +55,12 @@ public final class TokenUtils {
      */
     public static boolean handleLoginSuccess(String token) {
         if (!StringUtils.isEmpty(token)) {
-            XToastUtils.success("登录成功！");
+            ToastUtils.success("登录成功！");
             MobclickAgent.onProfileSignIn("github", token);
             setToken(token);
             return true;
         } else {
-            XToastUtils.error("登录失败！");
+            ToastUtils.error("登录失败！");
             return false;
         }
     }
@@ -72,7 +72,7 @@ public final class TokenUtils {
         MobclickAgent.onProfileSignOff();
         //登出时，清除账号信息
         clearToken();
-        XToastUtils.success("登出成功！");
+        ToastUtils.success("登出成功！");
         // 登出清除一下隐私政策
         SettingSPUtils.getInstance().setIsAgreePrivacy(false);
         //跳转到登录页

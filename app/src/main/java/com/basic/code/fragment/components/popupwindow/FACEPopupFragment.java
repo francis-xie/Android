@@ -14,7 +14,7 @@ import com.basic.face.widget.popupwindow.popup.FACEListPopup;
 import com.basic.face.widget.popupwindow.popup.FACEPopup;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -109,7 +109,7 @@ public class FACEPopupFragment extends BaseFragment {
             FACESimpleAdapter adapter = FACESimpleAdapter.create(getContext(), listItems);
             mListPopup = new FACEListPopup(getContext(), adapter);
             mListPopup.create(DensityUtils.dp2px(200), DensityUtils.dp2px(150), (adapterView, view, i, l) -> {
-                XToastUtils.toast("Item " + (i + 1));
+                ToastUtils.toast("Item " + (i + 1));
                 mListPopup.dismiss();
             });
             mListPopup.setOnDismissListener(() -> {

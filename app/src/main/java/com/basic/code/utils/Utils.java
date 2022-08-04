@@ -34,9 +34,9 @@ import com.basic.face.widget.dialog.materialdialog.MaterialDialog;
 import com.basic.face.widget.imageview.preview.PreviewBuilder;
 import com.basic.code.R;
 import com.basic.code.activity.MainActivity;
-import com.basic.code.base.webview.WebActivity;
-import com.basic.code.base.webview.MiddlewareWebViewClient;
-import com.basic.code.fragment.components.imageview.preview.ImageViewInfo;
+import com.basic.code.base.web.WebActivity;
+import com.basic.code.base.web.MiddlewareWebViewClient;
+import com.basic.code.fragment.components.image.preview.ImageViewInfo;
 import com.basic.code.utils.update.CustomUpdateFailureListener;
 import com.basic.renew.Update;
 import com.basic.tools.Util;
@@ -48,7 +48,7 @@ import com.basic.tools.file.FileUtils;
 
 import java.io.File;
 
-import static com.basic.code.base.webview.WebFragment.KEY_URL;
+import static com.basic.code.base.web.WebFragment.KEY_URL;
 
 public final class Utils {
 

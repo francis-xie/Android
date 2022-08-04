@@ -11,7 +11,7 @@ import com.basic.code.fragment.expands.materialdesign.constraintlayout.Constrain
 import com.basic.code.fragment.expands.materialdesign.constraintlayout.ConstraintLayoutContainerFragment;
 import com.basic.code.fragment.expands.materialdesign.constraintlayout.ConstraintLayoutGroupFragment;
 import com.basic.code.fragment.expands.materialdesign.constraintlayout.ConstraintLayoutPlaceholderFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import java.util.List;
 
@@ -60,7 +60,7 @@ public class ConstraintLayoutFragment extends BaseSimpleListFragment {
                 break;
             case 7:
                 if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) {
-                    XToastUtils.warning("当前手机版本过低，暂不支持");
+                    ToastUtils.warning("当前手机版本过低，暂不支持");
                 } else {
                     openPage(ConstraintLayoutConstraintSetFragment.class);
                 }

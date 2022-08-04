@@ -17,7 +17,7 @@ import com.basic.face.utils.ColorUtils;
 import com.basic.face.utils.DensityUtils;
 import com.basic.face.utils.ViewUtils;
 import com.basic.code.R;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import java.util.Locale;
 
@@ -95,7 +95,7 @@ public class CustomAnnotationView extends LinearLayout {
         }
         setBackgroundColor(ColorUtils.getRandomColor());
         mTextView.setText(String.format(Locale.CHINA, "%s%d: %s", getClass().getSimpleName(), cell.pos, cell.optParam("text")));
-        setOnClickListener(v -> XToastUtils.toast("您点击了组件，type=" + cell.stringType + ", pos=" + cell.pos));
+        setOnClickListener(v -> ToastUtils.toast("您点击了组件，type=" + cell.stringType + ", pos=" + cell.pos));
     }
 
     /**

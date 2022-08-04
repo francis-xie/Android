@@ -11,9 +11,9 @@ import com.basic.web.core.Web;
 import com.basic.aop.annotation.SingleClick;
 import com.basic.page.annotation.Page;
 import com.basic.code.R;
-import com.basic.code.base.webview.BaseWebViewFragment;
+import com.basic.code.base.web.BaseWebViewFragment;
 import com.basic.code.utils.Utils;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import org.json.JSONObject;
 
@@ -86,7 +86,7 @@ public class JsWebViewFragment extends BaseWebViewFragment {
 
         @JavascriptInterface
         public void callAndroid(final String msg) {
-            XToastUtils.toast("这是Js调用Android的方法，内容:" + msg);
+            ToastUtils.toast("这是Js调用Android的方法，内容:" + msg);
         }
 
     }

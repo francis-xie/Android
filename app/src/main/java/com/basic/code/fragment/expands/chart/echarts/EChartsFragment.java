@@ -6,7 +6,7 @@ import android.view.View;
 import com.basic.page.annotation.Page;
 import com.basic.face.widget.actionbar.TitleBar;
 import com.basic.code.base.BaseSimpleListFragment;
-import com.basic.code.base.webview.PageWebViewFragment;
+import com.basic.code.base.web.PageWebViewFragment;
 import com.basic.code.utils.Utils;
 
 import java.util.List;

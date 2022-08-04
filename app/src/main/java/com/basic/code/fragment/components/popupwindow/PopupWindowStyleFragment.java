@@ -10,7 +10,7 @@ import com.basic.face.widget.popupwindow.popup.FACESimplePopup;
 import com.basic.code.DemoDataProvider;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.tools.display.DensityUtils;
 
 import butterknife.OnClick;
@@ -64,19 +64,19 @@ public class PopupWindowStyleFragment extends BaseFragment {
 
     private void initListPopup() {
         mListPopup = new FACESimplePopup(getContext(), DemoDataProvider.dpiItems)
-                .create(DensityUtils.dip2px(getContext(), 170), (adapter, item, position) -> XToastUtils.toast(item.getTitle().toString()))
+                .create(DensityUtils.dip2px(getContext(), 170), (adapter, item, position) -> ToastUtils.toast(item.getTitle().toString()))
                 .setHasDivider(true);
     }
 
     private void initExpandableListPopup() {
         mExpandableListPopup = new FACESimpleExpandablePopup(getContext(), DemoDataProvider.expandableItems)
                 .create(DensityUtils.dip2px(getContext(), 200), DensityUtils.dip2px(getContext(), 200))
-                .setOnExpandableItemClickListener(false, (adapter, group, groupPosition, childPosition) -> XToastUtils.toast(group.getChildItem(childPosition).getTitle()));
+                .setOnExpandableItemClickListener(false, (adapter, group, groupPosition, childPosition) -> ToastUtils.toast(group.getChildItem(childPosition).getTitle()));
     }
 
     private void initMenuPopup() {
         mMenuPopup = new FACESimplePopup(getContext(), DemoDataProvider.menuItems)
-                .create((adapter, item, position) -> XToastUtils.toast(item.getTitle().toString()));
+                .create((adapter, item, position) -> ToastUtils.toast(item.getTitle().toString()));
     }
 
     @SingleClick

@@ -9,7 +9,7 @@ import com.basic.face.utils.StatusBarUtils;
 import com.basic.face.widget.banner.widget.banner.SimpleImageBanner;
 import com.basic.code.DemoDataProvider;
 import com.basic.code.R;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -31,7 +31,7 @@ public class TranslucentActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         sibSimpleUsage.setSource(DemoDataProvider.getBannerList())
-                .setOnItemClickListener((view, item, position) -> XToastUtils.toast("headBanner position--->" + position)).startScroll();
+                .setOnItemClickListener((view, item, position) -> ToastUtils.toast("headBanner position--->" + position)).startScroll();
 
     }
 

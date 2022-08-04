@@ -23,7 +23,7 @@ import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
 import com.basic.code.utils.LocationService;
 import com.basic.code.utils.Utils;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -125,13 +125,13 @@ public class CitySelectorFragment extends BaseFragment implements CompoundButton
                     @Override
                     public void onPick(int position, City data) {
                         tvCurrent.setText(String.format("当前城市：%s，%s", data.getName(), data.getCode()));
-                        XToastUtils.toast(String.format("点击的数据：%s，%s", data.getName(), data.getCode()));
+                        ToastUtils.toast(String.format("点击的数据：%s，%s", data.getName(), data.getCode()));
                         LocationService.stop(mListener);
                     }
 
                     @Override
                     public void onCancel() {
-                        XToastUtils.toast("取消选择");
+                        ToastUtils.toast("取消选择");
                         LocationService.stop(mListener);
                     }
 

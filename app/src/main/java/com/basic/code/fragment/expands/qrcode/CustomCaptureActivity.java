@@ -16,11 +16,11 @@ import com.basic.scan.Scan;
 import com.basic.scan.ui.CaptureActivity;
 import com.basic.code.R;
 import com.basic.code.utils.Utils;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.tools.common.StringUtils;
 
-import static com.basic.code.base.webview.WebViewInterceptDialog.APP_LINK_ACTION;
-import static com.basic.code.base.webview.WebViewInterceptDialog.APP_LINK_HOST;
+import static com.basic.code.base.web.WebInterceptDialog.APP_LINK_ACTION;
+import static com.basic.code.base.web.WebInterceptDialog.APP_LINK_HOST;
 
 /**
  * 自定义二维码扫描界面
@@ -126,7 +126,7 @@ public class CustomCaptureActivity extends CaptureActivity implements View.OnCli
             refreshFlashIcon();
         } catch (RuntimeException e) {
             e.printStackTrace();
-            XToastUtils.error("设备不支持闪光灯!");
+            ToastUtils.error("设备不支持闪光灯!");
         }
     }
 
@@ -196,7 +196,7 @@ public class CustomCaptureActivity extends CaptureActivity implements View.OnCli
             intent.setData(Uri.parse(url));
             context.startActivity(intent);
         } catch (Exception e) {
-            XToastUtils.error("您所打开的第三方App未安装！");
+            ToastUtils.error("您所打开的第三方App未安装！");
         }
     }
 

@@ -8,7 +8,7 @@ import com.basic.face.utils.ResUtils;
 import com.basic.face.widget.banner.widget.banner.BannerItem;
 import com.basic.face.widget.banner.widget.banner.SimpleImageBanner;
 import com.basic.code.R;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import java.util.List;
 
@@ -68,12 +68,12 @@ public class RefreshHeadViewAdapter extends BaseRecyclerAdapter<String> {
         if (getItemViewType(position) == TYPE_BANNER_HEAD) {
             headBanner = holder.findViewById(R.id.sib_simple_usage);
             headBanner.setSource(mData)
-                    .setOnItemClickListener((view, item12, position12) -> XToastUtils.toast("headBanner position--->" + position12)).startScroll();
+                    .setOnItemClickListener((view, item12, position12) -> ToastUtils.toast("headBanner position--->" + position12)).startScroll();
 
         } else if (getItemViewType(position) == TYPE_BANNER_FOOT) {
             footBanner = holder.findViewById(R.id.sib_simple_usage);
             footBanner.setSource(mData)
-                    .setOnItemClickListener((view, item1, position1) -> XToastUtils.toast("headBanner position--->" + position1)).startScroll();
+                    .setOnItemClickListener((view, item1, position1) -> ToastUtils.toast("headBanner position--->" + position1)).startScroll();
         } else {
             holder.text(android.R.id.text1, ResUtils.getResources().getString(R.string.item_example_number_title, position));
             holder.text(android.R.id.text2, ResUtils.getResources().getString(R.string.item_example_number_abstract, position) + "：" + item);

@@ -16,7 +16,7 @@ import com.basic.code.MyApp;
 import com.basic.code.base.BaseActivity;
 import com.basic.code.base.db.InternalDataBase;
 import com.basic.code.utils.TokenUtils;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.tools.Util;
 import com.basic.tools.common.StringUtils;
 
@@ -99,7 +99,7 @@ public final class BasicLibInit {
         //日志打印切片开启
         AOP.debug(MyApp.isDebug());
         //设置动态申请权限切片 申请权限被拒绝的事件响应监听
-        AOP.setOnPermissionDeniedListener(permissionsDenied -> XToastUtils.error("权限申请被拒绝:" + StringUtils.listToString(permissionsDenied, ",")));
+        AOP.setOnPermissionDeniedListener(permissionsDenied -> ToastUtils.error("权限申请被拒绝:" + StringUtils.listToString(permissionsDenied, ",")));
     }
 
     /**

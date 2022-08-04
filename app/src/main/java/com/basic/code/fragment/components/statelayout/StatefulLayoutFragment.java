@@ -7,7 +7,7 @@ import com.basic.face.widget.statelayout.CustomStateOptions;
 import com.basic.face.widget.statelayout.StatefulLayout;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -35,7 +35,7 @@ public class StatefulLayoutFragment extends BaseFragment {
 
     }
 
-    private View.OnClickListener clickListener = v -> XToastUtils.toast("点击重试按钮!");
+    private View.OnClickListener clickListener = v -> ToastUtils.toast("点击重试按钮!");
 
     @OnClick(R.id.btn_content)
     public void content(View view) {

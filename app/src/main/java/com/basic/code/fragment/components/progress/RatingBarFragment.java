@@ -9,7 +9,7 @@ import com.basic.face.widget.progress.ratingbar.RotationRatingBar;
 import com.basic.face.widget.progress.ratingbar.ScaleRatingBar;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -43,7 +43,7 @@ public class RatingBarFragment extends BaseFragment {
 
     @Override
     protected void initListeners() {
-        ratingBar.setOnRatingChangeListener((ratingBar, rating) -> XToastUtils.toast("当前星级：" + rating));
+        ratingBar.setOnRatingChangeListener((ratingBar, rating) -> ToastUtils.toast("当前星级：" + rating));
         scaleRatingBar.setOnRatingChangeListener((ratingBar, rating) -> {
 
         });

@@ -15,7 +15,7 @@ import com.basic.code.adapter.CommonGridAdapter;
 import com.basic.code.adapter.NewsCardViewListAdapter;
 import com.basic.code.base.BaseFragment;
 import com.basic.code.utils.Utils;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import butterknife.BindView;
 
@@ -44,7 +44,7 @@ public class LinkageScrollLayoutFragment extends BaseFragment {
     @Override
     protected void initViews() {
         sibSimpleUsage.setSource(DemoDataProvider.getBannerList())
-                .setOnItemClickListener((view, item, position) -> XToastUtils.toast("headBanner position--->" + position)).startScroll();
+                .setOnItemClickListener((view, item, position) -> ToastUtils.toast("headBanner position--->" + position)).startScroll();
         WidgetUtils.initRecyclerView(recyclerView, 0);
         recyclerView.setAdapter(mNewsListAdapter = new NewsCardViewListAdapter());
 
@@ -68,6 +68,6 @@ public class LinkageScrollLayoutFragment extends BaseFragment {
         refreshLayout.autoRefresh();//第一次进入触发自动刷新，演示效果
 
         mNewsListAdapter.setOnItemClickListener((itemView, item, position) -> Utils.goWeb(getContext(), item.getDetailUrl()));
-        mGridAdapter.setOnItemClickListener((itemView, item, position) -> XToastUtils.toast("点击了：" + item.getTitle()));
+        mGridAdapter.setOnItemClickListener((itemView, item, position) -> ToastUtils.toast("点击了：" + item.getTitle()));
     }
 }

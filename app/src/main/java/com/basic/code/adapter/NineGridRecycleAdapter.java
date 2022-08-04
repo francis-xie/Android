@@ -21,8 +21,8 @@ import com.basic.face.widget.imageview.nine.NineGridImageViewAdapter;
 import com.basic.face.widget.imageview.preview.PreviewBuilder;
 import com.basic.face.widget.imageview.preview.loader.GlideMediaLoader;
 import com.basic.code.R;
-import com.basic.code.fragment.components.imageview.preview.ImageViewInfo;
-import com.basic.code.fragment.components.imageview.preview.NineGridInfo;
+import com.basic.code.fragment.components.image.preview.ImageViewInfo;
+import com.basic.code.fragment.components.image.preview.NineGridInfo;
 import com.basic.code.utils.SettingSPUtils;
 
 import java.util.List;

@@ -1,6 +1,6 @@
 package com.basic.code.utils.update;
 
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.renew.entity.UpdateError;
 import com.basic.renew.listener.OnUpdateFailureListener;
 
@@ -30,7 +30,7 @@ public class CustomUpdateFailureListener implements OnUpdateFailureListener {
     @Override
     public void onFailure(UpdateError error) {
         if (mNeedErrorTip) {
-            XToastUtils.toast(error.toString());
+            ToastUtils.toast(error.toString());
         }
         if (error.getCode() == UpdateError.ERROR.DOWNLOAD_FAILED) {
             UpdateTipDialog.show("Github被墙无法下载，是否考虑切换蒲公英下载[密码:zhiqiang]？");

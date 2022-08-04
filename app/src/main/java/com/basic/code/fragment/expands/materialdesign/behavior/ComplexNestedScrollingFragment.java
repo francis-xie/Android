@@ -29,7 +29,7 @@ import com.basic.face.widget.statelayout.SimpleAnimationListener;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
 import com.basic.code.fragment.components.tabbar.tabsegment.MultiPage;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.code.widget.ComplexNestedScrollingLayout;
 
 import butterknife.BindView;
@@ -97,7 +97,7 @@ public class ComplexNestedScrollingFragment extends BaseFragment implements TabL
             @SingleClick
             @Override
             public void performAction(View view) {
-                XToastUtils.toast("搜索");
+                ToastUtils.toast("搜索");
             }
         });
         return null;
@@ -223,7 +223,7 @@ public class ComplexNestedScrollingFragment extends BaseFragment implements TabL
 
     @Override
     public void onTabSelected(TabLayout.Tab tab) {
-        XToastUtils.toast("选中了:" + tab.getText());
+        ToastUtils.toast("选中了:" + tab.getText());
     }
 
     @Override

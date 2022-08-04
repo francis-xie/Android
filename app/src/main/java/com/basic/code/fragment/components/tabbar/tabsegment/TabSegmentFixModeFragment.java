@@ -18,7 +18,7 @@ import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
 import com.basic.code.fragment.components.tabbar.tablayout.ContentPage;
 import com.basic.code.fragment.expands.materialdesign.behavior.SimpleListFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import butterknife.BindView;
 
@@ -75,7 +75,7 @@ public class TabSegmentFixModeFragment extends BaseFragment {
             mTabSegment1.addTab(new TabSegment.Tab(page));
         }
         mTabSegment1.setMode(TabSegment.MODE_FIXED);
-        mTabSegment1.setOnTabClickListener(index -> XToastUtils.toast("点击了" + index));
+        mTabSegment1.setOnTabClickListener(index -> ToastUtils.toast("点击了" + index));
         //不使用ViewPager的话，必须notifyDataChanged，否则不能正常显示
         mTabSegment1.notifyDataChanged();
         mTabSegment1.selectTab(0);

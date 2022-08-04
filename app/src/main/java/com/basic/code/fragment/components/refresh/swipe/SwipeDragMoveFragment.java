@@ -12,7 +12,7 @@ import com.basic.face.widget.actionbar.TitleBar;
 import com.basic.code.R;
 import com.basic.code.adapter.swipe.SwipeDragTouchListAdapter;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.yanzhenjie.recyclerview.SwipeRecyclerView;
 import com.yanzhenjie.recyclerview.touch.OnItemMoveListener;
 import com.yanzhenjie.recyclerview.touch.OnItemStateChangedListener;
@@ -124,7 +124,7 @@ public class SwipeDragMoveFragment extends BaseFragment {
         @Override
         public void onItemDismiss(RecyclerView.ViewHolder srcHolder) {
             int position = mAdapter.onRemoveItem(srcHolder);
-            XToastUtils.toast("现在的第" + (position + 1) + "被删除。");
+            ToastUtils.toast("现在的第" + (position + 1) + "被删除。");
         }
 
     };

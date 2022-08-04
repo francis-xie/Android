@@ -3,7 +3,7 @@
                                          android:id="@+id/refreshLayout"
                                          style="@style/PullDownStyle">
 
-    <com.basic.code.base.webview.LollipopFixedWebView
+    <com.basic.code.base.web.LollipopFixedWebView
         android:id="@+id/webView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

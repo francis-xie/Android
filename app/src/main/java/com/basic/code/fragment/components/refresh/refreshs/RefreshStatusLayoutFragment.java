@@ -12,7 +12,7 @@ import com.basic.code.DemoDataProvider;
 import com.basic.code.R;
 import com.basic.code.adapter.SimpleRecyclerAdapter;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import butterknife.BindView;
 
@@ -75,7 +75,7 @@ public class RefreshStatusLayoutFragment extends BaseFragment {
         //上拉加载
         mRefreshLayout.setOnLoadMoreListener(refreshLayout -> refreshLayout.getLayout().postDelayed(() -> {
             if (mAdapter.getItemCount() > 30) {
-                XToastUtils.toast("数据全部加载完毕");
+                ToastUtils.toast("数据全部加载完毕");
                 refreshLayout.finishLoadMoreWithNoMoreData();//将不会再次触发加载更多事件
             } else {
                 mAdapter.loadMore(DemoDataProvider.getDemoData());

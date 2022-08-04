@@ -90,7 +90,7 @@
             android:launchMode="singleTask" />
 
         <activity
-            android:name=".base.webview.WebActivity"
+            android:name=".base.web.WebActivity"
             android:configChanges="screenSize|keyboardHidden|orientation|keyboard"
             android:hardwareAccelerated="true"
             android:label="@string/app_browser_name"
@@ -183,7 +183,7 @@
             android:theme="@style/DialogTheme" />
         <!-- Webview拦截提示弹窗-->
         <activity
-            android:name=".base.webview.WebViewInterceptDialog"
+            android:name=".base.web.WebInterceptDialog"
             android:theme="@style/DialogTheme" />
 
         <!--X5预加载-->

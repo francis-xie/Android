@@ -13,7 +13,7 @@ import com.basic.face.widget.grouplist.FACEGroupListView;
 import com.basic.face.widget.progress.loading.MiniLoadingView;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import butterknife.BindView;
 
@@ -63,7 +63,7 @@ public class GroupListViewFragment extends BaseFragment {
 
         FACECommonListItemView itemWithSwitch = mGroupListView.createItemView("Item 5");
         itemWithSwitch.setAccessoryType(FACECommonListItemView.ACCESSORY_TYPE_SWITCH);
-        itemWithSwitch.getSwitch().setOnCheckedChangeListener((buttonView, isChecked) -> XToastUtils.toast("checked = " + isChecked));
+        itemWithSwitch.getSwitch().setOnCheckedChangeListener((buttonView, isChecked) -> ToastUtils.toast("checked = " + isChecked));
 
         FACECommonListItemView itemWithCustom = mGroupListView.createItemView("Item 6");
         itemWithCustom.setAccessoryType(FACECommonListItemView.ACCESSORY_TYPE_CUSTOM);
@@ -73,7 +73,7 @@ public class GroupListViewFragment extends BaseFragment {
         View.OnClickListener onClickListener = v -> {
             if (v instanceof FACECommonListItemView) {
                 CharSequence text = ((FACECommonListItemView) v).getText();
-                XToastUtils.toast(text + " is Clicked");
+                ToastUtils.toast(text + " is Clicked");
             }
         };
 

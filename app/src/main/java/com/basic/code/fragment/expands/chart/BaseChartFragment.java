@@ -3,7 +3,7 @@ package com.basic.code.fragment.expands.chart;
 import com.github.mikephil.charting.charts.Chart;
 import com.basic.aop.annotation.Permission;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import static com.basic.aop.consts.PermissionConsts.STORAGE;
 
@@ -47,10 +47,10 @@ public abstract class BaseChartFragment extends BaseFragment {
     @Permission(STORAGE)
     public void saveToGallery(Chart chart, String name) {
         if (chart.saveToGallery(name + "_" + System.currentTimeMillis(), 70)) {
-            XToastUtils.toast("保存成功!");
+            ToastUtils.toast("保存成功!");
 
         } else {
-            XToastUtils.toast("保存失败!");
+            ToastUtils.toast("保存失败!");
         }
     }
 

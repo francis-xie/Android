@@ -29,7 +29,7 @@ import com.basic.code.adapter.base.delegate.SingleDelegateAdapter;
 import com.basic.code.adapter.entity.NewInfo;
 import com.basic.code.base.BaseFragment;
 import com.basic.code.utils.Utils;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.tools.display.ScreenUtils;
 
 import java.util.ArrayList;
@@ -79,7 +79,7 @@ public class VLayoutFragment extends BaseFragment {
             public void onBindViewHolder(@NonNull RecyclerViewHolder holder, int position) {
                 SimpleImageBanner banner = holder.findViewById(R.id.sib_simple_usage);
                 banner.setSource(DemoDataProvider.getBannerList())
-                        .setOnItemClickListener((view, item, position1) -> XToastUtils.toast("headBanner position--->" + position1)).startScroll();
+                        .setOnItemClickListener((view, item, position1) -> ToastUtils.toast("headBanner position--->" + position1)).startScroll();
             }
         };
 
@@ -98,7 +98,7 @@ public class VLayoutFragment extends BaseFragment {
                     holder.text(R.id.tv_title, item.getTitle().toString().substring(0, 1));
                     holder.text(R.id.tv_sub_title, item.getTitle());
 
-                    holder.click(R.id.ll_container, v -> XToastUtils.toast("点击了：" + item.getTitle()));
+                    holder.click(R.id.ll_container, v -> ToastUtils.toast("点击了：" + item.getTitle()));
                 }
             }
         };
@@ -111,7 +111,7 @@ public class VLayoutFragment extends BaseFragment {
             public void onBindViewHolder(@NonNull RecyclerViewHolder holder, int position) {
                 holder.text(R.id.tv_title, "资讯");
                 holder.text(R.id.tv_action, "更多");
-                holder.click(R.id.tv_action, v -> XToastUtils.toast("更多"));
+                holder.click(R.id.tv_action, v -> ToastUtils.toast("更多"));
             }
         };
 
@@ -139,7 +139,7 @@ public class VLayoutFragment extends BaseFragment {
         SingleDelegateAdapter floatAdapter = new SingleDelegateAdapter(R.layout.adapter_vlayout_float_item, floatLayoutHelper) {
             @Override
             public void onBindViewHolder(@NonNull RecyclerViewHolder holder, int position) {
-                holder.itemView.setOnClickListener(v -> XToastUtils.toast("点击了悬浮窗"));
+                holder.itemView.setOnClickListener(v -> ToastUtils.toast("点击了悬浮窗"));
             }
         };
 

@@ -17,7 +17,7 @@ import com.basic.face.widget.dialog.materialdialog.MaterialDialog;
 import com.basic.code.DemoDataProvider;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 import com.basic.code.widget.RadiusImageBanner;
 
 import java.util.ArrayList;
@@ -248,7 +248,7 @@ public class ViewPagerBannerFragment extends BaseFragment implements BaseBanner.
         Collections.addAll(titles, DemoDataProvider.titles);
         stb
                 .setSource(titles)
-                .setOnItemClickListener((view, item, position) -> XToastUtils.toast("position--->" + position))
+                .setOnItemClickListener((view, item, position) -> ToastUtils.toast("position--->" + position))
                 .startScroll();
 
     }
@@ -289,6 +289,6 @@ public class ViewPagerBannerFragment extends BaseFragment implements BaseBanner.
 
     @Override
     public void onItemClick(View view, BannerItem item, int position) {
-        XToastUtils.toast("position--->" + position + ", item:" + item.title);
+        ToastUtils.toast("position--->" + position + ", item:" + item.title);
     }
 }

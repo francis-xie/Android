@@ -9,7 +9,7 @@ import com.basic.page.annotation.Page;
 import com.basic.face.widget.statelayout.MultipleStatusView;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -50,7 +50,7 @@ public class MultipleStatusViewFragment extends BaseFragment {
     }
 
     final View.OnClickListener mRetryClickListener = (v -> {
-        XToastUtils.toast("点击重试");
+        ToastUtils.toast("点击重试");
         loading();
     });
 

@@ -4,7 +4,7 @@ import com.basic.page.annotation.Page;
 import com.basic.face.widget.edittext.verify.VerifyCodeEditText;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
-import com.basic.code.utils.XToastUtils;
+import com.basic.code.utils.ToastUtils;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -44,17 +44,17 @@ public class VerifyCodeEditTextFragment extends BaseFragment implements VerifyCo
 
     @Override
     public void onComplete(String input) {
-        XToastUtils.toast("onComplete:" + input);
+        ToastUtils.toast("onComplete:" + input);
     }
 
     @Override
     public void onChange(String input) {
-        XToastUtils.toast("onChange:" + input);
+        ToastUtils.toast("onChange:" + input);
     }
 
     @Override
     public void onClear() {
-        XToastUtils.toast("onClear");
+        ToastUtils.toast("onClear");
     }
 
     @OnClick(R.id.btn_clear)
