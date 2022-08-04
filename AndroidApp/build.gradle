@@ -99,30 +99,20 @@ dependencies {
     implementation deps.androidx.multidex
 
     implementation 'com.alibaba.android:vlayout:1.3.0'
-    // FACE框架
-    implementation project(':face-api')
     // 工具类
-    implementation project(':tools-core')
-    implementation project(':tools-api')
+    // FACE框架
     // 切片
-    implementation project(':aop-api')
-    // 版本更新
-    implementation project(':renew-api')
     // Http
-    implementation project(':http-api')
+    // 下拉刷新
+    // 版本更新
+    // Web
+    implementation project(':basic-api')
+    // 页面路由
+    //annotationProcessor project(':basic-compiler')
     // Page页面框架
     implementation project(':page-vapi')
     annotationProcessor project(':page-vcompiler')
-    // 页面路由
-    implementation project(':router-api')
-    annotationProcessor project(':router-compiler')
-    //下拉刷新
-    implementation project(':refresh-header')
-    implementation project(':refresh-layout')
-    //WebView
-    implementation project(':web-core')
-    implementation project(':web-download')//选填
-    implementation project(':web-api')//选填
+
     //腾讯的键值对存储mmkv
     implementation 'com.tencent:mmkv:1.2.10'
     //屏幕适配AutoSize
@@ -130,16 +120,13 @@ dependencies {
     //umeng统计
     implementation 'com.umeng.umsdk:common:9.3.8'
     implementation  'com.umeng.umsdk:asms:1.2.1'
-
     //预加载占位控件
     implementation 'me.samlss:broccoli:1.0.0'
 
     implementation 'com.zzhoujay.richtext:richtext:3.0.8'
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-
     //ANR异常捕获
     implementation 'com.github.anrwatchdog:anrwatchdog:1.4.0'
-
     //美团多渠道打包
     implementation 'com.meituan.android.walle:library:1.1.6'
 }

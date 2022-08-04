@@ -1,9 +1,0 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.basic.web.download">
-
-    <application
-        >
-        <receiver android:name="com.basic.web.download.NotificationCancelReceiver"></receiver>
-    </application>
-
-</manifest>

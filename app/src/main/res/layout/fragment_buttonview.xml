@@ -5,12 +5,12 @@
     android:orientation="vertical">
 
     <com.basic.face.widget.button.ButtonView style="@style/ButtonView.Blue"
-        android:layout_margin="20dp"/>
+                                             android:layout_margin="20dp"/>
 
     <com.basic.face.widget.button.ButtonView style="@style/ButtonView.Green"
-        android:layout_margin="20dp"/>
+                                             android:layout_margin="20dp"/>
 
     <com.basic.face.widget.button.ButtonView style="@style/ButtonView.Gray"
-        android:layout_margin="20dp"/>
+                                             android:layout_margin="20dp"/>
 
 </LinearLayout>

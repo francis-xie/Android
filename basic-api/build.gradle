@@ -1,0 +1,163 @@
+import org.aspectj.bridge.IMessage
+import org.aspectj.bridge.MessageHandler
+import org.aspectj.tools.ajc.Main
+
+apply plugin: 'com.android.library'
+//apply plugin: 'img-optimizer'
+
+android {
+    compileSdkVersion build_versions.target_sdk
+    buildToolsVersion build_versions.build_tools
+
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion build_versions.target_sdk
+
+        //##############################date##############################
+        vectorDrawables.useSupportLibrary = true
+        //##############################face##############################
+        consumerProguardFiles "proguard-rules.pro"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        //testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        //##############################router##############################
+        /*javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ moduleName : project.getName() ]
+            }
+        }*/
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets {
+        main.java.srcDirs += 'src/main/base'
+        main.java.srcDirs += 'src/main/api9'
+        main.java.srcDirs += 'src/main/api14'
+        main.java.srcDirs += 'src/main/api21'
+        main.java.srcDirs += 'src/main/api23'
+    }
+    configurations.all {
+        resolutionStrategy.force deps.rxjava2
+    }
+    //##############################web##############################
+    repositories {
+        flatDir {
+            dirs 'libs', 'providedLibs'
+        }
+    }
+    lintOptions {
+        //##############################renew##############################
+        checkReleaseBuilds false
+
+        abortOnError false
+    }
+    //##############################image##############################
+    resourcePrefix 'tailor_'
+    resourcePrefix 'pic_'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation deps.androidx.appcompat
+    //butterKnife的sdk
+    implementation deps.butterknife.runtime
+    annotationProcessor deps.butterknife.compiler
+
+    //##############################aop##############################
+    implementation 'org.aspectj:aspectjrt:1.8.9'
+    //磁盘缓存的依赖包
+    implementation 'com.jakewharton:disklrucache:2.0.2'
+    //##############################camera##############################
+    implementation deps.support.app_compat
+    //##############################cities##############################
+    compileOnly deps.support.recyclerview
+    compileOnly deps.support.design
+
+    //Gson序列化反序列化的依赖包
+    implementation deps.gson
+    //##############################dbms##############################
+    api 'com.j256.ormlite:ormlite-android:5.1'
+    //##############################face##############################
+    implementation deps.androidx.recyclerview
+    implementation deps.androidx.design
+    implementation deps.glide
+    api 'io.github.inflationx:calligraphy3:3.1.1'
+    api 'io.github.inflationx:viewpump:2.0.3'
+    //##############################http##############################
+    //使用retrofit的依赖包
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+    //RxJava
+    implementation deps.rxjava2
+    implementation deps.rxandroid
+    //OkHttp的依赖包
+    compileOnly 'com.squareup.okhttp3:okhttp:3.14.9'
+    //##############################image##############################
+    implementation deps.rx_android
+    //##############################scan##############################
+    implementation 'com.google.zxing:core:3.3.3'
+    //##############################web##############################
+    implementation fileTree(include: ['*.jar'], dir: 'providedLibs')
+    compileOnly deps.support.v4
+
+    //rxbinding的sdk
+    compileOnly deps.rxbinding
+
+    //annotationProcessor project(':basic-compiler')
+    api project(':basic-model')
+    api project(':basic-annotation')
+
+    testImplementation deps.junit
+    androidTestImplementation deps.runner
+    androidTestImplementation deps.espresso.core
+}
+
+android.libraryVariants.all { variant ->
+    JavaCompile javaCompile = null
+    if (variant.hasProperty('javaCompileProvider')) {
+        //gradle 4.10.1 +
+        TaskProvider<JavaCompile> provider = variant.javaCompileProvider
+        javaCompile = provider.get()
+    } else {
+        javaCompile = variant.hasProperty('javaCompiler') ? variant.javaCompiler : variant.javaCompile
+    }
+    javaCompile.doLast {
+        String[] args = [
+                "-showWeaveInfo",
+                "-1.5",
+                "-inpath", javaCompile.destinationDir.toString(),
+                "-aspectpath", javaCompile.classpath.asPath,
+                "-d", javaCompile.destinationDir.toString(),
+                "-classpath", javaCompile.classpath.asPath,
+                "-bootclasspath", android.bootClasspath.join(File.pathSeparator)
+        ]
+
+        MessageHandler handler = new MessageHandler(true);
+        new Main().run(args, handler)
+
+        def log = project.logger
+        for (IMessage message : handler.getMessages(null, true)) {
+            switch (message.getKind()) {
+                case IMessage.ABORT:
+                case IMessage.ERROR:
+                case IMessage.FAIL:
+                    log.error message.message, message.thrown
+                    break;
+                case IMessage.WARNING:
+                case IMessage.INFO:
+                    log.info message.message, message.thrown
+                    break;
+                case IMessage.DEBUG:
+                    log.debug message.message, message.thrown
+                    break;
+            }
+        }
+    }
+}
+
+apply from: '../JitPackUpload.gradle'
+

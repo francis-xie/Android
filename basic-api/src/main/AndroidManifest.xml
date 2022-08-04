@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.basic">
+
+  <!--文件读写权限-->
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <!-- 在SDCard中创建与删除文件权限 -->
+  <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+  <!--##############################camera##############################-->
+  <!--闪光灯-->
+  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-feature android:name="android.hardware.camera"/>
+  <!--<uses-feature android:name="android.hardware.camera.autofocus"
+                android:required="false"/>-->
+  <!--##############################float##############################-->
+  <!-- 悬浮窗 -->
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+  <!--##############################http##############################-->
+  <!-- 在SDCard中创建与删除文件权限 -->
+  <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+                   tools:ignore="ProtectedPermissions"/>
+  <!--网络权限-->
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <!--##############################log##############################-->
+  <!--锁屏权限-->
+  <uses-permission android:name="android.permission.WAKE_LOCK"/>
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <!--##############################renew##############################-->
+  <!-- APK安装 -->
+  <uses-permission android:name="android.permission.INSTALL_PACKAGES"
+                   tools:ignore="ProtectedPermissions"/>
+  <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+  <!--##############################scan##############################-->
+  <uses-feature android:name="android.hardware.camera.autofocus"/>
+  <uses-permission android:name="android.permission-group.CAMERA"/>
+  <uses-permission android:name="android.permission.FLASHLIGHT"/>
+  <!-- 震动 -->
+  <uses-permission android:name="android.permission.VIBRATE"/>
+  <!--##############################tools##############################-->
+  <!--网络权限-->
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+  <!-- 蓝牙权限 -->
+  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+  <uses-permission android:name="android.permission.BLUETOOTH"/>
+  <!--定位权限-->
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <!-- 前台服务，兼容9.0 -->
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+  <!--手机权限-->
+  <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+  <uses-permission android:name="android.permission.CALL_PHONE"/>
+  <uses-permission android:name="android.permission.SEND_SMS"/>
+  <uses-permission android:name="android.permission.READ_SMS"/>
+  <uses-permission android:name="android.permission.READ_CONTACTS"/>
+  <uses-permission android:name="android.permission.READ_CALENDAR"/>
+  <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+  <!--修改手机状态-->
+  <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"
+                   tools:ignore="ProtectedPermissions"/>
+  <uses-feature android:name="android.hardware.camera.flash"/>
+  <!--进程杀死-->
+  <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+  <!--状态栏权限-->
+  <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+  <!--修改系统设置-->
+  <uses-permission android:name="android.permission.WRITE_SETTINGS"
+                   tools:ignore="ProtectedPermissions"/>
+
+  <application>
+    <!--##############################aop##############################-->
+    <activity
+      android:name="com.basic.aop.util.PermissionUtils$PermissionActivity"
+      android:configChanges="orientation|keyboardHidden|screenSize"
+      android:theme="@style/AOP_Activity_Translucent"
+      android:windowSoftInputMode="stateHidden|stateAlwaysHidden"/>
+    <!--##############################face##############################-->
+    <provider
+      android:name="com.basic.face.FACEInitProvider"
+      android:authorities="${applicationId}.face-init-provider"
+      android:exported="false"
+      android:multiprocess="true"/>
+    <activity
+      android:name="com.basic.face.widget.imageview.preview.ui.PreviewActivity"
+      android:theme="@style/FACETheme.Translucent"/>
+    <activity
+      android:name="com.basic.face.widget.imageview.preview.ui.VideoPlayerActivity"
+      android:theme="@style/FACETheme.Translucent"/>
+    <!--##############################image##############################-->
+    <activity android:name="com.basic.tailor.TailorActivity"/>
+    <activity android:name="com.basic.tailor.PictureMultiCuttingActivity"/>
+    <provider
+      android:name="com.basic.image.PictureFileProvider"
+      android:authorities="${applicationId}.provider"
+      android:exported="false"
+      android:grantUriPermissions="true">
+      <meta-data
+        android:name="android.support.FILE_PROVIDER_PATHS"
+        android:resource="@xml/pic_file_paths"/>
+    </provider>
+    <activity
+      android:name="com.basic.image.PictureSelectorActivity"
+      android:windowSoftInputMode="adjustPan"/>
+    <activity android:name="com.basic.image.PicturePreviewActivity"/>
+    <activity
+      android:name="com.basic.image.PictureVideoPlayActivity"
+      android:configChanges="orientation|keyboardHidden|screenSize"
+      android:screenOrientation="sensor"/>
+    <activity android:name="com.basic.image.PictureExternalPreviewActivity"/>
+    <activity android:name="com.basic.image.PicturePlayAudioActivity"/>
+    <!--##############################log##############################-->
+    <provider
+      android:name="com.basic.log.content.LogFileProvider"
+      android:authorities="${applicationId}.log.provider"
+      android:exported="false"
+      android:grantUriPermissions="true">
+      <meta-data
+        android:name="android.support.FILE_PROVIDER_PATHS"
+        android:resource="@xml/log_provider_paths"/>
+    </provider>
+    <activity
+      android:name="com.basic.log.crash.ui.CrashActivity"
+      android:theme="@style/CrashTheme.Default"/>
+    <!--##############################refresh##############################-->
+    <!--android:allowBackup="true"-->
+    <!--android:supportsRtl="true"-->
+    <!--##############################renew##############################-->
+    <service android:name="com.basic.renew.service.DownloadService"/>
+    <provider
+      android:name="com.basic.renew.utils.UpdateFileProvider"
+      android:authorities="${applicationId}.updateFileProvider"
+      android:exported="false"
+      android:grantUriPermissions="true">
+      <meta-data
+        android:name="android.support.FILE_PROVIDER_PATHS"
+        android:resource="@xml/update_file_paths"/>
+    </provider>
+    <activity
+      android:name="com.basic.renew.widget.UpdateDialogActivity"
+      android:theme="@style/Update_DialogTheme"/>
+    <!--##############################scan##############################-->
+    <activity
+      android:name="com.basic.scan.ui.CaptureActivity"
+      android:configChanges="screenSize|keyboardHidden|orientation|keyboard"
+      android:screenOrientation="portrait"
+      android:theme="@style/ScanTheme"
+      android:windowSoftInputMode="stateAlwaysHidden">
+      <intent-filter>
+        <action android:name="com.basic.scan.ui.captureactivity"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <!--##############################tools##############################-->
+    <activity
+      android:name="com.basic.tools.system.PermissionUtils$PermissionActivity"
+      android:configChanges="orientation|keyboardHidden|screenSize"
+      android:theme="@style/Util_Activity_Translucent"
+      android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+    <provider
+      android:name="androidx.core.content.FileProvider4Utils"
+      android:authorities="${applicationId}.util.provider"
+      android:exported="false"
+      android:grantUriPermissions="true">
+      <meta-data
+        android:name="android.support.FILE_PROVIDER_PATHS"
+        android:resource="@xml/util_provider_paths" />
+    </provider>
+    <!--##############################web##############################-->
+    <provider
+      android:name="com.basic.web.core.web.WebFileProvider"
+      android:authorities="${applicationId}.WebFileProvider"
+      android:exported="false"
+      android:grantUriPermissions="true">
+      <meta-data
+        android:name="android.support.FILE_PROVIDER_PATHS"
+        android:resource="@xml/web_files_paths"/>
+    </provider>
+    <activity
+      android:name="com.basic.web.action.ActionActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:exported="false"
+      android:launchMode="standard"
+      android:theme="@style/actionActivity"
+      android:windowSoftInputMode="stateHidden|stateAlwaysHidden">
+    </activity>
+    <receiver android:name="com.basic.web.download.NotificationCancelReceiver"></receiver>
+  </application>
+
+</manifest>

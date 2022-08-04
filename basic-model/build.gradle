@@ -1,0 +1,12 @@
+apply plugin: 'java'
+
+dependencies {
+    implementation deps.gson
+    //##############################dbms##############################
+    implementation 'com.j256.ormlite:ormlite-core:5.1'
+}
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+apply from: '../JitPackUpload.gradle'
