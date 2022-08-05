@@ -14,8 +14,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.basic.router.annotation.AutoWired;
 import com.basic.router.launcher.Router;
-import com.basic.face.widget.imageview.crop.CropImageType;
-import com.basic.face.widget.imageview.crop.CropImageView;
+import com.basic.face.widget.image.crop.CropImageType;
+import com.basic.face.widget.image.crop.CropImageView;
 import com.basic.code.R;
 import com.basic.tools.common.StringUtils;
 import com.basic.tools.display.ImageUtils;

@@ -7,7 +7,7 @@ import com.basic.page.annotation.Page;
 import com.basic.page.enums.CoreAnim;
 import com.basic.face.utils.ResUtils;
 import com.basic.face.widget.actionbar.TitleBar;
-import com.basic.face.widget.imageview.preview.view.SmoothImageView;
+import com.basic.face.widget.image.preview.view.SmoothImageView;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
 

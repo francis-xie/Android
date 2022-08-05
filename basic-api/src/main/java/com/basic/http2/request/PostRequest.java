@@ -17,7 +17,7 @@ public class PostRequest extends BaseBodyRequest<PostRequest> {
     }
 
     /**
-     * 使用xHttpRequest来构建post请求
+     * 使用httpRequest来构建post请求
      * @param httpRequest 统一封装的请求实体对象
      */
     public PostRequest(HttpRequest httpRequest) {

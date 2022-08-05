@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.basic.page.annotation.Page;
-import com.basic.face.widget.imageview.SignatureView;
+import com.basic.face.widget.image.SignatureView;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
 import com.basic.code.utils.ToastUtils;

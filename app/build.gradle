@@ -88,7 +88,8 @@ android {
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
     implementation deps.androidx.multidex
     implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
 
@@ -102,27 +103,11 @@ dependencies {
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'com.github.bumptech.glide:glide:4.12.0'
 
-    // 切片
-    // 页面路由
-    // 工具类
-    // FACE框架
-    // Page页面框架
-    // 相机拍摄
-    // CitySelector
-    // 日历控件
-    // 数据库
-    // Floats悬浮窗口
-    //需要裁剪时使用
-    // PictureSelector图片选择
-    // 任务框架
-    // log
-    // 下拉刷新
-    // TabBar
-    // Scan二维码扫描
-    // 版本更新
-    // Web
+    // 切片、页面路由、工具类、FACE框架、Page页面框架、相机拍摄、CitySelector、日历控件
+    // 数据库、Floats悬浮窗口、需要裁剪时使用、PictureSelector图片选择、任务框架、log
+    // 下拉刷新、TabBar、Scan二维码扫描、版本更新、Web
     implementation project(':basic-api')
-    //annotationProcessor project(':basic-compiler')
+    annotationProcessor project(':basic-compiler')
     // ButterKnife
     implementation deps.butterknife.runtime
     annotationProcessor deps.butterknife.compiler
@@ -176,7 +161,7 @@ dependencies {
     implementation 'com.kunminx.linkage:linkage-recyclerview:1.9.2'
     // umeng统计
     implementation 'com.umeng.umsdk:common:9.3.8'
-    implementation  'com.umeng.umsdk:asms:1.2.1'
+    implementation 'com.umeng.umsdk:asms:1.2.1'
     // ANR异常捕获
     implementation 'com.github.anrwatchdog:anrwatchdog:1.4.0'
 }

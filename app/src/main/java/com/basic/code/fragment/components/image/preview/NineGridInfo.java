@@ -1,7 +1,7 @@
 
 package com.basic.code.fragment.components.image.preview;
 
-import com.basic.face.widget.imageview.nine.NineGridImageView;
+import com.basic.face.widget.image.nine.NineGridImageView;
 
 import java.util.List;
 

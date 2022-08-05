@@ -12,7 +12,7 @@ import androidx.annotation.ColorInt;
 import androidx.annotation.Nullable;
 
 import com.basic.face.utils.ViewUtils;
-import com.basic.face.widget.imageview.ImageLoader;
+import com.basic.face.widget.image.ImageLoader;
 import com.basic.tools.display.DensityUtils;
 
 /**

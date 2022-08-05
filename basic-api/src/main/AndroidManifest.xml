@@ -85,10 +85,10 @@
       android:exported="false"
       android:multiprocess="true"/>
     <activity
-      android:name="com.basic.face.widget.imageview.preview.ui.PreviewActivity"
+      android:name="com.basic.face.widget.image.preview.ui.PreviewActivity"
       android:theme="@style/FACETheme.Translucent"/>
     <activity
-      android:name="com.basic.face.widget.imageview.preview.ui.VideoPlayerActivity"
+      android:name="com.basic.face.widget.image.preview.ui.VideoPlayerActivity"
       android:theme="@style/FACETheme.Translucent"/>
     <!--##############################image##############################-->
     <activity android:name="com.basic.tailor.TailorActivity"/>

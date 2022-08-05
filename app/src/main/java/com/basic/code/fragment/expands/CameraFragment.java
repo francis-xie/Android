@@ -9,7 +9,7 @@ import androidx.appcompat.widget.AppCompatImageView;
 
 import com.basic.aop.annotation.SingleClick;
 import com.basic.page.annotation.Page;
-import com.basic.face.widget.imageview.ImageLoader;
+import com.basic.face.widget.image.ImageLoader;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
 import com.basic.code.fragment.expands.camera.CameraActivity;

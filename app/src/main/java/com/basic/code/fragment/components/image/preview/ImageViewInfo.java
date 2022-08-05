@@ -7,7 +7,7 @@ import android.os.Parcelable;
 
 import androidx.annotation.Nullable;
 
-import com.basic.face.widget.imageview.preview.enitity.IPreviewInfo;
+import com.basic.face.widget.image.preview.enitity.IPreviewInfo;
 
 import java.util.Collections;
 import java.util.List;

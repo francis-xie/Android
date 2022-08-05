@@ -11,8 +11,8 @@ import androidx.annotation.NonNull;
 import com.basic.face.adapter.recyclerview.BaseRecyclerAdapter;
 import com.basic.face.adapter.recyclerview.RecyclerViewHolder;
 import com.basic.face.widget.banner.recycler.BannerLayout;
-import com.basic.face.widget.imageview.ImageLoader;
-import com.basic.face.widget.imageview.strategy.DiskCacheStrategyEnum;
+import com.basic.face.widget.image.ImageLoader;
+import com.basic.face.widget.image.strategy.DiskCacheStrategyEnum;
 import com.basic.code.R;
 
 import java.util.Arrays;

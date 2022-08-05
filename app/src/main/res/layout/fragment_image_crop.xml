@@ -31,7 +31,7 @@
     </LinearLayout>
 
 
-    <com.basic.face.widget.imageview.crop.CropImageView
+    <com.basic.face.widget.image.crop.CropImageView
         android:id="@+id/crop_image_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

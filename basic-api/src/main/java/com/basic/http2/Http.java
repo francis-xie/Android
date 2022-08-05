@@ -178,7 +178,7 @@ public final class Http {
     }
 
     /**
-     * 获取XHttp实例
+     * 获取Http实例
      *
      * @return
      */
@@ -211,7 +211,7 @@ public final class Http {
 
     private static void testInitialize() {
         if (sContext == null) {
-            throw new ExceptionInInitializerError("请先在全局Application中调用 XHttp.init() 初始化！");
+            throw new ExceptionInInitializerError("请先在全局Application中调用 Http.init() 初始化！");
         }
     }
 

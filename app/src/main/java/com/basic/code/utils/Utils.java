@@ -31,7 +31,7 @@ import com.basic.image.config.PictureMimeType;
 import com.basic.face.FACE;
 import com.basic.face.utils.DrawableUtils;
 import com.basic.face.widget.dialog.materialdialog.MaterialDialog;
-import com.basic.face.widget.imageview.preview.PreviewBuilder;
+import com.basic.face.widget.image.preview.PreviewBuilder;
 import com.basic.code.R;
 import com.basic.code.activity.MainActivity;
 import com.basic.code.base.web.WebActivity;

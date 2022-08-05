@@ -156,10 +156,10 @@
 -keepclassmembers interface com.j256.** { *; }
 
 #Http
--keep class com.basic.http.model.** { *; }
--keep class com.basic.http.cache.model.** { *; }
--keep class com.basic.http.cache.stategy.**{*;}
--keep class com.basic.http.annotation.** { *; }
+-keep class com.basic.http2.model.** { *; }
+-keep class com.basic.http2.cache.model.** { *; }
+-keep class com.basic.http2.cache.stategy.**{*;}
+-keep class com.basic.http2.annotation.** { *; }
 
 #okhttp
 -dontwarn com.squareup.okhttp3.**

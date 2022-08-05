@@ -22,11 +22,11 @@ android {
         //testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         //##############################router##############################
-        /*javaCompileOptions {
+        javaCompileOptions {
             annotationProcessorOptions {
-                arguments = [ moduleName : project.getName() ]
+                arguments = [moduleName: project.getName()]
             }
-        }*/
+        }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -43,11 +43,11 @@ android {
         resolutionStrategy.force deps.rxjava2
     }
     //##############################web##############################
-    repositories {
+    /*repositories {
         flatDir {
             dirs 'libs', 'providedLibs'
         }
-    }
+    }*/
     lintOptions {
         //##############################renew##############################
         checkReleaseBuilds false
@@ -60,7 +60,8 @@ android {
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
     implementation deps.androidx.appcompat
     //butterKnife的sdk
     implementation deps.butterknife.runtime
@@ -101,15 +102,16 @@ dependencies {
     //##############################scan##############################
     implementation 'com.google.zxing:core:3.3.3'
     //##############################web##############################
-    implementation fileTree(include: ['*.jar'], dir: 'providedLibs')
     compileOnly deps.support.v4
 
     //rxbinding的sdk
     compileOnly deps.rxbinding
 
-    //annotationProcessor project(':basic-compiler')
-    api project(':basic-model')
+    //##############################router##############################
+    annotationProcessor project(':basic-compiler')
     api project(':basic-annotation')
+    api project(':basic-model')
+    api project(':basic-java')
 
     testImplementation deps.junit
     androidTestImplementation deps.runner

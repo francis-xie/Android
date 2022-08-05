@@ -55,7 +55,7 @@ public class DownloadNotifier {
 		try {
 			if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
 				mBuilder = new NotificationCompat.Builder(mContext,
-						mChannelId = mContext.getPackageName().concat(WebConfig.WEB_VERSION));
+						mChannelId = mContext.getPackageName().concat(WEB_VERSION));
 				NotificationChannel mNotificationChannel = new NotificationChannel(mChannelId,
 						WebUtils.getApplicationName(context),
 						NotificationManager.IMPORTANCE_LOW);

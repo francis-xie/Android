@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <com.basic.face.widget.imageview.SignatureView
+        <com.basic.face.widget.image.SignatureView
             android:id="@+id/signature_view"
             android:layout_width="match_parent"
             android:layout_height="150dp"

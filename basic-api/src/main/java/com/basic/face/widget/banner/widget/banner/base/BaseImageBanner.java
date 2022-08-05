@@ -14,9 +14,9 @@ import android.widget.TextView;
 import com.basic.R;
 import com.basic.face.utils.ResUtils;
 import com.basic.face.widget.banner.widget.banner.BannerItem;
-import com.basic.face.widget.imageview.ImageLoader;
-import com.basic.face.widget.imageview.strategy.DiskCacheStrategyEnum;
-import com.basic.face.widget.imageview.strategy.LoadOption;
+import com.basic.face.widget.image.ImageLoader;
+import com.basic.face.widget.image.strategy.DiskCacheStrategyEnum;
+import com.basic.face.widget.image.strategy.LoadOption;
 
 import java.lang.ref.WeakReference;
 

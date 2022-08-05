@@ -8,7 +8,7 @@ import com.basic.page.annotation.Page;
 import com.basic.face.utils.DensityUtils;
 import com.basic.face.widget.actionbar.TitleBar;
 import com.basic.face.widget.dialog.bottomsheet.BottomSheet;
-import com.basic.face.widget.imageview.RadiusImageView;
+import com.basic.face.widget.image.RadiusImageView;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
 

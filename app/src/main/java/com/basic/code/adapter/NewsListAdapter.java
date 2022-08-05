@@ -1,8 +1,8 @@
 package com.basic.code.adapter;
 
 import com.basic.face.adapter.recyclerview.RecyclerViewHolder;
-import com.basic.face.widget.imageview.ImageLoader;
-import com.basic.face.widget.imageview.RadiusImageView;
+import com.basic.face.widget.image.ImageLoader;
+import com.basic.face.widget.image.RadiusImageView;
 import com.basic.code.DemoDataProvider;
 import com.basic.code.R;
 import com.basic.code.adapter.base.broccoli.BroccoliRecyclerAdapter;

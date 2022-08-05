@@ -26,8 +26,8 @@ import com.basic.face.adapter.recyclerview.RecyclerViewHolder;
 import com.basic.face.adapter.simple.AdapterItem;
 import com.basic.face.widget.actionbar.TitleBar;
 import com.basic.face.widget.banner.widget.banner.SimpleImageBanner;
-import com.basic.face.widget.imageview.ImageLoader;
-import com.basic.face.widget.imageview.RadiusImageView;
+import com.basic.face.widget.image.ImageLoader;
+import com.basic.face.widget.image.RadiusImageView;
 
 import me.samlss.broccoli.Broccoli;
 

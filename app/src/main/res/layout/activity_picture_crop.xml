@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#0C0C0C">
 
-    <com.basic.face.widget.imageview.crop.CropImageView
+    <com.basic.face.widget.image.crop.CropImageView
         android:id="@+id/crop_image_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -30,6 +30,6 @@
             android:layout_marginEnd="24dp"
             app:srcCompat="@drawable/ic_action_submit" />
 
-    </com.basic.face.widget.imageview.crop.CropImageView>
+    </com.basic.face.widget.image.crop.CropImageView>
 
 </FrameLayout>

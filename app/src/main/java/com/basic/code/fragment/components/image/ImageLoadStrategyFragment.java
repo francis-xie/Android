@@ -6,10 +6,10 @@ import androidx.appcompat.widget.AppCompatImageView;
 import com.basic.page.annotation.Page;
 import com.basic.face.utils.DensityUtils;
 import com.basic.face.utils.ResUtils;
-import com.basic.face.widget.imageview.ImageLoader;
-import com.basic.face.widget.imageview.strategy.DiskCacheStrategyEnum;
-import com.basic.face.widget.imageview.strategy.ILoadListener;
-import com.basic.face.widget.imageview.strategy.LoadOption;
+import com.basic.face.widget.image.ImageLoader;
+import com.basic.face.widget.image.strategy.DiskCacheStrategyEnum;
+import com.basic.face.widget.image.strategy.ILoadListener;
+import com.basic.face.widget.image.strategy.LoadOption;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
 

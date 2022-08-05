@@ -18,7 +18,7 @@ import com.basic.face.widget.banner.transform.RotateDownTransformer;
 import com.basic.face.widget.banner.transform.RotateUpTransformer;
 import com.basic.face.widget.banner.transform.ZoomOutSlideTransformer;
 import com.basic.face.widget.banner.widget.banner.BannerItem;
-import com.basic.face.widget.imageview.nine.NineGridImageView;
+import com.basic.face.widget.image.nine.NineGridImageView;
 import com.basic.code.adapter.entity.NewInfo;
 import com.basic.code.adapter.entity.StickyItem;
 import com.basic.code.fragment.components.image.preview.ImageViewInfo;

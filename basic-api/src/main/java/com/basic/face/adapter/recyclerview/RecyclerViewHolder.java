@@ -23,7 +23,7 @@ import androidx.annotation.StringRes;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.basic.face.widget.imageview.ImageLoader;
+import com.basic.face.widget.image.ImageLoader;
 
 /**
  * 通用的ViewHolder

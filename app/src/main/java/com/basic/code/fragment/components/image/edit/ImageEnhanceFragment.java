@@ -13,7 +13,7 @@ import com.basic.aop.annotation.Permission;
 import com.basic.aop.annotation.SingleClick;
 import com.basic.page.annotation.Page;
 import com.basic.face.widget.actionbar.TitleBar;
-import com.basic.face.widget.imageview.edit.PhotoEnhance;
+import com.basic.face.widget.image.edit.PhotoEnhance;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
 import com.basic.code.utils.ToastUtils;

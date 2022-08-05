@@ -18,7 +18,7 @@ import com.basic.face.adapter.recyclerview.GridDividerItemDecoration;
 import com.basic.face.adapter.recyclerview.RecyclerViewHolder;
 import com.basic.face.utils.DensityUtils;
 import com.basic.face.widget.actionbar.TitleBar;
-import com.basic.face.widget.imageview.preview.PreviewBuilder;
+import com.basic.face.widget.image.preview.PreviewBuilder;
 import com.basic.code.DemoDataProvider;
 import com.basic.code.R;
 import com.basic.code.adapter.PreviewRecycleAdapter;

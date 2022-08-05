@@ -17,17 +17,13 @@ import androidx.annotation.IntRange;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.basic.BuildConfig;
 import com.basic.tailor.model.AspectRatio;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Locale;
 
-/**
- * Created by Oleksii Shliama (https://github.com/shliama).
- * <p/>
- * Builder class to ease Intent setup.
- */
 public class Tailor {
 
     public static final int REQUEST_CROP = 69;

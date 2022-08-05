@@ -16,7 +16,7 @@
         android:textColor="#333333"
         android:textSize="16sp" />
 
-    <com.basic.face.widget.imageview.nine.NineGridImageView
+    <com.basic.face.widget.image.nine.NineGridImageView
         android:id="@+id/ngl_images"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

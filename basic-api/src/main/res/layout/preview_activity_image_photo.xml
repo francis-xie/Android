@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/face_config_color_transparent">
 
-    <com.basic.face.widget.imageview.preview.view.PhotoViewPager
+    <com.basic.face.widget.image.preview.view.PhotoViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -23,7 +23,7 @@
         android:textStyle="bold"
         android:visibility="gone"/>
 
-    <com.basic.face.widget.imageview.preview.view.BezierBannerView
+    <com.basic.face.widget.image.preview.view.BezierBannerView
         android:id="@+id/bezierBannerView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

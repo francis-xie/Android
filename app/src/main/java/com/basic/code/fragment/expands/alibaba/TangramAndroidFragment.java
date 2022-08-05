@@ -15,7 +15,7 @@ import com.tmall.wireless.tangram.structure.viewcreator.ViewHolderCreator;
 import com.tmall.wireless.tangram.util.IInnerImageSetter;
 import com.basic.page.annotation.Page;
 import com.basic.face.widget.actionbar.TitleBar;
-import com.basic.face.widget.imageview.ImageLoader;
+import com.basic.face.widget.image.ImageLoader;
 import com.basic.code.R;
 import com.basic.code.base.BaseFragment;
 import com.basic.code.fragment.expands.alibaba.tangram.CustomAnnotationView;

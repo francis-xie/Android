@@ -111,7 +111,7 @@ public abstract class FunGameBase extends InternalAbstract implements RefreshHea
 //            enableLoadMore = mRefreshKernel.getRefreshLayout().isEnableLoadMore();
 //            mRefreshKernel.getRefreshLayout().setEnableLoadMore(false);
             View contentView = mRefreshContent.getView();
-            ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams)contentView.getLayoutParams();
+            MarginLayoutParams params = (MarginLayoutParams)contentView.getLayoutParams();
             params.topMargin += mHeaderHeight;
             contentView.setLayoutParams(params);
         }
@@ -134,7 +134,7 @@ public abstract class FunGameBase extends InternalAbstract implements RefreshHea
                 mRefreshKernel.moveSpinner(mHeaderHeight, true);
             }
             View contentView = mRefreshContent.getView();
-            ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams)contentView.getLayoutParams();
+            MarginLayoutParams params = (MarginLayoutParams)contentView.getLayoutParams();
             params.topMargin -= mHeaderHeight;
             contentView.setLayoutParams(params);
         } else {

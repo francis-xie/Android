@@ -33,7 +33,7 @@ import com.basic.face.adapter.FragmentAdapter;
 import com.basic.face.utils.ResUtils;
 import com.basic.face.utils.ThemeUtils;
 import com.basic.face.utils.WidgetUtils;
-import com.basic.face.widget.imageview.RadiusImageView;
+import com.basic.face.widget.image.RadiusImageView;
 import com.basic.tools.Util;
 import com.basic.tools.common.ClickUtils;
 import com.basic.tools.common.CollectionUtils;

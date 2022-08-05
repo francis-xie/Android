@@ -6,8 +6,8 @@ import androidx.annotation.NonNull;
 import com.bumptech.glide.Glide;
 import com.basic.face.adapter.recyclerview.BaseRecyclerAdapter;
 import com.basic.face.adapter.recyclerview.RecyclerViewHolder;
-import com.basic.face.widget.imageview.IconImageView;
-import com.basic.face.widget.imageview.preview.loader.GlideMediaLoader;
+import com.basic.face.widget.image.IconImageView;
+import com.basic.face.widget.image.preview.loader.GlideMediaLoader;
 import com.basic.code.R;
 import com.basic.code.fragment.components.image.preview.ImageViewInfo;
 

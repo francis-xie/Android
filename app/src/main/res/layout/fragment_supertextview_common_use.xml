@@ -27,7 +27,7 @@
                     android:layout_height="60dp"
                     app:sLeftTextString="头像">
 
-                    <com.basic.face.widget.imageview.RadiusImageView
+                    <com.basic.face.widget.image.RadiusImageView
                         android:id="@+id/riv_head_pic"
                         style="@style/RadiusImageView.Circle"
                         android:layout_width="38dp"

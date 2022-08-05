@@ -6,8 +6,8 @@ import androidx.annotation.NonNull;
 import com.basic.face.adapter.recyclerview.BaseRecyclerAdapter;
 import com.basic.face.adapter.recyclerview.RecyclerViewHolder;
 import com.basic.face.adapter.simple.AdapterItem;
-import com.basic.face.widget.imageview.ImageLoader;
-import com.basic.face.widget.imageview.RadiusImageView;
+import com.basic.face.widget.image.ImageLoader;
+import com.basic.face.widget.image.RadiusImageView;
 import com.basic.code.R;
 
 /**

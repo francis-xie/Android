@@ -48,7 +48,7 @@ import androidx.core.content.ContextCompat;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.basic.R;
 import com.basic.face.FACE;
-import com.basic.face.widget.imageview.ImageLoader;
+import com.basic.face.widget.image.ImageLoader;
 
 import java.util.ArrayList;
 import java.util.List;

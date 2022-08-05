@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import com.basic.R;
 import com.basic.face.widget.banner.widget.banner.base.BaseIndicatorBanner;
-import com.basic.face.widget.imageview.ImageLoader;
+import com.basic.face.widget.image.ImageLoader;
 
 /**
  * 简单的引导页

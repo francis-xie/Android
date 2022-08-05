@@ -58,7 +58,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.basic.face.widget.imageview.edit.PhotoEditorView
+        <com.basic.face.widget.image.edit.PhotoEditorView
             android:id="@+id/photo_editor_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

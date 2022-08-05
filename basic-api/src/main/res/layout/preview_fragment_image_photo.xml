@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/face_config_color_transparent">
 
-    <com.basic.face.widget.imageview.preview.view.SmoothImageView
+    <com.basic.face.widget.image.preview.view.SmoothImageView
         android:id="@+id/photoView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
